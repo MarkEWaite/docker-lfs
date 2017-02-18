@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.git.GitTool_-DescriptorImpl plugin="git-client@2.1.0">
+  <installations class="hudson.plugins.git.GitTool-array">
+    <hudson.plugins.git.GitTool>
+      <name>Default</name>
+      <home>git</home>
+      <properties/>
+    </hudson.plugins.git.GitTool>
+    <org.jenkinsci.plugins.gitclient.JGitTool>
+      <name>jgit</name>
+      <home>jgit</home>
+      <properties/>
+    </org.jenkinsci.plugins.gitclient.JGitTool>
+    <org.jenkinsci.plugins.gitclient.JGitApacheTool>
+      <name>jgitapache</name>
+      <home>jgitapache</home>
+      <properties/>
+    </org.jenkinsci.plugins.gitclient.JGitApacheTool>
+  </installations>
+  <gitDefaultTimeout>7</gitDefaultTimeout>
+</hudson.plugins.git.GitTool_-DescriptorImpl>

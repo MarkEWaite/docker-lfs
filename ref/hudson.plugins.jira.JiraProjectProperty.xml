@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.jira.JiraProjectProperty_-DescriptorImpl plugin="jira@2.2.1">
+  <sites>
+    <hudson.plugins.jira.JiraSite>
+      <url>https://issues.jenkins-ci.org/</url>
+      <alternativeUrl>https://issues.jenkins-ci.org/</alternativeUrl>
+      <useHTTPAuth>false</useHTTPAuth>
+      <userName>MarkEWaite</userName>
+      <password>Ca4IICNrvjS9sXwktLgtDZ36YLqhU2HtbZWIpB350zdlddC/Q93G7+ALZO/P+6ZI</password>
+      <supportsWikiStyleComment>true</supportsWikiStyleComment>
+      <recordScmChanges>false</recordScmChanges>
+      <userPattern>(JENKINS-[0-9]+)</userPattern>
+      <updateJiraIssueForAllStatus>false</updateJiraIssueForAllStatus>
+      <timeout>10</timeout>
+      <dateTimePattern></dateTimePattern>
+      <appendChangeTimestamp>false</appendChangeTimestamp>
+    </hudson.plugins.jira.JiraSite>
+  </sites>
+</hudson.plugins.jira.JiraProjectProperty_-DescriptorImpl>

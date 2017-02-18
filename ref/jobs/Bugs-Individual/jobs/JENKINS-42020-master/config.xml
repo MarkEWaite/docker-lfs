@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.10">
+  <actions/>
+  <description>[JENKINS-42020](https://issues.jenkins-ci.org/browse/JENKINS-42020)</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.26.0">
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec></spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.27">
+    <script>@Library(&apos;globalPipelineLibraryMarkEWaite&apos;)
+import com.markwaite.Assert
+import com.markwaite.Build
+
+node {
+    stage(&apos;Checkout&apos;) {
+        checkout([$class: &apos;GitSCM&apos;,
+              userRemoteConfigs: [[url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]],
+              branches: [[name: &apos;master&apos;]],
+              browser: [$class: &apos;GithubWeb&apos;, repoUrl: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;],
+              extensions: [
+                [$class: &apos;AuthorInChangelog&apos;],
+                [$class: &apos;CleanCheckout&apos;],
+                [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;],
+                [$class: &apos;LocalBranch&apos;, localBranch: &apos;master&apos;],
+                [$class: &apos;PruneStaleBranch&apos;],
+              ],
+             ])
+    }
+  stage(&apos;Build&apos;) {
+    /* Call the ant build. */
+    def my_step = new com.markwaite.Build()
+    my_step.ant &apos;info&apos;
+  }
+
+  stage(&apos;Verify&apos;) {
+    def my_check = new com.markwaite.Assert()
+    /* JENKINS-42020 reports the master branch starts a build even if
+     * there are no changes detected on the master branch.  This assertion
+     * checks that the commits from the last 15 minutes (reported by &apos;ant
+     * info&apos;) are empty */
+    if (currentBuild.number &gt; 1) { // Don&apos;t check first build
+      my_check.logContains(&apos;.*Author:.*&apos;, &apos;Build started without a commit - no author line&apos;)
+      my_check.logContains(&apos;.*Date:.*&apos;, &apos;Build started without a commit - no date line&apos;)
+    }
+  }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <quietPeriod>0</quietPeriod>
+</flow-definition>

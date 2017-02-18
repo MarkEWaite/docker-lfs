@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.libs.GlobalLibraries plugin="workflow-cps-global-lib@2.4">
+  <libraries>
+    <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+      <name>globalPipelineLibraryMarkEWaite</name>
+      <retriever class="org.jenkinsci.plugins.workflow.libs.SCMRetriever">
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1-SNAPSHOT">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/${library.globalPipelineLibraryMarkEWaite.version}:refs/remotes/origin/${library.globalPipelineLibraryMarkEWaite.version}</refspec>
+              <url>https://github.com/MarkEWaite/jenkins-pipeline-utils</url>
+              <credentialsId>invalid-user-and-password</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches>
+            <hudson.plugins.git.BranchSpec>
+              <name>origin/${library.globalPipelineLibraryMarkEWaite.version}</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <gitTool>Default</gitTool>
+          <submoduleCfg class="list"/>
+          <extensions>
+            <hudson.plugins.git.extensions.impl.CloneOption>
+              <shallow>true</shallow>
+              <noTags>true</noTags>
+              <reference>/var/lib/git/mwaite/jenkins/jenkins-pipeline-utils.git</reference>
+              <depth>1</depth>
+              <honorRefspec>true</honorRefspec>
+            </hudson.plugins.git.extensions.impl.CloneOption>
+          </extensions>
+        </scm>
+      </retriever>
+      <defaultVersion>master</defaultVersion>
+      <implicit>false</implicit>
+      <allowVersionOverride>true</allowVersionOverride>
+    </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+  </libraries>
+</org.jenkinsci.plugins.workflow.libs.GlobalLibraries>
