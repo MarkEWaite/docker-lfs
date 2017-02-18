@@ -1,4 +1,4 @@
-# Official Jenkins Docker image
+# Mark Waite's Jenkins LTS Docker image
 
 The Jenkins Continuous Integration and Delivery server.
 
