@@ -1,9 +1,9 @@
-# Mark Waite's Jenkins LTS Docker image
+# Mark Waite's Jenkins LTS Docker image with plugins
 
 The Jenkins Continuous Integration and Delivery server.
 
 This is a fully functional Jenkins server, based on the Long Term
-Support release and includes jobs which perform various bug checks and
+Support release and includes plugins and jobs which perform various bug checks and
 sanity tests.  [http://jenkins.io/](http://jenkins.io/).
 
 For weekly releases check out [`jenkinsci/jenkins`](https://hub.docker.com/r/jenkinsci/jenkins/)
