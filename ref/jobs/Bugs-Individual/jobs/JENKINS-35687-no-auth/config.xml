@@ -61,11 +61,8 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
-        <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
-        <timeout>13</timeout>
-        <depth>0</depth>
+        <timeout>12</timeout>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
