@@ -43,5 +43,21 @@
         </hudson.tools.InstallSourceProperty>
       </properties>
     </hudson.plugins.cmake.CmakeTool>
+    <hudson.plugins.cmake.CmakeTool>
+      <name>cmake-3.7.1</name>
+      <home>cmake</home>
+      <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>cmake-3.7.1</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.plugins.cmake.CmakeInstaller>
+              <id>3.7.1</id>
+            </hudson.plugins.cmake.CmakeInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.plugins.cmake.CmakeTool>
   </installations>
 </hudson.plugins.cmake.CmakeTool_-DescriptorImpl>
