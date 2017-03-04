@@ -4,26 +4,16 @@ properties([
     buildDiscarder(logRotator(numToKeepStr: '7', artifactNumToKeepStr: '7')),
 ])
 
-def docker_branch = 'lts-with-plugins'
-def docker_repo = 'https://github.com/MarkEWaite/docker-lfs'
-
 node('docker') {
     stage('Checkout') {
         checkout([$class: 'GitSCM',
-                  userRemoteConfigs: [[name: 'public', url: docker_repo]],
-                  branches: [[name: docker_branch]],
-                  browser: [$class: 'GithubWeb', repoUrl: docker_repo],
-                  extensions: [
-                    [$class: 'AuthorInChangelog'],
-                    [$class: 'CleanBeforeCheckout'],
-                    [$class: 'CloneOption', noTags: true, shallow: true, depth: 1],
+                  userRemoteConfigs: scm.userRemoteConfigs,
+                  branches: scm.branches,
+                  browser: scm.browser,
+                  extensions: scm.extensions + [
                     [$class: 'GitLFSPull'],
-                    [$class: 'LocalBranch', localBranch: docker_branch],
-                    [$class: 'PruneStaleBranch'],
+                    [$class: 'LocalBranch', localBranch: '**'],
                   ],
-                  gitTool: 'Default',
-                  doGenerateSubmoduleConfigurations: false,
-                  submoduleCfg: [],
                 ])
     }
 
