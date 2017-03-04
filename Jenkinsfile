@@ -10,7 +10,7 @@ def docker_repo = 'https://github.com/MarkEWaite/docker-lfs'
 node('docker') {
     stage('Checkout') {
         checkout([$class: 'GitSCM',
-                  userRemoteConfigs: [[name: 'public', url: docker_repo]]
+                  userRemoteConfigs: [[name: 'public', url: docker_repo]],
                   branches: [[name: docker_branch]],
                   browser: [$class: 'GithubWeb', repoUrl: docker_repo],
                   extensions: [
