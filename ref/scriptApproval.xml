@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.25">
+<scriptApproval plugin="script-security@1.27">
   <approvedScriptHashes>
     <string>091a016dcee303082a90c62b43a0c9283362bb0f</string>
     <string>0c4a9194697a7d069db445d7cb8ac2312b32125e</string>
@@ -25,6 +25,10 @@
     <string>method hudson.model.Run getCauses</string>
     <string>method hudson.model.Run getLog int</string>
     <string>method hudson.model.Run getLogFile</string>
+    <string>method hudson.plugins.git.GitSCM getBranches</string>
+    <string>method hudson.plugins.git.GitSCM getUserRemoteConfigs</string>
+    <string>method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions</string>
+    <string>method hudson.scm.SCM getBrowser</string>
     <string>method java.lang.Class getName</string>
     <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String</string>
