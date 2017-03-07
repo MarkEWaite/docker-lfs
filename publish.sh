@@ -3,6 +3,7 @@
 # Publish any versions of the docker image not yet pushed to jenkinsci/jenkins
 # Arguments:
 #   -n dry run, do not build or publish images
+#   -d debug
 
 set -o pipefail
 
@@ -19,6 +20,8 @@ docker-tag() {
     local from="jenkinsci/jenkins:$1"
     local to="jenkinsci/jenkins:$2"
     local out
+
+    docker pull "$from"
     if out=$(docker tag -f "$from" "$to" 2>&1); then
         echo "$out"
     else
@@ -50,12 +53,21 @@ is-published() {
 
 get-manifest() {
     local tag=$1
-    curl -q -fsSL -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer $TOKEN" "https://index.docker.io/v2/jenkinsci/jenkins/manifests/$tag"
+    local opts=""
+    if [ "$debug" = true ]; then
+        opts="-v"
+    fi
+    curl $opts -q -fsSL -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer $TOKEN" "https://index.docker.io/v2/jenkinsci/jenkins/manifests/$tag"
 }
 
 get-digest() {
+    local manifest
+    manifest=$(get-manifest "$1")
     #get-manifest "$1" | jq .config.digest
-    get-manifest "$1" | grep -A 10 -o '"config".*' | grep digest | head -1 | cut -d':' -f 2,3 | xargs echo
+    if [ "$debug" = true ]; then
+        >&2 echo "DEBUG: Manifest for $1: $manifest"
+    fi
+    echo "$manifest" | grep -A 10 -o '"config".*' | grep digest | head -1 | cut -d':' -f 2,3 | xargs echo
 }
 
 get-latest-versions() {
@@ -69,27 +81,61 @@ publish() {
     local sha
     local build_opts="--no-cache --pull"
 
-    sha=$(curl -q -fsSL "http://repo.jenkins-ci.org/simple/releases/org/jenkins-ci/main/jenkins-war/${version}/jenkins-war-${version}.war.sha1")
+    if [ "$dry_run" = true ]; then
+        build_opts=""
+    else
+        build_opts="--no-cache --pull"
+    fi
+
+    local dir=war
+    # lts is in a different dir
+    if [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+        dir=war-stable
+    fi
+    sha=$(curl -q -fsSL "http://mirrors.jenkins.io/${dir}/${version}/jenkins.war.sha256" | cut -d' ' -f 1)
 
     docker build --build-arg "JENKINS_VERSION=$version" \
                  --build-arg "JENKINS_SHA=$sha" \
                  --tag "jenkinsci/jenkins:${tag}" ${build_opts} .
 
-    docker push "jenkinsci/jenkins:${tag}"
+    if [ "$dry_run" = true ]; then
+        docker push "jenkinsci/jenkins:${tag}"
+    fi
 }
 
 tag-and-push() {
     local source=$1
     local target=$2
-    local digest_source; digest_source=$(get-digest ${tag1})
-    local digest_target; digest_target=$(get-digest ${tag2})
-    if [ "$digest_source" == "$digest_target" ]; then
+    local digest_source
+    local digest_target
+
+    if [ "$debug" = true ]; then
+        >&2 echo "DEBUG: Getting digest for ${source}"
+    fi
+    # if tag doesn't exist yet, ie. dry run
+    if ! digest_source=$(get-digest "${source}"); then
+        echo "Unable to get digest for ${source} ${digest_source}"
+        digest_source=""
+    fi
+
+    if [ "$debug" = true ]; then
+        >&2 echo "DEBUG: Getting digest for ${target}"
+    fi
+    if ! digest_target=$(get-digest "${target}"); then
+        echo "Unable to get digest for ${target} ${digest_target}"
+        digest_target=""
+    fi
+
+    if [ "$digest_source" == "$digest_target" ] && [ -n "${digest_target}" ]; then
         echo "Images ${source} [$digest_source] and ${target} [$digest_target] are already the same, not updating tags"
     else
         echo "Creating tag ${target} pointing to ${source}"
+        docker-tag "${source}" "${target}"
         if [ ! "$dry_run" = true ]; then
-            docker-tag "jenkinsci/jenkins:${source}" "jenkinsci/jenkins:${target}"
-            docker push "jenkinsci/jenkins:${source}"
+            echo "Pushing jenkinsci/jenkins:${target}"
+            docker push "jenkinsci/jenkins:${target}"
+        else
+            echo "Would push jenkinsci/jenkins:${target}"
         fi
     fi
 }
@@ -112,12 +158,31 @@ publish-lts() {
     tag-and-push "${version}" "lts${variant}"
 }
 
+# Process arguments
+
 dry_run=false
-if [ "-n" == "${1:-}" ]; then
-    dry_run=true
-fi
+debug=false
+
+while [[ $# -gt 0 ]]; do
+    key="$1"
+    case $key in
+        -n)
+        dry_run=true
+        ;;
+        -d)
+        debug=true
+        ;;
+        *)
+        echo "Unknown option: $key"
+        return 1
+        ;;
+    esac
+    shift
+done
+
+
 if [ "$dry_run" = true ]; then
-    echo "Dry run, will not build or publish images"
+    echo "Dry run, will not publish images"
 fi
 
 TOKEN=$(login-token)
@@ -131,9 +196,7 @@ for version in $(get-latest-versions); do
         echo "Tag is already published: $version$variant"
     else
         echo "Publishing version: $version$variant"
-        if [ ! "$dry_run" = true ]; then
-            publish "$version" "$variant"
-        fi
+        publish "$version" "$variant"
     fi
 
     # Update lts tag
