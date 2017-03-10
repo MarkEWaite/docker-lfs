@@ -18,6 +18,7 @@ blueocean-i18n:latest
 blueocean-jwt:latest
 blueocean-personalization:latest
 blueocean-pipeline-api-impl:latest
+blueocean-pipeline-editor:latest
 blueocean-rest-impl:latest
 blueocean-rest:latest
 blueocean-web:latest
