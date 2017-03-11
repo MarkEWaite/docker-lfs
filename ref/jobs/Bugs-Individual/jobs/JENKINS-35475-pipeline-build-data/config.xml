@@ -35,9 +35,7 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.29">
     <script>node {
   stage(&apos;Checkout&apos;) {
-    // Slow form - clone the whole repository
-    // checkout scm
-
+    // Clone repository, honor refspec, etc.
     // Fast form - clone subset
     checkout([$class: &apos;GitSCM&apos;,
               userRemoteConfigs: [[name: &apos;bugs-origin&apos;,
@@ -55,6 +53,7 @@
              ])
 
     // Checkout to JENKINS-35475 subdirectory
+    // Clone repository, honor refspec, etc.
     // Fast form - clone subset to subdirectory
     checkout([$class: &apos;GitSCM&apos;,
               userRemoteConfigs: [[name: &apos;bugs-origin-subdir&apos;,

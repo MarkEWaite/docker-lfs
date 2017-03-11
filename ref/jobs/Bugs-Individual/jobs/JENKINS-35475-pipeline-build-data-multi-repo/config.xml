@@ -50,6 +50,23 @@
                 // [$class: &apos;RelativeTargetDirectory&apos;, relativeTargetDir: &apos;JENKINS-35475&apos;],a
               ],
              ])
+
+    // Fast form - clone subset of JENKINS-41354
+    checkout([$class: &apos;GitSCM&apos;,
+              userRemoteConfigs: [[name: &apos;bugs-origin&apos;,
+                                   refspec: &apos;+refs/heads/JENKINS-41354:refs/remotes/bugs-origin/JENKINS-41354&apos;,
+                                   url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]],
+              branches: [[name: &apos;bugs-origin/JENKINS-41354&apos;]],
+              browser: [$class: &apos;GithubWeb&apos;, repoUrl: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;],
+              extensions: [
+                [$class: &apos;AuthorInChangelog&apos;],
+                [$class: &apos;CleanBeforeCheckout&apos;],
+                [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;, shallow: true],
+                [$class: &apos;LocalBranch&apos;, localBranch: &apos;JENKINS-41354&apos;],
+                // [$class: &apos;RelativeTargetDirectory&apos;, relativeTargetDir: &apos;JENKINS-41354&apos;],a
+              ],
+             ])
+
   }
 }
 </script>
