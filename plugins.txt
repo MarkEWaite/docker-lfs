@@ -94,6 +94,7 @@ pipeline-milestone-step:latest
 pipeline-model-api:latest
 pipeline-model-declarative-agent:latest
 pipeline-model-definition:latest
+pipeline-model-extensions:latest
 pipeline-rest-api:latest
 pipeline-stage-step:latest
 pipeline-stage-tags-metadata:latest
