@@ -17,5 +17,4 @@
       <properties/>
     </org.jenkinsci.plugins.gitclient.JGitApacheTool>
   </installations>
-  <gitDefaultTimeout>7</gitDefaultTimeout>
 </hudson.plugins.git.GitTool_-DescriptorImpl>
