@@ -18,7 +18,6 @@
           <description>Java test classes to execute</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>GitStatusTest</string>
               <string>*</string>
               <string>AbstractGitSCMSourceTest</string>
               <string>AncestryBuildChooserTest</string>
@@ -60,7 +59,7 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.4.4">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.5.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -102,7 +101,8 @@
       <targets>clean install</targets>
       <mavenName>mvn</mavenName>
       <properties>maven.test.failure.ignore=true
-maven.findbugs.failure.strict=false</properties>
+maven.findbugs.failure.strict=false
+surefire.rerunFailingTestsCount=4</properties>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
