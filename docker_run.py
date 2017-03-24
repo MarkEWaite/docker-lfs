@@ -82,7 +82,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -93,6 +93,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000):
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(jnlp_port) + ":50000",
+                       "--publish", str(ssh_port)  + ":18022",
                      ]
     if jenkins_home_volume_map != None and http_port == 8080:
         docker_command.extend(["--volume", jenkins_home_volume_map])
@@ -111,7 +112,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000):
                        "--env", "DOCKER_FIX=refer-to-docker-issues-14203-for-description",
                        "-t", docker_tag,
                      ])
-    print(docker_command)
+    print(" ".join(map(str, docker_command)))
     subprocess.check_call(docker_command)
 
 #-----------------------------------------------------------------------
@@ -122,7 +123,7 @@ def get_fqdn():
         if is_home_network():
 	    fqdn = fqdn + ".markwaite.net"
         else:
-	    fqdn = fqdn + ".ca.com"
+	    fqdn = fqdn + ".example.com"
     return fqdn
 
 #-----------------------------------------------------------------------
@@ -134,8 +135,9 @@ Run a docker image.   Use -h for help."""
 
     # keep at optparse for 2.6. compatibility
     parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
-    parser.add_option("-p", "--port", action="store", dest='http_port', default=8080, type="int", help="http port")
+    parser.add_option("-p", "--port", action="store", dest='http_port', default=8080,  type="int", help="http port")
     parser.add_option("-j", "--jnlp", action="store", dest='jnlp_port', default=50000, type="int", help="jnlp port")
+    parser.add_option("-s", "--ssh",  action="store", dest='ssh_port',  default=18022,  type="int", help="ssh port")
 
     options, arg_hosts = parser.parse_args()
 
@@ -145,7 +147,7 @@ Run a docker image.   Use -h for help."""
 
     current_branch = docker_build.get_current_branch()
     docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(docker_tag, options.http_port, options.jnlp_port)
+    docker_execute(docker_tag, options.http_port, options.jnlp_port, options.ssh_port)
 
 #-----------------------------------------------------------------------
 
