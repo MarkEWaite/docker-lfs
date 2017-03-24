@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for url in $(git grep '<url>.*</url>' | grep  -F config.xml | grep -v JENKINS_HOSTNAME | grep -v site/jacoco/index.html | sed -e 's!.*<url>!!g' -e 's!</url>.*$!!g' -e 's!/$!!g' -e 's!.git$!!g' | sort -u); do
+for url in $(git grep '<url>.*</url>' | grep  -F config.xml | grep -v JENKINS_HOSTNAME | grep -v site/jacoco/index.html | sed -e 's!.*<url>!!g' -e 's!</url>.*$!!g' -e 's!/$!!g' -e 's!.git$!!g' | sort -u | shuf); do
 	curl -s http://localhost:8080/git/notifyCommit?url=$url
 done
