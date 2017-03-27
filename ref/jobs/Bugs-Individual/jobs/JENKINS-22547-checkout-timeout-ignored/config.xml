@@ -30,7 +30,7 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
-    <browser class="hudson.plugins.git.browser.GitWeb">
+    <browser class="hudson.plugins.git.browser.GithubWeb">
       <url>https://github.com/MarkEWaite/jenkins-bugs</url>
     </browser>
     <submoduleCfg class="list"/>
