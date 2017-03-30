@@ -89,7 +89,9 @@ echo Hello World &gt;&gt; this_is/not_ok/more/subdirs/file.txt
 
 # Check untracked directory exists
 
-[ -d this_is/not_ok ] || exit 2</command>
+[ -d this_is/not_ok ] || exit 2
+
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
