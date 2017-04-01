@@ -2,6 +2,7 @@ FROM openjdk:8-jdk
 
 RUN apt-get update && apt-get install -y \
   build-essential \
+  ca-certificates \
   curl \
   gcc-multilib \
   git \
@@ -20,10 +21,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
 # Install git lfs extension
-RUN build_deps="curl ca-certificates" && \
-    apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ${build_deps} && \
-    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git-lfs && \
     git lfs install && \
     rm -r /var/lib/apt/lists/*
