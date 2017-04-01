@@ -3,7 +3,7 @@ FROM openjdk:8-jdk
 RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
 # Install git lfs extension
-RUN build_deps="curl ca-certificates" && \
+RUN build_deps="ca-certificates" && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ${build_deps} && \
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
