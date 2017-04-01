@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@5.17">
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.0.3">
   <actions/>
   <description></description>
   <displayName>Git Client Plugin Folder</displayName>
@@ -7,19 +7,19 @@
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
         <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.11">
+          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.13">
             <specifications/>
           </com.cloudbees.plugins.credentials.domains.Domain>
           <java.util.concurrent.CopyOnWriteArrayList/>
         </entry>
       </domainCredentialsMap>
     </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.6">
+    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.7">
       <libraries>
         <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
           <name>infra</name>
           <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-            <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.1.0-SNAPSHOT">
+            <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.2.0">
               <id>2fa151f6-f90f-40cb-8eaf-95682a7af294</id>
               <remote>https://github.com/jenkins-infra/pipeline-library.git</remote>
               <credentialsId></credentialsId>
@@ -38,7 +38,7 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.0.1">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.1">
       <dockerLabel></dockerLabel>
       <registry plugin="docker-commons@1.6"/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
@@ -117,6 +117,35 @@
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Executing</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        </jobNames>
+        <jobFilters>
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+            <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+            <neverBuilt>false</neverBuilt>
+            <building>true</building>
+            <inBuildQueue>false</inBuildQueue>
+          </hudson.views.BuildStatusFilter>
+        </jobFilters>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+        </columns>
+        <recurse>true</recurse>
+      </hudson.model.ListView>
     </views>
     <primaryView>All</primaryView>
     <tabBar class="hudson.views.DefaultViewsTabBar"/>
@@ -126,7 +155,7 @@
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.6.0-SNAPSHOT">
+  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.6">
     <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
   </icon>
 </com.cloudbees.hudson.plugins.folder.Folder>

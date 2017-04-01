@@ -62,5 +62,118 @@
       </properties>
     </jdk>
   </jdks>
-  <label>git-1.8+ git-1.9+ git-2.0+ git-2.1</label>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <description>All jobs</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>Failed</name>
+      <description>Jobs which failed recently</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters>
+        <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+          <unstable>false</unstable>
+          <failed>true</failed>
+          <aborted>true</aborted>
+          <disabled>false</disabled>
+          <stable>false</stable>
+        </hudson.views.JobStatusFilter>
+      </jobFilters>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>true</recurse>
+      <statusFilter>true</statusFilter>
+    </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>Unstable</name>
+      <description>Jobs with failing tests</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters>
+        <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+          <unstable>true</unstable>
+          <failed>false</failed>
+          <aborted>false</aborted>
+          <disabled>false</disabled>
+          <stable>false</stable>
+        </hudson.views.JobStatusFilter>
+      </jobFilters>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>true</recurse>
+      <statusFilter>true</statusFilter>
+    </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>Executing</name>
+      <description>Jobs currently executing</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters>
+        <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+          <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+          <neverBuilt>false</neverBuilt>
+          <building>true</building>
+          <inBuildQueue>false</inBuildQueue>
+        </hudson.views.BuildStatusFilter>
+      </jobFilters>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+      </columns>
+      <recurse>true</recurse>
+    </listView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <label>git-1.8+ git-1.9+ git-2.0+ git-2.1 highmem linux Debian Debian-8</label>
+  <nodeProperties/>
+  <globalNodeProperties/>
 </hudson>
