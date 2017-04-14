@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<freestyle-multi-branch-project plugin="multi-branch-project-plugin@0.5.1">
+<freestyle-multi-branch-project plugin="multi-branch-project-plugin@0.7">
   <actions/>
   <description>[My Jenkins git client plugin](https://github.com/MarkEWaite/git-client-plugin) pull requests being evaluated</description>
   <displayName>Git Client Branches - Maven</displayName>
   <properties>
-    <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@5.13">
+    <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@6.0.3">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
         <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.9">
+          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.13">
             <specifications/>
           </com.cloudbees.plugins.credentials.domains.Domain>
           <java.util.concurrent.CopyOnWriteArrayList/>
@@ -15,45 +15,25 @@
       </domainCredentialsMap>
     </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
   </properties>
-  <views>
-    <branch-list-view>
-      <owner class="freestyle-multi-branch-project" reference="../../.."/>
-      <name>All</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator"/>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <includeRegex>.*</includeRegex>
-      <recurse>false</recurse>
-    </branch-list-view>
-  </views>
-  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.8">
+    <owner class="freestyle-multi-branch-project" reference="../.."/>
+  </folderViews>
   <healthMetrics>
-    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@5.13"/>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@6.0.3">
+      <nonRecursive>false</nonRecursive>
+    </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="org.jenkinsci.plugins.orgfolder.github.GitHubOrgIcon" plugin="github-organization-folder@1.5">
-    <folder class="freestyle-multi-branch-project" reference="../.."/>
+  <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.0.8">
+    <owner class="freestyle-multi-branch-project" reference="../.."/>
   </icon>
-  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@5.13">
+  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.0.3">
     <pruneDeadBranches>true</pruneDeadBranches>
     <daysToKeep>0</daysToKeep>
     <numToKeep>0</numToKeep>
   </orphanedItemStrategy>
   <triggers/>
   <sources>
-    <jenkins.branch.BranchSource plugin="branch-api@1.11.1">
+    <jenkins.branch.BranchSource plugin="branch-api@2.0.8">
       <source class="jenkins.plugins.git.GitSCMSource" plugin="git@3.0.1">
         <id>b7205f38-9abe-472c-923c-6a839b7ec90d</id>
         <remote>https://github.com/MarkEWaite/git-client-plugin.git</remote>
