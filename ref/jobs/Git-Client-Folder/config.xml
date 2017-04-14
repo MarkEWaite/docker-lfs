@@ -23,6 +23,8 @@
               <id>2fa151f6-f90f-40cb-8eaf-95682a7af294</id>
               <remote>https://github.com/jenkins-infra/pipeline-library.git</remote>
               <credentialsId></credentialsId>
+              <remoteName>origin</remoteName>
+              <rawRefSpecs>+refs/heads/*:refs/remotes/origin/*</rawRefSpecs>
               <includes>*</includes>
               <excludes></excludes>
               <ignoreOnPushNotifications>false</ignoreOnPushNotifications>
@@ -38,7 +40,7 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.1">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.2">
       <dockerLabel></dockerLabel>
       <registry plugin="docker-commons@1.6"/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
@@ -155,7 +157,7 @@
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.6">
+  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.7">
     <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
   </icon>
 </com.cloudbees.hudson.plugins.folder.Folder>
