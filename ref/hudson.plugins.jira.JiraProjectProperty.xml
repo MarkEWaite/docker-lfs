@@ -5,8 +5,6 @@
       <url>https://issues.jenkins-ci.org/</url>
       <alternativeUrl>https://issues.jenkins-ci.org/</alternativeUrl>
       <useHTTPAuth>false</useHTTPAuth>
-      <userName>MarkEWaite</userName>
-      <password>Ca4IICNrvjS9sXwktLgtDZ36YLqhU2HtbZWIpB350zdlddC/Q93G7+ALZO/P+6ZI</password>
       <supportsWikiStyleComment>true</supportsWikiStyleComment>
       <recordScmChanges>false</recordScmChanges>
       <userPattern>(JENKINS-[0-9]+)</userPattern>
