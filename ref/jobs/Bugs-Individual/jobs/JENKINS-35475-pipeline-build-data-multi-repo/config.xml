@@ -10,7 +10,7 @@
       <scanQueueFor>DISABLED</scanQueueFor>
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.26.1">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.27.0">
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -54,15 +54,15 @@
     // Fast form - clone subset of JENKINS-41354
     checkout([$class: &apos;GitSCM&apos;,
               userRemoteConfigs: [[name: &apos;bugs-origin&apos;,
-                                   refspec: &apos;+refs/heads/JENKINS-41354:refs/remotes/bugs-origin/JENKINS-41354&apos;,
+                                   refspec: &apos;+refs/heads/JENKINS-15103:refs/remotes/bugs-origin/JENKINS-15103&apos;,
                                    url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]],
-              branches: [[name: &apos;bugs-origin/JENKINS-41354&apos;]],
+              branches: [[name: &apos;bugs-origin/JENKINS-15103&apos;]],
               browser: [$class: &apos;GithubWeb&apos;, repoUrl: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;],
               extensions: [
                 [$class: &apos;AuthorInChangelog&apos;],
                 [$class: &apos;CleanBeforeCheckout&apos;],
                 [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;, shallow: true],
-                [$class: &apos;LocalBranch&apos;, localBranch: &apos;JENKINS-41354&apos;],
+                [$class: &apos;LocalBranch&apos;, localBranch: &apos;JENKINS-15103&apos;],
                 // [$class: &apos;RelativeTargetDirectory&apos;, relativeTargetDir: &apos;JENKINS-41354&apos;],a
               ],
              ])
