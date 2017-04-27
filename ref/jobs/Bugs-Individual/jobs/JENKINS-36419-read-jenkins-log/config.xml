@@ -1,3 +1,4 @@
+
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
@@ -21,7 +22,8 @@
     <hudson.tasks.Shell>
       <command>ls -altr /var/log
 ls -altrR /var/jenkins_home/logs/
-grep -r AbstractMethodError /var/jenkins_home/logs/</command>
+grep -r AbstractMethodError /var/jenkins_home/logs/ || exit 0
+# Ignores non-zero return code from grep</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
