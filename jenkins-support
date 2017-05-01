@@ -132,9 +132,9 @@ replace_constants() {
 	local value; value=$2
 	echo $variable=$value
 	tmpdir=$(mktemp -d)
-	for file in $(find /usr/share/jenkins/ref/ -type f -name '*.xml'); do
-		base=$(basename $file)
-		grep -q $variable $file && sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
+	find /usr/share/jenkins/ref/ -type f -name '*.xml' -print0 | while IFS='' read filename; do
+		base=$(basename $filename)
+		grep -q $variable $filename && sed "s/$variable/$value/g" < $filename > $tmpdir/$base && mv $tmpdir/$base $filename
 	done
 	rm -rf $tmpdir
 }
