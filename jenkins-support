@@ -130,11 +130,10 @@ copy_reference_file() {
 replace_constants() {
 	local variable; variable=$1
 	local value; value=$2
-	echo $variable=$value
+	echo Replacing $variable with $value
 	tmpdir=$(mktemp -d)
 	for file in $(grep -r -l $variable /usr/share/jenkins/ref/ | grep -F .xml); do
 		base=$(basename $file)
-		echo "Replacing $variable with $value in $file"
 		sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
 	done
 	rm -rf $tmpdir
