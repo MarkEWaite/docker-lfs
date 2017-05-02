@@ -132,8 +132,7 @@ replace_constants() {
 	local value; value=$2
 	echo $variable=$value
 	tmpdir=$(mktemp -d)
-        echo "Seeking $variable"
-	for file in $(git grep -l $variable -- **.xml); do
+	for file in $(grep -r -l $variable ref/ | grep -F .xml); do
 		base=$(basename $file)
 		echo "Replacing $variable with $value in $file"
 		sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
