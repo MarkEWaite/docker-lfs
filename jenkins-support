@@ -132,9 +132,9 @@ replace_constants() {
 	local value; value=$2
 	echo $variable=$value
 	tmpdir=$(mktemp -d)
-	for file in $(find /usr/share/jenkins/ref/ -type f -name '*.xml'); do
+	for file in $(git grep -l $variable -- **.xml); do
 		base=$(basename $file)
-		grep -q $variable $file && sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
+		sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
 	done
 	rm -rf $tmpdir
 }
