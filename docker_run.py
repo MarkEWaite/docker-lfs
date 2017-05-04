@@ -15,6 +15,7 @@ import shutil
 import sys
 
 import docker_build
+import jenkins_mirror
 
 jenkins_home_dir = os.path.expanduser("~/docker-jenkins-home")
 
@@ -30,7 +31,7 @@ def is_home_network():
         s.connect(("google.com", 0))
     except:
         return True
-    return s.getsockname()[0].startswith("192") or s.getsockname()[0].startswith("172")
+    return s.getsockname()[0].startswith("172")
 
 #-----------------------------------------------------------------------
 
@@ -76,9 +77,11 @@ def get_git_reference_repo_volume_map():
 #-----------------------------------------------------------------------
 
 def get_dns_server():
+    if jenkins_mirror.is_work_network():
+        return "work-dns-server-unknown"
     if is_home_network():
 	return "172.16.16.253"
-    return "8.8.8.8"
+    return "work-dns-server-unknown"
 
 #-----------------------------------------------------------------------
 
@@ -104,7 +107,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022):
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     docker_command.extend([
-                       "--env", 'JAVA_OPTS="-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
+                       "--env", 'JAVA_OPTS="-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
                        # "--env", 'JENKINS_OPTS=',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
