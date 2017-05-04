@@ -26,6 +26,7 @@
     <string>method hudson.model.Run getLog int</string>
     <string>method hudson.model.Run getLogFile</string>
     <string>method hudson.plugins.git.GitSCM getBranches</string>
+    <string>method hudson.plugins.git.GitSCM getGitTool</string>
     <string>method hudson.plugins.git.GitSCM getUserRemoteConfigs</string>
     <string>method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions</string>
     <string>method hudson.scm.SCM getBrowser</string>
