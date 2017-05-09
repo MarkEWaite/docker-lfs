@@ -85,7 +85,7 @@
   <views>
     <hudson.model.AllView>
       <owner class="hudson" reference="../../.."/>
-      <name>all</name>
+      <name>All</name>
       <description>All jobs</description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
