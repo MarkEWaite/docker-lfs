@@ -102,26 +102,6 @@
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>label</name>
-      <values>
-        <string>coleen-pc2</string>
-        <string>coleen-pc3</string>
-        <string>family-win7-a</string>
-        <string>debian8x86a-mwaite</string>
-        <string>centos67a-mwaite</string>
-        <string>ubuntu14c-mwaite</string>
-        <string>fc-tock</string>
-        <string>master</string>
-        <string>ubuntu14a-mwaite</string>
-        <string>ubuntu14b-mwaite</string>
-        <string>home-hasphrase</string>
-        <string>wheezy64b-mwaite</string>
-        <string>mark-pc1-mwaite</string>
-        <string>fc-tick</string>
-        <string>mark-pc2-mwaite</string>
-        <string>centos7-b</string>
-        <string>debian8-mwaite</string>
-        <string>centos7-c</string>
-      </values>
       <label>windows,linux</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
