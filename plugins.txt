@@ -107,6 +107,7 @@ pollscm:latest
 preSCMbuildstep:latest
 pubsub-light:latest
 rebuild:latest
+resource-disposer:latest
 run-condition:latest
 scm-api:latest
 script-security
@@ -141,5 +142,6 @@ workflow-remote-loader:latest
 workflow-scm-step:latest
 workflow-step-api:latest
 workflow-support:latest
+ws-cleanup:latest
 xshell:latest
 xunit:latest
