@@ -31,7 +31,6 @@
     <string>method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions</string>
     <string>method hudson.scm.SCM getBrowser</string>
     <string>method java.lang.Class getName</string>
-    <!-- <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string> -->
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String</string>
@@ -42,7 +41,9 @@
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean</string>
   </approvedSignatures>
-  <aclApprovedSignatures/>
+  <aclApprovedSignatures>
+    <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
+  </aclApprovedSignatures>
   <approvedClasspathEntries/>
   <pendingScripts/>
   <pendingSignatures/>
