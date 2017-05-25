@@ -22,6 +22,11 @@
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_131.zip</url>
               <subdir>jdk1.8.0_131</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>windows &amp;&amp; 32bit</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_131-x86.zip</url>
+              <subdir>jdk1.8.0_131</subdir>
+            </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
@@ -47,6 +52,11 @@
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.7.0_75.zip</url>
               <subdir>jdk1.7.0_75</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>windows &amp;&amp; 32bit</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.7.0_80-x86.zip</url>
+              <subdir>jdk1.7.0_75</subdir>
+            </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
@@ -70,6 +80,11 @@
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.6.0_45.zip</url>
+              <subdir>jdk1.6.0_45</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>windows &amp;&amp; 32bit</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.6.0_45-x86.zip</url>
               <subdir>jdk1.6.0_45</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
