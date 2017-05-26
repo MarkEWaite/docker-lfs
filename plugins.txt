@@ -145,3 +145,4 @@ workflow-support:latest
 ws-cleanup:latest
 xshell:latest
 xunit:latest
+vcvarsall:latest
