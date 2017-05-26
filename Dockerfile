@@ -8,13 +8,15 @@ RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.d
     git lfs install && \
     rm -r /var/lib/apt/lists/*
 
-ENV JENKINS_HOME /var/jenkins_home
-ENV JENKINS_SLAVE_AGENT_PORT 50000
-
 ARG user=jenkins
 ARG group=jenkins
 ARG uid=1000
 ARG gid=1000
+ARG http_port=8080
+ARG agent_port=50000
+
+ENV JENKINS_HOME /var/jenkins_home
+ENV JENKINS_SLAVE_AGENT_PORT ${agent_port}
 
 # Jenkins is run with user `jenkins`, uid = 1000
 # If you bind mount a volume from the host or a data container, 
@@ -42,10 +44,10 @@ COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groov
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.46.2}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.46.3}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=aa7f243a4c84d3d6cfb99a218950b8f7b926af7aa2570b0e1707279d464472c7
+ARG JENKINS_SHA=00424d3c851298b29376d1d09d7d3578a2bc4a03acf3914b317c47707cd5739a
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
@@ -59,10 +61,10 @@ ENV JENKINS_UC https://updates.jenkins.io
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 
 # for main web interface:
-EXPOSE 8080
+EXPOSE ${http_port}
 
 # will be used by attached slave agents:
-EXPOSE 50000
+EXPOSE ${agent_port}
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
