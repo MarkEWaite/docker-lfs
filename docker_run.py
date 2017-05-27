@@ -15,7 +15,6 @@ import shutil
 import sys
 
 import docker_build
-import jenkins_mirror
 
 jenkins_home_dir = os.path.expanduser("~/docker-jenkins-home")
 
@@ -77,11 +76,9 @@ def get_git_reference_repo_volume_map():
 #-----------------------------------------------------------------------
 
 def get_dns_server():
-    if jenkins_mirror.is_work_network():
-        return "work-dns-server-unknown"
     if is_home_network():
 	return "172.16.16.253"
-    return "work-dns-server-unknown"
+    return "8.8.8.8"
 
 #-----------------------------------------------------------------------
 
