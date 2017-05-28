@@ -78,7 +78,8 @@ It should remain after polling.  The bug is that the file is deleted by the poll
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <canRoam>true</canRoam>
+  <assignedNode>git-1.9+</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>

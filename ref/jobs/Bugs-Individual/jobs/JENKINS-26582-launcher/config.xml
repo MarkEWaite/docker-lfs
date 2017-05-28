@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Starts the [JENKINS-26582](http://debian8.markwaite.net:8080/view/bugs-pass/job/JENKINS-26582-ISE-on-git-notify/) job through a wget call with a specific SHA1</description>
+  <description>Starts the [JENKINS-26582](http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/) job through a wget call with a specific SHA1</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

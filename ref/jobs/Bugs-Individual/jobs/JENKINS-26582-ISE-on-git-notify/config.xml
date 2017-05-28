@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.7">
   <actions/>
-  <description>Started by the [JENKINS-26582-launcher](http://debian8.markwaite.net:8080/view/bugs-pass/job/JENKINS-26582-launcher/) job</description>
+  <description>Started by the [JENKINS-26582-launcher](http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/) job</description>
   <logRotator class="hudson.tasks.LogRotator">
     <daysToKeep>-1</daysToKeep>
     <numToKeep>17</numToKeep>
@@ -23,7 +23,7 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.4.4">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.5.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>

@@ -63,10 +63,8 @@ Console output for each job should contain &quot;`user.name`&quot; and &quot;`us
     <extensions>
       <hudson.plugins.git.extensions.impl.CleanCheckout/>
       <hudson.plugins.git.extensions.impl.CloneOption>
-        <shallow>true</shallow>
         <noTags>true</noTags>
         <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
-        <depth>1</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>

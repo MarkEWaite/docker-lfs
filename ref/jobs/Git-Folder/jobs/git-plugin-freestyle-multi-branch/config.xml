@@ -52,8 +52,6 @@
           <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
           <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
           <hudson.plugins.git.extensions.impl.CloneOption>
-            <shallow>false</shallow>
-            <noTags>true</noTags>
             <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
             <timeout>2</timeout>
             <depth>0</depth>
