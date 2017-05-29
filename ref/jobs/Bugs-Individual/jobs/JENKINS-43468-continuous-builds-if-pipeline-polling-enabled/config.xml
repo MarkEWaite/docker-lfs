@@ -32,7 +32,7 @@
       <extensions/>
     </scm>
     <scriptPath>Jenkinsfile</scriptPath>
-    <lightweight>true</lightweight>
+    <lightweight>false</lightweight>
   </definition>
   <quietPeriod>1</quietPeriod>
 </flow-definition>
