@@ -79,7 +79,6 @@
       <name>jdk</name>
       <values>
         <string>jdk8</string>
-        <string>jdk7</string>
       </values>
     </hudson.matrix.JDKAxis>
   </axes>
