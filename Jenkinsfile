@@ -1,10 +1,13 @@
 #!/usr/bin/env groovy
 
 properties([
-    buildDiscarder(logRotator(numToKeepStr: '7', artifactNumToKeepStr: '7')),
+    buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5')),
+    pipelineTriggers([cron('@daily')]),
 ])
 
 node('docker') {
+    deleteDir()
+
     stage('Checkout') {
         checkout([$class: 'GitSCM',
                   userRemoteConfigs: scm.userRemoteConfigs,
@@ -49,5 +52,4 @@ node('docker') {
             sh './publish.sh'
         }
     }
-
 }
