@@ -19,6 +19,7 @@ blueocean-jwt:latest
 blueocean-personalization:latest
 blueocean-pipeline-api-impl:latest
 blueocean-pipeline-editor:latest
+blueocean-pipeline-scm-api:latest
 blueocean-rest-impl:latest
 blueocean-rest:latest
 blueocean-web:latest
@@ -28,6 +29,7 @@ branch-api:latest
 build-blocker-plugin:latest
 buildresult-trigger:latest
 chaos-butler:latest
+cloudbees-bitbucket-branch-source:latest
 cloudbees-folder:latest
 cmakebuilder:latest
 conditional-buildstep:latest
