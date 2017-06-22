@@ -85,7 +85,6 @@ metrics:latest
 momentjs:latest
 monitoring:latest
 multi-branch-project-plugin:latest
-multiple-scms:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
