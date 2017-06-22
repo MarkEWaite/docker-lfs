@@ -3,7 +3,33 @@
 The multiple SCM's plugin causes a null pointer exception when configuring
 a job, even though that job does not use the multiple-scms plugin.
 
-# Mark Waite's Jenkins LTS Docker image with plugins
+Steps to duplicate the problem:
+
+1. Clone my docker repository and checkout this branch
+    $ git lfs clone https://github.com/MarkEWaite/docker-lfs JENKINS-45085
+    $ cd JENKINS-45085
+    $ git lfs fetch origin origin/explore-JENKINS-45085
+    $ git checkout -b JENKINS-45085 JENKINS-45085
+2. Build and run the docker image
+    $ docker build -t jenkins:JENKINS-45085 .
+    $ docker run -i --rm --publish 8080:8080 jenkins:JENKINS-45085
+3. Open Jenkins and navigate to "Git Client Plugin Folder" + "Git Client Branches - Jenkinsfile (GitHub)"
+4. Click the "Configure" link while watching the Docker console log, confirm NPE is reported
+
+Steps to remove the multiple-scms plugin to show it removes problem:
+
+1. Clone my docker repository and checkout this branch
+    $ git lfs clone https://github.com/MarkEWaite/docker-lfs JENKINS-45085-avoided
+    $ cd JENKINS-45085-avoided
+    $ git lfs fetch origin origin/explore-JENKINS-45085-avoided
+    $ git checkout -b JENKINS-45085-avoided origin/explore-JENKINS-45085-avoided
+2. Build and run the docker image
+    $ docker build -t jenkins:JENKINS-45085-avoided .
+    $ docker run -i --rm --publish 8080:8080 jenkins:JENKINS-45085-avoided
+3. Open Jenkins and navigate to "Git Client Plugin Folder" + "Git Client Branches - Jenkinsfile (GitHub)"
+4. Click the "Configure" link while watching the Docker console log, confirm NPE is reported
+
+# Derived from Mark Waite's Jenkins LTS Docker image with plugins
 
 The Jenkins Continuous Integration and Delivery server.
 
