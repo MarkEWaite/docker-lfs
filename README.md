@@ -1,3 +1,8 @@
+# [JENKINS-45085](https://issues.jenkins-ci.org/browse/JENKINS-45085) Multiple scms NPE configuring multi-branch pipeline job
+
+The multiple SCM's plugin causes a null pointer exception when configuring
+a job, even though that job does not use the multiple-scms plugin.
+
 # Mark Waite's Jenkins LTS Docker image with plugins
 
 The Jenkins Continuous Integration and Delivery server.
