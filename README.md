@@ -21,8 +21,8 @@ Steps to remove the multiple-scms plugin to show it removes problem:
 1. Clone my docker repository and checkout this branch
     $ git lfs clone https://github.com/MarkEWaite/docker-lfs JENKINS-45085-avoided
     $ cd JENKINS-45085-avoided
-    $ git lfs fetch origin origin/explore-JENKINS-45085-avoided
-    $ git checkout -b JENKINS-45085-avoided origin/explore-JENKINS-45085-avoided
+    $ git lfs fetch origin origin/explore-JENKINS-45085
+    $ git checkout -b JENKINS-45085-avoided JENKINS-45085-avoided
 2. Build and run the docker image
     $ docker build -t jenkins:JENKINS-45085-avoided .
     $ docker run -i --rm --publish 8080:8080 jenkins:JENKINS-45085-avoided
