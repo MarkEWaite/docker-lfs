@@ -125,7 +125,6 @@ throttle-concurrents:latest
 timestamper:latest
 token-macro:latest
 tool-labels-plugin:latest
-translation
 variant:latest
 view-job-filters:latest
 warnings:latest
