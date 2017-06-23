@@ -28,7 +28,6 @@ bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
 buildresult-trigger:latest
-chaos-butler:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-folder:latest
 cmakebuilder:latest
