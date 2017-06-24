@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.9">
   <actions/>
-  <description>Confirm that Ant, JDK 6, JDK 7, and JDK 8 auto-install on each Windows and Linux node</description>
+  <description>Confirm that Ant, JDK 7, and JDK 8 auto-install on each Windows and Linux node</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -90,7 +90,6 @@
       <values>
         <string>jdk8</string>
         <string>jdk7</string>
-        <string>jdk6</string>
       </values>
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
