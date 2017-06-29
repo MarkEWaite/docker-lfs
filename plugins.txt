@@ -55,7 +55,6 @@ github-api:latest
 github-branch-source:latest
 github-organization-folder:latest
 github:latest
-gradle:latest
 groovy-postbuild:latest
 handlebars:latest
 htmlpublisher:latest
