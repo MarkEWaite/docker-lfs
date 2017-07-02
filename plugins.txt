@@ -23,7 +23,6 @@ blueocean-pipeline-scm-api:latest
 blueocean-rest-impl:latest
 blueocean-rest:latest
 blueocean-web:latest
-blueocean:latest
 bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
