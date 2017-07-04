@@ -105,4 +105,4 @@ COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # Avoid https://issues.jenkins-ci.org/browse/JENKINS-31619
-RUN mkdir -p ~${user}/.jenkins/cache/jars
+RUN mkdir -p $JENKINS_HOME/.jenkins/cache/jars
