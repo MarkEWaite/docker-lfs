@@ -1,5 +1,25 @@
 #!/bin/bash
 
+JENKINS_USERNAME=${JENKINS_USERNAME=:-unspecified-user-name}
+JENKINS_APITOKEN=${JENKINS_APITOKEN=:-unspecified-api-token}
+
+# Scan each multi-branch pipeline (URL encode job path before passing as arg to curl
+
+scan_delay=3
+
+git grep -l -F org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read multibranch_pipeline
+do
+        url_encoded_multibranch_pipeline=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$multibranch_pipeline")
+        # echo
+        # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
+        # echo http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline?delay=0
+        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        scan_delay=$((scan_delay+5))
+done
+
+# Notify commit each git URL
+
 for url in $(git grep '<url>.*</url>' | grep  -F config.xml | grep -v JENKINS_HOSTNAME | grep -v site/jacoco/index.html | sed -e 's!.*<url>!!g' -e 's!</url>.*$!!g' -e 's!/$!!g' -e 's!.git$!!g' | sort -u | shuf); do
 	curl -s http://localhost:8080/git/notifyCommit?url=$url
 done
