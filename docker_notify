@@ -15,7 +15,7 @@ do
         # echo http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline?delay=0
         echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
         curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        scan_delay=$((scan_delay+5))
+        scan_delay=$((scan_delay+7))
 done
 
 # Notify commit each git URL
