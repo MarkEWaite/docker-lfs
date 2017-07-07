@@ -142,3 +142,6 @@ workflow-support:latest
 ws-cleanup:latest
 xshell:latest
 xunit:latest
+envinject-api:latest
+envinject.jpi:latest
+multiple-scms:latest
