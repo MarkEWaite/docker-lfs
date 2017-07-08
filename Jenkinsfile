@@ -50,7 +50,9 @@ node('docker') {
          * containers from artifacts
          */
         stage('Publish') {
-            sh './publish.sh'
+            infra.withDockerCredentials {
+                sh './publish.sh'
+            }
         }
     }
 }
