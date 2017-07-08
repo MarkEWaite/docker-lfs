@@ -143,5 +143,5 @@ ws-cleanup:latest
 xshell:latest
 xunit:latest
 envinject-api:latest
-envinject.jpi:latest
+envinject:latest
 multiple-scms:latest
