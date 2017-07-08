@@ -208,7 +208,7 @@
             <hudson.model.labels.LabelAtom>git-lfs</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[20]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[21]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
