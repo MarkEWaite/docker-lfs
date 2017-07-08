@@ -5,6 +5,7 @@
 : "${JENKINS_HOSTNAME:=localhost}"
 bash -c ". /usr/local/bin/jenkins-support; replace_constants JENKINS_HOSTNAME $JENKINS_HOSTNAME"
 bash -c ". /usr/local/bin/jenkins-support; replace_constants LOGNAME $LOGNAME"
+mkdir -p "$JENKINS_HOME/.jenkins/cache/jars"
 
 touch "${COPY_REFERENCE_FILE_LOG}" || { echo "Can not write to ${COPY_REFERENCE_FILE_LOG}. Wrong volume permissions?"; exit 1; }
 echo "--- Copying files at $(date)" >> "$COPY_REFERENCE_FILE_LOG"
