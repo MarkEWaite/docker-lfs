@@ -4,6 +4,7 @@ ant
 antisamy-markup-formatter
 async-http-client:latest
 authentication-tokens:latest
+authorize-project:latest
 bitbucket:latest
 blueocean:latest
 blueocean-autofavorite:latest
