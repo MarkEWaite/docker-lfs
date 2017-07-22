@@ -55,6 +55,8 @@ github-api:latest
 github-branch-source:latest
 github-organization-folder:latest
 github:latest
+gitea:latest
+gitlab-plugin:latest
 groovy-postbuild:latest
 handlebars:latest
 htmlpublisher:latest
