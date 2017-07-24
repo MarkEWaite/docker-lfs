@@ -81,8 +81,9 @@ ENV JENKINS_UC https://updates.jenkins.io
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 ADD ref /usr/share/jenkins/ref/
-
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
+
+ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 
 # for main web interface:
 EXPOSE ${http_port}
