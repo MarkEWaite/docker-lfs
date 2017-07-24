@@ -77,10 +77,6 @@ RUN curl -fsSL ${JENKINS_URL} -o /usr/share/jenkins/jenkins.war \
 
 ENV JENKINS_UC https://updates.jenkins.io
 
-# `/usr/share/jenkins/ref/` contains all reference configuration we want
-# to set on a fresh new installation. Use it to bundle additional plugins
-# or config file with your custom jenkins Docker image.
-ADD ref /usr/share/jenkins/ref/
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 
 ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
