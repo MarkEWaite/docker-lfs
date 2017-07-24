@@ -45,6 +45,7 @@ def update_plugins(args):
             else:
                 plugin_url = args.url + "/download/plugins/" + name + "/" + plugin_version + "/" + name + ".hpi"
             destination_file = os.path.join("ref", "plugins", name + ".jpi")
+            # Should thread this per https://stackoverflow.com/questions/16181121/a-very-simple-multithreading-parallel-url-fetching-without-queue
             print("Downloading " + name + ":" + plugin_version)
             plugin_request = urllib2.Request(plugin_url)
             tmp_file = destination_file + ".tmp"
