@@ -43,7 +43,7 @@
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean</string>
   </approvedSignatures>
   <aclApprovedSignatures>
-    <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
+    <!-- <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string> -->
   </aclApprovedSignatures>
   <approvedClasspathEntries/>
   <pendingScripts/>
