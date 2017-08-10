@@ -1,8 +1,0 @@
-This is a placeholder file so that the workspace directory is created.
-
-Trying to resolve the warning:
-
-  WARNING: JENKINS-34564 path sanitization ineffective when using legacy
-  Workspace Root Directory ‘${ITEM_ROOTDIR}/workspace’; switch
-  to ${JENKINS_HOME}/workspace/${ITEM_FULLNAME} as in JENKINS-8446 /
-  JENKINS-21942
