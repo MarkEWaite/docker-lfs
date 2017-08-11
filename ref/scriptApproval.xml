@@ -36,13 +36,13 @@
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getMetaClass java.lang.Object</string>
-    <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getProperties java.lang.Object</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods sort java.util.Collection</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean</string>
   </approvedSignatures>
   <aclApprovedSignatures>
+    <!-- <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getProperties java.lang.Object</string> -->
     <!-- <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string> -->
   </aclApprovedSignatures>
   <approvedClasspathEntries/>
