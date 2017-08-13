@@ -101,6 +101,7 @@
       <targets>-P enable-jacoco clean install jacoco:report</targets>
       <mavenName>mvn</mavenName>
       <properties>maven.test.failure.ignore=true
+surefire.rerunFailingTestsCount=4
 maven.findbugs.failure.strict=false</properties>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
