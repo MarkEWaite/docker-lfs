@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.1.2">
+  <actions>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.1.7">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+  </actions>
+  <description></description>
+  <displayName>Hello World Plugin Folder</displayName>
+  <properties>
+    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.8">
+      <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+          <name>infra</name>
+          <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
+            <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.5.2-SNAPSHOT">
+              <id>6a802bfb-735f-4bdf-8446-c2c989fe77f9</id>
+              <remote>https://github.com/jenkins-infra/pipeline-library.git</remote>
+              <credentialsId></credentialsId>
+              <traits>
+                <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+                <jenkins.plugins.git.traits.LocalBranchTrait>
+                  <extension class="hudson.plugins.git.extensions.impl.LocalBranch">
+                    <localBranch>**</localBranch>
+                  </extension>
+                </jenkins.plugins.git.traits.LocalBranchTrait>
+                <jenkins.plugins.git.traits.GitBrowserSCMSourceTrait>
+                  <browser class="hudson.plugins.git.browser.GithubWeb">
+                    <url>https://github.com/MarkEWaite/hello-world-plugin</url>
+                  </browser>
+                </jenkins.plugins.git.traits.GitBrowserSCMSourceTrait>
+                <jenkins.plugins.git.traits.PruneStaleBranchTrait>
+                  <extension class="hudson.plugins.git.extensions.impl.PruneStaleBranch"/>
+                </jenkins.plugins.git.traits.PruneStaleBranchTrait>
+                <jenkins.plugins.git.traits.AuthorInChangelogTrait>
+                  <extension class="hudson.plugins.git.extensions.impl.AuthorInChangelog"/>
+                </jenkins.plugins.git.traits.AuthorInChangelogTrait>
+              </traits>
+            </scm>
+          </retriever>
+          <defaultVersion>master</defaultVersion>
+          <implicit>true</implicit>
+          <allowVersionOverride>true</allowVersionOverride>
+        </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+      </libraries>
+    </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.9">
+      <dockerLabel></dockerLabel>
+      <registry plugin="docker-commons@1.8"/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
+  </properties>
+  <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">
+    <views>
+      <hudson.model.AllView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>All</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+      </hudson.model.AllView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Executing</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        </jobNames>
+        <jobFilters>
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+            <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+            <neverBuilt>false</neverBuilt>
+            <building>true</building>
+            <inBuildQueue>false</inBuildQueue>
+          </hudson.views.BuildStatusFilter>
+        </jobFilters>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.0"/>
+        </columns>
+        <recurse>true</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Failed</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
+        </jobNames>
+        <jobFilters>
+          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+            <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+            <unstable>false</unstable>
+            <failed>true</failed>
+            <aborted>true</aborted>
+            <disabled>false</disabled>
+            <stable>false</stable>
+          </hudson.views.JobStatusFilter>
+        </jobFilters>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.0"/>
+        </columns>
+        <recurse>true</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Unstable</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
+        </jobNames>
+        <jobFilters>
+          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+            <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+            <unstable>true</unstable>
+            <failed>false</failed>
+            <aborted>false</aborted>
+            <disabled>false</disabled>
+            <stable>false</stable>
+          </hudson.views.JobStatusFilter>
+        </jobFilters>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.0"/>
+        </columns>
+        <recurse>true</recurse>
+      </hudson.model.ListView>
+    </views>
+    <primaryView>All</primaryView>
+    <tabBar class="hudson.views.DefaultViewsTabBar"/>
+  </folderViews>
+  <healthMetrics>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+      <nonRecursive>false</nonRecursive>
+    </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+  </healthMetrics>
+  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.7">
+    <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
+  </icon>
+</com.cloudbees.hudson.plugins.folder.Folder>
