@@ -89,6 +89,9 @@ def checkout_branch(target_branch):
     subprocess.check_call(["git", "clean", "-xffd"])
     subprocess.check_call(["git", "reset", "--hard", "HEAD"])
     subprocess.check_call(["git", "checkout", target_branch])
+    # Assumes lts-with-plugins contains all large binaries
+    if target_branch == "lts-with-plugins":
+        subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
     subprocess.check_call(["git", "pull"])
 
 #-----------------------------------------------------------------------
