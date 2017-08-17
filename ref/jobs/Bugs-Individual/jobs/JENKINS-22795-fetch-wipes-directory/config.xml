@@ -52,7 +52,15 @@ That erase is even without wipe workspace, or any clean setting</description>
       <url>https://github.com/MarkEWaite/jenkins-bugs</url>
     </browser>
     <submoduleCfg class="list"/>
-    <extensions/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <depth>0</depth>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+    </extensions>
   </scm>
   <assignedNode>!windows</assignedNode>
   <canRoam>false</canRoam>
@@ -85,9 +93,12 @@ for ((count=$BUILD_ID; count&gt;=1; count--)); do
     else
         echo FAIL $count
         echo
-        echo Test failed, missing expected text $expected in build-tags.txt
-        echo Text in build-tags.txt is:
-        cat build-tags.txt exit 1
+        echo Test failed, did not find $expected in build-tags.txt
+        echo
+        echo Content of build-tags.txt is:
+        cat build-tags.txt
+        echo
+        exit 1
     fi
 done
 </command>
