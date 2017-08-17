@@ -79,9 +79,7 @@ That erase is even without wipe workspace, or any clean setting</description>
     <hudson.tasks.Shell>
       <command>#!/bin/bash
 
-echo $BUILD_TAG &gt;&gt; build-tags.txt
-
-# Check that a line exists in that file for each build that has run
+# Check that a line exists in file created in pre-build SCM step
 echo
 for ((count=$BUILD_ID; count&gt;=1; count--)); do
     echo test $count
@@ -105,5 +103,17 @@ done
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper plugin="preSCMbuildstep@0.3">
+      <buildSteps>
+        <hudson.tasks.Shell>
+          <command>echo
+echo Build step before SCM
+echo $BUILD_TAG &gt;&gt; build-tags.txt
+echo</command>
+        </hudson.tasks.Shell>
+      </buildSteps>
+      <failOnError>false</failOnError>
+    </org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper>
+  </buildWrappers>
 </project>
