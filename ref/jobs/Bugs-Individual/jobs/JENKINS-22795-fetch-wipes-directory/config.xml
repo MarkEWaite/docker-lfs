@@ -71,25 +71,23 @@ That erase is even without wipe workspace, or any clean setting</description>
     <hudson.tasks.Shell>
       <command>#!/bin/bash
 
-echo
-env | sort
-echo
-
 echo $BUILD_TAG &gt;&gt; build-tags.txt
 
+# Check that a line exists in that file for each build that has run
 echo
 for ((count=$BUILD_ID; count&gt;=1; count--)); do
     echo test $count
-    if grep -q &quot;$JOB_BASE_NAME-$count\$&quot; build-tags.txt
+    expected=$JOB_BASE_NAME-$count
+    if grep -q &quot;$expected\$&quot; build-tags.txt
     then
         echo pass $count
         echo
     else
         echo FAIL $count
         echo
-        echo Content of build-tags.txt is:
-        cat build-tags.txt
-        exit 1
+        echo Test failed, missing expected text $expected in build-tags.txt
+        echo Text in build-tags.txt is:
+        cat build-tags.txt exit 1
     fi
 done
 </command>
