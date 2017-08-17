@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>[JENKINS-22795](https://issues.jenkins-ci.org/browse/JENKINS-22795) reports the git plugin erases the workspace&#xd;
-&#xd;
-That erase is even without wipe workspace, or any clean setting</description>
+  <description>[JENKINS-22795](https://issues.jenkins-ci.org/browse/JENKINS-22795) reports the git plugin erases the workspace
+
+That erase is even without wipe workspace, or any clean setting.
+
+The erase happens on *first clone* into the workspace.
+This job shows the problem by creating a file in a pre-SCM step, then asserting the file exists after checkout.
+Job is expected to fail until an option is added to the plugin to not clean on first checkout.
+</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
