@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-slim
 
 RUN apt-get clean && apt-get update && apt-get install -y git curl ca-certificates && rm -rf /var/lib/apt/lists/*
 
