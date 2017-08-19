@@ -4,7 +4,7 @@ RUN apt-get clean && apt-get update && apt-get install -y git curl ca-certificat
 
 # Install git lfs extension
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git-lfs && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated --no-install-recommends git-lfs && \
     git lfs install && \
     rm -r /var/lib/apt/lists/*
 
