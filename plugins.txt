@@ -8,6 +8,7 @@ authorize-project:latest
 bitbucket:latest
 blueocean:latest
 blueocean-autofavorite:latest
+blueocean-bitbucket-pipeline:latest
 blueocean-commons:latest
 blueocean-config:latest
 blueocean-dashboard:latest
