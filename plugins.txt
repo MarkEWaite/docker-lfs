@@ -30,6 +30,7 @@ build-blocker-plugin:latest
 buildresult-trigger:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-folder:latest
+cloudbees-jenkins-advisor:latest
 cmakebuilder:latest
 conditional-buildstep:latest
 config-file-provider:latest
