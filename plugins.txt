@@ -29,6 +29,7 @@ bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
 buildresult-trigger:latest
+checkstyle:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-folder:latest
 cloudbees-jenkins-advisor:latest
