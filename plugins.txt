@@ -1,5 +1,6 @@
 ace-editor:latest
 analysis-core:latest
+analysis-collector:latest
 ant
 antisamy-markup-formatter
 async-http-client:latest
@@ -107,6 +108,7 @@ pipeline-stage-tags-metadata:latest
 pipeline-stage-view:latest
 plain-credentials:latest
 platformlabeler:latest
+pmd:latest
 pollscm:latest
 preSCMbuildstep:latest
 pubsub-light:latest
