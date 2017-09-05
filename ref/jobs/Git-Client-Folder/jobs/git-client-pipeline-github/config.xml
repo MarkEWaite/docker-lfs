@@ -39,7 +39,7 @@
   <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.0.4">
     <pruneDeadBranches>true</pruneDeadBranches>
     <daysToKeep>0</daysToKeep>
-    <numToKeep>15</numToKeep>
+    <numToKeep>1</numToKeep>
   </orphanedItemStrategy>
   <triggers/>
   <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.0.10">
