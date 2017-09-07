@@ -4,5 +4,4 @@
   <globalConfigName>Jenkins Docker User</globalConfigName>
   <globalConfigEmail>LOGNAME@JENKINS_HOSTNAME</globalConfigEmail>
   <createAccountBasedOnEmail>false</createAccountBasedOnEmail>
-  <useCaches>true</useCaches>
 </hudson.plugins.git.GitSCM_-DescriptorImpl>
