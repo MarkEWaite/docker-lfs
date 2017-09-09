@@ -285,6 +285,10 @@
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>50000</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP-connect</string>
+    <string>JNLP2-connect</string>
+  </disabledAgentProtocols>
   <label>git-2.1 git-lfs highmem</label>
   <nodeProperties/>
   <globalNodeProperties/>
