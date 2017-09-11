@@ -126,6 +126,7 @@ structs:latest
 subversion
 support-core:latest
 swarm:latest
+tasks:latest
 text-finder:latest
 throttle-concurrents:latest
 timestamper:latest
