@@ -96,6 +96,7 @@ pipeline-build-step:latest
 pipeline-github-lib:latest
 pipeline-graph-analysis:latest
 pipeline-input-step:latest
+pipeline-maven:latest
 pipeline-milestone-step:latest
 pipeline-model-api:latest
 pipeline-model-declarative-agent:latest
