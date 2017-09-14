@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.9">
+<flow-definition plugin="workflow-job@2.12.2">
   <actions/>
   <description>[JENKINS-41354](https://issues.jenkins-ci.org/browse/JENKINS-41354) pipeline does not have git env variables</description>
   <keepDependencies>false</keepDependencies>
@@ -10,7 +10,7 @@
       <scanQueueFor>DISABLED</scanQueueFor>
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.28.0">
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -32,10 +32,21 @@
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.24">
-    <script>node {
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.40">
+    <script>def gitVars = null
+
+node {
    stage(&apos;Prep&apos;) {
-      git &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;
+       gitVars = checkout([$class: &apos;GitSCM&apos;,
+              branches: [[name: &apos;master&apos;]],
+              extensions:
+                [[$class: &apos;AuthorInChangelog&apos;],
+                 [$class: &apos;LocalBranch&apos;, localBranch: &apos;**&apos;],
+                 [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;],
+                 [$class: &apos;CleanBeforeCheckout&apos;]],
+              userRemoteConfigs:
+                [[refspec: &apos;+refs/heads/master:refs/remotes/origin/master&apos;,
+                  url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]]])
    }
    stage(&apos;Build&apos;) {
       if (isUnix()) {
@@ -43,6 +54,11 @@
       } else {
          bat(&quot;set&quot;)
       }
+      def output = &quot;*** Map returned from checkout ***:\n&quot;
+      for (gitEnv in gitVars) {
+          output = output + &quot;${gitEnv.key}=${gitEnv.value}\n&quot;
+      }
+      echo output
    }
    stage(&apos;Verify&apos;) {
       // Log should contain GIT_COMMIT=
@@ -56,4 +72,5 @@
     <sandbox>true</sandbox>
   </definition>
   <triggers/>
+  <disabled>false</disabled>
 </flow-definition>
