@@ -82,7 +82,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=5678):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -94,8 +94,12 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(jnlp_port) + ":50000",
                        "--publish", str(ssh_port)  + ":18022",
-                       "--publish", str(debug_port)  + ":5678",
                      ]
+    if debug_port != None:
+        docker_command.extend(["--publish", str(ssh_port)  + ":5678"])
+        java_debug_opts="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5678 "
+    else:
+        java_debug_opts=""
     if jenkins_home_volume_map != None and http_port == 8080:
         docker_command.extend(["--volume", jenkins_home_volume_map])
     if git_reference_repo_volume_map != None:
@@ -105,7 +109,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     docker_command.extend([
-                       "--env", 'JAVA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5678 -Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
+                       "--env", 'JAVA_OPTS="' + java_debug_opts + '"-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
                        # "--env", 'JENKINS_OPTS=',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
@@ -139,7 +143,7 @@ Run a docker image.   Use -h for help."""
     parser.add_option("-p", "--port", action="store", dest='http_port', default=8080, type="int", help="http port")
     parser.add_option("-j", "--jnlp", action="store", dest='jnlp_port', default=50000, type="int", help="jnlp port")
     parser.add_option("-s", "--ssh",  action="store", dest='ssh_port',  default=18022,  type="int", help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port',  default=5678,  type="int", help="debug port")
+    parser.add_option("-d", "--debug",  action="store", dest='debug_port',  default=None,  type="int", help="debug port")
 
     options, arg_hosts = parser.parse_args()
 
