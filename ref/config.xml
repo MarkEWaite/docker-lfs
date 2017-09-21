@@ -71,8 +71,8 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_141.zip</url>
-              <subdir>jdk1.8.0_141</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_144.zip</url>
+              <subdir>jdk1.8.0_144</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 32bit</label>
