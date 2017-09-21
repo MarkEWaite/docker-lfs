@@ -61,13 +61,13 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u141-linux-x64.tar.gz</url>
-              <subdir>jdk1.8.0_141</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u144-linux-x64.tar.gz</url>
+              <subdir>jdk1.8.0_144</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u141-linux-i586.tar.gz</url>
-              <subdir>jdk1.8.0_141</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u144-linux-i586.tar.gz</url>
+              <subdir>jdk1.8.0_144</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
