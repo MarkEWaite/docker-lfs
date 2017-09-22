@@ -109,7 +109,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     docker_command.extend([
-                       "--env", 'JAVA_OPTS="' + java_debug_opts + '"-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
+                       "--env", 'JAVA_OPTS="' + java_debug_opts + '-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC"',
                        # "--env", 'JENKINS_OPTS=',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
