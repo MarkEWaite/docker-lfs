@@ -12,7 +12,7 @@ SUT_IMAGE=$(sut_image)
 }
 
 @test "plugins are installed with plugins.sh" {
-  run docker build -t $SUT_IMAGE-plugins $BATS_TEST_DIRNAME/plugins
+  run docker_build_child $SUT_IMAGE-plugins $BATS_TEST_DIRNAME/plugins
   assert_success
   # replace DOS line endings \r\n
   run bash -c "docker run --rm $SUT_IMAGE-plugins ls --color=never -1 /var/jenkins_home/plugins | tr -d '\r'"
@@ -24,7 +24,7 @@ SUT_IMAGE=$(sut_image)
 }
 
 @test "plugins are installed with install-plugins.sh" {
-  run docker build -t $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
+  run docker_build_child $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
   assert_success
   skip "This test incorrectly forbids my plugin additions"
   refute_line --partial 'Skipping already bundled dependency'
@@ -54,7 +54,7 @@ SUT_IMAGE=$(sut_image)
 }
 
 @test "plugins are installed with install-plugins.sh from a plugins file" {
-  run docker build -t $SUT_IMAGE-install-plugins-pluginsfile $BATS_TEST_DIRNAME/install-plugins/pluginsfile
+  run docker_build_child $SUT_IMAGE-install-plugins-pluginsfile $BATS_TEST_DIRNAME/install-plugins/pluginsfile
   assert_success
   skip "This test incorrectly forbids my plugin additions"
   refute_line --partial 'Skipping already bundled dependency'
@@ -84,7 +84,7 @@ SUT_IMAGE=$(sut_image)
 }
 
 @test "plugins are installed with install-plugins.sh even when already exist" {
-  run docker build -t $SUT_IMAGE-install-plugins-update --no-cache $BATS_TEST_DIRNAME/install-plugins/update
+  run docker_build_child $SUT_IMAGE-install-plugins-update $BATS_TEST_DIRNAME/install-plugins/update --no-cache
   assert_success
   assert_line "Using provided plugin: ant"
   refute_line --partial 'Skipping already bundled dependency'
@@ -96,7 +96,7 @@ SUT_IMAGE=$(sut_image)
 
 @test "plugins are getting upgraded but not downgraded" {
   # Initial execution
-  run docker build -t $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
+  run docker_build_child $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
   assert_success
   local work; work="$BATS_TEST_DIRNAME/upgrade-plugins/work-${SUT_IMAGE}"
   mkdir -p $work
@@ -109,7 +109,7 @@ SUT_IMAGE=$(sut_image)
   assert_line 'Plugin-Version: 1.3'
 
   # Upgrade to new image with different plugins
-  run docker build -t $SUT_IMAGE-upgrade-plugins $BATS_TEST_DIRNAME/upgrade-plugins
+  run docker_build_child $SUT_IMAGE-upgrade-plugins $BATS_TEST_DIRNAME/upgrade-plugins
   assert_success
   # Images contains maven-plugin 2.13 and ant-plugin 1.2
   run bash -c "docker run -u $UID -v $work:/var/jenkins_home --rm $SUT_IMAGE-upgrade-plugins true"
@@ -128,7 +128,7 @@ SUT_IMAGE=$(sut_image)
 }
 
 @test "do not upgrade if plugin has been manually updated" {
-  run docker build -t $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
+  run docker_build_child $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
   assert_success
   local work; work="$BATS_TEST_DIRNAME/upgrade-plugins/work-${SUT_IMAGE}"
   mkdir -p $work
@@ -137,7 +137,7 @@ SUT_IMAGE=$(sut_image)
   assert_success
   run unzip_manifest maven-plugin.jpi $work
   assert_line 'Plugin-Version: 2.12.1'
-  run docker build -t $SUT_IMAGE-upgrade-plugins $BATS_TEST_DIRNAME/upgrade-plugins
+  run docker_build_child $SUT_IMAGE-upgrade-plugins $BATS_TEST_DIRNAME/upgrade-plugins
   assert_success
   # Images contains maven-plugin 2.13 and ant-plugin 1.2
   run bash -c "docker run -u $UID -v $work:/var/jenkins_home --rm $SUT_IMAGE-upgrade-plugins true"
