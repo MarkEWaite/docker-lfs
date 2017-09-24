@@ -41,6 +41,7 @@
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
     </extensions>
   </scm>
+  <jdk>jdk8</jdk>
   <quietPeriod>0</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
