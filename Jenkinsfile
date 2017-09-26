@@ -46,7 +46,7 @@ node('docker') {
             """
         }
 
-        def labels = ['debian', 'alpine']
+        def labels = ['debian', 'slim', 'alpine']
         def builders = [:]
         for (x in labels) {
             def label = x
@@ -70,6 +70,7 @@ node('docker') {
             infra.withDockerCredentials {
                 sh './publish.sh'
                 sh './publish.sh --variant alpine'
+                sh './publish.sh --variant slim'
             }
         }
     }
