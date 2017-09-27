@@ -71,6 +71,7 @@ jackson2-api:latest
 jacoco:latest
 javadoc
 jira:latest
+jira-steps:latest
 jquery-detached:latest
 jquery-ui:latest
 jquery:latest
