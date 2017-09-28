@@ -3,6 +3,7 @@ analysis-core:latest
 analysis-collector:latest
 ant
 antisamy-markup-formatter
+apache-httpcomponents-client-4-api:latest
 async-http-client:latest
 authentication-tokens:latest
 authorize-project:latest
@@ -75,6 +76,7 @@ jira-steps:latest
 jquery-detached:latest
 jquery-ui:latest
 jquery:latest
+jsch:latest
 junit
 label-verifier:latest
 ldap
