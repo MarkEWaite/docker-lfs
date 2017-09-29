@@ -105,6 +105,7 @@ for ((count=$BUILD_ID; count&gt;=1; count--)); do
     fi
 done
 </command>
+      <unstableReturn>1</unstableReturn>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
