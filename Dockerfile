@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk
+LABEL maintainer "Mark Waite <mark.earl.waite@gmail.com>"
 
 RUN apt-get clean && apt-get update && apt-get install -y git curl ca-certificates && rm -rf /var/lib/apt/lists/*
 
