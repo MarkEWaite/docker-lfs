@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-slim
+LABEL maintainer "Mark Waite <mark.earl.waite@gmail.com>"
 
 RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 

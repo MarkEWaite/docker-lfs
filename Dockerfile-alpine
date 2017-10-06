@@ -1,5 +1,6 @@
 # DO NOT UPGRADE alpine until https://github.com/jenkinsci/docker/issues/508 is fixed
 FROM openjdk:8u121-jdk-alpine
+LABEL maintainer "Mark Waite <mark.earl.waite@gmail.com>"
 
 RUN apk add --no-cache git openssh-client curl unzip bash ttf-dejavu coreutils
 
