@@ -10,4 +10,4 @@
 	wget http://localhost:8080/job/Maintenance/job/record-changes/ws/repo.bundle && \
 	mv repo.bundle .. && \
 	git fetch ../repo.bundle && \
-	git checkout --force FETCH_HEAD 
+	git checkout --force FETCH_HEAD
