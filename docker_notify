@@ -12,9 +12,9 @@ do
         url_encoded_multibranch_pipeline=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$multibranch_pipeline")
         # echo
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
-        # echo http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline?delay=0
-        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://mark-pc2.markwaite.net:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
+        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
         scan_delay=$((scan_delay+7))
 done
 
