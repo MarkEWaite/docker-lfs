@@ -39,6 +39,7 @@ cmakebuilder:latest
 conditional-buildstep:latest
 config-file-provider:latest
 configurationslicing:latest
+copyartifact:latest
 credentials
 credentials-binding:latest
 cvs
