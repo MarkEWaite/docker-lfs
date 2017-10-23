@@ -57,6 +57,8 @@ def get_predecessor_branch(current_branch, all_branches):
     last = "upstream/" + current_branch
     if current_branch == "lts":
         last = "upstream/master"
+    if current_branch == "cjt":
+        last = "upstream/master"
     for branch in all_branches:
         if branch == current_branch:
 	    return last
