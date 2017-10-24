@@ -58,7 +58,7 @@ def get_predecessor_branch(current_branch, all_branches):
     if current_branch == "lts":
         last = "upstream/master"
     if current_branch == "cjt":
-        last = "upstream/master"
+        last = "cjt"
     for branch in all_branches:
         if branch == current_branch:
 	    return last
@@ -91,9 +91,15 @@ def checkout_branch(target_branch):
     subprocess.check_call(["git", "clean", "-xffd"])
     subprocess.check_call(["git", "reset", "--hard", "HEAD"])
     subprocess.check_call(["git", "checkout", target_branch])
-    # Assumes lts-with-plugins contains all large binaries
+    # Assumes lts-with-plugins contains most large binaries
     if target_branch == "lts-with-plugins":
         subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
+    # Assumes cjt-with-plugins contains some large binaries
+    if target_branch == "cjt-with-plugins":
+        subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
+    # Assumes cjt-with-plugins-add-credentials contains some large binaries
+    if target_branch == "cjt-with-plugins-add-credentials":
+        subprocess.check_call(["git", "lfs", "fetch", "private", "private/" + target_branch])
     subprocess.check_call(["git", "pull"])
 
 #-----------------------------------------------------------------------
