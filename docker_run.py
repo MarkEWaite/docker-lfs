@@ -69,7 +69,7 @@ def get_jenkins_home_volume_map():
 #-----------------------------------------------------------------------
 
 def get_git_reference_repo_volume_map():
-    lhs = os.path.expanduser("/var/lib/git/mwaite")
+    lhs = os.path.expanduser("~/git/bare/")
     rhs = os.path.expanduser("/var/lib/git/mwaite")
     return lhs + ":" + rhs
 
