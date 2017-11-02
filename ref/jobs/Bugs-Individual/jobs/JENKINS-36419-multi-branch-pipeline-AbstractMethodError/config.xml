@@ -4,20 +4,13 @@
   <description>[JENKINS-36419](https://issues.jenkins-ci.org/browse/JENKINS-36419) multibranch pipeline cannot index after git plugin 2.5.1 upgrade</description>
   <displayName>JENKINS-36419 multi-branch pipeline AbstractMethodError</displayName>
   <properties/>
-  <views>
-    <hudson.model.AllView>
-      <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../../.."/>
-      <name>All</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-    </hudson.model.AllView>
-  </views>
-  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.15">
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </folderViews>
   <healthMetrics>
     <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@5.12"/>
   </healthMetrics>
-  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.5.1">
+  <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.0.15">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </icon>
   <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@5.12">
@@ -26,10 +19,11 @@
     <numToKeep>0</numToKeep>
   </orphanedItemStrategy>
   <triggers/>
-  <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@1.10">
+  <disabled>false</disabled>
+  <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.0.15">
     <data>
       <jenkins.branch.BranchSource>
-        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@2.5.3">
+        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@3.6.3">
           <id>6742324b-391e-4e67-b2b8-d64c09b4b229</id>
           <remote>https://github.com/MarkEWaite/jenkins-bugs</remote>
           <credentialsId>invalid-user-and-password</credentialsId>
