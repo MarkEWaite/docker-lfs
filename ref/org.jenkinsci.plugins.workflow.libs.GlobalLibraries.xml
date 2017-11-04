@@ -4,7 +4,7 @@
     <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       <name>globalPipelineLibraryMarkEWaiteModern</name>
       <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-        <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.6.4-SNAPSHOT">
+        <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.6.3">
           <id>c56b8580-a687-4e76-bd15-4f95ce68875c</id>
           <remote>https://github.com/MarkEWaite/jenkins-pipeline-utils</remote>
           <traits>
