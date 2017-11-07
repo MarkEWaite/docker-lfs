@@ -3,7 +3,7 @@
 properties([
     buildDiscarder(logRotator(numToKeepStr: '50', artifactNumToKeepStr: '5')),
     // Don't need to trigger every 6 hours in lts and downstream use cases
-    # pipelineTriggers([cron('H/6 * * * *')]),
+    // pipelineTriggers([cron('H/6 * * * *')]),
 ])
 
 node('docker') {
