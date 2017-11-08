@@ -54,7 +54,8 @@
             <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
               <strategyId>1</strategyId>
             </org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
-            <jenkins.plugins.git.traits.LocalBranchTrait plugin="git@3.6.4-SNAPSHOT">
+            <org.jenkinsci.plugins.github__branch__source.TagDiscoveryTrait/>
+            <jenkins.plugins.git.traits.LocalBranchTrait plugin="git@3.6.4">
               <extension class="hudson.plugins.git.extensions.impl.LocalBranch">
                 <localBranch>**</localBranch>
               </extension>
