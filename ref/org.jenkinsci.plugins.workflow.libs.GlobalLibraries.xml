@@ -4,11 +4,12 @@
     <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       <name>globalPipelineLibraryMarkEWaiteModern</name>
       <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-        <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.6.3">
+        <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@3.6.4">
           <id>c56b8580-a687-4e76-bd15-4f95ce68875c</id>
           <remote>https://github.com/MarkEWaite/jenkins-pipeline-utils</remote>
           <traits>
             <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+            <jenkins.plugins.git.traits.TagDiscoveryTrait/>
           </traits>
         </scm>
       </retriever>
@@ -20,7 +21,7 @@
     <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       <name>globalPipelineLibraryMarkEWaite</name>
       <retriever class="org.jenkinsci.plugins.workflow.libs.SCMRetriever">
-        <scm class="hudson.plugins.git.GitSCM" plugin="git@3.6.3">
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@3.6.4">
           <configVersion>2</configVersion>
           <userRemoteConfigs>
             <hudson.plugins.git.UserRemoteConfig>
@@ -46,7 +47,7 @@
     <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       <name>globalPipelineLibraryMarkEWaiteModernGitHub</name>
       <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-        <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.2.5">
+        <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.3.0">
           <id>cfd6a3c0-e2d4-4a4d-b7a7-4f63acb357a6</id>
           <repoOwner>MarkEWaite</repoOwner>
           <repository>jenkins-pipeline-utils</repository>
