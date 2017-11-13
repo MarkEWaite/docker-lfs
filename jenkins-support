@@ -125,16 +125,3 @@ copy_reference_file() {
         fi
     fi
 }
-
-# Replace constants in reference configuration files with actual values
-replace_constants() {
-	local variable; variable=$1
-	local value; value=$2
-	echo Replacing $variable with $value
-	tmpdir=$(mktemp -d)
-	for file in $(grep -r -l $variable /usr/share/jenkins/ref/ | grep -F .xml); do
-		base=$(basename $file)
-		sed "s/$variable/$value/g" < $file > $tmpdir/$base && mv $tmpdir/$base $file
-	done
-	rm -rf $tmpdir
-}
