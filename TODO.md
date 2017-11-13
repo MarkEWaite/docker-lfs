@@ -19,9 +19,3 @@
 ** username/password
 ** public key/private key
 ** secret text
-
-## CloudBees Jenkins Team (cjt)
-
-* Add a maintained branch for CloudBees Jenkins Team (CJT)
-* Script plugin updates to the branch
-* Script merges from other branches
