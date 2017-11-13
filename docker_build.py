@@ -88,6 +88,8 @@ def replace_text_recursively(find, replace, include_pattern):
 #-----------------------------------------------------------------------
 
 def replace_constants_in_ref():
+    if not os.path.isdir("ref"):
+        return
     replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser() }
     for find in replacements:
         replace_text_recursively(find, replacements[find], "*.xml")
@@ -95,6 +97,8 @@ def replace_constants_in_ref():
 #-----------------------------------------------------------------------
 
 def undo_replace_constants_in_ref():
+    if not os.path.isdir("ref"):
+        return
     command = [ "git", "checkout", "--", "ref" ]
     subprocess.check_call(command)
 
