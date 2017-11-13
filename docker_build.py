@@ -1,8 +1,11 @@
 #! /usr/bin/python
 
+import fnmatch
+import getpass
 import optparse
 import os
 import re
+import socket
 import subprocess
 import sys
 
@@ -40,16 +43,70 @@ def compute_tag(branch_name):
 
 #-----------------------------------------------------------------------
 
+def is_home_network():
+    if "hp-ux" in sys.platform:
+        return False # No HP-UX on my home networks
+    from socket import socket, SOCK_DGRAM, AF_INET
+    s = socket(AF_INET, SOCK_DGRAM)
+    s.settimeout(1.0)
+    try:
+        s.connect(("google.com", 0))
+    except:
+        return True
+    return s.getsockname()[0].startswith("172")
+
+#-----------------------------------------------------------------------
+
+def get_fqdn():
+    fqdn = socket.getfqdn()
+    if not "." in fqdn:
+        if is_home_network():
+	    fqdn = fqdn + ".markwaite.net"
+        else:
+	    fqdn = fqdn + ".example.com"
+    return fqdn
+
+#-----------------------------------------------------------------------
+
+# Fully qualified domain name of the host running this script
+fqdn = get_fqdn()
+
+#-----------------------------------------------------------------------
+
+def replace_text_recursively(find, replace, include_pattern):
+    print("Replacing '" + find + "' with '" + replace + "', in files matching '" + include_pattern + "'")
+    # Thanks to https://stackoverflow.com/questions/4205854/python-way-to-recursively-find-and-replace-string-in-text-files
+    for path, dirs, files in os.walk(os.path.abspath("ref")):
+        for filename in fnmatch.filter(files, include_pattern):
+            filepath = os.path.join(path, filename)
+            with open(filepath) as f:
+                s = f.read()
+            s = s.replace(find, replace)
+            with open(filepath, "w") as f:
+                f.write(s)
+
+#-----------------------------------------------------------------------
+
+def replace_constants_in_ref():
+    replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser() }
+    for find in replacements:
+        replace_text_recursively(find, replacements[find], "*.xml")
+
+#-----------------------------------------------------------------------
+
+def undo_replace_constants_in_ref():
+    command = [ "git", "checkout", "--", "ref" ]
+    subprocess.check_call(command)
+
+#-----------------------------------------------------------------------
+
 def build_one_image(branch_name):
+    replace_constants_in_ref()
     tag = compute_tag(branch_name)
-    args = [ "docker",
-             "build",
-             "-t",
-             tag,
-             ".",
-           ]
     print("Building " + tag)
-    subprocess.check_call(args)
+    command = [ "docker", "build", "-t", tag, ".", ]
+    subprocess.check_call(command)
+    undo_replace_constants_in_ref()
 
 #-----------------------------------------------------------------------
 
@@ -70,36 +127,29 @@ def get_predecessor_branch(current_branch, all_branches):
 
 def merge_predecessor_branch(current_branch, all_branches):
     predecessor_branch = get_predecessor_branch(current_branch, all_branches)
-    args = [ "git",
-             "merge",
-             "--no-edit",
-	     predecessor_branch
-           ]
+    command = [ "git", "merge", "--no-edit", predecessor_branch ]
     print("Merging from " + predecessor_branch + " to " + current_branch)
-    subprocess.check_call(args)
+    subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
 
 def push_current_branch():
-    args = [ "git", "push" ]
+    command = [ "git", "push" ]
     print("Pushing current branch")
-    subprocess.check_call(args)
+    subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
 
 def checkout_branch(target_branch):
     subprocess.check_call(["git", "clean", "-xffd"])
     subprocess.check_call(["git", "reset", "--hard", "HEAD"])
-    subprocess.check_call(["git", "checkout", target_branch])
-    # Assumes lts-with-plugins contains most large binaries
-    if target_branch == "lts-with-plugins":
+    # lts-with-plugins and cjt-with-plugins contain large binaries
+    if target_branch in ["lts-with-plugins", "cjt-with-plugins"]:
         subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
-    # Assumes cjt-with-plugins contains some large binaries
-    if target_branch == "cjt-with-plugins":
-        subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
-    # Assumes cjt-with-plugins-add-credentials contains some large binaries
+    # cjt-with-plugins-add-credentials contains some large binaries
     if target_branch == "cjt-with-plugins-add-credentials":
         subprocess.check_call(["git", "lfs", "fetch", "private", "private/" + target_branch])
+    subprocess.check_call(["git", "checkout", target_branch])
     subprocess.check_call(["git", "pull"])
 
 #-----------------------------------------------------------------------
