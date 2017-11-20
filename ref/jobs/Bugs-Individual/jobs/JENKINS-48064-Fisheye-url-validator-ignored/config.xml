@@ -9,7 +9,7 @@ A check method is implemented, but not called.&#xd;
 2. Show the [changes](/job/Bugs-Individual/job/JENKINS-48064-Fisheye-url-validator-ignored/changes)&#xd;
 3. Click one of the FishEye links in the changes&#xd;
 &#xd;
-Refer to the [gitweb interface](https://git-wip-us.apache.org/repos/asf?p=maven.git) for the repository history</description>
+Refer to [github](https://github.com/aeshell/aesh/) for the repository history</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
