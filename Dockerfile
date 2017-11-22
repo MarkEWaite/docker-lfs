@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-LABEL maintainer "Mark Waite <mark.earl.waite@gmail.com>"
+LABEL maintainer="mark.earl.waite@gmail.com"
 
 RUN apt-get clean && apt-get update && apt-get install -y \
   build-essential \
