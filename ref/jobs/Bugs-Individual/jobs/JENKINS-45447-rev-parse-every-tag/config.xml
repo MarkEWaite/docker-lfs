@@ -24,7 +24,7 @@ This job definition does not reference a name which would match a tag in the bra
       <projectUrl>https://github.com/MarkEWaite/JENKINS-26197/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.1">
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.2">
       <gitLabConnection></gitLabConnection>
     </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
@@ -88,7 +88,7 @@ This job definition does not reference a name which would match a tag in the bra
   <builders/>
   <publishers>
     <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.10">
-      <regexp>.*rev-parse.*refs/tags/JENKINS-32570-ran-1-for-865d73b7805eacb8a274ce7b921e7fb962f8bdc2.*</regexp>
+      <regexp>.*rev-parse.*JENKINS-32570-ran-.*-for-.*</regexp>
       <succeedIfFound>false</succeedIfFound>
       <unstableIfFound>true</unstableIfFound>
       <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
