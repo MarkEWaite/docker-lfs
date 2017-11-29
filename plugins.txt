@@ -62,6 +62,7 @@ github-api:latest
 github-branch-source:latest
 github-organization-folder:latest
 github-scm-filter-aged-refs:latest
+github-scm-trait-commit-skip:latest
 github:latest
 gitea:latest
 gitlab-plugin:latest
