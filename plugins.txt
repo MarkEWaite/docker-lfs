@@ -61,6 +61,7 @@ git:latest
 github-api:latest
 github-branch-source:latest
 github-organization-folder:latest
+github-scm-filter-aged-refs:latest
 github:latest
 gitea:latest
 gitlab-plugin:latest
