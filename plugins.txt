@@ -52,6 +52,7 @@ durable-task:latest
 elastic-axis:latest
 favorite:latest
 findbugs:latest
+git-bisect:latest
 git-client:latest
 git-parameter:latest
 git-server:latest
