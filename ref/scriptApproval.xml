@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.28">
+<scriptApproval plugin="script-security@1.35">
   <approvedScriptHashes>
+    <string>017d0db438428731cd600b6ebda805065433520f</string>
     <string>091a016dcee303082a90c62b43a0c9283362bb0f</string>
     <string>0c4a9194697a7d069db445d7cb8ac2312b32125e</string>
     <string>0edc88d7916c37cd4b3d61df55cfc3359f63ea44</string>
@@ -41,6 +42,7 @@
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods sort java.util.Collection</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean</string>
+    <string>staticMethod org.kohsuke.groovy.sandbox.impl.Checker checkedBinaryOp java.lang.Object int java.lang.Object</string>
   </approvedSignatures>
   <aclApprovedSignatures>
     <!-- <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getProperties java.lang.Object</string> -->
