@@ -39,6 +39,10 @@
     <extensions>
       <hudson.plugins.git.extensions.impl.WipeWorkspace/>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
   <jdk>jdk8</jdk>
@@ -55,13 +59,6 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.Maven>
-      <targets>clean validate</targets>
-      <mavenName>mvn</mavenName>
-      <usePrivateRepository>false</usePrivateRepository>
-      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-    </hudson.tasks.Maven>
     <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.10">
       <commandLine>git log --graph --pretty=oneline --abbrev-commit --decorate -n 5</commandLine>
       <executeFromWorkingDir>false</executeFromWorkingDir>
