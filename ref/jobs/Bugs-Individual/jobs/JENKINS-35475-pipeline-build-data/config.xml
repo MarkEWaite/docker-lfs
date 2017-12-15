@@ -32,8 +32,8 @@
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.29">
-    <script>node {
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.42">
+    <script>node(&apos;git-1.9+&apos;) { // Needs shallow clone
   stage(&apos;Checkout&apos;) {
     // Clone repository, honor refspec, etc.
     // Fast form - clone subset
