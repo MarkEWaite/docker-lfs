@@ -42,7 +42,6 @@
                                    refspec: &apos;+refs/heads/JENKINS-35475:refs/remotes/bugs-origin/JENKINS-35475&apos;,
                                    url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]],
               branches: [[name: &apos;bugs-origin/JENKINS-35475&apos;]],
-              browser: [$class: &apos;GithubWeb&apos;, repoUrl: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;],
               extensions: [
                 [$class: &apos;AuthorInChangelog&apos;],
                 [$class: &apos;CleanBeforeCheckout&apos;],
