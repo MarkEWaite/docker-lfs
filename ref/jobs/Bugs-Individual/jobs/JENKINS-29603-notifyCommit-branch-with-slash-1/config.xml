@@ -4,7 +4,10 @@
   <description>[JENKINS-29603](https://issues.jenkins-ci.org/browse/JENKINS-29603)&#xd;
 &#xd;
 A notifyCommit call with branchName argument whose value contains a &apos;/&apos; does not notify jobs of the change.&#xd;
-When &apos;/&apos; is not in the branchName value, the notifyCommit works as expected.</description>
+When &apos;/&apos; is not in the branchName value, the notifyCommit works as expected.&#xd;
+&#xd;
+This job also shows continuous rebuild problem, likely due to checkout to local branch using same name as the branch name in the branch specification.&#xd;
+Continuous rebuild problem can be hidden by defining the branch to build as &apos;*/has-slash/JENKINS-29603&apos; instead of &apos;has-slash/JENKINS-29603&apos;.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -21,7 +24,7 @@ When &apos;/&apos; is not in the branchName value, the notifyCommit works as exp
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.4.8">
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.2">
       <gitLabConnection></gitLabConnection>
     </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
@@ -41,7 +44,7 @@ When &apos;/&apos; is not in the branchName value, the notifyCommit works as exp
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.6.0">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.7.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -52,7 +55,7 @@ When &apos;/&apos; is not in the branchName value, the notifyCommit works as exp
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>has-slash/JENKINS-29603</name>
+        <name>*/has-slash/JENKINS-29603</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -69,11 +72,11 @@ When &apos;/&apos; is not in the branchName value, the notifyCommit works as exp
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
+      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.LocalBranch>
         <localBranch>has-slash/JENKINS-29603</localBranch>
       </hudson.plugins.git.extensions.impl.LocalBranch>
-      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
-      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
