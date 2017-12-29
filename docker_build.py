@@ -34,25 +34,26 @@ def get_all_branches():
 
 #-----------------------------------------------------------------------
 
+def get_dockerfile(branch_name):
+    if "alpine" in branch_name:
+        return "Dockerfile-alpine"
+    if "slim" in branch_name:
+        return "Dockerfile-slim"
+    return "Dockerfile"
+
+#-----------------------------------------------------------------------
+
 def compute_tag(branch_name):
-    dockerfile_contents = open("Dockerfile", "r").read()
-    m = re.search("FROM *jenkins/jenkins:([^:]+)$", dockerfile_contents)
+    dockerfile_name = get_dockerfile(branch_name)
+    dockerfile_contents = open(dockerfile_name, "r").read()
+    m = re.search("FROM jenkins/jenkins:([^:]+)$", dockerfile_contents)
     if m:
-        print "Tag is " + "markewaite/" + branch_name + ":" + m.group(1)
+        print("Tag is " + "markewaite/" + branch_name + ":" + m.group(1))
         return "markewaite/" + branch_name + ":" + m.group(1)
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
     if m:
         return "markewaite/" + branch_name + ":" + m.group(1)
     return "markewaite/" + branch_name + ":latest"
-
-#-----------------------------------------------------------------------
-
-def get_dockerfile(docker_tag):
-    if "alpine" in docker_tag:
-        return "Dockerfile-alpine"
-    if "slim" in docker_tag:
-        return "Dockerfile-slim"
-    return "Dockerfile"
 
 #-----------------------------------------------------------------------
 
