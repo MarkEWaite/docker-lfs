@@ -34,11 +34,24 @@ def get_all_branches():
 
 #-----------------------------------------------------------------------
 
+def get_dockerfile(branch_name):
+    if "alpine" in branch_name:
+        return "Dockerfile-alpine"
+    if "slim" in branch_name:
+        return "Dockerfile-slim"
+    return "Dockerfile"
+
+#-----------------------------------------------------------------------
+
 def compute_tag(branch_name):
-    dockerfile_contents = open("Dockerfile", "r").read()
+    dockerfile_name = get_dockerfile(branch_name)
+    dockerfile_contents = open(dockerfile_name, "r").read()
+    m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
+    if m:
+        return "markewaite/" + branch_name + ":" + m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1)
+        return "markewaite/" + branch_name + ":" + m.group(1).strip()
     return "markewaite/" + branch_name + ":latest"
 
 #-----------------------------------------------------------------------
@@ -108,7 +121,10 @@ def build_one_image(branch_name):
     replace_constants_in_ref()
     tag = compute_tag(branch_name)
     print("Building " + tag)
-    command = [ "docker", "build", "-t", tag, ".", ]
+    command = [ "docker", "build",
+                    "--file", get_dockerfile(tag),
+                    "--tag", tag,
+                    ".", ]
     subprocess.check_call(command)
     undo_replace_constants_in_ref()
 
