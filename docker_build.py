@@ -46,10 +46,9 @@ def get_dockerfile(branch_name):
 def compute_tag(branch_name):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
-    m = re.search("FROM jenkins/jenkins:([^:]+)$", dockerfile_contents)
+    m = re.search("FROM jenkins/jenkins:([^:]+)", dockerfile_contents)
     if m:
-        print("Tag is " + "markewaite/" + branch_name + ":" + m.group(1).strip())
-        return "markewaite/" + branch_name + ":" + m.group(1)
+        return "markewaite/" + branch_name + ":" + m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
     if m:
         return "markewaite/" + branch_name + ":" + m.group(1).strip()
