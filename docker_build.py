@@ -9,6 +9,8 @@ import socket
 import subprocess
 import sys
 
+import ConfigParser
+
 #-----------------------------------------------------------------------
 
 def get_current_branch():
@@ -34,12 +36,25 @@ def get_all_branches():
 
 #-----------------------------------------------------------------------
 
+config = ConfigParser.RawConfigPArser()
+config.read('config.ini')
+
 def compute_tag(branch_name):
-    dockerfile_contents = open("Dockerfile", "r").read()
-    m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
-    if m:
-        return "markewaite/" + branch_name + ":" + m.group(1)
-    return "markewaite/" + branch_name + ":latest"
+    jenkins_version = config.get('GlobalConfig', 'jenkins.lts.version')
+    if 'alpine' in branch_name:
+        jenkins_version += '-alpine'
+    if 'slim' in branch_name:
+        jenkins_version += '-slim'
+    return "markewaite/" + branch_name + ":" + jenkins_version
+
+#-----------------------------------------------------------------------
+
+def get_dockerfile(docker_tag):
+    if "alpine" in docker_tag:
+        return "Dockerfile-alpine"
+    if "slim" in docker_tag:
+        return "Dockerfile-slim"
+    return "Dockerfile"
 
 #-----------------------------------------------------------------------
 
@@ -108,7 +123,7 @@ def build_one_image(branch_name):
     replace_constants_in_ref()
     tag = compute_tag(branch_name)
     print("Building " + tag)
-    command = [ "docker", "build", "-t", tag, ".", ]
+    command = [ "docker", "build", "--file", get_dockerfile(tag), "-t", tag, ".", ]
     subprocess.check_call(command)
     undo_replace_constants_in_ref()
 
