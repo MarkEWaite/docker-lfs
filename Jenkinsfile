@@ -10,7 +10,15 @@ node('docker') {
     deleteDir()
 
     stage('Checkout') {
-        checkout scm
+        checkout([$class: 'GitSCM',
+                  userRemoteConfigs: scm.userRemoteConfigs,
+                  branches: scm.branches,
+                  browser: scm.browser,
+                  extensions: scm.extensions + [
+                    [$class: 'GitLFSPull'],
+                    [$class: 'LocalBranch', localBranch: '**'],
+                  ],
+                ])
     }
 
     if (!infra.isTrusted()) {

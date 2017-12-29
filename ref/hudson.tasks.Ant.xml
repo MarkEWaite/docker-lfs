@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.tasks.Ant_-DescriptorImpl plugin="ant@1.4">
+  <installations>
+    <hudson.tasks.Ant_-AntInstallation>
+      <name>ant-latest</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.ZipExtractionInstaller>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/ant/apache-ant-1.10.1-bin.zip</url>
+              <subdir>apache-ant-1.10.1</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.tasks.Ant_-AntInstallation>
+    <hudson.tasks.Ant_-AntInstallation>
+      <name>ant-latest-java6</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.ZipExtractionInstaller>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/ant/apache-ant-1.9.9-bin.zip</url>
+              <subdir>apache-ant-1.9.9</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.tasks.Ant_-AntInstallation>
+  </installations>
+</hudson.tasks.Ant_-DescriptorImpl>

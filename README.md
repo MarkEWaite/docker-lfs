@@ -1,9 +1,10 @@
-# Mark Waite's Jenkins LTS Docker image
+# Mark Waite's Jenkins LTS Docker image with plugins
 
 The Jenkins Continuous Integration and Delivery server.
 
-This is a fully functional Jenkins server.
-[http://jenkins.io/](http://jenkins.io/).
+This is a fully functional Jenkins server, based on the Long Term
+Support release and includes plugins and jobs which perform various bug checks and
+sanity tests.  [http://jenkins.io/](http://jenkins.io/).
 
 <img src="http://jenkins-ci.org/sites/default/files/jenkins_logo.png"/>
 
@@ -11,7 +12,8 @@ This is a fully functional Jenkins server.
 # Usage
 
 ```
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+docker build -t markewaite/lts-with-plugins:latest .
+docker run -i --rm -p 8080:8080 -p 50000:50000 -v ~/.m2/:/var/jenkins_home/.m2/ -v ~/public_html/:/var/jenkins_home/userContent/ -t markewaite/lts-with-plugins:latest
 ```
 
 NOTE: read below the _build executors_ part for the role of the `50000` port mapping.

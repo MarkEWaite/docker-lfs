@@ -31,7 +31,7 @@ SUT_CONTAINER=$(sut_image)
 }
 
 @test "create test container" {
-    docker run -d -e JAVA_OPTS="-Duser.timezone=Europe/Madrid -Dhudson.model.DirectoryBrowserSupport.CSP=\"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';\"" --name $SUT_CONTAINER -P $SUT_IMAGE
+    docker run -d -e JAVA_OPTS="-Duser.timezone=Europe/Madrid -Dorg.jenkinsci.plugins.gitclient.Git.timeOut=31991 -Dhudson.model.DirectoryBrowserSupport.CSP=\"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';\"" --name $SUT_CONTAINER -P $SUT_IMAGE
 }
 
 @test "test container is running" {
@@ -49,6 +49,8 @@ SUT_CONTAINER=$(sut_image)
       bash -c "curl -fsSL --user \"admin:$(get_jenkins_password)\" $(get_jenkins_url)/systemInfo | sed 's/<\/tr>/<\/tr>\'$'\n/g' | grep '<td class=\"pane\">hudson.model.DirectoryBrowserSupport.CSP</td>' | sed -e '${sed_expr}'"
     assert 'Europe/Madrid' \
       bash -c "curl -fsSL --user \"admin:$(get_jenkins_password)\" $(get_jenkins_url)/systemInfo | sed 's/<\/tr>/<\/tr>\'$'\n/g' | grep '<td class=\"pane\">user.timezone</td>' | sed -e '${sed_expr}'"
+    assert '31991' \
+      bash -c "curl -fsSL --user \"admin:$(get_jenkins_password)\" $(get_jenkins_url)/systemInfo | sed 's/<\/tr>/<\/tr>\'$'\n/g' | grep '<td class=\"pane\">org.jenkinsci.plugins.gitclient.Git.timeOut</td>' | sed -e '${sed_expr}'"
 }
 
 @test "clean test containers" {

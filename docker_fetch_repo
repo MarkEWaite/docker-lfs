@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# fetch repo.bundle output of the record-changes job into current git repository
+# The record-changes job provides commit comments, then this script pulls the contents
+# and the comments into the current working directory as a git history of changes.
+#
+# Note: The checkout --force will replace contents of working directory
+
+[ -d plugins ] && [ -d .git ] && \
+	wget http://localhost:8080/job/Maintenance/job/record-changes/ws/repo.bundle && \
+	mv repo.bundle .. && \
+	git fetch ../repo.bundle && \
+	git checkout --force FETCH_HEAD

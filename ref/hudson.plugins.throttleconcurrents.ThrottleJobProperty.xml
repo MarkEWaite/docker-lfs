@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.throttleconcurrents.ThrottleJobProperty_-DescriptorImpl plugin="throttle-concurrents@2.0.1">
+  <categories class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty_-ThrottleCategory>
+      <maxConcurrentPerNode>1</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categoryName>upkeep-one-per-node</categoryName>
+      <nodeLabeledPairs/>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty_-ThrottleCategory>
+  </categories>
+  <throttledPipelinesByCategory class="tree-map"/>
+</hudson.plugins.throttleconcurrents.ThrottleJobProperty_-DescriptorImpl>
