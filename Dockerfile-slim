@@ -1,1 +1,15 @@
 FROM jenkins/jenkins:2.89.2-slim
+
+LABEL maintainer="mark.earl.waite@gmail.com"
+
+USER root
+
+RUN apt-get clean && apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
+
+# Install git lfs extension
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated --no-install-recommends git-lfs && \
+    git lfs install && \
+    rm -r /var/lib/apt/lists/*
+
+USER jenkins
