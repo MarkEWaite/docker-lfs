@@ -38,14 +38,16 @@ def get_all_branches():
 
 config = ConfigParser.RawConfigParser()
 config.read('config.ini')
+jenkins_version = config.get('GlobalConfig', 'jenkins.lts.version')
+jenkins_sha256  = config.get('GlobalConfig', 'jenkins.lts.sha256')
 
 def compute_tag(branch_name):
-    jenkins_version = config.get('GlobalConfig', 'jenkins.lts.version')
+    version_label = jenkins_version
     if 'alpine' in branch_name:
-        jenkins_version += '-alpine'
+        version_label = jenkins_version + '-alpine'
     if 'slim' in branch_name:
-        jenkins_version += '-slim'
-    return "markewaite/" + branch_name + ":" + jenkins_version
+        version_label = jenkins_version + '-slim'
+    return "markewaite/" + branch_name + ":" + version_label
 
 #-----------------------------------------------------------------------
 
@@ -123,7 +125,12 @@ def build_one_image(branch_name):
     replace_constants_in_ref()
     tag = compute_tag(branch_name)
     print("Building " + tag)
-    command = [ "docker", "build", "--file", get_dockerfile(tag), "-t", tag, ".", ]
+    command = [ "docker", "build",
+                    "--file", get_dockerfile(tag),
+                    "--tag", tag,
+                    "--build-arg", "JENKINS_VERSION=" + jenkins_version,
+                    "--build-arg", "JENKINS_SHA=" + jenkins_sha256,
+                    ".", ]
     subprocess.check_call(command)
     undo_replace_constants_in_ref()
 
