@@ -36,7 +36,7 @@ def get_all_branches():
 
 #-----------------------------------------------------------------------
 
-config = ConfigParser.RawConfigPArser()
+config = ConfigParser.RawConfigParser()
 config.read('config.ini')
 
 def compute_tag(branch_name):
