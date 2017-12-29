@@ -9,8 +9,6 @@ import socket
 import subprocess
 import sys
 
-import ConfigParser
-
 #-----------------------------------------------------------------------
 
 def get_current_branch():
@@ -36,18 +34,16 @@ def get_all_branches():
 
 #-----------------------------------------------------------------------
 
-config = ConfigParser.RawConfigParser()
-config.read('config.ini')
-jenkins_version = config.get('GlobalConfig', 'jenkins.lts.version')
-jenkins_sha256  = config.get('GlobalConfig', 'jenkins.lts.sha256')
-
 def compute_tag(branch_name):
-    version_label = jenkins_version
-    if 'alpine' in branch_name:
-        version_label = jenkins_version + '-alpine'
-    if 'slim' in branch_name:
-        version_label = jenkins_version + '-slim'
-    return "markewaite/" + branch_name + ":" + version_label
+    dockerfile_contents = open("Dockerfile", "r").read()
+    m = re.search("FROM *jenkins/jenkins:([^:]+)$", dockerfile_contents)
+    if m:
+        print "Tag is " + "markewaite/" + branch_name + ":" + m.group(1)
+        return "markewaite/" + branch_name + ":" + m.group(1)
+    m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
+    if m:
+        return "markewaite/" + branch_name + ":" + m.group(1)
+    return "markewaite/" + branch_name + ":latest"
 
 #-----------------------------------------------------------------------
 
@@ -128,8 +124,6 @@ def build_one_image(branch_name):
     command = [ "docker", "build",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
-                    "--build-arg", "JENKINS_VERSION=" + jenkins_version,
-                    "--build-arg", "JENKINS_SHA=" + jenkins_sha256,
                     ".", ]
     subprocess.check_call(command)
     undo_replace_constants_in_ref()
