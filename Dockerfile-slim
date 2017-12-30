@@ -5,9 +5,12 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 USER root
 
 RUN apt-get clean && apt-get update && apt-get install -y \
+  build-essential \
+  gcc-multilib \
   gnupg \
   graphviz \
   lsb-release \
+  make \
   procps \
   && rm -rf /var/lib/apt/lists/*
 
