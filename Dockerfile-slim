@@ -4,7 +4,12 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN apt-get clean && apt-get update && apt-get install -y gnupg && rm -rf /var/lib/apt/lists/*
+RUN apt-get clean && apt-get update && apt-get install -y \
+  gnupg \
+  graphviz \
+  lsb-release \
+  procps \
+  && rm -rf /var/lib/apt/lists/*
 
 # Install git lfs extension
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
@@ -13,3 +18,8 @@ RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.d
     rm -r /var/lib/apt/lists/*
 
 USER jenkins
+
+# `/usr/share/jenkins/ref/` contains all reference configuration we want
+# to set on a fresh new installation. Use it to bundle additional plugins
+# or config file with your custom jenkins Docker image.
+ADD ref /usr/share/jenkins/ref/
