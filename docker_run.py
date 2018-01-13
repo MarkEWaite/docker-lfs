@@ -105,7 +105,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     docker_command.extend([
-                       "--env", 'JAVA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678 -Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1"',
+                       "--env", 'JAVA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678 -Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11 -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true -Duser.timezone=America/Denver -XX:+UseConcMarkSweepGC -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1 -Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION"',
                        # "--env", 'JENKINS_OPTS=',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
