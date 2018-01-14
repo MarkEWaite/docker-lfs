@@ -119,6 +119,7 @@ platformlabeler:latest
 pmd:latest
 pollscm:latest
 preSCMbuildstep:latest
+PrioritySorter:latest
 pubsub-light:latest
 rebuild:latest
 resource-disposer:latest
