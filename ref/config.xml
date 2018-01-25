@@ -154,17 +154,17 @@
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-9.0.4_linux-x64_bin.tar.gz</url>
-              <subdir>jdk-9</subdir>
+              <subdir>jdk-9.0.4</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-9.0.4_linux-x64_bin.tar.gz</url>
-              <subdir>jdk-9</subdir>
+              <subdir>jdk-9.0.4</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-9.0.4.zip</url>
-              <subdir>jdk-9</subdir>
+              <subdir>jdk-9.0.4</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <!--
             <hudson.tools.ZipExtractionInstaller>
