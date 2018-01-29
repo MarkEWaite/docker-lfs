@@ -36,6 +36,7 @@ build-blocker-plugin:latest
 buildresult-trigger:latest
 checkstyle:latest
 cloudbees-bitbucket-branch-source:latest
+cloudbees-devoptics-enabler:latest
 cloudbees-folder:latest
 cmakebuilder:latest
 command-launcher
