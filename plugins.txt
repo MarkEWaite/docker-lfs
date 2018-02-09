@@ -73,7 +73,6 @@ groovy-postbuild:latest
 handlebars:latest
 handy-uri-templates-2-api:latest
 htmlpublisher:latest
-icon-shim:latest
 implied-labels:latest
 ivy:latest
 jackson2-api:latest
