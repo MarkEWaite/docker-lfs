@@ -1,20 +1,29 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.1' encoding='UTF-8'?>
 <hudson.plugins.git.GitTool_-DescriptorImpl plugin="git-client@3.0.0-SNAPSHOT">
   <installations class="hudson.plugins.git.GitTool-array">
     <org.jenkinsci.plugins.gitclient.JGitTool>
       <name>jgit</name>
       <home>jgit</home>
       <properties/>
+      <hideDebugCommands>false</hideDebugCommands>
     </org.jenkinsci.plugins.gitclient.JGitTool>
     <hudson.plugins.git.GitTool>
       <name>Default</name>
       <home>git</home>
       <properties/>
+      <hideDebugCommands>false</hideDebugCommands>
     </hudson.plugins.git.GitTool>
     <org.jenkinsci.plugins.gitclient.JGitApacheTool>
       <name>jgitapache</name>
       <home>jgitapache</home>
       <properties/>
+      <hideDebugCommands>false</hideDebugCommands>
     </org.jenkinsci.plugins.gitclient.JGitApacheTool>
+    <hudson.plugins.git.GitTool>
+      <name>git-quiet</name>
+      <home>git</home>
+      <properties/>
+      <hideDebugCommands>true</hideDebugCommands>
+    </hudson.plugins.git.GitTool>
   </installations>
 </hudson.plugins.git.GitTool_-DescriptorImpl>
