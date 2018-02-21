@@ -117,14 +117,17 @@ def undo_replace_constants_in_ref():
 
 #-----------------------------------------------------------------------
 
-def build_one_image(branch_name):
+def build_one_image(branch_name, clean):
     replace_constants_in_ref()
     tag = compute_tag(branch_name)
     print("Building " + tag)
     command = [ "docker", "build",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
-                    ".", ]
+              ]
+    if clean:
+        command.extend([ "--pull", "--no-cache" ])
+    command.extend([ ".", ])
     subprocess.check_call(command)
     undo_replace_constants_in_ref()
 
@@ -181,6 +184,7 @@ Build docker images.   Use -h for help."""
 
     # keep at optparse for 2.6. compatibility
     parser.add_option("-a", "--all", action="store_true", default=False, help="build all images")
+    parser.add_option("-c", "--clean", action="store_true", default=False, help="build all images")
 
     options, arg_hosts = parser.parse_args()
 
@@ -196,7 +200,7 @@ Build docker images.   Use -h for help."""
         print("Building " + branch)
         checkout_branch(branch)
         merge_predecessor_branch(branch, all_branches)
-        build_one_image(branch)
+        build_one_image(branch, options.clean)
         push_current_branch()
 
     if original_branch != get_current_branch():
