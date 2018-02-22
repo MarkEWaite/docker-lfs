@@ -19,11 +19,5 @@
       <properties/>
       <hideDebugCommands>false</hideDebugCommands>
     </org.jenkinsci.plugins.gitclient.JGitApacheTool>
-    <hudson.plugins.git.GitTool>
-      <name>git-quiet</name>
-      <home>git</home>
-      <properties/>
-      <hideDebugCommands>true</hideDebugCommands>
-    </hudson.plugins.git.GitTool>
   </installations>
 </hudson.plugins.git.GitTool_-DescriptorImpl>
