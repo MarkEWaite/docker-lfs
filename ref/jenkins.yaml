@@ -2,10 +2,10 @@ jenkins:
   systemMessage: "[Jenkins instance](https://jenkins.io) for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
   numExecutors: 2
   scmCheckoutRetryCount: 3
-  tool:
-    git:
-      installations:
-        - name: jgit
-        - name: git
-          home: git
-        - name: jgitapache
+tool:
+  git:
+    installations:
+      - name: jgit
+      - name: git
+        home: git
+      - name: jgitapache
