@@ -103,8 +103,7 @@ ENV LOGNAME ${user}
 COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY tini-shim.sh /bin/tini
-COPY jenkins.yaml /var/jenkins_home/jenkins.yaml
-ENV CASC_JENKINS_CONFIG /var/jenkins_home/jenkins.yaml
+ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
 # from a derived Dockerfile, can use `RUN plugins.sh active.txt` to setup /usr/share/jenkins/ref/plugins from a support bundle
