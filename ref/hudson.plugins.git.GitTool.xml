@@ -5,7 +5,6 @@
       <name>jgit</name>
       <home>jgit</home>
       <properties/>
-      <hideDebugCommands>false</hideDebugCommands>
     </org.jenkinsci.plugins.gitclient.JGitTool>
     <hudson.plugins.git.GitTool>
       <name>Default</name>
@@ -16,7 +15,6 @@
       <name>jgitapache</name>
       <home>jgitapache</home>
       <properties/>
-      <hideDebugCommands>false</hideDebugCommands>
     </org.jenkinsci.plugins.gitclient.JGitApacheTool>
     <hudson.plugins.git.GitTool>
       <name>git-windows</name>
