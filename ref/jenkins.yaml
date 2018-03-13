@@ -1,0 +1,3 @@
+jenkins:
+  systemMessage: "[Jenkins instance](https://jenkins.io) for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
+  numExecutors: 2
