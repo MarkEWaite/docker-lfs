@@ -64,7 +64,7 @@ Requires interactive verification that a commit to the JENKINS-501568 branch is 
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
-          <spec>H/30 * * * *</spec>
+          <spec>H/15 * * * *</spec>
           <ignorePostCommitHooks>false</ignorePostCommitHooks>
         </hudson.triggers.SCMTrigger>
       </triggers>
