@@ -11,7 +11,7 @@
 &#xd;
 Launched periodically by an [upstream job](../JENKINS-50168-upstream) with a non-default parameter BRANCH=master.&#xd;
 &#xd;
-Requires interactive verification that a commit to the JENKINS-501568 branch is detected by the periodic polling, even if the last built branch was not the JENKINS-50168 branch.</description>
+Requires interactive verification that a commit to the [jenkins-bugs JENKINS-50168 branch](https://github.com/MarkEWaite/jenkins-bugs/commits/JENKINS-50168) is detected by the periodic polling, even if the last built branch was not the JENKINS-50168 branch.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -64,7 +64,7 @@ Requires interactive verification that a commit to the JENKINS-501568 branch is 
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
-          <spec>H/30 * * * *</spec>
+          <spec>H/15 * * * *</spec>
           <ignorePostCommitHooks>false</ignorePostCommitHooks>
         </hudson.triggers.SCMTrigger>
       </triggers>
