@@ -104,15 +104,22 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
-    jenkins_opts = "-Djava.awt.headless=true" +
-                   " -Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION" +
-                   " -Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true" + 
-                   " -Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11"
+    jenkins_opts = " ".join([
+                             "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
+                             "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
+                             "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                            ])
+    java_opts =    " ".join([
+                             "-Djava.awt.headless=true",
+                             "-Xdebug",
+                             "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678",
+                             "-XX:MaxRAMFraction=1",
+                             "-XX:+UseCGroupMemoryLimitForHeap",
+                            ])
     docker_command.extend([
-                       "--env", 'JAVA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678 -XX:+UseConcMarkSweepGC -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1"',
-                       "--env", "DISPLAY=",
+                       "--env", 'JAVA_OPTS="' + java_opts + '"',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
-                       "--env", 'JENKINS_OPTS="' + jenkins_opts + '"'
+                       "--env", 'JENKINS_OPTS="' + jenkins_opts + '"',
                        "--env", "LANG=en_US.utf8",
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
