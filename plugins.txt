@@ -87,6 +87,8 @@ jquery-ui:latest
 jquery:latest
 jsch:latest
 junit
+kubernetes-credentials:latest
+kubernetes:latest
 label-verifier:latest
 ldap
 leastload:latest
