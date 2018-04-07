@@ -24,13 +24,13 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/git/git-2.17.0-windows-x64.zip</url>
-              <subdir>git-2.17.0\bin\git.exe</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/git/git-2.16.2-windows-x64.zip</url>
+              <subdir>git-2.16.2\bin\git.exe</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/git/git-2.17.0-windows-x86.zip</url>
-              <subdir>git-2.17.0-32\bin\git.exe</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/git/git-2.16.2-windows-x86.zip</url>
+              <subdir>git-2.16.2-32\bin\git.exe</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
