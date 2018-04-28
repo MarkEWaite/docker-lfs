@@ -87,6 +87,7 @@ jquery-ui:latest
 jquery:latest
 jsch:latest
 junit
+junit-realtime-test-reporter:latest
 kubernetes-credentials:latest
 kubernetes:latest
 label-verifier:latest
