@@ -121,6 +121,7 @@ pipeline-rest-api:latest
 pipeline-stage-step:latest
 pipeline-stage-tags-metadata:latest
 pipeline-stage-view:latest
+pipeline-utility-steps:latest
 plain-credentials:latest
 platformlabeler:latest
 pmd:latest
