@@ -86,7 +86,7 @@ jquery-detached:latest
 jquery-ui:latest
 jquery:latest
 jsch:latest
-junit
+junit-attachments:latest
 junit-realtime-test-reporter:latest
 kubernetes-credentials:latest
 kubernetes:latest
