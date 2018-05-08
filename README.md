@@ -2,11 +2,10 @@
 
 The Jenkins Continuous Integration and Delivery server.
 
-This is a fully functional Jenkins server, based on the Long Term
-Support release and includes plugins and jobs which perform various bug checks and
-sanity tests.  [http://jenkins.io/](http://jenkins.io/).
+This is a fully functional Jenkins server.
+[https://jenkins.io/](https://jenkins.io/).
 
-<img src="http://jenkins-ci.org/sites/default/files/jenkins_logo.png"/>
+<img src="https://jenkins.io/sites/default/files/jenkins_logo.png"/>
 
 
 # Usage
