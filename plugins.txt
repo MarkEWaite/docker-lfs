@@ -152,7 +152,6 @@ token-macro:latest
 tool-labels-plugin:latest
 variant:latest
 view-job-filters:latest
-violation-comments-to-github:latest
 warnings:latest
 windows-slaves
 workflow-aggregator:latest
