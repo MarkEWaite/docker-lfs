@@ -7,8 +7,8 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/maven/apache-maven-3.5.2-bin.zip</url>
-              <subdir>apache-maven-3.5.2</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/maven/apache-maven-3.5.3-bin.zip</url>
+              <subdir>apache-maven-3.5.3</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
@@ -33,8 +33,8 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/maven/apache-maven-3.3.9-bin.zip</url>
-              <subdir>apache-maven-3.3.9</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/maven/apache-maven-3.5.3-bin.zip</url>
+              <subdir>apache-maven-3.5.3</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
