@@ -298,6 +298,22 @@
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
   </crumbIssuer>
-  <nodeProperties/>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>2</int>
+          <string>M2_HOME</string>
+          <string>$HOME/tools/hudson.tasks.Maven_MavenInstallation/maven-latest</string>
+          <string>PATH+M2_HOME_BIN</string>
+          <string>$M2_HOME/bin</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
   <globalNodeProperties/>
 </hudson>
