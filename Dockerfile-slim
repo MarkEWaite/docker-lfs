@@ -9,6 +9,7 @@ RUN apt-get clean && apt-get update && apt-get install -y \
   gcc-multilib \
   gnupg \
   graphviz \
+  locales \
   lsb-release \
   make \
   procps \
@@ -22,6 +23,11 @@ RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.d
 
 # Disable assistive technologies since openjdk:slim installs headless JDK
 RUN sed -i 's/assistive_technologies=.*/assistive_technologies=/g' /etc/java-8-openjdk/accessibility.properties
+
+# Enable en_US.UTF-8 locale and generate
+RUN sed -i 's/. en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
+    && locale-gen \
+    && update-locale LANG=en_US.UTF-8
 
 USER jenkins
 
