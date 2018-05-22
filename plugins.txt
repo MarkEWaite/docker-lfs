@@ -82,6 +82,7 @@ javadoc
 jenkins-design-language:latest
 jira:latest
 jira-steps:latest
+job-dsl:latest
 jquery-detached:latest
 jquery-ui:latest
 jquery:latest
