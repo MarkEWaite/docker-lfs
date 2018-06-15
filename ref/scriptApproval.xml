@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.35">
+<scriptApproval plugin="script-security@1.44">
   <approvedScriptHashes>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
     <string>091a016dcee303082a90c62b43a0c9283362bb0f</string>
@@ -11,6 +11,7 @@
     <string>44bb3dd838ee4c3684490d2fdd8db7ffb6e33312</string>
     <string>6b34c6ae9713a8b2944c27b19253cf62b198d23f</string>
     <string>a194e3bb70875e4e4754c602e46dbbd30100afcb</string>
+    <string>a7b73d31e0b27eb48ced89a114bf7c04153f3752</string>
     <string>b052c7be6a0b3f25071833bb1bc582a68bd37f8e</string>
     <string>bbdaf2800a20ef850892f8fa8027578de55cb915</string>
     <string>c72b9b480839b7b5cb762a130cf8c6cfecda4730</string>
