@@ -58,11 +58,11 @@ elastic-axis:latest
 favorite:latest
 findbugs:latest
 git-bisect:latest
-git-client:latest
+git-client:experimental
 git-parameter:latest
 git-server:latest
 git-userContent:latest
-git:latest
+git:experimental
 github-api:latest
 github-branch-source:latest
 github-scm-filter-aged-refs:latest
