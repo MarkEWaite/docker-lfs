@@ -9,6 +9,7 @@ import urllib2
 #----------------------------------------------------------------------------
 
 update_center_url = "http://updates.jenkins-ci.org/stable/"
+experimental_update_center_url = "https://updates.jenkins.io/experimental/"
 file_name = "plugins.txt"
 remove_plugins = False
 
@@ -42,6 +43,8 @@ def update_plugins(args):
                 plugin_version = version
             if plugin_version == "latest":
                 plugin_url = args.url + "/latest/" + name + ".hpi"
+            elif plugin_version == "experimental":
+                plugin_url = args.experimental_url + "/latest/" + name + ".hpi"
             else:
                 plugin_url = args.url + "/download/plugins/" + name + "/" + plugin_version + "/" + name + ".hpi"
             destination_file = os.path.join("ref", "plugins", name + ".jpi")
@@ -82,6 +85,10 @@ if __name__ == "__main__":
     parser.add_argument('-u', '--update-center-url', dest='url',
                         default=update_center_url,
                         help='Update center URL (' + update_center_url + ')')
+
+    parser.add_argument('-e', '--experimental-update-center-url', dest='experimental_url',
+                        default=experimental_update_center_url,
+                        help='Experimental update center URL (' + experimental_update_center_url + ')')
 
     args = parser.parse_args()
     update_plugins(args)
