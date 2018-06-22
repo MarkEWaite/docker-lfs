@@ -152,7 +152,6 @@ text-finder:latest
 throttle-concurrents:latest
 timestamper:latest
 token-macro:latest
-tool-labels-plugin:latest
 variant:latest
 view-job-filters:latest
 warnings:latest
