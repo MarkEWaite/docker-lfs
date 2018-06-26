@@ -14,8 +14,9 @@ do
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
         # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
         echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
         scan_delay=$((scan_delay+7))
+        # exit 0
 done
 
 # Notify commit each git URL
