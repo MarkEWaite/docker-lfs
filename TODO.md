@@ -2,6 +2,7 @@
 
 ## Long Term Support (lts)
 
+* Teach update_plugins.py to read from incrementals repository
 * Move user login credentials outside the repository (see Viktor Farcic blog posting)
 * Add docker based agents for key operating systems
 ** Debian 9
