@@ -73,19 +73,11 @@
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <builders>
-    <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.10">
-      <!-- Bogus, unhelpful fake -->
-      <commandLine>echo git version 2.16.2.windows.1</commandLine>
-      <executeFromWorkingDir>false</executeFromWorkingDir>
-      <regexToKill></regexToKill>
-      <timeAllocated></timeAllocated>
-    </hudson.plugins.xshell.XShellBuilder>
-  </builders>
+  <builders/>
   <publishers>
-    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.4-SNAPSHOT">
-      <script plugin="script-security@1.41">
-        <script>if (!manager.logContains(&quot;.*git version 2.16.2.windows.1.*&quot;)) {
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.4.1">
+      <script plugin="script-security@1.44">
+        <script>if (!manager.logContains(&quot;.*git-windows.git-2.18.0.bin.git.exe.*&quot;)) {
     manager.addWarningBadge(&quot;Wrong or missing git version&quot;)
     manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong or missing git version&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
