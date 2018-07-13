@@ -32,7 +32,7 @@
             <hudson.model.labels.LabelAtom>CentOS-6</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(6.9||6.8||6.7||6.6||6.5||6.4||6.3||6.2||6.1||6.0)</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(6.12||6.11||6.10||6.9||6.8||6.7||6.6||6.5||6.4||6.3||6.2||6.1||6.0)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
