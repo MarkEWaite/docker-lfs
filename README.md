@@ -1,6 +1,6 @@
 # Mark Waite's Jenkins LTS Docker image with plugins
 
-The Jenkins Continuous Integration and Delivery server.
+The Jenkins Continuous Integration and Delivery server [available on Docker Hub](https://hub.docker.com/r/jenkins/jenkins).
 
 This is a fully functional Jenkins server.
 [https://jenkins.io/](https://jenkins.io/).
