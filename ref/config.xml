@@ -63,18 +63,18 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u171-linux-x64.tar.gz</url>
-              <subdir>jdk1.8.0_171</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u181-linux-x64.tar.gz</url>
+              <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u171-linux-i586.tar.gz</url>
-              <subdir>jdk1.8.0_171</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u181-linux-i586.tar.gz</url>
+              <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_171.zip</url>
-              <subdir>jdk1.8.0_171</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_181.zip</url>
+              <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 32bit</label>
@@ -185,13 +185,13 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.1-x64_bin.tar.gz</url>
-              <subdir>jdk-10.0.1</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.2-x64_bin.tar.gz</url>
+              <subdir>jdk-10.0.2</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.1.zip</url>
-              <subdir>jdk-10.0.1</subdir>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.2.zip</url>
+              <subdir>jdk-10.0.2</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
