@@ -28,10 +28,13 @@
     <string>method hudson.model.Run getCauses</string>
     <string>method hudson.model.Run getLog int</string>
     <string>method hudson.model.Run getLogFile</string>
+    <!-- JENKINS-42860 exploration -->
+    <!--
     <string>method hudson.plugins.git.GitSCM getBranches</string>
     <string>method hudson.plugins.git.GitSCM getGitTool</string>
     <string>method hudson.plugins.git.GitSCM getUserRemoteConfigs</string>
     <string>method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions</string>
+    -->
     <string>method hudson.scm.SCM getBrowser</string>
     <string>method java.lang.Class getName</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String</string>
