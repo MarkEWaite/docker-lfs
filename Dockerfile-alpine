@@ -8,7 +8,6 @@ RUN apk add --no-cache \
   git-lfs \
   gnupg \
   graphviz \
-  lsb-release \
   make
 
 USER jenkins
