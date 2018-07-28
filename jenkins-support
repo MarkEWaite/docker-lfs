@@ -100,7 +100,7 @@ copy_reference_file() {
             mkdir -p "$JENKINS_HOME/${dir:23}"
             cp -pr "${f}" "$JENKINS_HOME/${rel}";
             # pin plugins on initial copy
-            touch "$JENKINS_HOME/${rel}.pinned"
+            # touch "$JENKINS_HOME/${rel}.pinned"
             echo "$image_version" > "$JENKINS_HOME/${version_marker}"
             reason=${reason:-$image_version}
         else

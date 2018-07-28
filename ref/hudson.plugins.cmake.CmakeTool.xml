@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.cmake.CmakeTool_-DescriptorImpl plugin="cmakebuilder@2.4.4">
+  <installations class="hudson.plugins.cmake.CmakeTool-array">
+    <hudson.plugins.cmake.CmakeTool>
+      <name>cmake-3.0.2</name>
+      <home>cmake</home>
+      <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>cmake-3.0.2</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>linux</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/cmake/cmake-3.0.2-Linux-i386.tar.gz</url>
+              <subdir>cmake-3.0.2-Linux-i386/bin</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>windows</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/cmake/cmake-3.0.2-win32-x86.zip</url>
+              <subdir>cmake-3.0.2-win32-x86/bin</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+            <hudson.plugins.cmake.CmakeInstaller>
+              <id>3.0.2</id>
+            </hudson.plugins.cmake.CmakeInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.plugins.cmake.CmakeTool>
+    <hudson.plugins.cmake.CmakeTool>
+      <name>cmake-3.7.1</name>
+      <home>cmake</home>
+      <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>cmake-3.7.1</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.plugins.cmake.CmakeInstaller>
+              <id>3.7.1</id>
+            </hudson.plugins.cmake.CmakeInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.plugins.cmake.CmakeTool>
+    <hudson.plugins.cmake.CmakeTool>
+      <name>cmake-3.7.1</name>
+      <home>cmake</home>
+      <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>cmake-3.7.1</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.plugins.cmake.CmakeInstaller>
+              <id>3.7.1</id>
+            </hudson.plugins.cmake.CmakeInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.plugins.cmake.CmakeTool>
+  </installations>
+</hudson.plugins.cmake.CmakeTool_-DescriptorImpl>
