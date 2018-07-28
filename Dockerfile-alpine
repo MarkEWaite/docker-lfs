@@ -10,6 +10,8 @@ RUN apk add --no-cache \
   graphviz \
   make
 
+ARG user=jenkins
+
 USER ${user}
 
 # `/usr/share/jenkins/ref/` contains all reference configuration we want
