@@ -12,6 +12,7 @@
     <string>6b34c6ae9713a8b2944c27b19253cf62b198d23f</string>
     <string>a194e3bb70875e4e4754c602e46dbbd30100afcb</string>
     <string>a7b73d31e0b27eb48ced89a114bf7c04153f3752</string>
+    <string>a865696fba9f867b1611ff36cf4dcf9bddd29d84</string>
     <string>b052c7be6a0b3f25071833bb1bc582a68bd37f8e</string>
     <string>bbdaf2800a20ef850892f8fa8027578de55cb915</string>
     <string>c72b9b480839b7b5cb762a130cf8c6cfecda4730</string>
@@ -22,19 +23,19 @@
     <string>f0da3ff01e37397f8ec35bb99de6dbfa0bf51f7e</string>
   </approvedScriptHashes>
   <approvedSignatures>
+    <string>field hudson.plugins.git.UserRemoteConfig refspec</string>
     <string>method groovy.lang.MetaObjectProtocol getMethods</string>
     <string>method hudson.model.Cause getShortDescription</string>
     <string>method hudson.model.Run getCause java.lang.Class</string>
     <string>method hudson.model.Run getCauses</string>
     <string>method hudson.model.Run getLog int</string>
     <string>method hudson.model.Run getLogFile</string>
-    <!-- JENKINS-42860 exploration -->
-    <!--
     <string>method hudson.plugins.git.GitSCM getBranches</string>
     <string>method hudson.plugins.git.GitSCM getGitTool</string>
     <string>method hudson.plugins.git.GitSCM getUserRemoteConfigs</string>
     <string>method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions</string>
-    -->
+    <string>method hudson.plugins.git.UserRemoteConfig getName</string>
+    <string>method hudson.plugins.git.UserRemoteConfig getUrl</string>
     <string>method hudson.scm.SCM getBrowser</string>
     <string>method java.lang.Class getName</string>
     <string>method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String</string>

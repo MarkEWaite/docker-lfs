@@ -150,6 +150,7 @@ swarm:latest
 tasks:latest
 text-finder:latest
 throttle-concurrents:latest
+tool-labels-plugin:latest
 timestamper:latest
 token-macro:latest
 variant:latest
