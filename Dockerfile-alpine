@@ -5,6 +5,9 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 USER root
 
 RUN apk add --no-cache \
+  cmake \
+  gcc \
+  g++ \
   git-lfs \
   gnupg \
   graphviz \
