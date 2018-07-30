@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.9">
   <actions/>
-  <description>Confirm that Ant, JDK 7, and JDK 8 auto-install on each Windows and Linux node</description>
+  <description>Confirm that Maven, JDK 7, and JDK 8 auto-install on each Windows and Linux node</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -70,6 +70,13 @@
       <hudson.plugins.git.extensions.impl.LocalBranch>
         <localBranch>**</localBranch>
       </hudson.plugins.git.extensions.impl.LocalBranch>
+      <hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+        <sparseCheckoutPaths>
+          <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+            <path>sample_maven/*</path>
+          </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+        </sparseCheckoutPaths>
+      </hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
@@ -94,18 +101,35 @@
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>label</name>
-      <label>windows,linux</label>
+      <label>windows,(linux &amp;&amp; !Alpine)</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
   <builders>
-    <hudson.tasks.Ant plugin="ant@1.4">
-      <targets>configure-my-system</targets>
-      <antName>ant-latest-java6</antName>
-      <buildFile>sample_ant/build.xml</buildFile>
-    </hudson.tasks.Ant>
+    <hudson.tasks.Maven>
+      <targets>clean verify</targets>
+      <mavenName>maven-latest-java6</mavenName>
+      <pom>sample_maven/pom.xml</pom>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>true</injectBuildVariables>
+    </hudson.tasks.Maven>
   </builders>
-  <publishers/>
+  <publishers>
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.3.1">
+      <script plugin="script-security@1.27">
+        <script>if (manager.logContains(&quot;.*your Apache Maven build is setup to use a config with id .* but can not find the config.*&quot;)) {
+    manager.addWarningBadge(&quot;Config file provider failure warning.&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Config file provider failure warning.!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.buildUnstable()
+}</script>
+        <sandbox>false</sandbox>
+      </script>
+      <behavior>0</behavior>
+      <runForMatrixParent>false</runForMatrixParent>
+    </org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder>
+  </publishers>
   <buildWrappers/>
   <executionStrategy class="hudson.matrix.DefaultMatrixExecutionStrategyImpl">
     <runSequentially>false</runSequentially>
