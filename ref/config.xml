@@ -86,6 +86,11 @@
               <command>true</command>
               <toolHome>/usr/lib/jvm/java-1.8-openjdk</toolHome>
             </hudson.tools.CommandInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>freebsd</label>
+              <command>true</command>
+              <toolHome>/usr/local</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
