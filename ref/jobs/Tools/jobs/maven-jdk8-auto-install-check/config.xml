@@ -96,6 +96,7 @@
       <name>jdk</name>
       <values>
         <string>jdk8</string>
+        <string>jdk10</string>
       </values>
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
@@ -104,6 +105,7 @@
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
+  <combinationFilter>(label==&quot;master&quot;).implies(jdk==&quot;jdk8&quot;)</combinationFilter>
   <builders>
     <hudson.tasks.Maven>
       <targets>clean verify</targets>
