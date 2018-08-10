@@ -94,10 +94,11 @@
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>label</name>
-      <label>windows,(linux &amp;&amp; !Alpine)</label>
+      <label>windows,linux,freebsd</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
+  <combinationFilter>(label==&quot;master&quot;).implies(jdk==&quot;jdk8&quot;) &amp;&amp; (label==&quot;git.markwaite.net&quot;).implies(jdk==&quot;jdk8&quot;)</combinationFilter>
   <builders>
     <hudson.tasks.Ant plugin="ant@1.4">
       <targets>configure-my-system</targets>
