@@ -2,6 +2,10 @@
 <hudson.plugins.cmake.CmakeTool_-DescriptorImpl plugin="cmakebuilder@2.4.4">
   <installations class="hudson.plugins.cmake.CmakeTool-array">
     <hudson.plugins.cmake.CmakeTool>
+      <name>cmake-locally-installed</name>
+      <properties/>
+    </hudson.plugins.cmake.CmakeTool>
+    <hudson.plugins.cmake.CmakeTool>
       <name>cmake-3.0.2</name>
       <home>cmake</home>
       <properties>
