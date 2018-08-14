@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.17">
   <actions/>
-  <description></description>
+  <description>[JENKINS-50131](https://issues.jenkins-ci.org/browse/JENKINS-50131) Pipeline does not expand parameters in branch name or refspec</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -18,25 +18,15 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.3">
-      <gitLabConnection>gitlab-named-connection</gitLabConnection>
-    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
     <org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
       <hint>PERFORMANCE_OPTIMIZED</hint>
     </org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
-    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.27">
-      <autoRebuild>false</autoRebuild>
-      <rebuildDisabled>false</rebuildDisabled>
-    </com.sonyericsson.rebuild.RebuildSettings>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.1">
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.3">
           <name>BRANCH</name>
           <description>Git branch</description>
-          <uuid>339faa35-01f3-49e9-8382-793c3fd513ef</uuid>
+          <uuid>37551392-d97d-448e-ab02-329262845299</uuid>
           <type>PT_BRANCH</type>
           <branch></branch>
           <tagFilter>*</tagFilter>
@@ -45,6 +35,7 @@
           <defaultValue></defaultValue>
           <selectedValue>TOP</selectedValue>
           <quickFilterEnabled>false</quickFilterEnabled>
+          <listSize>5</listSize>
         </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -71,6 +62,7 @@
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
+          <refspec>+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}</refspec>
           <url>https://github.com/MarkEWaite/jenkins-bugs.git</url>
           <credentialsId>MarkEWaite-github-username-password</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
@@ -85,11 +77,11 @@
       <submoduleCfg class="list"/>
       <extensions>
         <hudson.plugins.git.extensions.impl.CloneOption>
-          <shallow>true</shallow>
-          <noTags>false</noTags>
+          <shallow>false</shallow>
+          <noTags>true</noTags>
           <reference></reference>
-          <depth>1</depth>
-          <honorRefspec>false</honorRefspec>
+          <depth>0</depth>
+          <honorRefspec>true</honorRefspec>
         </hudson.plugins.git.extensions.impl.CloneOption>
       </extensions>
     </scm>
