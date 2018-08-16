@@ -49,6 +49,7 @@ if [ ! -d $JENKINS_HOME/.git ]; then
     echo .java/ &gt;&gt; .gitignore &amp;&amp; \
     echo .jenkins/ &gt;&gt; .gitignore &amp;&amp; \
     echo .m2/ &gt;&gt; .gitignore &amp;&amp; \
+    echo fingerprints/ &gt;&gt; .gitignore &amp;&amp; \
     echo tools/ &gt;&gt; .gitignore &amp;&amp; \
     echo userContent/ &gt;&gt; .gitignore &amp;&amp; \
     echo war/ &gt;&gt; .gitignore &amp;&amp; \
