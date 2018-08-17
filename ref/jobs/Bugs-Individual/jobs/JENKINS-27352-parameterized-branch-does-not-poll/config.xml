@@ -68,7 +68,7 @@
   <jdk>(System)</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
-      <spec>H/13 * * * *</spec>
+      <spec>H H(5-21)/3 * * *</spec>
       <ignorePostCommitHooks>false</ignorePostCommitHooks>
     </hudson.triggers.SCMTrigger>
   </triggers>

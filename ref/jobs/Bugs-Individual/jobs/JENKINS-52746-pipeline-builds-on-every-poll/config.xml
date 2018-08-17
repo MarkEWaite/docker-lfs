@@ -57,7 +57,8 @@ Even though there are no changes to detect.  See the bug trivially by clicking t
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
-          <spec>H/7 * * * *</spec>
+          <!-- once in every three hours slot between 5 AM and 9 PM -->
+          <spec>H H(5-21)/3 * * *</spec>
           <ignorePostCommitHooks>false</ignorePostCommitHooks>
         </hudson.triggers.SCMTrigger>
       </triggers>

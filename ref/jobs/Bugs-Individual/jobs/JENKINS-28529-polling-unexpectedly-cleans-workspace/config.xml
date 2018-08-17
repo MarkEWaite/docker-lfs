@@ -86,7 +86,7 @@ It should remain after polling.  The bug is that the file is deleted by the poll
   <jdk>jdk8</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
-      <spec>H/19 * * * *</spec>
+      <spec>H H(5-21)/3 * * *</spec>
       <ignorePostCommitHooks>false</ignorePostCommitHooks>
     </hudson.triggers.SCMTrigger>
   </triggers>
