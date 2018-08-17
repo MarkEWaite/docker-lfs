@@ -48,7 +48,7 @@ Reduces interactive verification that a commit to the JENKINS-501568 branch is d
   <jdk>(System)</jdk>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/30 * * * *</spec>
+      <spec>H H(5-21)/3 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>

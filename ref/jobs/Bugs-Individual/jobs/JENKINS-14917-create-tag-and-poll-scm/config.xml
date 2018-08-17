@@ -43,7 +43,7 @@ This job creates a tag in the userContent repository and invokes notifyCommit on
   <jdk>(System)</jdk>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H H(4-23)/2 * * *</spec>
+      <spec>H H(5-21)/3 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
