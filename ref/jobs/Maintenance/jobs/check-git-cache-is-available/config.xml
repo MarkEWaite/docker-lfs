@@ -47,30 +47,7 @@
   <concurrentBuild>false</concurrentBuild>
   <axes>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
-      <name>label</name>
-      <values>
-        <string>centos6-a</string>
-        <string>debian8x86a-mwaite</string>
-        <string>mark-pc2-beemarkwaite</string>
-        <string>centos67a-mwaite</string>
-        <string>ubuntu14c-mwaite</string>
-        <string>mark-pc1-lindsay</string>
-        <string>git.markwaite.net</string>
-        <string>ubuntu14a-mwaite</string>
-        <string>ubuntu14b-mwaite</string>
-        <string>home-hasphrase</string>
-        <string>stretch</string>
-        <string>master</string>
-        <string>debian9-a-mwaite</string>
-        <string>ubuntu14a-jaron</string>
-        <string>mark-pc1-mwaite</string>
-        <string>ubuntu14b-rachel</string>
-        <string>mark-pc2-mwaite</string>
-        <string>centos7-d</string>
-        <string>centos7-b</string>
-        <string>debian8-mwaite</string>
-      </values>
-      <label>linux || freebsd</label>
+      <label>!windows</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
