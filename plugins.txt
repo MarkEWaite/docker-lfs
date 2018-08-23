@@ -43,6 +43,7 @@ cmakebuilder:latest
 command-launcher
 conditional-buildstep:latest
 config-file-provider:latest
+configuration-as-code:latest
 configurationslicing:latest
 copyartifact:latest
 credentials
