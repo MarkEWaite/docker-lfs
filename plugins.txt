@@ -64,12 +64,12 @@ git-parameter:latest
 git-server:latest
 git-userContent:latest
 git:experimental
+gitea:latest
 github-api:latest
 github-branch-source:latest
 github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
-gitea:latest
 gitlab-plugin:latest
 groovy-postbuild:latest
 handlebars:latest
