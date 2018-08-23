@@ -1,6 +1,6 @@
 ace-editor:latest
-analysis-core:latest
 analysis-collector:latest
+analysis-core:latest
 ant
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api:latest
@@ -43,6 +43,7 @@ cmakebuilder:latest
 command-launcher
 conditional-buildstep:latest
 config-file-provider:latest
+configuration-as-code:latest
 configurationslicing:latest
 copyartifact:latest
 credentials
@@ -63,12 +64,12 @@ git-parameter:latest
 git-server:latest
 git-userContent:latest
 git:experimental
+gitea:latest
 github-api:latest
 github-branch-source:latest
 github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
-gitea:latest
 gitlab-plugin:latest
 groovy-postbuild:latest
 handlebars:latest
@@ -107,6 +108,7 @@ metrics:latest
 momentjs:latest
 monitoring:latest
 multi-branch-project-plugin:latest
+multiple-scms:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
@@ -150,9 +152,9 @@ swarm:latest
 tasks:latest
 text-finder:latest
 throttle-concurrents:latest
-tool-labels-plugin:latest
 timestamper:latest
 token-macro:latest
+tool-labels-plugin:latest
 variant:latest
 view-job-filters:latest
 warnings:latest
@@ -172,6 +174,3 @@ workflow-support:latest
 ws-cleanup:latest
 xshell:latest
 xunit:latest
-envinject-api:latest
-envinject:latest
-multiple-scms:latest
