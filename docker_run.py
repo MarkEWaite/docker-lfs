@@ -108,15 +108,16 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                              "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                              "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                              "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                             "-Dhudson.model.DownloadService.noSignatureCheck=true",
                             ])
     java_opts =    " ".join([
+                             "-Dhudson.model.DownloadService.noSignatureCheck=true",
                              "-Djava.awt.headless=true",
                              "-Xdebug",
                              "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678",
-                             "-XX:MaxRAMFraction=1",
-                             "-XX:+UseCGroupMemoryLimitForHeap",
                             ])
     docker_command.extend([
+                       "--env", "hudson.model.DownloadService.noSignatureCheck=true",
                        "--env", 'JAVA_OPTS="' + java_opts + '"',
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", 'JENKINS_OPTS="' + jenkins_opts + '"',
@@ -149,10 +150,11 @@ Run a docker image.   Use -h for help."""
 
     # keep at optparse for 2.6. compatibility
     parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
-    parser.add_option("-p", "--port", action="store", dest='http_port', default=8080,  type="int", help="http port")
-    parser.add_option("-j", "--jnlp", action="store", dest='jnlp_port', default=50000, type="int", help="jnlp port")
-    parser.add_option("-s", "--ssh",  action="store", dest='ssh_port',  default=18022,  type="int", help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port',  default=5678,  type="int", help="debug port")
+    parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
+    parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
+    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=18022, type="int",    help="ssh port")
+    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=5678,  type="int",    help="debug port")
+    parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
 
@@ -160,9 +162,10 @@ Run a docker image.   Use -h for help."""
         shutil.rmtree(jenkins_home_dir)
         os.mkdir(jenkins_home_dir)
 
-    current_branch = docker_build.get_current_branch()
-    docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port)
+    if options.docker_tag == None:
+        current_branch = docker_build.get_current_branch()
+        options.docker_tag = docker_build.compute_tag(current_branch)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port)
 
 #-----------------------------------------------------------------------
 
