@@ -141,8 +141,6 @@ def get_predecessor_branch(current_branch, all_branches):
         last = "cjt"
     if current_branch == "cjp":
         last = "cjp"
-    if current_branch == "java10":
-        last = "upstream/java10"
     for branch in all_branches:
         if branch == current_branch:
 	    return last
