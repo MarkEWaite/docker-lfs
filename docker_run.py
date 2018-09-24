@@ -153,7 +153,7 @@ Run a docker image.   Use -h for help."""
     parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
     parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
     parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=18022, type="int",    help="ssh port")
-    # parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=5678,  type="int",    help="debug port")
+    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=5678,  type="int",    help="debug port")
     parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
