@@ -152,7 +152,7 @@
             <hudson.model.labels.LabelAtom>git-1.7+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-1.7.1||git-1.7.10.4||git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-1.7.1||git-1.7.10.4||git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -160,7 +160,7 @@
             <hudson.model.labels.LabelAtom>git-1.7.10+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-1.7.10.4||git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-1.7.10.4||git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -168,7 +168,7 @@
             <hudson.model.labels.LabelAtom>git-1.8+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-1.8||git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -176,7 +176,7 @@
             <hudson.model.labels.LabelAtom>git-1.9+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-1.9||git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -184,7 +184,7 @@
             <hudson.model.labels.LabelAtom>git-2.0+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.1||git-2.4||git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -192,7 +192,7 @@
             <hudson.model.labels.LabelAtom>git-2.5+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.7||git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -200,7 +200,7 @@
             <hudson.model.labels.LabelAtom>git-2.8+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.8||git-2.9||git-2.10||git-2.11||git-2.12||git-2.13||git-2.14||git-2.15||git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -208,7 +208,7 @@
             <hudson.model.labels.LabelAtom>git-2.16+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-2.16||git-2.17||git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.16||git-2.17||git-2.18||git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -216,7 +216,15 @@
             <hudson.model.labels.LabelAtom>git-2.18+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">git-2.18</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.18||git-2.19</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.19+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.19</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
