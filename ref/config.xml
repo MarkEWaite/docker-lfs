@@ -216,7 +216,7 @@
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/openjdk-11+28_windows-x64_bin.zip</url>
-              <subdir>jdk11</subdir>
+              <subdir>jdk-11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
