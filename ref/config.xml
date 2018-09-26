@@ -207,6 +207,26 @@
         </hudson.tools.InstallSourceProperty>
       </properties>
     </jdk>
+    <jdk>
+      <name>jdk11</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>linux &amp;&amp; 64bit</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/openjdk-11+28_linux-x64_bin.tar.gz</url>
+              <subdir>jdk-11</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>windows &amp;&amp; 64bit</label>
+              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/openjdk-11+28_windows-x64_bin.zip</url>
+              <subdir>jdk-11</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
   </jdks>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
