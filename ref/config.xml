@@ -126,26 +126,6 @@
       </properties>
     </jdk>
     <jdk>
-      <name>jdk10</name>
-      <home></home>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.tools.ZipExtractionInstaller>
-              <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.2_linux-x64_bin.tar.gz</url>
-              <subdir>jdk-10.0.2</subdir>
-            </hudson.tools.ZipExtractionInstaller>
-            <hudson.tools.ZipExtractionInstaller>
-              <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-10.0.2.zip</url>
-              <subdir>jdk-10.0.2</subdir>
-            </hudson.tools.ZipExtractionInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
-    </jdk>
-    <jdk>
       <name>jdk11</name>
       <home></home>
       <properties>
