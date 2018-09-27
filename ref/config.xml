@@ -93,8 +93,8 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/jdk-8u181-linux-x64.tar.gz</url>
-              <subdir>jdk1.8.0_181</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8_x64_Linux_jdk8u172-b11.tar.gz</url>
+              <subdir>jdk8u172-b11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
@@ -103,8 +103,8 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.8.0_181.zip</url>
-              <subdir>jdk1.8.0_181</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8_x64_Win_jdk8u172-b11.zip</url>
+              <subdir>jdk8u172-b11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>Alpine</label>
