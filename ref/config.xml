@@ -106,11 +106,6 @@
               <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_181.zip</url>
               <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
-            <hudson.tools.ZipExtractionInstaller>
-              <label>windows &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_141-x86.zip</url>
-              <subdir>jdk1.8.0_141</subdir>
-            </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>Alpine</label>
               <command>true</command>
