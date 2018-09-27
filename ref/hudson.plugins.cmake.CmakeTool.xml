@@ -16,12 +16,12 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/cmake/cmake-3.0.2-Linux-i386.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/cmake/cmake-3.0.2-Linux-i386.tar.gz</url>
               <subdir>cmake-3.0.2-Linux-i386/bin</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/cmake/cmake-3.0.2-win32-x86.zip</url>
+              <url>https://home.markwaite.net/~mwaite/cmake/cmake-3.0.2-win32-x86.zip</url>
               <subdir>cmake-3.0.2-win32-x86/bin</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.plugins.cmake.CmakeInstaller>
