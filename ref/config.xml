@@ -63,22 +63,22 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-7u80-linux-x64.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk-7u80-linux-x64.tar.gz</url>
               <subdir>jdk1.7.0_80</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-7u80-linux-i586.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk-7u80-linux-i586.tar.gz</url>
               <subdir>jdk1.7.0_80</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.7.0_75.zip</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.7.0_75.zip</url>
               <subdir>jdk1.7.0_75</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.7.0_80-x86.zip</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.7.0_80-x86.zip</url>
               <subdir>jdk1.7.0_80</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
@@ -93,17 +93,17 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u181-linux-x64.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk-8u181-linux-x64.tar.gz</url>
               <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk-8u181-linux-i586.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk-8u181-linux-i586.tar.gz</url>
               <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/jdk1.8.0_181.zip</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.8.0_181.zip</url>
               <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
@@ -128,12 +128,12 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/openjdk-11+28_windows-x64_bin.zip</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11+28_windows-x64_bin.zip</url>
               <subdir>jdk-11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>http://JENKINS_HOSTNAME:8080/userContent/jdk/openjdk-11+28_linux-x64_bin.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11+28_linux-x64_bin.tar.gz</url>
               <subdir>jdk-11</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
