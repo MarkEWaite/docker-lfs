@@ -9,6 +9,7 @@
 import optparse
 import os
 import re
+import pipes
 import socket
 import subprocess
 import shutil
@@ -104,31 +105,30 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
-    jenkins_opts = " ".join([
-                             "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                             "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-                             "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-                             "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                            ])
     java_opts =    " ".join([
                              "-Dhudson.model.DownloadService.noSignatureCheck=true",
                              "-Djava.awt.headless=true",
+                             "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
+                             "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
                              "-Xdebug",
                              "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678",
+                             "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                             ])
     docker_command.extend([
-                       "--env", "hudson.model.DownloadService.noSignatureCheck=true",
-                       "--env", 'JAVA_OPTS="' + java_opts + '"',
+                       "--env", 'JAVA_OPTS=' + pipes.quote(java_opts),
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
-                       "--env", 'JENKINS_OPTS="' + jenkins_opts + '"',
                        "--env", "LANG=en_US.utf8",
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
                        "--env", "DOCKER_FIX=refer-to-docker-issues-14203-for-description",
                        "-t", docker_tag,
                      ])
-    print(" ".join(map(str, docker_command)))
-    subprocess.check_call(docker_command)
+    # Python docs recommend using an array of string but then fails to pass quoted args correctly.
+    # Using shell=True and the single string form passes quoted args correctly.
+    # Since input to command is program controlled, shell=True is safe (for now)
+    str_command = " ".join(map(str, docker_command))
+    print(str_command)
+    subprocess.check_call(str_command, shell=True)
 
 #-----------------------------------------------------------------------
 
