@@ -97,6 +97,7 @@ kubernetes:latest
 label-verifier:latest
 ldap
 leastload:latest
+lockable-resources:latest
 log-parser:latest
 mailer
 mapdb-api:latest
