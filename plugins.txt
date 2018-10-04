@@ -66,7 +66,7 @@ git-userContent:latest
 git:experimental
 gitea:latest
 github-api:latest
-github-branch-source:latest
+github-branch-source:experimental
 github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
@@ -97,6 +97,7 @@ kubernetes:latest
 label-verifier:latest
 ldap
 leastload:latest
+lockable-resources:latest
 log-parser:latest
 mailer
 mapdb-api:latest
