@@ -51,6 +51,7 @@ credentials-binding:latest
 cvs
 depgraph-view:latest
 description-setter:latest
+devoptics:latest
 display-url-api:latest
 docker-commons:latest
 docker-workflow:latest
