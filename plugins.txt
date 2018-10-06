@@ -136,6 +136,7 @@ pmd:latest
 pollscm:latest
 preSCMbuildstep:latest
 PrioritySorter:latest
+promoted-builds:latest
 pubsub-light:latest
 rebuild:latest
 resource-disposer:latest
