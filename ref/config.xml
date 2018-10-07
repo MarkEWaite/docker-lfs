@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.1' encoding='UTF-8'?>
 <hudson>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
@@ -103,8 +103,8 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8_x64_Win_jdk8u172-b11.zip</url>
-              <subdir>jdk8u172-b11</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.8.0_181.zip</url>
+              <subdir>jdk1.8.0_181</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>Alpine</label>
@@ -166,7 +166,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
       </jobNames>
       <jobFilters>
-        <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+        <hudson.views.JobStatusFilter plugin="view-job-filters@2.0.2">
           <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
           <unstable>false</unstable>
           <failed>true</failed>
@@ -198,7 +198,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
       </jobNames>
       <jobFilters>
-        <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+        <hudson.views.JobStatusFilter plugin="view-job-filters@2.0.2">
           <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
           <unstable>true</unstable>
           <failed>false</failed>
@@ -230,7 +230,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
       </jobNames>
       <jobFilters>
-        <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+        <hudson.views.BuildStatusFilter plugin="view-job-filters@2.0.2">
           <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
           <neverBuilt>false</neverBuilt>
           <building>true</building>
@@ -245,7 +245,7 @@
         <hudson.views.LastFailureColumn/>
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
-        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
       </columns>
       <recurse>true</recurse>
     </listView>
