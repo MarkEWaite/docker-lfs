@@ -23,9 +23,6 @@ RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.d
     git lfs install && \
     rm -r /var/lib/apt/lists/*
 
-# Disable assistive technologies since openjdk:slim installs headless JDK
-RUN sed -i 's/assistive_technologies=.*/assistive_technologies=/g' /etc/java-8-openjdk/accessibility.properties
-
 # Enable en_US.UTF-8 locale and generate
 RUN sed -i 's/. en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
     && ( [ -e /usr/share/locale/locale.alias ] || ln -s /etc/locale.alias /usr/share/locale/locale.alias ) \
