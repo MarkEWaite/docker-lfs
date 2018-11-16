@@ -159,6 +159,7 @@ timestamper:latest
 token-macro:latest
 tool-labels-plugin:latest
 variant:latest
+versioncolumn:latest
 view-job-filters:latest
 warnings:latest
 windows-slaves
