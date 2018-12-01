@@ -5,6 +5,7 @@ ant
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api:latest
 async-http-client:latest
+audit-trail:latest
 authentication-tokens:latest
 authorize-project:latest
 badge:latest
