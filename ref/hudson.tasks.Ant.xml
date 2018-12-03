@@ -22,8 +22,8 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
-              <url>https://home.markwaite.net/~mwaite/ant/apache-ant-1.9.9-bin.zip</url>
-              <subdir>apache-ant-1.9.9</subdir>
+              <url>https://home.markwaite.net/~mwaite/ant/apache-ant-1.9.13-bin.zip</url>
+              <subdir>apache-ant-1.9.13</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
