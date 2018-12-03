@@ -8,8 +8,8 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
-              <url>https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.1-bin.zip</url>
-              <subdir>apache-ant-1.10.1</subdir>
+              <url>https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.5-bin.zip</url>
+              <subdir>apache-ant-1.10.5</subdir>
             </hudson.tools.ZipExtractionInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
