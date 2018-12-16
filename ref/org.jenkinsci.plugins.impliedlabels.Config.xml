@@ -40,7 +40,7 @@
             <hudson.model.labels.LabelAtom>CentOS-7</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(7.5||7.4||CentOS-7.5.1804||CentOS-7.4.1708||7.3||CentOS-7.3.1611||7.2||7.2.1511||7.1||7.1.1503||7.0||7.0.1406)</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(7.6||7.5||7.4||CentOS-7.6.1810||7.6.1810||CentOS-7.5.1804||CentOS-7.4.1708||7.3||CentOS-7.3.1611||7.2||7.2.1511||7.1||7.1.1503||7.0||7.0.1406)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
