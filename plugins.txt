@@ -35,6 +35,7 @@ blueocean-web:latest
 bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
+build-timeout:latest
 buildresult-trigger:latest
 checkstyle:latest
 cloudbees-bitbucket-branch-source:latest
