@@ -59,6 +59,7 @@ docker-commons:latest
 docker-workflow:latest
 durable-task:latest
 elastic-axis:latest
+email-ext:latest
 favorite:latest
 findbugs:latest
 git-bisect:latest
