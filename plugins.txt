@@ -75,6 +75,7 @@ github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
 gitlab-plugin:latest
+gradle:latest
 groovy-postbuild:latest
 handlebars:latest
 handy-uri-templates-2-api:latest
