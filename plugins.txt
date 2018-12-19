@@ -35,6 +35,7 @@ blueocean-web:latest
 bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
+build-timeout:latest
 buildresult-trigger:latest
 checkstyle:latest
 cloudbees-bitbucket-branch-source:latest
@@ -58,6 +59,7 @@ docker-commons:latest
 docker-workflow:latest
 durable-task:latest
 elastic-axis:latest
+email-ext:latest
 favorite:latest
 findbugs:latest
 git-bisect:latest
@@ -73,6 +75,7 @@ github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
 gitlab-plugin:latest
+gradle:latest
 groovy-postbuild:latest
 handlebars:latest
 handy-uri-templates-2-api:latest
