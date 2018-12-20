@@ -167,7 +167,6 @@ variant:latest
 versioncolumn:latest
 view-job-filters:latest
 warnings:latest
-windows-slaves
 workflow-aggregator:latest
 workflow-api:latest
 workflow-basic-steps:latest
