@@ -19,18 +19,9 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
-      <projectUrl>https://github.com/jenkinsci/git-client-plugin/</projectUrl>
+      <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
       <displayName>Git client plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.sidebar__link.ProjectLinks plugin="sidebar-link@1.9.1">
-      <links>
-        <hudson.plugins.sidebar__link.LinkAction>
-          <url>ws/target/site/jacoco/index.html</url>
-          <text>JaCoCo Report</text>
-          <icon>graph.png</icon>
-        </hudson.plugins.sidebar__link.LinkAction>
-      </links>
-    </hudson.plugins.sidebar__link.ProjectLinks>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.BooleanParameterDefinition>
@@ -54,20 +45,31 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/jenkinsci/git-client-plugin.git</url>
+        <url>https://github.com/MarkEWaite/git-client-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
+    <browser class="hudson.plugins.git.browser.GithubWeb">
+      <url>https://github.com/MarkEWaite/git-client-plugin</url>
+    </browser>
     <submoduleCfg class="list"/>
     <extensions>
-      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
+      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>false</noTags>
+        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+        <depth>0</depth>
+        <honorRefspec>false</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
@@ -85,15 +87,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>-P enable-jacoco clean install jacoco:report checkstyle:checkstyle</targets>
-      <mavenName>mvn</mavenName>
-      <properties>maven.test.failure.ignore=true
-surefire.rerunFailingTestsCount=4
-maven.findbugs.failure.strict=false</properties>
+      <targets>-P enable-jacoco clean install jacoco:report findbugs:findbugs javadoc:javadoc checkstyle:checkstyle</targets>
+      <mavenName>maven-latest</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-      <injectBuildVariables>true</injectBuildVariables>
+      <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
   <publishers>
@@ -135,12 +134,6 @@ maven.findbugs.failure.strict=false</properties>
     </hudson.plugins.jacoco.JacocoPublisher>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@1.0.0">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.MavenConsole>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-        </io.jenkins.plugins.analysis.warnings.MavenConsole>
         <io.jenkins.plugins.analysis.warnings.FindBugs>
           <id></id>
           <name></name>
@@ -148,6 +141,18 @@ maven.findbugs.failure.strict=false</properties>
           <reportEncoding></reportEncoding>
           <useRankAsPriority>true</useRankAsPriority>
         </io.jenkins.plugins.analysis.warnings.FindBugs>
+        <io.jenkins.plugins.analysis.warnings.Java>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+        </io.jenkins.plugins.analysis.warnings.Java>
+        <io.jenkins.plugins.analysis.warnings.JavaDoc>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+        </io.jenkins.plugins.analysis.warnings.JavaDoc>
         <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
           <id></id>
           <name></name>
