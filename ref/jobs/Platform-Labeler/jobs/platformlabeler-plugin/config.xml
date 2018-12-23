@@ -1,0 +1,144 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Platform labeler freestyle job for static analysis</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
+      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.11">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta4">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/MarkEWaite/platformlabeler-plugin/</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
+      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+    </extensions>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk8</jdk>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec></spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean install findbugs:findbugs javadoc:javadoc</targets>
+      <mavenName>maven-latest</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+  </builders>
+  <publishers>
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@1.0.0">
+      <analysisTools>
+        <io.jenkins.plugins.analysis.warnings.FindBugs>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+          <useRankAsPriority>true</useRankAsPriority>
+        </io.jenkins.plugins.analysis.warnings.FindBugs>
+        <io.jenkins.plugins.analysis.warnings.Java>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+        </io.jenkins.plugins.analysis.warnings.Java>
+        <io.jenkins.plugins.analysis.warnings.JavaDoc>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+        </io.jenkins.plugins.analysis.warnings.JavaDoc>
+      </analysisTools>
+      <sourceCodeEncoding></sourceCodeEncoding>
+      <ignoreQualityGate>false</ignoreQualityGate>
+      <ignoreFailedBuilds>true</ignoreFailedBuilds>
+      <referenceJobName>-</referenceJobName>
+      <healthy>0</healthy>
+      <unhealthy>0</unhealthy>
+      <minimumSeverity plugin="analysis-model-api@1.0.0">
+        <name>LOW</name>
+      </minimumSeverity>
+      <thresholds>
+        <unstableTotalAll>0</unstableTotalAll>
+        <unstableTotalHigh>0</unstableTotalHigh>
+        <unstableTotalNormal>0</unstableTotalNormal>
+        <unstableTotalLow>0</unstableTotalLow>
+        <unstableNewAll>0</unstableNewAll>
+        <unstableNewHigh>0</unstableNewHigh>
+        <unstableNewNormal>0</unstableNewNormal>
+        <unstableNewLow>0</unstableNewLow>
+        <failedTotalAll>0</failedTotalAll>
+        <failedTotalHigh>0</failedTotalHigh>
+        <failedTotalNormal>0</failedTotalNormal>
+        <failedTotalLow>0</failedTotalLow>
+        <failedNewAll>0</failedNewAll>
+        <failedNewHigh>0</failedNewHigh>
+        <failedNewNormal>0</failedNewNormal>
+        <failedNewLow>0</failedNewLow>
+      </thresholds>
+      <filters/>
+      <isEnabledForFailure>false</isEnabledForFailure>
+      <isAggregatingResults>false</isAggregatingResults>
+      <isBlameDisabled>false</isBlameDisabled>
+    </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
+  </publishers>
+  <buildWrappers/>
+</project>
