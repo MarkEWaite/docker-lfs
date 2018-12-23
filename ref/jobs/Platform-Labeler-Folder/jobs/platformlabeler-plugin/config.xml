@@ -60,6 +60,14 @@
     <extensions>
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/jenkins/platformlabeler-plugin.git</reference>
+        <depth>0</depth>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
   <canRoam>true</canRoam>
@@ -76,7 +84,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>clean install findbugs:findbugs javadoc:javadoc</targets>
+      <targets>-P enable-jacoco clean install jacoco:report findbugs:findbugs javadoc:javadoc checkstyle:checkstyle</targets>
       <mavenName>maven-latest</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
@@ -85,6 +93,36 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
+    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.4">
+      <execPattern>**/**.exec</execPattern>
+      <classPattern>**/classes</classPattern>
+      <sourcePattern>**/src/main/java</sourcePattern>
+      <sourceInclusionPattern>**/*.java</sourceInclusionPattern>
+      <sourceExclusionPattern></sourceExclusionPattern>
+      <inclusionPattern></inclusionPattern>
+      <exclusionPattern></exclusionPattern>
+      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
+      <minimumInstructionCoverage>0</minimumInstructionCoverage>
+      <minimumBranchCoverage>0</minimumBranchCoverage>
+      <minimumComplexityCoverage>0</minimumComplexityCoverage>
+      <minimumLineCoverage>0</minimumLineCoverage>
+      <minimumMethodCoverage>0</minimumMethodCoverage>
+      <minimumClassCoverage>0</minimumClassCoverage>
+      <maximumInstructionCoverage>0</maximumInstructionCoverage>
+      <maximumBranchCoverage>0</maximumBranchCoverage>
+      <maximumComplexityCoverage>0</maximumComplexityCoverage>
+      <maximumLineCoverage>0</maximumLineCoverage>
+      <maximumMethodCoverage>0</maximumMethodCoverage>
+      <maximumClassCoverage>0</maximumClassCoverage>
+      <changeBuildStatus>false</changeBuildStatus>
+      <deltaInstructionCoverage>0</deltaInstructionCoverage>
+      <deltaBranchCoverage>0</deltaBranchCoverage>
+      <deltaComplexityCoverage>0</deltaComplexityCoverage>
+      <deltaLineCoverage>0</deltaLineCoverage>
+      <deltaMethodCoverage>0</deltaMethodCoverage>
+      <deltaClassCoverage>0</deltaClassCoverage>
+      <buildOverBuild>false</buildOverBuild>
+    </hudson.plugins.jacoco.JacocoPublisher>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@1.0.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.FindBugs>
@@ -106,6 +144,12 @@
           <pattern></pattern>
           <reportEncoding></reportEncoding>
         </io.jenkins.plugins.analysis.warnings.JavaDoc>
+        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>
