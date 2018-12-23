@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description></description>
+  <description>Jenkins platform labeler plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -19,8 +19,8 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
-      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
-      <displayName></displayName>
+      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin</projectUrl>
+      <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.11">
       <gitLabConnection></gitLabConnection>
@@ -46,7 +46,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/platformlabeler-plugin/</url>
+        <url>https://github.com/MarkEWaite/platformlabeler-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -56,6 +56,9 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
+    <browser class="hudson.plugins.git.browser.GithubWeb">
+      <url>https://github.com/MarkEWaite/platformlabeler-plugin</url>
+    </browser>
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
@@ -70,6 +73,7 @@
       <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
+  <quietPeriod>0</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -93,6 +97,12 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.26.1">
+      <testResults>target/surefire-reports/TEST-*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <allowEmptyResults>false</allowEmptyResults>
+    </hudson.tasks.junit.JUnitResultArchiver>
     <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.4">
       <execPattern>**/**.exec</execPattern>
       <classPattern>**/classes</classPattern>
