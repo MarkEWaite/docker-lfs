@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Jenkins git client plugin from master branch</description>
+  <description>Jenkins platform labeler plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -19,18 +19,19 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
-      <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
-      <displayName>Git client plugin</displayName>
+      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin</projectUrl>
+      <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.BooleanParameterDefinition>
-          <name>TEST_ALL_CREDENTIALS</name>
-          <description>Test all credentials or only a randomly selected subset</description>
-          <defaultValue>false</defaultValue>
-        </hudson.model.BooleanParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.11">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
     <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
       <maxConcurrentPerNode>0</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
@@ -45,7 +46,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/git-client-plugin</url>
+        <url>https://github.com/MarkEWaite/platformlabeler-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -56,7 +57,7 @@
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/git-client-plugin</url>
+      <url>https://github.com/MarkEWaite/platformlabeler-plugin</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
@@ -64,10 +65,10 @@
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
-        <noTags>false</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/jenkins/platformlabeler-plugin.git</reference>
         <depth>0</depth>
-        <honorRefspec>false</honorRefspec>
+        <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>

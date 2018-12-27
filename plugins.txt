@@ -1,6 +1,7 @@
 ace-editor:latest
 analysis-collector:latest
 analysis-core:latest
+analysis-model-api:latest
 ant
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api:latest
@@ -167,6 +168,7 @@ variant:latest
 versioncolumn:latest
 view-job-filters:latest
 warnings:latest
+warnings-ng:latest
 workflow-aggregator:latest
 workflow-api:latest
 workflow-basic-steps:latest
