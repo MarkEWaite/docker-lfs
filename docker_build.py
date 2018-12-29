@@ -7,6 +7,7 @@ import os
 import re
 import socket
 import subprocess
+import string
 import sys
 
 #-----------------------------------------------------------------------
@@ -100,10 +101,15 @@ def replace_text_recursively(find, replace, include_pattern):
 
 #-----------------------------------------------------------------------
 
+def windows_dir():
+   return string.ascii_uppercase[hash(fqdn) % len(string.ascii_uppercase)]
+
+#-----------------------------------------------------------------------
+
 def replace_constants_in_ref():
     if not os.path.isdir("ref"):
         return
-    replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser() }
+    replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser(), "JENKINS_WINDOWS_DIR" : windows_dir() }
     for find in replacements:
         replace_text_recursively(find, replacements[find], "*.xml")
 
