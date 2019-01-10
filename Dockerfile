@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 RUN apt-get clean && apt-get update && apt-get install -y \
