@@ -1,0 +1,67 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <description>[JENKINS-55536](https://issues.jenkins-ci.org/browse/JENKINS-55536) reports that the git plugin does not support multiple remotes</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>9</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta4">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <refspec>+refs/heads/JENKINS-55536:refs/remotes/origin/JENKINS-55536</refspec>
+        <url>https://github.com/MarkEWaite/jenkins-bugs.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>https-origin</name>
+        <refspec>+refs/heads/JENKINS-55536:refs/remotes/https-origin/JENKINS-55536</refspec>
+        <url>https://github.com/MarkEWaite/jenkins-bugs.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>JENKINS-55536</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+    </extensions>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk8</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.9">
+      <targets>info</targets>
+      <antName>ant-latest</antName>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.10">
+      <regexp>.* https-origin.*https://github.com/MarkEWaite/jenkins-bugs.*</regexp>
+      <succeedIfFound>true</succeedIfFound>
+      <unstableIfFound>false</unstableIfFound>
+      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+    </hudson.plugins.textfinder.TextFinderPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
