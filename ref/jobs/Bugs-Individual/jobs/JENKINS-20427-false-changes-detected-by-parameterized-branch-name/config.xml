@@ -45,6 +45,9 @@
     <gitTool>Default</gitTool>
     <submoduleCfg class="list"/>
     <extensions>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+      </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.LocalBranch>
         <localBranch>**</localBranch>
       </hudson.plugins.git.extensions.impl.LocalBranch>

@@ -62,7 +62,11 @@
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
       <gitTool>Default</gitTool>
       <submoduleCfg class="list"/>
-      <extensions/>
+      <extensions>
+        <hudson.plugins.git.extensions.impl.CloneOption>
+          <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+        </hudson.plugins.git.extensions.impl.CloneOption>
+      </extensions>
     </scm>
     <scriptPath>Jenkinsfile</scriptPath>
     <lightweight>false</lightweight>
