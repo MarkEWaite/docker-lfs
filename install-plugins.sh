@@ -83,7 +83,10 @@ doDownload() {
     fi
 
     echo "Downloading plugin: $plugin from $url"
-    retry_command curl "${CURL_OPTIONS:--sSfL}" --connect-timeout "${CURL_CONNECTION_TIMEOUT:-20}" --retry "${CURL_RETRY:-3}" --retry-delay "${CURL_RETRY_DELAY:-0}" --retry-max-time "${CURL_RETRY_MAX_TIME:-60}" "$url" -o "$jpi"
+    # We actually want to allow variable value to be split into multiple options passed to curl.
+    # This is needed to allow long options and any options that take value.
+    # shellcheck disable=SC2086
+    retry_command curl ${CURL_OPTIONS:--sSfL} --connect-timeout "${CURL_CONNECTION_TIMEOUT:-20}" --retry "${CURL_RETRY:-3}" --retry-delay "${CURL_RETRY_DELAY:-0}" --retry-max-time "${CURL_RETRY_MAX_TIME:-60}" "$url" -o "$jpi"
     return $?
 }
 
@@ -153,9 +156,7 @@ bundledPlugins() {
         done
         rm -fr $TEMP_PLUGIN_DIR
     else
-        rm -f "$TEMP_ALREADY_INSTALLED"
-        echo "ERROR file not found: $JENKINS_WAR"
-        exit 1
+        echo "war not found, installing all plugins: $JENKINS_WAR"
     fi
 }
 
@@ -185,8 +186,7 @@ jenkinsMajorMinorVersion() {
         minor="$(echo "$version" | cut -d '.' -f 2)"
         echo "$major.$minor"
     else
-        echo "ERROR file not found: $JENKINS_WAR"
-        return 1
+        echo ""
     fi
 }
 
