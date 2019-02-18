@@ -118,6 +118,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     docker_command.extend([
                        "--env", 'JAVA_OPTS=' + pipes.quote(java_opts),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
+                       "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
                        "--env", "TZ=America/Boise",
