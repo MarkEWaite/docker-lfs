@@ -109,7 +109,7 @@ def windows_dir():
 def replace_constants_in_ref():
     if not os.path.isdir("ref"):
         return
-    replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser(), "JENKINS_WINDOWS_DIR" : windows_dir() }
+    replacements = { "localhost" : fqdn, "JENKINS_ADVERTISED_HOSTNAME" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser(), "JENKINS_WINDOWS_DIR" : windows_dir() }
     for find in replacements:
         replace_text_recursively(find, replacements[find], "*.xml")
 
