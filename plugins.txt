@@ -86,6 +86,7 @@ ivy:latest
 jackson2-api:latest
 jacoco:latest
 javadoc
+jaxb:latest
 jdk-tool:latest
 jenkins-design-language:latest
 jira:latest
