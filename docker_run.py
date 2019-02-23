@@ -106,7 +106,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     java_opts =    " ".join([
-                             "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                             # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                             "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
+                             "-Dhudson.TcpSlaveAgentListener.port=" + str(http_port),
                              "-Djava.awt.headless=true",
                              "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                              "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
