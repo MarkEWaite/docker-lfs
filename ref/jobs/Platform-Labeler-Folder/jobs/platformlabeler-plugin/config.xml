@@ -18,8 +18,8 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
-      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin</projectUrl>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
+      <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
       <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.11">
@@ -97,7 +97,7 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.26.1">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.27">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <healthScaleFactor>1.0</healthScaleFactor>
@@ -133,15 +133,15 @@
       <deltaClassCoverage>0</deltaClassCoverage>
       <buildOverBuild>false</buildOverBuild>
     </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@1.0.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@3.0.3">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.FindBugs>
+        <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <useRankAsPriority>true</useRankAsPriority>
-        </io.jenkins.plugins.analysis.warnings.FindBugs>
+        </io.jenkins.plugins.analysis.warnings.SpotBugs>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
@@ -167,31 +167,20 @@
       <referenceJobName>-</referenceJobName>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@1.0.0">
+      <minimumSeverity plugin="analysis-model-api@2.1.2">
         <name>LOW</name>
       </minimumSeverity>
-      <thresholds>
-        <unstableTotalAll>0</unstableTotalAll>
-        <unstableTotalHigh>0</unstableTotalHigh>
-        <unstableTotalNormal>0</unstableTotalNormal>
-        <unstableTotalLow>0</unstableTotalLow>
-        <unstableNewAll>0</unstableNewAll>
-        <unstableNewHigh>0</unstableNewHigh>
-        <unstableNewNormal>0</unstableNewNormal>
-        <unstableNewLow>0</unstableNewLow>
-        <failedTotalAll>0</failedTotalAll>
-        <failedTotalHigh>0</failedTotalHigh>
-        <failedTotalNormal>0</failedTotalNormal>
-        <failedTotalLow>0</failedTotalLow>
-        <failedNewAll>0</failedNewAll>
-        <failedNewHigh>0</failedNewHigh>
-        <failedNewNormal>0</failedNewNormal>
-        <failedNewLow>0</failedNewLow>
-      </thresholds>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <isBlameDisabled>false</isBlameDisabled>
+      <qualityGates>
+        <io.jenkins.plugins.analysis.core.util.QualityGate>
+          <threshold>1</threshold>
+          <type>TOTAL</type>
+          <status>WARNING</status>
+        </io.jenkins.plugins.analysis.core.util.QualityGate>
+      </qualityGates>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
