@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-RUN apt-get clean && apt-get update && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get upgrade -y && apt-get install -y \
   build-essential \
   ca-certificates \
   curl \
