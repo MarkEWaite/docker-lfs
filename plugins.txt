@@ -64,11 +64,11 @@ email-ext:latest
 favorite:latest
 findbugs:latest
 git-bisect:latest
-git-client:experimental
+git-client:3.0.0-beta8
 git-parameter:latest
 git-server:latest
 git-userContent:latest
-git:experimental
+git:4.0.0-beta8
 gitea:latest
 github-api:latest
 github-branch-source:latest
