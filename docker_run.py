@@ -83,7 +83,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=5678):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -94,9 +94,11 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(jnlp_port) + ":50000",
-                       "--publish", str(ssh_port)  + ":18022",
-                       "--publish", str(debug_port)  + ":5678",
                      ]
+    if ssh_port != None:
+        docker_command.extend(["--publish", str(ssh_port)  + ":18022"])
+    if debug_port != None:
+        docker_command.extend(["--publish", str(debug_port)  + ":5678"])
     if jenkins_home_volume_map != None and http_port == 8080:
         docker_command.extend(["--volume", jenkins_home_volume_map])
     if git_reference_repo_volume_map != None:
@@ -105,20 +107,29 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
-    java_opts =    " ".join([
-                             # "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                             "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
-                             "-Dhudson.TcpSlaveAgentListener.port=" + str(http_port),
-                             "-Djava.awt.headless=true",
-                             "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-                             "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-                             "-Xdebug",
-                             "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678",
-                             "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                             "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
-                            ])
+    java_opts = [
+		  "-XX:+AlwaysPreTouch",
+		  "-XX:+HeapDumpOnOutOfMemoryError",
+		  "-XX:HeapDumpPath=" + "/var/jenkins_home/logs",
+		  "-XX:+UseG1GC",
+		  "-XX:+UseStringDeduplication",
+		  "-XX:+ParallelRefProcEnabled",
+		  "-Xmx2g",
+		  # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+		  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
+		  "-Djava.awt.headless=true",
+		  "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
+		  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+		  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
+		  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+		]
+    if jnlp_port != None:
+	java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
+    if debug_port != None:
+	java_opts.append("-Xdebug")
+	java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
     docker_command.extend([
-                       "--env", 'JAVA_OPTS=' + pipes.quote(java_opts),
+                       "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
@@ -157,8 +168,8 @@ Run a docker image.   Use -h for help."""
     parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
     parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
     parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
-    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=18022, type="int",    help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=5678,  type="int",    help="debug port")
+    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=None, type="int",    help="ssh port")
+    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=None,  type="int",    help="debug port")
     parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
