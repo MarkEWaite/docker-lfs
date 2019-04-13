@@ -291,9 +291,9 @@
           </default>
           <int>2</int>
           <string>M2_HOME</string>
-          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.0</string>
+          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.1</string>
           <string>PATH+M2_HOME_BIN</string>
-          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.0/bin</string>
+          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.1/bin</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
