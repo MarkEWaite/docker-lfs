@@ -93,7 +93,7 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/jdk-8u191-linux-x64.tar.gz</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-8.212.04.1-linux-x64.tar.gz</url>
               <subdir>jdk1.8.0_191</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
@@ -103,7 +103,7 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/jdk1.8.0_191.zip</url>
+              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-8.212.04.1-windows-x64-jdk.zip</url>
               <subdir>jdk1.8.0_191</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
@@ -114,7 +114,7 @@
             <hudson.tools.CommandInstaller>
               <label>freebsd</label>
               <command>true</command>
-              <toolHome>/usr/local</toolHome>
+              <toolHome>/usr/local/openjdk8</toolHome>
             </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
@@ -136,6 +136,11 @@
               <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11.0.2_linux-x64_bin.tar.gz</url>
               <subdir>jdk-11.0.2</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>freebsd</label>
+              <command>true</command>
+              <toolHome>/usr/local/openjdk11</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
@@ -156,6 +161,11 @@
               <url>https://home.markwaite.net/~mwaite/jdk/openjdk-12_linux-x64_bin.tar.gz</url>
               <subdir>jdk-12</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>freebsd</label>
+              <command>true</command>
+              <toolHome>/usr/local/openjdk12</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
