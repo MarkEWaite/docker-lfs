@@ -114,7 +114,7 @@
             <hudson.tools.CommandInstaller>
               <label>freebsd</label>
               <command>true</command>
-              <toolHome>/usr/local</toolHome>
+              <toolHome>/usr/local/openjdk8</toolHome>
             </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
