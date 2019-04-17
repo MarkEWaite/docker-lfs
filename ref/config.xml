@@ -161,6 +161,11 @@
               <url>https://home.markwaite.net/~mwaite/jdk/openjdk-12_linux-x64_bin.tar.gz</url>
               <subdir>jdk-12</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>freebsd</label>
+              <command>true</command>
+              <toolHome>/usr/local/openjdk12</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
