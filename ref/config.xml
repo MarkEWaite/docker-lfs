@@ -136,6 +136,11 @@
               <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11.0.2_linux-x64_bin.tar.gz</url>
               <subdir>jdk-11.0.2</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>freebsd</label>
+              <command>true</command>
+              <toolHome>/usr/local/openjdk11</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
