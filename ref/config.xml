@@ -93,8 +93,8 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-8.212.04.1-linux-x64.tar.gz</url>
-              <subdir>jdk1.8.0_191</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-8.212.04.2-linux-x64.tar.gz</url>
+              <subdir>amazon-corretto-8.212.04.2-linux-x64</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
@@ -103,8 +103,8 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-8.212.04.1-windows-x64-jdk.zip</url>
-              <subdir>jdk1.8.0_191</subdir>
+              <url>https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x64-jdk.zip</url>
+              <subdir>amazon-corretto-8.212.04.2-windows-x64</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>Alpine</label>
@@ -128,13 +128,13 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11.0.2_windows-x64_bin.zip</url>
-              <subdir>jdk-11.0.2</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-11.0.3.7.1-windows-x64.zip</url>
+              <subdir>amazon-corretto-11.0.3.7.1-windows-x64</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-11.0.2_linux-x64_bin.tar.gz</url>
-              <subdir>jdk-11.0.2</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/amazon-corretto-11.0.3.7.1-linux-x64.tar.gz</url>
+              <subdir>amazon-corretto-11.0.3.7.1-linux-x64</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>freebsd</label>
