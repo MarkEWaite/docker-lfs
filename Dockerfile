@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-RUN apt-get clean && apt-get update && apt-get install -y git curl ca-certificates && rm -rf /var/lib/apt/lists/*
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y git curl ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Install git lfs extension
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
