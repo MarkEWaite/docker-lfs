@@ -78,7 +78,7 @@ def get_git_reference_repo_volume_map():
 
 def get_dns_server():
     if is_home_network():
-	return "172.16.16.253"
+        return "172.16.16.253"
     return "8.8.8.8"
 
 #-----------------------------------------------------------------------
@@ -108,26 +108,27 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     java_opts = [
-		  "-XX:+AlwaysPreTouch",
-		  "-XX:+HeapDumpOnOutOfMemoryError",
-		  "-XX:HeapDumpPath=" + "/var/jenkins_home/logs",
-		  "-XX:+UseG1GC",
-		  "-XX:+UseStringDeduplication",
-		  "-XX:+ParallelRefProcEnabled",
-		  "-Xmx2g",
-		  # "-Dhudson.model.DownloadService.noSignatureCheck=true",
-		  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
-		  "-Djava.awt.headless=true",
-		  "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-		  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-		  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-		  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
-		]
+                  "-XX:+AlwaysPreTouch",
+                  "-XX:+HeapDumpOnOutOfMemoryError",
+                  "-XX:HeapDumpPath=" + "/var/jenkins_home/logs",
+                  "-XX:+UseG1GC",
+                  "-XX:+UseStringDeduplication",
+                  "-XX:+ParallelRefProcEnabled",
+                  "-Xmx2g",
+                  "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
+                  # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
+                  "-Djava.awt.headless=true",
+                  "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
+                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
+                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                ]
     if jnlp_port != None:
-	java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
+        java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
     if debug_port != None:
-	java_opts.append("-Xdebug")
-	java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
+        java_opts.append("-Xdebug")
+        java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
     docker_command.extend([
                        "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
@@ -152,9 +153,9 @@ def get_fqdn():
     fqdn = socket.getfqdn()
     if not "." in fqdn:
         if is_home_network():
-	    fqdn = fqdn + ".markwaite.net"
+            fqdn = fqdn + ".markwaite.net"
         else:
-	    fqdn = fqdn + ".example.com"
+            fqdn = fqdn + ".example.com"
     return fqdn
 
 #-----------------------------------------------------------------------
