@@ -4,7 +4,7 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN apt-get clean && apt-get update && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   build-essential \
   fontconfig \
   gcc-multilib \
