@@ -1,13 +1,11 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y git curl ca-certificates && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y git curl
 
-# Install git lfs extension
-RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated --no-install-recommends git-lfs && \
-    git lfs install && \
-    rm -r /var/lib/apt/lists/*
+# Use stretch-backports for Git LFS install
+RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
+RUN apt-get update && apt-get -t stretch-backports install git-lfs
 
 ARG user=jenkins
 ARG group=jenkins
