@@ -22,11 +22,9 @@ RUN echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
-# Install git lfs extension
-RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated --no-install-recommends git-lfs && \
-    git lfs install && \
-    rm -r /var/lib/apt/lists/*
+# Use stretch-backports for Git LFS install
+RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
+RUN apt-get update && apt-get -t stretch-backports install -y git git-lfs
 
 ARG user=jenkins
 ARG group=jenkins
