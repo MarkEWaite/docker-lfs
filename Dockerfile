@@ -5,7 +5,7 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y git curl
 
 # Use stretch-backports for Git LFS install
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-RUN apt-get update && apt-get -t stretch-backports install git-lfs
+RUN apt-get update && apt-get -t stretch-backports install -y git git-lfs
 
 ARG user=jenkins
 ARG group=jenkins
