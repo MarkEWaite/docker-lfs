@@ -64,7 +64,7 @@
   <builders/>
   <buildWrappers>
     <org.jenkinsci.plugins.buildnamesetter.BuildNameSetter plugin="build-name-setter@1.7.0">
-      <template>#${GIT_REVISION,length=6}</template>
+      <template>#${BUILD_NUMBER} - ${GIT_REVISION,length=6}</template>
       <runAtStart>true</runAtStart>
       <runAtEnd>true</runAtEnd>
     </org.jenkinsci.plugins.buildnamesetter.BuildNameSetter>
