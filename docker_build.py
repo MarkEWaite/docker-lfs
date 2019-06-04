@@ -6,8 +6,8 @@ import optparse
 import os
 import re
 import socket
-import subprocess
 import string
+import subprocess
 import sys
 
 #-----------------------------------------------------------------------
@@ -48,6 +48,9 @@ def compute_tag(branch_name):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
     m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
+    if m:
+        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+    m = re.search("FROM cloudbees/cloudbees-jenkins-distribution:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
         return "markewaite/" + branch_name + ":" + m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
@@ -143,6 +146,8 @@ def get_predecessor_branch(current_branch, all_branches):
     last = "upstream/" + current_branch
     if current_branch == "lts":
         last = "upstream/master"
+    if current_branch == "cjd":
+        last = "cjd"
     if current_branch == "cjt":
         last = "cjt"
     if current_branch == "cjp":
