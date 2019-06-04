@@ -117,7 +117,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                   "-Xmx2g",
                   "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_fqdn(),
+                  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
                   "-Djava.awt.headless=true",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
@@ -137,7 +137,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                        "--env", "LANG=en_US.utf8",
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
-                       "--env", "DOCKER_FIX=refer-to-docker-issues-14203-for-description",
                        "-t", docker_tag,
                      ])
     # Python docs recommend using an array of string but then fails to pass quoted args correctly.
@@ -157,6 +156,15 @@ def get_fqdn():
         else:
             fqdn = fqdn + ".example.com"
     return fqdn
+
+#-----------------------------------------------------------------------
+
+def get_base_hostname():
+    base_hostname = get_fqdn()
+    dot = base_hostname.find('.')
+    if dot > 0:
+        base_hostname = base_hostname[0:dot]
+    return base_hostname
 
 #-----------------------------------------------------------------------
 
