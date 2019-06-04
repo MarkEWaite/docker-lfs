@@ -103,6 +103,10 @@
       <antName>ant-latest</antName>
       <buildFile>sample_ant/build.xml</buildFile>
     </hudson.tasks.Ant>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets>info</targets>
+      <antName>ant-latest</antName>
+    </hudson.tasks.Ant>
   </builders>
   <publishers/>
   <buildWrappers/>

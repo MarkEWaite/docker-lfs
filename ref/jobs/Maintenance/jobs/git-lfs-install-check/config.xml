@@ -55,6 +55,12 @@ Git lfs requires git 1.8.2 minimum</description>
       <regexToKill></regexToKill>
       <timeAllocated></timeAllocated>
     </hudson.plugins.xshell.XShellBuilder>
+    <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.10">
+      <commandLine>git --version</commandLine>
+      <executeFromWorkingDir>false</executeFromWorkingDir>
+      <regexToKill></regexToKill>
+      <timeAllocated></timeAllocated>
+    </hudson.plugins.xshell.XShellBuilder>
   </builders>
   <publishers>
     <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.10">

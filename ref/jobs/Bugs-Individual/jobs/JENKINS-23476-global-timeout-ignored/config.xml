@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
   <description>[JENKINS-23476](https://issues.jenkins-ci.org/browse/JENKINS-23476) global default git client timeout ignored</description>
@@ -52,9 +52,13 @@
         <shallow>false</shallow>
         <noTags>true</noTags>
         <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <timeout>23</timeout>
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.CheckoutOption>
+        <timeout>13</timeout>
+      </hudson.plugins.git.extensions.impl.CheckoutOption>
     </extensions>
   </scm>
   <canRoam>true</canRoam>
