@@ -24,8 +24,8 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/git/git-2.21.0.zip</url>
-              <subdir>git-2.21.0\bin\git.exe</subdir>
+              <url>https://home.markwaite.net/~mwaite/git/git-2.22.0.zip</url>
+              <subdir>git-2.22.0\bin\git.exe</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 32bit</label>
