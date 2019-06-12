@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-# If the ~/.m2 directory is not owned by group 1000, the container
+# If the ~/.m2 directory is not owned current user, the container
 # assumption that it can be written won't be met.  In that case, the
 # directory is not used.  That will slow the initial builds on the machine,
 # because they will need to populate the .m2 cache instead of using the
@@ -22,8 +22,6 @@ jenkins_home_dir = os.path.expanduser("~/docker-jenkins-home")
 #-----------------------------------------------------------------------
 
 def is_home_network():
-    if "hp-ux" in sys.platform:
-        return False # No HP-UX on home networks
     from socket import socket, SOCK_DGRAM, AF_INET
     s = socket(AF_INET, SOCK_DGRAM)
     s.settimeout(1.0)
@@ -31,14 +29,14 @@ def is_home_network():
         s.connect(("google.com", 0))
     except:
         return True
-    return s.getsockname()[0].startswith("172")
+    return s.getsockname()[0].startswith("172.16.16.")
 
 #-----------------------------------------------------------------------
 
 def volume_available(lhs):
     stat_info = os.stat(lhs)
     gid = stat_info.st_gid
-    if gid != 1000:
+    if gid not in os.getgroups():
         return False
     return True
 
