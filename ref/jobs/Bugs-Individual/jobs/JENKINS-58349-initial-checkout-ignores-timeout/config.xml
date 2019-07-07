@@ -14,6 +14,14 @@
 Duplicate of [JENKINS-38973](https://issues.jenkins-ci.org/browse/JENKINS-38973)</description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec></spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.8">
       <siteName>https://issues.jenkins-ci.org/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
@@ -23,6 +31,14 @@ Duplicate of [JENKINS-38973](https://issues.jenkins-ci.org/browse/JENKINS-38973)
       <scanQueueFor>DISABLED</scanQueueFor>
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>13</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.12">
       <gitLabConnection></gitLabConnection>
     </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
@@ -42,14 +58,6 @@ Duplicate of [JENKINS-38973](https://issues.jenkins-ci.org/browse/JENKINS-38973)
       <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
-    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-      <triggers>
-        <hudson.triggers.SCMTrigger>
-          <spec></spec>
-          <ignorePostCommitHooks>false</ignorePostCommitHooks>
-        </hudson.triggers.SCMTrigger>
-      </triggers>
-    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.71">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta10">
@@ -79,6 +87,7 @@ Duplicate of [JENKINS-38973](https://issues.jenkins-ci.org/browse/JENKINS-38973)
           <honorRefspec>true</honorRefspec>
         </hudson.plugins.git.extensions.impl.CloneOption>
         <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+        <hudson.plugins.git.extensions.impl.WipeWorkspace/>
       </extensions>
     </scm>
     <scriptPath>Jenkinsfile</scriptPath>
