@@ -80,7 +80,15 @@
             <hudson.model.labels.LabelAtom>Debian-10</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">Debian&amp;&amp;(10.9||10.8||10.7||10.6||10.5||10.4||10.3||10.2||10.1||10.0||testing)</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">Debian&amp;&amp;(10.9||10.8||10.7||10.6||10.5||10.4||10.3||10.2||10.1||10.0)</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>Debian-11</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">Debian&amp;&amp;(11.9||11.8||11.7||11.6||11.5||11.4||11.3||11.2||11.1||11.0||testing)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
