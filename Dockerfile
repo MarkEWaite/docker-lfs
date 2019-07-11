@@ -7,7 +7,6 @@ RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get instal
   curl \
   gcc-multilib \
   git \
-  less \
   locales \
   lsb-release \
   make \
