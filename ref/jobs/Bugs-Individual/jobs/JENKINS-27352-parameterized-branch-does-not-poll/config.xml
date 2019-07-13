@@ -1,27 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.19.1">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
       <projectUrl>https://github.com/jenkinsci/git-client-plugin.git/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.5.1">
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.11">
           <name>BRANCH_TO_BUILD</name>
           <description>Branch to build</description>
-          <uuid>e39f6b0a-6061-4d77-95d5-5d897c21064f</uuid>
+          <uuid>a03619c3-5b76-49c5-bcf7-5a54f7f032a5</uuid>
           <type>PT_BRANCH</type>
           <branch></branch>
           <tagFilter>*</tagFilter>
+          <branchFilter>.*</branchFilter>
           <sortMode>NONE</sortMode>
-          <defaultValue>master</defaultValue>
+          <defaultValue>origin/master</defaultValue>
+          <selectedValue>DEFAULT</selectedValue>
+          <quickFilterEnabled>false</quickFilterEnabled>
+          <listSize>5</listSize>
         </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -59,9 +60,11 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.DisableRemotePoll/>
+      <hudson.plugins.git.extensions.impl.WipeWorkspace/>
     </extensions>
   </scm>
-  <canRoam>true</canRoam>
+  <assignedNode>git-1.8+</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
