@@ -77,7 +77,7 @@
   <publishers>
     <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.4.1">
       <script plugin="script-security@1.44">
-        <script>if (!manager.logContains(&quot;.*git-windows.git-2.18.0.bin.git.exe.*&quot;)) {
+        <script>if (!manager.logContains(&quot;.*git-windows.git-2.22.0.bin.git.exe.*&quot;)) {
     manager.addWarningBadge(&quot;Wrong or missing git version&quot;)
     manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong or missing git version&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
