@@ -1,9 +1,12 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.17">
+<flow-definition plugin="workflow-job@2.33">
   <actions/>
-  <description>[JENKINS-50131](https://issues.jenkins-ci.org/browse/JENKINS-50131) Pipeline does not expand parameters in branch name or refspec</description>
+  <description>[JENKINS-49758](https://issues.jenkins-ci.org/browse/JENKINS-49758) Pipeline does not expand parameters in branch name or refspec</description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.8">
+      <siteName>https://issues.jenkins-ci.org/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
@@ -18,22 +21,32 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.12">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
     <org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
       <hint>PERFORMANCE_OPTIMIZED</hint>
     </org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.3">
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.11">
           <name>BRANCH</name>
           <description>Git branch</description>
-          <uuid>37551392-d97d-448e-ab02-329262845299</uuid>
+          <uuid>dcdd8d7d-097b-4341-97a3-df30df4fc61b</uuid>
           <type>PT_BRANCH</type>
           <branch></branch>
           <tagFilter>*</tagFilter>
-          <branchFilter>.*JENKINS-4.*</branchFilter>
+          <branchFilter>.*JENKINS-5.*</branchFilter>
           <sortMode>ASCENDING_SMART</sortMode>
-          <defaultValue></defaultValue>
-          <selectedValue>TOP</selectedValue>
+          <defaultValue>origin/JENKINS-50886</defaultValue>
+          <selectedValue>DEFAULT</selectedValue>
           <quickFilterEnabled>false</quickFilterEnabled>
           <listSize>5</listSize>
         </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
@@ -57,8 +70,8 @@
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.45">
-    <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-SNAPSHOT">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.72">
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta10">
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
