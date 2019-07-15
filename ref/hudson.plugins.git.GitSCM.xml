@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<hudson.plugins.git.GitSCM_-DescriptorImpl plugin="git@3.5.2-SNAPSHOT">
-  <generation>1</generation>
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.git.GitSCM_-DescriptorImpl plugin="git@4.0.0-beta10">
+  <generation>25</generation>
   <globalConfigName>Jenkins Docker User</globalConfigName>
   <globalConfigEmail>LOGNAME@JENKINS_HOSTNAME</globalConfigEmail>
   <createAccountBasedOnEmail>false</createAccountBasedOnEmail>
+  <useExistingAccountWithSameEmail>false</useExistingAccountWithSameEmail>
+  <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
 </hudson.plugins.git.GitSCM_-DescriptorImpl>
