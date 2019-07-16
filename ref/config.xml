@@ -59,6 +59,9 @@
       <name>jdk7</name>
       <home></home>
       <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>java7 jdk7</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
@@ -89,6 +92,9 @@
       <name>jdk8</name>
       <home></home>
       <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>java8 jdk8</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
@@ -129,6 +135,9 @@
       <name>jdk11</name>
       <home></home>
       <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>java11 jdk11</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
@@ -159,6 +168,9 @@
       <name>jdk12</name>
       <home></home>
       <properties>
+        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
+          <labels>java12 jdk12</labels>
+        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
