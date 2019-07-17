@@ -4,9 +4,6 @@
     <hudson.tasks.Maven_-MavenInstallation>
       <name>maven-latest</name>
       <properties>
-        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
-          <labels>jenkins-maven</labels>
-        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
@@ -33,9 +30,6 @@
     <hudson.tasks.Maven_-MavenInstallation>
       <name>mvn</name>
       <properties>
-        <org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty plugin="tool-labels-plugin@3.0">
-          <labels>jenkins-maven</labels>
-        </org.vx68k.hudson.plugin.tool.labels.ToolLabelsProperty>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.ZipExtractionInstaller>
