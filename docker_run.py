@@ -108,10 +108,10 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
     java_opts = [
                   "-XX:+AlwaysPreTouch",
                   "-XX:+HeapDumpOnOutOfMemoryError",
-                  "-XX:HeapDumpPath=" + "/var/jenkins_home/logs",
+                  "-XX:HeapDumpPath=/var/jenkins_home/logs",
+                  "-Xloggc:/var/jenkins_home/gc-%t.log",
                   "-XX:+UseG1GC",
                   "-verbose:gc",
-                  "-Xloggc:$path/gc-%t.log",
                   "-XX:NumberOfGCLogFiles=2",
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
