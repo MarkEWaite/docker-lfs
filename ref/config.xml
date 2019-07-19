@@ -93,8 +93,8 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine &amp;&amp; !cloud</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u212b03.tar.gz</url>
-              <subdir>jdk8u212-b03</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u222b10.tar.gz</url>
+              <subdir>jdk8u222-b10</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 32bit</label>
@@ -103,13 +103,13 @@
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u212b03.zip</url>
-              <subdir>jdk8u212-b03/</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u222b10.zip</url>
+              <subdir>jdk8u222-b10/</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>cloud</label>
               <command>true</command>
-              <toolHome>/home/jagent/tools/jdk8u212-b03</toolHome>
+              <toolHome>/home/jagent/tools/jdk8u222-b10</toolHome>
             </hudson.tools.CommandInstaller>
             <hudson.tools.CommandInstaller>
               <label>Alpine</label>
@@ -133,18 +133,18 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.3_7.zip</url>
-              <subdir>jdk-11.0.3+7</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11.zip</url>
+              <subdir>jdk-11.0.4+11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit &amp;&amp; !Alpine &amp;&amp; !cloud</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.3_7.tar.gz</url>
-              <subdir>jdk-11.0.3+7</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.4_11.tar.gz</url>
+              <subdir>jdk-11.0.4+11</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.CommandInstaller>
               <label>cloud</label>
               <command>true</command>
-              <toolHome>/home/jagent/tools/jdk-11.0.3+7</toolHome>
+              <toolHome>/home/jagent/tools/jdk-11.0.4+11</toolHome>
             </hudson.tools.CommandInstaller>
             <hudson.tools.CommandInstaller>
               <label>freebsd</label>
@@ -163,14 +163,19 @@
           <installers>
             <hudson.tools.ZipExtractionInstaller>
               <label>windows &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-12_windows-x64_bin.zip</url>
-              <subdir>jdk-12</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_windows_hotspot_12.0.2_10.zip</url>
+              <subdir>jdk-12.0.2+10</subdir>
             </hudson.tools.ZipExtractionInstaller>
             <hudson.tools.ZipExtractionInstaller>
               <label>linux &amp;&amp; 64bit</label>
-              <url>https://home.markwaite.net/~mwaite/jdk/openjdk-12_linux-x64_bin.tar.gz</url>
-              <subdir>jdk-12</subdir>
+              <url>https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_linux_hotspot_12.0.2_10.tar.gz</url>
+              <subdir>jdk-12.0.2+10</subdir>
             </hudson.tools.ZipExtractionInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>cloud</label>
+              <command>true</command>
+              <toolHome>/home/jagent/tools/jdk-12.0.2+10</toolHome>
+            </hudson.tools.CommandInstaller>
             <hudson.tools.CommandInstaller>
               <label>freebsd</label>
               <command>true</command>
