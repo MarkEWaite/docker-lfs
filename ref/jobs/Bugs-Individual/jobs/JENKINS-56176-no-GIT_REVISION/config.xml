@@ -61,7 +61,8 @@
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <canRoam>true</canRoam>
+  <assignedNode>!windows</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
