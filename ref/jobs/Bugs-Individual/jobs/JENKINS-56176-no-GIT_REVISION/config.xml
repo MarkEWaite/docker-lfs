@@ -57,6 +57,7 @@
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
@@ -72,12 +73,17 @@
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.9">
+      <targets>info</targets>
+      <antName>ant-latest</antName>
+    </hudson.tasks.Ant>
+  </builders>
   <publishers/>
   <buildWrappers>
     <org.jenkinsci.plugins.buildnamesetter.BuildNameSetter plugin="build-name-setter@2.0.1">
       <template>#${BUILD_NUMBER} - ${GIT_REVISION,length=6}</template>
-      <descriptionTemplate>Build ${BUILD_NUMBER} of git revision ${GIT_REVISION}</descriptionTemplate>
+      <descriptionTemplate>Build ${BUILD_NUMBER} of git revision ${GIT_REVISION,length=24}</descriptionTemplate>
       <runAtStart>true</runAtStart>
       <runAtEnd>true</runAtEnd>
     </org.jenkinsci.plugins.buildnamesetter.BuildNameSetter>
