@@ -13,10 +13,9 @@ do
         # echo
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
         # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
-        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        echo curl -X POST http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=${scan_delay}sec
         scan_delay=$((scan_delay+7))
-        break
         # exit 0
 done
 
@@ -29,7 +28,7 @@ do
         # echo $build_now_job to $url_encoded_build_now_job
         # echo http://localhost:8080$url_encoded_build_now_job?delay=0
         echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_build_now_job/build?delay=$scan_delay
-        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_build_now_job/build?delay=$scan_delay
+        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_build_now_job/build?delay=${scan_delay}sec
         # exit 0
 done
 
