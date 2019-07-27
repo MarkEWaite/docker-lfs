@@ -5,24 +5,24 @@ JENKINS_APITOKEN=${JENKINS_APITOKEN=:-unspecified-api-token}
 
 # Scan each multi-branch pipeline (URL encode job path before passing as arg to curl
 
-scan_delay=3
+scan_delay=371
 
 git grep -l -F org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read multibranch_pipeline
 do
+        scan_delay=$((scan_delay+137))
         url_encoded_multibranch_pipeline=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$multibranch_pipeline")
         # echo
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
         # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
         echo curl -X POST http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
         curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=${scan_delay}sec
-        scan_delay=$((scan_delay+7))
         # exit 0
 done
 
 # Jobs which are disrupted by notifyCommit pushing a specific SHA1 should be executed again
 git grep -l -E 'JENKINS-33238|JENKINS-20941' -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read build_now_job
 do
-        scan_delay=$((scan_delay+37))
+        scan_delay=$((scan_delay+207))
         url_encoded_build_now_job=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$build_now_job")
         # echo
         # echo $build_now_job to $url_encoded_build_now_job
