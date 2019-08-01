@@ -63,6 +63,7 @@ docker-workflow:latest
 durable-task:latest
 elastic-axis:latest
 email-ext:latest
+external-monitor-job:latest
 favorite:latest
 findbugs:latest
 git-bisect:latest
