@@ -78,6 +78,7 @@ github-branch-source:latest
 github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
+gitlab-branch-source:latest
 gitlab-plugin:latest
 gradle:latest
 groovy-postbuild:latest
