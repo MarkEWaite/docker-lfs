@@ -2,57 +2,8 @@
 <hudson>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
-  <markupFormatter class="org.jenkins_ci.plugins.pegdown_formatter.PegDownFormatter" plugin="pegdown-formatter@1.3">
-    <flags>262399</flags>
-    <extensions>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>SUPPRESS_ALL_HTML</name>
-        <flag>196608</flag>
-        <selected>false</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-    </extensions>
-    <advancedExtensions>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>ABBREVIATIONS</name>
-        <flag>4</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>AUTOLINKS</name>
-        <flag>16</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>DEFINITIONS</name>
-        <flag>64</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>FENCED_CODE_BLOCKS</name>
-        <flag>128</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>HARDWRAPS</name>
-        <flag>8</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>NO_FOLLOW_LINKS</name>
-        <flag>262144</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>SMARTYPANTS</name>
-        <flag>3</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-      <org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-        <name>TABLES</name>
-        <flag>32</flag>
-        <selected>true</selected>
-      </org.jenkins__ci.plugins.pegdown__formatter.PegDownExtension>
-    </advancedExtensions>
+  <markupFormatter class="hudson.markup.RawHtmlMarkupFormatter" plugin="antisamy-markup-formatter@1.5">
+    <disableSyntaxHighlighting>false</disableSyntaxHighlighting>
   </markupFormatter>
   <jdks>
     <jdk>

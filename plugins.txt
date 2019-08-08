@@ -125,7 +125,6 @@ multiple-scms:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
-pegdown-formatter:latest
 pipeline-build-step:latest
 pipeline-github-lib:latest
 pipeline-graph-analysis:latest
