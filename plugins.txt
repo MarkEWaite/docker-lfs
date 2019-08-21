@@ -74,7 +74,7 @@ git-userContent:latest
 git:4.0.0-beta8
 gitea:latest
 github-api:latest
-github-branch-source:latest
+github-branch-source:2.5.4
 github-scm-filter-aged-refs:latest
 github-scm-trait-commit-skip:latest
 github:latest
