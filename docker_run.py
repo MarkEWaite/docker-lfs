@@ -81,7 +81,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -105,6 +105,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
+    if (detach):
+        docker_command.extend([ "--detach" ])
     java_opts = [
                   "-XX:+AlwaysPreTouch",
                   "-XX:+HeapDumpOnOutOfMemoryError",
@@ -143,7 +145,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                        "--env", "user.timezone=America/Denver",
                        "-t", docker_tag,
                      ])
-    # Python docs recommend using an array of string but then fails to pass quoted args correctly.
     # Using shell=True and the single string form passes quoted args correctly.
     # Since input to command is program controlled, shell=True is safe (for now)
     str_command = " ".join(map(str, docker_command))
@@ -193,10 +194,13 @@ Run a docker image.   Use -h for help."""
         shutil.rmtree(jenkins_home_dir)
         os.mkdir(jenkins_home_dir)
 
+    if options.detach:
+        print "Detaching from stdin / stdout"
+
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
         options.docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach)
 
 #-----------------------------------------------------------------------
 
