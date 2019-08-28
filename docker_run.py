@@ -81,7 +81,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -105,6 +105,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
+    if (detach):
+        docker_command.extend([ "--detach" ])
     java_opts = [
                   "-XX:+AlwaysPreTouch",
                   "-XX:+HeapDumpOnOutOfMemoryError",
@@ -116,14 +118,15 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                   "-XX:+DisableExplicitGC",
                   "-XX:+UnlockDiagnosticVMOptions",
                   "-XX:+UnlockExperimentalVMOptions",
-                  "-Xms4g",
-                  "-Xmx8g",
+                  "-Xms3g",
+                  "-Xmx7g",
                   "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
                   "-Djava.awt.headless=true",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                 ]
@@ -142,7 +145,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                        "--env", "user.timezone=America/Denver",
                        "-t", docker_tag,
                      ])
-    # Python docs recommend using an array of string but then fails to pass quoted args correctly.
     # Using shell=True and the single string form passes quoted args correctly.
     # Since input to command is program controlled, shell=True is safe (for now)
     str_command = " ".join(map(str, docker_command))
@@ -177,12 +179,14 @@ Run a docker image.   Use -h for help."""
     parser = optparse.OptionParser(usage=help_text)
 
     # keep at optparse for 2.6. compatibility
-    parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
-    parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
-    parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
-    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=None, type="int",    help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=None,  type="int",    help="debug port")
-    parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
+    parser.add_option("-c", "--clean",  action="store_true", default=False, help="clean prior file system image")
+    parser.add_option("-d", "--detach", action="store_true", default=False, help="detach from typical stdin and stdout")
+
+    parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
+    parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
+    parser.add_option("-p", "--port",  action="store", dest='http_port',  default=8080,  type="int",    help="http port")
+    parser.add_option("-s", "--ssh",   action="store", dest='ssh_port',   default=None,  type="int",    help="ssh port")
+    parser.add_option("-t", "--tag",   action="store", dest='docker_tag', default=None,  type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
 
@@ -190,10 +194,13 @@ Run a docker image.   Use -h for help."""
         shutil.rmtree(jenkins_home_dir)
         os.mkdir(jenkins_home_dir)
 
+    if options.detach:
+        print "Detaching from stdin / stdout"
+
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
         options.docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach)
 
 #-----------------------------------------------------------------------
 
