@@ -116,14 +116,15 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                   "-XX:+DisableExplicitGC",
                   "-XX:+UnlockDiagnosticVMOptions",
                   "-XX:+UnlockExperimentalVMOptions",
-                  "-Xms4g",
-                  "-Xmx8g",
+                  "-Xms3g",
+                  "-Xmx7g",
                   "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
                   "-Djava.awt.headless=true",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                 ]
@@ -177,12 +178,14 @@ Run a docker image.   Use -h for help."""
     parser = optparse.OptionParser(usage=help_text)
 
     # keep at optparse for 2.6. compatibility
-    parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
-    parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
-    parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
-    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=None, type="int",    help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=None,  type="int",    help="debug port")
-    parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
+    parser.add_option("-c", "--clean",  action="store_true", default=False, help="clean prior file system image")
+    parser.add_option("-d", "--detach", action="store_true", default=False, help="detach from typical stdin and stdout")
+
+    parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
+    parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
+    parser.add_option("-p", "--port",  action="store", dest='http_port',  default=8080,  type="int",    help="http port")
+    parser.add_option("-s", "--ssh",   action="store", dest='ssh_port',   default=None,  type="int",    help="ssh port")
+    parser.add_option("-t", "--tag",   action="store", dest='docker_tag', default=None,  type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
 
