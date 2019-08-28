@@ -16,8 +16,8 @@ def get_current_branch():
     branch_list = os.popen("git branch", "r").readlines()
     for branch_line in branch_list:
         branch = branch_line.strip()
-	if branch.startswith("* "):
-	    return branch[2:]
+        if branch.startswith("* "):
+            return branch[2:]
     return "unknown branch"
 
 #-----------------------------------------------------------------------
@@ -27,10 +27,10 @@ def get_all_branches():
     branch_list = os.popen("git branch", "r").readlines()
     for branch_line in branch_list:
         branch = branch_line.strip()
-	if branch.startswith("* "):
-	    branches.append(branch[2:])
-	else:
-	    branches.append(branch)
+        if branch.startswith("* "):
+            branches.append(branch[2:])
+        else:
+            branches.append(branch)
     return branches
 
 #-----------------------------------------------------------------------
@@ -78,9 +78,9 @@ def get_fqdn():
     fqdn = socket.getfqdn()
     if not "." in fqdn:
         if is_home_network():
-	    fqdn = fqdn + ".markwaite.net"
+            fqdn = fqdn + ".markwaite.net"
         else:
-	    fqdn = fqdn + ".example.com"
+            fqdn = fqdn + ".example.com"
     return fqdn
 
 #-----------------------------------------------------------------------
@@ -154,9 +154,9 @@ def get_predecessor_branch(current_branch, all_branches):
         last = "cjp"
     for branch in all_branches:
         if branch == current_branch:
-	    return last
+            return last
         if current_branch.startswith(branch):
-	    last = branch
+            last = branch
     return last
 
 #-----------------------------------------------------------------------
