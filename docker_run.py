@@ -195,7 +195,7 @@ Run a docker image.   Use -h for help."""
         os.mkdir(jenkins_home_dir)
 
     if options.detach:
-        print "Detaching from stdin / stdout"
+        print("Detaching from stdin / stdout")
 
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
