@@ -158,7 +158,6 @@ sse-gateway:latest
 ssh-agent:latest
 ssh-credentials
 ssh-slaves
-strict-crumb-issuer:latest
 structs:latest
 subversion
 support-core:latest
