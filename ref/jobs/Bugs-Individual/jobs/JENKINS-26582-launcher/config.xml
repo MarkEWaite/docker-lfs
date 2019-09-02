@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/&quot;&gt;JENKINS-26582&lt;/a&gt;</description>
+  <description>Uses curl and a specific SHA1 to start [JENKINS-26582](http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/)</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
