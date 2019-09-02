@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>[JENKINS-45352](https://issues.jenkins-ci.org/browse/JENKINS-45352) reports that multiple SCM fails checkout with a class cast exception at print commit log</description>
+  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-45352&quot;&gt;JENKINS-45352&lt;/a&gt; reports that multiple SCM fails checkout with a class cast exception at print commit log</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.12">
   <actions/>
-  <description>[Multi-branch pipeline to check public Jenkins bugs](https://github.com/MarkEWaite/jenkins-bugs)</description>
+  <description>&lt;a href=&quot;https://github.com/MarkEWaite/jenkins-bugs&quot;&gt;Multi-branch pipeline to check public Jenkins bugs&lt;/a&gt;</description>
   <displayName>jenkins-bugs</displayName>
   <properties>
     <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.0.2">
