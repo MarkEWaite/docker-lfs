@@ -1,3 +1,3 @@
 jenkins:
-  systemMessage: "[Jenkins instance](https://jenkins.io) for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
+  systemMessage: "<a href="https://jenkins.io">Jenkins instance</a> for <a href="mailto:mark.earl.waite@gmail.com">Mark Waite</a>"
   numExecutors: 2
