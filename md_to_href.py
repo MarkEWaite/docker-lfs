@@ -24,7 +24,7 @@ def md_to_href(args):
                 link_text = m.group(1)
                 link_url = m.group(2)
                 print("search:", link_text, link_url)
-            replaced_content = re.sub('\[(.+)\]\((.+)\)',
+            replaced_content = re.sub('\[([^\]]+)\]\(([^)]+)\)',
                                       '&lt;a href=&quot;\\2&quot;&gt;\\1&lt;/a&gt;',
                                       content)
         with open(file_name, 'w') as file_content:
