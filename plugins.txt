@@ -26,6 +26,7 @@ blueocean-executor-info:latest
 blueocean-github-pipeline:latest
 blueocean-git-pipeline:latest
 blueocean-i18n:latest
+blueocean-jira:latest
 blueocean-jwt:latest
 blueocean-personalization:latest
 blueocean-pipeline-api-impl:latest
