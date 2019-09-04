@@ -67,6 +67,7 @@ email-ext:latest
 external-monitor-job:latest
 favorite:latest
 findbugs:latest
+forensics-api:latest
 git-bisect:latest
 git-client:3.0.0-beta8
 git-parameter:latest
