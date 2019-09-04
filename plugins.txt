@@ -95,6 +95,7 @@ javadoc
 jaxb:latest
 jdk-tool:latest
 jenkins-design-language:latest
+jira:latest
 job-dsl:latest
 jquery-detached:latest
 jquery-ui:latest
