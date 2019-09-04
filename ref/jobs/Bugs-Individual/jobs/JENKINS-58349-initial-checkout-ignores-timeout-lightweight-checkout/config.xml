@@ -24,9 +24,6 @@ This version of the job uses lightweight checkout</description>
         </hudson.triggers.SCMTrigger>
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.8">
-      <siteName>https://issues.jenkins-ci.org/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
