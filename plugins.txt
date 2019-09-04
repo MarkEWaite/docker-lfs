@@ -6,6 +6,7 @@ ant
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api:latest
 async-http-client:latest
+atlassian-jira-software-cloud:latest
 audit-trail:latest
 authentication-tokens:latest
 authorize-project:latest
@@ -94,7 +95,6 @@ javadoc
 jaxb:latest
 jdk-tool:latest
 jenkins-design-language:latest
-jira:latest
 job-dsl:latest
 jquery-detached:latest
 jquery-ui:latest
