@@ -1,4 +1,5 @@
 ace-editor:latest
+adoptopenjdk:latest
 analysis-collector:latest
 analysis-core:latest
 analysis-model-api:latest
