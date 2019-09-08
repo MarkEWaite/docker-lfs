@@ -87,7 +87,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>-P enable-jacoco clean install jacoco:report findbugs:findbugs javadoc:javadoc checkstyle:checkstyle</targets>
+      <targets>-P enable-jacoco clean install jacoco:report spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
       <mavenName>maven-latest</mavenName>
       <properties>maven.test.failure.ignore=true</properties>
       <usePrivateRepository>false</usePrivateRepository>
@@ -135,14 +135,6 @@
     </hudson.plugins.jacoco.JacocoPublisher>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@5.1.0">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.FindBugs>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-          <useRankAsPriority>true</useRankAsPriority>
-        </io.jenkins.plugins.analysis.warnings.FindBugs>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
