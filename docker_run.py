@@ -81,7 +81,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False, quiet=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -141,6 +141,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
+                       "--env", "START_QUIET=" + str(quiet),
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
                        "-t", docker_tag,
@@ -181,6 +182,7 @@ Run a docker image.   Use -h for help."""
     # keep at optparse for 2.6. compatibility
     parser.add_option("-c", "--clean",  action="store_true", default=False, help="clean prior file system image")
     parser.add_option("-d", "--detach", action="store_true", default=False, help="detach from typical stdin and stdout")
+    parser.add_option("-q", "--quiet",  action="store_true", default=False, help="start in quiet down state, process no jobs until shutdown is cancelled")
 
     parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
     parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
@@ -197,10 +199,13 @@ Run a docker image.   Use -h for help."""
     if options.detach:
         print("Detaching from stdin / stdout")
 
+    if options.quiet:
+        print("Job processing disabled")
+
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
         options.docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach, options.quiet)
 
 #-----------------------------------------------------------------------
 
