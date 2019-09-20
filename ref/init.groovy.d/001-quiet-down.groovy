@@ -1,2 +1,4 @@
 // Enter "Preparing to shutdown" state
-// jenkins.model.Jenkins.instance.doQuietDown()
+if (System.getenv("START_QUIET") == "True") {
+  jenkins.model.Jenkins.instance.doQuietDown()
+}
