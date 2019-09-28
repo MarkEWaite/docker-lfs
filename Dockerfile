@@ -17,9 +17,12 @@ RUN echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
-# Use stretch-backports for Git LFS install
+# Use stretch-backports for Git install
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-RUN apt-get update && apt-get -t stretch-backports install -y git git-lfs
+RUN apt-get update && apt-get -t stretch-backports install -y git
+
+# Use git LFS install instructions for LFS on Debian
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs && git lfs install
 
 ARG user=jenkins
 ARG group=jenkins
@@ -105,3 +108,6 @@ ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 # from a derived Dockerfile, can use `RUN plugins.sh active.txt` to setup ${REF}/plugins from a support bundle
 COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
+
+# Initialize git lfs for jenkins user
+RUN git lfs install
