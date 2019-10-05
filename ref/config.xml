@@ -236,9 +236,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>2</int>
-          <string>M2_HOME</string>
-          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.2</string>
+          <int>1</int>
           <string>PATH+M2_HOME_BIN</string>
           <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.2/bin</string>
         </tree-map>
