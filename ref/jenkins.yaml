@@ -1,13 +1,3 @@
-credentials:
-  system:
-    domainCredentials:
-    - credentials:
-      - usernamePassword:
-          description: "intentionally invalid user and password for credentials NPE in multi-branch jobs"
-          id: "invalid-user-and-password"
-          password: "{AQAAABAAAAAwAtoDXOFmYp1cmvNIF6wutBX5G9wRnlIZp/wRonz7D7n0w52BfoAygz00SVEHrg+JbGNwnSfBTq+MAbiPM+vXVg==}"
-          scope: GLOBAL
-          username: "invalid-user"
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
@@ -38,12 +28,6 @@ jenkins:
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
   systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
-  updateCenter:
-    sites:
-    - id: "default"
-      url: "https://updates.jenkins.io/update-center.json"
-    - id: "devoptics"
-      url: "http://jenkins-updates.cloudbees.com/update-center/devoptics/update-center.json"
   views:
   - list:
       columns:
@@ -185,12 +169,6 @@ unclassified:
     watchingEnabled: false
   gitHubPluginConfig:
     hookUrl: "http://testing-a.markwaite.net:8080/github-webhook/"
-  gitLabConnectionConfig:
-    connections:
-    - clientBuilderId: "autodetect"
-      connectionTimeout: 10
-      ignoreCertificateErrors: false
-      readTimeout: 10
   gitSCM:
     createAccountBasedOnEmail: false
     globalConfigEmail: "mwaite@testing-a.markwaite.net"
