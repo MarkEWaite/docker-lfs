@@ -168,10 +168,10 @@ unclassified:
     useSsl: false
     watchingEnabled: false
   gitHubPluginConfig:
-    hookUrl: "http://testing-a.markwaite.net:8080/github-webhook/"
+    hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
   gitSCM:
     createAccountBasedOnEmail: false
-    globalConfigEmail: "mwaite@testing-a.markwaite.net"
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     globalConfigName: "Jenkins Docker User"
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
@@ -227,8 +227,8 @@ unclassified:
   ivyBuildTrigger:
     extendedVersionMatching: false
   location:
-    adminAddress: "mwaite@testing-a.markwaite.net"
-    url: "http://testing-a.markwaite.net:8080/"
+    adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
   logParser:
     legacyFormatting: false
   mailer:
