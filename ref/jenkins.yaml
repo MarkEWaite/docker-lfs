@@ -283,6 +283,8 @@ tool:
               label: "windows && 32bit"
               subdir: "git-2.16.2-32\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/git-2.16.2-windows-x86.zip"
+    - name: "jgit"
+    - name: "jgitapache"
   jdk:
     installations:
     - name: "jdk8"
