@@ -1,6 +1,5 @@
 ace-editor:latest
 adoptopenjdk:latest
-analysis-collector:latest
 analysis-core:latest
 analysis-model-api:latest
 ant
@@ -42,7 +41,6 @@ build-blocker-plugin:latest
 build-name-setter:latest
 build-timeout:latest
 buildresult-trigger:latest
-checkstyle:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-devoptics-enabler:latest
 cloudbees-folder:latest
@@ -56,15 +54,17 @@ copyartifact:latest
 credentials
 credentials-binding:latest
 cvs
-depgraph-view:latest
 description-setter:latest
 devoptics:latest
 display-url-api:latest
 docker-commons:latest
 docker-workflow:latest
+dtkit-api:latest
 durable-task:latest
 elastic-axis:latest
 email-ext:latest
+envinject-api:latest
+envinject:latest
 external-monitor-job:latest
 favorite:latest
 forensics-api:latest
@@ -85,6 +85,7 @@ gitlab-branch-source:latest
 gitlab-plugin:latest
 gradle:latest
 groovy-postbuild:latest
+h2-api:latest
 handlebars:latest
 handy-uri-templates-2-api:latest
 htmlpublisher:latest
@@ -105,6 +106,7 @@ jsch:latest
 junit
 junit-attachments:latest
 junit-realtime-test-reporter:latest
+kubernetes-client-api:latest
 kubernetes-credentials:latest
 kubernetes:latest
 label-verifier:latest
@@ -141,7 +143,6 @@ pipeline-stage-view:latest
 pipeline-utility-steps:latest
 plain-credentials:latest
 platformlabeler:latest
-pmd:latest
 pollscm:latest
 preSCMbuildstep:latest
 PrioritySorter:latest
@@ -160,8 +161,6 @@ ssh-slaves
 structs:latest
 subversion
 support-core:latest
-swarm:latest
-tasks:latest
 text-finder:latest
 throttle-concurrents:latest
 timestamper:latest
@@ -170,7 +169,6 @@ trilead-api:latest
 variant:latest
 versioncolumn:latest
 view-job-filters:latest
-warnings:latest
 warnings-ng:latest
 windows-slaves:latest
 workflow-aggregator:latest
