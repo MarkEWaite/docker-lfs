@@ -270,10 +270,6 @@ tool:
     installations:
     - home: "git"
       name: "Default"
-    - home: "jgit"
-      name: "jgit"
-    - home: "jgitapache"
-      name: "jgitapache"
     - name: "git-windows"
       properties:
       - installSource:
