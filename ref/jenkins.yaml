@@ -268,8 +268,6 @@ tool:
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.9.13-bin.zip"
   git:
     installations:
-    - name: "jgitapache"
-    - name: "jgit"
     - home: "git"
       name: "Default"
     - name: "git-windows"
