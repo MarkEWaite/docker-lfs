@@ -115,12 +115,12 @@ security:
     - "method hudson.model.Cause getShortDescription"
     - "method hudson.model.Run getCause java.lang.Class"
     - "method hudson.model.Run getCauses"
-    - "method hudson.model.Run getLogFile"
     - "method hudson.model.Run getLog int"
-    - "method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions"
+    - "method hudson.model.Run getLogFile"
     - "method hudson.plugins.git.GitSCM getBranches"
     - "method hudson.plugins.git.GitSCM getGitTool"
     - "method hudson.plugins.git.GitSCM getUserRemoteConfigs"
+    - "method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions"
     - "method hudson.plugins.git.UserRemoteConfig getName"
     - "method hudson.plugins.git.UserRemoteConfig getUrl"
     - "method hudson.scm.SCM getBrowser"
@@ -157,10 +157,8 @@ unclassified:
     allowUnregisteredEnabled: false
     charset: "UTF-8"
     debugMode: false
-    defaultBody: |-
-      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
-
-      Check console output at $BUILD_URL to view the results.
+    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck console output at $BUILD_URL to view the results."
+    defaultContentType: "text/plain"
     defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
     maxAttachmentSize: -1
     maxAttachmentSizeMb: 0
@@ -210,7 +208,7 @@ unclassified:
         modernSCM:
           scm:
             github:
-              configuredByUrl: false
+              configuredByUrl: true
               id: "cfd6a3c0-e2d4-4a4d-b7a7-4f63acb357a6"
               repoOwner: "MarkEWaite"
               repository: "jenkins-pipeline-utils"
