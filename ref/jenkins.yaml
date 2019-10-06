@@ -270,7 +270,8 @@ tool:
     installations:
     - home: "git"
       name: "Default"
-    - name: "git-windows"
+    - home: "git"
+      name: "git-windows"
       properties:
       - installSource:
           installers:
