@@ -293,20 +293,20 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk8u222-b10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u222b10.tar.gz"
+              subdir: "jdk8u232-b09"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u232b09.tar.gz"
           - zip:
               label: "linux && 32bit"
               subdir: "jdk1.8.0_191"
               url: "https://home.markwaite.net/~mwaite/jdk/jdk-8u191-linux-i586.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk8u222-b10/"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u222b10.zip"
+              subdir: "jdk8u232-b09/"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u232b09.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u222-b10"
+              toolHome: "/home/jagent/tools/jdk8u232-b09"
           - command:
               command: "true"
               label: "Alpine"
@@ -321,16 +321,16 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.4+11"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11.zip"
+              subdir: "jdk-11.0.5+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.4+11"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.4_11.tar.gz"
+              subdir: "jdk-11.0.5+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.5_10.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.4+11"
+              toolHome: "/home/jagent/tools/jdk-11.0.5+10"
           - command:
               command: "true"
               label: "freebsd"
