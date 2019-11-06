@@ -277,8 +277,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.22.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.22.0.zip"
+              subdir: "git-2.24.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.24.0.zip"
           - zip:
               label: "windows && 32bit"
               subdir: "git-2.16.2-32\\bin\\git.exe"
