@@ -259,13 +259,6 @@ tool:
           - zip:
               subdir: "apache-ant-1.10.7"
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.7-bin.zip"
-    - name: "ant-latest-java6"
-      properties:
-      - installSource:
-          installers:
-          - zip:
-              subdir: "apache-ant-1.9.13"
-              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.9.13-bin.zip"
   git:
     installations:
     - home: "git"
@@ -364,13 +357,6 @@ tool:
           - zip:
               subdir: "apache-maven-3.6.2"
               url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.6.2-bin.zip"
-    - name: "maven-latest-java6"
-      properties:
-      - installSource:
-          installers:
-          - zip:
-              subdir: "apache-maven-3.2.5"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.2.5-bin.zip"
     - name: "mvn"
       properties:
       - installSource:
