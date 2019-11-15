@@ -173,6 +173,27 @@ unclassified:
     globalConfigName: "Jenkins Docker User"
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
+  globalConfigFiles:
+    configs:
+    - globalMavenSettings:
+        comment: "Global settings for Jenkins development"
+        content: "<settings>\n  <pluginGroups>\n    <pluginGroup>org.jenkins-ci.tools</pluginGroup>\n\
+          \  </pluginGroups>\n \n  <profiles>\n    <!-- Give access to Jenkins plugins\
+          \ -->\n    <profile>\n      <id>jenkins</id>\n      <activation>\n     \
+          \   <activeByDefault>true</activeByDefault> <!-- change this to false, if\
+          \ you don't like to have it on per default -->\n      </activation>\n  \
+          \    <repositories>\n        <repository>\n          <id>repo.jenkins-ci.org</id>\n\
+          \          <url>https://repo.jenkins-ci.org/public/</url>\n        </repository>\n\
+          \      </repositories>\n      <pluginRepositories>\n        <pluginRepository>\n\
+          \          <id>repo.jenkins-ci.org</id>\n          <url>https://repo.jenkins-ci.org/public/</url>\n\
+          \        </pluginRepository>\n      </pluginRepositories>\n    </profile>\n\
+          \  </profiles>\n  <mirrors>\n    <mirror>\n      <id>repo.jenkins-ci.org</id>\n\
+          \      <url>https://repo.jenkins-ci.org/public/</url>\n      <mirrorOf>m.g.o-public</mirrorOf>\n\
+          \    </mirror>\n  </mirrors>\n</settings>"
+        id: "jenkins-maven-global-settings-file"
+        isReplaceAll: true
+        name: "Jenkins Maven global settings file"
+        providerId: "org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig"
   globalDefaultFlowDurabilityLevel:
     durabilityHint: PERFORMANCE_OPTIMIZED
   globalLibraries:
