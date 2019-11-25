@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@1.8">
+<matrix-project plugin="matrix-project@1.9">
   <actions/>
-  <description>[JENKINS-35687](https://issues.jenkins-ci.org/browse/JENKINS-35687) add large file support</description>
+  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-35687&quot;&gt;JENKINS-35687&lt;/a&gt; add large file support</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -49,14 +49,18 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
         <noTags>true</noTags>
+        <reference></reference>
         <timeout>2</timeout>
+        <depth>0</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.GitLFSPull/>
     </extensions>
   </scm>
-  <canRoam>true</canRoam>
+  <assignedNode>( master || windows || linux ) &amp;&amp; git-1.8+ &amp;&amp; git-lfs</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -70,7 +74,7 @@
   <axes>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>operating-system</name>
-      <label>( master || windows || linux ) &amp;&amp; git-1.8+ </label>
+      <label>( master || windows || linux ) &amp;&amp; git-1.8+ &amp;&amp; git-lfs </label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>

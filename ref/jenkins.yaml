@@ -1,3 +1,393 @@
 jenkins:
-  systemMessage: "[Jenkins instance](https://jenkins.io) for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  labelString: "git-2.20 git-lfs highmem"
+  markupFormatter:
+    rawHtml:
+      disableSyntaxHighlighting: false
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodeProperties:
+  - envVars:
+      env:
+      - key: "PATH+M2_HOME_BIN"
+        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.2/bin"
   numExecutors: 2
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: false
+  scmCheckoutRetryCount: 0
+  slaveAgentPort: 50000
+  systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  views:
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "favoriteColumn"
+      description: "Jobs currently executing"
+      jobFilters:
+      - buildStatusFilter:
+          building: true
+          inBuildQueue: false
+          includeExcludeTypeString: "includeMatched"
+          neverBuilt: false
+      name: "Executing"
+      recurse: true
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      description: "Jobs which failed recently"
+      jobFilters:
+      - jobStatusFilter:
+          aborted: true
+          disabled: false
+          failed: true
+          includeExcludeTypeString: "includeMatched"
+          stable: false
+          unstable: false
+      name: "Failed"
+      recurse: true
+      statusFilter: true
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      description: "Jobs with failing tests"
+      jobFilters:
+      - jobStatusFilter:
+          aborted: false
+          disabled: false
+          failed: false
+          includeExcludeTypeString: "includeMatched"
+          stable: false
+          unstable: true
+      name: "Unstable"
+      recurse: true
+      statusFilter: true
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  downloadSettings:
+    useBrowser: false
+  envInject:
+    enableLoadingFromMaster: false
+    enablePermissions: false
+    hideInjectedVars: false
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: true
+  sSHD:
+    port: -1
+  scriptApproval:
+    approvedSignatures:
+    - "field hudson.plugins.git.UserRemoteConfig refspec"
+    - "method groovy.lang.MetaObjectProtocol getMethods"
+    - "method hudson.model.Cause getShortDescription"
+    - "method hudson.model.Run getCause java.lang.Class"
+    - "method hudson.model.Run getCauses"
+    - "method hudson.model.Run getLog int"
+    - "method hudson.model.Run getLogFile"
+    - "method hudson.plugins.git.GitSCM getBranches"
+    - "method hudson.plugins.git.GitSCM getGitTool"
+    - "method hudson.plugins.git.GitSCM getUserRemoteConfigs"
+    - "method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions"
+    - "method hudson.plugins.git.UserRemoteConfig getName"
+    - "method hudson.plugins.git.UserRemoteConfig getUrl"
+    - "method hudson.scm.SCM getBrowser"
+    - "method java.lang.Class getName"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String"
+    - "staticField java.util.concurrent.TimeUnit MILLISECONDS"
+    - "staticMethod java.util.Collections shuffle java.util.List java.util.Random"
+    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getMetaClass java.lang.Object"
+    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map"
+    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods sort java.util.Collection"
+    - "staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object"
+    - "staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean"
+    - "staticMethod org.kohsuke.groovy.sandbox.impl.Checker checkedBinaryOp java.lang.Object int java.lang.Object"
+unclassified:
+  badgePlugin:
+    disableFormatHTML: false
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: false
+        manageHooks: false
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  buildStepOperation:
+    enabled: false
+  contentFilters:
+    enabled: false
+  devOpticsConfiguration:
+    completionStrategy: AUTOMATIC
+  extendedEmailPublisher:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck console output at $BUILD_URL to view the results."
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: 0
+    precedenceBulk: false
+    useSsl: false
+    watchingEnabled: false
+  gitHubPluginConfig:
+    hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitSCM:
+    createAccountBasedOnEmail: false
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    globalConfigName: "Jenkins Docker User"
+    showEntireCommitSummaryInChanges: true
+    useExistingAccountWithSameEmail: false
+  globalConfigFiles:
+    configs:
+    - globalMavenSettings:
+        comment: "Global settings for Jenkins development"
+        content: "<settings>\n  <pluginGroups>\n    <pluginGroup>org.jenkins-ci.tools</pluginGroup>\n\
+          \  </pluginGroups>\n \n  <profiles>\n    <!-- Give access to Jenkins plugins\
+          \ -->\n    <profile>\n      <id>jenkins</id>\n      <activation>\n     \
+          \   <activeByDefault>true</activeByDefault> <!-- change this to false, if\
+          \ you don't like to have it on per default -->\n      </activation>\n  \
+          \    <repositories>\n        <repository>\n          <id>repo.jenkins-ci.org</id>\n\
+          \          <url>https://repo.jenkins-ci.org/public/</url>\n        </repository>\n\
+          \      </repositories>\n      <pluginRepositories>\n        <pluginRepository>\n\
+          \          <id>repo.jenkins-ci.org</id>\n          <url>https://repo.jenkins-ci.org/public/</url>\n\
+          \        </pluginRepository>\n      </pluginRepositories>\n    </profile>\n\
+          \  </profiles>\n  <mirrors>\n    <mirror>\n      <id>repo.jenkins-ci.org</id>\n\
+          \      <url>https://repo.jenkins-ci.org/public/</url>\n      <mirrorOf>m.g.o-public</mirrorOf>\n\
+          \    </mirror>\n  </mirrors>\n</settings>"
+        id: "jenkins-maven-global-settings-file"
+        isReplaceAll: true
+        name: "Jenkins Maven global settings file"
+        providerId: "org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig"
+  globalDefaultFlowDurabilityLevel:
+    durabilityHint: PERFORMANCE_OPTIMIZED
+  globalLibraries:
+    libraries:
+    - defaultVersion: "master"
+      includeInChangesets: false
+      name: "globalPipelineLibraryMarkEWaiteModern"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - "gitBranchDiscovery"
+              - "gitTagDiscovery"
+    - defaultVersion: "master"
+      name: "globalPipelineLibraryMarkEWaite"
+      retriever:
+        legacySCM:
+          scm:
+            git:
+              branches:
+              - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
+              buildChooser: "default"
+              doGenerateSubmoduleConfigurations: false
+              gitTool: "Default"
+              userRemoteConfigs:
+              - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+    - defaultVersion: "master"
+      name: "globalPipelineLibraryMarkEWaiteModernGitHub"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "cfd6a3c0-e2d4-4a4d-b7a7-4f63acb357a6"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
+              - "localBranchTrait"
+  globalSettings:
+    failOnCorrupt: false
+    noAuthors: false
+    quietMode: false
+  ivyBuildTrigger:
+    extendedVersionMatching: false
+  location:
+    adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
+  logParser:
+    legacyFormatting: false
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+  mavenModuleSet:
+    localRepository: "default"
+  pipeline-model:
+    dockerLabel: "docker"
+  pollSCM:
+    pollingThreadCount: 10
+  throttleJobProperty:
+    categories:
+    - categoryName: "upkeep-one-per-node"
+      maxConcurrentPerNode: 1
+      maxConcurrentTotal: 0
+  timestamperConfig:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  upstream:
+    globalUpstreamFilterStrategy: UseOldest
+tool:
+  ant:
+    installations:
+    - name: "ant-latest"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-ant-1.10.7"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.7-bin.zip"
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+    - home: "git"
+      name: "git-windows"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "git-2.24.0.2\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.24.0.2.zip"
+          - zip:
+              label: "windows && 32bit"
+              subdir: "git-2.16.2-32\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.16.2-windows-x86.zip"
+    - name: "jgit"
+    - name: "jgitapache"
+  jdk:
+    installations:
+    - name: "jdk8"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk8u232-b09"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u232b09.tar.gz"
+          - zip:
+              label: "linux && 32bit"
+              subdir: "jdk1.8.0_191"
+              url: "https://home.markwaite.net/~mwaite/jdk/jdk-8u191-linux-i586.tar.gz"
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk8u232-b09/"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u232b09.zip"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk8u232-b09"
+          - command:
+              command: "true"
+              label: "Alpine"
+              toolHome: "/usr/lib/jvm/java-1.8-openjdk"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk8"
+    - name: "jdk11"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-11.0.5+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip"
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk-11.0.5+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.5_10.tar.gz"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk-11.0.5+10"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk11"
+    - name: "jdk12"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-12.0.2+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_windows_hotspot_12.0.2_10.zip"
+          - zip:
+              label: "linux && 64bit"
+              subdir: "jdk-12.0.2+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_linux_hotspot_12.0.2_10.tar.gz"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk-12.0.2+10"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk12"
+  maven:
+    installations:
+    - name: "maven-latest"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-maven-3.6.2"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.6.2-bin.zip"
+    - name: "mvn"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-maven-3.6.2"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.6.2-bin.zip"
+  pipelineMaven:
+    triggerDownstreamUponResultAborted: false
+    triggerDownstreamUponResultFailure: false
+    triggerDownstreamUponResultNotBuilt: false
+    triggerDownstreamUponResultSuccess: true
+    triggerDownstreamUponResultUnstable: false

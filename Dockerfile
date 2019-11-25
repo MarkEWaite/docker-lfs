@@ -2,13 +2,8 @@ FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
-  build-essential \
   ca-certificates \
   curl \
-  gcc-multilib \
-  git \
-  graphviz \
-  less \
   locales \
   lsb-release \
   make \
@@ -22,9 +17,12 @@ RUN echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
-# Use stretch-backports for Git LFS install
+# Use stretch-backports for Git install
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-RUN apt-get update && apt-get -t stretch-backports install -y git git-lfs
+RUN apt-get update && apt-get -t stretch-backports install -y git
+
+# Use git LFS install instructions for LFS on Debian
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs && git lfs install
 
 ARG user=jenkins
 ARG group=jenkins
@@ -33,9 +31,11 @@ ARG gid=1000
 ARG http_port=8080
 ARG agent_port=50000
 ARG JENKINS_HOME=/var/jenkins_home
+ARG REF=/usr/share/jenkins/ref
 
 ENV JENKINS_HOME $JENKINS_HOME
 ENV JENKINS_SLAVE_AGENT_PORT ${agent_port}
+ENV REF $REF
 
 # Jenkins is run with user `jenkins`, uid = 1000
 # If you bind mount a volume from the host or a data container,
@@ -49,10 +49,10 @@ RUN mkdir -p $JENKINS_HOME \
 # can be persisted and survive image upgrades
 VOLUME $JENKINS_HOME
 
-# `/usr/share/jenkins/ref/` contains all reference configuration we want
+# $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
-RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
+RUN mkdir -p ${REF}/init.groovy.d
 
 # Use tini as subreaper in Docker container to adopt zombie processes
 ARG TINI_VERSION=v0.16.1
@@ -66,10 +66,10 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/${TINI_VERSION}
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.176.1}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.190.3}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=8bbc6e2043e7bd102f751aca94b51652e1e792ec0a11377d52c9d9ed484f0e8c
+ARG JENKINS_SHA=79c2042b30ad71dc9cf17a5877f64eaed405fa03e24e002ca60f8db73b7ad490
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
@@ -86,7 +86,7 @@ ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 ADD ref /usr/share/jenkins/ref/
-RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
+RUN chown -R ${user} "$JENKINS_HOME" "$REF"
 
 # for main web interface:
 EXPOSE ${http_port}
@@ -105,6 +105,9 @@ COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY tini-shim.sh /bin/tini
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
-# from a derived Dockerfile, can use `RUN plugins.sh active.txt` to setup /usr/share/jenkins/ref/plugins from a support bundle
+# from a derived Dockerfile, can use `RUN plugins.sh active.txt` to setup ${REF}/plugins from a support bundle
 COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
+
+# Initialize git lfs for jenkins user
+RUN git lfs install

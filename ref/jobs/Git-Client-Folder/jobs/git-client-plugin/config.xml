@@ -18,7 +18,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
       <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
       <displayName>Git client plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -41,7 +41,7 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta4">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta10-SNAPSHOT">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -87,8 +87,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>-P enable-jacoco clean install jacoco:report findbugs:findbugs javadoc:javadoc checkstyle:checkstyle</targets>
+      <targets>-P enable-jacoco clean install jacoco:report spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
       <mavenName>maven-latest</mavenName>
+      <properties>maven.test.failure.ignore=true</properties>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -96,7 +97,7 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.26.1">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.28">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <healthScaleFactor>1.0</healthScaleFactor>
@@ -132,32 +133,28 @@
       <deltaClassCoverage>0</deltaClassCoverage>
       <buildOverBuild>false</buildOverBuild>
     </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@1.0.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@5.1.0">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.FindBugs>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <useRankAsPriority>true</useRankAsPriority>
-        </io.jenkins.plugins.analysis.warnings.FindBugs>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.Java>
         <io.jenkins.plugins.analysis.warnings.JavaDoc>
           <id></id>
           <name></name>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.JavaDoc>
         <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
           <id></id>
           <name></name>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
@@ -166,31 +163,14 @@
       <referenceJobName>-</referenceJobName>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@1.0.0">
+      <minimumSeverity plugin="analysis-model-api@5.1.1">
         <name>LOW</name>
       </minimumSeverity>
-      <thresholds>
-        <unstableTotalAll>0</unstableTotalAll>
-        <unstableTotalHigh>0</unstableTotalHigh>
-        <unstableTotalNormal>0</unstableTotalNormal>
-        <unstableTotalLow>0</unstableTotalLow>
-        <unstableNewAll>0</unstableNewAll>
-        <unstableNewHigh>0</unstableNewHigh>
-        <unstableNewNormal>0</unstableNewNormal>
-        <unstableNewLow>0</unstableNewLow>
-        <failedTotalAll>0</failedTotalAll>
-        <failedTotalHigh>0</failedTotalHigh>
-        <failedTotalNormal>0</failedTotalNormal>
-        <failedTotalLow>0</failedTotalLow>
-        <failedNewAll>0</failedNewAll>
-        <failedNewHigh>0</failedNewHigh>
-        <failedNewNormal>0</failedNewNormal>
-        <failedNewLow>0</failedNewLow>
-      </thresholds>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <isBlameDisabled>false</isBlameDisabled>
+      <qualityGates/>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
