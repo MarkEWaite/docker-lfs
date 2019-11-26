@@ -5,23 +5,14 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 USER root
 
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
-  build-essential \
-  fontconfig \
-  gcc-multilib \
+  git-lfs \
   gnupg \
   graphviz \
   locales \
-  lsb-release \
   make \
   procps \
   wget \
   && rm -rf /var/lib/apt/lists/*
-
-# Install git lfs extension
-RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated --no-install-recommends git-lfs && \
-    git lfs install && \
-    rm -r /var/lib/apt/lists/*
 
 # Enable en_US.UTF-8 locale and generate
 RUN sed -i 's/. en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
