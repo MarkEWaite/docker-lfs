@@ -136,7 +136,7 @@
           </default>
           <int>1</int>
           <string>PATH+M2_HOME_BIN</string>
-          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.2/bin</string>
+          <string>/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.3/bin</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
