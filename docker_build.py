@@ -170,9 +170,11 @@ def merge_predecessor_branch(current_branch, all_branches):
 #-----------------------------------------------------------------------
 
 def push_current_branch():
-    command = [ "git", "push" ]
-    print("Pushing current branch")
-    subprocess.check_call(command)
+    status_output = subprocess.check_output([ "git", "status", "--porcelain=1"])
+    if not status_output:
+	command = [ "git", "push" ]
+	print("Pushing current branch")
+	subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
 
