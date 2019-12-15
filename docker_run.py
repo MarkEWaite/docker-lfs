@@ -192,8 +192,9 @@ Run a docker image.   Use -h for help."""
 
     options, arg_hosts = parser.parse_args()
 
-    if options.clean:
+    if options.clean and os.path.exists(jenkins_home_dir):
         shutil.rmtree(jenkins_home_dir)
+    if options.clean and not os.path.exists(jenkins_home_dir):
         os.mkdir(jenkins_home_dir)
 
     if options.detach:
