@@ -43,7 +43,7 @@ build-timeout:latest
 buildresult-trigger:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-devoptics-enabler:latest
-cloudbees-folder:latest
+cloudbees-folder:6.9
 cloudbees-jenkins-advisor:latest
 command-launcher
 conditional-buildstep:latest
@@ -69,11 +69,11 @@ external-monitor-job:latest
 favorite:latest
 forensics-api:latest
 git-bisect:latest
-git-client:3.0.0-beta8
+git-client:latest
 git-parameter:latest
 git-server:latest
 git-userContent:latest
-git:4.0.0-beta8
+git:latest
 gitea:latest
 github-api:latest
 github-branch-source:latest
