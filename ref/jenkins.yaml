@@ -98,8 +98,6 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
-  downloadSettings:
-    useBrowser: false
   envInject:
     enableLoadingFromMaster: false
     enablePermissions: false
