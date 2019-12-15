@@ -35,7 +35,6 @@ blueocean-pipeline-scm-api:latest
 blueocean-rest-impl:latest
 blueocean-rest:latest
 blueocean-web:latest
-bootstrap4-api:latest
 bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
@@ -55,7 +54,6 @@ copyartifact:latest
 credentials
 credentials-binding:latest
 cvs
-data-tables-api:latest
 description-setter:latest
 devoptics:latest
 display-url-api:latest
@@ -63,14 +61,12 @@ docker-commons:latest
 docker-workflow:latest
 dtkit-api:latest
 durable-task:latest
-echarts-api:latest
 elastic-axis:latest
 email-ext:latest
 envinject-api:latest
 envinject:latest
 external-monitor-job:latest
 favorite:latest
-font-awesome-api:latest
 forensics-api:latest
 git-bisect:latest
 git-client:latest
@@ -103,7 +99,6 @@ jdk-tool:latest
 jenkins-design-language:latest
 jira:latest
 job-dsl:latest
-jquery3-api:latest
 jquery-detached:latest
 jquery-ui:latest
 jquery:latest
@@ -148,9 +143,7 @@ pipeline-stage-view:latest
 pipeline-utility-steps:latest
 plain-credentials:latest
 platformlabeler:latest
-plugin-util-api:latest
 pollscm:latest
-popper-api:latest
 preSCMbuildstep:latest
 PrioritySorter:latest
 promoted-builds:latest
