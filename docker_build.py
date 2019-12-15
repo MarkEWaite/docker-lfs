@@ -170,9 +170,11 @@ def merge_predecessor_branch(current_branch, all_branches):
 #-----------------------------------------------------------------------
 
 def push_current_branch():
-    command = [ "git", "push" ]
-    print("Pushing current branch")
-    subprocess.check_call(command)
+    status_output = subprocess.check_output([ "git", "status"]).strip()
+    if "Your branch is ahead of " in status_output:
+	command = [ "git", "push" ]
+	print("Pushing current branch")
+	subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
 
