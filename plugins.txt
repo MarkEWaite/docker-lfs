@@ -43,7 +43,7 @@ build-timeout:latest
 buildresult-trigger:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-devoptics-enabler:latest
-cloudbees-folder:6.9
+cloudbees-folder:latest
 cloudbees-jenkins-advisor:latest
 command-launcher
 conditional-buildstep:latest
