@@ -10,7 +10,6 @@ RUN apk add --no-cache \
   g++ \
   git-lfs \
   gnupg \
-  graphviz \
   make
 
 ARG user=jenkins
