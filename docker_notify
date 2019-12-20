@@ -5,22 +5,35 @@ JENKINS_APITOKEN=${JENKINS_APITOKEN=:-unspecified-api-token}
 
 # Scan each multi-branch pipeline (URL encode job path before passing as arg to curl
 
-scan_delay=3
+scan_delay=7
 
 git grep -l -F org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read multibranch_pipeline
 do
+        scan_delay=$((scan_delay+23))
         url_encoded_multibranch_pipeline=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$multibranch_pipeline")
         # echo
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
         # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
-        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
-        scan_delay=$((scan_delay+7))
+        echo curl -X POST http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=$scan_delay
+        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_multibranch_pipeline/build?delay=${scan_delay}sec
+        # exit 0
+done
+
+# Jobs which are disrupted by notifyCommit pushing a specific SHA1 should be executed again
+git grep -l -E 'JENKINS-44087|JENKINS-44041|JENKINS-33238|JENKINS-20941' -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read build_now_job
+do
+        scan_delay=$((scan_delay+37))
+        url_encoded_build_now_job=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$build_now_job")
+        # echo
+        # echo $build_now_job to $url_encoded_build_now_job
+        # echo http://localhost:8080$url_encoded_build_now_job?delay=0
+        echo curl -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_build_now_job/build?delay=$scan_delay
+        curl -H Jenkins-Crumb:96bb6fe3f011a984ef13f2976b71c192 -X POST --user $JENKINS_USERNAME:$JENKINS_APITOKEN http://localhost:8080$url_encoded_build_now_job/build?delay=${scan_delay}sec
         # exit 0
 done
 
 # Notify commit each git URL
 
-for url in $(git grep '<url>.*</url>' | grep  -F config.xml | grep -v JENKINS_HOSTNAME | grep -v site/jacoco/index.html | sed -e 's!.*<url>!!g' -e 's!</url>.*$!!g' -e 's!/$!!g' -e 's!.git$!!g' | sort -u | shuf); do
+for url in $(git grep '<url>.*</url>' | grep  -F config.xml | grep -v JENKINS_HOSTNAME | grep -v JENKINS_ADVERTISED_HOSTNAME | grep -v site/jacoco/index.html | sed -e 's!.*<url>!!g' -e 's!</url>.*$!!g' -e 's!/$!!g' -e 's!.git$!!g' | sort -u | shuf); do
 	curl -s http://localhost:8080/git/notifyCommit?url=$url
 done
