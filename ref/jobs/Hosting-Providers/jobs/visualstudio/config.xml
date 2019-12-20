@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@5.13">
   <actions/>
-  <description>Repositories hosted on [visuastudio.com](https://www.visualstudio.com/)</description>
+  <description>Repositories hosted on &lt;a href=&quot;https://www.visualstudio.com/&quot;&gt;visuastudio.com&lt;/a&gt;</description>
   <displayName>Microsoft</displayName>
   <properties>
     <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@0.5">

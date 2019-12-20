@@ -6,6 +6,7 @@ import optparse
 import os
 import re
 import socket
+import string
 import subprocess
 import sys
 
@@ -15,8 +16,8 @@ def get_current_branch():
     branch_list = os.popen("git branch", "r").readlines()
     for branch_line in branch_list:
         branch = branch_line.strip()
-	if branch.startswith("* "):
-	    return branch[2:]
+        if branch.startswith("* "):
+            return branch[2:]
     return "unknown branch"
 
 #-----------------------------------------------------------------------
@@ -26,10 +27,10 @@ def get_all_branches():
     branch_list = os.popen("git branch", "r").readlines()
     for branch_line in branch_list:
         branch = branch_line.strip()
-	if branch.startswith("* "):
-	    branches.append(branch[2:])
-	else:
-	    branches.append(branch)
+        if branch.startswith("* "):
+            branches.append(branch[2:])
+        else:
+            branches.append(branch)
     return branches
 
 #-----------------------------------------------------------------------
@@ -47,6 +48,9 @@ def compute_tag(branch_name):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
     m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
+    if m:
+        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+    m = re.search("FROM cloudbees/cloudbees-jenkins-distribution:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
         return "markewaite/" + branch_name + ":" + m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
@@ -74,9 +78,9 @@ def get_fqdn():
     fqdn = socket.getfqdn()
     if not "." in fqdn:
         if is_home_network():
-	    fqdn = fqdn + ".markwaite.net"
+            fqdn = fqdn + ".markwaite.net"
         else:
-	    fqdn = fqdn + ".example.com"
+            fqdn = fqdn + ".example.com"
     return fqdn
 
 #-----------------------------------------------------------------------
@@ -100,10 +104,15 @@ def replace_text_recursively(find, replace, include_pattern):
 
 #-----------------------------------------------------------------------
 
+def windows_dir():
+   return string.ascii_uppercase[hash(fqdn) % len(string.ascii_uppercase)]
+
+#-----------------------------------------------------------------------
+
 def replace_constants_in_ref():
     if not os.path.isdir("ref"):
         return
-    replacements = { "localhost" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser() }
+    replacements = { "localhost" : fqdn, "JENKINS_ADVERTISED_HOSTNAME" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser(), "JENKINS_WINDOWS_DIR" : windows_dir() }
     for find in replacements:
         replace_text_recursively(find, replacements[find], "*.xml")
 
@@ -137,15 +146,17 @@ def get_predecessor_branch(current_branch, all_branches):
     last = "upstream/" + current_branch
     if current_branch == "lts":
         last = "upstream/master"
+    if current_branch == "cjd":
+        last = "cjd"
     if current_branch == "cjt":
         last = "cjt"
     if current_branch == "cjp":
         last = "cjp"
     for branch in all_branches:
         if branch == current_branch:
-	    return last
+            return last
         if current_branch.startswith(branch):
-	    last = branch
+            last = branch
     return last
 
 #-----------------------------------------------------------------------
@@ -159,9 +170,11 @@ def merge_predecessor_branch(current_branch, all_branches):
 #-----------------------------------------------------------------------
 
 def push_current_branch():
-    command = [ "git", "push" ]
-    print("Pushing current branch")
-    subprocess.check_call(command)
+    status_output = subprocess.check_output([ "git", "status"]).strip()
+    if "Your branch is ahead of " in status_output:
+	command = [ "git", "push" ]
+	print("Pushing current branch")
+	subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
 

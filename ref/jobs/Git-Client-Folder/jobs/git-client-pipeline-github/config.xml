@@ -7,7 +7,7 @@
       </blueOceanUrlObject>
     </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
   </actions>
-  <description>[Jenkins git client plugin](https://github.com/MarkEWaite/git-client-plugin) Jenkinsfile based jobs</description>
+  <description>&lt;a href=&quot;https://github.com/MarkEWaite/git-client-plugin&quot;&gt;Jenkins git client plugin&lt;/a&gt; Jenkinsfile based jobs</description>
   <displayName>Git Client Branches - Jenkinsfile (GitHub)</displayName>
   <properties>
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@6.0.4">

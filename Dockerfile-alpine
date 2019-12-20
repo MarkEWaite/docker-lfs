@@ -17,7 +17,7 @@ ARG user=jenkins
 
 USER ${user}
 
-# `/usr/share/jenkins/ref/` contains all reference configuration we want
+# $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 ADD ref /usr/share/jenkins/ref/

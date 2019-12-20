@@ -40,7 +40,7 @@ nodeWithTimeout('docker') {
             sh "make prepare-test"
         }
 
-        def labels = ['debian', 'slim', 'alpine']
+        def labels = ['debian', 'slim', 'alpine', 'jdk11', 'centos']
         def builders = [:]
         for (x in labels) {
             def label = x
@@ -54,7 +54,15 @@ nodeWithTimeout('docker') {
         }
 
         parallel builders
-
+        
+        def branchName = "${env.BRANCH_NAME}"
+        if (branchName ==~ 'master'){
+            stage('Publish Experimental') {
+                infra.withDockerCredentials {
+                    sh 'make publish-experimental'
+                }
+            }                 
+        }
     } else {
         /* In our trusted.ci environment we only want to be publishing our
          * containers from artifacts
@@ -68,8 +76,8 @@ nodeWithTimeout('docker') {
 }
 
 void nodeWithTimeout(String label, def body) {
-    timeout(time: 40, unit: 'MINUTES') {
-        node(label) {
+    node(label) {
+        timeout(time: 40, unit: 'MINUTES') {
             body.call()
         }
     }

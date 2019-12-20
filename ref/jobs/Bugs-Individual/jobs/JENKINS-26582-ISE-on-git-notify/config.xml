@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.7">
   <actions/>
-  <description>Started by the [JENKINS-26582-launcher](http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/) job</description>
+  <description>Started by the &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/&quot;&gt;JENKINS-26582-launcher&lt;/a&gt; job</description>
   <logRotator class="hudson.tasks.LogRotator">
     <daysToKeep>-1</daysToKeep>
     <numToKeep>17</numToKeep>

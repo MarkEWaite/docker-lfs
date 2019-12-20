@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Check [JENKINS-33827](https://issues.jenkins-ci.org/browse/JENKINS-33827) - inverse build chooser</description>
+  <description>Check &lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-33827&quot;&gt;JENKINS-33827&lt;/a&gt; - inverse build chooser</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.19.1">
@@ -45,6 +45,12 @@
       <hudson.plugins.git.extensions.impl.BuildChooserSetting>
         <buildChooser class="hudson.plugins.git.util.InverseBuildChooser"/>
       </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <honorRefspec>false</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>

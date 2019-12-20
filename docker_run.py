@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-# If the ~/.m2 directory is not owned by group 1000, the container
+# If the ~/.m2 directory is not owned current user, the container
 # assumption that it can be written won't be met.  In that case, the
 # directory is not used.  That will slow the initial builds on the machine,
 # because they will need to populate the .m2 cache instead of using the
@@ -22,8 +22,6 @@ jenkins_home_dir = os.path.expanduser("~/docker-jenkins-home")
 #-----------------------------------------------------------------------
 
 def is_home_network():
-    if "hp-ux" in sys.platform:
-        return False # No HP-UX on home networks
     from socket import socket, SOCK_DGRAM, AF_INET
     s = socket(AF_INET, SOCK_DGRAM)
     s.settimeout(1.0)
@@ -31,14 +29,14 @@ def is_home_network():
         s.connect(("google.com", 0))
     except:
         return True
-    return s.getsockname()[0].startswith("172")
+    return s.getsockname()[0].startswith("172.16.16.")
 
 #-----------------------------------------------------------------------
 
 def volume_available(lhs):
     stat_info = os.stat(lhs)
     gid = stat_info.st_gid
-    if gid != 1000:
+    if gid not in os.getgroups():
         return False
     return True
 
@@ -78,12 +76,12 @@ def get_git_reference_repo_volume_map():
 
 def get_dns_server():
     if is_home_network():
-	return "172.16.16.253"
+        return "172.16.16.253"
     return "8.8.8.8"
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=5678):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False, quiet=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -94,9 +92,11 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(jnlp_port) + ":50000",
-                       "--publish", str(ssh_port)  + ":18022",
-                       "--publish", str(debug_port)  + ":5678",
                      ]
+    if ssh_port != None:
+        docker_command.extend(["--publish", str(ssh_port)  + ":18022"])
+    if debug_port != None:
+        docker_command.extend(["--publish", str(debug_port)  + ":5678"])
     if jenkins_home_volume_map != None and http_port == 8080:
         docker_command.extend(["--volume", jenkins_home_volume_map])
     if git_reference_repo_volume_map != None:
@@ -105,26 +105,47 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
-    java_opts =    " ".join([
-                             "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                             "-Djava.awt.headless=true",
-                             "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-                             "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-                             "-Xdebug",
-                             "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678",
-                             "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                             "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
-                            ])
+    if (detach):
+        docker_command.extend([ "--detach" ])
+    java_opts = [
+                  "-XX:+AlwaysPreTouch",
+                  "-XX:+HeapDumpOnOutOfMemoryError",
+                  "-XX:HeapDumpPath=/var/jenkins_home/logs",
+                  "-XX:+UseG1GC",
+                  "-verbose:gc",
+                  "-XX:+UseStringDeduplication",
+                  "-XX:+ParallelRefProcEnabled",
+                  "-XX:+DisableExplicitGC",
+                  "-XX:+UnlockDiagnosticVMOptions",
+                  "-XX:+UnlockExperimentalVMOptions",
+                  "-Xms3g",
+                  "-Xmx7g",
+                  "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
+                  # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                  "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
+                  "-Djava.awt.headless=true",
+                  "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
+                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
+                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
+                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                ]
+    if jnlp_port != None:
+        java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
+    if debug_port != None:
+        java_opts.append("-Xdebug")
+        java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
     docker_command.extend([
-                       "--env", 'JAVA_OPTS=' + pipes.quote(java_opts),
+                       "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
+                       "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
+                       "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "LANG=en_US.utf8",
+                       "--env", "START_QUIET=" + str(quiet),
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
-                       "--env", "DOCKER_FIX=refer-to-docker-issues-14203-for-description",
                        "-t", docker_tag,
                      ])
-    # Python docs recommend using an array of string but then fails to pass quoted args correctly.
     # Using shell=True and the single string form passes quoted args correctly.
     # Since input to command is program controlled, shell=True is safe (for now)
     str_command = " ".join(map(str, docker_command))
@@ -137,10 +158,19 @@ def get_fqdn():
     fqdn = socket.getfqdn()
     if not "." in fqdn:
         if is_home_network():
-	    fqdn = fqdn + ".markwaite.net"
+            fqdn = fqdn + ".markwaite.net"
         else:
-	    fqdn = fqdn + ".example.com"
+            fqdn = fqdn + ".example.com"
     return fqdn
+
+#-----------------------------------------------------------------------
+
+def get_base_hostname():
+    base_hostname = get_fqdn()
+    dot = base_hostname.find('.')
+    if dot > 0:
+        base_hostname = base_hostname[0:dot]
+    return base_hostname
 
 #-----------------------------------------------------------------------
 
@@ -150,23 +180,33 @@ Run a docker image.   Use -h for help."""
     parser = optparse.OptionParser(usage=help_text)
 
     # keep at optparse for 2.6. compatibility
-    parser.add_option("-c", "--clean", action="store_true", default=False, help="clean prior file system image")
-    parser.add_option("-p", "--port", action="store",   dest='http_port',  default=8080,  type="int",    help="http port")
-    parser.add_option("-j", "--jnlp", action="store",   dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
-    parser.add_option("-s", "--ssh",  action="store",   dest='ssh_port',   default=18022, type="int",    help="ssh port")
-    parser.add_option("-d", "--debug",  action="store", dest='debug_port', default=5678,  type="int",    help="debug port")
-    parser.add_option("-t", "--tag",   action="store",  default=None,  dest='docker_tag', type="string", help="Docker tag")
+    parser.add_option("-c", "--clean",  action="store_true", default=False, help="clean prior file system image")
+    parser.add_option("-d", "--detach", action="store_true", default=False, help="detach from typical stdin and stdout")
+    parser.add_option("-q", "--quiet",  action="store_true", default=False, help="start in quiet down state, process no jobs until shutdown is cancelled")
+
+    parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
+    parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
+    parser.add_option("-p", "--port",  action="store", dest='http_port',  default=8080,  type="int",    help="http port")
+    parser.add_option("-s", "--ssh",   action="store", dest='ssh_port',   default=None,  type="int",    help="ssh port")
+    parser.add_option("-t", "--tag",   action="store", dest='docker_tag', default=None,  type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
 
-    if options.clean:
+    if options.clean and os.path.exists(jenkins_home_dir):
         shutil.rmtree(jenkins_home_dir)
+    if options.clean and not os.path.exists(jenkins_home_dir):
         os.mkdir(jenkins_home_dir)
+
+    if options.detach:
+        print("Detaching from stdin / stdout")
+
+    if options.quiet:
+        print("Job processing disabled")
 
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
         options.docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach, options.quiet)
 
 #-----------------------------------------------------------------------
 
