@@ -99,7 +99,7 @@ if (manager.logContains(&quot;.*remotes/origin-only-JENKINS-31393/JENKINS-14798.
     manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;More than given refspec branches cloned!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
-        <sandbox>false</sandbox>
+        <sandbox>true</sandbox>
       </script>
       <behavior>0</behavior>
       <runForMatrixParent>false</runForMatrixParent>
