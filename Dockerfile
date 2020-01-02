@@ -6,8 +6,6 @@ RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get instal
   curl \
   locales \
   lsb-release \
-  make \
-  patch \
   rsync \
   wget \
   && rm -rf /var/lib/apt/lists/*
