@@ -1,11 +1,8 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y git curl
-
 # Use stretch-backports for Git LFS install
-RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-RUN apt-get update && apt-get -t stretch-backports install -y git git-lfs
+RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list && apt-get update && apt-get dist-upgrade -y && apt-get install -y curl && apt-get -t stretch-backports install -y git git-lfs && rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
 ARG group=jenkins

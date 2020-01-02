@@ -7,9 +7,7 @@ USER root
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   git-lfs \
   gnupg \
-  graphviz \
   locales \
-  make \
   procps \
   && rm -rf /var/lib/apt/lists/*
 
