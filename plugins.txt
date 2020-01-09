@@ -149,6 +149,7 @@ preSCMbuildstep:latest
 PrioritySorter:latest
 promoted-builds:latest
 pubsub-light:latest
+oauth-credentials.jpi:latest
 rebuild:latest
 resource-disposer:latest
 run-condition:latest
