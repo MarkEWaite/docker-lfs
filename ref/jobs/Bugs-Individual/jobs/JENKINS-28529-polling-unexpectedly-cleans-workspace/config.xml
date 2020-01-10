@@ -124,7 +124,7 @@ if ( manager.logContains(&quot;.*remotes/origin/JENKINS-14798.*&quot;) ||
     manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong refspecs cloned!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
-        <sandbox>false</sandbox>
+        <sandbox>true</sandbox>
       </script>
       <behavior>0</behavior>
       <runForMatrixParent>false</runForMatrixParent>

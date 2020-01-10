@@ -1,8 +1,28 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-# Use stretch-backports for Git LFS install
-RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list && apt-get update && apt-get dist-upgrade -y && apt-get install -y curl && apt-get -t stretch-backports install -y git git-lfs && rm -rf /var/lib/apt/lists/*
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
+  ca-certificates \
+  curl \
+  locales \
+  lsb-release \
+  make \
+  patch \
+  rsync \
+  wget \
+  && rm -rf /var/lib/apt/lists/*
+
+# Need locale to assure UTF-8 files can be written to file system
+RUN echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+
+# Use stretch-backports for Git install
+RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
+RUN apt-get update && apt-get -t stretch-backports install -y git
+
+# Use git LFS install instructions for LFS on Debian
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs && git lfs install
 
 ARG user=jenkins
 ARG group=jenkins

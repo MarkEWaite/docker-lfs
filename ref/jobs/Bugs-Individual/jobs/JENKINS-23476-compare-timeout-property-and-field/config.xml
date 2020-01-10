@@ -45,7 +45,7 @@ if (TIMEOUT != timeOut) {
     manager.addWarningBadge(&quot;TIMEOUT == &quot; + TIMEOUT + &quot; timeOut == &quot; + timeOut)
     manager.buildUnstable()
 }</script>
-        <sandbox>false</sandbox>
+        <sandbox>true</sandbox>
       </script>
       <behavior>2</behavior>
       <runForMatrixParent>false</runForMatrixParent>
