@@ -1,8 +1,9 @@
 FROM openjdk:8-jdk-stretch
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-# Use stretch-backports for Git LFS install
-RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list && apt-get update && apt-get dist-upgrade -y && apt-get install -y curl && apt-get -t stretch-backports install -y git git-lfs && rm -rf /var/lib/apt/lists/*
+# Install git lfs on Debian stretch per https://github.com/git-lfs/git-lfs/wiki/Installation#debian-and-ubuntu
+# Avoid JENKINS-59569 - git LFS 2.7.1 fails clone with reference repository
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git curl && curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs && git lfs install && rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
 ARG group=jenkins
