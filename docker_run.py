@@ -81,7 +81,7 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, debug_port=None, detach=False, quiet=False):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -91,10 +91,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=None, d
                        "docker", "run", "-i", "--rm",
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
+                       "--publish", str(ssh_port) + ":18022",
                        "--publish", str(jnlp_port) + ":50000",
                      ]
-    if ssh_port != None:
-        docker_command.extend(["--publish", str(ssh_port)  + ":18022"])
     if debug_port != None:
         docker_command.extend(["--publish", str(debug_port)  + ":5678"])
     if jenkins_home_volume_map != None and http_port == 8080:
@@ -187,7 +186,7 @@ Run a docker image.   Use -h for help."""
     parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
     parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
     parser.add_option("-p", "--port",  action="store", dest='http_port',  default=8080,  type="int",    help="http port")
-    parser.add_option("-s", "--ssh",   action="store", dest='ssh_port',   default=None,  type="int",    help="ssh port")
+    parser.add_option("-s", "--ssh",   action="store", dest='ssh_port',   default=18022, type="int",    help="ssh port")
     parser.add_option("-t", "--tag",   action="store", dest='docker_tag', default=None,  type="string", help="Docker tag")
 
     options, arg_hosts = parser.parse_args()
