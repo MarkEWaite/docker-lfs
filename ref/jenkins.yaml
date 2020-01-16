@@ -289,8 +289,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.24.0.2\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.24.0.2.zip"
+              subdir: "git-2.25.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.25.0.zip"
           - zip:
               label: "windows && 32bit"
               subdir: "git-2.16.2-32\\bin\\git.exe"
@@ -333,16 +333,16 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.5+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip"
+              subdir: "jdk-11.0.6+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.6_10.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.5+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.5_10.tar.gz"
+              subdir: "jdk-11.0.6+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.6_10.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.5+10"
+              toolHome: "/home/jagent/tools/jdk-11.0.6+10"
           - command:
               command: "true"
               label: "freebsd"

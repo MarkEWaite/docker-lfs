@@ -165,6 +165,14 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.26+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.26||git-2.27+</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>git-2.25+</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
