@@ -90,13 +90,6 @@ fqdn = get_fqdn()
 
 #-----------------------------------------------------------------------
 
-def get_an_ip_address():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(("208.67.220.220", 80)) # OpenDNS server address
-    return s.getsockname()[0]
-
-#-----------------------------------------------------------------------
-
 def replace_text_recursively(find, replace, include_pattern):
     print("Replacing '" + find + "' with '" + replace + "', in files matching '" + include_pattern + "'")
     # Thanks to https://stackoverflow.com/questions/4205854/python-way-to-recursively-find-and-replace-string-in-text-files
@@ -111,15 +104,10 @@ def replace_text_recursively(find, replace, include_pattern):
 
 #-----------------------------------------------------------------------
 
-def windows_dir():
-   return string.ascii_uppercase[hash(fqdn) % len(string.ascii_uppercase)] + string.ascii_uppercase[hash(get_an_ip_address()) % len(string.ascii_uppercase)]
-
-#-----------------------------------------------------------------------
-
 def replace_constants_in_ref():
     if not os.path.isdir("ref"):
         return
-    replacements = { "localhost" : fqdn, "JENKINS_ADVERTISED_HOSTNAME" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser(), "JENKINS_WINDOWS_DIR" : windows_dir() }
+    replacements = { "localhost" : fqdn, "JENKINS_ADVERTISED_HOSTNAME" : fqdn, "JENKINS_HOSTNAME" : fqdn, "LOGNAME" : getpass.getuser() }
     for find in replacements:
         replace_text_recursively(find, replacements[find], "*.xml")
 
