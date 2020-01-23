@@ -285,10 +285,6 @@ tool:
               label: "windows && 64bit"
               subdir: "git-2.25.0\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/git-2.25.0.zip"
-          - zip:
-              label: "windows && 32bit"
-              subdir: "git-2.16.2-32\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.16.2-windows-x86.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
@@ -301,10 +297,6 @@ tool:
               label: "linux && 64bit && !Alpine && !cloud"
               subdir: "jdk8u242-b08"
               url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz"
-          - zip:
-              label: "linux && 32bit"
-              subdir: "jdk1.8.0_191"
-              url: "https://home.markwaite.net/~mwaite/jdk/jdk-8u191-linux-i586.tar.gz"
           - zip:
               label: "windows && 64bit"
               subdir: "jdk8u242-b08/"
