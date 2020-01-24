@@ -13,6 +13,7 @@ import pipes
 import socket
 import subprocess
 import shutil
+import string
 import sys
 
 import docker_build
@@ -81,6 +82,11 @@ def get_dns_server():
 
 #-----------------------------------------------------------------------
 
+def get_windows_dir():
+   return string.ascii_uppercase[hash(get_fqdn()) % len(string.ascii_uppercase)] + string.ascii_uppercase[hash(get_an_ip_address()) % len(string.ascii_uppercase)]
+
+#-----------------------------------------------------------------------
+
 def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
@@ -139,6 +145,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
+                       "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=en_US.utf8",
                        "--env", "START_QUIET=" + str(quiet),
                        "--env", "TZ=America/Boise",
@@ -170,6 +177,13 @@ def get_base_hostname():
     if dot > 0:
         base_hostname = base_hostname[0:dot]
     return base_hostname
+
+#-----------------------------------------------------------------------
+
+def get_an_ip_address():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect((get_dns_server(), 80))
+    return s.getsockname()[0]
 
 #-----------------------------------------------------------------------
 
