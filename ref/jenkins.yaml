@@ -247,8 +247,6 @@ unclassified:
     useSsl: false
   mavenModuleSet:
     localRepository: "default"
-  pipeline-model:
-    dockerLabel: "docker"
   pollSCM:
     pollingThreadCount: 10
   throttleJobProperty:
