@@ -68,7 +68,6 @@ envinject:latest
 external-monitor-job:latest
 favorite:latest
 forensics-api:latest
-git-bisect:latest
 git-client:latest
 git-parameter:latest
 git-server:latest
