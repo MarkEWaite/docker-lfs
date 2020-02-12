@@ -53,7 +53,6 @@ configurationslicing:latest
 copyartifact:latest
 credentials
 credentials-binding:latest
-cvs
 description-setter:latest
 devoptics:latest
 display-url-api:latest
