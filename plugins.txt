@@ -161,6 +161,7 @@ ssh-slaves
 structs:latest
 subversion
 support-core:latest
+swarm:latest
 text-finder:latest
 throttle-concurrents:latest
 timestamper:latest
