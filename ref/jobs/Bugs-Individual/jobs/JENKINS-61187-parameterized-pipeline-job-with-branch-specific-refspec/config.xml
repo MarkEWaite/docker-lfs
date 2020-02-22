@@ -75,22 +75,27 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
     <script>pipeline {
    agent {
-       label &apos;!windows&apos; // My Windows machines don&apos;t have the reference repository
+       label &apos;!windows&apos; // Windows does not run the `sh` step in this job
    }
 
    stages {
       stage(&apos;Checkout with narrow refspec&apos;) {
          steps {
-            checkout([$class: &apos;GitSCM&apos;, 
-                     branches: [[ name: &quot;${env.SELECTED_BRANCH}&quot;   ]],
-                     extensions: [
-                         [$class: &apos;CloneOption&apos;, depth: 1, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;, shallow: true]],
-                         gitTool: &apos;Default&apos;,
-                         userRemoteConfigs: [
-                             [refspec: &quot;+refs/heads/${env.SELECTED_BRANCH}:refs/remotes/origin/${env.SELECTED_BRANCH}&quot;  , 
+            checkout([$class: &apos;GitSCM&apos;,
+                        branches: [[name: &quot;${env.SELECTED_BRANCH}&quot;]],
+                        extensions: [
+                            [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true,
+                                reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;,
+                                shallow: true, depth: 1
+                            ]
+                        ],
+                        gitTool: &apos;Default&apos;,
+                        userRemoteConfigs: [
+                            [refspec: &quot;+refs/heads/${env.SELECTED_BRANCH}:refs/remotes/origin/${env.SELECTED_BRANCH}&quot;,
                              url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]
                         ]
                     ])
+            sh &apos;git log -n 1&apos;
          }
       }
    }
