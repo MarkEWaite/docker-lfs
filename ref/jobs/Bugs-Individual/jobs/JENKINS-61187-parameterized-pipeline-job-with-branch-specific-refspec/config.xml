@@ -89,7 +89,6 @@
                                 shallow: true, depth: 1
                             ]
                         ],
-                        gitTool: &apos;Default&apos;,
                         userRemoteConfigs: [
                             [refspec: &quot;+refs/heads/${env.SELECTED_BRANCH}:refs/remotes/origin/${env.SELECTED_BRANCH}&quot;,
                              url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]
