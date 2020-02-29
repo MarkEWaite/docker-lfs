@@ -120,7 +120,6 @@ security:
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String"
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild"
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String"
-    - "staticField java.util.concurrent.TimeUnit MILLISECONDS"
     - "staticMethod java.util.Collections shuffle java.util.List java.util.Random"
     - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getMetaClass java.lang.Object"
     - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map"
