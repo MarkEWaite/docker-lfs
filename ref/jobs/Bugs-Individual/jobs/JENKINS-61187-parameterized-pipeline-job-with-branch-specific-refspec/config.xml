@@ -23,13 +23,6 @@
       <scanQueueFor>DISABLED</scanQueueFor>
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <org.datadog.jenkins.plugins.datadog.DatadogJobProperty plugin="datadog@1.0.2">
-      <enableFile>false</enableFile>
-      <tagFile></tagFile>
-      <enableProperty>false</enableProperty>
-      <tagProperties></tagProperties>
-      <emitSCMEvents>true</emitSCMEvents>
-    </org.datadog.jenkins.plugins.datadog.DatadogJobProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
       <gitLabConnection></gitLabConnection>
     </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
