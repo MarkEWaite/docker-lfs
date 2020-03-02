@@ -122,6 +122,7 @@ mercurial:latest
 metrics:latest
 momentjs:latest
 multi-branch-project-plugin:latest
+oauth-credentials.jpi:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
@@ -147,7 +148,6 @@ preSCMbuildstep:latest
 PrioritySorter:latest
 promoted-builds:latest
 pubsub-light:latest
-oauth-credentials.jpi:latest
 rebuild:latest
 resource-disposer:latest
 run-condition:latest
