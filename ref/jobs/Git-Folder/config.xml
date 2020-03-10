@@ -40,10 +40,6 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.2">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.6"/>
-    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">
     <views>

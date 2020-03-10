@@ -4,9 +4,6 @@
   <description>Repositories hosted on &lt;a href=&quot;https://www.visualstudio.com/&quot;&gt;visuastudio.com&lt;/a&gt;</description>
   <displayName>Microsoft</displayName>
   <properties>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@0.5">
-      <dockerLabel></dockerLabel>
-    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <views>
     <hudson.model.AllView>
