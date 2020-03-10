@@ -2,6 +2,9 @@ jenkins:
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
   disableRememberMe: false
   labelString: "git-2.20 git-lfs highmem"
   markupFormatter:

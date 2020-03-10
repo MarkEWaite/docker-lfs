@@ -123,6 +123,9 @@
     <string>JNLP3-connect</string>
   </disabledAgentProtocols>
   <label>git-2.20 git-lfs highmem</label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
   <nodeProperties>
     <hudson.slaves.EnvironmentVariablesNodeProperty>
       <envVars serialization="custom">
