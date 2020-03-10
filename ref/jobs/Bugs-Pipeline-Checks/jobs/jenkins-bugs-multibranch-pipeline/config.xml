@@ -4,10 +4,6 @@
   <description>&lt;a href=&quot;https://github.com/MarkEWaite/jenkins-bugs&quot;&gt;Multi-branch pipeline to check public Jenkins bugs&lt;/a&gt;</description>
   <displayName>jenkins-bugs</displayName>
   <properties>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.0.2">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.6"/>
-    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.7">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>

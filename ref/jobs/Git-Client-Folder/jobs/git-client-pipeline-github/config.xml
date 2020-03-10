@@ -20,10 +20,6 @@
         </entry>
       </domainCredentialsMap>
     </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.1.7">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.7"/>
-    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.10">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
