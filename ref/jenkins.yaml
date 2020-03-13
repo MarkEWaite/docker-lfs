@@ -310,6 +310,8 @@ tool:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
+          - adoptOpenJdkInstaller:
+              id: "jdk8u242-b08"
     - name: "jdk11"
       properties:
       - installSource:
@@ -330,26 +332,14 @@ tool:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
-    - name: "jdk12"
+          - adoptOpenJdkInstaller:
+              id: "jdk-11.0.6+10"
+    - name: "jdk13"
       properties:
       - installSource:
           installers:
-          - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-12.0.2+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_windows_hotspot_12.0.2_10.zip"
-          - zip:
-              label: "linux && 64bit"
-              subdir: "jdk-12.0.2+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_linux_hotspot_12.0.2_10.tar.gz"
-          - command:
-              command: "true"
-              label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-12.0.2+10"
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/openjdk12"
+          - adoptOpenJdkInstaller:
+              id: "jdk-13.0.2+8"
   maven:
     installations:
     - name: "maven-latest"
