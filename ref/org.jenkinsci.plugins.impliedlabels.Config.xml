@@ -325,6 +325,22 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>FreeBSD-11</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelAtom">11.3-RELEASE-p6</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>FreeBSD-12</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">12.1-RELEASE-p3||12.0-RELEASE||12.0-RELEASE-p13</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>java-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
