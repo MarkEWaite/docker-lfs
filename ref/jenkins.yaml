@@ -280,8 +280,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.25.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.25.0.zip"
+              subdir: "git-2.26.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.26.0.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
