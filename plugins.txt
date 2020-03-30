@@ -160,6 +160,7 @@ run-condition:latest
 scm-api:latest
 script-security
 sidebar-link:latest
+snakeyaml-api:latest
 sse-gateway:latest
 ssh-agent:latest
 ssh-credentials
