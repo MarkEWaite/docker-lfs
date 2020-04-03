@@ -113,6 +113,7 @@ kubernetes-client-api:latest
 kubernetes-credentials:latest
 kubernetes:latest
 label-verifier:latest
+ldap
 leastload:latest
 lockable-resources:latest
 log-parser:latest
