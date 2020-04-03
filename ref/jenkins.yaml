@@ -233,7 +233,7 @@ unclassified:
   globalSettings:
     failOnCorrupt: false
     noAuthors: false
-    quietMode: false
+    quietMode: ${START_QUIET}
   ivyBuildTrigger:
     extendedVersionMatching: false
   location:
