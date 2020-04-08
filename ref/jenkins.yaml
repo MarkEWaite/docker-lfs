@@ -137,25 +137,8 @@ unclassified:
         manageHooks: false
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
-  buildStepOperation:
-    enabled: false
-  contentFilters:
-    enabled: false
   devOpticsConfiguration:
     completionStrategy: AUTOMATIC
-  extendedEmailPublisher:
-    adminRequiredForTemplateTesting: false
-    allowUnregisteredEnabled: false
-    charset: "UTF-8"
-    debugMode: false
-    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck console output at $BUILD_URL to view the results."
-    defaultContentType: "text/plain"
-    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
-    maxAttachmentSize: -1
-    maxAttachmentSizeMb: 0
-    precedenceBulk: false
-    useSsl: false
-    watchingEnabled: false
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
   gitSCM:
@@ -234,20 +217,9 @@ unclassified:
     failOnCorrupt: false
     noAuthors: false
     quietMode: ${START_QUIET}
-  ivyBuildTrigger:
-    extendedVersionMatching: false
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
-  logParser:
-    legacyFormatting: false
-  mailer:
-    charset: "UTF-8"
-    useSsl: false
-  mavenModuleSet:
-    localRepository: "default"
-  pollSCM:
-    pollingThreadCount: 10
   throttleJobProperty:
     categories:
     - categoryName: "upkeep-one-per-node"
@@ -257,8 +229,6 @@ unclassified:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
-  upstream:
-    globalUpstreamFilterStrategy: UseOldest
 tool:
   ant:
     installations:
