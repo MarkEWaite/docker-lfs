@@ -272,16 +272,16 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk8u242-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz"
+              subdir: "jdk8u252-b09"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk8u242-b08/"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u242b08.zip"
+              subdir: "jdk8u252-b09/"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u252b09.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u242-b08"
+              toolHome: "/home/jagent/tools/jdk8u252-b09"
           - command:
               command: "true"
               label: "Alpine"
@@ -291,7 +291,7 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u242-b08"
+              id: "jdk8u252-b09"
     - name: "jdk11"
       properties:
       - installSource:
