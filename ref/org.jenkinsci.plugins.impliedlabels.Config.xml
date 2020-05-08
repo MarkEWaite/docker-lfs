@@ -341,10 +341,18 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>OpenBSD</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelAtom">openbsd</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>java-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-11||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-11||FreeBSD-12||OpenBSD</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -352,7 +360,7 @@
             <hudson.model.labels.LabelAtom>java-11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||OpenBSD</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -368,7 +376,7 @@
             <hudson.model.labels.LabelAtom>java8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-11||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[44]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -376,7 +384,7 @@
             <hudson.model.labels.LabelAtom>java11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[45]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -384,7 +392,7 @@
             <hudson.model.labels.LabelAtom>jdk-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-11||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[44]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -392,7 +400,7 @@
             <hudson.model.labels.LabelAtom>jdk-11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[45]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -400,7 +408,7 @@
             <hudson.model.labels.LabelAtom>jdk8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-11||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[44]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -408,7 +416,7 @@
             <hudson.model.labels.LabelAtom>jdk11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12</expression>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[45]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">

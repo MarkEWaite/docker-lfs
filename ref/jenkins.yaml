@@ -98,6 +98,8 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
+  copyartifact:
+    mode: PRODUCTION
   envInject:
     enableLoadingFromMaster: false
     enablePermissions: false
