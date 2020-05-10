@@ -1,0 +1,100 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.1"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.1">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-61187&quot;&gt;JENKINS-61187&lt;/a&gt; asked to automatically narrow the refspec when fetching from a user selected parameter&#xd;
+&#xd;
+&lt;p&gt;This job shows how to narrow the refspec based on a parameter&lt;/p&gt;</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12">
+      <siteName>https://issues.jenkins-ci.org/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SELECTED_BRANCH</name>
+          <description>Choose a branch to clone</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>JENKINS-52844</string>
+              <string>JENKINS-55257</string>
+              <string>JENKINS-55284</string>
+              <string>JENKINS-55536</string>
+              <string>JENKINS-55539</string>
+              <string>JENKINS-59016</string>
+              <string>JENKINS-60564</string>
+              <string>JENKINS-60591</string>
+              <string>JENKINS-60617</string>
+              <string>JENKINS-61120</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.2">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>pipeline {
+   agent {
+       label &apos;!windows&apos; // Windows does not run the `sh` step in this job
+   }
+
+   stages {
+      stage(&apos;Checkout with narrow refspec&apos;) {
+         steps {
+            checkout([$class: &apos;GitSCM&apos;,
+                        branches: [[name: &quot;${env.SELECTED_BRANCH}&quot;]],
+                        extensions: [
+                            [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true,
+                                reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;,
+                                shallow: true, depth: 1
+                            ]
+                        ],
+                        userRemoteConfigs: [
+                            [refspec: &quot;+refs/heads/${env.SELECTED_BRANCH}:refs/remotes/origin/${env.SELECTED_BRANCH}&quot;,
+                             url: &apos;https://github.com/MarkEWaite/jenkins-bugs&apos;]
+                        ]
+                    ])
+            sh &apos;git log -n 1&apos;
+         }
+      }
+   }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

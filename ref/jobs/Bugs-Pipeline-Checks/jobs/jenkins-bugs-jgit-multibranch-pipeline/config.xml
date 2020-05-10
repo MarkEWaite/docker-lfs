@@ -9,10 +9,6 @@
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <override>false</override>
     </org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.2.9">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.12"/>
-    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.20">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>

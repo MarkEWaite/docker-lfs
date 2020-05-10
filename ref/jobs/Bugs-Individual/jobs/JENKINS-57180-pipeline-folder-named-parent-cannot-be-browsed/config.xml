@@ -1,0 +1,114 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions>
+    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@2.21">
+      <jobPropertyDescriptors>
+        <string>org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty</string>
+        <string>jenkins.model.BuildDiscarderProperty</string>
+      </jobPropertyDescriptors>
+    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
+  </actions>
+  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-57180&quot;&gt;JENKINS-57180&lt;/a&gt; a folder named &lt;code&gt;parent&lt;/code&gt; in the workspace root can&apos;t be navigated with Jenkins workspace links&#xd;
+&#xd;
+&lt;p&gt;This test job uses &lt;code&gt;curl&lt;/code&gt; to perform the navigation and marks the job as &lt;strong&gt;unstable&lt;/strong&gt; when &lt;code&gt;HTTP/1.1 404 Not Found&lt;/code&gt; is reported</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12">
+      <siteName>https://issues.jenkins-ci.org/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.2">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.TimerTrigger>
+          <spec>@daily</spec>
+        </hudson.triggers.TimerTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>properties(
+    [
+        pipelineTriggers([cron(&apos;@daily&apos;)]),
+        buildDiscarder(logRotator(numToKeepStr: &apos;7&apos;))
+    ]
+)
+
+node(&apos;(!windows &amp;&amp; !cloud) || master&apos;) {
+    stage(&apos;create dirs&apos;) {
+        deleteDir()
+        echo &quot;&quot;&quot;
+        ****                         ****
+        **** Create test directories ****
+        ****                         ****
+        &quot;&quot;&quot;
+        sh (&quot;mkdir -p parent/foo &amp;&amp; touch parent/foo/file-1&quot;)
+        sh (&quot;mkdir -p bar/parent &amp;&amp; touch bar/parent/file-2&quot;)
+        sh (&quot;mkdir parent-foo    &amp;&amp; touch parent-foo/file-3&quot;)
+
+        // Report the URL&apos;s for interactive testing
+        echo &quot;&quot;&quot;
+        ****                                  ****
+        **** Test URLs for interactive checks ****
+        ****                                  ****
+        &quot;&quot;&quot;
+        echo &quot;OK URL is ${env.BUILD_URL}/execution/node/4/ws/&quot;
+        echo &quot;Odd URL is ${env.BUILD_URL}/execution/node/4/ws/parent/&quot;
+        echo &quot;Broken URL is ${env.BUILD_URL}/execution/node/4/ws/parent/foo&quot;
+
+        // Open the URL for automated verification
+        echo &quot;&quot;&quot;
+        ****                                             ****
+        **** Automated checks with curl of the test URLs ****
+        ****                                             ****
+        &quot;&quot;&quot;
+        sh &quot;curl -Is ${env.BUILD_URL}/execution/node/4/ws/           | grep ^HTTP.*200.OK&quot;
+        sh &quot;curl -Is ${env.BUILD_URL}/execution/node/4/ws/parent/    | grep ^HTTP.*200.OK&quot;
+
+        echo &quot;&quot;&quot;
+        ****                                                                  ****
+        **** Marking build as unstable if 404 Not Found is detected in output ****
+        ****                                                                  ****
+        &quot;&quot;&quot;
+        grep404NotFoundReturnCode = sh returnStatus: true, script: &quot;curl -Is ${env.BUILD_URL}/execution/node/4/ws/parent/foo | grep ^HTTP.*404.Not.Found&quot;
+        if (grep404NotFoundReturnCode == 0) {
+            currentBuild.result = &apos;UNSTABLE&apos;
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

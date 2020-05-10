@@ -22,7 +22,6 @@ blueocean-core-js:latest
 blueocean-dashboard:latest
 blueocean-display-url:latest
 blueocean-events:latest
-blueocean-executor-info:latest
 blueocean-github-pipeline:latest
 blueocean-git-pipeline:latest
 blueocean-i18n:latest
@@ -35,6 +34,7 @@ blueocean-pipeline-scm-api:latest
 blueocean-rest-impl:latest
 blueocean-rest:latest
 blueocean-web:latest
+bootstrap4-api:latest
 bouncycastle-api:latest
 branch-api:latest
 build-blocker-plugin:latest
@@ -53,7 +53,7 @@ configurationslicing:latest
 copyartifact:latest
 credentials
 credentials-binding:latest
-cvs
+data-tables-api:latest
 description-setter:latest
 devoptics:latest
 display-url-api:latest
@@ -61,14 +61,15 @@ docker-commons:latest
 docker-workflow:latest
 dtkit-api:latest
 durable-task:latest
+echarts-api:latest
 elastic-axis:latest
 email-ext:latest
 envinject-api:latest
 envinject:latest
 external-monitor-job:latest
 favorite:latest
+font-awesome-api:latest
 forensics-api:latest
-git-bisect:latest
 git-client:latest
 git-parameter:latest
 git-server:latest
@@ -100,6 +101,7 @@ jdk-tool:latest
 jenkins-design-language:latest
 jira:latest
 job-dsl:latest
+jquery3-api:latest
 jquery-detached:latest
 jquery-ui:latest
 jquery:latest
@@ -124,6 +126,7 @@ mercurial:latest
 metrics:latest
 momentjs:latest
 multi-branch-project-plugin:latest
+oauth-credentials.jpi:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
@@ -144,18 +147,20 @@ pipeline-stage-view:latest
 pipeline-utility-steps:latest
 plain-credentials:latest
 platformlabeler:latest
+plugin-util-api:latest
 pollscm:latest
+popper-api:latest
 preSCMbuildstep:latest
 PrioritySorter:latest
 promoted-builds:latest
 pubsub-light:latest
-oauth-credentials.jpi:latest
 rebuild:latest
 resource-disposer:latest
 run-condition:latest
 scm-api:latest
 script-security
 sidebar-link:latest
+snakeyaml-api:latest
 sse-gateway:latest
 ssh-agent:latest
 ssh-credentials
@@ -163,6 +168,7 @@ ssh-slaves
 structs:latest
 subversion
 support-core:latest
+swarm:latest
 text-finder:latest
 throttle-concurrents:latest
 timestamper:latest

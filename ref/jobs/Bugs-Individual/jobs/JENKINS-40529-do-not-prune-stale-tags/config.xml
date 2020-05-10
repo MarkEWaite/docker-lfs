@@ -1,9 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@1.11">
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-35687&quot;&gt;JENKINS-35687&lt;/a&gt; in a public repository</description>
+  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-40529&quot;&gt;JENKINS-40529&lt;/a&gt; adds stale tag pruning extension&#xd;
+&#xd;
+&lt;p&gt;This job relies on being run multiple times in the &lt;strong&gt;same workspace&lt;/strong&gt;.&#xd;
+First run in a new workspace will not report any count of stale tags because first use of a workspace cannot contain stale tags.&#xd;
+The next &lt;strong&gt;change&lt;/strong&gt; (note, change from the remote repository, not necessarily the next build) that arrives in that workspace will add a new tag to the local workspace, rendering the prior tag &quot;stale&quot; because it has been deleted from the remote repository.&#xd;
+</description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.15">
+      <siteName>https://issues.jenkins-ci.org/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
@@ -13,72 +21,63 @@
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
-        <numToKeep>7</numToKeep>
+        <numToKeep>23</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.27.0">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-pipeline-utils/</projectUrl>
-      <displayName></displayName>
-    </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@2.0.1">
       <leastLoadDisabled>false</leastLoadDisabled>
     </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
-    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
       <autoRebuild>false</autoRebuild>
       <rebuildDisabled>false</rebuildDisabled>
     </com.sonyericsson.rebuild.RebuildSettings>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.2">
       <maxConcurrentPerNode>0</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
       <throttleEnabled>false</throttleEnabled>
       <throttleOption>project</throttleOption>
       <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <matrixOptions>
-        <throttleMatrixBuilds>true</throttleMatrixBuilds>
-        <throttleMatrixConfigurations>false</throttleMatrixConfigurations>
-      </matrixOptions>
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.3.1-SNAPSHOT">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0-SNAPSHOT">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <name>origin</name>
-        <refspec>+refs/heads/tests/largeFileSupport:refs/remotes/origin/tests/largeFileSupport</refspec>
-        <url>https://github.com/MarkEWaite/jenkins-pipeline-utils.git</url>
+        <refspec>+refs/heads/JENKINS-40529:refs/remotes/origin/JENKINS-40529</refspec>
+        <url>https://github.com/MarkEWaite/jenkins-bugs</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>origin/tests/largeFileSupport</name>
+        <name>origin/JENKINS-40529</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-    <gitTool>jgitapache</gitTool>
-    <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/jenkins-pipeline-utils</url>
-    </browser>
+    <gitTool>Default</gitTool>
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
-        <noTags>true</noTags>
-        <reference></reference>
-        <timeout>9</timeout>
-        <depth>0</depth>
+        <noTags>false</noTags>
+        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
-  <assignedNode>git-lfs</assignedNode>
+  <quietPeriod>0</quietPeriod>
+  <assignedNode>!windows</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk8</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -86,25 +85,20 @@
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <axes>
-    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
-      <name>label</name>
-      <label>git-lfs</label>
-      <ignoreOffline>true</ignoreOffline>
-    </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
-  </axes>
-  <builders/>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.11">
+      <targets>info</targets>
+      <antName>ant-latest</antName>
+    </hudson.tasks.Ant>
+  </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.10">
-      <fileSet>uuid.txt</fileSet>
-      <regexp>.*5e7733d8acc94636850cb466aec524e4.*</regexp>
-      <succeedIfFound>true</succeedIfFound>
-      <unstableIfFound>false</unstableIfFound>
-      <alsoCheckConsoleOutput>false</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
+      <regexp>Count of stale git tags is 1</regexp>
+      <succeedIfFound>false</succeedIfFound>
+      <unstableIfFound>true</unstableIfFound>
+      <notBuiltIfFound>false</notBuiltIfFound>
+      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
-  <executionStrategy class="hudson.matrix.DefaultMatrixExecutionStrategyImpl">
-    <runSequentially>false</runSequentially>
-  </executionStrategy>
-</matrix-project>
+</project>

@@ -98,6 +98,8 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
+  copyartifact:
+    mode: PRODUCTION
   envInject:
     enableLoadingFromMaster: false
     enablePermissions: false
@@ -120,7 +122,6 @@ security:
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String"
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild"
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String"
-    - "staticField java.util.concurrent.TimeUnit MILLISECONDS"
     - "staticMethod java.util.Collections shuffle java.util.List java.util.Random"
     - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getMetaClass java.lang.Object"
     - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map"
@@ -138,25 +139,8 @@ unclassified:
         manageHooks: false
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
-  buildStepOperation:
-    enabled: false
-  contentFilters:
-    enabled: false
   devOpticsConfiguration:
     completionStrategy: AUTOMATIC
-  extendedEmailPublisher:
-    adminRequiredForTemplateTesting: false
-    allowUnregisteredEnabled: false
-    charset: "UTF-8"
-    debugMode: false
-    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck console output at $BUILD_URL to view the results."
-    defaultContentType: "text/plain"
-    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
-    maxAttachmentSize: -1
-    maxAttachmentSizeMb: 0
-    precedenceBulk: false
-    useSsl: false
-    watchingEnabled: false
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
   gitSCM:
@@ -234,23 +218,10 @@ unclassified:
   globalSettings:
     failOnCorrupt: false
     noAuthors: false
-    quietMode: false
-  ivyBuildTrigger:
-    extendedVersionMatching: false
+    quietMode: ${START_QUIET}
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
-  logParser:
-    legacyFormatting: false
-  mailer:
-    charset: "UTF-8"
-    useSsl: false
-  mavenModuleSet:
-    localRepository: "default"
-  pipeline-model:
-    dockerLabel: "docker"
-  pollSCM:
-    pollingThreadCount: 10
   throttleJobProperty:
     categories:
     - categoryName: "upkeep-one-per-node"
@@ -260,8 +231,6 @@ unclassified:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
-  upstream:
-    globalUpstreamFilterStrategy: UseOldest
 tool:
   ant:
     installations:
@@ -283,8 +252,18 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.25.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.25.0.zip"
+              subdir: "git-2.26.2\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.26.2.zip"
+    - home: "git"
+      name: "mingit-busybox-windows"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "mingw64\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.26.2-busybox-64-bit.zip"
+
     - name: "jgit"
     - name: "jgitapache"
   jdk:
@@ -295,16 +274,16 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk8u242-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz"
+              subdir: "jdk8u252-b09"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk8u242-b08/"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u242b08.zip"
+              subdir: "jdk8u252-b09/"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u252b09.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u242-b08"
+              toolHome: "/home/jagent/tools/jdk8u252-b09"
           - command:
               command: "true"
               label: "Alpine"
@@ -313,46 +292,30 @@ tool:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
+          - adoptOpenJdkInstaller:
+              id: "jdk8u252-b09"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.6+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.6_10.zip"
+              subdir: "jdk-11.0.7+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.7_10.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.6+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.6_10.tar.gz"
+              subdir: "jdk-11.0.7+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.6+10"
+              toolHome: "/home/jagent/tools/jdk-11.0.7+10"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
-    - name: "jdk12"
-      properties:
-      - installSource:
-          installers:
-          - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-12.0.2+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_windows_hotspot_12.0.2_10.zip"
-          - zip:
-              label: "linux && 64bit"
-              subdir: "jdk-12.0.2+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK12U-jdk_x64_linux_hotspot_12.0.2_10.tar.gz"
-          - command:
-              command: "true"
-              label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-12.0.2+10"
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/openjdk12"
+          - adoptOpenJdkInstaller:
+              id: "jdk-11.0.7+10"
   maven:
     installations:
     - name: "maven-latest"
