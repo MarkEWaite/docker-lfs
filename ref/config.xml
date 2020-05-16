@@ -110,11 +110,6 @@
     </listView>
   </views>
   <primaryView>all</primaryView>
-  <disabledAgentProtocols>
-    <string>JNLP-connect</string>
-    <string>JNLP2-connect</string>
-    <string>JNLP3-connect</string>
-  </disabledAgentProtocols>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
   </crumbIssuer>
