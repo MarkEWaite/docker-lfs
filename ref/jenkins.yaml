@@ -327,8 +327,8 @@ unclassified:
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
-        enableCache: false
-        manageHooks: false
+        enableCache: true
+        manageHooks: true
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
   devOpticsConfiguration:
