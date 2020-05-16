@@ -110,9 +110,6 @@
     </listView>
   </views>
   <primaryView>all</primaryView>
-  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
-  </crumbIssuer>
   <nodeProperties>
     <hudson.slaves.EnvironmentVariablesNodeProperty>
       <envVars serialization="custom">
