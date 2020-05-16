@@ -424,6 +424,34 @@ unclassified:
                   strategyId: 1
               - "gitHubTagDiscovery"
               - "localBranchTrait"
+    - defaultVersion: "master"
+      name: "git-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
+              traits:
+              - "gitBranchDiscovery"
+              - discoverOtherRefsTrait:
+                  ref: "*"
+              - "gitTagDiscovery"
+    - defaultVersion: "master"
+      name: "github-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "41cbe5ba-a9c1-472a-9535-a1415aadf844"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
   globalSettings:
     failOnCorrupt: false
     noAuthors: false
