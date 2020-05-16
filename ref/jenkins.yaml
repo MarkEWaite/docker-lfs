@@ -512,7 +512,6 @@ tool:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/MinGit-2.27.0-rc0-busybox-64-bit.zip"
-
     - name: "jgit"
     - name: "jgitapache"
   jdk:
