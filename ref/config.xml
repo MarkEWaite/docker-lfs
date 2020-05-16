@@ -2,7 +2,6 @@
 <hudson>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
-  <systemMessage>&lt;a href=&apos;https://jenkins.io&apos;&gt;Jenkins instance&lt;/a&gt; for &lt;a href=&apos;mailto:mark.earl.waite@gmail.com&apos;&gt;Mark Waite&lt;/a&gt;</systemMessage>
   <markupFormatter class="hudson.markup.RawHtmlMarkupFormatter" plugin="antisamy-markup-formatter@1.6">
     <disableSyntaxHighlighting>false</disableSyntaxHighlighting>
   </markupFormatter>
