@@ -331,6 +331,15 @@ unclassified:
         manageHooks: true
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
   devOpticsConfiguration:
     completionStrategy: AUTOMATIC
   gitHubPluginConfig:
