@@ -284,6 +284,8 @@ jenkins:
       name: "all"
   viewsTabBar: "standard"
 security:
+  anonymizeSupportBundle:
+    enabled: false
   apiToken:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
