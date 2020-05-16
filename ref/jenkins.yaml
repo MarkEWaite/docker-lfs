@@ -456,6 +456,12 @@ unclassified:
     failOnCorrupt: false
     noAuthors: false
     quietMode: ${START_QUIET}
+  ivyBuildTrigger:
+    extendedVersionMatching: false
+  jiraGlobalConfiguration:
+    sites:
+    - url: "https://issues.jenkins-ci.org/"
+      userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
