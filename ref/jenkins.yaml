@@ -346,6 +346,12 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - clientBuilderId: "autodetect"
+      connectionTimeout: 10
+      ignoreCertificateErrors: false
+      readTimeout: 10
   gitSCM:
     createAccountBasedOnEmail: false
     globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
