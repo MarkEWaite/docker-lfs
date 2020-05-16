@@ -6,6 +6,196 @@ jenkins:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
+  labelAtoms:
+  - name: "git-1.7"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 1.7"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-1.8"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 1.8"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-1.9"
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 1.9"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.0"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.0"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.7"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.7"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.10"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.10"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.11"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.11"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.16"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.16"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.17"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.17"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.19"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.19"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.20"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.20"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.21"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.21"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.22"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.22"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.23"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.23"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.24"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.24"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.25"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.25"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.26"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.26"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.27"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.27"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.28"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.28"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   labelString: "git-2.20 git-lfs highmem"
   markupFormatter:
     rawHtml:
@@ -24,7 +214,7 @@ jenkins:
   projectNamingStrategy: "standard"
   quietPeriod: 5
   remotingSecurity:
-    enabled: false
+    enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
   systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
@@ -94,6 +284,8 @@ jenkins:
       name: "all"
   viewsTabBar: "standard"
 security:
+  anonymizeSupportBundle:
+    enabled: false
   apiToken:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
@@ -135,14 +327,31 @@ unclassified:
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
-        enableCache: false
-        manageHooks: false
+        enableCache: true
+        manageHooks: true
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
   devOpticsConfiguration:
     completionStrategy: AUTOMATIC
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - clientBuilderId: "autodetect"
+      connectionTimeout: 10
+      ignoreCertificateErrors: false
+      readTimeout: 10
   gitSCM:
     createAccountBasedOnEmail: false
     globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
@@ -215,13 +424,51 @@ unclassified:
                   strategyId: 1
               - "gitHubTagDiscovery"
               - "localBranchTrait"
+    - defaultVersion: "master"
+      name: "git-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
+              traits:
+              - "gitBranchDiscovery"
+              - discoverOtherRefsTrait:
+                  ref: "*"
+              - "gitTagDiscovery"
+    - defaultVersion: "master"
+      name: "github-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "41cbe5ba-a9c1-472a-9535-a1415aadf844"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
   globalSettings:
     failOnCorrupt: false
     noAuthors: false
     quietMode: ${START_QUIET}
+  ivyBuildTrigger:
+    extendedVersionMatching: false
+  jiraGlobalConfiguration:
+    sites:
+    - url: "https://issues.jenkins-ci.org/"
+      userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
+  logParser:
+    legacyFormatting: false
+  pollSCM:
+    pollingThreadCount: 7
   throttleJobProperty:
     categories:
     - categoryName: "upkeep-one-per-node"
@@ -231,6 +478,8 @@ unclassified:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  upstream:
+    globalUpstreamFilterStrategy: UseNewest
 tool:
   ant:
     installations:
@@ -263,7 +512,6 @@ tool:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/MinGit-2.27.0-rc0-busybox-64-bit.zip"
-
     - name: "jgit"
     - name: "jgitapache"
   jdk:
