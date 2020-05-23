@@ -1,13 +1,15 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.0.3">
-  <actions/>
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.12">
+  <actions>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction_-DoNotShowPersistedBlueOceanUrlActions plugin="blueocean-rest-impl@1.23.0"/>
+  </actions>
   <description></description>
   <displayName>Bugs - Individual Checks</displayName>
   <properties>
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
         <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.13">
+          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.3.7">
             <specifications/>
           </com.cloudbees.plugins.credentials.domains.Domain>
           <java.util.concurrent.CopyOnWriteArrayList/>
@@ -36,7 +38,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>false</unstable>
             <failed>true</failed>
@@ -53,7 +55,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -68,7 +70,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>true</unstable>
             <failed>false</failed>
@@ -85,7 +87,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -96,10 +98,10 @@
         <filterQueue>false</filterQueue>
         <properties class="hudson.model.View$PropertyList"/>
         <jobNames>
-          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <neverBuilt>false</neverBuilt>
             <building>true</building>
@@ -114,7 +116,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -125,16 +127,16 @@
         <filterQueue>false</filterQueue>
         <properties class="hudson.model.View$PropertyList"/>
         <jobNames>
-          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters/>
         <columns>
           <hudson.views.StatusColumn/>
           <hudson.views.WeatherColumn/>
           <hudson.views.JobColumn/>
-          <hudson.plugins.git.GitBranchSpecifierColumn plugin="git@3.3.0"/>
+          <hudson.plugins.git.GitBranchSpecifierColumn plugin="git@4.3.0-SNAPSHOT"/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.0.4"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <includeRegex>.*</includeRegex>
         <recurse>true</recurse>
