@@ -115,6 +115,7 @@ kubernetes:latest
 label-verifier:latest
 ldap
 leastload:latest
+locale:latest
 lockable-resources:latest
 log-parser:latest
 mailer
