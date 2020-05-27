@@ -167,7 +167,6 @@ ssh-agent:latest
 ssh-credentials
 ssh-slaves
 structs:latest
-subversion
 support-core:latest
 swarm:latest
 text-finder:latest
