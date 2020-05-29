@@ -84,7 +84,7 @@ github:latest
 gitlab-api:latest
 gitlab-branch-source:latest
 gitlab-plugin:latest
-google-oauth-plugin.jpi:latest
+google-oauth-plugin:latest
 gradle:latest
 groovy-postbuild:latest
 h2-api:latest
@@ -128,7 +128,7 @@ mercurial:latest
 metrics:latest
 momentjs:latest
 multi-branch-project-plugin:latest
-oauth-credentials.jpi:latest
+oauth-credentials:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
