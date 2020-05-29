@@ -100,6 +100,7 @@ jaxb:latest
 jdk-tool:latest
 jenkins-design-language:latest
 jira:latest
+jmh-report:latest
 job-dsl:latest
 jquery3-api:latest
 jquery-detached:latest
