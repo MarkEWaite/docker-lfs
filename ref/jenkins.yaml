@@ -24,7 +24,7 @@ jenkins:
   projectNamingStrategy: "standard"
   quietPeriod: 5
   remotingSecurity:
-    enabled: false
+    enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
   systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
@@ -94,6 +94,8 @@ jenkins:
       name: "all"
   viewsTabBar: "standard"
 security:
+  anonymizeSupportBundle:
+    enabled: false
   apiToken:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
@@ -135,14 +137,31 @@ unclassified:
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
-        enableCache: false
-        manageHooks: false
+        enableCache: true
+        manageHooks: true
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
   devOpticsConfiguration:
     completionStrategy: AUTOMATIC
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - clientBuilderId: "autodetect"
+      connectionTimeout: 10
+      ignoreCertificateErrors: false
+      readTimeout: 10
   gitSCM:
     createAccountBasedOnEmail: false
     globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
@@ -215,13 +234,51 @@ unclassified:
                   strategyId: 1
               - "gitHubTagDiscovery"
               - "localBranchTrait"
+    - defaultVersion: "master"
+      name: "git-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
+              traits:
+              - "gitBranchDiscovery"
+              - discoverOtherRefsTrait:
+                  ref: "*"
+              - "gitTagDiscovery"
+    - defaultVersion: "master"
+      name: "github-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "41cbe5ba-a9c1-472a-9535-a1415aadf844"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
   globalSettings:
     failOnCorrupt: false
     noAuthors: false
     quietMode: ${START_QUIET}
+  ivyBuildTrigger:
+    extendedVersionMatching: false
+  jiraGlobalConfiguration:
+    sites:
+    - url: "https://issues.jenkins-ci.org/"
+      userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
+  logParser:
+    legacyFormatting: false
+  pollSCM:
+    pollingThreadCount: 7
   throttleJobProperty:
     categories:
     - categoryName: "upkeep-one-per-node"
@@ -231,6 +288,8 @@ unclassified:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  upstream:
+    globalUpstreamFilterStrategy: UseNewest
 tool:
   ant:
     installations:
@@ -252,8 +311,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.26.2\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.26.2.zip"
+              subdir: "git-2.27.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/git-2.27.0.zip"
     - home: "git"
       name: "mingit-busybox-windows"
       properties:
@@ -262,8 +321,7 @@ tool:
           - zip:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.26.2-busybox-64-bit.zip"
-
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.27.0-busybox-64-bit.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:

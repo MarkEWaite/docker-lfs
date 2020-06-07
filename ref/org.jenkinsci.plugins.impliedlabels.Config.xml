@@ -482,6 +482,22 @@
         </atoms>
         <expression class="hudson.model.labels.LabelAtom">10.3-RELEASE-p29</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>Ubuntu-20</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">Ubuntu&amp;&amp;(20.04||20.10)</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>Ubuntu-19</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">Ubuntu&amp;&amp;(19.04||19.10)</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
   </implications>
