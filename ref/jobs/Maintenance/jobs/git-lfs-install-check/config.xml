@@ -72,7 +72,7 @@ Git lfs requires git 1.8.2 minimum</description>
       <timeAllocated></timeAllocated>
     </hudson.plugins.xshell.XShellBuilder>
     <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.10">
-      <commandLine>git lfs install</commandLine>
+      <commandLine>git lfs install --force</commandLine>
       <executeFromWorkingDir>false</executeFromWorkingDir>
       <regexToKill></regexToKill>
       <timeAllocated></timeAllocated>
