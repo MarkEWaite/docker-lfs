@@ -42,7 +42,6 @@ build-name-setter:latest
 build-timeout:latest
 buildresult-trigger:latest
 cloudbees-bitbucket-branch-source:latest
-cloudbees-devoptics-enabler:latest
 cloudbees-folder:latest
 cloudbees-jenkins-advisor:latest
 command-launcher
@@ -55,7 +54,6 @@ credentials
 credentials-binding:latest
 data-tables-api:latest
 description-setter:latest
-devoptics:latest
 display-url-api:latest
 docker-commons:latest
 docker-workflow:latest
