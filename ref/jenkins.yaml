@@ -150,8 +150,6 @@ unclassified:
     healthMetrics:
     - worstChildHealthMetric:
         recursive: true
-  devOpticsConfiguration:
-    completionStrategy: AUTOMATIC
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
