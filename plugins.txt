@@ -127,6 +127,7 @@ metrics:latest
 momentjs:latest
 multi-branch-project-plugin:latest
 oauth-credentials:latest
+okhttp-api:latest
 pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
