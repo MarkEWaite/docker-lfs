@@ -1,20 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.11.1">
-  <actions/>
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.14">
   <description></description>
-  <displayName>Bugs - Pipeline Checks</displayName>
-  <properties>
-    <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
-        <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.3.3">
-            <specifications/>
-          </com.cloudbees.plugins.credentials.domains.Domain>
-          <java.util.concurrent.CopyOnWriteArrayList/>
-        </entry>
-      </domainCredentialsMap>
-    </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-  </properties>
+  <displayName>Bugs 80_000 to 89_999</displayName>
+  <properties/>
   <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">
     <views>
       <hudson.model.AllView>
@@ -36,7 +24,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@2.1.1">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>false</unstable>
             <failed>true</failed>
@@ -68,7 +56,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@2.1.1">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>true</unstable>
             <failed>false</failed>
@@ -99,7 +87,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.BuildStatusFilter plugin="view-job-filters@2.1.1">
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@2.2">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <neverBuilt>false</neverBuilt>
             <building>true</building>
@@ -118,6 +106,27 @@
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Branches</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.plugins.git.GitBranchSpecifierColumn plugin="git@4.3.0-SNAPSHOT"/>
+          <hudson.views.BuildButtonColumn/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
+        </columns>
+        <includeRegex>.*</includeRegex>
+        <recurse>true</recurse>
+      </hudson.model.ListView>
     </views>
     <primaryView>all</primaryView>
     <tabBar class="hudson.views.DefaultViewsTabBar"/>
@@ -127,7 +136,5 @@
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.5.6">
-    <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
-  </icon>
+  <icon class="com.cloudbees.hudson.plugins.folder.icons.StockFolderIcon"/>
 </com.cloudbees.hudson.plugins.folder.Folder>
