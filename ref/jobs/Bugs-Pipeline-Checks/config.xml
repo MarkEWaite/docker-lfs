@@ -127,7 +127,7 @@
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.7">
+  <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.5.6">
     <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
   </icon>
 </com.cloudbees.hudson.plugins.folder.Folder>
