@@ -48,14 +48,12 @@ This example shows a case where the refspec in the second fetch is critical to o
     </hudson.plugins.xshell.XShellBuilder>
   </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.13">
-      <textFinders>
-        <hudson.plugins.textfinder.TextFinder>
-          <regexp>^  remotes/origin/pull/553$</regexp>
-          <buildResult>SUCCESS</buildResult>
-          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
-        </hudson.plugins.textfinder.TextFinder>
-      </textFinders>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
+      <regexp>^  remotes/origin/pull/553$</regexp>
+      <succeedIfFound>true</succeedIfFound>
+      <unstableIfFound>false</unstableIfFound>
+      <notBuiltIfFound>false</notBuiltIfFound>
+      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
