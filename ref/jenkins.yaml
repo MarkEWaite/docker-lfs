@@ -264,8 +264,6 @@ unclassified:
     failOnCorrupt: false
     noAuthors: false
     quietMode: ${START_QUIET}
-  ivyBuildTrigger:
-    extendedVersionMatching: false
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins-ci.org/"
