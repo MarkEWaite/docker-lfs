@@ -186,7 +186,6 @@ workflow-cps:latest
 workflow-durable-task-step:latest
 workflow-job:latest
 workflow-multibranch:latest
-workflow-remote-loader:latest
 workflow-scm-step:latest
 workflow-step-api:latest
 workflow-support:latest
