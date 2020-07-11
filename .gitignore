@@ -1,4 +1,5 @@
 *.tmp
+gcp-data.txt
 bats/
 tests/functions/init.groovy.d/
 tests/functions/java_cp/
