@@ -83,7 +83,15 @@ def get_dns_server():
 #-----------------------------------------------------------------------
 
 def get_windows_dir():
-   return string.ascii_uppercase[hash(get_fqdn()) % len(string.ascii_uppercase)] + string.ascii_uppercase[hash(get_an_ip_address()) % len(string.ascii_uppercase)]
+    return string.ascii_uppercase[hash(get_fqdn()) % len(string.ascii_uppercase)] + string.ascii_uppercase[hash(get_an_ip_address()) % len(string.ascii_uppercase)]
+
+#-----------------------------------------------------------------------
+
+def get_jagent_java_home():
+    if "jdk11" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-11.0.7+10"
+    else:
+        return "/home/jagent/tools/jdk8u252-b09"
 
 #-----------------------------------------------------------------------
 
@@ -143,6 +151,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         java_opts.append("-Xdebug")
         java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
     docker_command.extend([
+                       "--env", 'JAGENT_JAVA_HOME=' + get_jagent_java_home(),
                        "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
