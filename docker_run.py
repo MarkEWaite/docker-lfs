@@ -89,9 +89,9 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk11" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.7+10"
+        return "/home/jagent/tools/jdk-11.0.8+10"
     else:
-        return "/home/jagent/tools/jdk8u252-b09"
+        return "/home/jagent/tools/jdk8u262-b10"
 
 #-----------------------------------------------------------------------
 
