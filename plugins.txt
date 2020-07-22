@@ -1,6 +1,5 @@
 ace-editor:latest
 adoptopenjdk:latest
-analysis-core:latest
 analysis-model-api:latest
 ant
 antisamy-markup-formatter
@@ -101,7 +100,6 @@ jmh-report:latest
 job-dsl:latest
 jquery3-api:latest
 jquery-detached:latest
-jquery-ui:latest
 jquery:latest
 jsch:latest
 junit
@@ -124,7 +122,6 @@ maven-plugin
 mercurial:latest
 metrics:latest
 momentjs:latest
-multi-branch-project-plugin:latest
 oauth-credentials:latest
 okhttp-api:latest
 pam-auth
@@ -137,7 +134,6 @@ pipeline-input-step:latest
 pipeline-maven:latest
 pipeline-milestone-step:latest
 pipeline-model-api:latest
-pipeline-model-declarative-agent:latest
 pipeline-model-definition:latest
 pipeline-model-extensions:latest
 pipeline-rest-api:latest
