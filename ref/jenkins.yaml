@@ -261,8 +261,6 @@ unclassified:
                   strategyId: 1
               - "gitHubTagDiscovery"
   globalSettings:
-    failOnCorrupt: false
-    noAuthors: false
     quietMode: ${START_QUIET}
   jiraGlobalConfiguration:
     sites:
