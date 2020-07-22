@@ -1,6 +1,5 @@
 ace-editor:latest
 adoptopenjdk:latest
-analysis-core:latest
 analysis-model-api:latest
 ant
 antisamy-markup-formatter
