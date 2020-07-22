@@ -134,7 +134,6 @@ pipeline-input-step:latest
 pipeline-maven:latest
 pipeline-milestone-step:latest
 pipeline-model-api:latest
-pipeline-model-declarative-agent:latest
 pipeline-model-definition:latest
 pipeline-model-extensions:latest
 pipeline-rest-api:latest
