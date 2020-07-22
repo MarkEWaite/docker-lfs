@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.4">
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.14">
   <actions/>
   <description></description>
   <displayName>Platform Labeler Folder</displayName>
@@ -7,19 +7,19 @@
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
         <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.1.16">
+          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.3.12">
             <specifications/>
           </com.cloudbees.plugins.credentials.domains.Domain>
           <java.util.concurrent.CopyOnWriteArrayList/>
         </entry>
       </domainCredentialsMap>
     </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.9">
+    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.17">
       <libraries>
         <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
           <name>infra</name>
           <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-            <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@4.0.0-SNAPSHOT">
+            <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@4.3.1-SNAPSHOT">
               <id>02d1ef7b-6bda-48ca-a8f8-934d7d91ea94</id>
               <remote>https://github.com/jenkins-infra/pipeline-library.git</remote>
               <credentialsId></credentialsId>
@@ -41,7 +41,7 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.5.0">
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.8.2">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <override>false</override>
@@ -68,7 +68,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.3">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>false</unstable>
             <failed>true</failed>
@@ -85,7 +85,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -100,7 +100,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@2.3">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>true</unstable>
             <failed>false</failed>
@@ -117,7 +117,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -128,10 +128,10 @@
         <filterQueue>false</filterQueue>
         <properties class="hudson.model.View$PropertyList"/>
         <jobNames>
-          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.BuildStatusFilter plugin="view-job-filters@1.27">
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@2.3">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <neverBuilt>false</neverBuilt>
             <building>true</building>
@@ -146,7 +146,7 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -159,7 +159,5 @@
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
-  <icon class="com.github.mjdetullio.jenkins.plugins.multibranch.BallColorFolderIcon" plugin="multi-branch-project-plugin@0.7">
-    <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../.."/>
-  </icon>
+  <icon class="com.cloudbees.hudson.plugins.folder.icons.StockFolderIcon"/>
 </com.cloudbees.hudson.plugins.folder.Folder>
