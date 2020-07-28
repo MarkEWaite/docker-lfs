@@ -276,10 +276,6 @@ unclassified:
     - categoryName: "upkeep-one-per-node"
       maxConcurrentPerNode: 1
       maxConcurrentTotal: 0
-  timestamperConfig:
-    allPipelines: false
-    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
-    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
   upstream:
     globalUpstreamFilterStrategy: UseNewest
 tool:
