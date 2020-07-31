@@ -40,6 +40,7 @@ build-blocker-plugin:latest
 build-name-setter:latest
 build-timeout:latest
 buildresult-trigger:latest
+checks-api:latest
 cloudbees-bitbucket-branch-source:latest
 cloudbees-folder:latest
 cloudbees-jenkins-advisor:latest
