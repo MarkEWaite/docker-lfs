@@ -141,9 +141,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-                  # "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
+                  "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                  # "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                 ]
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
