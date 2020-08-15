@@ -124,6 +124,7 @@ maven-plugin
 mercurial:latest
 metrics:latest
 momentjs:latest
+naginator:latest
 oauth-credentials:latest
 okhttp-api:latest
 pam-auth
