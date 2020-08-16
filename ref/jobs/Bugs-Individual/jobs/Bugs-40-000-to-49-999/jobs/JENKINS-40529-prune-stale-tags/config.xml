@@ -37,7 +37,7 @@
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.PruneStaleTag>
-        <pruneTags>false</pruneTags>
+        <pruneTags>true</pruneTags>
       </hudson.plugins.git.extensions.impl.PruneStaleTag>
     </extensions>
   </scm>
@@ -62,12 +62,15 @@
     </hudson.tasks.Ant>
   </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
-      <regexp>Count of stale git tags is [^1]</regexp>
-      <succeedIfFound>false</succeedIfFound>
-      <unstableIfFound>true</unstableIfFound>
-      <notBuiltIfFound>false</notBuiltIfFound>
-      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp></regexp>
+          <buildResult>FAILURE</buildResult>
+          <changeCondition>MATCH_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>false</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
