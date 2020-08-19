@@ -83,7 +83,6 @@ github:latest
 gitlab-api:latest
 gitlab-branch-source:latest
 gitlab-plugin:latest
-google-oauth-plugin:latest
 gradle:latest
 groovy-postbuild:latest
 h2-api:latest
