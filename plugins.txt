@@ -83,7 +83,6 @@ github:latest
 gitlab-api:latest
 gitlab-branch-source:latest
 gitlab-plugin:latest
-google-oauth-plugin:latest
 gradle:latest
 groovy-postbuild:latest
 h2-api:latest
@@ -103,6 +102,7 @@ job-dsl:latest
 jquery3-api:latest
 jquery-detached:latest
 jquery:latest
+jqs-monitoring:latest
 jsch:latest
 junit
 junit-attachments:latest
@@ -124,6 +124,7 @@ maven-plugin
 mercurial:latest
 metrics:latest
 momentjs:latest
+monitoring:latest
 naginator:latest
 oauth-credentials:latest
 okhttp-api:latest
