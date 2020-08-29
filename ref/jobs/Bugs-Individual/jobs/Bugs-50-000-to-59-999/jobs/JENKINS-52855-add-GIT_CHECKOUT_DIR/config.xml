@@ -19,7 +19,7 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.2">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName>Jenkins bugs</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.9">

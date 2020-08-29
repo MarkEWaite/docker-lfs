@@ -19,7 +19,7 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.23.1">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
@@ -41,7 +41,7 @@
       <hudson.plugins.git.UserRemoteConfig>
         <name>origin-JENKINS-31393</name>
         <refspec>+refs/heads/JENKINS-31393:refs/remotes/origin-JENKINS-31393/JENKINS-31393 +refs/heads/develop/JENKINS-29796:refs/remotes/origin-JENKINS-31393/develop/JENKINS-29796</refspec>
-        <url>https://github.com/MarkEWaite/jenkins-bugs/</url>
+        <url>https://github.com/MarkEWaite/jenkins-bugs</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>

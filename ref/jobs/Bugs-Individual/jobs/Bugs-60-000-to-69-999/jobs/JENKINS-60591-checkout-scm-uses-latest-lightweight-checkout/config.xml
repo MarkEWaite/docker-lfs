@@ -27,7 +27,7 @@ does not checkout the same SHA-1 as was used to checkout the Jenkinsfile.&#xd;
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.5">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName>Jenkins Bugs (public)</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
