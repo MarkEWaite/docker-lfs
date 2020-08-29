@@ -20,15 +20,25 @@
   <builders>
     <hudson.tasks.Shell>
       <command>jarsigner -verify -certs /usr/share/jenkins/jenkins.war</command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
-      <regexp>Warning:</regexp>
-      <succeedIfFound>false</succeedIfFound>
-      <unstableIfFound>true</unstableIfFound>
-      <notBuiltIfFound>false</notBuiltIfFound>
-      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>Warning:</regexp>
+          <buildResult>UNSTABLE</buildResult>
+          <changeCondition>MATCH_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>jar is unsigned</regexp>
+          <buildResult>UNSTABLE</buildResult>
+          <changeCondition>MATCH_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
