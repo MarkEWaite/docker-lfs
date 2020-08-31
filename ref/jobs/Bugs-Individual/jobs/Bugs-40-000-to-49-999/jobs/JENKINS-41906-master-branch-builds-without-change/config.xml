@@ -14,7 +14,7 @@ Otherwise, should only build on those rare occasions when the master branch chan
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.26.0">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName>Jenkins Bugs Repo</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
@@ -34,7 +34,7 @@ Otherwise, should only build on those rare occasions when the master branch chan
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/jenkins-bugs/</url>
+        <url>https://github.com/MarkEWaite/jenkins-bugs</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -45,7 +45,7 @@ Otherwise, should only build on those rare occasions when the master branch chan
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/jenkins-bugs/</url>
+      <url>https://github.com/MarkEWaite/jenkins-bugs</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
