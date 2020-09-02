@@ -20,7 +20,6 @@
   <builders>
     <hudson.tasks.Shell>
       <command>jarsigner -verify -certs /usr/share/jenkins/jenkins.war</command>
-      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
