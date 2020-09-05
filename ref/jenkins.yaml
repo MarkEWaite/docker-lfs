@@ -363,6 +363,27 @@ tool:
               subdir: "PortableGit-2.25.1\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.25.1.zip"
     - home: "git"
+      name: "git-2.26.2"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.26 && freebsd"
+              toolHome: "/usr/local/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.26 && linux"
+              toolHome: "/usr/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.26 && openbsd"
+              toolHome: "/usr/local/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.26.2\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.26.2.zip"
+    - home: "git"
       name: "git-2.28.0"
       properties:
       - installSource:
