@@ -299,8 +299,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.27.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.27.0.zip"
+              subdir: "PortableGit-2.28.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.28.0.zip"
     - home: "git"
       name: "mingit-busybox-windows"
       properties:
@@ -311,12 +311,89 @@ tool:
               subdir: "mingw64\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/MinGit-2.27.0-busybox-64-bit.zip"
     - home: "git"
-      name: "git-for-windows-portable"
+      name: "git-2.11.1"
       properties:
       - installSource:
           installers:
+          - command:
+              command: "true"
+              label: "git-2.11 && linux"
+              toolHome: "/usr/bin/git"
           - zip:
               label: "windows && 64bit"
+              subdir: "PortableGit-2.11.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.11.1.zip"
+    - home: "git"
+      name: "git-2.17.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.17 && linux"
+              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.17.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.17.1.zip"
+    - home: "git"
+      name: "git-2.20.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.20 && linux"
+              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.20.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.20.1.zip"
+    - home: "git"
+      name: "git-2.25.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.25 && linux"
+              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.25.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.25.1.zip"
+    - home: "git"
+      name: "git-2.26.2"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.26 && freebsd"
+              toolHome: "/usr/local/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.26 && linux"
+              toolHome: "/usr/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.26 && openbsd"
+              toolHome: "/usr/local/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.26.2\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.26.2.zip"
+    - home: "git"
+      name: "git-2.28.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.28 && linux"
+              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows"
               subdir: "PortableGit-2.28.0\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.28.0.zip"
     - name: "jgit"
