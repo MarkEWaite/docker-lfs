@@ -299,8 +299,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "git-2.27.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/git-2.27.0.zip"
+              subdir: "PortableGit-2.28.0\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.28.0.zip"
     - home: "git"
       name: "mingit-busybox-windows"
       properties:
