@@ -119,9 +119,7 @@ metrics:latest
 momentjs:latest
 monitoring:latest
 naginator:latest
-oauth-credentials:latest
 okhttp-api:latest
-pam-auth
 parallel-test-executor:latest
 parameterized-trigger:latest
 pipeline-build-step:latest
