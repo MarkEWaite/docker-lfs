@@ -105,7 +105,6 @@ junit-attachments:latest
 junit-realtime-test-reporter:latest
 kubernetes-client-api:latest
 kubernetes-credentials:latest
-kubernetes:latest
 label-verifier:latest
 ldap
 leastload:latest
