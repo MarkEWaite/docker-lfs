@@ -146,7 +146,6 @@ popper-api:latest
 preSCMbuildstep:latest
 promoted-builds:latest
 pubsub-light:latest
-rebuild:latest
 resource-disposer:latest
 run-condition:latest
 scm-api:latest
