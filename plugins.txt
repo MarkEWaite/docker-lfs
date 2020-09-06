@@ -173,7 +173,7 @@ workflow-api:latest
 workflow-basic-steps:latest
 workflow-cps-global-lib:latest
 workflow-cps:latest
-workflow-durable-task-step:latest
+workflow-durable-task-step:2.35
 workflow-job:latest
 workflow-multibranch:latest
 workflow-scm-step:latest
