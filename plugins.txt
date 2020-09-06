@@ -103,7 +103,6 @@ jsch:latest
 junit
 junit-attachments:latest
 junit-realtime-test-reporter:latest
-kubernetes-client-api:latest
 label-verifier:latest
 ldap
 leastload:latest
