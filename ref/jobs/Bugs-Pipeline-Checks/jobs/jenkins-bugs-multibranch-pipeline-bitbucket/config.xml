@@ -4,9 +4,6 @@
   <description>Multi-branch pipeline for &lt;a href=&quot;https://bitbucket.org/markewaite/jenkins-bugs&quot;&gt;Bitbucket public Jenkins bugs&lt;/a&gt; using **Bitbucket branch source**</description>
   <displayName>jenkins-bugs (Bitbucket)</displayName>
   <properties>
-    <org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty plugin="kubernetes@1.15.5">
-      <permittedClouds/>
-    </org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.6.14">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>

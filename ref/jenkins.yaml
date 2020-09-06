@@ -271,11 +271,6 @@ unclassified:
     legacyFormatting: false
   pollSCM:
     pollingThreadCount: 7
-  throttleJobProperty:
-    categories:
-    - categoryName: "upkeep-one-per-node"
-      maxConcurrentPerNode: 1
-      maxConcurrentTotal: 0
   upstream:
     globalUpstreamFilterStrategy: UseNewest
 tool:
