@@ -4,9 +4,6 @@
   <description>&lt;a href=&quot;https://github.com/MarkEWaite/jenkins-bugs&quot;&gt;Multi-branch pipeline to check public Jenkins bugs&lt;/a&gt;</description>
   <displayName>jenkins-bugs (Git protocol)</displayName>
   <properties>
-    <org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty plugin="kubernetes@1.23.0">
-      <permittedClouds/>
-    </org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.8.2">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
