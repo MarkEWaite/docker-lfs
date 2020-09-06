@@ -151,7 +151,6 @@ plugin-util-api:latest
 pollscm:latest
 popper-api:latest
 preSCMbuildstep:latest
-PrioritySorter:latest
 promoted-builds:latest
 pubsub-light:latest
 rebuild:latest
