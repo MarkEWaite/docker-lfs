@@ -1,12 +1,10 @@
-FROM jenkins/jenkins:2.235.5-lts-alpine
+FROM jenkins/jenkins:2.249.1-lts-alpine
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN apk add --no-cache \
-  git-lfs \
-  gnupg
+RUN apk add --no-cache gnupg
 
 ARG user=jenkins
 
