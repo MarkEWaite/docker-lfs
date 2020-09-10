@@ -146,6 +146,9 @@ unclassified:
     healthMetrics:
     - worstChildHealthMetric:
         recursive: true
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
