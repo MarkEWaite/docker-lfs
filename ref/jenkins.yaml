@@ -23,8 +23,6 @@ jenkins:
       name: "all"
   projectNamingStrategy: "standard"
   quietPeriod: 5
-  remotingSecurity:
-    enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
   systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
@@ -68,7 +66,6 @@ jenkins:
           unstable: false
       name: "Failed"
       recurse: true
-      statusFilter: true
   - list:
       columns:
       - "status"
@@ -89,7 +86,6 @@ jenkins:
           unstable: true
       name: "Unstable"
       recurse: true
-      statusFilter: true
   - all:
       name: "all"
   viewsTabBar: "standard"
@@ -150,6 +146,9 @@ unclassified:
     healthMetrics:
     - worstChildHealthMetric:
         recursive: true
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
@@ -161,9 +160,12 @@ unclassified:
       ignoreCertificateErrors: false
       readTimeout: 10
   gitSCM:
+    allowSecondFetch: false
     createAccountBasedOnEmail: false
+    disableGitToolChooser: false
     globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     globalConfigName: "Jenkins Docker User"
+    hideCredentials: false
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
   globalConfigFiles:
