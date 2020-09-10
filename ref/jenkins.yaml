@@ -68,7 +68,6 @@ jenkins:
           unstable: false
       name: "Failed"
       recurse: true
-      statusFilter: true
   - list:
       columns:
       - "status"
