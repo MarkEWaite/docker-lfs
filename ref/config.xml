@@ -44,7 +44,6 @@
         <hudson.views.BuildButtonColumn/>
       </columns>
       <recurse>true</recurse>
-      <statusFilter>true</statusFilter>
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
@@ -76,7 +75,6 @@
         <hudson.views.BuildButtonColumn/>
       </columns>
       <recurse>true</recurse>
-      <statusFilter>true</statusFilter>
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
