@@ -6,7 +6,7 @@ jenkins:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
-  labelString: "git-2.20 git-lfs highmem"
+  labelString: "git-2.26 git-lfs highmem"
   markupFormatter:
     rawHtml:
       disableSyntaxHighlighting: false
