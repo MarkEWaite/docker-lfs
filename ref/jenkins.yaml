@@ -15,7 +15,7 @@ jenkins:
   nodeProperties:
   - envVars:
       env:
-      - key: "PATH+M2_HOME_BIN"
+      - key: "PATH+MAVEN_BIN"
         value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.3/bin"
   numExecutors: 2
   primaryView:
