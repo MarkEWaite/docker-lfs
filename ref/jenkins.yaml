@@ -27,7 +27,11 @@ jenkins:
     enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  systemMessage: "Jenkins for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
   views:
   - list:
       columns:
