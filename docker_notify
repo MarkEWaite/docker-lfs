@@ -10,7 +10,7 @@ scan_delay=7
 git grep -l -F org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read multibranch_pipeline
 do
         scan_delay=$((scan_delay+23))
-        url_encoded_multibranch_pipeline=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$multibranch_pipeline")
+        url_encoded_multibranch_pipeline=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "$multibranch_pipeline")
         # echo
         # echo $multibranch_pipeline to $url_encoded_multibranch_pipeline
         # echo http://localhost:8080$url_encoded_multibranch_pipeline?delay=0
@@ -23,7 +23,7 @@ done
 git grep -l -E 'JENKINS-44087|JENKINS-44041|JENKINS-33238|JENKINS-20941' -- ref/jobs | sed -e 's,^ref,,g' -e 's,/jobs/,/job/,g' -e 's,/config.xml$,,g' | shuf | while read build_now_job
 do
         scan_delay=$((scan_delay+37))
-        url_encoded_build_now_job=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])"  "$build_now_job")
+        url_encoded_build_now_job=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "$build_now_job")
         # echo
         # echo $build_now_job to $url_encoded_build_now_job
         # echo http://localhost:8080$url_encoded_build_now_job?delay=0
