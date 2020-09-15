@@ -1,10 +1,9 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Jenkins git plugin</description>
+  <description>Jenkins git client plugin from master branch</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9"/>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
@@ -20,46 +19,16 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
-      <projectUrl>https://github.com/MarkEWaite/git-plugin/</projectUrl>
-      <displayName>Git plugin</displayName>
+      <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
+      <displayName>Git client plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>test</name>
-          <description>Java test classes to execute</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>*</string>
-              <string>AbstractGitSCMSourceTest</string>
-              <string>AncestryBuildChooserTest</string>
-              <string>BuildDataTest</string>
-              <string>CandidateRevisionsTest</string>
-              <string>CliGitSCMTriggerLocalPollTest</string>
-              <string>CliGitSCMTriggerRemotePollTest</string>
-              <string>DefaultBuildChooserTest</string>
-              <string>GitChangeLogParserTest</string>
-              <string>GitChangeSetSimpleTest</string>
-              <string>GitChangeSetTest</string>
-              <string>GitPublisherTest</string>
-              <string>GitRepositoryBrowserTest</string>
-              <string>GitStatusMultipleSCMTest</string>
-              <string>GitStatusTest</string>
-              <string>JGitSCMTriggerLocalPollTest</string>
-              <string>JGitSCMTriggerLocalPollTest</string>
-              <string>JGitSCMTriggerRemotePollTest</string>
-              <string>MultipleSCMTest</string>
-              <string>PathRestrictionTest</string>
-              <string>PreBuildMergeOptionsTest</string>
-              <string>RevisionParameterActionRemoteUrlTest</string>
-              <string>RevisionParameterActionTest</string>
-              <string>SCMTriggerTest</string>
-              <string>SubmoduleCombinatorTest</string>
-              <string>UserExclusionTest</string>
-              <string>UserMergeOptionsTest</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>TEST_ALL_CREDENTIALS</name>
+          <description>Test all credentials or only a randomly selected subset</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
     <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
@@ -72,11 +41,31 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta11-SNAPSHOT">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta12-SNAPSHOT">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/git-plugin</url>
+        <url>https://github.com/MarkEWaite/git-client-plugin</url>
+      </hudson.plugins.git.UserRemoteConfig>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>gitlab</name>
+        <url>git@gitlab.com:MarkEWaite/git-client-plugin.git</url>
+        <credentialsId>MarkEWaite-gitlab-rsa-private-key</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>bitbucket</name>
+        <url>git@bitbucket.org:markewaite/git-client-plugin.git</url>
+        <credentialsId>markewaite-bitbucket-rsa-private-key</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>beanstalk</name>
+        <url>git@jenkins-git-plugin.git.beanstalkapp.com:/jenkins-git-plugin/git-client-plugin.git</url>
+        <credentialsId>beanstalk-private-key-MarkEWaite</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>visualstudio</name>
+        <url>markwaite@vs-ssh.visualstudio.com:v3/markwaite/git-client-plugin/git-client-plugin</url>
+        <credentialsId>markewaite-live-com-ssh-private-key</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -87,7 +76,7 @@
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/git-plugin</url>
+      <url>https://github.com/MarkEWaite/git-client-plugin</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
@@ -96,7 +85,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>false</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
+        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
         <depth>0</depth>
         <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
@@ -118,8 +107,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>-P enable-jacoco clean install jacoco:report spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
+      <targets>-P enable-jacoco clean install jacoco:report checkstyle:checkstyle spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
       <mavenName>maven-latest</mavenName>
+      <properties>maven.test.failure.ignore=true</properties>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -163,7 +153,7 @@
       <deltaClassCoverage>0</deltaClassCoverage>
       <buildOverBuild>false</buildOverBuild>
     </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@6.0.2">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@6.1.1">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
@@ -194,13 +184,6 @@
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-        <io.jenkins.plugins.analysis.warnings.MavenConsole>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.MavenConsole>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>
@@ -209,7 +192,7 @@
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@6.0.2">
+      <minimumSeverity plugin="analysis-model-api@6.0.3">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
@@ -218,6 +201,7 @@
       <isBlameDisabled>false</isBlameDisabled>
       <isForensicsDisabled>false</isForensicsDisabled>
       <qualityGates/>
+      <trendChartType>AGGREGATION_TOOLS</trendChartType>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
