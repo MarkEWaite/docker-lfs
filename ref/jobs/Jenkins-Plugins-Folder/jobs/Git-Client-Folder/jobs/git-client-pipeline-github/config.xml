@@ -3,8 +3,8 @@
   <actions>
     <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction_-DoNotShowPersistedBlueOceanUrlActions plugin="blueocean-rest-impl@1.9.0"/>
   </actions>
-  <description>&lt;a href=&quot;https://github.com/MarkEWaite/git-plugin&quot;&gt;Jenkins git plugin&lt;/a&gt; Jenkinsfile based jobs</description>
-  <displayName>Git Branches - Jenkinsfile (GitHub)</displayName>
+  <description>&lt;a href=&quot;https://github.com/MarkEWaite/git-client-plugin&quot;&gt;Jenkins git client plugin&lt;/a&gt; Jenkinsfile based jobs</description>
+  <displayName>Git Client Branches - Jenkinsfile (GitHub)</displayName>
   <properties>
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@6.7">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
@@ -16,9 +16,6 @@
         </entry>
       </domainCredentialsMap>
     </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
-    <org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty plugin="kubernetes@1.13.5">
-      <permittedClouds/>
-    </org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.6.1">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -39,7 +36,7 @@
   <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.7">
     <pruneDeadBranches>true</pruneDeadBranches>
     <daysToKeep>-1</daysToKeep>
-    <numToKeep>-1</numToKeep>
+    <numToKeep>1</numToKeep>
   </orphanedItemStrategy>
   <triggers>
     <com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger plugin="cloudbees-folder@6.7">
@@ -55,7 +52,7 @@
           <id>1973b33d-51a8-4b51-bf45-dce2ef268581</id>
           <credentialsId>MarkEWaite-github-username-password</credentialsId>
           <repoOwner>MarkEWaite</repoOwner>
-          <repository>git-plugin</repository>
+          <repository>git-client-plugin</repository>
           <traits>
             <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
               <strategyId>1</strategyId>
@@ -65,7 +62,7 @@
             </org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait>
             <org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
               <strategyId>1</strategyId>
-              <trust class="org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustContributors"/>
+              <trust class="org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustPermission"/>
             </org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
           </traits>
         </source>

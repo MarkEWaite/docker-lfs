@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Jenkins git plugin</description>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9"/>
@@ -19,48 +19,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>test</name>
-          <description>Java test classes to execute</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>*</string>
-              <string>AbstractGitSCMSourceTest</string>
-              <string>AncestryBuildChooserTest</string>
-              <string>BuildDataTest</string>
-              <string>CandidateRevisionsTest</string>
-              <string>CliGitSCMTriggerLocalPollTest</string>
-              <string>CliGitSCMTriggerRemotePollTest</string>
-              <string>DefaultBuildChooserTest</string>
-              <string>GitChangeLogParserTest</string>
-              <string>GitChangeSetSimpleTest</string>
-              <string>GitChangeSetTest</string>
-              <string>GitPublisherTest</string>
-              <string>GitRepositoryBrowserTest</string>
-              <string>GitStatusMultipleSCMTest</string>
-              <string>GitStatusTest</string>
-              <string>JGitSCMTriggerLocalPollTest</string>
-              <string>JGitSCMTriggerLocalPollTest</string>
-              <string>JGitSCMTriggerRemotePollTest</string>
-              <string>MultipleSCMTest</string>
-              <string>PathRestrictionTest</string>
-              <string>PreBuildMergeOptionsTest</string>
-              <string>RevisionParameterActionRemoteUrlTest</string>
-              <string>RevisionParameterActionTest</string>
-              <string>SCMTriggerTest</string>
-              <string>SubmoduleCombinatorTest</string>
-              <string>UserExclusionTest</string>
-              <string>UserMergeOptionsTest</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
     <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
       <throttleEnabled>false</throttleEnabled>
       <throttleOption>project</throttleOption>
@@ -72,28 +31,36 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/git-plugin.git</url>
+        <name>origin</name>
+        <refspec>+refs/heads/jenkins-world-2017:refs/remotes/origin/jenkins-world-2017 </refspec>
+        <url>https://github.com/MarkEWaite/hello-world-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>master</name>
+        <name>jenkins-world-2017</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/jenkinsci/git-plugin</url>
+      <url>https://github.com/MarkEWaite/hello-world-plugin/</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
-      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
+      <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>true</noTags>
+        <reference>/var/lib/git/mwaite/jenkins/hello-world-plugin.git</reference>
+        <depth>0</depth>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
-  <quietPeriod>0</quietPeriod>
-  <assignedNode>!slow</assignedNode>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -107,33 +74,17 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>clean verify checkstyle:checkstyle</targets>
-      <mavenName>mvn</mavenName>
-      <properties>maven.test.failure.ignore=true
-surefire.rerunFailingTestsCount=4</properties>
+      <targets>-P enable-jacoco clean install jacoco:report spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
+      <mavenName>maven-latest</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-      <injectBuildVariables>true</injectBuildVariables>
+      <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
   <publishers>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@6.0.2">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.Java>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.Java>
-        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
@@ -142,13 +93,27 @@ surefire.rerunFailingTestsCount=4</properties>
           <skipSymbolicLinks>false</skipSymbolicLinks>
           <useRankAsPriority>true</useRankAsPriority>
         </io.jenkins.plugins.analysis.warnings.SpotBugs>
-        <io.jenkins.plugins.analysis.warnings.MavenConsole>
+        <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.MavenConsole>
+        </io.jenkins.plugins.analysis.warnings.Java>
+        <io.jenkins.plugins.analysis.warnings.JavaDoc>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
+        </io.jenkins.plugins.analysis.warnings.JavaDoc>
+        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
+        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>

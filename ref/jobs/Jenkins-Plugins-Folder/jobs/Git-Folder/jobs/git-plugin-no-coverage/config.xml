@@ -1,9 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Jenkins git client plugin from master branch</description>
+  <description>Jenkins git plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9"/>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
@@ -13,22 +14,48 @@
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
-        <numToKeep>25</numToKeep>
+        <numToKeep>7</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
-      <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
-      <displayName>Git client plugin</displayName>
-    </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.BooleanParameterDefinition>
-          <name>TEST_ALL_CREDENTIALS</name>
-          <description>Test all credentials or only a randomly selected subset</description>
-          <defaultValue>false</defaultValue>
-        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>test</name>
+          <description>Java test classes to execute</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>*</string>
+              <string>AbstractGitSCMSourceTest</string>
+              <string>AncestryBuildChooserTest</string>
+              <string>BuildDataTest</string>
+              <string>CandidateRevisionsTest</string>
+              <string>CliGitSCMTriggerLocalPollTest</string>
+              <string>CliGitSCMTriggerRemotePollTest</string>
+              <string>DefaultBuildChooserTest</string>
+              <string>GitChangeLogParserTest</string>
+              <string>GitChangeSetSimpleTest</string>
+              <string>GitChangeSetTest</string>
+              <string>GitPublisherTest</string>
+              <string>GitRepositoryBrowserTest</string>
+              <string>GitStatusMultipleSCMTest</string>
+              <string>GitStatusTest</string>
+              <string>JGitSCMTriggerLocalPollTest</string>
+              <string>JGitSCMTriggerLocalPollTest</string>
+              <string>JGitSCMTriggerRemotePollTest</string>
+              <string>MultipleSCMTest</string>
+              <string>PathRestrictionTest</string>
+              <string>PreBuildMergeOptionsTest</string>
+              <string>RevisionParameterActionRemoteUrlTest</string>
+              <string>RevisionParameterActionTest</string>
+              <string>SCMTriggerTest</string>
+              <string>SubmoduleCombinatorTest</string>
+              <string>UserExclusionTest</string>
+              <string>UserMergeOptionsTest</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
     <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
@@ -41,11 +68,11 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta10-SNAPSHOT">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta11-SNAPSHOT">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/MarkEWaite/git-client-plugin</url>
+        <url>https://github.com/MarkEWaite/git-plugin.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -56,24 +83,17 @@
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/git-client-plugin</url>
+      <url>https://github.com/jenkinsci/git-plugin</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
-      <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
-      <hudson.plugins.git.extensions.impl.CloneOption>
-        <shallow>false</shallow>
-        <noTags>false</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
-        <depth>0</depth>
-        <honorRefspec>false</honorRefspec>
-      </hudson.plugins.git.extensions.impl.CloneOption>
-      <hudson.plugins.git.extensions.impl.LocalBranch/>
+      <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <canRoam>true</canRoam>
+  <assignedNode>!slow</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -87,53 +107,18 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>-P enable-jacoco clean install jacoco:report spotbugs:spotbugs javadoc:javadoc checkstyle:checkstyle</targets>
-      <mavenName>maven-latest</mavenName>
-      <properties>maven.test.failure.ignore=true</properties>
+      <targets>clean verify checkstyle:checkstyle</targets>
+      <mavenName>mvn</mavenName>
+      <properties>maven.test.failure.ignore=true
+surefire.rerunFailingTestsCount=4</properties>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-      <injectBuildVariables>false</injectBuildVariables>
+      <injectBuildVariables>true</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.28">
-      <testResults>target/surefire-reports/TEST-*.xml</testResults>
-      <keepLongStdio>false</keepLongStdio>
-      <healthScaleFactor>1.0</healthScaleFactor>
-      <allowEmptyResults>false</allowEmptyResults>
-    </hudson.tasks.junit.JUnitResultArchiver>
-    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.4">
-      <execPattern>**/**.exec</execPattern>
-      <classPattern>**/classes</classPattern>
-      <sourcePattern>**/src/main/java</sourcePattern>
-      <sourceInclusionPattern>**/*.java</sourceInclusionPattern>
-      <sourceExclusionPattern></sourceExclusionPattern>
-      <inclusionPattern></inclusionPattern>
-      <exclusionPattern></exclusionPattern>
-      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
-      <minimumInstructionCoverage>0</minimumInstructionCoverage>
-      <minimumBranchCoverage>0</minimumBranchCoverage>
-      <minimumComplexityCoverage>0</minimumComplexityCoverage>
-      <minimumLineCoverage>0</minimumLineCoverage>
-      <minimumMethodCoverage>0</minimumMethodCoverage>
-      <minimumClassCoverage>0</minimumClassCoverage>
-      <maximumInstructionCoverage>0</maximumInstructionCoverage>
-      <maximumBranchCoverage>0</maximumBranchCoverage>
-      <maximumComplexityCoverage>0</maximumComplexityCoverage>
-      <maximumLineCoverage>0</maximumLineCoverage>
-      <maximumMethodCoverage>0</maximumMethodCoverage>
-      <maximumClassCoverage>0</maximumClassCoverage>
-      <changeBuildStatus>false</changeBuildStatus>
-      <deltaInstructionCoverage>0</deltaInstructionCoverage>
-      <deltaBranchCoverage>0</deltaBranchCoverage>
-      <deltaComplexityCoverage>0</deltaComplexityCoverage>
-      <deltaLineCoverage>0</deltaLineCoverage>
-      <deltaMethodCoverage>0</deltaMethodCoverage>
-      <deltaClassCoverage>0</deltaClassCoverage>
-      <buildOverBuild>false</buildOverBuild>
-    </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@5.1.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@6.0.2">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
@@ -142,13 +127,6 @@
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.Java>
-        <io.jenkins.plugins.analysis.warnings.JavaDoc>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.JavaDoc>
         <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
           <id></id>
           <name></name>
@@ -156,20 +134,30 @@
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
+        <io.jenkins.plugins.analysis.warnings.SpotBugs>
+          <id></id>
+          <name></name>
+          <pattern></pattern>
+          <reportEncoding></reportEncoding>
+          <skipSymbolicLinks>false</skipSymbolicLinks>
+          <useRankAsPriority>true</useRankAsPriority>
+        </io.jenkins.plugins.analysis.warnings.SpotBugs>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>
       <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <referenceJobName>-</referenceJobName>
+      <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@5.1.1">
+      <minimumSeverity plugin="analysis-model-api@6.0.2">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <isBlameDisabled>false</isBlameDisabled>
+      <isForensicsDisabled>false</isForensicsDisabled>
       <qualityGates/>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
