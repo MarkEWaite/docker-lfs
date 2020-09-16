@@ -15,7 +15,7 @@ jenkins:
   nodeProperties:
   - envVars:
       env:
-      - key: "PATH+M2_HOME_BIN"
+      - key: "PATH+MAVEN_BIN"
         value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.3/bin"
   numExecutors: 2
   primaryView:
@@ -23,9 +23,15 @@ jenkins:
       name: "all"
   projectNamingStrategy: "standard"
   quietPeriod: 5
+  remotingSecurity:
+    enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  systemMessage: "<a href='https://jenkins.io'>Jenkins instance</a> for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  systemMessage: "Jenkins for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
   views:
   - list:
       columns:

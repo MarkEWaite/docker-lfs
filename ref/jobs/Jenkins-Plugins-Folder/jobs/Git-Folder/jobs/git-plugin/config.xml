@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description></description>
+  <description>Jenkins git plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9"/>
@@ -14,12 +14,57 @@
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
-        <numToKeep>7</numToKeep>
+        <numToKeep>25</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
+      <projectUrl>https://github.com/MarkEWaite/git-plugin/</projectUrl>
+      <displayName>Git plugin</displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>test</name>
+          <description>Java test classes to execute</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>*</string>
+              <string>AbstractGitSCMSourceTest</string>
+              <string>AncestryBuildChooserTest</string>
+              <string>BuildDataTest</string>
+              <string>CandidateRevisionsTest</string>
+              <string>CliGitSCMTriggerLocalPollTest</string>
+              <string>CliGitSCMTriggerRemotePollTest</string>
+              <string>DefaultBuildChooserTest</string>
+              <string>GitChangeLogParserTest</string>
+              <string>GitChangeSetSimpleTest</string>
+              <string>GitChangeSetTest</string>
+              <string>GitPublisherTest</string>
+              <string>GitRepositoryBrowserTest</string>
+              <string>GitStatusMultipleSCMTest</string>
+              <string>GitStatusTest</string>
+              <string>JGitSCMTriggerLocalPollTest</string>
+              <string>JGitSCMTriggerLocalPollTest</string>
+              <string>JGitSCMTriggerRemotePollTest</string>
+              <string>MultipleSCMTest</string>
+              <string>PathRestrictionTest</string>
+              <string>PreBuildMergeOptionsTest</string>
+              <string>RevisionParameterActionRemoteUrlTest</string>
+              <string>RevisionParameterActionTest</string>
+              <string>SCMTriggerTest</string>
+              <string>SubmoduleCombinatorTest</string>
+              <string>UserExclusionTest</string>
+              <string>UserMergeOptionsTest</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
     <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
       <throttleEnabled>false</throttleEnabled>
       <throttleOption>project</throttleOption>
@@ -31,20 +76,18 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <name>origin</name>
-        <refspec>+refs/heads/jenkins-world-2017:refs/remotes/origin/jenkins-world-2017 </refspec>
-        <url>https://github.com/MarkEWaite/hello-world-plugin</url>
+        <url>https://github.com/MarkEWaite/git-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>jenkins-world-2017</name>
+        <name>master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/hello-world-plugin/</url>
+      <url>https://github.com/MarkEWaite/git-plugin</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
@@ -52,14 +95,15 @@
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
-        <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/hello-world-plugin.git</reference>
+        <noTags>false</noTags>
+        <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
         <depth>0</depth>
-        <honorRefspec>true</honorRefspec>
+        <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.LocalBranch/>
     </extensions>
   </scm>
+  <quietPeriod>0</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -83,6 +127,42 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.28">
+      <testResults>target/surefire-reports/TEST-*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <allowEmptyResults>false</allowEmptyResults>
+    </hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.4">
+      <execPattern>**/**.exec</execPattern>
+      <classPattern>**/classes</classPattern>
+      <sourcePattern>**/src/main/java</sourcePattern>
+      <sourceInclusionPattern>**/*.java</sourceInclusionPattern>
+      <sourceExclusionPattern></sourceExclusionPattern>
+      <inclusionPattern></inclusionPattern>
+      <exclusionPattern></exclusionPattern>
+      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
+      <minimumInstructionCoverage>0</minimumInstructionCoverage>
+      <minimumBranchCoverage>0</minimumBranchCoverage>
+      <minimumComplexityCoverage>0</minimumComplexityCoverage>
+      <minimumLineCoverage>0</minimumLineCoverage>
+      <minimumMethodCoverage>0</minimumMethodCoverage>
+      <minimumClassCoverage>0</minimumClassCoverage>
+      <maximumInstructionCoverage>0</maximumInstructionCoverage>
+      <maximumBranchCoverage>0</maximumBranchCoverage>
+      <maximumComplexityCoverage>0</maximumComplexityCoverage>
+      <maximumLineCoverage>0</maximumLineCoverage>
+      <maximumMethodCoverage>0</maximumMethodCoverage>
+      <maximumClassCoverage>0</maximumClassCoverage>
+      <changeBuildStatus>false</changeBuildStatus>
+      <deltaInstructionCoverage>0</deltaInstructionCoverage>
+      <deltaBranchCoverage>0</deltaBranchCoverage>
+      <deltaComplexityCoverage>0</deltaComplexityCoverage>
+      <deltaLineCoverage>0</deltaLineCoverage>
+      <deltaMethodCoverage>0</deltaMethodCoverage>
+      <deltaClassCoverage>0</deltaClassCoverage>
+      <buildOverBuild>false</buildOverBuild>
+    </hudson.plugins.jacoco.JacocoPublisher>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@6.0.2">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
@@ -114,13 +194,6 @@
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-        <io.jenkins.plugins.analysis.warnings.MavenConsole>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.MavenConsole>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>
