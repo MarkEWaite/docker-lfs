@@ -11,23 +11,9 @@ SUT_IMAGE=$(sut_image)
   docker_build -t $SUT_IMAGE .
 }
 
-@test "plugins are installed with plugins.sh" {
-  run docker_build_child $SUT_IMAGE-plugins $BATS_TEST_DIRNAME/plugins
-  assert_success
-  skip "This test demands pinned, I dislike pinned"
-  # replace DOS line endings \r\n
-  run bash -c "docker run --rm $SUT_IMAGE-plugins ls --color=never -1 /var/jenkins_home/plugins | tr -d '\r'"
-  assert_success
-  assert_line 'junit.jpi'
-  assert_line 'junit.jpi.pinned'
-  assert_line 'ant.jpi'
-  assert_line 'ant.jpi.pinned'
-}
-
 @test "plugins are installed with install-plugins.sh" {
   run docker_build_child $SUT_IMAGE-install-plugins $BATS_TEST_DIRNAME/install-plugins
   assert_success
-  skip "This test incorrectly forbids my plugin additions"
   refute_line --partial 'Skipping already installed dependency'
   # replace DOS line endings \r\n
   run bash -c "docker run --rm $SUT_IMAGE-install-plugins ls --color=never -1 /var/jenkins_home/plugins | tr -d '\r'"
@@ -90,7 +76,6 @@ SUT_IMAGE=$(sut_image)
   assert_success
   run docker_build_child $SUT_IMAGE-install-plugins-pluginsfile $BATS_TEST_DIRNAME/install-plugins/pluginsfile
   assert_success
-  skip "This test incorrectly forbids my plugin additions"
   refute_line --partial 'Skipping already installed dependency'
   # replace DOS line endings \r\n
   run bash -c "docker run --rm $SUT_IMAGE-install-plugins ls --color=never -1 /var/jenkins_home/plugins | tr -d '\r'"
