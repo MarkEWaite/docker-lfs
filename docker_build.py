@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 
 import fnmatch
 import getpass
@@ -165,7 +165,7 @@ def merge_predecessor_branch(current_branch, all_branches):
 #-----------------------------------------------------------------------
 
 def push_current_branch():
-    status_output = subprocess.check_output([ "git", "status"]).strip()
+    status_output = subprocess.check_output([ "git", "status"]).strip().decode("utf-8")
     if "Your branch is ahead of " in status_output:
         command = [ "git", "push" ]
         print("Pushing current branch")
