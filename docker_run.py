@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 
 # If the ~/.m2 directory is not owned current user, the container
 # assumption that it can be written won't be met.  In that case, the
