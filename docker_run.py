@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 
 # If the ~/.m2 directory is not owned current user, the container
 # assumption that it can be written won't be met.  In that case, the
@@ -15,6 +15,8 @@ import subprocess
 import shutil
 import string
 import sys
+
+import psutil # Install from pip
 
 import docker_build
 
@@ -95,6 +97,15 @@ def get_jagent_java_home():
 
 #-----------------------------------------------------------------------
 
+def memory_scale(upper_bound):
+    mem = psutil.virtual_memory()
+    eight_GB = 8 * 1024 * 1024 * 1024
+    if mem.total < eight_GB:
+        return str(int(upper_bound / 2))
+    return str(upper_bound)
+
+#-----------------------------------------------------------------------
+
 def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
@@ -131,8 +142,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+DisableExplicitGC",
                   "-XX:+UnlockDiagnosticVMOptions",
                   "-XX:+UnlockExperimentalVMOptions",
-                  "-Xms3g",
-                  "-Xmx7g",
+                  "-Xms" + memory_scale(3) + "g",
+                  "-Xmx" + memory_scale(7) + "g",
                   "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
