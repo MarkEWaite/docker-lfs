@@ -2,14 +2,6 @@ FROM jenkins/jenkins:2.249.1-lts-alpine
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
-USER root
-
-RUN apk add --no-cache gnupg
-
-ARG user=jenkins
-
-USER ${user}
-
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
