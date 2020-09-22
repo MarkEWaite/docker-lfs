@@ -1,5 +1,4 @@
 FROM openjdk:8-jdk-stretch
-LABEL maintainer="mark.earl.waite@gmail.com"
 
 # Install git lfs on Debian stretch per https://github.com/git-lfs/git-lfs/wiki/Installation#debian-and-ubuntu
 # Avoid JENKINS-59569 - git LFS 2.7.1 fails clone with reference repository
@@ -47,10 +46,10 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/${TINI_VERSION}
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.249.1}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.176.2}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=a38ca485b3e2bae6ec69a34b6b34b674f4dd4baf04f20f8dce2d838d08ed5bd6
+ARG JENKINS_SHA=33a6c3161cf8de9c8729fd83914d781319fd1569acf487c7b1121681dba190a5
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
