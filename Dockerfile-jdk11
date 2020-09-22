@@ -5,11 +5,7 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 USER root
 
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
-  build-essential \
-  graphviz \
   locales \
-  lsb-release \
-  make \
   procps \
   wget \
   && rm -rf /var/lib/apt/lists/*
