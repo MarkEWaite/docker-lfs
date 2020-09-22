@@ -1,14 +1,13 @@
-FROM jenkins/jenkins:2.249.1-slim
+FROM jenkins/jenkins:2.249.1-lts-slim
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
 RUN apt-get clean && apt-get update && apt-get install -y \
-  git-lfs \
-  gnupg \
   locales \
   procps \
+  wget \
   && rm -rf /var/lib/apt/lists/*
 
 # Enable en_US.UTF-8 locale and generate
@@ -23,3 +22,5 @@ USER jenkins
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 ADD ref /usr/share/jenkins/ref/
+
+ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
