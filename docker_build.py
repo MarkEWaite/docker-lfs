@@ -93,7 +93,7 @@ fqdn = get_fqdn()
 #-----------------------------------------------------------------------
 
 def replace_text_recursively(find, replace, include_pattern):
-    print("Replacing '" + find + "' with '" + replace + "', in files matching '" + include_pattern + "'")
+    print(("Replacing '" + find + "' with '" + replace + "', in files matching '" + include_pattern + "'"))
     # Thanks to https://stackoverflow.com/questions/4205854/python-way-to-recursively-find-and-replace-string-in-text-files
     for path, dirs, files in os.walk(os.path.abspath("ref")):
         for filename in fnmatch.filter(files, include_pattern):
@@ -126,7 +126,7 @@ def undo_replace_constants_in_ref():
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
     tag = compute_tag(branch_name)
-    print("Building " + tag)
+    print(("Building " + tag))
     command = [ "docker", "build",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
@@ -161,7 +161,7 @@ def get_predecessor_branch(current_branch, all_branches):
 def merge_predecessor_branch(current_branch, all_branches):
     predecessor_branch = get_predecessor_branch(current_branch, all_branches)
     command = [ "git", "merge", "--no-edit", predecessor_branch ]
-    print("Merging from " + predecessor_branch + " to " + current_branch)
+    print(("Merging from " + predecessor_branch + " to " + current_branch))
     subprocess.check_call(command)
 
 #-----------------------------------------------------------------------
@@ -209,7 +209,7 @@ Build docker images.   Use -h for help."""
         branches = [ original_branch, ]
 
     for branch in branches:
-        print("Building " + branch)
+        print(("Building " + branch))
         checkout_branch(branch)
         merge_predecessor_branch(branch, all_branches)
         build_one_image(branch, options.clean)
