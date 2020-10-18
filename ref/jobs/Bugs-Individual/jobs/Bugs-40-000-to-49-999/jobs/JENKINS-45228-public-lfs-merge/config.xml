@@ -4,7 +4,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11">
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.1">
       <siteName>https://issues.jenkins-ci.org/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -21,7 +21,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.3">
       <maxConcurrentPerNode>0</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -31,7 +31,7 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.0-beta">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.4.4">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -83,12 +83,15 @@
     </hudson.plugins.xshell.XShellBuilder>
   </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
-      <regexp>HEAD -&gt; lts-alpine-with-plugins[)] Merge commit</regexp>
-      <succeedIfFound>true</succeedIfFound>
-      <unstableIfFound>false</unstableIfFound>
-      <notBuiltIfFound>false</notBuiltIfFound>
-      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>HEAD -&gt; lts-alpine-with-plugins.*[)] Merge branch</regexp>
+          <buildResult>FAILURE</buildResult>
+          <changeCondition>MATCH_NOT_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
