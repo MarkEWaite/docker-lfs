@@ -289,8 +289,8 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-ant-1.10.8"
-              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.8-bin.zip"
+              subdir: "apache-ant-1.10.9"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.9-bin.zip"
   git:
     installations:
     - home: "git"
