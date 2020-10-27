@@ -435,16 +435,16 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk8u262-b10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz"
+              subdir: "jdk8u272-b10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u272b10.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk8u262-b10/"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u262b10.zip"
+              subdir: "jdk8u272-b10"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK8U-jdk_x64_windows_hotspot_8u272b10.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u262-b10"
+              toolHome: "/home/jagent/tools/jdk8u272-b10"
           - command:
               command: "true"
               label: "Alpine"
@@ -454,29 +454,29 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u262-b10"
+              id: "jdk8u272-b10"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.8+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.8_10.zip"
+              subdir: "jdk-11.0.9+11"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.9_11.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.8+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz"
+              subdir: "jdk-11.0.9+11"
+              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.9_11.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.8+10"
+              toolHome: "/home/jagent/tools/jdk-11.0.9+11"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.8+10"
+              id: "jdk-11.0.9+11"
   maven:
     installations:
     - name: "maven-latest"

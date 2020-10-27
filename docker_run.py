@@ -91,9 +91,9 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk11" in docker_build.get_current_branch() or "lts-alpine-with-plugins-add-credentials-and-nodes-rc" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.8+10"
+        return "/home/jagent/tools/jdk-11.0.9+11"
     else:
-        return "/home/jagent/tools/jdk8u265-b01"
+        return "/home/jagent/tools/jdk8u272-b10"
 
 #-----------------------------------------------------------------------
 
