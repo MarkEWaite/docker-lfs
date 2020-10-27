@@ -302,8 +302,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "PortableGit-2.29.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.29.0.zip"
+              subdir: "PortableGit-2.29.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.29.1.zip"
     - home: "git"
       name: "mingit-busybox-windows"
       properties:
@@ -412,6 +412,19 @@ tool:
               label: "windows"
               subdir: "PortableGit-2.29.0\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.29.0.zip"
+    - home: "git"
+      name: "git-2.29.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.29 && linux"
+              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows"
+              subdir: "PortableGit-2.29.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.29.1.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
