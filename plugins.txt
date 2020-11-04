@@ -19,7 +19,6 @@ blueocean-core-js:latest
 blueocean-dashboard:latest
 blueocean-display-url:latest
 blueocean-events:latest
-blueocean-executor-info:latest
 blueocean-github-pipeline:latest
 blueocean-git-pipeline:latest
 blueocean-i18n:latest
