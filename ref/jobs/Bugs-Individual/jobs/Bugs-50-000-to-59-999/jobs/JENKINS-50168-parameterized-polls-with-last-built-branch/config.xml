@@ -7,7 +7,7 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-50168&quot;&gt;JENKINS-50168&lt;/a&gt; - last built branch is used for polling instead of the default branch&#xd;
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-50168&quot;&gt;JENKINS-50168&lt;/a&gt; - last built branch is used for polling instead of the default branch&#xd;
 &#xd;
 Launched periodically by an &lt;a href=&quot;../JENKINS-50168-upstream&quot;&gt;upstream job&lt;/a&gt; with a non-default parameter BRANCH=master.&#xd;
 &#xd;

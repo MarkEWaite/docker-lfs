@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9">
-      <siteName>https://issues.jenkins-ci.org/</siteName>
+      <siteName>https://issues.jenkins.io/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>

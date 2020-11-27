@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-29796&quot;&gt;JENKINS-29796&lt;/a&gt; multiple refspec ignored on poll</description>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-29796&quot;&gt;JENKINS-29796&lt;/a&gt; multiple refspec ignored on poll</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
