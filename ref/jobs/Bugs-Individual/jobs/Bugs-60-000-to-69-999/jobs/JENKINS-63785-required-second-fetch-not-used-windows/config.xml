@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-63785&quot;&gt;JENKINS-63785&lt;/a&gt;&#xd;
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-63785&quot;&gt;JENKINS-63785&lt;/a&gt;&#xd;
 git plugin relies on shell expansion of parameters on first fetch,&#xd;
 skips second fetch unless second fetch is preserved&#xd;
 &#xd;
@@ -9,7 +9,7 @@ skips second fetch unless second fetch is preserved&#xd;
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.1">
-      <siteName>https://issues.jenkins-ci.org/</siteName>
+      <siteName>https://issues.jenkins.io/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>

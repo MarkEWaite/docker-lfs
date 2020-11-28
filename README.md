@@ -243,7 +243,7 @@ be reverted on next start.
 In case you *do* want to override, append '.override' to the name of the reference file. E.g. a file named
 `/usr/share/jenkins/ref/config.xml.override` will overwrite an existing `config.xml` file in JENKINS_HOME.
 
-Also see [JENKINS-24986](https://issues.jenkins-ci.org/browse/JENKINS-24986)
+Also see [JENKINS-24986](https://issues.jenkins.io/browse/JENKINS-24986)
 
 
 Here is an example to get the list of plugins from an existing server:

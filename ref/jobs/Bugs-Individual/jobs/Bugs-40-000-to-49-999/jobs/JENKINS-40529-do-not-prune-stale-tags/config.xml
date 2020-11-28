@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-40529&quot;&gt;JENKINS-40529&lt;/a&gt; adds stale tag pruning extension&#xd;
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-40529&quot;&gt;JENKINS-40529&lt;/a&gt; adds stale tag pruning extension&#xd;
 &#xd;
 &lt;p&gt;This job relies on being run multiple times in the &lt;strong&gt;same workspace&lt;/strong&gt;.&#xd;
 First run in a new workspace will not report any count of stale tags because first use of a workspace cannot contain stale tags.&#xd;
@@ -10,7 +10,7 @@ The next &lt;strong&gt;change&lt;/strong&gt; (note, change from the remote repos
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.15">
-      <siteName>https://issues.jenkins-ci.org/</siteName>
+      <siteName>https://issues.jenkins.io/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
