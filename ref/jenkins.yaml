@@ -271,7 +271,7 @@ unclassified:
               - "gitHubTagDiscovery"
   jiraGlobalConfiguration:
     sites:
-    - url: "https://issues.jenkins-ci.org/"
+    - url: "https://issues.jenkins.io/"
       userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"

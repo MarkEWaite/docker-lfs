@@ -3,11 +3,11 @@
   <actions>
     <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction_-DoNotShowPersistedBlueOceanUrlActions plugin="blueocean-rest-impl@1.19.0"/>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-32529&quot;&gt;JENKINS-32529&lt;/a&gt; reference repo not honored by pipeline script</description>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-32529&quot;&gt;JENKINS-32529&lt;/a&gt; reference repo not honored by pipeline script</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9">
-      <siteName>https://issues.jenkins-ci.org/</siteName>
+      <siteName>https://issues.jenkins.io/</siteName>
     </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-48064&quot;&gt;JENKINS-48064&lt;/a&gt; - URL field in Fisheye browser config is not checked&#xd;
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-48064&quot;&gt;JENKINS-48064&lt;/a&gt; - URL field in Fisheye browser config is not checked&#xd;
 &#xd;
 A check method is implemented, but not called.&#xd;
 &#xd;
