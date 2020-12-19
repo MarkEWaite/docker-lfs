@@ -296,7 +296,7 @@
             <hudson.model.labels.LabelAtom>git-lfs</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[29]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelExpression$And">git-2.11+&amp;&amp;!aarch64-Amazon-2</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
