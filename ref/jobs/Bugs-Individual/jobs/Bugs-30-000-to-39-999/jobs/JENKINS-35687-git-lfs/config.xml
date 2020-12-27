@@ -1,33 +1,19 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@1.9">
+<?xml version='1.1' encoding='UTF-8'?>
+<matrix-project plugin="matrix-project@1.18">
   <actions/>
   <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-35687&quot;&gt;JENKINS-35687&lt;/a&gt; add large file support</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <matrixOptions>
-        <throttleMatrixBuilds>true</throttleMatrixBuilds>
-        <throttleMatrixConfigurations>false</throttleMatrixConfigurations>
-      </matrixOptions>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -74,19 +60,39 @@
   <axes>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>operating-system</name>
-      <label>( master || windows || linux ) &amp;&amp; git-1.8+ &amp;&amp; git-lfs </label>
+      <label>git-lfs </label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
   <builders/>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.10">
-      <fileSet>uuid.txt</fileSet>
-      <regexp>5e7733d8acc94636850cb466aec524e4</regexp>
-      <succeedIfFound>true</succeedIfFound>
-      <unstableIfFound>false</unstableIfFound>
-      <alsoCheckConsoleOutput>false</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>5e7733d8acc94636850cb466aec524e4</regexp>
+          <fileSet>uuid.txt</fileSet>
+          <buildResult>FAILURE</buildResult>
+          <changeCondition>MATCH_NOT_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>false</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
     </hudson.plugins.textfinder.TextFinderPublisher>
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.5">
+      <script plugin="script-security@1.75">
+        <script>import jenkins.model.Jenkins
+Jenkins jenkins = Jenkins.getInstance()
+if (jenkins.computers.size() &gt; 1) {
+  /* If multiple agents are available, enable executors on master agent */
+  /* Prefer that jobs not run on master, but some test jobs require access to the master file system */
+  jenkins.setNumExecutors(0)
+  jenkins.save()
+}
+</script>
+        <sandbox>false</sandbox>
+      </script>
+      <behavior>0</behavior>
+      <runForMatrixParent>false</runForMatrixParent>
+    </org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder>
   </publishers>
   <buildWrappers/>
   <executionStrategy class="hudson.matrix.DefaultMatrixExecutionStrategyImpl">
