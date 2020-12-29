@@ -6,12 +6,6 @@
 This job creates a tag in the userContent repository and invokes notifyCommit on that repository</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
@@ -20,15 +14,6 @@ This job creates a tag in the userContent repository and invokes notifyCommit on
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <quietPeriod>0</quietPeriod>
@@ -88,6 +73,20 @@ echo Created tag $tag_name and notified Jenkins to poll</command>
       <unstableIfFound>true</unstableIfFound>
       <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
     </hudson.plugins.textfinder.TextFinderPublisher>
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.5">
+      <script plugin="script-security@1.75">
+        <script>import jenkins.model.Jenkins
+Jenkins jenkins = Jenkins.getInstance()
+if (jenkins.computers.size() &gt; 1) {
+  /* If multiple agents are available, disable executors on master agent */
+  /* Prefer that jobs not run on master, but some test jobs require access to the master file system */
+  jenkins.setNumExecutors(0)
+  jenkins.save()
+}
+</script>
+        <sandbox>false</sandbox>
+      </script>
+    </org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder>
   </publishers>
   <buildWrappers/>
 </project>

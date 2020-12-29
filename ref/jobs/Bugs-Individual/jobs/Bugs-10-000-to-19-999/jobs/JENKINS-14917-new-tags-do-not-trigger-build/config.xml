@@ -70,6 +70,20 @@
       <unstableIfFound>false</unstableIfFound>
       <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
     </hudson.plugins.textfinder.TextFinderPublisher>
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.5">
+      <script plugin="script-security@1.75">
+        <script>import jenkins.model.Jenkins
+Jenkins jenkins = Jenkins.getInstance()
+if (jenkins.computers.size() &gt; 1) {
+  /* If multiple agents are available, disable executors on master agent */
+  /* Prefer that jobs not run on master, but some test jobs require access to the master file system */
+  jenkins.setNumExecutors(0)
+  jenkins.save()
+}
+</script>
+        <sandbox>false</sandbox>
+      </script>
+    </org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder>
   </publishers>
   <buildWrappers/>
 </project>
