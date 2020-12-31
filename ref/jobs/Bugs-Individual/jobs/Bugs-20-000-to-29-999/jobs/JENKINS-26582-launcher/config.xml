@@ -1,7 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/JENKINS-26582-launcher/&quot;&gt;JENKINS-26582&lt;/a&gt;</description>
+  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/Bugs-20-000-to-29-999/job/JENKINS-26582-ISE-on-git-notify&quot;&gt;JENKINS-26582-ISE-on-git-notify&lt;/a&gt;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -13,10 +13,11 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.7.0">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
+        <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
         <url>https://github.com/MarkEWaite/jenkins-bugs</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
@@ -33,7 +34,9 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
-      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
+      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
+        <deleteUntrackedNestedRepositories>false</deleteUntrackedNestedRepositories>
+      </hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
@@ -44,12 +47,12 @@
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
-  <assignedNode>master</assignedNode>
+  <assignedNode>(!windows&amp;&amp;!cloud) || master</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>(System)</jdk>
+  <jdk>jdk11</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -59,7 +62,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>curl &quot;http://localhost:8080/git/notifyCommit?url=https%3A%2F%2Fgithub.com%2Fallegro%2Faxion-release-plugin.git&amp;branches=master&amp;sha1=a5de4d725814ff907a8cf1f5666b9f01e8361655&quot;</command>
+      <command>curl &quot;http://JENKINS_HOSTNAME:8080/git/notifyCommit?url=https%3A%2F%2Fgithub.com%2Fallegro%2Faxion-release-plugin.git&amp;branches=master&amp;sha1=a5de4d725814ff907a8cf1f5666b9f01e8361655&quot;</command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
