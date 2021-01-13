@@ -5,7 +5,7 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 USER root
 
 # hadolint ignore=DL3008
-RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y --no-install-recommends \
   locales \
   procps \
   wget \
