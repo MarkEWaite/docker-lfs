@@ -1,6 +1,6 @@
 ROOT_DIR="$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/"
 
-all: shellcheck build test
+all: hadolint shellcheck build test
 
 DOCKERFILES=$(shell find . -not -path '**/windows/*' -not -path './tests/*' -type f -name Dockerfile)
 
@@ -8,6 +8,13 @@ shellcheck:
 	$(ROOT_DIR)/tools/shellcheck -e SC1091 \
 	                             jenkins-support \
 	                             *.sh
+
+hadolint:
+	@for d in Dockerfile* ; do \
+		echo "=== Checking $${d}"; \
+		$(ROOT_DIR)/tools/hadolint "$${d}"; \
+	done
+
 build:
 	@for d in ${DOCKERFILES} ; do \
 		docker build --file "$${d}" . ; \
@@ -162,4 +169,4 @@ clean:
 	rm -rf tests/test_helper/bats-*; \
 	rm -rf bats
 
-.PHONY: shellcheck
+.PHONY: shellcheck hadolint
