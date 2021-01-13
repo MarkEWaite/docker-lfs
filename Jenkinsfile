@@ -85,6 +85,11 @@ stage('Build') {
                     sh 'make shellcheck'
                 }
 
+                stage('hadolint') {
+                    // run hadolint to check Dockerfile syntax
+                    sh 'make hadolint'
+                }
+
                 /* Outside of the trusted.ci environment, we're building and testing
                 * the Dockerfile in this repository, but not publishing to docker hub
                 */
