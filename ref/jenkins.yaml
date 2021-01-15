@@ -166,8 +166,14 @@ unclassified:
       ignoreCertificateErrors: false
       readTimeout: 10
   gitSCM:
+    addGitTagAction: true
+    allowSecondFetch: false
     createAccountBasedOnEmail: false
-    showEntireCommitSummaryInChanges: false
+    disableGitToolChooser: false
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    globalConfigName: "Jenkins Docker User"
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
   globalConfigFiles:
     configs:
