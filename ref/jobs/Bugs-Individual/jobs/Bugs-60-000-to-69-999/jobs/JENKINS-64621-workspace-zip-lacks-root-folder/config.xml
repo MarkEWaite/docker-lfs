@@ -1,0 +1,102 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64621&quot;&gt;JENKINS-64621&lt;/a&gt; says that artifacts included the parent directory with 2.263.1 and do not include it with 2.263.2</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty plugin="naginator@1.18.1">
+      <optOut>false</optOut>
+    </com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.2">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/jenkinsci/platformlabeler-plugin</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <gitTool>Default</gitTool>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.WipeWorkspace/>
+    </extensions>
+  </scm>
+  <quietPeriod>0</quietPeriod>
+  <assignedNode>!windows &amp;&amp; !cloud</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec></spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/usr/bin/env bash
+
+# Compute the download URL for the artifacts
+url=$(echo $BUILD_URL | sed &quot;s,$BUILD_ID/$,lastSuccessfulBuild/artifact/*zip*/archive.zip,g&quot;)
+
+# Need a successful build to download, make the first build pass every time
+if [ $BUILD_ID == 1 ]; then
+
+    echo &quot;2094  2021-01-14 17:15   src/main/java/org/jvnet/hudson/plugins/platformlabeler/LabelConfig.java&quot;
+
+else
+
+    # Download zip file of artifacts, list contents to stdout so that text finder can check output
+    rm -rf *.zip
+    wget $url
+    unzip -l archive.zip
+    rm archive.zip
+
+fi</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>src/main/**/*.java</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+      <followSymlinks>false</followSymlinks>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>[ ][ ][ ]archive/src/main/java/org/jvnet/hudson/plugins</regexp>
+          <buildResult>UNSTABLE</buildResult>
+          <changeCondition>MATCH_NOT_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>[ ][ ][ ]src/main/java/org/jvnet/hudson/plugins</regexp>
+          <buildResult>UNSTABLE</buildResult>
+          <changeCondition>MATCH_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
+    </hudson.plugins.textfinder.TextFinderPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
