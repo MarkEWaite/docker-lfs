@@ -57,7 +57,7 @@ url=$(echo $BUILD_URL | sed &quot;s,$BUILD_ID/$,lastSuccessfulBuild/artifact/*zi
 # Need a successful build to download, make the first build pass every time
 if [ $BUILD_ID == 1 ]; then
 
-    echo &quot;2094  2021-01-14 17:15   src/main/java/org/jvnet/hudson/plugins/platformlabeler/LabelConfig.java&quot;
+    echo &quot;1234  2020-01-23 23:45   archive/src/main/java/org/jvnet/hudson/plugins/platformlabeler/LabelConfig.java&quot;
 
 else
 
