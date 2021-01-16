@@ -2,9 +2,8 @@
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.22">
   <actions/>
   <description>&lt;a href=&quot;https://github.com/MarkEWaite/jenkins-bugs&quot;&gt;Multi-branch pipeline to check public Jenkins bugs&lt;/a&gt;</description>
-  <displayName>jenkins-bugs</displayName>
-  <properties>
-  </properties>
+  <displayName>jenkins-bugs (Gitea)</displayName>
+  <properties/>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.6.3">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </folderViews>
@@ -21,38 +20,34 @@
     <daysToKeep>-1</daysToKeep>
     <numToKeep>-1</numToKeep>
   </orphanedItemStrategy>
-  <triggers/>
+  <triggers>
+    <com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger plugin="cloudbees-folder@6.15">
+      <spec>H/30 * * * *</spec>
+      <interval>28800000</interval>
+    </com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger>
+  </triggers>
   <disabled>false</disabled>
   <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.6.3">
     <data>
       <jenkins.branch.BranchSource>
-        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@4.5.2">
-          <id>32caacc4-c8b6-4d53-bcb9-bb26b45c7e23</id>
-          <remote>https://github.com/MarkEWaite/jenkins-bugs.git</remote>
-          <credentialsId></credentialsId>
-          <remoteName>origin</remoteName>
-          <rawRefSpecs>+refs/heads/*:refs/remotes/origin/*</rawRefSpecs>
-          <includes>*</includes>
-          <excludes></excludes>
-          <ignoreOnPushNotifications>false</ignoreOnPushNotifications>
-          <browser class="hudson.plugins.git.browser.GithubWeb">
-            <url>https://github.com/MarkEWaite/jenkins-bugs</url>
-          </browser>
-          <gitTool>Default</gitTool>
-          <extensions>
-            <hudson.plugins.git.extensions.impl.LocalBranch>
-              <localBranch>**</localBranch>
-            </hudson.plugins.git.extensions.impl.LocalBranch>
-            <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
-            <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
-            <hudson.plugins.git.extensions.impl.CloneOption>
-              <shallow>false</shallow>
-              <noTags>false</noTags>
-              <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
-              <depth>0</depth>
-              <honorRefspec>false</honorRefspec>
-            </hudson.plugins.git.extensions.impl.CloneOption>
-          </extensions>
+        <source class="org.jenkinsci.plugin.gitea.GiteaSCMSource" plugin="gitea@1.2.1">
+          <id>bc8aeb5c-ef0d-4d69-82bc-a95c433f839f</id>
+          <serverUrl>https://home.markwaite.net/gitea</serverUrl>
+          <repoOwner>mwaite</repoOwner>
+          <repository>jenkins-bugs</repository>
+          <credentialsId>gitea-token-mwaite-home-markwaite-net</credentialsId>
+          <traits>
+            <org.jenkinsci.plugin.gitea.BranchDiscoveryTrait>
+              <strategyId>1</strategyId>
+            </org.jenkinsci.plugin.gitea.BranchDiscoveryTrait>
+            <org.jenkinsci.plugin.gitea.OriginPullRequestDiscoveryTrait>
+              <strategyId>1</strategyId>
+            </org.jenkinsci.plugin.gitea.OriginPullRequestDiscoveryTrait>
+            <org.jenkinsci.plugin.gitea.ForkPullRequestDiscoveryTrait>
+              <strategyId>1</strategyId>
+              <trust class="org.jenkinsci.plugin.gitea.ForkPullRequestDiscoveryTrait$TrustContributors"/>
+            </org.jenkinsci.plugin.gitea.ForkPullRequestDiscoveryTrait>
+          </traits>
         </source>
         <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
           <properties class="empty-list"/>
