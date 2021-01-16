@@ -175,6 +175,11 @@ unclassified:
     hideCredentials: false
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
+  giteaServers:
+    servers:
+    - displayName: "home.markwaite.net"
+      manageHooks: false
+      serverUrl: "https://home.markwaite.net/gitea"
   globalConfigFiles:
     configs:
     - globalMavenSettings:
