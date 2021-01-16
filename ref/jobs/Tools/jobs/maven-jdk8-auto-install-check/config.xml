@@ -102,7 +102,7 @@
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>(label==&quot;master&quot;).implies(jdk==&quot;jdk8&quot;) &amp;&amp; (label==&quot;git.markwaite.net&quot;).implies(jdk==&quot;jdk8&quot;) </combinationFilter>
+  <combinationFilter>(label==&quot;master&quot;).implies(jdk==&quot;jdk8&quot;)</combinationFilter>
   <builders>
     <hudson.tasks.Maven>
       <targets>clean verify</targets>
