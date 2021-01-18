@@ -14,7 +14,8 @@
     </jenkins.model.BuildDiscarderProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
-  <canRoam>true</canRoam>
+  <assignedNode>!cloud</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -36,6 +37,9 @@ if (jenkins.computers.size() &gt; 1) {
   /* If multiple agents are available, enable executors on master agent */
   /* Prefer that jobs not run on master, but some test jobs require access to the master file system */
   jenkins.setNumExecutors(3)
+  jenkins.save()
+  sleep(5000) // Wait 5 seconds
+  jenkins.setNumExecutors(0) // Reset to no executors
   jenkins.save()
 }
 </script>
