@@ -28,5 +28,26 @@ H * * * *</spec>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders/>
+  <publishers>
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.5">
+      <script plugin="script-security@1.75">
+        <script>import jenkins.model.Jenkins
+Jenkins jenkins = Jenkins.getInstance()
+if (jenkins.computers.size() &gt; 1) {
+  /* If multiple agents are available, enable executors on controller */
+  /* Prefer that jobs not run on controller, but some test jobs require access to the controller file system */
+  jenkins.setNumExecutors(3)
+  jenkins.save()
+  sleep(15000) // Wait 15 seconds
+  jenkins.setNumExecutors(0) // Reset to no executors
+  jenkins.save()
+}
+</script>
+        <sandbox>false</sandbox>
+      </script>
+      <behavior>1</behavior>
+      <runForMatrixParent>false</runForMatrixParent>
+    </org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder>
+  </publishers>
   <buildWrappers/>
 </project>
