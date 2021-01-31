@@ -94,6 +94,7 @@ jaxb:latest
 jdk-tool:latest
 jenkins-design-language:latest
 jira:latest
+jjwt-api:latest
 jmh-report:latest
 job-dsl:latest
 jquery3-api:latest
@@ -179,5 +180,6 @@ workflow-scm-step:latest
 workflow-step-api:latest
 workflow-support:latest
 ws-cleanup:latest
+xml-job-to-job-dsl:latest
 xshell:latest
 xunit:latest
