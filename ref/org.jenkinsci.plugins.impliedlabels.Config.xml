@@ -506,6 +506,14 @@
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$And">openSUSE&amp;&amp;(15.0||15.1||15.2||15.3||15.4||15.5||15.6)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>controller</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelAtom">master</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
   </implications>
