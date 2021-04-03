@@ -123,6 +123,7 @@ monitoring:latest
 naginator:latest
 nodelabelparameter:latest
 okhttp-api:latest
+oracle-cloud-infrastructure-compute:latest
 pam-auth:latest
 parallel-test-executor:latest
 parameterized-trigger:latest
