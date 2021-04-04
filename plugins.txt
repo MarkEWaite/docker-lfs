@@ -1,3 +1,4 @@
+
 ace-editor:latest
 adoptopenjdk:latest
 analysis-model-api:latest
@@ -120,7 +121,9 @@ metrics:latest
 momentjs:latest
 monitoring:latest
 naginator:latest
+nodelabelparameter:latest
 okhttp-api:latest
+oracle-cloud-infrastructure-compute:latest
 pam-auth:latest
 parallel-test-executor:latest
 parameterized-trigger:latest
