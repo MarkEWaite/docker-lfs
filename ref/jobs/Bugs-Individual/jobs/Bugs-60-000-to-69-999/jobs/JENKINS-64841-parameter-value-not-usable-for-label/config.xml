@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.4"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.4">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>AGENT_LABEL</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64841&quot;&gt;JENKINS-64841&lt;/a&gt; check that parameter value can be used as a declarative agent label</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.90">
+    <script>pipeline {
+    parameters {
+        choice choices: [&apos;freebsd&apos;, &apos;linux&apos;, &apos;openbsd&apos;],
+            description: &apos;Label for the agent that will run the command&apos;, 
+            name: &apos;AGENT_LABEL&apos;
+    }
+    agent {
+        label params.AGENT_LABEL
+    }
+    stages {
+        stage(&apos;Hello&apos;) {
+            steps {
+                sh &quot;echo AGENT_LABEL is ${params.AGENT_LABEL}; echo Hello World from $AGENT_LABEL; uname -a&quot;
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
