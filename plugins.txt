@@ -69,6 +69,7 @@ favorite:latest
 font-awesome-api:latest
 forensics-api:latest
 git-client:latest
+git-forensics:latest
 git-parameter:latest
 git-server:latest
 git-userContent:latest
