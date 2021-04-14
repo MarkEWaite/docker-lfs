@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-15259&quot;&gt;JENKINS-15259&lt;/a&gt; reports that the git publisher post build action tags the wrong commit&#xd;
+&#xd;
+This job does &lt;strong&gt;not&lt;/strong&gt; verify the bug.  It was used to explore checkout with tags and then exploration stopped.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>7</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.13">
+          <name>GIT_TAG_FOR_CHECKOUT</name>
+          <description>Git tag for the checkout</description>
+          <uuid>685c85b4-3bfb-4aa9-b760-85c904127f0c</uuid>
+          <type>PT_TAG</type>
+          <branch></branch>
+          <tagFilter>JENKINS-37050-tag-*</tagFilter>
+          <branchFilter>.*</branchFilter>
+          <sortMode>DESCENDING_SMART</sortMode>
+          <defaultValue>JENKINS-37050-tag-a</defaultValue>
+          <selectedValue>TOP</selectedValue>
+          <quickFilterEnabled>false</quickFilterEnabled>
+          <listSize>7</listSize>
+        </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>origin</name>
+        <refspec>+refs/heads/JENKINS-37050:refs/remotes/origin/JENKINS-37050</refspec>
+        <url>https://github.com/MarkEWaite/jenkins-bugs.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>${GIT_TAG_FOR_CHECKOUT}</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="empty-list"/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>false</shallow>
+        <noTags>false</noTags>
+        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <timeout>1</timeout>
+        <honorRefspec>true</honorRefspec>
+      </hudson.plugins.git.extensions.impl.CloneOption>
+      <hudson.plugins.git.extensions.impl.LocalBranch>
+        <localBranch>JENKINS-37050</localBranch>
+      </hudson.plugins.git.extensions.impl.LocalBranch>
+    </extensions>
+  </scm>
+  <assignedNode>!windows</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk11</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo ============
+echo Git log after checkout of tag ${GIT_TAG_FOR_CHECKOUT}
+git log --pretty=oneline --decorate -n 1
+echo Checking for GIT_COMMIT and GIT_TAG_FOR_CHECKOUT in the log
+git log --pretty=oneline --decorate -n 1 | grep &quot;${GIT_COMMIT}.*${GIT_TAG_FOR_CHECKOUT}&quot; # Unstable build if not found</command>
+      <configuredLocalRules/>
+      <unstableReturn>1</unstableReturn>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
