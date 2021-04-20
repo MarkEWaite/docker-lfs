@@ -131,13 +131,6 @@
     </hudson.plugins.jacoco.JacocoPublisher>
     <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@8.6.0">
       <analysisTools>
-        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
