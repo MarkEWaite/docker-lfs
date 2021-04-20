@@ -147,13 +147,6 @@
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.Java>
-        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
       </analysisTools>
       <sourceCodeEncoding>UTF-8</sourceCodeEncoding>
       <sourceDirectory>src</sourceDirectory>
