@@ -127,13 +127,6 @@ surefire.rerunFailingTestsCount=4</properties>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.Java>
-        <io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
-          <id></id>
-          <name></name>
-          <pattern></pattern>
-          <reportEncoding></reportEncoding>
-          <skipSymbolicLinks>false</skipSymbolicLinks>
-        </io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
