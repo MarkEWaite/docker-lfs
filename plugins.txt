@@ -131,6 +131,7 @@ parameterized-trigger:latest
 pipeline-build-step:latest
 pipeline-github-lib:latest
 pipeline-graph-analysis:latest
+pipeline-graph-view:latest
 pipeline-input-step:latest
 pipeline-maven:latest
 pipeline-milestone-step:latest
