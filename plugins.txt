@@ -82,6 +82,7 @@ github-scm-trait-commit-skip:latest
 github:latest
 gitlab-api:latest
 gitlab-branch-source:latest
+gitlab-plugin:latest
 groovy-postbuild:latest
 h2-api:latest
 handlebars:latest
