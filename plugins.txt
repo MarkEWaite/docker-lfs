@@ -184,6 +184,5 @@ workflow-scm-step:latest
 workflow-step-api:latest
 workflow-support:latest
 ws-cleanup:latest
-xml-job-to-job-dsl:latest
 xshell:latest
 xunit:latest
