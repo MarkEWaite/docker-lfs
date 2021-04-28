@@ -14,7 +14,6 @@ Job is expected to be unstable until JENKINS-56063 is fixed.</description>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13.1-SNAPSHOT"/>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.1">
     <configVersion>2</configVersion>
