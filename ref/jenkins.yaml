@@ -129,7 +129,7 @@ jenkins:
   - envVars:
       env:
       - key: "PATH+MAVEN_BIN"
-        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.6.3/bin"
+        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.1/bin"
   numExecutors: 2
   primaryView:
     all:
@@ -570,15 +570,15 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.6.3"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.6.3-bin.zip"
+              subdir: "apache-maven-3.8.1"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.8.1-bin.zip"
     - name: "mvn"
       properties:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.6.3"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.6.3-bin.zip"
+              subdir: "apache-maven-3.8.1"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.8.1-bin.zip"
   pipelineMaven:
     triggerDownstreamUponResultAborted: false
     triggerDownstreamUponResultFailure: false
