@@ -1,4 +1,3 @@
-
 ace-editor:latest
 adoptopenjdk:latest
 analysis-model-api:latest
@@ -50,6 +49,7 @@ conditional-buildstep:latest
 config-file-provider:latest
 configuration-as-code:latest
 configurationslicing:latest
+conventional-commits:latest
 copyartifact:latest
 credentials
 credentials-binding:latest
