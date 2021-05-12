@@ -51,7 +51,7 @@ Continuous rebuild problem can be hidden by defining the branch to build as &apo
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>http://github.com/MarkEWaite/jenkins-bugs</url>
+      <url>https://github.com/MarkEWaite/jenkins-bugs</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions>
