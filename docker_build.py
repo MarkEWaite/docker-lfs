@@ -141,6 +141,8 @@ def build_one_image(branch_name, clean):
 
 def get_predecessor_branch(current_branch, all_branches):
     last = "upstream/" + current_branch
+    if current_branch == "weekly-with-plugins":
+        last = "lts"
     if current_branch == "lts":
         last = "upstream/master"
     if current_branch == "cjd":
