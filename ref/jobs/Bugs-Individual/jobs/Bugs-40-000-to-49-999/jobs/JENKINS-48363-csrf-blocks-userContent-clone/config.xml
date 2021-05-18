@@ -24,7 +24,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>http://localhost:8080/userContent.git</url>
+        <url>http://testing-a.markwaite.net:8080/userContent.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
