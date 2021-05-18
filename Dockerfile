@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.289
+FROM jenkins/jenkins:2.294
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -6,9 +6,9 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 RUN ps -ef | grep UID && git lfs version | grep git-lfs/ && wget -V 2>&1 | grep -i free
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=5c132f438f7075d87bbe5c27d310c980844b0328071e40674ede5f309113bed7
+ARG JENKINS_SHA=075fb3ad4e9d8839e9998e189499279504535616a0d839846aa96eb1aa3e14a0
 
-ARG JENKINS_URL=https://home.markwaite.net/~mwaite/jenkins-builds/2.289-revert-submit-events/jenkins.war
+ARG JENKINS_URL=https://home.markwaite.net/~mwaite/jenkins-builds/2.294-fix-submit-event/jenkins.war
 
 # could use ADD but this one does not check Last-Modified header neither does it allow to control checksum
 # see https://github.com/docker/docker/issues/8331
