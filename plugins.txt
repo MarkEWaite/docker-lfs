@@ -83,7 +83,9 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
 gitlab-branch-source:incrementals;io.jenkins.plugins;1.5.8-rc603.b241f0132403
-gitlab-plugin:1.5.21-SNAPSHOT
+# need 1.5.21 for bug fixes it includes, but not available from update center
+# gitlab-plugin:1.5.21-SNAPSHOT:(private-dc366304-ubuntu)
+gitlab-plugin:1.5.20
 groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
