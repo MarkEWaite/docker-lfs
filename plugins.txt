@@ -21,7 +21,6 @@ blueocean-events:1.24.7
 blueocean-git-pipeline:1.24.7
 blueocean-github-pipeline:1.24.7
 blueocean-i18n:1.24.7
-blueocean-jira:1.24.7
 blueocean-jwt:1.24.7
 blueocean-personalization:1.24.7
 blueocean-pipeline-api-impl:1.24.7
