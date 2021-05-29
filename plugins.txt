@@ -9,7 +9,7 @@ authentication-tokens:1.4
 authorize-project:1.4.0
 badge:1.8
 basic-branch-build-strategies:1.3.2
-bitbucket:1.1.28
+bitbucket:1.1.29
 blueocean:1.24.7
 blueocean-autofavorite:1.2.4
 blueocean-bitbucket-pipeline:1.24.7
@@ -145,7 +145,7 @@ pipeline-rest-api:2.19
 pipeline-stage-step:2.5
 pipeline-stage-tags-metadata:1.8.4
 pipeline-stage-view:2.19
-pipeline-utility-steps:2.7.1
+pipeline-utility-steps:2.8.0
 plain-credentials:1.7
 platformlabeler:878.v3d1d81b156bc
 plugin-util-api:2.2.0
