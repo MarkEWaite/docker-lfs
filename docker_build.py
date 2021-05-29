@@ -132,13 +132,21 @@ def undo_replace_constants_in_ref():
 def update_plugins(base_jenkins_version):
     if not os.path.isdir("ref"):
         return
-    available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version, "--plugin-download-directory", "ref/plugins", "--plugin-file", "plugins.txt", "--no-download", "--available-updates"]
+    available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                                             "--plugin-download-directory", "ref/plugins",
+                                                             "--plugin-file", "plugins.txt",
+                                                             "--no-download",
+                                                             "--available-updates"]
     update_plugins_output = subprocess.check_output(available_updates_command).strip().decode("utf-8")
     if "has an available update" in update_plugins_output:
         undo_replace_constants_in_ref()
         print("Plugin update available")
         print("Stopping because a plugin update is available: " + update_plugins_output)
-        download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version, "--plugin-download-directory", "ref/plugins", "--plugin-file", "plugins.txt"]
+        download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                                                "--plugin-download-directory", "ref/plugins",
+                                                                "--plugin-file", "plugins.txt",
+                                                                "--available-updates",
+                                                                "--output", "txt"]
         print("Run " + " ".join(download_updates_command))
         quit()
 
