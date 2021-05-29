@@ -46,19 +46,25 @@ def get_dockerfile(branch_name):
 
 #-----------------------------------------------------------------------
 
-def compute_tag(branch_name):
+def compute_jenkins_base_version(branch_name):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
     m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+        return m.group(1).strip()
     m = re.search("FROM cloudbees/cloudbees-jenkins-distribution:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+        return m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
-    return "markewaite/" + branch_name + ":latest"
+        return m.group(1).strip()
+    return "latest"
+
+#-----------------------------------------------------------------------
+
+def compute_tag(branch_name):
+    jenkins_base_version = compute_jenkins_base_version(branch_name)
+    return "markewaite/" + branch_name + ":" + jenkins_base_version
 
 #-----------------------------------------------------------------------
 
