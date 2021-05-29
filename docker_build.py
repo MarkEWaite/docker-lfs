@@ -137,7 +137,6 @@ def update_plugins(base_jenkins_version):
                                                              "--plugin-file", "plugins.txt",
                                                              "--no-download",
                                                              "--available-updates",
-                                                             "--output", "txt"
                                 ]
     update_plugins_output = subprocess.check_output(available_updates_command).strip().decode("utf-8")
     if "has an available update" in update_plugins_output:
@@ -148,7 +147,7 @@ def update_plugins(base_jenkins_version):
                                                                 "--plugin-download-directory", "ref/plugins",
                                                                 "--plugin-file", "plugins.txt",
                                    ]
-        print("Run " + " ".join(available_updates_command) + " > x && mv x plugins.txt")
+        print("Run " + " ".join(available_updates_command + ["--output", "txt"]) + " > x && mv x plugins.txt")
         print("and " + " ".join(download_updates_command))
         quit()
 
