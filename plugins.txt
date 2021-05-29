@@ -184,7 +184,7 @@ workflow-cps-global-lib:2.19
 workflow-durable-task-step:2.39
 workflow-job:2.40
 workflow-multibranch:2.24
-workflow-scm-step:2.13-rc374.dcd7e780273e
+workflow-scm-step:incrementals;org.jenkins-ci.plugins.workflow;2.13-rc374.dcd7e780273e
 workflow-step-api:2.23
 workflow-support:3.8
 ws-cleanup:0.39
