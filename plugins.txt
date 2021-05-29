@@ -10,7 +10,6 @@ authorize-project:1.4.0
 badge:1.8
 basic-branch-build-strategies:1.3.2
 bitbucket:1.1.29
-blueocean:1.24.7
 blueocean-autofavorite:1.2.4
 blueocean-bitbucket-pipeline:1.24.7
 blueocean-commons:1.24.7
