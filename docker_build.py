@@ -138,7 +138,7 @@ def update_plugins(base_jenkins_version):
         print("Plugin update available")
         print("Stopping because a plugin update is available: " + update_plugins_output)
         download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version, "--plugin-download-directory", "ref/plugins", "--plugin-file", "plugins.txt"]
-        print("Run " + download_updates_command.join(" "))
+        print("Run " + " ".join(download_updates_command))
         quit()
 
 #-----------------------------------------------------------------------
