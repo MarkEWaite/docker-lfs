@@ -129,8 +129,21 @@ def undo_replace_constants_in_ref():
 
 #-----------------------------------------------------------------------
 
+def update_plugins(base_jenkins_version):
+    if not os.path.isdir("ref"):
+        return
+    command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version, "--plugin-download-directory", "ref/plugins", "--plugin-file", "plugins.txt"]
+    subprocess.check_call(command)
+
+#-----------------------------------------------------------------------
+
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
+    if branch_name == 'lts-with-plugins':
+        base_jenkins_version = compute_jenkins_base_version(branch_name)
+        print(("Updating plugins for " + base_jenkins_version))
+        update_plugins(base_jenkins_version)
+    print(("Building " + tag))
     tag = compute_tag(branch_name)
     print(("Building " + tag))
     command = [ "docker", "build",
