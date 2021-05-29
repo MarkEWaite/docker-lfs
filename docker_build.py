@@ -143,7 +143,6 @@ def build_one_image(branch_name, clean):
         base_jenkins_version = compute_jenkins_base_version(branch_name)
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
-    print(("Building " + tag))
     tag = compute_tag(branch_name)
     print(("Building " + tag))
     command = [ "docker", "build",
