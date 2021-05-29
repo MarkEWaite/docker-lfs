@@ -156,7 +156,7 @@ promoted-builds:3.10
 pubsub-light:1.14
 resource-disposer:0.15
 run-condition:1.5
-scm-api:2.6.5-rc558.e47259f354ef
+scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc558.e47259f354ef
 script-security:1.77
 snakeyaml-api:1.27.0
 sse-gateway:1.24
