@@ -83,7 +83,7 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
 gitlab-branch-source:1.5.8-rc603.b241f0132403
-gitlab-plugin:1.5.21-SNAPSHOT:(private-dc366304-ubuntu)
+gitlab-plugin:1.5.21-SNAPSHOT
 groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
@@ -98,7 +98,7 @@ jdk-tool:1.5
 jenkins-design-language:1.24.7
 jira:3.3
 jjwt-api:0.11.2-9.c8b45b8bb173
-jmh-report:0.9.1-SNAPSHOT:(private-688739fd-RishabhBudhouliya)
+jmh-report:0.9.1-SNAPSHOT
 job-dsl:1.77
 jquery:1.12.4-1
 jquery-detached:1.2.1
