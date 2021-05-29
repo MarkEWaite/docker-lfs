@@ -46,19 +46,25 @@ def get_dockerfile(branch_name):
 
 #-----------------------------------------------------------------------
 
-def compute_tag(branch_name):
+def compute_jenkins_base_version(branch_name):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
     m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+        return m.group(1).strip()
     m = re.search("FROM cloudbees/cloudbees-jenkins-distribution:([-A-Za-z0-9.]+)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
+        return m.group(1).strip()
     m = re.search("JENKINS_VERSION.*JENKINS_VERSION:-([0-9.]*)", dockerfile_contents)
     if m:
-        return "markewaite/" + branch_name + ":" + m.group(1).strip()
-    return "markewaite/" + branch_name + ":latest"
+        return m.group(1).strip()
+    return "latest"
+
+#-----------------------------------------------------------------------
+
+def compute_tag(branch_name):
+    jenkins_base_version = compute_jenkins_base_version(branch_name)
+    return "markewaite/" + branch_name + ":" + jenkins_base_version
 
 #-----------------------------------------------------------------------
 
@@ -123,8 +129,36 @@ def undo_replace_constants_in_ref():
 
 #-----------------------------------------------------------------------
 
+def update_plugins(base_jenkins_version):
+    if not os.path.isdir("ref"):
+        return
+    available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                                             "--plugin-download-directory", "ref/plugins",
+                                                             "--plugin-file", "plugins.txt",
+                                                             "--no-download",
+                                                             "--available-updates",
+                                ]
+    update_plugins_output = subprocess.check_output(available_updates_command).strip().decode("utf-8")
+    if "has an available update" in update_plugins_output:
+        undo_replace_constants_in_ref()
+        print("Plugin update available")
+        print("Stopping because a plugin update is available: " + update_plugins_output)
+        download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                                                "--plugin-download-directory", "ref/plugins",
+                                                                "--plugin-file", "plugins.txt",
+                                   ]
+        print("Run " + " ".join(available_updates_command + ["--output", "txt"]) + " > x && mv x plugins.txt")
+        print("and " + " ".join(download_updates_command))
+        quit()
+
+#-----------------------------------------------------------------------
+
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
+    if branch_name in ["lts-with-plugins", "lts-with-plugins-add-credentials-and-nodes-rc", "lts-with-plugins-add-credentials-and-nodes-weekly"]:
+        base_jenkins_version = compute_jenkins_base_version(branch_name)
+        print(("Updating plugins for " + base_jenkins_version))
+        update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
     print(("Building " + tag))
     command = [ "docker", "build",
