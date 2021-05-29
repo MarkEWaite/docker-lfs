@@ -1,5 +1,5 @@
 ace-editor:1.1
-adoptopenjdk:1.4
+adoptopenjdk:1.3
 analysis-model-api:10.2.5
 ant:1.11
 antisamy-markup-formatter:2.1
