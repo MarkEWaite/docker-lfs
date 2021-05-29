@@ -147,7 +147,7 @@ def update_plugins(base_jenkins_version):
                                                                 "--plugin-file", "plugins.txt",
                                                                 "--available-updates",
                                                                 "--output", "txt"]
-        print("Run " + " ".join(download_updates_command) " > x && mv x plugins.txt")
+        print("Run " + " ".join(download_updates_command) + " > x && mv x plugins.txt")
         quit()
 
 #-----------------------------------------------------------------------
