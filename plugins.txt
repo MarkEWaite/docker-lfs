@@ -47,7 +47,7 @@ config-file-provider:3.8.0
 configuration-as-code:1.51
 configurationslicing:1.52
 conventional-commits:0.0.2
-copyartifact:1.46
+copyartifact:1.46.1
 credentials:2.4.1
 credentials-binding:1.24
 data-tables-api:1.10.23-3
@@ -80,8 +80,6 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
 gitlab-branch-source:incrementals;io.jenkins.plugins;1.5.8-rc603.b241f0132403
-# need 1.5.21 for bug fixes it includes, but not available from update center
-# gitlab-plugin:1.5.21-SNAPSHOT:(private-dc366304-ubuntu)
 gitlab-plugin:1.5.20
 groovy-postbuild:2.5
 h2-api:1.4.199
