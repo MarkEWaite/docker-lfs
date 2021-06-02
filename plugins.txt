@@ -48,8 +48,8 @@ configuration-as-code:1.51
 configurationslicing:1.52
 conventional-commits:0.0.2
 copyartifact:1.46.1
-credentials:2.4.1
-credentials-binding:1.24
+credentials:2.5
+credentials-binding:1.25
 data-tables-api:1.10.23-3
 description-setter:1.10
 display-url-api:2.3.5
@@ -66,8 +66,8 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.3-2
 forensics-api:1.0.0
-git:incrementals;org.jenkins-ci.plugins;4.7.2-rc4340.d340317ac830
-git-client:incrementals;org.jenkins-ci.plugins;3.7.2-rc2822.e43cd7fd6959
+git:4.7.2
+git-client:3.7.2
 git-forensics:1.0.0
 git-parameter:0.9.13
 git-server:1.9
