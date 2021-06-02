@@ -66,7 +66,7 @@ def compute_jenkins_base_version(branch_name, numeric_only):
 #-----------------------------------------------------------------------
 
 def compute_tag(branch_name):
-    jenkins_base_version = compute_jenkins_base_version(branch_name, false)
+    jenkins_base_version = compute_jenkins_base_version(branch_name, False)
     return "markewaite/" + branch_name + ":" + jenkins_base_version
 
 #-----------------------------------------------------------------------
@@ -159,7 +159,7 @@ def update_plugins(base_jenkins_version):
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
     if branch_name in ["lts-with-plugins", "lts-with-plugins-add-credentials-and-nodes-rc", "lts-with-plugins-add-credentials-and-nodes-weekly"]:
-        base_jenkins_version = compute_jenkins_base_version(branch_name, true)
+        base_jenkins_version = compute_jenkins_base_version(branch_name, True)
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
