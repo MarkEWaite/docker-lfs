@@ -156,8 +156,8 @@ script-security:1.77
 snakeyaml-api:1.27.0
 sse-gateway:1.24
 ssh-agent:1.22
-ssh-credentials:1.18.1
-ssh-slaves:1.31.5
+ssh-credentials:1.18.2
+ssh-slaves:1.31.7
 structs:1.23
 support-core:2.74
 swarm:3.26
