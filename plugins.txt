@@ -161,7 +161,7 @@ ssh-slaves:1.31.5
 structs:1.23
 support-core:2.74
 swarm:3.26
-text-finder:1.15
+text-finder:1.16
 throttle-concurrents:2.2
 timestamper:1.13
 token-macro:2.15
