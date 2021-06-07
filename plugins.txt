@@ -101,7 +101,7 @@ jquery:1.12.4-1
 jquery-detached:1.2.1
 jquery3-api:3.6.0-1
 jsch:0.1.55.2
-junit:1.49
+junit:1.50
 junit-attachments:1.6
 junit-realtime-test-reporter:0.6
 label-verifier:1.4
