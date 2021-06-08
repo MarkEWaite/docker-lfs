@@ -64,10 +64,10 @@ envinject:2.4.0
 envinject-api:1.7
 external-monitor-job:1.7
 favorite:2.3.3
-font-awesome-api:5.15.3-2
+font-awesome-api:5.15.3-3
 forensics-api:1.0.0
 git:4.7.2
-git-client:3.7.2
+git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2830.93e270ce3907
 git-forensics:1.0.0
 git-parameter:0.9.13
 git-server:1.9
@@ -88,7 +88,7 @@ handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.25
 implied-labels:0.7
 jackson2-api:2.12.3
-jacoco:3.2.0:https://ci.jenkins.io/job/Plugins/job/jacoco-plugin/view/change-requests/job/PR-151/lastSuccessfulBuild/artifact/target/jacoco.hpi
+jacoco:3.2.0
 javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
@@ -143,7 +143,7 @@ pipeline-stage-view:2.19
 pipeline-utility-steps:2.8.0
 plain-credentials:1.7
 platformlabeler:878.v3d1d81b156bc
-plugin-util-api:2.2.0
+plugin-util-api:2.3.0
 pollscm:1.3.1
 popper-api:1.16.1-2
 preSCMbuildstep:0.3
