@@ -46,10 +46,13 @@ def get_dockerfile(branch_name):
 
 #-----------------------------------------------------------------------
 
-def compute_jenkins_base_version(branch_name):
+def compute_jenkins_base_version(branch_name, numeric_only):
     dockerfile_name = get_dockerfile(branch_name)
     dockerfile_contents = open(dockerfile_name, "r").read()
-    m = re.search("FROM jenkins/jenkins:([-A-Za-z0-9.]+)", dockerfile_contents)
+    version_matcher = "([-A-Za-z0-9.]+)"
+    if numeric_only:
+        version_matcher = "([0-9.]+)"
+    m = re.search("FROM jenkins/jenkins:" + version_matcher, dockerfile_contents)
     if m:
         return m.group(1).strip()
     m = re.search("FROM cloudbees/cloudbees-jenkins-distribution:([-A-Za-z0-9.]+)", dockerfile_contents)
@@ -63,7 +66,7 @@ def compute_jenkins_base_version(branch_name):
 #-----------------------------------------------------------------------
 
 def compute_tag(branch_name):
-    jenkins_base_version = compute_jenkins_base_version(branch_name)
+    jenkins_base_version = compute_jenkins_base_version(branch_name, False)
     return "markewaite/" + branch_name + ":" + jenkins_base_version
 
 #-----------------------------------------------------------------------
@@ -156,7 +159,7 @@ def update_plugins(base_jenkins_version):
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
     if branch_name in ["lts-with-plugins", "lts-with-plugins-add-credentials-and-nodes-rc", "lts-with-plugins-add-credentials-and-nodes-weekly"]:
-        base_jenkins_version = compute_jenkins_base_version(branch_name)
+        base_jenkins_version = compute_jenkins_base_version(branch_name, True)
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
