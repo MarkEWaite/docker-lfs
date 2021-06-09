@@ -153,7 +153,7 @@ resource-disposer:0.15
 run-condition:1.5
 scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc558.e47259f354ef
 script-security:1.77
-snakeyaml-api:1.27.0
+snakeyaml-api:1.29.1
 sse-gateway:1.24
 ssh-agent:1.22
 ssh-credentials:1.19
