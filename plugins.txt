@@ -151,7 +151,7 @@ popper2-api:2.5.4-2
 preSCMbuildstep:0.3
 promoted-builds:3.10
 pubsub-light:1.15
-resource-disposer:0.15
+resource-disposer:0.16
 run-condition:1.5
 scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc558.e47259f354ef
 script-security:1.77
