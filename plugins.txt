@@ -157,7 +157,7 @@ scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc558.e47259f354ef
 script-security:1.77
 snakeyaml-api:1.29.1
 sse-gateway:1.24
-ssh-agent:1.22
+ssh-agent:1.23
 ssh-credentials:1.19
 ssh-slaves:1.32.0
 structs:1.23
