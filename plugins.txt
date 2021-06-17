@@ -89,7 +89,7 @@ handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.25
 implied-labels:0.7
 jackson2-api:2.12.3
-jacoco:3.2.0
+jacoco:3.3.0
 javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
