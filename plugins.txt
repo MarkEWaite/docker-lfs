@@ -89,7 +89,7 @@ handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.25
 implied-labels:0.7
 jackson2-api:2.12.3
-jacoco:3.2.0
+jacoco:3.3.0
 javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
@@ -174,7 +174,7 @@ view-job-filters:2.3
 warnings-ng:9.2.0
 windows-slaves:1.8
 workflow-aggregator:2.6
-workflow-api:2.44
+workflow-api:2.45
 workflow-basic-steps:2.23
 workflow-cps:2.92
 workflow-cps-global-lib:2.19
