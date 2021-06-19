@@ -180,7 +180,7 @@ workflow-cps:2.92
 workflow-cps-global-lib:2.20
 workflow-durable-task-step:2.39
 workflow-job:2.41
-workflow-multibranch:2.24
+workflow-multibranch:2.26
 workflow-scm-step:2.13
 workflow-step-api:2.23
 workflow-support:3.8
