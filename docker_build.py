@@ -141,6 +141,8 @@ def get_available_updates_command(base_jenkins_version):
     ]
     return available_updates_command
 
+#-----------------------------------------------------------------------
+
 def report_update_plugins_commands(base_jenkins_version):
     download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
                                  "--plugin-download-directory", "ref/plugins",
@@ -256,7 +258,8 @@ Build docker images.   Use -h for help."""
         branches = [ original_branch, ]
 
     if options.report:
-        report_update_plugins_commands(original_branch)
+        base_jenkins_version = compute_jenkins_base_version(original_branch, True)
+        report_update_plugins_commands(base_jenkins_version)
         quit()
 
     for branch in branches:
