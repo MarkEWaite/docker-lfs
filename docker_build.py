@@ -132,26 +132,37 @@ def undo_replace_constants_in_ref():
 
 #-----------------------------------------------------------------------
 
+def get_available_updates_command(base_jenkins_version):
+    available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                  "--plugin-download-directory", "ref/plugins",
+                                  "--plugin-file", "plugins.txt",
+                                  "--no-download",
+                                  "--available-updates",
+    ]
+    return available_updates_command
+
+#-----------------------------------------------------------------------
+
+def report_update_plugins_commands(base_jenkins_version):
+    download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
+                                 "--plugin-download-directory", "ref/plugins",
+                                 "--plugin-file", "plugins.txt",
+    ]
+    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["--output", "txt"]) + " > x && mv x plugins.txt")
+    print("and " + " ".join(download_updates_command))
+
+#-----------------------------------------------------------------------
+
 def update_plugins(base_jenkins_version):
     if not os.path.isdir("ref"):
         return
-    available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
-                                                             "--plugin-download-directory", "ref/plugins",
-                                                             "--plugin-file", "plugins.txt",
-                                                             "--no-download",
-                                                             "--available-updates",
-                                ]
-    update_plugins_output = subprocess.check_output(available_updates_command).strip().decode("utf-8")
+
+    update_plugins_output = subprocess.check_output(get_available_updates_command(base_jenkins_version)).strip().decode("utf-8")
     if "has an available update" in update_plugins_output:
         undo_replace_constants_in_ref()
         print("Plugin update available")
         print("Stopping because a plugin update is available: " + update_plugins_output)
-        download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
-                                                                "--plugin-download-directory", "ref/plugins",
-                                                                "--plugin-file", "plugins.txt",
-                                   ]
-        print("Run " + " ".join(available_updates_command + ["--output", "txt"]) + " > x && mv x plugins.txt")
-        print("and " + " ".join(download_updates_command))
+        report_update_plugins_commands(base_jenkins_version)
         quit()
 
 #-----------------------------------------------------------------------
@@ -233,7 +244,8 @@ Build docker images.   Use -h for help."""
 
     # keep at optparse for 2.6. compatibility
     parser.add_option("-a", "--all", action="store_true", default=False, help="build all images")
-    parser.add_option("-c", "--clean", action="store_true", default=False, help="build all images")
+    parser.add_option("-c", "--clean", action="store_true", default=False, help="Pull the base image even if it is already cached")
+    parser.add_option("-r", "--report", action="store_true", default=False, help="Report the command to update plugins and exit without building the image")
 
     options, arg_hosts = parser.parse_args()
 
@@ -244,6 +256,11 @@ Build docker images.   Use -h for help."""
         branches = all_branches
     else:
         branches = [ original_branch, ]
+
+    if options.report:
+        base_jenkins_version = compute_jenkins_base_version(original_branch, True)
+        report_update_plugins_commands(base_jenkins_version)
+        quit()
 
     for branch in branches:
         print(("Building " + branch))
