@@ -177,7 +177,7 @@ workflow-aggregator:2.6
 workflow-api:2.45
 workflow-basic-steps:2.23
 workflow-cps:2.92
-workflow-cps-global-lib:incrementals;org.jenkins-ci.plugins.workflow;2.21-rc536.b367de67777b
+workflow-cps-global-lib:2.21
 workflow-durable-task-step:2.39
 workflow-job:2.41
 workflow-multibranch:2.26
