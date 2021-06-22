@@ -312,7 +312,9 @@ unclassified:
     durabilityHint: PERFORMANCE_OPTIMIZED
   globalLibraries:
     libraries:
-    - defaultVersion: "master"
+    - cachingConfiguration:
+        refreshTimeMinutes: 487
+      defaultVersion: "master"
       includeInChangesets: false
       name: "globalPipelineLibraryMarkEWaiteModern"
       retriever:
@@ -324,7 +326,9 @@ unclassified:
               traits:
               - "gitBranchDiscovery"
               - "gitTagDiscovery"
-    - defaultVersion: "master"
+    - cachingConfiguration:
+        refreshTimeMinutes: 491
+      defaultVersion: "master"
       name: "globalPipelineLibraryMarkEWaite"
       retriever:
         legacySCM:
@@ -337,7 +341,9 @@ unclassified:
               gitTool: "Default"
               userRemoteConfigs:
               - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
-    - defaultVersion: "master"
+    - cachingConfiguration:
+        refreshTimeMinutes: 499
+      defaultVersion: "master"
       name: "globalPipelineLibraryMarkEWaiteModernGitHub"
       retriever:
         modernSCM:
@@ -353,7 +359,9 @@ unclassified:
                   strategyId: 1
               - "gitHubTagDiscovery"
               - "localBranchTrait"
-    - defaultVersion: "master"
+    - cachingConfiguration:
+        refreshTimeMinutes: 509
+      defaultVersion: "master"
       name: "git-modern-3.8.0"
       retriever:
         modernSCM:
@@ -366,7 +374,9 @@ unclassified:
               - discoverOtherRefsTrait:
                   ref: "*"
               - "gitTagDiscovery"
-    - defaultVersion: "master"
+    - cachingConfiguration:
+        refreshTimeMinutes: 521
+      defaultVersion: "master"
       name: "github-modern-3.8.0"
       retriever:
         modernSCM:

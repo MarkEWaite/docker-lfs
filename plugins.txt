@@ -47,7 +47,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.0
 configuration-as-code:1.51
 configurationslicing:1.52
-conventional-commits:0.0.2
+conventional-commits:0.1.0
 copyartifact:1.46.1
 credentials:2.5
 credentials-binding:1.25
@@ -177,7 +177,7 @@ workflow-aggregator:2.6
 workflow-api:2.45
 workflow-basic-steps:2.23
 workflow-cps:2.92
-workflow-cps-global-lib:2.20
+workflow-cps-global-lib:2.21
 workflow-durable-task-step:2.39
 workflow-job:2.41
 workflow-multibranch:2.26

@@ -106,7 +106,7 @@ def memory_scale(upper_bound):
 
 #-----------------------------------------------------------------------
 
-def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False):
+def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False, access_mode=None):
     dns_server = get_dns_server()
     maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
@@ -144,6 +144,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+UnlockExperimentalVMOptions",
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
+                  "-XshowSettings:vm"
                   # Blue ocean autofavorite has been removed
                   # "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
@@ -163,6 +164,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if debug_port != None:
         java_opts.append("-Xdebug")
         java_opts.append("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5678")
+    if access_mode != None:
+        java_opts.append("--illegal-access=" + access_mode)
     docker_command.extend([
                        "--env", 'JAGENT_JAVA_HOME=' + get_jagent_java_home(),
                        "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
@@ -221,6 +224,7 @@ Run a docker image.   Use -h for help."""
     parser.add_option("-d", "--detach", action="store_true", default=False, help="detach from typical stdin and stdout")
     parser.add_option("-q", "--quiet",  action="store_true", default=False, help="start in quiet down state, process no jobs until shutdown is cancelled")
 
+    parser.add_option("-a", "--access",action="store", dest='access_mode',default=None,  type="string", help="report illegal accesses")
     parser.add_option("-g", "--debug", action="store", dest='debug_port', default=None,  type="int",    help="debug port")
     parser.add_option("-j", "--jnlp",  action="store", dest='jnlp_port',  default=50000, type="int",    help="jnlp port")
     parser.add_option("-p", "--port",  action="store", dest='http_port',  default=8080,  type="int",    help="http port")
@@ -243,7 +247,7 @@ Run a docker image.   Use -h for help."""
     if options.docker_tag == None:
         current_branch = docker_build.get_current_branch()
         options.docker_tag = docker_build.compute_tag(current_branch)
-    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach, options.quiet)
+    docker_execute(options.docker_tag, options.http_port, options.jnlp_port, options.ssh_port, options.debug_port, options.detach, options.quiet, options.access_mode)
 
 #-----------------------------------------------------------------------
 
