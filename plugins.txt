@@ -50,7 +50,7 @@ configurationslicing:1.52
 conventional-commits:0.1.0
 copyartifact:1.46.1
 credentials:2.5
-credentials-binding:1.25
+credentials-binding:1.26
 data-tables-api:1.10.25-1
 description-setter:1.10
 display-url-api:2.3.5
