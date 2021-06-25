@@ -159,6 +159,7 @@ snakeyaml-api:1.29.1
 sse-gateway:1.24
 ssh-agent:1.23
 ssh-credentials:1.19
+sshd:3.0.3
 ssh-slaves:1.32.0
 structs:1.23
 support-core:2.74
