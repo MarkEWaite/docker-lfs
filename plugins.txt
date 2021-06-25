@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.3-3
 forensics-api:1.1.0
 git:4.7.2
-git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2864.a787babcc64d
+git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2873.96c6d854776c
 git-forensics:1.0.0
 git-parameter:0.9.13
 git-server:1.9
@@ -159,6 +159,7 @@ snakeyaml-api:1.29.1
 sse-gateway:1.24
 ssh-agent:1.23
 ssh-credentials:1.19
+sshd:3.0.3
 ssh-slaves:1.32.0
 structs:1.23
 support-core:2.74
