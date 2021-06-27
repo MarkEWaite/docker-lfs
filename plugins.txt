@@ -47,7 +47,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.0
 configuration-as-code:1.51
 configurationslicing:1.52
-conventional-commits:0.1.0
+conventional-commits:0.1.1
 copyartifact:1.46.1
 credentials:2.5
 credentials-binding:1.26
@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.3-3
 forensics-api:1.1.0
 git:4.7.2
-git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2873.96c6d854776c
+git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2876.c53fb45ffe6c
 git-forensics:1.0.0
 git-parameter:0.9.13
 git-server:1.9
@@ -94,7 +94,7 @@ javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.24.7
-jira:3.4
+jira:3.5
 jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
 job-dsl:1.77
