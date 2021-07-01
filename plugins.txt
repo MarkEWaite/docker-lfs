@@ -47,10 +47,10 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.0
 configuration-as-code:1.51
 configurationslicing:1.52
-conventional-commits:0.1.0
+conventional-commits:0.1.1
 copyartifact:1.46.1
 credentials:2.5
-credentials-binding:1.25
+credentials-binding:1.26
 data-tables-api:1.10.25-1
 description-setter:1.10
 display-url-api:2.3.5
@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.3-3
 forensics-api:1.1.0
 git:4.7.2
-git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2864.a787babcc64d
+git-client:incrementals;org.jenkins-ci.plugins;3.8.0-rc2886.dd3cf60184c8
 git-forensics:1.0.0
 git-parameter:0.9.13
 git-server:1.9
@@ -94,7 +94,7 @@ javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.24.7
-jira:3.3
+jira:3.5
 jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
 job-dsl:1.77
@@ -159,6 +159,7 @@ snakeyaml-api:1.29.1
 sse-gateway:1.24
 ssh-agent:1.23
 ssh-credentials:1.19
+sshd:3.0.3
 ssh-slaves:1.32.0
 structs:1.23
 support-core:2.74
@@ -171,10 +172,10 @@ trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.1
 view-job-filters:2.3
-warnings-ng:9.2.0
+warnings-ng:9.3.0
 windows-slaves:1.8
 workflow-aggregator:2.6
-workflow-api:2.45
+workflow-api:2.46
 workflow-basic-steps:2.23
 workflow-cps:2.92
 workflow-cps-global-lib:2.21
