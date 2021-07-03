@@ -313,6 +313,8 @@ unclassified:
   globalLibraries:
     libraries:
     - cachingConfiguration:
+        # excludedVersionsStr is a workaround for https://issues.jenkins.io/browse/JENKINS-66045
+        excludedVersionsStr: "intentionally-non-existent-branch-name"
         refreshTimeMinutes: 487
       defaultVersion: "master"
       includeInChangesets: false
@@ -327,6 +329,8 @@ unclassified:
               - "gitBranchDiscovery"
               - "gitTagDiscovery"
     - cachingConfiguration:
+        # excludedVersionsStr is a workaround for https://issues.jenkins.io/browse/JENKINS-66045
+        excludedVersionsStr: "intentionally-non-existent-branch-name"
         refreshTimeMinutes: 491
       defaultVersion: "master"
       name: "globalPipelineLibraryMarkEWaite"
@@ -342,6 +346,8 @@ unclassified:
               userRemoteConfigs:
               - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
     - cachingConfiguration:
+        # excludedVersionsStr is a workaround for https://issues.jenkins.io/browse/JENKINS-66045
+        excludedVersionsStr: "intentionally-non-existent-branch-name"
         refreshTimeMinutes: 499
       defaultVersion: "master"
       name: "globalPipelineLibraryMarkEWaiteModernGitHub"
@@ -360,6 +366,8 @@ unclassified:
               - "gitHubTagDiscovery"
               - "localBranchTrait"
     - cachingConfiguration:
+        # excludedVersionsStr is a workaround for https://issues.jenkins.io/browse/JENKINS-66045
+        excludedVersionsStr: "intentionally-non-existent-branch-name"
         refreshTimeMinutes: 509
       defaultVersion: "master"
       name: "git-modern-3.8.0"
@@ -375,6 +383,8 @@ unclassified:
                   ref: "*"
               - "gitTagDiscovery"
     - cachingConfiguration:
+        # excludedVersionsStr is a workaround for https://issues.jenkins.io/browse/JENKINS-66045
+        excludedVersionsStr: "intentionally-non-existent-branch-name"
         refreshTimeMinutes: 521
       defaultVersion: "master"
       name: "github-modern-3.8.0"
