@@ -75,7 +75,7 @@ git-server:1.9
 git-userContent:1.4
 gitea:1.2.1
 github:1.33.1
-github-api:1.222
+github-api:1.123
 github-branch-source:2.11.1
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
