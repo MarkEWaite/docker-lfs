@@ -75,7 +75,7 @@ git-server:1.9
 git-userContent:1.4
 gitea:1.2.1
 github:1.33.1
-github-api:1.222
+github-api:1.123
 github-branch-source:2.11.1
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
@@ -99,10 +99,9 @@ jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
 job-dsl:1.77
 jquery:1.12.4-1
-jquery-detached:1.2.1
 jquery3-api:3.6.0-1
 jsch:0.1.55.2
-junit:1.50
+junit:1.51
 junit-attachments:1.6
 junit-realtime-test-reporter:0.6
 label-verifier:1.4
