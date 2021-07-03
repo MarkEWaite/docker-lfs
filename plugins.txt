@@ -102,7 +102,6 @@ jquery:1.12.4-1
 jquery3-api:3.6.0-1
 jsch:0.1.55.2
 junit:1.51
-junit-attachments:1.6
 junit-realtime-test-reporter:0.6
 label-verifier:1.4
 ldap:2.7
@@ -120,7 +119,7 @@ metrics:4.0.2.8
 momentjs:1.1.1
 monitoring:1.87.0
 naginator:1.18.1
-nodelabelparameter:1.8.1
+nodelabelparameter:incrementals;org.jenkins-ci.plugins;1.9.0-rc217.946705c8b5dd
 okhttp-api:3.14.9
 oracle-cloud-infrastructure-compute:1.0.14
 pam-auth:1.6
@@ -152,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc558.e47259f354ef
+scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc559.14f2b9da3554
 script-security:1.77
 snakeyaml-api:1.29.1
 sse-gateway:1.24
