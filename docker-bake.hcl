@@ -1,26 +1,31 @@
 group "linux" {
   targets = [
+    "almalinux_jdk11",
     "alpine_jdk8",
     "centos7_jdk8",
     "centos8_jdk8",
     "debian_jdk8",
     "debian_jdk11",
     "debian_slim_jdk8",
+    "rhel_ubi8_jdk11"
   ]
 }
 
 group "linux-arm64" {
   targets = [
+    "almalinux_jdk11",
     "centos8_jdk8",
     "debian_jdk8",
     "debian_jdk11",
     "debian_slim_jdk8",
+    "rhel_ubi8_jdk11",
   ]
 }
 
 group "linux-s390x" {
   targets = [
     "debian_jdk11",
+    "rhel_ubi8_jdk11",
   ]
 }
 
@@ -30,6 +35,7 @@ group "linux-ppc64le" {
     "debian_jdk8",
     "debian_jdk11",
     "debian_slim_jdk8",
+    "rhel_ubi8_jdk11",
   ]
 }
 
@@ -70,6 +76,21 @@ variable "GIT_LFS_VERSION" {
 
 variable "PLUGIN_CLI_VERSION" {
   default = "2.10.0"
+}
+
+target "almalinux_jdk11" {
+  dockerfile = "11/almalinux/almalinux8/hotspot/Dockerfile"
+  context = "."
+  args = {
+    JENKINS_VERSION = JENKINS_VERSION
+    JENKINS_SHA = JENKINS_SHA
+  }
+  tags = [
+    "${REGISTRY}/${JENKINS_REPO}:${JENKINS_VERSION}-almalinux",
+    equal(LATEST_WEEKLY, "true") ? "${REGISTRY}/${JENKINS_REPO}:almalinux" : "",
+    equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts-almalinux" : "",
+  ]
+  platforms = ["linux/amd64", "linux/arm64"]
 }
 
 target "alpine_jdk8" {
@@ -172,6 +193,22 @@ target "debian_slim_jdk8" {
     equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts-slim" : "",
   ]
   platforms = ["linux/amd64", "linux/ppc64le", "linux/arm64"]
+}
+
+target "rhel_ubi8_jdk11" {
+  dockerfile = "11/rhel/ubi8/hotspot/Dockerfile"
+  context = "."
+  args = {
+    JENKINS_VERSION = JENKINS_VERSION
+    JENKINS_SHA = JENKINS_SHA
+    PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
+  }
+  tags = [
+    "${REGISTRY}/${JENKINS_REPO}:${JENKINS_VERSION}-rhel-ubi8-jdk11",
+    equal(LATEST_WEEKLY, "true") ? "${REGISTRY}/${JENKINS_REPO}:rhel-ubi8-jdk11" : "",
+    equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts-rhel-ubi8-jdk11" : "",
+  ]
+  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le", "linux/s390x"]
 }
 
 # TODO update windows publishing script to use this file
