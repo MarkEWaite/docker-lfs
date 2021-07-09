@@ -47,7 +47,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.0
 configuration-as-code:1.51
 configurationslicing:1.52
-conventional-commits:0.1.1
+conventional-commits:0.1.2
 copyartifact:1.46.1
 credentials:2.5
 credentials-binding:1.26
@@ -66,10 +66,10 @@ envinject-api:1.7
 external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.3-3
-forensics-api:1.1.0
-git:4.7.2
-git-client:incrementals;org.jenkins-ci.plugins;3.8.0-rc2886.dd3cf60184c8
-git-forensics:1.0.0
+forensics-api:1.2.0
+git:incrementals;org.jenkins-ci.plugins;4.7.3-rc4371.524cdb4de342
+git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2845.ccc852bbfaa0
+git-forensics:1.1.0
 git-parameter:0.9.13
 git-server:1.9
 git-userContent:1.4
