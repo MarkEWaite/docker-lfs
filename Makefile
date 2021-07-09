@@ -43,13 +43,13 @@ build-slim:
 	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load debian_slim_jdk8
 
 build-jdk11:
-	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load debian_slim_jdk8
+	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load debian_jdk11
 
 build-centos:
-	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load centos7_jdk8
+	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load centos8_jdk8
 
 build-centos7:
-	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load centos8_jdk8
+	docker buildx bake -f docker-bake.hcl --set '*.platform=linux/amd64' --load centos7_jdk8
 
 bats:
 	git clone -b v1.3.0 https://github.com/bats-core/bats-core bats
@@ -92,12 +92,7 @@ test-install-plugins: prepare-test
 	DIRECTORY="8/alpine/hotspot" bats/bin/bats tests/install-plugins.bats tests/install-plugins-plugins-cli.bats
 
 publish:
-	./.ci/publish.sh ; \
-	./.ci/publish.sh --variant alpine ; \
-	./.ci/publish.sh --variant slim ; \
-	./.ci/publish.sh --variant jdk11 --start-after 2.151 ; \
-	./.ci/publish.sh --variant centos --start-after 2.181 ; \
-	./.ci/publish.sh --variant centos7 --start-after 2.199 ;
+	./.ci/publish.sh
 
 publish-images-variant:
 	./.ci/publish-images.sh --variant ${VARIANT} --arch ${ARCH} ;
