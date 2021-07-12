@@ -181,7 +181,7 @@ workflow-durable-task-step:2.39
 workflow-job:2.41
 workflow-multibranch:2.26
 workflow-scm-step:2.13
-workflow-step-api:2.23
+workflow-step-api:2.24
 workflow-support:3.8
 ws-cleanup:0.39
 xshell:0.10
