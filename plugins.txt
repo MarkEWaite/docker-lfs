@@ -72,7 +72,7 @@ git:4.7.3-SNAPSHOT
 git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2845.ccc852bbfaa0
 git-forensics:1.1.0
 git-parameter:0.9.13
-git-server:1.9
+git-server:1.10
 git-userContent:1.4
 gitea:1.2.1
 github:1.33.1
