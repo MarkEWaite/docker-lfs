@@ -31,7 +31,7 @@ blueocean-web:1.24.7
 bootstrap4-api:4.6.0-3
 bootstrap5-api:5.0.1-2
 bouncycastle-api:2.20
-branch-api:2.6.4
+branch-api:2.6.5
 build-blocker-plugin:1.7.7
 build-name-setter:2.2.0
 build-timeout:1.20
