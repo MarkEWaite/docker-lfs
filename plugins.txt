@@ -31,7 +31,7 @@ blueocean-web:1.24.7
 bootstrap4-api:4.6.0-3
 bootstrap5-api:5.0.1-2
 bouncycastle-api:2.20
-branch-api:2.6.4
+branch-api:2.6.5
 build-blocker-plugin:1.7.7
 build-name-setter:2.2.0
 build-timeout:1.20
@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.3-3
 forensics-api:1.2.0
 git:incrementals;org.jenkins-ci.plugins;4.7.3-rc4395.2b5cfd1d0939
-git-client:incrementals;org.jenkins-ci.plugins;3.7.3-rc2845.ccc852bbfaa0
+git-client:3.8.0
 git-forensics:1.1.0
 git-parameter:0.9.13
 git-server:1.10
@@ -80,7 +80,7 @@ github-branch-source:2.11.1
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
-gitlab-branch-source:incrementals;io.jenkins.plugins;1.5.8-rc603.b241f0132403
+gitlab-branch-source:1.5.8
 gitlab-plugin:1.5.20
 groovy-postbuild:2.5
 h2-api:1.4.199
