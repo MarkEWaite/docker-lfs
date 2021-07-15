@@ -80,7 +80,7 @@ github-branch-source:2.11.1
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
-gitlab-branch-source:incrementals;io.jenkins.plugins;1.5.8-rc603.b241f0132403
+gitlab-branch-source:1.5.8
 gitlab-plugin:1.5.20
 groovy-postbuild:2.5
 h2-api:1.4.199
