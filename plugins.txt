@@ -57,7 +57,7 @@ display-url-api:2.3.5
 docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
-durable-task:1.37
+durable-task:1.38
 echarts-api:5.1.2-2
 elastic-axis:1.4.0
 email-ext:2.83
