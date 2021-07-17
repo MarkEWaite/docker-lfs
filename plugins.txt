@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.3-4
 forensics-api:1.2.1
-git:incrementals;org.jenkins-ci.plugins;4.7.3-rc4395.2b5cfd1d0939
+git:incrementals;org.jenkins-ci.plugins;4.7.3-rc4410.8dafc7f6197f
 git-client:3.8.0
 git-forensics:1.1.0
 git-parameter:0.9.13
