@@ -38,8 +38,8 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.1-23.v51c4e2c879c8
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:2.9.9
-cloudbees-folder:6.15
+cloudbees-bitbucket-branch-source:2.9.10
+cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.1
 code-coverage-api:1.4.0
 command-launcher:1.6
@@ -76,7 +76,7 @@ git-userContent:1.4
 gitea:1.2.1
 github:1.33.1
 github-api:1.123
-github-branch-source:2.11.1
+github-branch-source:2.11.2
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
