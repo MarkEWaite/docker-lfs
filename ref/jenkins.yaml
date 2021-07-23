@@ -557,16 +557,16 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.11+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9.zip"
+              subdir: "jdk-11.0.12_7"
+              url: "https://home.markwaite.net/~mwaite/jdk/openjdk/OpenJDK11U-jdk_x64_windows_11.0.12_7.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.11+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/OpenJDK11U-jdk_x64_linux_hotspot_11.0.11_9.tar.gz"
+              subdir: "jdk-11.0.12_7"
+              url: "https://home.markwaite.net/~mwaite/jdk/openjdk/OpenJDK11U-jdk_x64_linux_11.0.12_7.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.11+9"
+              toolHome: "/home/jagent/tools/openjdk-11.0.12_7"
           - command:
               command: "true"
               label: "freebsd"
