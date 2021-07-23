@@ -30,7 +30,7 @@ blueocean-rest-impl:1.24.8
 blueocean-web:1.24.8
 bootstrap4-api:4.6.0-3
 bootstrap5-api:5.0.2-1
-bouncycastle-api:2.20
+bouncycastle-api:2.21
 branch-api:2.6.5
 build-blocker-plugin:1.7.7
 build-name-setter:2.2.0
@@ -38,8 +38,8 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.1-23.v51c4e2c879c8
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:2.9.9
-cloudbees-folder:6.15
+cloudbees-bitbucket-branch-source:2.9.10
+cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.1
 code-coverage-api:1.4.0
 command-launcher:1.6
@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.3-4
 forensics-api:1.2.1
-git:incrementals;org.jenkins-ci.plugins;4.8.0-rc4424.d0cd8534c2aa
+git:4.8.0
 git-client:3.8.0
 git-forensics:1.1.0
 git-parameter:0.9.13
@@ -76,7 +76,7 @@ git-userContent:1.4
 gitea:1.2.1
 github:1.33.1
 github-api:1.123
-github-branch-source:2.11.1
+github-branch-source:2.11.2
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
@@ -111,7 +111,7 @@ lockable-resources:2.11
 log-parser:2.1
 mailer:1.34
 mapdb-api:1.0.9.0
-matrix-auth:2.6.7
+matrix-auth:2.6.8
 matrix-project:1.19
 maven-plugin:3.12
 mercurial:2.15
