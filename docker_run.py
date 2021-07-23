@@ -90,10 +90,12 @@ def get_windows_dir():
 #-----------------------------------------------------------------------
 
 def get_jagent_java_home():
-    if "jdk11" in docker_build.get_current_branch() or "lts-alpine-with-plugins-add-credentials-and-nodes-rc" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.11+9"
-    else:
-        return "/home/jagent/tools/jdk8u292-b10"
+    # Preparing for 2.302.1 transition to JDK 11 as default agent image
+    return "/home/jagent/tools/jdk-11.0.11+9"
+    # if "jdk11" in docker_build.get_current_branch() or "lts-alpine-with-plugins-add-credentials-and-nodes-rc" in docker_build.get_current_branch():
+    #     return "/home/jagent/tools/jdk-11.0.11+9"
+    # else:
+    #     return "/home/jagent/tools/jdk8u292-b10"
 
 #-----------------------------------------------------------------------
 
