@@ -312,7 +312,7 @@
             <hudson.model.labels.LabelAtom>FreeBSD-12</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">12.2-RELEASE-p8||12.2-RELEASE-p7||12.2-RELEASE-p6||12.2-RELEASE-p5||12.2-RELEASE-p4||12.2-RELEASE-p3||12.2-RELEASE-p2||12.2-RELEASE-p1||12.2-RELEASE||12.1-RELEASE-p13||12.1-RELEASE-p12||12.1-RELEASE-p11||12.1-RELEASE-p10||12.1-RELEASE-p9||12.1-RELEASE-p8||12.1-RELEASE-p7||12.1-RELEASE-p6||12.1-RELEASE-p3||12.1-RELEASE||12.0-RELEASE-p13||12.0-RELEASE</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">12.2-RELEASE-p13||12.2-RELEASE-p12||12.2-RELEASE-p11||12.2-RELEASE-p10||12.2-RELEASE-p9||12.2-RELEASE-p8||12.2-RELEASE-p7||12.2-RELEASE-p6</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
