@@ -84,7 +84,7 @@ stage('Build') {
         def imageToBuild = i
 
         builds[imageToBuild] = {
-            nodeWithTimeout('docker && aws') {
+            nodeWithTimeout('docker') {
                 deleteDir()
 
                 stage('Checkout') {
