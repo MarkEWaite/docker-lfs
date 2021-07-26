@@ -67,8 +67,8 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.3-4
 forensics-api:1.2.1
-git:4.8.0
-git-client:3.8.0
+git:incrementals;org.jenkins-ci.plugins;4.8.1-rc4439.d80c8e8df69d
+git-client:3.9.0
 git-forensics:1.1.0
 git-parameter:0.9.13
 git-server:1.10
@@ -119,7 +119,7 @@ metrics:4.0.2.8
 momentjs:1.1.1
 monitoring:1.88.0
 naginator:1.18.1
-nodelabelparameter:incrementals;org.jenkins-ci.plugins;1.8.2-rc222.edf5eb977c56
+nodelabelparameter:1.9.0
 okhttp-api:3.14.9
 oracle-cloud-infrastructure-compute:1.0.14
 pam-auth:1.6
