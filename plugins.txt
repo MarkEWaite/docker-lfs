@@ -165,7 +165,7 @@ swarm:3.27
 text-finder:1.16
 throttle-concurrents:2.3
 timestamper:1.13
-token-macro:2.15
+token-macro:266.v44a80cf277fd
 trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.1
