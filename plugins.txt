@@ -128,7 +128,7 @@ parameterized-trigger:2.41
 pipeline-build-step:2.14
 pipeline-github-lib:1.0
 pipeline-graph-analysis:1.11
-pipeline-graph-view:42.v3f5aca43e9a5
+pipeline-graph-view:43.v28a75e9eebe7
 pipeline-input-step:2.12
 pipeline-maven:3.10.0
 pipeline-milestone-step:1.3.2
