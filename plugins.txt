@@ -132,12 +132,12 @@ pipeline-graph-view:43.v28a75e9eebe7
 pipeline-input-step:2.12
 pipeline-maven:3.10.0
 pipeline-milestone-step:1.3.2
-pipeline-model-api:1.9.0
-pipeline-model-definition:1.9.0
-pipeline-model-extensions:1.9.0
+pipeline-model-api:1.9.1
+pipeline-model-definition:1.9.1
+pipeline-model-extensions:1.9.1
 pipeline-rest-api:2.19
 pipeline-stage-step:2.5
-pipeline-stage-tags-metadata:1.9.0
+pipeline-stage-tags-metadata:1.9.1
 pipeline-stage-view:2.19
 pipeline-utility-steps:2.8.0
 plain-credentials:1.7
@@ -151,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-scm-api:incrementals;org.jenkins-ci.plugins;2.6.5-rc559.14f2b9da3554
+scm-api:2.6.5
 script-security:1.77
 snakeyaml-api:1.29.1
 sse-gateway:1.24
