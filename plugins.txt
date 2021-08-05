@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.2.5
+analysis-model-api:10.3.0
 ant:1.11
 antisamy-markup-formatter:2.1
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -51,14 +51,14 @@ conventional-commits:0.5.1
 copyartifact:1.46.1
 credentials:2.5
 credentials-binding:1.27
-data-tables-api:1.10.25-2
+data-tables-api:1.10.25-3
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.38
-echarts-api:5.1.2-3
+echarts-api:5.1.2-4
 elastic-axis:1.4.0
 email-ext:2.83
 envinject:2.4.0
