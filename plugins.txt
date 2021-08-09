@@ -47,7 +47,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.51
 configurationslicing:1.52
-conventional-commits:0.5.1
+conventional-commits:0.6.1
 copyartifact:1.46.1
 credentials:2.5
 credentials-binding:1.27
@@ -58,7 +58,7 @@ docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.38
-echarts-api:5.1.2-4
+echarts-api:5.1.2-7
 elastic-axis:1.4.0
 email-ext:2.83
 envinject:2.4.0
@@ -170,7 +170,7 @@ trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.1
 view-job-filters:2.3
-warnings-ng:9.4.0
+warnings-ng:9.5.0
 windows-slaves:1.8
 workflow-aggregator:2.6
 workflow-api:2.46
