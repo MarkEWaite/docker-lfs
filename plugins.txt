@@ -69,7 +69,7 @@ font-awesome-api:5.15.3-4
 forensics-api:1.3.0
 git:4.8.1
 git-client:3.9.0
-git-forensics:1.1.0
+git-forensics:1.2.0
 git-parameter:0.9.13
 git-server:1.10
 git-userContent:1.4
