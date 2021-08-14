@@ -400,7 +400,7 @@
             <hudson.model.labels.LabelAtom>arm64</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">arm||aarch64</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">aarch64</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
