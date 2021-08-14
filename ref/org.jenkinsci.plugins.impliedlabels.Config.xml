@@ -416,7 +416,7 @@
             <hudson.model.labels.LabelAtom>CentOS-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.4||8.3||CentOS-8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.4||CentOS-8.4.2105||8.3||CentOS-8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -432,7 +432,7 @@
             <hudson.model.labels.LabelAtom>OracleServer-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">OracleServer&amp;&amp;(8.6||8.5||8.4||8.3||8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">OracleServer&amp;&amp;(8.6||8.5||8.4||8.4.2105||8.3||8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
