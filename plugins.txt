@@ -74,7 +74,7 @@ git-parameter:0.9.13
 git-server:1.10
 git-userContent:1.4
 gitea:1.2.1
-github:1.33.1
+github:1.34.0
 github-api:1.123
 github-branch-source:2.11.2
 github-scm-filter-aged-refs:0.2.0
