@@ -17,7 +17,7 @@ This job creates a tag in the userContent repository and invokes notifyCommit on
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>master</assignedNode>
+  <assignedNode>master || built-in</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
