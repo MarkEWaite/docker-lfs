@@ -42,7 +42,7 @@
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>!windows &amp;&amp; master</assignedNode>
+  <assignedNode>!windows &amp;&amp; ( master || built-in )</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

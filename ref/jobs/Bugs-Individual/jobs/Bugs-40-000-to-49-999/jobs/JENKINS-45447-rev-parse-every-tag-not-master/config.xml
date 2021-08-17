@@ -63,7 +63,7 @@ This job definition does not reference a name which would match a tag in the bra
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
-  <assignedNode>!master</assignedNode>
+  <assignedNode>!master && !built-in</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

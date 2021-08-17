@@ -47,7 +47,7 @@
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
-  <assignedNode>(!windows&amp;&amp;!cloud) || master</assignedNode>
+  <assignedNode>(!windows&amp;&amp;!cloud) || built-in || master</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

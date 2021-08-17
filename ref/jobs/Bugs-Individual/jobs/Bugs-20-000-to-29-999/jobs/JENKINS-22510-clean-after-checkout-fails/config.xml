@@ -58,7 +58,7 @@
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>master || linux</assignedNode>
+  <assignedNode>master || built-in || linux</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
