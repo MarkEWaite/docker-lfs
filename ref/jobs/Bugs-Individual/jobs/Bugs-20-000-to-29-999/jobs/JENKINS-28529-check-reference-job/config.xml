@@ -28,7 +28,7 @@ The &lt;a href=&quot;/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>master</assignedNode>
+  <assignedNode>master || built-in</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

@@ -55,7 +55,7 @@
     ]
 )
 
-node(&apos;(!windows &amp;&amp; !cloud) || master&apos;) {
+node(&apos;(!windows &amp;&amp; !cloud) || built-in || master&apos;) {
     stage(&apos;create dirs&apos;) {
         deleteDir()
         echo &quot;&quot;&quot;

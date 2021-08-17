@@ -47,7 +47,7 @@
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
     </extensions>
   </scm>
-  <assignedNode>!master</assignedNode>
+  <assignedNode>!master && !built-in</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
