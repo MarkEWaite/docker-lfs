@@ -46,16 +46,6 @@ jenkins:
                 script: "git --version 2>&1 | grep -F 2.20"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
-  - name: "git-2.23"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.23"
-            - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   - name: "git-2.25"
     properties:
     - ? ''
@@ -66,16 +56,6 @@ jenkins:
                 script: "git --version 2>&1 | grep -F 2.25"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
-  - name: "git-2.26"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.26"
-            - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   - name: "git-2.27"
     properties:
     - ? ''
@@ -84,26 +64,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.27"
-            - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
-  - name: "git-2.28"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.28"
-            - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
-  - name: "git-2.29"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.29"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   - name: "git-2.30"
@@ -237,12 +197,7 @@ security:
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild"
     - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String"
     - "staticMethod java.util.Collections shuffle java.util.List java.util.Random"
-    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getMetaClass java.lang.Object"
     - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map"
-    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods sort java.util.Collection"
-    - "staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object"
-    - "staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter createRange java.lang.Object java.lang.Object boolean"
-    - "staticMethod org.kohsuke.groovy.sandbox.impl.Checker checkedBinaryOp java.lang.Object int java.lang.Object"
 unclassified:
   badgePlugin:
     disableFormatHTML: false
@@ -334,7 +289,6 @@ unclassified:
               branches:
               - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
               buildChooser: "default"
-              doGenerateSubmoduleConfigurations: false
               gitTool: "Default"
               userRemoteConfigs:
               - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
@@ -391,16 +345,27 @@ unclassified:
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
+      useHTTPAuth: true
       userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
   logParser:
     legacyFormatting: false
+  mavenModuleSet:
+    localRepository: "default"
+  naginatorPublisher:
+    regexpTimeoutMs: 30000
   pollSCM:
     pollingThreadCount: 7
+  timestamper:
+    allPipelines: true
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
   upstream:
     globalUpstreamFilterStrategy: UseNewest
+  warningsParsers:
+    consoleLogScanningPermitted: false
 tool:
   ant:
     installations:
@@ -409,8 +374,8 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-ant-1.10.9"
-              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.9-bin.zip"
+              subdir: "apache-ant-1.10.11"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.11-bin.zip"
   git:
     installations:
     - home: "git"
@@ -514,10 +479,19 @@ tool:
               command: "true"
               label: "git-2.30 && linux"
               toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.31.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.31 && linux"
+              toolHome: "/usr/bin/git"
           - zip:
               label: "windows"
-              subdir: "PortableGit-2.31.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.31.0.zip"
+              subdir: "PortableGit-2.31.1\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.31.1.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
@@ -586,6 +560,9 @@ tool:
           - zip:
               subdir: "apache-maven-3.8.1"
               url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.8.1-bin.zip"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
   pipelineMaven:
     triggerDownstreamUponResultAborted: false
     triggerDownstreamUponResultFailure: false
