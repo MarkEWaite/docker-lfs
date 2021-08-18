@@ -45,7 +45,7 @@ code-coverage-api:1.4.0
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
-configuration-as-code:1.51
+configuration-as-code:1.52
 configurationslicing:1.52
 conventional-commits:0.7.0
 copyartifact:1.46.1
