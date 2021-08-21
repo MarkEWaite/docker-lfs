@@ -532,18 +532,18 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/openjdk/OpenJDK11U-jdk_x64_windows_11.0.12_7.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.12_7"
-              url: "https://home.markwaite.net/~mwaite/jdk/openjdk/OpenJDK11U-jdk_x64_linux_11.0.12_7.tar.gz"
+              subdir: "jdk-11.0.12+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/openjdk-11.0.12_7"
+              toolHome: "/home/jagent/tools/jdk-11.0.12+7"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.11+9"
+              id: "jdk-11.0.12+7"
   maven:
     installations:
     - name: "maven-latest"
