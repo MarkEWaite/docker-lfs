@@ -58,7 +58,7 @@ docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.39
-echarts-api:5.1.2-9
+echarts-api:5.1.2-11
 elastic-axis:1.4.0
 email-ext:2.83
 envinject:2.4.0
