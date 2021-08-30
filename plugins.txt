@@ -161,7 +161,7 @@ sshd:3.1.0
 ssh-slaves:1.33.0
 structs:1.23
 support-core:2.75
-swarm:3.27
+swarm:3.28
 text-finder:1.16
 throttle-concurrents:2.4
 timestamper:1.13
