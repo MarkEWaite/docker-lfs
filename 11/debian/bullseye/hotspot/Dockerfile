@@ -2,9 +2,7 @@ FROM eclipse-temurin:11.0.12_7-jdk-focal as jre-build
 
 RUN jlink \
          --add-modules ALL-MODULE-PATH \
-         --strip-debug \
          --no-man-pages \
-         --no-header-files \
          --compress=2 \
          --output /javaruntime
 
@@ -13,6 +11,8 @@ FROM debian:bullseye-20210816
 RUN apt-get update && \
     apt-get install -y git curl gpg unzip libfreetype6 libfontconfig1 && \
     rm -rf /var/lib/apt/lists/*
+
+ENV LANG C.UTF-8
 
 ARG TARGETARCH
 ARG GIT_LFS_VERSION=2.13.3
