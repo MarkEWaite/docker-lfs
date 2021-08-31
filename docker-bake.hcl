@@ -22,17 +22,11 @@ group "linux-arm64" {
 }
 
 group "linux-s390x" {
-  targets = [
-    "rhel_ubi8_jdk11",
-    "debian_jdk11",
-  ]
+  targets = []
 }
 
 group "linux-ppc64le" {
-  targets = [
-    "rhel_ubi8_jdk11",
-    "debian_jdk11",
-  ]
+  targets = []
 }
 
 group "windows" {
@@ -70,7 +64,7 @@ variable "GIT_LFS_VERSION" {
 }
 
 variable "PLUGIN_CLI_VERSION" {
-  default = "2.10.0"
+  default = "2.10.2"
 }
 
 target "almalinux_jdk11" {
@@ -195,7 +189,7 @@ target "debian_jdk11" {
     equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts" : "",
     equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts-jdk11" : "",
   ]
-  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le", "linux/s390x"]
+  platforms = ["linux/amd64", "linux/arm64"]
 }
 
 target "debian_slim_jdk8" {
@@ -247,7 +241,7 @@ target "rhel_ubi8_jdk11" {
     equal(LATEST_WEEKLY, "true") ? "${REGISTRY}/${JENKINS_REPO}:rhel-ubi8-jdk11" : "",
     equal(LATEST_LTS, "true") ? "${REGISTRY}/${JENKINS_REPO}:lts-rhel-ubi8-jdk11" : "",
   ]
-  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le", "linux/s390x"]
+  platforms = ["linux/amd64", "linux/arm64"]
 }
 
 # TODO update windows publishing script to use this file
