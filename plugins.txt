@@ -49,7 +49,7 @@ configuration-as-code:1.52
 configurationslicing:1.53-SNAPSHOT (private-02b72d96-mwaite)
 conventional-commits:0.7.2
 copyartifact:1.46.1
-credentials:2.5
+credentials:2.6.1
 credentials-binding:1.27
 data-tables-api:1.10.25-3
 description-setter:1.10
