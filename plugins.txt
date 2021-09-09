@@ -46,7 +46,7 @@ command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.52
-configurationslicing:1.53-SNAPSHOT (private-02b72d96-mwaite)
+configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
 conventional-commits:0.7.2
 copyartifact:1.46.1
 credentials:2.6.1
