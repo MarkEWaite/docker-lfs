@@ -46,10 +46,10 @@ command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.52
-configurationslicing:1.52
+configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
 conventional-commits:0.7.2
 copyartifact:1.46.1
-credentials:2.5
+credentials:2.6.1
 credentials-binding:1.27
 data-tables-api:1.10.25-3
 description-setter:1.10
@@ -101,7 +101,7 @@ job-dsl:1.77
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
-junit:1.52
+junit:1.53
 junit-realtime-test-reporter:0.6
 label-verifier:1.4
 ldap:2.7
