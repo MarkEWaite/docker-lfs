@@ -94,7 +94,7 @@ javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.24.8
-jira:3.5
+jira:3.6
 jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
 job-dsl:1.77
