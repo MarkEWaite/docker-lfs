@@ -40,15 +40,15 @@ caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
-cloudbees-jenkins-advisor:3.3.1
+cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:1.4.1
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.52
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
-conventional-commits:0.7.2
-copyartifact:1.46.1
+conventional-commits:0.7.3
+copyartifact:1.46.2
 credentials:2.6.1
 credentials-binding:1.27
 data-tables-api:1.10.25-3
@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.3.0
 git:incrementals;org.jenkins-ci.plugins;4.8.3-rc4561.c63559cbf765
-git-client:3.9.0
+git-client:incrementals;org.jenkins-ci.plugins;3.9.1-rc2889.064c3539f7f6
 git-forensics:1.2.0
 git-parameter:0.9.13
 git-server:1.10
@@ -87,7 +87,7 @@ h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.25
-implied-labels:0.8-SNAPSHOT (private-d8d2e7b6-mwaite)
+implied-labels:incrementals;org.jenkins-ci.plugins;0.8-rc48.851b540001de
 jackson2-api:2.12.4
 jacoco:3.3.0
 javadoc:1.6
