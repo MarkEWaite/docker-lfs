@@ -48,7 +48,7 @@ config-file-provider:3.8.1
 configuration-as-code:1.52
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
 conventional-commits:0.7.3
-copyartifact:1.46.1
+copyartifact:1.46.2
 credentials:2.6.1
 credentials-binding:1.27
 data-tables-api:1.10.25-3
