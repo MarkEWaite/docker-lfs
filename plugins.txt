@@ -51,7 +51,7 @@ conventional-commits:0.7.3
 copyartifact:1.46.2
 credentials:2.6.1
 credentials-binding:1.27
-data-tables-api:1.10.25-3
+data-tables-api:1.11.2-1
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.17
