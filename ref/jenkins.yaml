@@ -387,8 +387,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "PortableGit-2.33.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.33.0.zip"
+              subdir: "MinGit-2.33.0.2\\mingw64\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.33.0.2-64-bit.zip"
     - home: "git"
       name: "git-2.11.1"
       properties:
@@ -499,8 +499,8 @@ tool:
               toolHome: "/usr/bin/git"
           - zip:
               label: "windows"
-              subdir: "PortableGit-2.33.0\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/PortableGit-2.33.0.zip"
+              subdir: "MinGit-2.33.0.2\\mingw64\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.33.0.2-64-bit.zip"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
