@@ -90,12 +90,12 @@ def get_windows_dir():
 #-----------------------------------------------------------------------
 
 def get_jagent_java_home():
-    # Preparing for 2.302.1 transition to JDK 11 as default agent image
-    return "/home/jagent/tools/jdk-11.0.11+9"
+    # Preparing for 2.303.1 transition to JDK 11 as default agent image
+    return "/home/jagent/tools/jdk-11.0.12+7"
     # if "jdk11" in docker_build.get_current_branch() or "lts-alpine-with-plugins-add-credentials-and-nodes-rc" in docker_build.get_current_branch():
-    #     return "/home/jagent/tools/jdk-11.0.11+9"
+    #     return "/home/jagent/tools/jdk-11.0.12+7"
     # else:
-    #     return "/home/jagent/tools/jdk8u292-b10"
+    #     return "/home/jagent/tools/jdk8u302-b08"
 
 #-----------------------------------------------------------------------
 
@@ -175,7 +175,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
-                       "--env", "LANG=en_US.utf8",
+                       "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
