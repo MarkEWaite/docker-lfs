@@ -64,7 +64,7 @@
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
           <refspec>+refs/heads/master:refs/remotes/origin/master +refs/heads/JENKINS-63179:refs/remotes/origin/JENKINS-63179</refspec>
-          <url>git://github.com/MarkEWaite/jenkins-bugs.git</url>
+          <url>https://github.com/MarkEWaite/jenkins-bugs.git</url>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
