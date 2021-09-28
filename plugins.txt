@@ -76,7 +76,7 @@ git-userContent:1.4
 gitea:incrementals;org.jenkins-ci.plugins;1.2.2-rc167.83729a9a27ce
 github:1.34.1
 github-api:1.133
-github-branch-source:2.11.2
+github-branch-source:2.11.3
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
