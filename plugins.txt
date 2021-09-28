@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.3.0
+analysis-model-api:10.3.1
 ant:1.11
 antisamy-markup-formatter:2.1
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -30,7 +30,7 @@ blueocean-rest-impl:1.25.0
 blueocean-web:1.25.0
 bootstrap4-api:4.6.0-3
 bootstrap5-api:5.1.1-1
-bouncycastle-api:2.24
+bouncycastle-api:2.25
 branch-api:2.7.0
 build-blocker-plugin:1.7.7
 build-name-setter:2.2.0
@@ -160,7 +160,7 @@ ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
 structs:1.23
-support-core:2.75
+support-core:2.76
 swarm:3.28
 text-finder:1.16
 throttle-concurrents:2.4
