@@ -1,19 +1,16 @@
-# FIXME(oleg_nenashev): This is not an official AdoptOpenJDK Docker Image.
-# There is no official Alpine images at the moment.
-# Needs upgrade when/if there is an official alpine image.
-FROM adoptopenjdk/openjdk8:jdk8u302-b08-alpine
+FROM eclipse-temurin:17_35-jdk-focal as jre-build
 
-RUN apk add --no-cache \
-  bash \
-  coreutils \
-  curl \
-  git \
-  gnupg \
-  openssh-client \
-  tini \
-  ttf-dejavu \
-  tzdata \
-  unzip
+RUN jlink \
+         --add-modules ALL-MODULE-PATH \
+         --no-man-pages \
+         --compress=2 \
+         --output /javaruntime
+
+FROM debian:bullseye-20210902
+
+RUN apt-get update && \
+    apt-get install -y git curl gpg unzip libfreetype6 libfontconfig1 && \
+    rm -rf /var/lib/apt/lists/*
 
 ENV LANG C.UTF-8
 
@@ -52,8 +49,8 @@ ENV REF $REF
 # ensure you use the same uid
 RUN mkdir -p $JENKINS_HOME \
   && chown ${uid}:${gid} $JENKINS_HOME \
-  && addgroup -g ${gid} ${group} \
-  && adduser -h "$JENKINS_HOME" -u ${uid} -G ${group} -s /bin/bash -D ${user}
+  && groupadd -g ${gid} ${group} \
+  && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 
 # Jenkins home directory is a volume, so configuration and build history
 # can be persisted and survive image upgrades
@@ -63,6 +60,16 @@ VOLUME $JENKINS_HOME
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 RUN mkdir -p ${REF}/init.groovy.d
+
+# Use tini as subreaper in Docker container to adopt zombie processes
+ARG TINI_VERSION=v0.19.0
+COPY tini_pub.gpg "${JENKINS_HOME}/tini_pub.gpg"
+RUN curl -fsSL "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static-${TARGETARCH}" -o /sbin/tini \
+  && curl -fsSL "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static-${TARGETARCH}.asc" -o /sbin/tini.asc \
+  && gpg --no-tty --import "${JENKINS_HOME}/tini_pub.gpg" \
+  && gpg --verify /sbin/tini.asc \
+  && rm -rf /sbin/tini.asc /root/.gnupg \
+  && chmod +x /sbin/tini
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
@@ -95,6 +102,11 @@ EXPOSE ${http_port}
 EXPOSE ${agent_port}
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
+ENV JENKINS_ENABLE_FUTURE_JAVA=true
+
+ENV JAVA_HOME=/opt/java/openjdk
+ENV PATH "${JAVA_HOME}/bin:${PATH}"
+COPY --from=jre-build /javaruntime $JAVA_HOME
 
 USER ${user}
 
