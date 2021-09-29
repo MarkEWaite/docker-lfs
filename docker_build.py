@@ -42,6 +42,8 @@ def get_dockerfile(branch_name):
         return "Dockerfile-slim"
     if "jdk11" in branch_name:
         return "Dockerfile-jdk11"
+    if "jdk8" in branch_name:
+        return "Dockerfile-jdk8"
     return "Dockerfile"
 
 #-----------------------------------------------------------------------
