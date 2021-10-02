@@ -41,7 +41,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
-code-coverage-api:1.4.1
+code-coverage-api:2.0.0
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
