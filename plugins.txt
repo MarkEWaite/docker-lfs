@@ -1,7 +1,7 @@
 ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.3.1
-ant:1.11
+ant:1.12
 antisamy-markup-formatter:2.1
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
@@ -41,11 +41,11 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
-code-coverage-api:1.4.1
+code-coverage-api:2.0.0
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
-configuration-as-code:1.53
+configuration-as-code:1.54
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
 conventional-commits:0.7.4
 copyartifact:1.46.2
@@ -58,7 +58,7 @@ docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.39
-echarts-api:5.1.2-11
+echarts-api:5.2.1-2
 elastic-axis:1.4.1
 email-ext:2.83
 envinject:2.4.0
@@ -68,7 +68,7 @@ favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.4.0
 git:incrementals;org.jenkins-ci.plugins;4.8.3-rc4595.0a40c330ee35
-git-client:incrementals;org.jenkins-ci.plugins;3.9.1-rc2907.c91fb6e14b42
+git-client:3.10.0
 git-forensics:1.2.1
 git-parameter:0.9.13
 git-server:1.10
@@ -86,9 +86,9 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
-htmlpublisher:1.25
+htmlpublisher:1.26
 implied-labels:incrementals;org.jenkins-ci.plugins;0.8-rc48.851b540001de
-jackson2-api:2.12.4
+jackson2-api:2.13.0-226.v0c5dd2d2fd2a
 jacoco:3.3.0
 javadoc:1.6
 jaxb:2.3.0.1
@@ -145,7 +145,7 @@ platformlabeler:1018.v93737f630767
 plugin-util-api:2.5.0
 pollscm:1.3.1
 popper-api:1.16.1-2
-popper2-api:2.10.1-1
+popper2-api:2.10.2-1
 preSCMbuildstep:0.3
 promoted-builds:3.10
 pubsub-light:1.16
