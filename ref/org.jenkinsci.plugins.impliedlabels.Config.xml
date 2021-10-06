@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.7">
+<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.8-rc48.851b540001de">
   <implications class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
     <c class="list">
       <org.jenkinsci.plugins.impliedlabels.Implication>
@@ -288,7 +288,7 @@
             <hudson.model.labels.LabelAtom>java-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||OpenBSD</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -296,7 +296,7 @@
             <hudson.model.labels.LabelAtom>java-11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||OpenBSD</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -465,6 +465,14 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelAtom">testing</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>FreeBSD-13</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">13.0-RELEASE-p12||13.0-RELEASE-p11||13.0-RELEASE-p10||13.0-RELEASE-p9||13.0-RELEASE-p8||13.0-RELEASE-p7||13.0-RELEASE-p6||13.0-RELEASE-p5||13.0-RELEASE-p4||13.0-RELEASE-p3||13.0-RELEASE-p2</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
