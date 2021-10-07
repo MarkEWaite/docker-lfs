@@ -41,7 +41,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
-code-coverage-api:2.0.0
+code-coverage-api:2.0.1
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
@@ -51,7 +51,7 @@ conventional-commits:0.7.4
 copyartifact:1.46.2
 credentials:2.6.1
 credentials-binding:1.27
-data-tables-api:1.11.2-1
+data-tables-api:1.11.3-1
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.17
@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.4.0
-git:incrementals;org.jenkins-ci.plugins;4.8.3-rc4595.0a40c330ee35
+git:4.8.3
 git-client:3.10.0
 git-forensics:1.2.1
 git-parameter:0.9.13
