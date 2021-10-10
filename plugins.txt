@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.3.1
+analysis-model-api:10.5.1
 ant:1.12
 antisamy-markup-formatter:2.1
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.4.0
-git:4.8.3
+git:4.9.0
 git-client:3.10.0
 git-forensics:1.2.1
 git-parameter:0.9.13
@@ -185,4 +185,4 @@ workflow-step-api:2.24
 workflow-support:3.8
 ws-cleanup:0.39
 xshell:0.10
-xunit:3.0.3
+xunit:3.0.4
