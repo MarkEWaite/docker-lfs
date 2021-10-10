@@ -185,4 +185,4 @@ workflow-step-api:2.24
 workflow-support:3.8
 ws-cleanup:0.39
 xshell:0.10
-xunit:3.0.3
+xunit:3.0.4
