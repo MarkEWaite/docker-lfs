@@ -66,7 +66,7 @@ envinject-api:1.7
 external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
-forensics-api:1.4.0
+forensics-api:1.5.0
 git:4.9.0
 git-client:3.10.0
 git-forensics:1.2.1
@@ -173,7 +173,7 @@ view-job-filters:2.3
 warnings-ng:9.5.0
 windows-slaves:1.8
 workflow-aggregator:2.6
-workflow-api:2.46
+workflow-api:2.47
 workflow-basic-steps:2.24
 workflow-cps:2.94
 workflow-cps-global-lib:incrementals;org.jenkins-ci.plugins.workflow;2.22-rc541.14bc6519743f
