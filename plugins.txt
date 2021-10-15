@@ -1,8 +1,8 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.5.1
+analysis-model-api:10.5.2
 ant:1.12
-antisamy-markup-formatter:2.1
+antisamy-markup-formatter:2.3
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
 authentication-tokens:1.4
@@ -41,7 +41,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
-code-coverage-api:2.0.1
+code-coverage-api:2.0.2
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
@@ -60,7 +60,7 @@ dtkit-api:3.0.0
 durable-task:1.39
 echarts-api:5.2.1-2
 elastic-axis:1.4.1
-email-ext:2.83
+email-ext:2.84
 envinject:2.4.0
 envinject-api:1.7
 external-monitor-job:1.7
@@ -81,7 +81,7 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
 gitlab-branch-source:1.5.9
-gitlab-plugin:1.5.20
+gitlab-plugin:1.5.22
 groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
