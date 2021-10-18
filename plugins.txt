@@ -59,7 +59,7 @@ docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.39
 echarts-api:5.2.1-2
-elastic-axis:1.4.1
+elastic-axis:1.4.2
 email-ext:2.84
 envinject:2.4.0
 envinject-api:1.7
@@ -113,7 +113,7 @@ mailer:1.34
 mapdb-api:1.0.9.0
 matrix-auth:2.6.8
 matrix-project:1.19
-maven-plugin:3.13
+maven-plugin:3.14
 mercurial:2.15
 metrics:4.0.2.8
 momentjs:1.1.1
