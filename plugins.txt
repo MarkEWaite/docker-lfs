@@ -47,7 +47,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.54
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
-conventional-commits:0.7.4
+conventional-commits:0.8.0
 copyartifact:1.46.2
 credentials:2.6.1
 credentials-binding:1.27
@@ -86,9 +86,9 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
-htmlpublisher:1.26
+htmlpublisher:1.27
 implied-labels:incrementals;org.jenkins-ci.plugins;0.8-rc48.851b540001de
-jackson2-api:2.13.0-226.v0c5dd2d2fd2a
+jackson2-api:2.13.0-230.v59243c64b0a5
 jacoco:3.3.0
 javadoc:1.6
 jaxb:2.3.0.1
@@ -113,7 +113,7 @@ mailer:1.34
 mapdb-api:1.0.9.0
 matrix-auth:2.6.8
 matrix-project:1.19
-maven-plugin:3.14
+maven-plugin:3.15
 mercurial:2.15
 metrics:4.0.2.8
 momentjs:1.1.1
