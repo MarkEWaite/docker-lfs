@@ -107,7 +107,7 @@ label-verifier:1.4
 ldap:2.7
 leastload:3.0.0
 locale:1.4
-lockable-resources:2.11
+lockable-resources:2.12
 log-parser:2.1
 mailer:1.34
 mapdb-api:1.0.9.0
@@ -151,6 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
+schedule-build:incrementals;org.jenkins-ci.plugins;1.0.0-rc95.5ff894f2b1db
 scm-api:2.6.5
 script-security:1.78
 snakeyaml-api:1.29.1
