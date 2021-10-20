@@ -359,7 +359,7 @@ unclassified:
   pollSCM:
     pollingThreadCount: 7
   scheduleBuild:
-    timeZone: "Europe/Paris"
+    timeZone: "America/Denver"
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
