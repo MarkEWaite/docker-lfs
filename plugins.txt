@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.5.2
+analysis-model-api:10.5.3
 ant:1.12
 antisamy-markup-formatter:2.3
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -151,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-schedule-build:incrementals;org.jenkins-ci.plugins;1.0.0-rc95.5ff894f2b1db
+schedule-build:incrementals;org.jenkins-ci.plugins;1.0.0-rc110.ed7ab8946a5d
 scm-api:2.6.5
 script-security:1.78
 snakeyaml-api:1.29.1
