@@ -358,6 +358,9 @@ unclassified:
     regexpTimeoutMs: 30000
   pollSCM:
     pollingThreadCount: 7
+  scheduleBuild:
+    defaultScheduleTime: 21:00:00
+      timeZone: America/Denver
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
