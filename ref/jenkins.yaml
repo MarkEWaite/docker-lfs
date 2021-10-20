@@ -359,7 +359,6 @@ unclassified:
   pollSCM:
     pollingThreadCount: 7
   scheduleBuild:
-    defaultScheduleTime: "23:00:00"
     timeZone: "Europe/Paris"
   timestamper:
     allPipelines: true
