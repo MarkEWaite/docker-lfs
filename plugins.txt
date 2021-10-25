@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
 authentication-tokens:1.4
 authorize-project:1.4.0
-badge:1.8
+badge:1.9
 basic-branch-build-strategies:1.3.2
 bitbucket:1.1.29
 blueocean-bitbucket-pipeline:1.25.1
