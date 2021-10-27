@@ -170,7 +170,7 @@ timestamper:1.13
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
 variant:1.4
-versioncolumn:2.1
+versioncolumn:2.2
 view-job-filters:2.3
 warnings-ng:9.5.1
 windows-slaves:1.8
