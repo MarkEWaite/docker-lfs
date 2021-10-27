@@ -73,7 +73,7 @@ git-forensics:1.2.1
 git-parameter:0.9.13
 git-server:1.10
 git-userContent:1.4
-gitea:incrementals;org.jenkins-ci.plugins;1.2.2-rc167.83729a9a27ce
+gitea:1.3.0
 github:1.34.1
 github-api:1.133
 github-branch-source:2.11.3
