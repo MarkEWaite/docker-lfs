@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.5.0
-git:incrementals;org.jenkins-ci.plugins;4.9.1-rc4558.5f165e1ba1a4
+git:incrementals;org.jenkins-ci.plugins;4.9.1-rc4569.b7fbdac2b418
 git-client:3.10.0
 git-forensics:1.2.1
 git-parameter:0.9.13
@@ -97,7 +97,7 @@ jenkins-design-language:1.25.1
 jira:3.6
 jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
-job-dsl:1.78
+job-dsl:1.78.1
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
@@ -151,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-schedule-build:incrementals;org.jenkins-ci.plugins;146.v8e6a9287aaa6
+schedule-build:149.v3f2558fe12e4
 scm-api:2.6.5
 script-security:1.78
 snakeyaml-api:1.29.1
@@ -161,7 +161,7 @@ ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
 structs:1.23
-support-core:2.76
+support-core:2.77
 swarm:3.28
 testng-plugin:incrementals;org.jenkins-ci.plugins;1.16-rc514.150eeeb3414e
 text-finder:1.16
