@@ -161,7 +161,7 @@ ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
 structs:1.23
-support-core:2.76
+support-core:2.77
 swarm:3.28
 testng-plugin:incrementals;org.jenkins-ci.plugins;1.16-rc514.150eeeb3414e
 text-finder:1.16
