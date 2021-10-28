@@ -151,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-schedule-build:incrementals;org.jenkins-ci.plugins;146.v8e6a9287aaa6
+schedule-build:149.v3f2558fe12e4
 scm-api:2.6.5
 script-security:1.78
 snakeyaml-api:1.29.1
