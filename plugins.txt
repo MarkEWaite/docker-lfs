@@ -67,7 +67,7 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
 forensics-api:1.5.0
-git:incrementals;org.jenkins-ci.plugins;4.9.1-rc4569.b7fbdac2b418
+git:4.10.0
 git-client:3.10.0
 git-forensics:1.2.1
 git-parameter:0.9.13
@@ -120,7 +120,7 @@ momentjs:1.1.1
 monitoring:1.88.0
 naginator:1.18.1
 nodelabelparameter:1.9.2
-okhttp-api:3.14.9
+okhttp-api:3.14.9-20211029
 oracle-cloud-infrastructure-compute:1.0.14
 pam-auth:1.6
 parallel-test-executor:1.13
@@ -151,7 +151,7 @@ promoted-builds:3.10
 pubsub-light:1.16
 resource-disposer:0.16
 run-condition:1.5
-schedule-build:149.v3f2558fe12e4
+schedule-build:178.v32999348869c
 scm-api:2.6.5
 script-security:1.78
 snakeyaml-api:1.29.1
