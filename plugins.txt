@@ -62,7 +62,7 @@ echarts-api:5.2.1-2
 elastic-axis:1.4.2
 email-ext:2.84
 envinject:2.4.0
-envinject-api:1.7
+envinject-api:1.8
 external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-1
