@@ -41,7 +41,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:2.9.11
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
-code-coverage-api:2.0.3
+code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.1
@@ -177,8 +177,8 @@ windows-slaves:1.8
 workflow-aggregator:2.6
 workflow-api:2.47
 workflow-basic-steps:2.24
-workflow-cps:2.94
-workflow-cps-global-lib:incrementals;org.jenkins-ci.plugins.workflow;2.22-rc541.14bc6519743f
+workflow-cps:2633.v6baeedc13805
+workflow-cps-global-lib:545.v7b28cce323cf
 workflow-durable-task-step:2.40
 workflow-job:2.42
 workflow-multibranch:2.26
