@@ -58,7 +58,7 @@ docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:1.39
-echarts-api:5.2.1-2
+echarts-api:5.2.2-1
 elastic-axis:1.4.2
 email-ext:2.84
 envinject:2.4.0
@@ -141,7 +141,7 @@ pipeline-stage-tags-metadata:1.9.2
 pipeline-stage-view:2.19
 pipeline-utility-steps:2.10.0
 plain-credentials:1.7
-platformlabeler:1018.v93737f630767
+platformlabeler:1091.v6e861c253a70
 plugin-util-api:2.5.1
 pollscm:1.3.1
 popper-api:1.16.1-2
