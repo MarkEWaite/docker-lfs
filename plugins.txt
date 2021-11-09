@@ -22,7 +22,6 @@ blueocean-i18n:1.25.1
 blueocean-jwt:1.25.1
 blueocean-personalization:1.25.1
 blueocean-pipeline-api-impl:1.25.1
-blueocean-pipeline-editor:1.25.1
 blueocean-pipeline-scm-api:1.25.1
 blueocean-rest:1.25.1
 blueocean-rest-impl:1.25.1
