@@ -45,7 +45,7 @@ conditional-buildstep:1.4.1
 config-file-provider:3.8.1
 configuration-as-code:1.54
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
-conventional-commits:0.9.0
+conventional-commits:0.10.0
 copyartifact:1.46.2
 credentials:2.6.2
 credentials-binding:1.27
