@@ -453,14 +453,6 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>CentOS-8</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.4||CentOS-8.4.2105||8.3||CentOS-8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>OracleServer-7</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
@@ -489,14 +481,6 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$And">openSUSE&amp;&amp;(15.0||15.1||15.2||15.3||15.4||15.5||15.6)</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>controller</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelAtom">master</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
