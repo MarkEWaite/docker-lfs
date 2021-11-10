@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.8-rc48.851b540001de">
+<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.9-rc50.3ad4692986b8">
   <implications class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
     <c class="list">
       <org.jenkinsci.plugins.impliedlabels.Implication>
@@ -73,6 +73,38 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelAtom">arm</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.35+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.35||git-2.36+</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.34+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.34||git-2.35+</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.33+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.33||git-2.34+</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>git-2.32+</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">git-2.32||git-2.33+</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -264,7 +296,7 @@
             <hudson.model.labels.LabelAtom>git-lfs</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[26]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[30]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -281,6 +313,14 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelAtom">openbsd</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>FreeBSD-13</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">13.0-RELEASE-p12||13.0-RELEASE-p11||13.0-RELEASE-p10||13.0-RELEASE-p9||13.0-RELEASE-p8||13.0-RELEASE-p7||13.0-RELEASE-p6||13.0-RELEASE-p5||13.0-RELEASE-p4||13.0-RELEASE-p3||13.0-RELEASE-p2</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -304,7 +344,7 @@
             <hudson.model.labels.LabelAtom>java8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[36]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[41]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -312,7 +352,7 @@
             <hudson.model.labels.LabelAtom>java11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[37]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[42]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -320,7 +360,7 @@
             <hudson.model.labels.LabelAtom>jdk-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[36]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[41]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -328,7 +368,7 @@
             <hudson.model.labels.LabelAtom>jdk-11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[37]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[42]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -336,7 +376,7 @@
             <hudson.model.labels.LabelAtom>jdk8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[36]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[41]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -344,7 +384,7 @@
             <hudson.model.labels.LabelAtom>jdk11</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[37]/atoms/c/hudson.model.labels.LabelAtom"/>
+        <expression class="hudson.model.labels.LabelAtom" reference="../../org.jenkinsci.plugins.impliedlabels.Implication[42]/atoms/c/hudson.model.labels.LabelAtom"/>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -413,14 +453,6 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>CentOS-8</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelExpression$And">(CentOS||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.4||CentOS-8.4.2105||8.3||CentOS-8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>OracleServer-7</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
@@ -453,14 +485,6 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>controller</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelAtom">master</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>Debian-testing</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
@@ -469,10 +493,10 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>FreeBSD-13</hudson.model.labels.LabelAtom>
+            <hudson.model.labels.LabelAtom>highram</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">13.0-RELEASE-p12||13.0-RELEASE-p11||13.0-RELEASE-p10||13.0-RELEASE-p9||13.0-RELEASE-p8||13.0-RELEASE-p7||13.0-RELEASE-p6||13.0-RELEASE-p5||13.0-RELEASE-p4||13.0-RELEASE-p3||13.0-RELEASE-p2</expression>
+        <expression class="hudson.model.labels.LabelAtom">highmem</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
