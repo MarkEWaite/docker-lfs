@@ -119,7 +119,7 @@ monitoring:1.88.0
 naginator:1.18.1
 nodelabelparameter:1.9.2
 okhttp-api:4.9.2-20211102
-oracle-cloud-infrastructure-compute:1.0.14
+oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
 parallel-test-executor:1.13
 parameterized-trigger:2.41
