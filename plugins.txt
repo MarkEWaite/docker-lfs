@@ -55,7 +55,7 @@ display-url-api:2.3.5
 docker-commons:1.17
 docker-workflow:1.26
 dtkit-api:3.0.0
-durable-task:1.39
+durable-task:493.v195aefbb0ff2
 echarts-api:5.2.2-1
 elastic-axis:1.4.2
 email-ext:2.84
@@ -176,7 +176,7 @@ workflow-aggregator:2.6
 workflow-api:2.47
 workflow-basic-steps:2.24
 workflow-cps:2633.v6baeedc13805
-workflow-cps-global-lib:545.v7b28cce323cf
+workflow-cps-global-lib:548.v9085a486966a
 workflow-durable-task-step:1097.veac1aacfbda8
 workflow-job:2.42
 workflow-multibranch:2.26
