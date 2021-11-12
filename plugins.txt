@@ -122,7 +122,7 @@ okhttp-api:4.9.2-20211102
 oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
 parallel-test-executor:1.13
-parameterized-trigger:2.41
+parameterized-trigger:2.42
 pipeline-build-step:2.15
 pipeline-github-lib:1.0
 pipeline-graph-analysis:1.11
