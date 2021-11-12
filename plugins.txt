@@ -84,7 +84,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
-htmlpublisher:1.27
+htmlpublisher:1.28
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc50.3ad4692986b8
 jackson2-api:2.13.0-230.v59243c64b0a5
 jacoco:3.3.0
@@ -122,7 +122,7 @@ okhttp-api:4.9.2-20211102
 oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
 parallel-test-executor:1.13
-parameterized-trigger:2.41
+parameterized-trigger:2.42
 pipeline-build-step:2.15
 pipeline-github-lib:1.0
 pipeline-graph-analysis:1.11
@@ -159,7 +159,7 @@ ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
 structs:1.23
-support-core:2.77
+support-core:2.78
 swarm:3.28
 testng-plugin:554.va4a552116332
 text-finder:1.16
