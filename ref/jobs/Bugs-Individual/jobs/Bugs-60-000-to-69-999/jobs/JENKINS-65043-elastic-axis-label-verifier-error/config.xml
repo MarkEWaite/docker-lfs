@@ -1,11 +1,19 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@1.18">
+<matrix-project plugin="matrix-project@1.19">
   <actions/>
   <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-65043&quot;&gt;JENKINS-65043&lt;/a&gt; reports the elastic axis label verifier fails in 2.249.1 and later.
 Test interactively with the elastic axis label field to confirm that comma separated values are honored and that suggestions are offered based on available labels.
   </description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>13</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
@@ -15,9 +23,9 @@ Test interactively with the elastic axis label field to confirm that comma separ
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <axes>
-    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.3-SNAPSHOT">
+    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.4.2">
       <name>JENKINS-65043-label</name>
-      <label>windows , linux &amp;&amp; !cloud &amp;&amp; !master</label>
+      <label>windows , linux &amp;&amp; !cloud &amp;&amp; !master &amp;&amp; !built-in</label>
       <ignoreOffline>true</ignoreOffline>
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
