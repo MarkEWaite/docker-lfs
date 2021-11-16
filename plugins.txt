@@ -112,7 +112,7 @@ mapdb-api:1.0.9.0
 matrix-auth:2.6.8
 matrix-project:1.19
 maven-plugin:3.15.1
-mercurial:2.15
+mercurial:2.16
 metrics:4.0.2.8
 momentjs:1.1.1
 monitoring:1.88.0
