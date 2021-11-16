@@ -397,7 +397,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.33.1\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.34.0\\mingw64\\bin\\git.exe"
     - home: "git"
       name: "git-windows"
       properties:
@@ -405,8 +405,8 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "MinGit-2.33.1\\mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.33.1-64-bit.zip"
+              subdir: "MinGit-2.34.0\\mingw64\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.34.0-64-bit.zip"
     - home: "git"
       name: "git-2.11.1"
       properties:
@@ -519,6 +519,19 @@ tool:
               command: "exit 0"
               label: "windows"
               toolHome: "C:\\tools\\MinGit-2.33.1\\mingw64\\bin\\git.exe"
+    - home: "git"
+      name: "git-2.34.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.34 && linux"
+              toolHome: "/usr/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.34.0\\mingw64\\bin\\git.exe"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
