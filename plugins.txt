@@ -162,7 +162,7 @@ structs:1.23
 support-core:2.78
 swarm:3.28
 testng-plugin:554.va4a552116332
-text-finder:1.16
+text-finder:1.17
 throttle-concurrents:2.4
 timestamper:1.13
 token-macro:267.vcdaea6462991
