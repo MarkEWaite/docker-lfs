@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.6.0
+analysis-model-api:10.7.0
 ant:1.12
 antisamy-markup-formatter:2.4
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -36,7 +36,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:2.9.11
+cloudbees-bitbucket-branch-source:726.vb0c1ea6c9336
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:2.0.4
