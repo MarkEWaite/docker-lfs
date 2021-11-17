@@ -71,7 +71,7 @@ git-forensics:1.3.0
 git-parameter:0.9.13
 git-server:1.10
 git-userContent:1.4
-gitea:1.3.0
+gitea:1.4.0--rc182.9eb947470fcf
 github:1.34.1
 github-api:1.133
 github-branch-source:2.11.3
