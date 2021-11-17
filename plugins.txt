@@ -1,6 +1,6 @@
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.7.0
+analysis-model-api:10.8.0
 ant:1.12
 antisamy-markup-formatter:2.4
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -27,7 +27,7 @@ blueocean-rest:1.25.1
 blueocean-rest-impl:1.25.1
 blueocean-web:1.25.1
 bootstrap4-api:4.6.0-3
-bootstrap5-api:5.1.3-1
+bootstrap5-api:5.1.3-2
 bouncycastle-api:2.25
 branch-api:2.7.0
 build-blocker-plugin:1.7.7
@@ -58,7 +58,7 @@ dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.2.2-1
 elastic-axis:1.4.2
-email-ext:2.84
+email-ext:2.85
 envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:1.7
@@ -71,7 +71,7 @@ git-forensics:1.3.0
 git-parameter:0.9.13
 git-server:1.10
 git-userContent:1.4
-gitea:1.3.0
+gitea:1.4.0--rc182.9eb947470fcf
 github:1.34.1
 github-api:1.133
 github-branch-source:2.11.3
@@ -112,7 +112,7 @@ mapdb-api:1.0.9.0
 matrix-auth:2.6.8
 matrix-project:1.19
 maven-plugin:3.15.1
-mercurial:2.15
+mercurial:2.16
 metrics:4.0.2.8
 momentjs:1.1.1
 monitoring:1.88.0
@@ -162,8 +162,8 @@ structs:1.23
 support-core:2.78
 swarm:3.28
 testng-plugin:554.va4a552116332
-text-finder:1.16
-throttle-concurrents:2.4
+text-finder:1.17
+throttle-concurrents:2.5
 timestamper:1.13
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
