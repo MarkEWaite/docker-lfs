@@ -2,7 +2,7 @@ ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.8.0
 ant:1.12
-antisamy-markup-formatter:2.4
+antisamy-markup-formatter:2.5
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
 authentication-tokens:1.4
@@ -164,7 +164,7 @@ swarm:3.28
 testng-plugin:554.va4a552116332
 text-finder:1.17
 throttle-concurrents:2.5
-timestamper:1.13
+timestamper:1.14
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
 variant:1.4
