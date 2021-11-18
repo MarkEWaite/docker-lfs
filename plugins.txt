@@ -139,7 +139,7 @@ pipeline-stage-tags-metadata:1.9.3
 pipeline-stage-view:2.19
 pipeline-utility-steps:2.10.0
 plain-credentials:1.7
-platformlabeler:1091.v6e861c253a70
+platformlabeler:1149.v1f78b2a3c1de
 plugin-util-api:2.5.1
 pollscm:1.3.1
 popper-api:1.16.1-2
