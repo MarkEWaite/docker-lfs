@@ -9,7 +9,7 @@ authentication-tokens:1.4
 authorize-project:1.4.0
 badge:1.9
 basic-branch-build-strategies:1.3.2
-bitbucket:1.1.29
+bitbucket:1.1.30
 blueocean-commons:1.25.2
 blueocean-config:1.25.2
 blueocean-core-js:1.25.2
@@ -27,7 +27,7 @@ blueocean-rest:1.25.2
 blueocean-rest-impl:1.25.2
 blueocean-web:1.25.2
 bootstrap4-api:4.6.0-3
-bootstrap5-api:5.1.3-2
+bootstrap5-api:5.1.3-3
 bouncycastle-api:2.25
 branch-api:2.7.0
 build-blocker-plugin:1.7.7
@@ -63,8 +63,8 @@ envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:1.7
 favorite:2.3.3
-font-awesome-api:5.15.4-2
-forensics-api:1.6.0
+font-awesome-api:5.15.4-3
+forensics-api:1.7.0
 git:incrementals;org.jenkins-ci.plugins;4.10.1-rc4580.33ae9f9187d5
 git-client:3.10.0
 git-forensics:1.3.0
