@@ -177,7 +177,7 @@ workflow-api:2.47
 workflow-basic-steps:2.24
 workflow-cps:2633.v6baeedc13805
 workflow-cps-global-lib:548.v9085a486966a
-workflow-durable-task-step:1097.veac1aacfbda8
+workflow-durable-task-step:1100.v08e8ce12d697
 workflow-job:2.42
 workflow-multibranch:2.26
 workflow-scm-step:2.13
