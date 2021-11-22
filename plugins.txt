@@ -42,7 +42,7 @@ cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
-config-file-provider:3.8.1
+config-file-provider:3.8.2
 configuration-as-code:1.54
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc412.431f75f10263
 conventional-commits:0.10.0
