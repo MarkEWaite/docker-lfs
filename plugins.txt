@@ -36,7 +36,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:726.vb0c1ea6c9336
+cloudbees-bitbucket-branch-source:731.v1f980b7eba32
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:2.0.4
@@ -125,7 +125,7 @@ parallel-test-executor:1.13
 parameterized-trigger:2.42
 pipeline-build-step:2.15
 pipeline-github-lib:1.0
-pipeline-graph-analysis:1.11
+pipeline-graph-analysis:1.12
 pipeline-graph-view:46.vedbf23da719f
 pipeline-input-step:2.12
 pipeline-maven:3.10.0
@@ -158,7 +158,7 @@ ssh-agent:1.23
 ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
-structs:1.23
+structs:1.24
 support-core:2.78
 swarm:3.28
 testng-plugin:554.va4a552116332
@@ -170,14 +170,14 @@ trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.7.0
+warnings-ng:9.8.0
 windows-slaves:1.8
 workflow-aggregator:2.6
 workflow-api:2.47
 workflow-basic-steps:2.24
 workflow-cps:2633.v6baeedc13805
 workflow-cps-global-lib:548.v9085a486966a
-workflow-durable-task-step:1097.veac1aacfbda8
+workflow-durable-task-step:1101.vf832bc1ac745
 workflow-job:2.42
 workflow-multibranch:2.26
 workflow-scm-step:2.13
