@@ -125,7 +125,7 @@ parallel-test-executor:1.13
 parameterized-trigger:2.42
 pipeline-build-step:2.15
 pipeline-github-lib:1.0
-pipeline-graph-analysis:1.11
+pipeline-graph-analysis:1.12
 pipeline-graph-view:46.vedbf23da719f
 pipeline-input-step:2.12
 pipeline-maven:3.10.0
