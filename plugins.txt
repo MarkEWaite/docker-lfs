@@ -159,8 +159,8 @@ ssh-agent:1.23
 ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
-structs:1.24
-support-core:2.78
+structs:308.v852b473a2b8c
+support-core:2.79
 swarm:3.28
 testng-plugin:554.va4a552116332
 text-finder:1.17
