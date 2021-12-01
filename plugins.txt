@@ -119,7 +119,7 @@ momentjs:1.1.1
 monitoring:1.88.0
 naginator:1.18.1
 nodelabelparameter:1.10.1
-okhttp-api:4.9.2-20211102
+okhttp-api:4.9.3-105.vb96869f8ac3a
 oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
 parallel-test-executor:1.13
