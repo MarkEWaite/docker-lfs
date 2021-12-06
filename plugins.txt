@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:731.v1f980b7eba32
+cloudbees-bitbucket-branch-source:734.v2f848c5e6ea2
 cloudbees-folder:6.16
 cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:2.0.4
