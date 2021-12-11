@@ -128,7 +128,7 @@ pipeline-build-step:2.15
 pipeline-github-lib:1.0
 pipeline-graph-analysis:1.12
 pipeline-graph-view:47.v91726240f7a6
-pipeline-input-step:2.12
+pipeline-input-step:427.va6441fa17010
 pipeline-maven:3.10.0
 pipeline-milestone-step:1.3.2
 pipeline-model-api:1.9.3
