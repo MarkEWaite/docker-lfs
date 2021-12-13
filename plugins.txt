@@ -116,7 +116,7 @@ maven-plugin:3.15.1
 mercurial:2.16
 metrics:4.0.2.8
 momentjs:1.1.1
-monitoring:1.88.0
+monitoring:1.89.0
 naginator:1.18.1
 nodelabelparameter:1.10.1
 okhttp-api:4.9.3-105.vb96869f8ac3a
