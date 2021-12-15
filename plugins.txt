@@ -184,7 +184,7 @@ workflow-job:2.42
 workflow-multibranch:2.26
 workflow-scm-step:2.13
 workflow-step-api:613.v375732a042b1
-workflow-support:3.8
+workflow-support:792.v1a3cd6ade3ef
 ws-cleanup:0.39
 xshell:0.10
 xunit:3.0.5
