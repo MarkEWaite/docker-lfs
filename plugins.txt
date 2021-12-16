@@ -175,7 +175,7 @@ view-job-filters:2.3
 warnings-ng:9.10.2
 windows-slaves:1.8
 workflow-aggregator:2.6
-workflow-api:1105.v3de5e2efac97
+workflow-api:1106.v6a04bac22f47
 workflow-basic-steps:2.24
 workflow-cps:2644.v29a793dac95a
 workflow-cps-global-lib:552.vd9cc05b8a2e1
