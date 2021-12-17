@@ -69,7 +69,7 @@ forensics-api:1.7.0
 git:4.10.1
 git-client:3.10.0
 git-forensics:1.3.0
-git-parameter:0.9.13
+git-parameter:0.9.14
 git-server:1.10
 git-userContent:1.4
 gitea:1.4.1
