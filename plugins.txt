@@ -107,7 +107,7 @@ ldap:2.7
 leastload:3.0.0
 locale:1.4
 lockable-resources:2.12
-log-parser:2.1
+log-parser:2.2
 mailer:1.34
 mapdb-api:1.0.9.0
 matrix-auth:3.0
