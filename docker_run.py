@@ -79,7 +79,7 @@ def get_git_reference_repo_volume_map():
 
 def get_dns_server():
     if is_home_network():
-        return "172.16.16.253"
+        return "172.16.16.249"
     return "8.8.8.8"
 
 #-----------------------------------------------------------------------
