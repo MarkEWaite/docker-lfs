@@ -79,7 +79,7 @@ def get_git_reference_repo_volume_map():
 
 def get_dns_server():
     if is_home_network():
-        return "172.16.16.253"
+        return "172.16.16.249"
     return "8.8.8.8"
 
 #-----------------------------------------------------------------------
@@ -91,11 +91,11 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk8" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk8u302-b08"
+        return "/home/jagent/tools/jdk8u312-b07"
     if "jdk17" in docker_build.get_current_branch():
         # Should use Java 17, really
-        return "/home/jagent/tools/jdk-11.0.12+7"
-    return "/home/jagent/tools/jdk-11.0.12+7"
+        return "/home/jagent/tools/jdk-11.0.13+8"
+    return "/home/jagent/tools/jdk-11.0.13+8"
 
 #-----------------------------------------------------------------------
 
