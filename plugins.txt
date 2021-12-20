@@ -64,7 +64,7 @@ envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:1.7
 favorite:2.3.3
-font-awesome-api:5.15.4-4
+font-awesome-api:5.15.4-5
 forensics-api:1.7.0
 git:4.10.1
 git-client:3.10.0
