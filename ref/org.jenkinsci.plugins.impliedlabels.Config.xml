@@ -485,14 +485,6 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>Debian-testing</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelAtom">testing</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>highram</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
