@@ -328,7 +328,7 @@
             <hudson.model.labels.LabelAtom>java-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">(cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD)&amp;&amp;!s390x</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -481,14 +481,6 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$And">openSUSE&amp;&amp;(15.0||15.1||15.2||15.3||15.4||15.5||15.6)</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>Debian-testing</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelAtom">testing</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
