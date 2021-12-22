@@ -328,7 +328,7 @@
             <hudson.model.labels.LabelAtom>java-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD</expression>
+        <expression class="hudson.model.labels.LabelExpression$And">(cloud||linux||windows||FreeBSD-12||FreeBSD-13||OpenBSD)&amp;&amp;!s390x</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
