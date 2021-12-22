@@ -101,12 +101,12 @@ jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
 junit:1.53
-junit-realtime-test-reporter:67.v6e77c106304b
+junit-realtime-test-reporter:72.v203572adb123
 label-verifier:1.4
 ldap:2.7
 leastload:3.0.0
 locale:1.4
-lockable-resources:2.12
+lockable-resources:2.13
 log-parser:2.2
 mailer:1.34
 mapdb-api:1.0.9.0
