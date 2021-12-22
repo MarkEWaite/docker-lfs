@@ -137,7 +137,7 @@ pipeline-model-extensions:1.9.3
 pipeline-rest-api:2.20
 pipeline-stage-step:2.5
 pipeline-stage-tags-metadata:1.9.3
-pipeline-stage-view:2.19
+pipeline-stage-view:2.20
 pipeline-utility-steps:2.11.0
 plain-credentials:1.7
 platformlabeler:1149.v1f78b2a3c1de
