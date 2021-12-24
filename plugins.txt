@@ -58,7 +58,7 @@ docker-workflow:1.26
 dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.2.2-2
-elastic-axis:1.4.4
+elastic-axis:1.4.5
 email-ext:2.86
 envinject:2.4.0
 envinject-api:1.8
