@@ -1,0 +1,84 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-67430&quot;&gt;JENKINS-67430&lt;/a&gt; notes a regression I introduced in node and label parameter plugin 1.10.2.&#xd;
+Configuration changes are not saved for default and for possible nodes.&#xd;
+Tim Jacomb fixed my mistake with &lt;a href=&quot;&quot;&gt;PR-77&lt;/a&gt;.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.6">
+      <siteName>https://issues.jenkins.io/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.7">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.25">
+      <gitLabConnection>null</gitLabConnection>
+      <jobCredentialId></jobCredentialId>
+      <useAlternativeCredential>false</useAlternativeCredential>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty plugin="naginator@1.18.1">
+      <optOut>false</optOut>
+    </com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.10.3-SNAPSHOT">
+          <name>NODES_TO_USE</name>
+          <description>Nodes used to run the job</description>
+          <allowedSlaves>
+            <string>aws-arm-ubuntu-18-e</string>
+            <string>debian11-a-jagent</string>
+            <string>freebsd-13-a-jagent</string>
+            <string>freebsd-13-b-jagent</string>
+            <string>freebsd-13-c-jagent</string>
+            <string>freebsd12-d-jagent</string>
+            <string>gcp-centos-7-a</string>
+            <string>gcp-centos-7-d</string>
+            <string>gcp-debian-10-a</string>
+            <string>gcp-debian-10-b</string>
+          </allowedSlaves>
+          <defaultSlaves>
+            <string>aws-arm-ubuntu-18-e</string>
+            <string>debian11-a-jagent</string>
+          </defaultSlaves>
+          <triggerIfResult>allowMultiSelectionForConcurrentBuilds</triggerIfResult>
+          <allowMultiNodeSelection>true</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>true</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.IgnoreOfflineNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.5">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>true</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>hostname</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
