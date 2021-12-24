@@ -118,7 +118,7 @@ metrics:4.0.2.8
 momentjs:1.1.1
 monitoring:1.90.0
 naginator:1.18.1
-nodelabelparameter:1.10.2
+nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
 oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
