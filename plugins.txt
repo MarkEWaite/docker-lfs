@@ -88,7 +88,7 @@ handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.28
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc50.3ad4692986b8
 jackson2-api:2.13.1-242.v1a45bad25ceb
-jacoco:3.3.0
+jacoco:3.3.1
 javadoc:1.6
 jaxb:2.3.0.1
 jdk-tool:1.5
