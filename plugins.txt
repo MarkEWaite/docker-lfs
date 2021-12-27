@@ -181,7 +181,7 @@ workflow-cps:2648.va9433432b33c
 workflow-cps-global-lib:552.vd9cc05b8a2e1
 workflow-durable-task-step:1112.vda00e6febcc1
 workflow-job:1145.v7f2433caa07f
-workflow-multibranch:2.26
+workflow-multibranch:696.v52535c46f4c9
 workflow-scm-step:2.13
 workflow-step-api:615.vb09dac339255
 workflow-support:804.vba10a18a1476
