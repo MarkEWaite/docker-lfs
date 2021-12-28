@@ -377,8 +377,8 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-ant-1.10.11"
-              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.11-bin.zip"
+              subdir: "apache-ant-1.10.12"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.12-bin.zip"
   git:
     installations:
     - home: "git"
