@@ -165,7 +165,7 @@ support-core:2.79
 swarm:3.29
 testng-plugin:554.va4a552116332
 text-finder:1.17
-throttle-concurrents:2.5
+throttle-concurrents:2.6
 timestamper:1.15
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
