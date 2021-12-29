@@ -3,7 +3,7 @@ ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.8.1
 ant:1.13
-antisamy-markup-formatter:2.5
+antisamy-markup-formatter:2.6
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
 authentication-tokens:1.4
@@ -135,7 +135,7 @@ pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
 pipeline-rest-api:2.20
-pipeline-stage-step:2.5
+pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
 pipeline-stage-view:2.20
 pipeline-utility-steps:2.11.0
@@ -165,7 +165,7 @@ support-core:2.79
 swarm:3.29
 testng-plugin:554.va4a552116332
 text-finder:1.17
-throttle-concurrents:2.5
+throttle-concurrents:2.6
 timestamper:1.15
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
