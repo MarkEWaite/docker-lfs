@@ -1,4 +1,4 @@
-PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.0-rc422.b143ff74d2c8
+PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.8.1
