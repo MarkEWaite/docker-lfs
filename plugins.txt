@@ -1,4 +1,4 @@
-PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.0-rc422.b143ff74d2c8
+PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.8.1
@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:734.v2f848c5e6ea2
+cloudbees-bitbucket-branch-source:737.vdf9dc06105be
 cloudbees-folder:6.17
 cloudbees-jenkins-advisor:3.3.2
 code-coverage-api:2.0.4
@@ -96,7 +96,7 @@ jenkins-design-language:1.25.2
 jira:3.6
 jjwt-api:0.11.2-9.c8b45b8bb173
 jmh-report:0.9.0
-job-dsl:1.78.1
+job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
