@@ -66,8 +66,8 @@ external-monitor-job:1.7
 favorite:2.3.3
 font-awesome-api:5.15.4-5
 forensics-api:1.7.0
-git:4.10.1
-git-client:3.11.0
+git:incrementals;org.jenkins-ci.plugins;4.10.2-rc4625.ec6e78a_a_39d9
+git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3018.b_96a_78b_28457
 git-forensics:1.3.0
 git-parameter:0.9.14
 git-server:1.10
@@ -108,7 +108,7 @@ leastload:3.0.0
 locale:1.4
 lockable-resources:2.13
 log-parser:2.2
-mailer:1.34
+mailer:391.ve4a_38c1b_cf4b_
 mapdb-api:1.0.9.0
 matrix-auth:3.0
 matrix-project:1.19
@@ -163,7 +163,7 @@ ssh-slaves:1.33.0
 structs:308.v852b473a2b8c
 support-core:2.79
 swarm:3.29
-testng-plugin:554.va4a552116332
+testng-plugin:incrementals;org.jenkins-ci.plugins;568.v675797c97d68
 text-finder:1.17
 throttle-concurrents:2.6
 timestamper:1.15
@@ -183,7 +183,7 @@ workflow-durable-task-step:1112.vda00e6febcc1
 workflow-job:1145.v7f2433caa07f
 workflow-multibranch:696.v52535c46f4c9
 workflow-scm-step:2.13
-workflow-step-api:615.vb09dac339255
+workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:804.vba10a18a1476
 ws-cleanup:0.40
 xshell:0.10
