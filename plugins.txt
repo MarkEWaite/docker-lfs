@@ -71,7 +71,6 @@ git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3018.b_96a_78b_28457
 git-forensics:1.3.0
 git-parameter:0.9.14
 git-server:1.10
-git-userContent:1.4
 gitea:1.4.1
 github:1.34.1
 github-api:1.301-378.v9807bd746da5
@@ -96,7 +95,6 @@ jenkins-design-language:1.25.2
 jersey2-api:2.35-3
 jira:3.6
 jjwt-api:0.11.2-9.c8b45b8bb173
-jmh-report:0.9.0
 job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
@@ -106,7 +104,6 @@ junit-realtime-test-reporter:72.v203572adb123
 label-verifier:1.4
 ldap:2.7
 leastload:3.0.0
-locale:1.4
 lockable-resources:2.13
 log-parser:2.2
 mailer:391.ve4a_38c1b_cf4b_
@@ -121,7 +118,6 @@ monitoring:1.90.0
 naginator:1.18.1
 nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
-oracle-cloud-infrastructure-compute:1.0.15
 pam-auth:1.6.1
 parallel-test-executor:1.13
 parameterized-trigger:2.43
@@ -152,7 +148,6 @@ promoted-builds:3.11
 pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
-schedule-build:178.v32999348869c
 scm-api:2.6.5
 script-security:1118.vba21ca2e3286
 snakeyaml-api:1.29.1
