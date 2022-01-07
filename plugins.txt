@@ -149,7 +149,7 @@ pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
 scm-api:2.6.5
-script-security:1118.vba21ca2e3286
+script-security:1131.v8b_b_5eda_c328e
 snakeyaml-api:1.29.1
 sse-gateway:1.24
 ssh-agent:1.23
