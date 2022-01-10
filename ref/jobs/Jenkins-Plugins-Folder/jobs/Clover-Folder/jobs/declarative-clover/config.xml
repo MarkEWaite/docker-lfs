@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1145.v7f2433caa07f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <numToKeep>7</numToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2648.va9433432b33c">
+    <script>pipeline {
+    agent {
+        label &apos;!windows&apos; // sh not generally available on Windows
+    }
+    stages {
+        stage(&apos;Checkout&apos;) {
+            steps {
+                git &apos;https://github.com/jenkinsci/platformlabeler-plugin.git&apos;
+            }
+        }
+        stage(&apos;Test&apos;) {
+            steps {
+                sh &apos;mvn clean clover:setup test clover:aggregate clover:clover&apos;
+            }
+        }
+        stage(&apos;Report&apos;) {
+            steps {
+                clover(cloverReportDir: &apos;target/site&apos;, cloverReportFileName: &apos;clover.xml&apos;,
+                    // optional, default is: method=70, conditional=80, statement=80
+                    healthyTarget: [methodCoverage: 70, conditionalCoverage: 80, statementCoverage: 80],
+                    // optional, default is none
+                    unhealthyTarget: [methodCoverage: 50, conditionalCoverage: 50, statementCoverage: 50],
+                    // optional, default is none
+                    failingTarget: [methodCoverage: 0, conditionalCoverage: 0, statementCoverage: 0]
+                )
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
