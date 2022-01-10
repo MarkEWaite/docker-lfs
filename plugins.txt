@@ -160,7 +160,7 @@ structs:308.v852b473a2b8c
 support-core:2.79
 swarm:3.29
 testng-plugin:incrementals;org.jenkins-ci.plugins;570.v07098111799b_
-text-finder:1.17
+text-finder:1.18
 throttle-concurrents:2.6
 timestamper:1.15
 token-macro:267.vcdaea6462991
