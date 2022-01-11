@@ -14,6 +14,7 @@
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
         <numToKeep>7</numToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
