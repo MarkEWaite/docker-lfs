@@ -115,12 +115,12 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     git_reference_repo_volume_map = get_git_reference_repo_volume_map()
     jenkins_home_volume_map = get_jenkins_home_volume_map()
     docker_command = [
-                       "docker", "run", "-i", "--rm",
+                       "docker", "run", "-i",
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(ssh_port) + ":18022",
                        "--publish", str(jnlp_port) + ":50000",
-                       "--restart=always",
+                       "--restart=on-failure",
                      ]
     if debug_port != None:
         docker_command.extend(["--publish", str(debug_port)  + ":5678"])
