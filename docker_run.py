@@ -151,17 +151,17 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   # Blue ocean autofavorite has been removed
                   # "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                  "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
+                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
                   "-Djava.awt.headless=true",
                   "-Djenkins.install.runSetupWizard=false",
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
-                  "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
-                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
                 ]
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
