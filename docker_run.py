@@ -148,8 +148,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
                   "-XshowSettings:vm"
-                  # Blue ocean autofavorite has been removed
-                  # "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
