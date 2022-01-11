@@ -240,6 +240,8 @@ Run a docker image.   Use -h for help."""
     if options.clean and not os.path.exists(jenkins_home_dir):
         os.mkdir(jenkins_home_dir)
 
+    # Always detach, since --restart=always prevents --rm and causes Jenkins processes to fork and exec
+    options.detach = True
     if options.detach:
         print("Detaching from stdin / stdout")
 
