@@ -155,7 +155,7 @@ scm-api:595.vd5a_df5eb_0e39
 script-security:1131.v8b_b_5eda_c328e
 snakeyaml-api:1.29.1
 sse-gateway:1.24
-ssh-agent:1.23
+ssh-agent:1.24.1
 ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.33.0
