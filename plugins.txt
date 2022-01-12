@@ -90,6 +90,8 @@ implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc50.3ad4692986b8
 jackson2-api:2.13.1-246.va8a9f3eaf46a
 jacoco:3.3.1
 javadoc:1.6
+javax-activation-api:1.2.0-2
+javax-mail-api:1.6.2-5
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.25.2
