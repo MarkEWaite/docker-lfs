@@ -109,7 +109,7 @@ ldap:2.7
 leastload:3.0.0
 lockable-resources:2.13
 log-parser:2.2
-mailer:391.ve4a_38c1b_cf4b_
+mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
 matrix-auth:3.0
 matrix-project:1.19
