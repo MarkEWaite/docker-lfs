@@ -103,7 +103,7 @@ jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
 junit:1.53
-junit-realtime-test-reporter:78.v010b_1c536b_ec
+junit-realtime-test-reporter:80.v32337925383c
 label-verifier:1.4
 ldap:2.7
 leastload:3.0.0
