@@ -60,7 +60,7 @@ dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.2.2-2
 elastic-axis:1.4.5
-email-ext:2.86
+email-ext:2.87
 envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:1.7
