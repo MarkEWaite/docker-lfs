@@ -86,7 +86,7 @@ h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.28
-implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc50.3ad4692986b8
+implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
 jackson2-api:2.13.1-246.va8a9f3eaf46a
 jacoco:3.3.1
 javadoc:1.6
