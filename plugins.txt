@@ -162,7 +162,7 @@ ssh-slaves:1.33.0
 structs:308.v852b473a2b8c
 support-core:2.79
 swarm:3.29
-testng-plugin:incrementals;org.jenkins-ci.plugins;570.v07098111799b_
+testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 throttle-concurrents:2.6
 timestamper:1.16
