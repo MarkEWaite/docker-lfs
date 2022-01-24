@@ -125,7 +125,7 @@ pam-auth:1.6.1
 parallel-test-executor:1.13
 parameterized-trigger:2.43
 pipeline-build-step:2.15
-pipeline-github-lib:1.0
+pipeline-github-lib:36.v4c01db_ca_ed16
 pipeline-graph-analysis:188.v3a01e7973f2c
 pipeline-graph-view:51.v5a693b766483
 pipeline-input-step:446.vf27b_0b_83500e
