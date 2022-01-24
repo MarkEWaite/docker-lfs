@@ -94,8 +94,8 @@ def get_jagent_java_home():
         return "/home/jagent/tools/jdk8u312-b07"
     if "jdk17" in docker_build.get_current_branch():
         # Should use Java 17, really
-        return "/home/jagent/tools/jdk-11.0.13+8"
-    return "/home/jagent/tools/jdk-11.0.13+8"
+        return "/home/jagent/tools/jdk-11.0.14+9"
+    return "/home/jagent/tools/jdk-11.0.14+9"
 
 #-----------------------------------------------------------------------
 
