@@ -63,7 +63,7 @@ elastic-axis:1.4.5
 email-ext:2.87
 envinject:2.4.0
 envinject-api:1.8
-external-monitor-job:1.7
+external-monitor-job:189.v849257a_0d3a_c
 favorite:2.3.3
 font-awesome-api:5.15.4-5
 forensics-api:1.7.0
@@ -125,7 +125,7 @@ pam-auth:1.6.1
 parallel-test-executor:1.13
 parameterized-trigger:2.43
 pipeline-build-step:2.15
-pipeline-github-lib:1.0
+pipeline-github-lib:36.v4c01db_ca_ed16
 pipeline-graph-analysis:188.v3a01e7973f2c
 pipeline-graph-view:51.v5a693b766483
 pipeline-input-step:446.vf27b_0b_83500e
