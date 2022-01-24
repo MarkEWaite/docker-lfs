@@ -115,11 +115,12 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     git_reference_repo_volume_map = get_git_reference_repo_volume_map()
     jenkins_home_volume_map = get_jenkins_home_volume_map()
     docker_command = [
-                       "docker", "run", "-i", "--rm",
+                       "docker", "run", "-i",
                        "--dns", dns_server,
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(ssh_port) + ":18022",
                        "--publish", str(jnlp_port) + ":50000",
+                       "--restart=always",
                      ]
     if debug_port != None:
         docker_command.extend(["--publish", str(debug_port)  + ":5678"])
@@ -147,19 +148,18 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
                   "-XshowSettings:vm"
-                  # Blue ocean autofavorite has been removed
-                  # "-DBLUEOCEAN_FEATURE_AUTOFAVORITE_ENABLED=false",
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
+                  "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
+                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
                   "-Djava.awt.headless=true",
                   "-Djenkins.install.runSetupWizard=false",
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
-                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
-                  "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
-                  "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
+                  "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
                 ]
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
@@ -240,6 +240,8 @@ Run a docker image.   Use -h for help."""
     if options.clean and not os.path.exists(jenkins_home_dir):
         os.mkdir(jenkins_home_dir)
 
+    # Always detach, since --restart=always prevents --rm and causes Jenkins processes to fork and exec
+    options.detach = True
     if options.detach:
         print("Detaching from stdin / stdout")
 
