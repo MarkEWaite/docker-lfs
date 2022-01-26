@@ -122,7 +122,7 @@ monitoring:1.90.0
 naginator:1.18.1
 nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
-pam-auth:1.6.1
+pam-auth:1.7
 parallel-test-executor:1.13
 parameterized-trigger:2.43
 pipeline-build-step:2.15
