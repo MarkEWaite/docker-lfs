@@ -98,6 +98,7 @@ jenkins-design-language:1.25.2
 jersey2-api:2.35-3
 jira:3.6
 jjwt-api:0.11.2-9.c8b45b8bb173
+jnr-posix-api:3.1.7-1
 job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
