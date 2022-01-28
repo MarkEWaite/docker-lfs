@@ -54,7 +54,7 @@ credentials-binding:1.27.1
 data-tables-api:1.11.3-6
 description-setter:1.10
 display-url-api:2.3.5
-docker-commons:1.18
+docker-commons:1.19
 docker-workflow:1.27
 dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
