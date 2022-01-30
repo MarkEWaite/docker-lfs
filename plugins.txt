@@ -45,7 +45,7 @@ code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.8.2
-configuration-as-code:1.55.1
+configuration-as-code:1346.ve8cfa_3473c94
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc424.6447a610239f
 conventional-commits:0.10.0
 copyartifact:1.46.2
@@ -54,8 +54,8 @@ credentials-binding:1.27.1
 data-tables-api:1.11.3-6
 description-setter:1.10
 display-url-api:2.3.5
-docker-commons:1.18
-docker-workflow:1.27
+docker-commons:1.19
+docker-workflow:1.28
 dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.2.2-2
@@ -155,7 +155,7 @@ run-condition:1.5
 scm-api:595.vd5a_df5eb_0e39
 script-security:1131.v8b_b_5eda_c328e
 snakeyaml-api:1.29.1
-sse-gateway:1.24
+sse-gateway:1.25
 ssh-agent:1.24.1
 ssh-credentials:1.19
 sshd:3.1.0
@@ -166,7 +166,7 @@ swarm:3.29
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 throttle-concurrents:2.6
-timestamper:1.16
+timestamper:1.17
 token-macro:267.vcdaea6462991
 trilead-api:1.0.13
 variant:1.4
