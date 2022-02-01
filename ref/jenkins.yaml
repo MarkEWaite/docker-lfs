@@ -394,7 +394,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.34.0\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.35.1\\mingw64\\bin\\git.exe"
     - home: "git"
       name: "git-windows"
       properties:
@@ -403,7 +403,7 @@ tool:
           - zip:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.34.1-64-bit.zip"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.35.1-64-bit.zip"
     - home: "git"
       name: "git-2.11.1"
       properties:
@@ -517,7 +517,7 @@ tool:
               label: "windows"
               toolHome: "C:\\tools\\MinGit-2.33.1\\mingw64\\bin\\git.exe"
     - home: "git"
-      name: "git-2.34.0"
+      name: "git-2.34.1"
       properties:
       - installSource:
           installers:
@@ -528,7 +528,20 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.34.0\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.34.1\\mingw64\\bin\\git.exe"
+    - home: "git"
+      name: "git-2.35.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.35 && linux"
+              toolHome: "/usr/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.35.1\\mingw64\\bin\\git.exe"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
@@ -565,22 +578,22 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.13+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.13_8.zip"
+              subdir: "jdk-11.0.14+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.14_9.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.13+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.13_8.tar.gz"
+              subdir: "jdk-11.0.14+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.14_9.tar.gz"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.13+8"
+              toolHome: "${JAGENT_JAVA_HOME}"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.13+8"
+              id: "jdk-11.0.14+9"
   maven:
     installations:
     - name: "maven-latest"
