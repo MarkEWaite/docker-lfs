@@ -85,7 +85,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
-htmlpublisher:1.28
+htmlpublisher:1.29
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
 jackson2-api:2.13.1-246.va8a9f3eaf46a
 jacoco:3.3.1
@@ -162,7 +162,7 @@ sshd:3.1.0
 ssh-slaves:1.33.0
 structs:308.v852b473a2b8c
 support-core:2.79
-swarm:3.29
+swarm:3.30
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 throttle-concurrents:2.6
