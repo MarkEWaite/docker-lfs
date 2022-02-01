@@ -19,7 +19,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>jarsigner -verify -certs /usr/share/jenkins/jenkins.war</command>
+      <command>jarsigner -verify -certs /usr/share/jenkins/jenkins.war || jarsigner -verify -certs /usr/share/java/jenkins.war</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
