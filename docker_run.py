@@ -169,6 +169,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     if access_mode != None:
         java_opts.append("--illegal-access=" + access_mode)
     docker_command.extend([
+                       "--env", 'CASC_YAML_MAX_ALIASES=100',
                        "--env", 'JAGENT_JAVA_HOME=' + get_jagent_java_home(),
                        "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
