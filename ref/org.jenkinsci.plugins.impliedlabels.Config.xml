@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.9-rc50.3ad4692986b8">
+<org.jenkinsci.plugins.impliedlabels.Config plugin="implied-labels@0.9-rc53.5459bffcfe74">
   <implications class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
     <c class="list">
       <org.jenkinsci.plugins.impliedlabels.Implication>
@@ -304,7 +304,7 @@
             <hudson.model.labels.LabelAtom>FreeBSD-12</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">12.3-RELEASE||12.2-RELEASE-p12||12.2-RELEASE-p11||12.2-RELEASE-p10||12.2-RELEASE-p9||12.2-RELEASE-p8||12.2-RELEASE-p7||12.2-RELEASE-p6</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">12.3-RELEASE-p6||12.3-RELEASE-p5||12.3-RELEASE-p4||12.3-RELEASE-p3||12.3-RELEASE-p2||12.3-RELEASE-p1||12.3-RELEASE||12.2-RELEASE-p12||12.2-RELEASE-p11||12.2-RELEASE-p10||12.2-RELEASE-p9||12.2-RELEASE-p8||12.2-RELEASE-p7||12.2-RELEASE-p6</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -489,6 +489,14 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelAtom">highmem</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>FreeBSD</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">FreeBSD-12||FreeBSD-13</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
