@@ -44,7 +44,7 @@ clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
 code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
-config-file-provider:3.8.2
+config-file-provider:3.9.0
 configuration-as-code:1346.ve8cfa_3473c94
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc424.6447a610239f
 conventional-commits:0.10.0
@@ -108,7 +108,7 @@ junit-realtime-test-reporter:82.vc2a_3f0f7a_291
 label-verifier:1.4
 ldap:2.7
 leastload:3.0.0
-lockable-resources:2.13
+lockable-resources:2.14
 log-parser:2.2
 mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
