@@ -89,7 +89,7 @@ htmlpublisher:1.29
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
 jackson2-api:2.13.1-246.va8a9f3eaf46a
 jacoco:3.3.1
-javadoc:1.6
+javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-2
 javax-mail-api:1.6.2-5
 jaxb:2.3.0.1
