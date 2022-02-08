@@ -73,7 +73,7 @@
       <command>#
 # Query this job for its changes
 #
-curl -s &quot;http://mark-pc2.markwaite.net:8080/job/Bugs-Individual/job/JENKINS-36637-changes-list-incomplete/$BUILD_NUMBER/api/xml?wrapper=changes&amp;xpath=//changeSet//comment&quot;
+curl -s &quot;http://localhost:8080/job/Bugs-Individual/job/JENKINS-36637-changes-list-incomplete/$BUILD_NUMBER/api/xml?wrapper=changes&amp;xpath=//changeSet//comment&quot;
 #
 # Jenkins text finder will fail the job if not found
 #</command>

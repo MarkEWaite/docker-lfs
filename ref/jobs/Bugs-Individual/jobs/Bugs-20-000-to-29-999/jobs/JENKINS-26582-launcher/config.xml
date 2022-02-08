@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://mark-pc2.markwaite.net:8080/job/Bugs-Individual/job/Bugs-20-000-to-29-999/job/JENKINS-26582-ISE-on-git-notify&quot;&gt;JENKINS-26582-ISE-on-git-notify&lt;/a&gt;</description>
+  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/Bugs-20-000-to-29-999/job/JENKINS-26582-ISE-on-git-notify&quot;&gt;JENKINS-26582-ISE-on-git-notify&lt;/a&gt;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -62,7 +62,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>curl &quot;http://mark-pc2.markwaite.net:8080/git/notifyCommit?url=https%3A%2F%2Fgithub.com%2Fallegro%2Faxion-release-plugin.git&amp;branches=master&amp;sha1=a5de4d725814ff907a8cf1f5666b9f01e8361655&quot;</command>
+      <command>curl &quot;http://JENKINS_HOSTNAME:8080/git/notifyCommit?url=https%3A%2F%2Fgithub.com%2Fallegro%2Faxion-release-plugin.git&amp;branches=master&amp;sha1=a5de4d725814ff907a8cf1f5666b9f01e8361655&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

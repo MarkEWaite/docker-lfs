@@ -54,13 +54,13 @@ The &lt;a href=&quot;/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly
 rm -rf *
 
 # Poll the job
-wget -qO- http://mark-pc2.markwaite.net:8080/git/notifyCommit?url=https://github.com/MarkEWaite/jenkins-bugs.git  &amp;&gt; /dev/null
+wget -qO- http://localhost:8080/git/notifyCommit?url=https://github.com/MarkEWaite/jenkins-bugs.git  &amp;&gt; /dev/null
 
 # Wait briefly
 sleep 5
 
 # Check the workspace is not empty
-wget -q http://mark-pc2.markwaite.net:8080/view/All/job/bugs/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/ws/
+wget -q http://localhost:8080/view/All/job/bugs/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/ws/
 ls | grep -q -c info-.*txt || (echo; echo &quot;info-*.txt not found in checked workspace&quot;; echo)</command>
     </hudson.tasks.Shell>
   </builders>
