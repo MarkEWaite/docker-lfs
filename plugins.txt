@@ -148,7 +148,7 @@ popper-api:1.16.1-2
 popper2-api:2.11.2-1
 preSCMbuildstep:0.3
 prism-api:1.25.0-2
-promoted-builds:3.11
+promoted-builds:867.v7c3a_b_83a_eb_79
 pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
