@@ -38,7 +38,7 @@ buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
 cloudbees-bitbucket-branch-source:751.vda_24678a_f781
-cloudbees-folder:6.17
+cloudbees-folder:incrementals;org.jenkins-ci.plugins;6.18-rc677.c8b_dde8a_3e70
 cloudbees-jenkins-advisor:3.3.2
 clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
 code-coverage-api:2.0.4
@@ -89,7 +89,7 @@ htmlpublisher:1.29
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
 jackson2-api:2.13.1-246.va8a9f3eaf46a
 jacoco:3.3.1
-javadoc:1.6
+javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-2
 javax-mail-api:1.6.2-5
 jaxb:2.3.0.1
@@ -131,7 +131,7 @@ pipeline-graph-analysis:188.v3a01e7973f2c
 pipeline-graph-view:51.v5a693b766483
 pipeline-input-step:446.vf27b_0b_83500e
 pipeline-maven:3.10.0
-pipeline-milestone-step:1.3.2
+pipeline-milestone-step:100.v60a_03cd446e1
 pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
@@ -141,14 +141,14 @@ pipeline-stage-tags-metadata:1.9.3
 pipeline-stage-view:2.21
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
-platformlabeler:1149.v1f78b2a3c1de
+platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
 plugin-util-api:2.13.0
 pollscm:1.3.1
 popper-api:1.16.1-2
 popper2-api:2.11.2-1
 preSCMbuildstep:0.3
 prism-api:1.25.0-2
-promoted-builds:3.11
+promoted-builds:867.v7c3a_b_83a_eb_79
 pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
