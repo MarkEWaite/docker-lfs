@@ -594,6 +594,28 @@ tool:
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
               id: "jdk-11.0.14+9"
+    - name: "jdk17"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-17.0.2+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip"
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk-17.0.2+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8.tar.gz"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk-17.0.2+8"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk17"
+          - adoptOpenJdkInstaller:
+              id: "jdk-17.0.2+8"
   maven:
     installations:
     - name: "maven-latest"
