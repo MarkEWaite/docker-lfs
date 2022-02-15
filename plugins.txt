@@ -51,7 +51,7 @@ conventional-commits:0.10.0
 copyartifact:1.46.2
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
-data-tables-api:1.11.3-6
+data-tables-api:1.11.4-1
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.19
