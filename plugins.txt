@@ -65,7 +65,7 @@ envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.3.3
-font-awesome-api:5.15.4-5
+font-awesome-api:6.0.0-1
 forensics-api:1.7.0
 git:4.10.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
