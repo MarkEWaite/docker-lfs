@@ -96,7 +96,7 @@ jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.25.2
 jersey2-api:2.35-3
-jira:3.6
+jira:3.7
 jjwt-api:0.11.2-9.c8b45b8bb173
 jnr-posix-api:3.1.7-1
 job-dsl:1.78.3
@@ -142,7 +142,7 @@ pipeline-stage-view:2.21
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
-plugin-util-api:2.13.0
+plugin-util-api:2.14.0
 pollscm:1.3.1
 popper-api:1.16.1-2
 popper2-api:2.11.2-1
