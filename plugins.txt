@@ -114,7 +114,7 @@ mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
 matrix-auth:3.0.1
 matrix-project:1.20
-maven-plugin:3.16
+maven-plugin:3.17
 mercurial:2.16
 metrics:4.1.6.1
 momentjs:1.1.1
