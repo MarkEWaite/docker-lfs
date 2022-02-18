@@ -106,7 +106,7 @@ jsch:0.1.55.2
 junit:1.54
 junit-realtime-test-reporter:82.vc2a_3f0f7a_291
 label-verifier:1.4
-ldap:2.7
+ldap:2.8
 leastload:3.0.0
 lockable-resources:2.14
 log-parser:2.2
