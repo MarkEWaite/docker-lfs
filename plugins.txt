@@ -66,7 +66,7 @@ envinject-api:1.8
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.3.3
 font-awesome-api:6.0.0-1
-forensics-api:1.8.0
+forensics-api:1.8.1
 git:4.10.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
 git-forensics:1.4.0
@@ -172,7 +172,7 @@ trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.11.0
+warnings-ng:9.11.1
 windows-slaves:1.8
 workflow-aggregator:2.6
 workflow-api:1138.v619fd5201b_2f
