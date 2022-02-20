@@ -52,7 +52,7 @@
       </hudson.plugins.git.extensions.impl.LocalBranch>
     </extensions>
   </scm>
-  <assignedNode>git-lfs &amp;&amp; git-2.7+</assignedNode>
+  <assignedNode>git-lfs &amp;&amp; git-2.11+</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
