@@ -76,6 +76,56 @@ jenkins:
                 script: "git --version 2>&1 | grep -F 2.30"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.31"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.31"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.32"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.32"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.33"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.33"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.34"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.34"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.35"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.35"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   labelString: "git-2.20 highmem"
   markupFormatter:
     rawHtml:
