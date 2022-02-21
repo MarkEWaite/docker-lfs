@@ -36,7 +36,7 @@
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.74">
-    <script>node(&apos;git-1.9+&apos;) {
+    <script>node(&apos;git-2.11+&apos;) {
   stage(&apos;Checkout&apos;) {
     // Fast form - clone subset
     dir(&apos;JENKINS-35475&apos;) {
