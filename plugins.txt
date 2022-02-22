@@ -98,7 +98,7 @@ jenkins-design-language:1.25.2
 jersey2-api:2.35-3
 jira:3.7
 jjwt-api:0.11.2-9.c8b45b8bb173
-jnr-posix-api:3.1.7-1
+jnr-posix-api:3.1.7-2
 job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
@@ -153,7 +153,7 @@ pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
 scm-api:595.vd5a_df5eb_0e39
-script-security:1131.v8b_b_5eda_c328e
+script-security:1138.v8e727069a_025
 snakeyaml-api:1.29.1
 sse-gateway:1.25
 ssh-agent:1.24.1
