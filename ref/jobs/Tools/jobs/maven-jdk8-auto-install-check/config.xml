@@ -119,7 +119,7 @@
       <script plugin="script-security@1.27">
         <script>if (manager.logContains(&quot;.*your Apache Maven build is setup to use a config with id .* but can not find the config.*&quot;)) {
     manager.addWarningBadge(&quot;Config file provider failure warning.&quot;)
-    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Config file provider failure warning.!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Config file provider failure warning!&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
         <sandbox>false</sandbox>
