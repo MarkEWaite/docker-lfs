@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-31393&quot;&gt;JENKINS-31393&lt;/a&gt; multiple refspec ignored on first clone</description>
+  <description>[JENKINS-31393](https://issues.jenkins.io/browse/JENKINS-31393) multiple refspec ignored on first clone</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -102,7 +102,7 @@ if ( manager.logContains(&quot;.*remotes/origin-JENKINS-31393/JENKINS-14798.*&qu
     !manager.logContains(&quot;.*remotes/origin-JENKINS-31393/develop/JENKINS-29796.*&quot;)
    ) {
     manager.addWarningBadge(&quot;Wrong refspecs cloned&quot;)
-    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong refspecs cloned!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Wrong refspecs cloned!&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
         <sandbox>true</sandbox>

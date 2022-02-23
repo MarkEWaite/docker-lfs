@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-31393&quot;&gt;JENKINS-31393&lt;/a&gt; refspec ignored on first clone</description>
+  <description>[JENKINS-31393](https://issues.jenkins.io/browse/JENKINS-31393) refspec ignored on first clone</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -96,7 +96,7 @@
 // JENKINS-36507 will require that the default revert back to not honoring the refspec on initial clone
 if (!manager.logContains(&quot;.*remotes/origin-only-JENKINS-31393/JENKINS-14798.*&quot;)) {
     manager.addWarningBadge(&quot;Too many refspec branches cloned&quot;)
-    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Too many refspec branches cloned!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Too many refspec branches cloned!&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
         <sandbox>true</sandbox>

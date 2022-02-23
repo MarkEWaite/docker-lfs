@@ -81,7 +81,7 @@
       <script plugin="script-security@1.68">
         <script>if (!manager.logContains(&quot;.*git-2.27.0.*&quot;)) {
     manager.addWarningBadge(&quot;Wrong or missing git version&quot;)
-    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong or missing git version&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Wrong or missing git version&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
         <sandbox>true</sandbox>

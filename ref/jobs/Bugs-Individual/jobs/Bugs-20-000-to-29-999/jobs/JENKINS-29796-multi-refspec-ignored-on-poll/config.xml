@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-29796&quot;&gt;JENKINS-29796&lt;/a&gt; multiple refspec ignored on poll</description>
+  <description>[JENKINS-29796](https://issues.jenkins.io/browse/JENKINS-29796) multiple refspec ignored on poll</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -16,9 +16,6 @@
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.5.2">
     <configVersion>2</configVersion>
@@ -84,7 +81,7 @@ if ( manager.logContains(&quot;.*remotes/origin-JENKINS-29796/JENKINS-14798.*&qu
     !manager.logContains(&quot;.*remotes/origin-JENKINS-29796/production/JENKINS-29796.*&quot;)
    ) {
     manager.addWarningBadge(&quot;Wrong refspecs polled&quot;)
-    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;Wrong refspecs polled!&lt;/h1&gt;&quot;, false, false, false, &quot;red&quot;)
+    manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Wrong refspecs polled!;&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
         <sandbox>true</sandbox>
