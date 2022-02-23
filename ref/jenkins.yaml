@@ -127,9 +127,7 @@ jenkins:
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   labelString: "git-2.20 highmem"
-  markupFormatter:
-    rawHtml:
-      disableSyntaxHighlighting: false
+  markupFormatter: "markdownFormatter"
   mode: NORMAL
   myViewsTabBar: "standard"
   nodeProperties:

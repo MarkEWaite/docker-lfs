@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.12.2">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-41354&quot;&gt;JENKINS-41354&lt;/a&gt; pipeline does not have git env variables</description>
+  <description>[JENKINS-41354](https://issues.jenkins.io/browse/JENKINS-41354) pipeline does not have git env variables</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
@@ -64,7 +64,7 @@ node {
       // Log should contain GIT_COMMIT=
       if (!manager.logContains(&quot;.*GIT_COMMIT=.*&quot;)) {
           manager.addWarningBadge(&quot;No GIT_COMMIT env variable&quot;)
-          manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;&lt;h1&gt;No GIT_COMITT env variable!&lt;/h1&gt;&quot;, false, false, false, &quot;yellow&quot;)
+          manager.createSummary(&quot;warning.gif&quot;).appendText(&quot# No GIT_COMITT env variable!&quot;, false, false, false, &quot;yellow&quot;)
           manager.buildUnstable()
       }
    }
