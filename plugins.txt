@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:751.vda_24678a_f781
+cloudbees-bitbucket-branch-source:incrementals;org.jenkins-ci.plugins;757.v40b_45d975c45
 cloudbees-folder:6.708.ve61636eb_65a_5
 cloudbees-jenkins-advisor:3.3.2
 clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
@@ -112,6 +112,7 @@ lockable-resources:2.14
 log-parser:2.2
 mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
+markdown-formatter:0.2.0
 matrix-auth:3.0.1
 matrix-project:1.20
 maven-plugin:3.16
@@ -135,10 +136,10 @@ pipeline-milestone-step:100.v60a_03cd446e1
 pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
-pipeline-rest-api:2.21
+pipeline-rest-api:2.22
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
-pipeline-stage-view:2.21
+pipeline-stage-view:2.22
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
