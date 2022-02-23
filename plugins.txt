@@ -139,7 +139,7 @@ pipeline-model-extensions:1.9.3
 pipeline-rest-api:2.22
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
-pipeline-stage-view:2.21
+pipeline-stage-view:2.22
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
