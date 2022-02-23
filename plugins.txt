@@ -136,7 +136,7 @@ pipeline-milestone-step:100.v60a_03cd446e1
 pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
-pipeline-rest-api:2.21
+pipeline-rest-api:2.22
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
 pipeline-stage-view:2.21
