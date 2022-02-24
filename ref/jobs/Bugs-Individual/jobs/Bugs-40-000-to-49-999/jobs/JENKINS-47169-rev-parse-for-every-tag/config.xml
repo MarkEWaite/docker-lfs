@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-47169&quot;&gt;JENKINS-47169&lt;/a&gt; and &lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-45447&quot;&gt;JENKINS-45447&lt;/a&gt; - rev-parse every tag in repo, every build&#xd;
-&#xd;
+  <description>[JENKINS-47169](https://issues.jenkins.io/browse/JENKINS-47169) and [JENKINS-45447](https://issues.jenkins.io/browse/JENKINS-45447) - rev-parse every tag in repo, every build
+
 This job definition does not reference a name which would match a tag in the branch specification, yet git plugin 3.3.0 and later call rev-parse on every tag in the repository.</description>
   <keepDependencies>false</keepDependencies>
   <properties>

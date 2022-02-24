@@ -1,6 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-55536&quot;&gt;JENKINS-55536&lt;/a&gt; reports that the git plugin does not support multiple remotes</description>
+  <description>[JENKINS-55536](https://issues.jenkins.io/browse/JENKINS-55536) reports that the git plugin does not support multiple remotes</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-52855&quot;&gt;JENKINS-52855&lt;/a&gt; add GIT_CHECKOUT_DIR environment variable for Freestyle jobs that use &apos;checkout to subdirectory&apos;</description>
+  <description>[JENKINS-52855](https://issues.jenkins.io/browse/JENKINS-52855) add GIT_CHECKOUT_DIR environment variable for Freestyle jobs that use &apos;checkout to subdirectory&apos;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

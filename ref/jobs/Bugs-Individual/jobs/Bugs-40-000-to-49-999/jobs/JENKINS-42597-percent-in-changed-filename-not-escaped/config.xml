@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-42597&quot;&gt;JENKINS-42597&lt;/a&gt; - changes page doesn&apos;t URL encode &apos;%&apos;</description>
+  <description>[JENKINS-42597](https://issues.jenkins.io/browse/JENKINS-42597) - changes page doesn&apos;t URL encode &apos;%&apos;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

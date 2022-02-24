@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.21">
   <actions/>
-  <description>Multi-branch pipeline for &lt;a href=&quot;https://bitbucket.org/markewaite/jenkins-bugs&quot;&gt;Bitbucket public Jenkins bugs&lt;/a&gt; using **Bitbucket branch source**</description>
+  <description>Multi-branch pipeline for [Bitbucket public Jenkins bugs](https://bitbucket.org/markewaite/jenkins-bugs) using **Bitbucket branch source**</description>
   <displayName>jenkins-bugs (Bitbucket)</displayName>
   <properties>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.6.14">

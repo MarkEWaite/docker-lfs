@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-43931&quot;&gt;JENKINS-43931&lt;/a&gt; space in job name breaks credentials fetch</description>
+  <description>[JENKINS-43931](https://issues.jenkins.io/browse/JENKINS-43931) space in job name breaks credentials fetch</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

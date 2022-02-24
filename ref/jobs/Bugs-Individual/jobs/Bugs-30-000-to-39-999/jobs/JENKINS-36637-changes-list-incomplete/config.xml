@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-36637&quot;&gt;JENKINS-36637&lt;/a&gt; some characters damage changelog</description>
+  <description>[JENKINS-36637](https://issues.jenkins.io/browse/JENKINS-36637) some characters damage changelog</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.19.3">

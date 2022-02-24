@@ -1,9 +1,9 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-67430&quot;&gt;JENKINS-67430&lt;/a&gt; notes a regression I introduced in node and label parameter plugin 1.10.2.&#xd;
+  <description>[JENKINS-67430](https://issues.jenkins.io/browse/JENKINS-67430) notes a regression I introduced in node and label parameter plugin 1.10.2.&#xd;
 Configuration changes are not saved for default and for possible nodes.&#xd;
-Tim Jacomb fixed my mistake with &lt;a href=&quot;&quot;&gt;PR-77&lt;/a&gt;.</description>
+Tim Jacomb fixed my mistake with [PR-77]().</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.6">

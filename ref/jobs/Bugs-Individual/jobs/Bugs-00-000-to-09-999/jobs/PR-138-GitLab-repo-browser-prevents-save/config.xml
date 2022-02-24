@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://github.com/jenkinsci/gitlab-branch-source-plugin/issues/138&quot;&gt;PR-138&lt;/a&gt; reports that choosing GitLab as a repository browser will block saving the job.</description>
+  <description>[PR-138](https://github.com/jenkinsci/gitlab-branch-source-plugin/issues/138) reports that choosing GitLab as a repository browser will block saving the job.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

@@ -11,7 +11,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64841&quot;&gt;JENKINS-64841&lt;/a&gt; check that parameter value can be used as a declarative agent label</description>
+  <description>[JENKINS-64841](https://issues.jenkins.io/browse/JENKINS-64841) check that parameter value can be used as a declarative agent label</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

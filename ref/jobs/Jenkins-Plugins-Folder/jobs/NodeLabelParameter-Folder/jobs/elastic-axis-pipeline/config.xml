@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.23">
   <actions/>
-  <description>&lt;a href=&quot;https://github.com/MarkEWaite/nodelabelparameter-plugin&quot;&gt;Jenkins Node Label Parameter plugin&lt;/a&gt; Jenkinsfile based jobs</description>
+  <description>[Jenkins Node Label Parameter plugin](https://github.com/MarkEWaite/nodelabelparameter-plugin) Jenkinsfile based jobs</description>
   <displayName>Node Label Parameter (GitHub)</displayName>
   <properties>
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@6.15">

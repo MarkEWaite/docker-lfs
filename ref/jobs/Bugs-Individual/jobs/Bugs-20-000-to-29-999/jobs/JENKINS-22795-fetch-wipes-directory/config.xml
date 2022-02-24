@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-22795&quot;&gt;JENKINS-22795&lt;/a&gt; reports the git plugin erases the workspace
+  <description>[JENKINS-22795](https://issues.jenkins.io/browse/JENKINS-22795) reports the git plugin erases the workspace
 
 That erase is even without wipe workspace, or any clean setting.
 

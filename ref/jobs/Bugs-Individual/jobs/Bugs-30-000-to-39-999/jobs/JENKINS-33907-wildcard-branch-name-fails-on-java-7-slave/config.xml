@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-33907&quot;&gt;JENKINS-33907&lt;/a&gt; if wildcards are in the branch name, the master is Java 6, and slave is Java 7, then Java class loading exceptions are thrown</description>
+  <description>[JENKINS-33907](https://issues.jenkins.io/browse/JENKINS-33907) if wildcards are in the branch name, the master is Java 6, and slave is Java 7, then Java class loading exceptions are thrown</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">

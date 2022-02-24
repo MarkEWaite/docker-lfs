@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-28529&quot;&gt;JENKINS-28529&lt;/a&gt;&#xd;
+  <description>[JENKINS-28529](https://issues.jenkins.io/browse/JENKINS-28529)&#xd;
 &#xd;
-When &lt;a href=&quot;/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/&quot;&gt;JENKINS-28529 job&lt;/a&gt; polls, it cleans the repository unnecessarily&#xd;
-The &lt;a href=&quot;/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/ws/&quot;&gt;JENKINS-28529 workspace&lt;/a&gt; should contain at least one file info*.txt</description>
+When [JENKINS-28529 job](/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/) polls, it cleans the repository unnecessarily&#xd;
+The [JENKINS-28529 workspace](/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/ws/) should contain at least one file info*.txt</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

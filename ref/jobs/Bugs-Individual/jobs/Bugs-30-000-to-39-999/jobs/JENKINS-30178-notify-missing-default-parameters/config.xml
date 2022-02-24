@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-30178&quot;&gt;JENKINS-30178&lt;/a&gt; a job which runs from a commit notification is missing the default parameters</description>
+  <description>[JENKINS-30178](https://issues.jenkins.io/browse/JENKINS-30178) a job which runs from a commit notification is missing the default parameters</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">

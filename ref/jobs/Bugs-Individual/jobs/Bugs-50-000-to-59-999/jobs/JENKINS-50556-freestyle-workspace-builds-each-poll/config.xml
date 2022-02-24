@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-50556&quot;&gt;JENKINS-50556&lt;/a&gt; workspace polling with local branch checkout gets stuck detecting changes that are not changes</description>
+  <description>[JENKINS-50556](https://issues.jenkins.io/browse/JENKINS-50556) workspace polling with local branch checkout gets stuck detecting changes that are not changes</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

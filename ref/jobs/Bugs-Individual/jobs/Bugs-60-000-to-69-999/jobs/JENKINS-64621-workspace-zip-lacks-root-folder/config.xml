@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64621&quot;&gt;JENKINS-64621&lt;/a&gt; says that artifacts included the parent directory with 2.263.1 and do not include it with 2.263.2</description>
+  <description>[JENKINS-64621](https://issues.jenkins.io/browse/JENKINS-64621) says that artifacts included the parent directory with 2.263.1 and do not include it with 2.263.2</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

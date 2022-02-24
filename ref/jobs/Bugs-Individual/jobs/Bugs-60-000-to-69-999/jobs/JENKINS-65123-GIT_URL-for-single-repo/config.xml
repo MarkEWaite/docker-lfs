@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-65123&quot;&gt;JENKINS-65123&lt;/a&gt; notes that the GIT_URL environment variable should be available even when multiple repositories are included&#xd;
+  <description>[JENKINS-65123](https://issues.jenkins.io/browse/JENKINS-65123) notes that the GIT_URL environment variable should be available even when multiple repositories are included&#xd;
 &#xd;
 Build will be unstable if GIT_URL is empty, and will be unstable if GIT_URL_1 or GIT_URL_2 are not empty.</description>
   <keepDependencies>false</keepDependencies>

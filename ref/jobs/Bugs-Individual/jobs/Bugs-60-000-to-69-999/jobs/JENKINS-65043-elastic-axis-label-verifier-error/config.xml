@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.19">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-65043&quot;&gt;JENKINS-65043&lt;/a&gt; reports the elastic axis label verifier fails in 2.249.1 and later.
+  <description>[JENKINS-65043](https://issues.jenkins.io/browse/JENKINS-65043) reports the elastic axis label verifier fails in 2.249.1 and later.
 Test interactively with the elastic axis label field to confirm that comma separated values are honored and that suggestions are offered based on available labels.
   </description>
   <keepDependencies>false</keepDependencies>

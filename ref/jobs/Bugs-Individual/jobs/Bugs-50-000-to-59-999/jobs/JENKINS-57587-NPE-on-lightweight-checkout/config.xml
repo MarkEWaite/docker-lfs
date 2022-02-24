@@ -9,7 +9,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-57587&quot;&gt;JENKINS-57587&lt;/a&gt; NPE in lightweight checkout pipeline job</description>
+  <description>[JENKINS-57587](https://issues.jenkins.io/browse/JENKINS-57587) NPE in lightweight checkout pipeline job</description>
   <keepDependencies>false</keepDependencies>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.80">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">

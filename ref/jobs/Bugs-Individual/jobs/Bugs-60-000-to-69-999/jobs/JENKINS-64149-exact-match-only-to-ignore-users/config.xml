@@ -1,9 +1,9 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;h2&gt;&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64149&quot;&gt;JENKINS-64149&lt;/a&gt; asks for help text clarification on excluded users&lt;/h2&gt;&#xd;
+  <description>&lt;h2&gt;[JENKINS-64149](https://issues.jenkins.io/browse/JENKINS-64149) asks for help text clarification on excluded users&lt;/h2&gt;&#xd;
 &#xd;
-&lt;p&gt;The name of the committer must be matched exactly.  Thus &lt;code&gt;Mark Waite&lt;/code&gt; matches the committer of &lt;a href=&quot;https://github.com/MarkEWaite/JENKINS-26197/commit/2e892bcfba7c4fcabfb2988664969f744a2bbed1&quot;&gt;2e892&lt;/a&gt; while &lt;code&gt;MarkEWaite&lt;/code&gt;, &lt;code&gt;mwaite&lt;/code&gt;, and &lt;code&gt;Mark&lt;/code&gt; do not</description>
+&lt;p&gt;The name of the committer must be matched exactly.  Thus &lt;code&gt;Mark Waite&lt;/code&gt; matches the committer of [2e892](https://github.com/MarkEWaite/JENKINS-26197/commit/2e892bcfba7c4fcabfb2988664969f744a2bbed1) while &lt;code&gt;MarkEWaite&lt;/code&gt;, &lt;code&gt;mwaite&lt;/code&gt;, and &lt;code&gt;Mark&lt;/code&gt; do not</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.3">

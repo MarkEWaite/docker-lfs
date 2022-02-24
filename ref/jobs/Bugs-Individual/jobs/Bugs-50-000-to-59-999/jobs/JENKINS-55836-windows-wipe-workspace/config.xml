@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-55836?filter=14040&quot;&gt;JENKINS-55836&lt;/a&gt; reports that WS-CLEANUP fails on windows due to busy pack file</description>
+  <description>[JENKINS-55836](https://issues.jenkins.io/browse/JENKINS-55836?filter=14040) reports that WS-CLEANUP fails on windows due to busy pack file</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
