@@ -19,12 +19,12 @@ def md_to_href(args):
                 # print("File: " + file_name + " contains no markdown link")
                 continue
             print("File: " + file_name + " contains an href link")
-            m = re.search('&lt;a href=&quot;(.*)&quot;&gt;(.*)&lt;/a&gt;', content)
+            m = re.search('&lt;a href=&quot;(.*?)&quot;&gt;(.*?)&lt;/a&gt;', content)
             if m:
                 link_text = m.group(1)
                 link_url = m.group(2)
                 print("search result:", link_text, link_url)
-            replaced_content = re.sub('&lt;a href=&quot;(.*)&quot;&gt;(.*)&lt;/a&gt;',
+            replaced_content = re.sub('&lt;a href=&quot;(.*?)&quot;&gt;(.*?)&lt;/a&gt;',
                                       '[\\2](\\1)',
                                       content)
         with open(file_name, 'w') as file_content:
