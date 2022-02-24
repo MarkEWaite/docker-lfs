@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-31619&quot;&gt;JENKINS-31619&lt;/a&gt; - needs .jenkins/cache/jars dir for metrics plugin</description>
+  <description>[JENKINS-31619](https://issues.jenkins.io/browse/JENKINS-31619) - needs .jenkins/cache/jars dir for metrics plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

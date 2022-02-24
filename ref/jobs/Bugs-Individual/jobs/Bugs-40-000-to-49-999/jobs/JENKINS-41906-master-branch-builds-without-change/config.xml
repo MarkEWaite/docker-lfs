@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-41906&quot;&gt;JENKINS-41906&lt;/a&gt; master builds when other branches change&#xd;
+  <description>[JENKINS-41906](https://issues.jenkins.io/browse/JENKINS-41906) master builds when other branches change&#xd;
 &#xd;
 Expected to be built only once, when the first polling detects that it has never been built.  &#xd;
 Otherwise, should only build on those rare occasions when the master branch changes.</description>

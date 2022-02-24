@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@706.vd43c65dec013">
   <actions/>
-  <description>&lt;a href=&quot;https://github.com/MarkEWaite/clover-plugin&quot;&gt;Jenkins Clover plugin&lt;/a&gt; Jenkinsfile based jobs</description>
+  <description>[Jenkins Clover plugin](https://github.com/MarkEWaite/clover-plugin) Jenkinsfile based jobs</description>
   <displayName>Clover (GitHub)</displayName>
   <properties>
     <org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty plugin="config-file-provider@3.8.2">

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-26268&quot;&gt;JENKINS-26268&lt;/a&gt; Two repos fail job if remotes used in branch spec</description>
+  <description>[JENKINS-26268](https://issues.jenkins.io/browse/JENKINS-26268) Two repos fail job if remotes used in branch spec</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-26660&quot;&gt;JENKINS-26660&lt;/a&gt; asks to optionally remove submodules from agent workspace</description>
+  <description>[JENKINS-26660](https://issues.jenkins.io/browse/JENKINS-26660) asks to optionally remove submodules from agent workspace</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11">

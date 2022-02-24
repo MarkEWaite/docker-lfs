@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-65544&quot;&gt;JENKINS-65544&lt;/a&gt; reports that a job with 6 parameters does not save</description>
+  <description>[JENKINS-65544](https://issues.jenkins.io/browse/JENKINS-65544) reports that a job with 6 parameters does not save</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.2.1">

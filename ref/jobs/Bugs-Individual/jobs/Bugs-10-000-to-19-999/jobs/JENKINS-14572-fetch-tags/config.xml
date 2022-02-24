@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-14572&quot;&gt;JENKINS-14572&lt;/a&gt; allows clone without tags</description>
+  <description>[JENKINS-14572](https://issues.jenkins.io/browse/JENKINS-14572) allows clone without tags</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@1.0.3">

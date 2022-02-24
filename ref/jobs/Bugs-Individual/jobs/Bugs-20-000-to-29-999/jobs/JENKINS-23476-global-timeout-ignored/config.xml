@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-23476&quot;&gt;JENKINS-23476&lt;/a&gt; global default git client timeout ignored</description>
+  <description>[JENKINS-23476](https://issues.jenkins.io/browse/JENKINS-23476) global default git client timeout ignored</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

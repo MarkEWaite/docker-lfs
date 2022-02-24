@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-42609&quot;&gt;JENKINS-42609&lt;/a&gt; - describe env vars in JENKINS_URL/env-vars.html (as documentation)</description>
+  <description>[JENKINS-42609](https://issues.jenkins.io/browse/JENKINS-42609) - describe env vars in JENKINS_URL/env-vars.html (as documentation)</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

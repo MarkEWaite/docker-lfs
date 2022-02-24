@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-53346&quot;&gt;JENKINS-53346&lt;/a&gt; env vars not set</description>
+  <description>[JENKINS-53346](https://issues.jenkins.io/browse/JENKINS-53346) env vars not set</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

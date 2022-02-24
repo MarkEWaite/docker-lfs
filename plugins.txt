@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:incrementals;org.jenkins-ci.plugins;757.v40b_45d975c45
+cloudbees-bitbucket-branch-source:757.vddedc5f2589a_
 cloudbees-folder:6.708.ve61636eb_65a_5
 cloudbees-jenkins-advisor:3.3.2
 clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
@@ -45,7 +45,7 @@ code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.9.0
-configuration-as-code:1346.ve8cfa_3473c94
+configuration-as-code:1413.vb_1b_8cb_c67a_f4
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc424.6447a610239f
 conventional-commits:0.10.0
 copyartifact:1.46.2

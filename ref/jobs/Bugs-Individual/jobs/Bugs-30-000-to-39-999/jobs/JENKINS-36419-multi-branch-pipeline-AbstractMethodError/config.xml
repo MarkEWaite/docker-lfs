@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.8">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-36419&quot;&gt;JENKINS-36419&lt;/a&gt; multibranch pipeline cannot index after git plugin 2.5.1 upgrade</description>
+  <description>[JENKINS-36419](https://issues.jenkins.io/browse/JENKINS-36419) multibranch pipeline cannot index after git plugin 2.5.1 upgrade</description>
   <displayName>JENKINS-36419 multi-branch pipeline AbstractMethodError</displayName>
   <properties/>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.15">

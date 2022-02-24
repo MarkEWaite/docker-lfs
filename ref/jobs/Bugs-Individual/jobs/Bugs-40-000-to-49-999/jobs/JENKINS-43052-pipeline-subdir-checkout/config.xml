@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.11">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-43052&quot;&gt;JENKINS-43052&lt;/a&gt; pipeline checkout to subdirectory fails
+  <description>[JENKINS-43052](https://issues.jenkins.io/browse/JENKINS-43052) pipeline checkout to subdirectory fails
 
 Will *not* build unless explicitly started because the job uses lightweight monitoring of the Jenkinsfile.
   </description>

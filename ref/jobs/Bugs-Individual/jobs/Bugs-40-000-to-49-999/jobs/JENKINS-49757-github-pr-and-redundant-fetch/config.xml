@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-49757&quot;&gt;JENKINS-49757&lt;/a&gt; reports redundant fetch when cloning a repository
+  <description>[JENKINS-49757](https://issues.jenkins.io/browse/JENKINS-49757) reports redundant fetch when cloning a repository
 
 &lt;p&gt;By default, the first fetch command does not honor the refspec while the second fetch honors the refspec.
 This example shows a case where the refspec in the second fetch is critical to obtain the expected results from the job</description>

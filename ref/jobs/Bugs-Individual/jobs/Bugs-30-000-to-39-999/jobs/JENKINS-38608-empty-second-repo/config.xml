@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-38608&quot;&gt;JENKINS-38608&lt;/a&gt; poor error message when empty repo defined in job</description>
+  <description>[JENKINS-38608](https://issues.jenkins.io/browse/JENKINS-38608) poor error message when empty repo defined in job</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

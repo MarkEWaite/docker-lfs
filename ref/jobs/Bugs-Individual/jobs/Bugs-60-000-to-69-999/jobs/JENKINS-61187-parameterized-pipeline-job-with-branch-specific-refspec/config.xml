@@ -9,7 +9,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-61187&quot;&gt;JENKINS-61187&lt;/a&gt; asked to automatically narrow the refspec when fetching from a user selected parameter&#xd;
+  <description>[JENKINS-61187](https://issues.jenkins.io/browse/JENKINS-61187) asked to automatically narrow the refspec when fetching from a user selected parameter&#xd;
 &#xd;
 &lt;p&gt;This job shows how to narrow the refspec based on a parameter&lt;/p&gt;</description>
   <keepDependencies>false</keepDependencies>

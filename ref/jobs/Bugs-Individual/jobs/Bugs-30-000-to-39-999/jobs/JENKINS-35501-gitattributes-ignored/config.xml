@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-35501&quot;&gt;JENKINS-35501&lt;/a&gt; gitattributes file is ignored</description>
+  <description>[JENKINS-35501](https://issues.jenkins.io/browse/JENKINS-35501) gitattributes file is ignored</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

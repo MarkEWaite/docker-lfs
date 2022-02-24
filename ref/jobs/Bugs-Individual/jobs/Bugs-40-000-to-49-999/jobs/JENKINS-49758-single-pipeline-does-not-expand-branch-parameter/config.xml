@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.33">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-49758&quot;&gt;JENKINS-49758&lt;/a&gt; Pipeline does not expand parameters in branch name or refspec</description>
+  <description>[JENKINS-49758](https://issues.jenkins.io/browse/JENKINS-49758) Pipeline does not expand parameters in branch name or refspec</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

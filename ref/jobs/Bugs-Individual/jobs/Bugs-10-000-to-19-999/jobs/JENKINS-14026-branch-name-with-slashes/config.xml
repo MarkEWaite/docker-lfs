@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-14026&quot;&gt;JENKINS-14026&lt;/a&gt; showed problems supporting branch names with slashes&#xd;
+  <description>[JENKINS-14026](https://issues.jenkins.io/browse/JENKINS-14026) showed problems supporting branch names with slashes&#xd;
 &#xd;
 This job checks that the branches in the git client plugin which include slash characters (&apos;/&apos;)&#xd;
 are detected and built by the job.  This job is *not* expected to run more than once per detected&#xd;

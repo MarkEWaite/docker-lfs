@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.22">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64164&quot;&gt;JENKINS-64164&lt;/a&gt; reports a stack trace creating a multibranch pipeline using a single branch source on Jenkins 2.266-SNAPSHOT</description>
+  <description>[JENKINS-64164](https://issues.jenkins.io/browse/JENKINS-64164) reports a stack trace creating a multibranch pipeline using a single branch source on Jenkins 2.266-SNAPSHOT</description>
   <displayName>jenkins-bugs (single source)</displayName>
   <properties>
     <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.24">

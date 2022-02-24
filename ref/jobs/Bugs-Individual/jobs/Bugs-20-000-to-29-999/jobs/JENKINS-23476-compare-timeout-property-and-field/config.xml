@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-23476&quot;&gt;JENKINS-23476&lt;/a&gt; git timeout&#xd;
+  <description>[JENKINS-23476](https://issues.jenkins.io/browse/JENKINS-23476) git timeout&#xd;
 &#xd;
 Compare value of TIMEOUT field of org.jenkinsci.plugins.gitclient.CliGitAPIImpl&#xd;
 and system property org.jenkinsci.plugins.gitclient.Git.timeOut</description>

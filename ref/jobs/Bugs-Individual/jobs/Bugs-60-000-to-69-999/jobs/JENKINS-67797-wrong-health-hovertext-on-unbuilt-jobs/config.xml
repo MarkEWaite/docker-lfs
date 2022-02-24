@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.688.vfc7a_a_69059e0">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-67797&quot;&gt;JENKINS-67797&lt;/a&gt; notes that the hover text of the weather icon reports &quot;100%&quot; when the job has not been built. </description>
+  <description>[JENKINS-67797](https://issues.jenkins.io/browse/JENKINS-67797) notes that the hover text of the weather icon reports &quot;100%&quot; when the job has not been built. </description>
   <displayName>JENKINS-67797 wrong health hover text on unbuilt jobs</displayName>
   <properties>
     <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.28">

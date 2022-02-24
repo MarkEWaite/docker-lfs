@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-15339&quot;&gt;JENKINS-15339&lt;/a&gt; reports that node label parameter plugin fails on windows</description>
+  <description>[JENKINS-15339](https://issues.jenkins.io/browse/JENKINS-15339) reports that node label parameter plugin fails on windows</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

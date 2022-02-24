@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-38699&quot;&gt;JENKINS-38699&lt;/a&gt; read the contents of the git repository in the folder above this job.
+  <description>[JENKINS-38699](https://issues.jenkins.io/browse/JENKINS-38699) read the contents of the git repository in the folder above this job.
 
 Relies on node label parameter plugin to run this on the same agent that ran the previous job.</description>
   <keepDependencies>false</keepDependencies>
