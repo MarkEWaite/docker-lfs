@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-49757&quot;&gt;JENKINS-49757&lt;/a&gt; second fetch not expected when refspec honored on initial clone</description>
+  <description>[JENKINS-49757](https://issues.jenkins.io/browse/JENKINS-49757) second fetch not expected when refspec honored on initial clone</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

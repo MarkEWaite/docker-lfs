@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-29603&quot;&gt;JENKINS-29603&lt;/a&gt;&#xd;
+  <description>[JENKINS-29603](https://issues.jenkins.io/browse/JENKINS-29603)&#xd;
 &#xd;
 A notifyCommit call with branchName argument whose value contains a &apos;/&apos; does not notify jobs of the change.&#xd;
 When &apos;/&apos; is not in the branchName value, the notifyCommit works as expected.&#xd;

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-28529&quot;&gt;JENKINS-28529&lt;/a&gt; polling cleans the repo unnecessarily&#xd;
+  <description>[JENKINS-28529](https://issues.jenkins.io/browse/JENKINS-28529) polling cleans the repo unnecessarily&#xd;
 &#xd;
 Workspace should always contain one file named info-*.txt.  That file is created by ant when it runs build.xml.&#xd;
 It should remain after polling.  The bug is that the file is deleted by the polling step.</description>

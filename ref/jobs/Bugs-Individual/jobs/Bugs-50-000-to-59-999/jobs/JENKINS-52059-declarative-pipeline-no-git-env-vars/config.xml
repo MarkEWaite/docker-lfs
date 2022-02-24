@@ -16,7 +16,7 @@
       </options>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-52059&quot;&gt;JENKINS-52059&lt;/a&gt; scripted pipeline checkout does not set GIT_ env variables, declarative does</description>
+  <description>[JENKINS-52059](https://issues.jenkins.io/browse/JENKINS-52059) scripted pipeline checkout does not set GIT_ env variables, declarative does</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

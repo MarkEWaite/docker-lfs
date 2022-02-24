@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-5724&quot;&gt;JENKINS-5724&lt;/a&gt;</description>
+  <description>[JENKINS-5724](https://issues.jenkins.io/browse/JENKINS-5724)</description>
   <logRotator class="hudson.tasks.LogRotator">
     <daysToKeep>-1</daysToKeep>
     <numToKeep>15</numToKeep>

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.14">
   <actions/>
-  <description>Authenticated git repositories hosted on &lt;a href=&quot;https://www.assembla.com/spaces/&quot;&gt;Assembla&lt;/a&gt;, including a &lt;a href=&quot;https://app.assembla.com/spaces/git-plugin/git/source&quot;&gt;public workspace&lt;/a&gt; and &lt;a href=&quot;https://app.assembla.com/spaces/git-plugin/git-2/source&quot;&gt;private workspace&lt;/a&gt;</description>
+  <description>Authenticated git repositories hosted on [Assembla](https://www.assembla.com/spaces/), including a [public workspace](https://app.assembla.com/spaces/git-plugin/git/source) and a [private workspace](https://app.assembla.com/spaces/git-plugin/git-2/source)</description>
   <displayName>Assembla</displayName>
   <properties/>
   <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">

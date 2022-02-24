@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <maven2-moduleset plugin="maven-plugin@3.8">
   <actions/>
-  <description>Jenkins &lt;a href=&quot;https://plugins.jenkins.io/platformlabeler&quot;&gt;platform labeler plugin&lt;/a&gt; maven job</description>
+  <description>Jenkins [platform labeler plugin](https://plugins.jenkins.io/platformlabeler) maven job</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

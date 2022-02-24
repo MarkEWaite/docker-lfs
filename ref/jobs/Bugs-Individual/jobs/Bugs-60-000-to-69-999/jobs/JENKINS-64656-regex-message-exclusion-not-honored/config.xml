@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins-ci.org/browse/JENKINS-64656&quot;&gt;JENKINS-64656&lt;/a&gt; Freestyle polling does not honor message exclusion regular expression</description>
+  <description>[JENKINS-64656](https://issues.jenkins-ci.org/browse/JENKINS-64656) Freestyle polling does not honor message exclusion regular expression</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.3">

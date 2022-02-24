@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.35">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-35475&quot;&gt;JENKINS-35475&lt;/a&gt; git build data shown multiple times</description>
+  <description>[JENKINS-35475](https://issues.jenkins.io/browse/JENKINS-35475) git build data shown multiple times</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9">

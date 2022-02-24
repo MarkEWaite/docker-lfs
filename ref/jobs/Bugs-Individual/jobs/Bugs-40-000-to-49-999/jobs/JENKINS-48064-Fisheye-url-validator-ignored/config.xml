@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-48064&quot;&gt;JENKINS-48064&lt;/a&gt; - URL field in Fisheye browser config is not checked&#xd;
+  <description>[JENKINS-48064](https://issues.jenkins.io/browse/JENKINS-48064) - URL field in Fisheye browser config is not checked&#xd;
 &#xd;
 A check method is implemented, but not called.&#xd;
 &#xd;
 1. Build this job at least once with the &quot;Build now&quot; link on the sidebar&#xd;
-2. Show the &lt;a href=&quot;/job/Bugs-Individual/job/JENKINS-48064-Fisheye-url-validator-ignored/changes&quot;&gt;changes&lt;/a&gt;&#xd;
+2. Show the [changes](/job/Bugs-Individual/job/JENKINS-48064-Fisheye-url-validator-ignored/changes)&#xd;
 3. Click one of the FishEye links in the changes&#xd;
 &#xd;
-Refer to &lt;a href=&quot;https://github.com/aeshell/aesh/&quot;&gt;github&lt;/a&gt; for the repository history</description>
+Refer to [github](https://github.com/aeshell/aesh/) for the repository history</description>
   <keepDependencies>false</keepDependencies>
   <properties>
   </properties>

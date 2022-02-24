@@ -145,7 +145,7 @@ jenkins:
     enabled: true
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  systemMessage: "Jenkins for <a href='mailto:mark.earl.waite@gmail.com'>Mark Waite</a>"
+  systemMessage: "Jenkins for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
   updateCenter:
     sites:
     - id: "default"

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <maven2-moduleset plugin="maven-plugin@3.10">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-65276&quot;&gt;JENKINS-65276&lt;/a&gt; reports that newly created maven jobs ignore the setting of the JDK as provided by the Jenkins job definition.  I can&apos;t duplicate the problem.&#xd;
+  <description>[JENKINS-65276](https://issues.jenkins.io/browse/JENKINS-65276) reports that newly created maven jobs ignore the setting of the JDK as provided by the Jenkins job definition.  I can&apos;t duplicate the problem.&#xd;
 &#xd;
 &#xd;
 This job intentionally uses JDK 11 even though my typical Jenkins configuration runs on Java 8.  It will be unstable if the build is not run with Java 11.</description>

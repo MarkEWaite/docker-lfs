@@ -9,9 +9,9 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-58349&quot;&gt;JENKINS-58349&lt;/a&gt; notes that initial checkout of Jenkinsfile ignores timeout value&#xd;
+  <description>[JENKINS-58349](https://issues.jenkins.io/browse/JENKINS-58349) notes that initial checkout of Jenkinsfile ignores timeout value&#xd;
 &#xd;
-Duplicate of &lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-38973&quot;&gt;JENKINS-38973&lt;/a&gt;&#xd;
+Duplicate of [JENKINS-38973](https://issues.jenkins.io/browse/JENKINS-38973)&#xd;
 &#xd;
 This version of the job uses lightweight checkout</description>
   <keepDependencies>false</keepDependencies>

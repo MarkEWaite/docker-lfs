@@ -11,7 +11,7 @@
       </options>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>Explore &lt;a href="https://issues.jenkins.io/browse/JENKINS-61515"&gt;JENKINS-61515&lt;/a&gt; - polling detects no changes with declarative pipeline</description>
+  <description>Explore [JENKINS-61515](https://issues.jenkins.io/browse/JENKINS-61515) - polling detects no changes with declarative pipeline</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

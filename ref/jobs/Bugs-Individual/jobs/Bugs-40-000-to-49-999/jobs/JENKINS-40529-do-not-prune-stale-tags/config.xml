@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-40529&quot;&gt;JENKINS-40529&lt;/a&gt; adds stale tag pruning extension&#xd;
+  <description>[JENKINS-40529](https://issues.jenkins.io/browse/JENKINS-40529) adds stale tag pruning extension&#xd;
 &#xd;
 &lt;p&gt;This job relies on being run multiple times in the &lt;strong&gt;same workspace&lt;/strong&gt;.&#xd;
 First run in a new workspace will not report any count of stale tags because first use of a workspace cannot contain stale tags.&#xd;

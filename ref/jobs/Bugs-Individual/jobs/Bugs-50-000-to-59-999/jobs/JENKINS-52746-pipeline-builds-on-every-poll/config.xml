@@ -13,7 +13,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-52746&quot;&gt;JENKINS-52746&lt;/a&gt; - Pipeline builds on every poll&#xd;
+  <description>[JENKINS-52746](https://issues.jenkins.io/browse/JENKINS-52746) - Pipeline builds on every poll&#xd;
 &#xd;
 Even though there are no changes to detect.  See the bug trivially by clicking the &quot;Poll Now&quot; link on the page.  It will build even though there are no changes.</description>
   <keepDependencies>false</keepDependencies>

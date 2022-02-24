@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-30371&quot;&gt;JENKINS-30371&lt;/a&gt; includes symlink support for Java 7 file systems which support them.&#xd;
+  <description>[JENKINS-30371](https://issues.jenkins.io/browse/JENKINS-30371) includes symlink support for Java 7 file systems which support them.&#xd;
 &#xd;
 Requires a file system and operating system configured to support symoblic links.</description>
   <logRotator class="hudson.tasks.LogRotator">

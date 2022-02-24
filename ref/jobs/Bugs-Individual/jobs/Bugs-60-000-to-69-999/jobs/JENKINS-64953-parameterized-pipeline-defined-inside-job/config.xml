@@ -9,7 +9,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-64953&quot;&gt;JENKINS-64953&lt;/a&gt; reports that parameter definitions could not be saved from &quot;This project is parameterized&quot;.  This job shows that I can&apos;t duplicate the issue</description>
+  <description>[JENKINS-64953](https://issues.jenkins.io/browse/JENKINS-64953) reports that parameter definitions could not be saved from &quot;This project is parameterized&quot;.  This job shows that I can&apos;t duplicate the issue</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.6">

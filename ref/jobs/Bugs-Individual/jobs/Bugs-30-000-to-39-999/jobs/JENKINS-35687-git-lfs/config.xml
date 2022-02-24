@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.18">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-35687&quot;&gt;JENKINS-35687&lt;/a&gt; add large file support</description>
+  <description>[JENKINS-35687](https://issues.jenkins.io/browse/JENKINS-35687) add large file support</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

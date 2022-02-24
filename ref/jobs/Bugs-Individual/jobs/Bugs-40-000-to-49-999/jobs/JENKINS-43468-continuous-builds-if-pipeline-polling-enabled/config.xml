@@ -9,7 +9,7 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-43468&quot;&gt;JENKINS-43468&lt;/a&gt; pipeline builds on every polling interval</description>
+  <description>[JENKINS-43468](https://issues.jenkins.io/browse/JENKINS-43468) pipeline builds on every polling interval</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

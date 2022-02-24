@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@1.8">
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-41354&quot;&gt;JENKINS-41354&lt;/a&gt; check env vars in multi-config job</description>
+  <description>[JENKINS-41354](https://issues.jenkins.io/browse/JENKINS-41354) check env vars in multi-config job</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
