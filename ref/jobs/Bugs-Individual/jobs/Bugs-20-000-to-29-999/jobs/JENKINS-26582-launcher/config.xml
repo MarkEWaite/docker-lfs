@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Uses curl and a specific SHA1 to start &lt;a href=&quot;http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/Bugs-20-000-to-29-999/job/JENKINS-26582-ISE-on-git-notify&quot;&gt;JENKINS-26582-ISE-on-git-notify&lt;/a&gt;</description>
+  <description>Uses curl and a specific SHA1 to start [JENKINS-26582-ISE-on-git-notify](http://JENKINS_HOSTNAME:8080/job/Bugs-Individual/job/Bugs-20-000-to-29-999/job/JENKINS-26582-ISE-on-git-notify)</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

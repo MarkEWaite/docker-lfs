@@ -7,7 +7,7 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;&quot;&gt;JENKINS-60591&lt;/a&gt; reports that the &lt;code&gt;checkout scm&lt;/code&gt; step&#xd;
+  <description>[JENKINS-60591]() reports that the &lt;code&gt;checkout scm&lt;/code&gt; step&#xd;
 does not checkout the same SHA-1 as was used to checkout the Jenkinsfile.&#xd;
 &#xd;
 &lt;p&gt;The online help indicates that it should do so in a multibranch pipeline&#xd;

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-47646&quot;&gt;JENKINS-47646&lt;/a&gt; reports that UI driven tagging fails</description>
+  <description>[JENKINS-47646](https://issues.jenkins.io/browse/JENKINS-47646) reports that UI driven tagging fails</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

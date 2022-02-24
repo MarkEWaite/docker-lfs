@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-37263&quot;&gt;JENKINS-37263&lt;/a&gt; reports that sometimes the wrong commit is used if the branch name contains a slash</description>
+  <description>[JENKINS-37263](https://issues.jenkins.io/browse/JENKINS-37263) reports that sometimes the wrong commit is used if the branch name contains a slash</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

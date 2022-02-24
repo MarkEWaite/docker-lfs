@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-14917&quot;&gt;JENKINS-14917&lt;/a&gt; build not triggered for new tag&#xd;
+  <description>[JENKINS-14917](https://issues.jenkins.io/browse/JENKINS-14917) build not triggered for new tag&#xd;
 &#xd;
 This job creates a tag in the userContent repository and invokes notifyCommit on that repository</description>
   <keepDependencies>false</keepDependencies>

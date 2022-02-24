@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Check &lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-23606&quot;&gt;JENKINS-23606&lt;/a&gt; - include region specification not honored across merge results
+  <description>Check [JENKINS-23606](https://issues.jenkins.io/browse/JENKINS-23606) - include region specification not honored across merge results
 &lt;ul&gt;
-&lt;li&gt; This branch - &lt;a href=&quot;../JENKINS-23606-merge-triggers-unexpected-jobs-all&quot;&gt;**all** directories&lt;/a&gt;
-&lt;li&gt; This branch - &lt;a href=&quot;../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-1&quot;&gt;**only project 1** directory&lt;/a&gt;
-&lt;li&gt; This branch - &lt;a href=&quot;../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-2&quot;&gt;**only project 2** directory&lt;/a&gt;
-&lt;li&gt; &lt;a href=&quot;../JENKINS-23606-merge-triggers-unexpected-jobs-project-1&quot;&gt;project-1 branch&lt;/a&gt;
-&lt;li&gt; &lt;a href=&quot;../JENKINS-23606-merge-triggers-unexpected-jobs-project-2&quot;&gt;project-2 branch&lt;/a&gt;&lt;/ul&gt;</description>
+&lt;li&gt; This branch - [**all** directories](../JENKINS-23606-merge-triggers-unexpected-jobs-all)
+&lt;li&gt; This branch - [**only project 1** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-1)
+&lt;li&gt; This branch - [**only project 2** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-2)
+&lt;li&gt; [project-1 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-1)
+&lt;li&gt; [project-2 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-2)&lt;/ul&gt;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-22547&quot;&gt;JENKINS-22547&lt;/a&gt; - no checkout timeout</description>
+  <description>[JENKINS-22547](https://issues.jenkins.io/browse/JENKINS-22547) - no checkout timeout</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

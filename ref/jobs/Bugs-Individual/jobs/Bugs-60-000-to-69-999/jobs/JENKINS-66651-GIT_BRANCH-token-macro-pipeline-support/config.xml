@@ -16,7 +16,7 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-66651&quot;&gt;JENKINS-66651&lt;/a&gt; noted that the &lt;code&gt;GIT_BRANCH&lt;/code&gt; token macro was not supported in Pipeline jobs while other token macros are supported in Pipeline jobs.</description>
+  <description>[JENKINS-66651](https://issues.jenkins.io/browse/JENKINS-66651) noted that the &lt;code&gt;GIT_BRANCH&lt;/code&gt; token macro was not supported in Pipeline jobs while other token macros are supported in Pipeline jobs.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.6">

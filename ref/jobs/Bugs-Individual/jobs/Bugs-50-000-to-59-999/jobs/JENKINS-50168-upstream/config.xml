@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Launches the &lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-50168&quot;&gt;JENKINS-50168&lt;/a&gt; &lt;a href=&quot;../JENKINS-50168-parameterized-polls-with-last-built-branch&quot;&gt;check job&lt;/a&gt; periodically with a non-default value for the BRANCH parameter.&#xd;
-&#xd;
+  <description>Launches the [JENKINS-50168](https://issues.jenkins.io/browse/JENKINS-50168) [check job](../JENKINS-50168-parameterized-polls-with-last-built-branch) periodically with a non-default value for the BRANCH parameter.
+
 Reduces interactive verification that a commit to the JENKINS-501568 branch is detected by the periodic polling, even if the last built branch was not the JENKINS-50168 branch.</description>
   <keepDependencies>false</keepDependencies>
   <properties>

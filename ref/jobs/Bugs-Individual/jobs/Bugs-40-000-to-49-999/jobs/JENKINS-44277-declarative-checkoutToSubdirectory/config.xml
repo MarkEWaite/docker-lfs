@@ -9,7 +9,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>Confirm that &lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-44277&quot;&gt;JENKINS-44277&lt;/a&gt; adds &lt;code&gt;checkoutToSubdirectory&lt;/code&gt; to declarative pipeline</description>
+  <description>Confirm that [JENKINS-44277](https://issues.jenkins.io/browse/JENKINS-44277) adds &lt;code&gt;checkoutToSubdirectory&lt;/code&gt; to declarative pipeline</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11">

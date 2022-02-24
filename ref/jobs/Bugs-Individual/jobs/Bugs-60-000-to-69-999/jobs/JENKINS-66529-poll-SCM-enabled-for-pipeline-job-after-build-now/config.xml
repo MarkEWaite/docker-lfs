@@ -9,7 +9,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-66529&quot;&gt;JENKINS-66529&lt;/a&gt; reports that poll SCM is enabled after first run of a Pipeline job.  I can&apos;t duplicate the issue</description>
+  <description>[JENKINS-66529](https://issues.jenkins.io/browse/JENKINS-66529) reports that poll SCM is enabled after first run of a Pipeline job.  I can&apos;t duplicate the issue</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.5">

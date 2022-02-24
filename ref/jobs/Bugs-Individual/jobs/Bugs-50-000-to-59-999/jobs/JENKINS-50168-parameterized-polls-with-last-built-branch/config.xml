@@ -7,11 +7,11 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-50168&quot;&gt;JENKINS-50168&lt;/a&gt; - last built branch is used for polling instead of the default branch&#xd;
+  <description>[JENKINS-50168](https://issues.jenkins.io/browse/JENKINS-50168) - last built branch is used for polling instead of the default branch&#xd;
 &#xd;
-Launched periodically by an &lt;a href=&quot;../JENKINS-50168-upstream&quot;&gt;upstream job&lt;/a&gt; with a non-default parameter BRANCH=master.&#xd;
+Launched periodically by an [upstream job](../JENKINS-50168-upstream) with a non-default parameter BRANCH=master.&#xd;
 &#xd;
-Requires interactive verification that a commit to the &lt;a href=&quot;https://github.com/MarkEWaite/jenkins-bugscommits/JENKINS-50168&quot;&gt;jenkins-bugs JENKINS-50168 branch&lt;/a&gt; is detected by the periodic polling, even if the last built branch was not the JENKINS-50168 branch.</description>
+Requires interactive verification that a commit to the [jenkins-bugs JENKINS-50168 branch](https://github.com/MarkEWaite/jenkins-bugscommits/JENKINS-50168) is detected by the periodic polling, even if the last built branch was not the JENKINS-50168 branch.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">

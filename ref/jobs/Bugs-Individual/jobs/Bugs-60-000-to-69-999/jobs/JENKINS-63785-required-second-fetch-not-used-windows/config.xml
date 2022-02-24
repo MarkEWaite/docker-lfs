@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-63785&quot;&gt;JENKINS-63785&lt;/a&gt;&#xd;
+  <description>[JENKINS-63785](https://issues.jenkins.io/browse/JENKINS-63785)&#xd;
 git plugin relies on shell expansion of parameters on first fetch,&#xd;
 skips second fetch unless second fetch is preserved&#xd;
 &#xd;

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-40529&quot;&gt;JENKINS-40529&lt;/a&gt; adds stale tag pruning extension</description>
+  <description>[JENKINS-40529](https://issues.jenkins.io/browse/JENKINS-40529) adds stale tag pruning extension</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>

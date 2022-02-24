@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;a href=&quot;https://issues.jenkins.io/browse/JENKINS-32258&quot;&gt;JENKINS-32258&lt;/a&gt; rev-parse is called per branch pruning stale branches</description>
+  <description>[JENKINS-32258](https://issues.jenkins.io/browse/JENKINS-32258) rev-parse is called per branch pruning stale branches</description>
   <logRotator class="hudson.tasks.LogRotator">
     <daysToKeep>-1</daysToKeep>
     <numToKeep>120</numToKeep>
