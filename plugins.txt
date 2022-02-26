@@ -64,7 +64,7 @@ email-ext:2.87
 envinject:2.4.0
 envinject-api:1.8
 external-monitor-job:191.v363d0d1efdf8
-favorite:2.3.3
+favorite:2.4.0
 font-awesome-api:6.0.0-1
 forensics-api:1.8.1
 git:4.10.3
