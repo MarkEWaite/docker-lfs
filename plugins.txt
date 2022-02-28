@@ -45,7 +45,7 @@ code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
 config-file-provider:3.9.0
-configuration-as-code:1413.vb_1b_8cb_c67a_f4
+configuration-as-code:1414.v878271fc496f
 configurationslicing:incrementals;org.jenkins-ci.plugins;1.53-rc424.6447a610239f
 conventional-commits:0.10.0
 copyartifact:1.46.2
