@@ -61,7 +61,7 @@ durable-task:493.v195aefbb0ff2
 echarts-api:5.3.0-2
 elastic-axis:1.4.5
 email-ext:2.87
-envinject:2.4.0
+envinject:2.839.v52c702c10635
 envinject-api:1.180.v98d833b_27470
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.0
