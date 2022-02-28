@@ -1,38 +1,14 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.12.2">
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
   <actions/>
   <description>[JENKINS-41354](https://issues.jenkins.io/browse/JENKINS-41354) pipeline does not have git env variables</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.28.0">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.34.2">
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
-    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-      <triggers>
-        <hudson.triggers.SCMTrigger>
-          <spec></spec>
-          <ignorePostCommitHooks>false</ignorePostCommitHooks>
-        </hudson.triggers.SCMTrigger>
-      </triggers>
-    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-  </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.40">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2659.v52d3de6044d0">
     <script>def gitVars = null
 
 node {
@@ -50,21 +26,21 @@ node {
    }
    stage(&apos;Build&apos;) {
       if (isUnix()) {
-         sh &quot;env | sort&quot;
+         sh &apos;env | sort&apos;
       } else {
-         bat(&quot;set&quot;)
+         bat(&apos;set&apos;)
       }
-      def output = &quot;*** Map returned from checkout ***:\n&quot;
+      def output = &apos;*** Map returned from checkout ***:\n&apos;
       for (gitEnv in gitVars) {
-          output = output + &quot;${gitEnv.key}=${gitEnv.value}\n&quot;
+          output = output + gitEnv.key + &apos;=&apos; + gitEnv.value + &apos;\n&apos;
       }
       echo output
    }
    stage(&apos;Verify&apos;) {
       // Log should contain GIT_COMMIT=
-      if (!manager.logContains(&quot;.*GIT_COMMIT=.*&quot;)) {
-          manager.addWarningBadge(&quot;No GIT_COMMIT env variable&quot;)
-          manager.createSummary(&quot;warning.gif&quot;).appendText(&quot# No GIT_COMITT env variable!&quot;, false, false, false, &quot;yellow&quot;)
+      if (!manager.logContains(&apos;.*GIT_COMMIT=.*&apos;)) {
+          manager.addWarningBadge(&apos;No GIT_COMMIT env variable&apos;)
+          manager.createSummary(&apos;warning.gif&apos;).appendText(&apos;&lt;h1&gt;No GIT_COMMIT env variable!&lt;/h1&gt;&apos;, false, false, false, &apos;yellow&apos;)
           manager.buildUnstable()
       }
    }
