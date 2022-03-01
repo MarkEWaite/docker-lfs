@@ -9,9 +9,9 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>[JENKINS-61187](https://issues.jenkins.io/browse/JENKINS-61187) asked to automatically narrow the refspec when fetching from a user selected parameter&#xd;
-&#xd;
-&lt;p&gt;This job shows how to narrow the refspec based on a parameter&lt;/p&gt;</description>
+  <description>[JENKINS-61187](https://issues.jenkins.io/browse/JENKINS-61187) asked to automatically narrow the refspec when fetching from a user selected parameter.
+
+This job shows how to narrow the refspec based on a parameter</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12">
