@@ -16,34 +16,9 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>[JENKINS-66651](https://issues.jenkins.io/browse/JENKINS-66651) noted that the &lt;code&gt;GIT_BRANCH&lt;/code&gt; token macro was not supported in Pipeline jobs while other token macros are supported in Pipeline jobs.</description>
+  <description>[JENKINS-66651](https://issues.jenkins.io/browse/JENKINS-66651) noted that the `GIT_BRANCH` token macro was not supported in Pipeline jobs while other token macros are supported in Pipeline jobs.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.6">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.7">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.22">
-      <jobCredentialId></jobCredentialId>
-      <useAlternativeCredential>false</useAlternativeCredential>
-    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.4">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>

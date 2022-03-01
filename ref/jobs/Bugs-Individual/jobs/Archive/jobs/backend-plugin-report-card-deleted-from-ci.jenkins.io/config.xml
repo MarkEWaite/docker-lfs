@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project>
   <actions/>
-  <description>Copied from ci.jenkins.io 28 Feb 2020 then deleted.  Has failed consistently for over 3 years.&lt;p&gt;&lt;strong&gt;Intentionally disabled, historical record only&lt;/strong&gt;</description>
+  <description>Copied from ci.jenkins.io 28 Feb 2020 then deleted.  Has failed consistently for over 3 years. **Intentionally disabled, historical record only**</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
