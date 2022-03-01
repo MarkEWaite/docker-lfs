@@ -113,7 +113,7 @@ log-parser:2.2
 mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
-matrix-auth:3.0.1
+matrix-auth:3.1
 matrix-project:1.20
 maven-plugin:3.16
 mercurial:2.16
