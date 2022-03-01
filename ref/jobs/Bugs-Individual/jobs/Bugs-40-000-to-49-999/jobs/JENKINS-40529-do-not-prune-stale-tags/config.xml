@@ -1,11 +1,11 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>[JENKINS-40529](https://issues.jenkins.io/browse/JENKINS-40529) adds stale tag pruning extension&#xd;
-&#xd;
-&lt;p&gt;This job relies on being run multiple times in the &lt;strong&gt;same workspace&lt;/strong&gt;.&#xd;
-First run in a new workspace will not report any count of stale tags because first use of a workspace cannot contain stale tags.&#xd;
-The next &lt;strong&gt;change&lt;/strong&gt; (note, change from the remote repository, not necessarily the next build) that arrives in that workspace will add a new tag to the local workspace, rendering the prior tag &quot;stale&quot; because it has been deleted from the remote repository.&#xd;
+  <description>[JENKINS-40529](https://issues.jenkins.io/browse/JENKINS-40529) adds stale tag pruning extension
+
+This job relies on being run multiple times in the **same workspace**
+First run in a new workspace will not report any count of stale tags because first use of a workspace cannot contain stale tags.
+The next **change** (note, change from the remote repository, not necessarily the next build) that arrives in that workspace will add a new tag to the local workspace, rendering the prior tag &quot;stale&quot; because it has been deleted from the remote repository.
 </description>
   <keepDependencies>false</keepDependencies>
   <properties>

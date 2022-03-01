@@ -1,11 +1,11 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>[JENKINS-63785](https://issues.jenkins.io/browse/JENKINS-63785)&#xd;
-git plugin relies on shell expansion of parameters on first fetch,&#xd;
-skips second fetch unless second fetch is preserved&#xd;
-&#xd;
-&lt;p&gt;This job should succeed when default parameters are selected and should be unstable if either parameter is non-default</description>
+  <description>[JENKINS-63785](https://issues.jenkins.io/browse/JENKINS-63785)
+git plugin relies on shell expansion of parameters on first fetch,
+skips second fetch unless second fetch is preserved
+
+This job should succeed when default parameters are selected and should be unstable if either parameter is non-default</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.1">
