@@ -1,35 +1,11 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>&lt;h2&gt;[JENKINS-64149](https://issues.jenkins.io/browse/JENKINS-64149) asks for help text clarification on excluded users&lt;/h2&gt;&#xd;
-&#xd;
-&lt;p&gt;The name of the committer must be matched exactly.  Thus &lt;code&gt;Mark Waite&lt;/code&gt; matches the committer of [2e892](https://github.com/MarkEWaite/JENKINS-26197/commit/2e892bcfba7c4fcabfb2988664969f744a2bbed1) while &lt;code&gt;MarkEWaite&lt;/code&gt;, &lt;code&gt;mwaite&lt;/code&gt;, and &lt;code&gt;Mark&lt;/code&gt; do not</description>
+  <description>## [JENKINS-64149](https://issues.jenkins.io/browse/JENKINS-64149) asks for help text clarification on excluded users
+
+The name of the committer must be matched exactly.  Thus `Mark Waite` matches the committer of [2e892](https://github.com/MarkEWaite/JENKINS-26197/commit/2e892bcfba7c4fcabfb2988664969f744a2bbed1) while `MarkEWaite`, `mwaite`, and `Mark` do not</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.3">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
-    <com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty plugin="naginator@1.18.1">
-      <optOut>false</optOut>
-    </com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.3">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@4.4.5">
     <configVersion>2</configVersion>

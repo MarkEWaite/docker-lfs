@@ -2,20 +2,14 @@
 <project>
   <actions/>
   <description>Check [JENKINS-23606](https://issues.jenkins.io/browse/JENKINS-23606) - include region specification not honored across merge results
-&lt;ul&gt;
-&lt;li&gt; This branch - [**all** directories](../JENKINS-23606-merge-triggers-unexpected-jobs-all)
-&lt;li&gt; This branch - [**only project 1** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-1)
-&lt;li&gt; This branch - [**only project 2** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-2)
-&lt;li&gt; [project-1 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-1)
-&lt;li&gt; [project-2 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-2)&lt;/ul&gt;</description>
+
+* This branch - [**all** directories](../JENKINS-23606-merge-triggers-unexpected-jobs-all)
+* This branch - [**only project 1** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-1)
+* This branch - [**only project 2** directory](../JENKINS-23606-merge-triggers-unexpected-jobs-only-project-2)
+* [project-1 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-1)
+* [project-2 branch](../JENKINS-23606-merge-triggers-unexpected-jobs-project-2)</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
@@ -28,15 +22,6 @@
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName>Jenkins Bugs</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-SNAPSHOT">
     <configVersion>2</configVersion>

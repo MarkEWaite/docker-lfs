@@ -8,9 +8,9 @@
       </jobPropertyDescriptors>
     </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
   </actions>
-  <description>[JENKINS-57180](https://issues.jenkins.io/browse/JENKINS-57180) a folder named &lt;code&gt;parent&lt;/code&gt; in the workspace root can&apos;t be navigated with Jenkins workspace links&#xd;
-&#xd;
-&lt;p&gt;This test job uses &lt;code&gt;curl&lt;/code&gt; to perform the navigation and marks the job as &lt;strong&gt;unstable&lt;/strong&gt; when &lt;code&gt;HTTP/1.1 404 Not Found&lt;/code&gt; is reported</description>
+  <description>[JENKINS-57180](https://issues.jenkins.io/browse/JENKINS-57180) a folder named `parent` in the workspace root can&apos;t be navigated with Jenkins workspace links
+
+This test job uses `curl` to perform the navigation and marks the job as **unstable** when `HTTP/1.1 404 Not Found` is reported</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12">
