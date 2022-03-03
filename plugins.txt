@@ -40,7 +40,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:757.vddedc5f2589a_
 cloudbees-folder:6.708.ve61636eb_65a_5
 cloudbees-jenkins-advisor:3.3.2
-clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
+clover:4.13.0
 code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
