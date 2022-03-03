@@ -95,7 +95,7 @@ javax-mail-api:1.6.2-5
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.25.3
-jersey2-api:2.35-3
+jersey2-api:2.35-4
 jira:3.7
 jjwt-api:0.11.2-9.c8b45b8bb173
 jnr-posix-api:3.1.7-2
@@ -136,10 +136,10 @@ pipeline-milestone-step:100.v60a_03cd446e1
 pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
-pipeline-rest-api:2.22
+pipeline-rest-api:2.23
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
-pipeline-stage-view:2.22
+pipeline-stage-view:2.23
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
@@ -160,7 +160,7 @@ sse-gateway:1.25
 ssh-agent:1.24.1
 ssh-credentials:1.19
 sshd:3.1.0
-ssh-slaves:1.33.0
+ssh-slaves:1.33.1-805.vb_a_0d6a_21f322
 structs:308.v852b473a2b8c
 support-core:2.80
 swarm:3.30
@@ -178,7 +178,7 @@ windows-slaves:1.8
 workflow-aggregator:2.6
 workflow-api:1138.v619fd5201b_2f
 workflow-basic-steps:2.24
-workflow-cps:2659.v52d3de6044d0
+workflow-cps:2660.vb_c0412dc4e6d
 workflow-cps-global-lib:564.ve62a_4eb_b_e039
 workflow-durable-task-step:1121.va_65b_d2701486
 workflow-job:1145.v7f2433caa07f
