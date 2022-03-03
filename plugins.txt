@@ -136,10 +136,10 @@ pipeline-milestone-step:100.v60a_03cd446e1
 pipeline-model-api:1.9.3
 pipeline-model-definition:1.9.3
 pipeline-model-extensions:1.9.3
-pipeline-rest-api:2.22
+pipeline-rest-api:2.23
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:1.9.3
-pipeline-stage-view:2.22
+pipeline-stage-view:2.23
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
