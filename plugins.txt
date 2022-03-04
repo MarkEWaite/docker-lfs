@@ -51,6 +51,7 @@ conventional-commits:0.10.0
 copyartifact:1.46.2
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
+dark-theme:156.v6cf16af6f9ef
 data-tables-api:1.11.4-1
 description-setter:1.10
 display-url-api:2.3.5
@@ -165,6 +166,7 @@ support-core:2.80
 swarm:3.30
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
+theme-manager:0.6
 throttle-concurrents:2.6
 timestamper:1.17
 token-macro:280.v97a_82642793c
