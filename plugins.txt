@@ -40,7 +40,7 @@ checks-api:1.7.2
 cloudbees-bitbucket-branch-source:757.vddedc5f2589a_
 cloudbees-folder:6.708.ve61636eb_65a_5
 cloudbees-jenkins-advisor:3.3.2
-clover:incrementals;org.jenkins-ci.plugins;4.12.2-rc526.70638c0b_0a_16
+clover:4.13.0
 code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.1
@@ -139,7 +139,6 @@ pipeline-model-extensions:2.2064.v5eef7d0982b_e
 pipeline-rest-api:2.23
 pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:2.2064.v5eef7d0982b_e
-pipeline-stage-view:2.23
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
@@ -175,7 +174,7 @@ versioncolumn:2.2
 view-job-filters:2.3
 warnings-ng:9.11.1
 windows-slaves:1.8
-workflow-aggregator:2.6
+workflow-aggregator:2.7
 workflow-api:1138.v619fd5201b_2f
 workflow-basic-steps:941.vdfe1b_a_132c64
 workflow-cps:2660.vb_c0412dc4e6d
