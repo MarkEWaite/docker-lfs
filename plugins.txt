@@ -74,7 +74,7 @@ git-forensics:1.4.0
 git-parameter:0.9.15
 git-server:1.10
 gitea:1.4.1
-github:1.34.2
+github:1.34.3
 github-api:1.301-378.v9807bd746da5
 github-branch-source:2.11.4
 github-scm-filter-aged-refs:0.2.0
