@@ -52,7 +52,7 @@ copyartifact:1.46.2
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
 dark-theme:156.v6cf16af6f9ef
-data-tables-api:1.11.4-1
+data-tables-api:1.11.4-2
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.19
