@@ -1,7 +1,7 @@
 PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.9.2
+analysis-model-api:10.9.3
 ant:1.13
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -163,7 +163,7 @@ sshd:3.1.0
 ssh-slaves:1.806.v2253cedd3295
 structs:308.v852b473a2b8c
 support-core:2.80
-swarm:3.30
+swarm:3.31
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 theme-manager:0.6
