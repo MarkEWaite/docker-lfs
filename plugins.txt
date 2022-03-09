@@ -134,12 +134,12 @@ pipeline-graph-view:51.v5a693b766483
 pipeline-input-step:446.vf27b_0b_83500e
 pipeline-maven:3.10.0
 pipeline-milestone-step:100.v60a_03cd446e1
-pipeline-model-api:1.9.3
-pipeline-model-definition:1.9.3
-pipeline-model-extensions:1.9.3
+pipeline-model-api:2.2064.v5eef7d0982b_e
+pipeline-model-definition:2.2064.v5eef7d0982b_e
+pipeline-model-extensions:2.2064.v5eef7d0982b_e
 pipeline-rest-api:2.23
 pipeline-stage-step:291.vf0a8a7aeeb50
-pipeline-stage-tags-metadata:1.9.3
+pipeline-stage-tags-metadata:2.2064.v5eef7d0982b_e
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
