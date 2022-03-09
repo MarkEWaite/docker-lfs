@@ -52,7 +52,7 @@ copyartifact:1.46.2
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
 dark-theme:157.v2587a07bf876
-data-tables-api:1.11.4-2
+data-tables-api:1.11.4-3
 description-setter:1.10
 display-url-api:2.3.5
 docker-commons:1.19
@@ -67,7 +67,7 @@ envinject-api:1.180.v98d833b_27470
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.0
 font-awesome-api:6.0.0-1
-forensics-api:1.8.1
+forensics-api:1.9.0
 git:4.10.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
 git-forensics:1.4.0
