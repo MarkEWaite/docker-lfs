@@ -9,3 +9,5 @@ RUN ps -ef | grep UID && git lfs version | grep git-lfs/ && wget -V 2>&1 | grep 
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
+
+ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/configuration-as-code/
