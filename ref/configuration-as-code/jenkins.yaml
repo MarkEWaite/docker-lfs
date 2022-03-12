@@ -1,0 +1,213 @@
+jenkins:
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "org.jenkinsci.plugins.pipeline.maven.NonProductionGradeDatabaseWarningAdministrativeMonitor"
+  labelAtoms:
+  - name: "git-1.8"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 1.8"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.11"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.11"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.17"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.17"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.20"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.20"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.25"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.25"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.27"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.27"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.30"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.30"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.31"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.31"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.32"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.32"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.33"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.33"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.34"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.34"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.35"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.35"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  labelString: "git-2.20 highmem"
+  markupFormatter: "markdownFormatter"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodeProperties:
+  - envVars:
+      env:
+      - key: "PATH+MAVEN_BIN"
+        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.4/bin"
+  numExecutors: 2
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  scmCheckoutRetryCount: 0
+  slaveAgentPort: 50000
+  systemMessage: "Jenkins for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "favoriteColumn"
+      description: "Jobs currently executing"
+      jobFilters:
+      - buildStatusFilter:
+          building: true
+          inBuildQueue: false
+          includeExcludeTypeString: "includeMatched"
+          neverBuilt: false
+      name: "Executing"
+      recurse: true
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      description: "Jobs which failed recently"
+      jobFilters:
+      - jobStatusFilter:
+          aborted: true
+          disabled: false
+          failed: true
+          includeExcludeTypeString: "includeMatched"
+          stable: false
+          unstable: false
+      name: "Failed"
+      recurse: true
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      description: "Jobs with failing tests"
+      jobFilters:
+      - jobStatusFilter:
+          aborted: false
+          disabled: false
+          failed: false
+          includeExcludeTypeString: "includeMatched"
+          stable: false
+          unstable: true
+      name: "Unstable"
+      recurse: true
+  - all:
+      name: "all"
+  viewsTabBar: "standard"

@@ -1,0 +1,33 @@
+security:
+  anonymizeSupportBundle:
+    enabled: false
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  copyartifact:
+    mode: PRODUCTION
+  envInject:
+    enableLoadingFromMaster: false
+    enablePermissions: false
+    hideInjectedVars: false
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: true
+  sSHD:
+    port: -1
+  scriptApproval:
+    approvedSignatures:
+    - "field hudson.plugins.git.UserRemoteConfig refspec"
+    - "method groovy.lang.MetaObjectProtocol getMethods"
+    - "method hudson.model.Cause getShortDescription"
+    - "method hudson.model.Run getCause java.lang.Class"
+    - "method hudson.model.Run getCauses"
+    - "method hudson.model.Run getLog int"
+    - "method hudson.model.Run getLogFile"
+    - "method hudson.scm.SCM getBrowser"
+    - "method java.lang.Class getName"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager createSummary java.lang.String"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder$BadgeManager getBuild"
+    - "method org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction appendText java.lang.String boolean boolean boolean java.lang.String"
+    - "staticMethod java.util.Collections shuffle java.util.List java.util.Random"
+    - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL java.util.Map"
