@@ -1,0 +1,275 @@
+tool:
+  ant:
+    installations:
+    - name: "ant-latest"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-ant-1.10.12"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.12-bin.zip"
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "!windows && !freebsd && !openbsd"
+              toolHome: "/usr/bin/git"
+          - command:
+              command: "true"
+              label: "freebsd || openbsd"
+              toolHome: "/usr/local/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.35.1.2\\mingw64\\bin\\git.exe"
+    - home: "git"
+      name: "git-windows"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "mingw64\\bin\\git.exe"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.35.1.2-64-bit.zip"
+    - home: "git"
+      name: "git-2.11.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.11 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.17.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.17 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.20.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.20 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.25.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.25 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.26.2"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.26 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.28.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.28 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.29.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.29 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.29.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.29 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.29.2"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.29 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.30.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.30 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.31.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.31 && linux"
+              toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.33.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.33 && linux"
+              toolHome: "/usr/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.33.1\\mingw64\\bin\\git.exe"
+    - home: "git"
+      name: "git-2.34.1"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.34 && linux"
+              toolHome: "/usr/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.34.1\\mingw64\\bin\\git.exe"
+    - home: "git"
+      name: "git-2.35.1.2"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.35 && linux"
+              toolHome: "/usr/bin/git"
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.35.1.2\\mingw64\\bin\\git.exe"
+    - name: "jgit"
+    - name: "jgitapache"
+  jdk:
+    installations:
+    - name: "jdk8"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk8u322-b06"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_linux_hotspot_8u322b06.tar.gz"
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk8u322-b06"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_windows_hotspot_8u322b06.zip"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk8u322-b06"
+          - command:
+              command: "true"
+              label: "Alpine"
+              toolHome: "/usr/lib/jvm/java-1.8-openjdk"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk8"
+          - adoptOpenJdkInstaller:
+              id: "jdk8u322-b06"
+    - name: "jdk11"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-11.0.14.1+1"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.14.1_1.tar.gz"
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk-11.0.14.1+1"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.14.1_1.zip"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "${JAGENT_JAVA_HOME}"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk11"
+          - adoptOpenJdkInstaller:
+              id: "jdk-11.0.14.1+1"
+    - name: "jdk17"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-17.0.2+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip"
+          - zip:
+              label: "linux && 64bit && !Alpine && !cloud"
+              subdir: "jdk-17.0.2+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8.tar.gz"
+          - command:
+              command: "true"
+              label: "cloud"
+              toolHome: "/home/jagent/tools/jdk-17.0.2+8"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk17"
+          - adoptOpenJdkInstaller:
+              id: "jdk-17.0.2+8"
+  maven:
+    installations:
+    - name: "maven-latest"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-maven-3.8.4"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.8.4-bin.zip"
+    - name: "mvn"
+      properties:
+      - installSource:
+          installers:
+          - zip:
+              subdir: "apache-maven-3.8.4"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.8.4-bin.zip"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
+  pipelineMaven:
+    triggerDownstreamUponResultAborted: false
+    triggerDownstreamUponResultFailure: false
+    triggerDownstreamUponResultNotBuilt: false
+    triggerDownstreamUponResultSuccess: true
+    triggerDownstreamUponResultUnstable: false
