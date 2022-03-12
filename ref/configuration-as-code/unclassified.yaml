@@ -1,0 +1,168 @@
+unclassified:
+  badgePlugin:
+    disableFormatHTML: false
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: true
+        manageHooks: true
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    globalConfigName: "Jenkins Docker User"
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: true
+    useExistingAccountWithSameEmail: false
+  giteaServers:
+    servers:
+    - displayName: "home.markwaite.net"
+      manageHooks: false
+      serverUrl: "https://home.markwaite.net/gitea"
+  globalConfigFiles:
+    configs:
+    - globalMavenSettings:
+        comment: "Global settings for Jenkins development"
+        content: "<settings>\n  <pluginGroups>\n    <pluginGroup>org.jenkins-ci.tools</pluginGroup>\n\
+          \  </pluginGroups>\n \n  <profiles>\n    <!-- Give access to Jenkins plugins\
+          \ -->\n    <profile>\n      <id>jenkins</id>\n      <activation>\n     \
+          \   <activeByDefault>true</activeByDefault> <!-- change this to false, if\
+          \ you don't like to have it on per default -->\n      </activation>\n  \
+          \    <repositories>\n        <repository>\n          <id>repo.jenkins-ci.org</id>\n\
+          \          <url>https://repo.jenkins-ci.org/public/</url>\n        </repository>\n\
+          \      </repositories>\n      <pluginRepositories>\n        <pluginRepository>\n\
+          \          <id>repo.jenkins-ci.org</id>\n          <url>https://repo.jenkins-ci.org/public/</url>\n\
+          \        </pluginRepository>\n      </pluginRepositories>\n    </profile>\n\
+          \  </profiles>\n  <mirrors>\n    <mirror>\n      <id>repo.jenkins-ci.org</id>\n\
+          \      <url>https://repo.jenkins-ci.org/public/</url>\n      <mirrorOf>m.g.o-public</mirrorOf>\n\
+          \    </mirror>\n  </mirrors>\n</settings>"
+        id: "jenkins-maven-global-settings-file"
+        isReplaceAll: true
+        name: "Jenkins Maven global settings file"
+        providerId: "org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig"
+  globalDefaultFlowDurabilityLevel:
+    durabilityHint: PERFORMANCE_OPTIMIZED
+  globalLibraries:
+    libraries:
+    - cachingConfiguration:
+        refreshTimeMinutes: 487
+      defaultVersion: "master"
+      includeInChangesets: false
+      name: "globalPipelineLibraryMarkEWaiteModern"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - "gitBranchDiscovery"
+              - "gitTagDiscovery"
+    - cachingConfiguration:
+        refreshTimeMinutes: 491
+      defaultVersion: "master"
+      name: "globalPipelineLibraryMarkEWaite"
+      retriever:
+        legacySCM:
+          scm:
+            git:
+              branches:
+              - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
+              buildChooser: "default"
+              gitTool: "Default"
+              userRemoteConfigs:
+              - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+    - cachingConfiguration:
+        refreshTimeMinutes: 499
+      defaultVersion: "master"
+      name: "globalPipelineLibraryMarkEWaiteModernGitHub"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "cfd6a3c0-e2d4-4a4d-b7a7-4f63acb357a6"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
+              - "localBranchTrait"
+    - cachingConfiguration:
+        refreshTimeMinutes: 509
+      defaultVersion: "master"
+      name: "git-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
+              traits:
+              - "gitBranchDiscovery"
+              - discoverOtherRefsTrait:
+                  ref: "*"
+              - "gitTagDiscovery"
+    - cachingConfiguration:
+        refreshTimeMinutes: 521
+      defaultVersion: "master"
+      name: "github-modern-3.8.0"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              configuredByUrl: true
+              id: "41cbe5ba-a9c1-472a-9535-a1415aadf844"
+              repoOwner: "MarkEWaite"
+              repository: "jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - "gitHubTagDiscovery"
+  jiraGlobalConfiguration:
+    sites:
+    - url: "https://issues.jenkins.io/"
+      useHTTPAuth: true
+      userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
+  location:
+    adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
+  logParser:
+    legacyFormatting: false
+  mavenModuleSet:
+    localRepository: "default"
+  naginatorPublisher:
+    regexpTimeoutMs: 30000
+  pollSCM:
+    pollingThreadCount: 7
+  timestamper:
+    allPipelines: true
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  upstream:
+    globalUpstreamFilterStrategy: UseNewest
+  warningsParsers:
+    consoleLogScanningPermitted: false
