@@ -24,4 +24,4 @@ RUN mkdir -p "${REF}/init.groovy.d"
 
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
-ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
+ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/configuration-as-code/

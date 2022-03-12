@@ -22,4 +22,4 @@ RUN ps -ef | grep UID && git lfs version | grep git-lfs/ && wget -V 2>&1 | grep 
 # or config file with your custom jenkins Docker image.
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
-ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
+ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/configuration-as-code/
