@@ -48,7 +48,7 @@ config-file-provider:3.9.0
 configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
 conventional-commits:0.11.0
-copyartifact:1.46.2
+copyartifact:1.46.3
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
 dark-theme:156.v6cf16af6f9ef
