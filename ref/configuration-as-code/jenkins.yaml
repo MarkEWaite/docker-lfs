@@ -134,7 +134,7 @@ jenkins:
   - envVars:
       env:
       - key: "PATH+MAVEN_BIN"
-        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.4/bin"
+        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.5/bin"
   numExecutors: 2
   primaryView:
     all:
