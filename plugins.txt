@@ -67,7 +67,7 @@ envinject-api:1.180.v98d833b_27470
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.0
 font-awesome-api:6.0.0-1
-forensics-api:1.9.0
+forensics-api:1.12.0
 git:4.10.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
 git-forensics:1.5.0
@@ -88,7 +88,7 @@ handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.29
 implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
-jackson2-api:2.13.1-246.va8a9f3eaf46a
+jackson2-api:2.13.2-260.v43d711474c77
 jacoco:3.3.1
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-2
