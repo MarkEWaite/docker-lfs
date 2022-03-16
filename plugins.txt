@@ -65,12 +65,12 @@ email-ext:2.87
 envinject:2.839.v52c702c10635
 envinject-api:1.180.v98d833b_27470
 external-monitor-job:191.v363d0d1efdf8
-favorite:2.4.0
+favorite:2.4.1
 font-awesome-api:6.0.0-1
 forensics-api:1.12.0
 git:4.10.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
-git-forensics:1.5.0
+git-forensics:1.7.0
 git-parameter:0.9.15
 git-server:1.10
 gitea:1.4.1
@@ -99,7 +99,7 @@ jenkins-design-language:1.25.3
 jersey2-api:2.35-4
 jira:3.7
 jjwt-api:0.11.2-9.c8b45b8bb173
-jnr-posix-api:3.1.7-2
+jnr-posix-api:3.1.7-3
 job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
@@ -126,7 +126,7 @@ nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
 pam-auth:1.7
 parallel-test-executor:1.13
-parameterized-trigger:2.43
+parameterized-trigger:2.44
 pipeline-build-step:2.16
 pipeline-github-lib:36.v4c01db_ca_ed16
 pipeline-graph-analysis:188.v3a01e7973f2c
