@@ -43,7 +43,7 @@ cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:2.0.4
 command-launcher:1.6
-conditional-buildstep:1.4.1
+conditional-buildstep:1.4.2
 config-file-provider:3.9.0
 configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
