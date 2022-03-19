@@ -146,7 +146,7 @@ platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
 plugin-util-api:2.14.0
 pollscm:1.3.1
 popper-api:1.16.1-2
-popper2-api:2.11.2-1
+popper2-api:2.11.4-1
 preSCMbuildstep:0.3
 prism-api:1.26.0-2
 promoted-builds:873.v6149db_d64130
