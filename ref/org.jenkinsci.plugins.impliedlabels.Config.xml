@@ -8,7 +8,7 @@
             <hudson.model.labels.LabelAtom>linux</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">AlibabaCloud||Alpine||Amazon||AmazonAMI||CentOS||Debian||LinuxMint||openSUSE||OracleServer||Raspbian||RedHatEnterpriseServer||RedHatEnterpriseClient||SUSE||Ubuntu</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">AlibabaCloud||Alpine||Amazon||AmazonAMI||CentOS||Debian||LinuxMint||openSUSE||OracleServer||Raspbian||RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient||SUSE||Ubuntu</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
