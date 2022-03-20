@@ -1,7 +1,7 @@
 PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.9.3
+analysis-model-api:10.9.4
 ant:1.13
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
