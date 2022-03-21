@@ -1,7 +1,7 @@
 PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.9.3
+analysis-model-api:10.9.4
 ant:1.13
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -43,7 +43,7 @@ cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:2.0.4
 command-launcher:1.6
-conditional-buildstep:1.4.1
+conditional-buildstep:1.4.2
 config-file-provider:3.9.0
 configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
@@ -52,15 +52,15 @@ copyartifact:1.46.3
 credentials:1074.v60e6c29b_b_44b_
 credentials-binding:1.27.1
 dark-theme:156.v6cf16af6f9ef
-data-tables-api:1.11.4-3
+data-tables-api:1.11.4-4
 description-setter:1.10
-display-url-api:2.3.5
+display-url-api:2.3.6
 docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.3.0-2
-elastic-axis:1.4.5
+elastic-axis:1.4.6
 email-ext:2.87
 envinject:2.839.v52c702c10635
 envinject-api:1.180.v98d833b_27470
@@ -143,10 +143,10 @@ pipeline-stage-tags-metadata:2.2064.v5eef7d0982b_e
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
 platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
-plugin-util-api:2.14.0
+plugin-util-api:2.15.0
 pollscm:1.3.1
 popper-api:1.16.1-2
-popper2-api:2.11.2-1
+popper2-api:2.11.4-1
 preSCMbuildstep:0.3
 prism-api:1.26.0-2
 promoted-builds:873.v6149db_d64130
@@ -154,7 +154,7 @@ pubsub-light:1.16
 resource-disposer:0.17
 run-condition:1.5
 scm-api:595.vd5a_df5eb_0e39
-script-security:1140.vf967fb_efa_55a_
+script-security:1145.vb_cf6cf6ed960
 snakeyaml-api:1.29.1
 sse-gateway:1.25
 ssh-agent:1.24.1
@@ -163,7 +163,7 @@ sshd:3.1.0
 ssh-slaves:1.806.v2253cedd3295
 structs:308.v852b473a2b8c
 support-core:1130.vb_eef6015fc37
-swarm:3.31
+swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 theme-manager:0.6
@@ -179,7 +179,7 @@ windows-slaves:1.8
 workflow-aggregator:2.7
 workflow-api:1143.v2d42f1e9dea_5
 workflow-basic-steps:941.vdfe1b_a_132c64
-workflow-cps:2660.vb_c0412dc4e6d
+workflow-cps:2682.va_473dcddc941
 workflow-cps-global-lib:564.ve62a_4eb_b_e039
 workflow-durable-task-step:1121.va_65b_d2701486
 workflow-job:1174.vdcb_d054cf74a_
@@ -189,4 +189,4 @@ workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:815.vd60466279fc8
 ws-cleanup:0.40
 xshell:0.10
-xunit:3.0.5
+xunit:3.0.6
