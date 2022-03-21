@@ -54,13 +54,13 @@ credentials-binding:1.27.1
 dark-theme:157.v2587a07bf876
 data-tables-api:1.11.4-4
 description-setter:1.10
-display-url-api:2.3.5
+display-url-api:2.3.6
 docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.0
 durable-task:493.v195aefbb0ff2
 echarts-api:5.3.0-2
-elastic-axis:1.4.5
+elastic-axis:1.4.6
 email-ext:2.87
 envinject:2.839.v52c702c10635
 envinject-api:1.180.v98d833b_27470
@@ -179,7 +179,7 @@ windows-slaves:1.8
 workflow-aggregator:2.7
 workflow-api:1143.v2d42f1e9dea_5
 workflow-basic-steps:941.vdfe1b_a_132c64
-workflow-cps:2680.vf642ed4fa_d55
+workflow-cps:2682.va_473dcddc941
 workflow-cps-global-lib:564.ve62a_4eb_b_e039
 workflow-durable-task-step:1121.va_65b_d2701486
 workflow-job:1174.vdcb_d054cf74a_
@@ -189,4 +189,4 @@ workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:815.vd60466279fc8
 ws-cleanup:0.40
 xshell:0.10
-xunit:3.0.5
+xunit:3.0.6
