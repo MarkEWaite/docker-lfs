@@ -189,4 +189,4 @@ workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:815.vd60466279fc8
 ws-cleanup:0.40
 xshell:0.10
-xunit:3.0.5
+xunit:3.0.6
