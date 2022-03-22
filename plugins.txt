@@ -58,7 +58,7 @@ display-url-api:2.3.6
 docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.0
-durable-task:493.v195aefbb0ff2
+durable-task:495.v29cd95ec10f2
 echarts-api:5.3.0-2
 elastic-axis:1.4.6
 email-ext:2.87
@@ -162,7 +162,7 @@ ssh-credentials:1.19
 sshd:3.1.0
 ssh-slaves:1.806.v2253cedd3295
 structs:308.v852b473a2b8c
-support-core:1130.vb_eef6015fc37
+support-core:1140.vb_b_3b_7d866b_a_8
 swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
@@ -181,7 +181,7 @@ workflow-api:1143.v2d42f1e9dea_5
 workflow-basic-steps:941.vdfe1b_a_132c64
 workflow-cps:2682.va_473dcddc941
 workflow-cps-global-lib:564.ve62a_4eb_b_e039
-workflow-durable-task-step:1121.va_65b_d2701486
+workflow-durable-task-step:1128.v8c259d125340
 workflow-job:1174.vdcb_d054cf74a_
 workflow-multibranch:711.vdfef37cda_816
 workflow-scm-step:2.13
