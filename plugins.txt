@@ -49,7 +49,7 @@ configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
 conventional-commits:0.11.0
 copyartifact:1.46.3
-credentials:incrementals;org.jenkins-ci.plugins;1081.v4b_0eb_a_28eb_ff
+credentials:1087.v16065d268466
 credentials-binding:1.27.1
 dark-theme:156.v6cf16af6f9ef
 data-tables-api:1.11.4-4
@@ -68,7 +68,7 @@ external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.1
 font-awesome-api:6.0.0-1
 forensics-api:1.12.0
-git:incrementals;org.jenkins-ci.plugins;4.10.4-rc4683.fb_3fceca_1ed2
+git:4.11.0
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3048.0b_c2d113a_934
 git-forensics:1.7.0
 git-parameter:0.9.15
