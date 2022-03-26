@@ -49,7 +49,7 @@ configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
 conventional-commits:0.11.0
 copyartifact:1.46.3
-credentials:1074.v60e6c29b_b_44b_
+credentials:incrementals;org.jenkins-ci.plugins;1081.v4b_0eb_a_28eb_ff
 credentials-binding:1.27.1
 dark-theme:156.v6cf16af6f9ef
 data-tables-api:1.11.4-4
@@ -68,15 +68,15 @@ external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.1
 font-awesome-api:6.0.0-1
 forensics-api:1.12.0
-git:4.10.3
-git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3029.b_07504b_cc834
+git:incrementals;org.jenkins-ci.plugins;4.10.4-rc4683.fb_3fceca_1ed2
+git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3048.0b_c2d113a_934
 git-forensics:1.7.0
 git-parameter:0.9.15
 git-server:1.10
 gitea:1.4.1
 github:1.34.3
 github-api:1.301-378.v9807bd746da5
-github-branch-source:1583.v18d333ef7379
+github-branch-source:incrementals;org.jenkins-ci.plugins;1594.v84d12a_2a_151b_
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:1.0.6
@@ -142,7 +142,7 @@ pipeline-stage-step:291.vf0a8a7aeeb50
 pipeline-stage-tags-metadata:2.2064.v5eef7d0982b_e
 pipeline-utility-steps:2.12.0
 plain-credentials:1.8
-platformlabeler:incrementals;org.jvnet.hudson.plugins;1252.vf3552fe534b_1
+platformlabeler:1317.v822cd19db_d49
 plugin-util-api:2.15.0
 pollscm:1.3.1
 popper-api:1.16.1-2
@@ -169,7 +169,7 @@ text-finder:1.18
 theme-manager:0.6
 throttle-concurrents:2.6
 timestamper:1.17
-token-macro:280.v97a_82642793c
+token-macro:285.vff7645a_56ff0
 trilead-api:1.0.13
 variant:1.4
 versioncolumn:2.2
