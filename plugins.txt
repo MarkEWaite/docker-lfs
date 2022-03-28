@@ -167,7 +167,7 @@ swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 theme-manager:0.6
-throttle-concurrents:2.6
+throttle-concurrents:2.7
 timestamper:1.17
 token-macro:285.vff7645a_56ff0
 trilead-api:1.0.13
