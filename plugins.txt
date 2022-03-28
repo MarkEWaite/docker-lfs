@@ -187,6 +187,6 @@ workflow-multibranch:711.vdfef37cda_816
 workflow-scm-step:2.13
 workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:815.vd60466279fc8
-ws-cleanup:0.40
+ws-cleanup:0.41
 xshell:0.10
 xunit:3.0.6
