@@ -151,7 +151,7 @@ preSCMbuildstep:0.3
 prism-api:1.26.0-2
 promoted-builds:873.v6149db_d64130
 pubsub-light:1.16
-resource-disposer:0.17
+resource-disposer:0.18
 run-condition:1.5
 scm-api:595.vd5a_df5eb_0e39
 script-security:1145.vb_cf6cf6ed960
@@ -167,7 +167,7 @@ swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
 theme-manager:1.1
-throttle-concurrents:2.6
+throttle-concurrents:2.7
 timestamper:1.17
 token-macro:285.vff7645a_56ff0
 trilead-api:1.0.13
@@ -187,6 +187,6 @@ workflow-multibranch:711.vdfef37cda_816
 workflow-scm-step:2.13
 workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:815.vd60466279fc8
-ws-cleanup:0.40
+ws-cleanup:0.41
 xshell:0.10
 xunit:3.0.6
