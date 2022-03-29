@@ -54,6 +54,7 @@ credentials-binding:1.27.1
 dark-theme:161.vff584deff779
 data-tables-api:1.11.4-4
 description-setter:1.10
+design-library:30.v356a_36b_90693
 display-url-api:2.3.6
 docker-commons:1.19
 docker-workflow:1.28
