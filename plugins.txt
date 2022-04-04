@@ -104,7 +104,7 @@ job-dsl:1.78.3
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
-junit:1.57
+junit:1.58
 junit-realtime-test-reporter:82.vc2a_3f0f7a_291
 label-verifier:1.4
 ldap:2.8
@@ -120,7 +120,7 @@ maven-plugin:3.18
 mercurial:2.16
 metrics:4.1.6.1
 momentjs:1.1.1
-monitoring:1.90.0
+monitoring:1.91.0
 naginator:1.18.1
 nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
