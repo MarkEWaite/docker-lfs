@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:757.vddedc5f2589a_
+cloudbees-bitbucket-branch-source:762.v969cfe087fc0
 cloudbees-folder:6.714.v79e858ef76a_2
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
@@ -125,7 +125,7 @@ naginator:1.18.1
 nodelabelparameter:1.10.3
 okhttp-api:4.9.3-105.vb96869f8ac3a
 pam-auth:1.7
-parallel-test-executor:1.13
+parallel-test-executor:316.v1324c7927cc8
 parameterized-trigger:2.44
 pipeline-build-step:2.16
 pipeline-github-lib:36.v4c01db_ca_ed16
