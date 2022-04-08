@@ -119,7 +119,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--publish", str(http_port) + ":8080",
                        "--publish", str(ssh_port) + ":18022",
                        "--publish", str(jnlp_port) + ":50000",
-                       "--restart=always",
+                       "--restart", "always",
                      ]
     if debug_port != None:
         docker_command.extend(["--publish", str(debug_port)  + ":5678"])
@@ -240,7 +240,7 @@ Run a docker image.   Use -h for help."""
     if options.clean and not os.path.exists(jenkins_home_dir):
         os.mkdir(jenkins_home_dir)
 
-    # Always detach, since --restart=always prevents --rm and causes Jenkins processes to fork and exec
+    # Always detach, since `--restart always` prevents `--rm` and causes Jenkins processes to fork and exec
     options.detach = True
     if options.detach:
         print("Detaching from stdin / stdout")
