@@ -170,7 +170,7 @@ theme-manager:0.6
 throttle-concurrents:2.7
 timestamper:1.17
 token-macro:285.vff7645a_56ff0
-trilead-api:1.0.13
+trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
