@@ -159,7 +159,7 @@ snakeyaml-api:1.29.1
 sse-gateway:1.25
 ssh-agent:1.24.1
 ssh-credentials:1.19
-sshd:3.1.0
+sshd:3.226.vb_1769a_7fb_b_a_6
 ssh-slaves:1.806.v2253cedd3295
 structs:308.v852b473a2b8c
 support-core:1148.vedff8cb_56a_da_
@@ -170,7 +170,7 @@ theme-manager:0.6
 throttle-concurrents:2.7
 timestamper:1.17
 token-macro:285.vff7645a_56ff0
-trilead-api:1.0.13
+trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
