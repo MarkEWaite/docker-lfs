@@ -96,7 +96,7 @@ javax-mail-api:1.6.2-5
 jaxb:2.3.0.1
 jdk-tool:1.5
 jenkins-design-language:1.25.3
-jersey2-api:2.35-4
+jersey2-api:2.35-5
 jira:3.7
 jjwt-api:0.11.2-9.c8b45b8bb173
 jnr-posix-api:3.1.7-3
@@ -179,14 +179,14 @@ windows-slaves:1.8
 workflow-aggregator:2.7
 workflow-api:1143.v2d42f1e9dea_5
 workflow-basic-steps:941.vdfe1b_a_132c64
-workflow-cps:2683.vd0a_8f6a_1c263
+workflow-cps:2686.v7c37e0578401
 workflow-cps-global-lib:564.ve62a_4eb_b_e039
 workflow-durable-task-step:1128.v8c259d125340
 workflow-job:1174.vdcb_d054cf74a_
 workflow-multibranch:711.vdfef37cda_816
 workflow-scm-step:2.13
 workflow-step-api:622.vb_8e7c15b_c95a_
-workflow-support:815.vd60466279fc8
+workflow-support:817.v58126df57338
 ws-cleanup:0.41
 xshell:0.10
 xunit:3.0.6
