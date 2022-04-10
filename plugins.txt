@@ -167,7 +167,7 @@ support-core:1148.vedff8cb_56a_da_
 swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.18
-theme-manager:1.1
+theme-manager:1.2
 throttle-concurrents:2.7
 timestamper:1.17
 token-macro:285.vff7645a_56ff0
