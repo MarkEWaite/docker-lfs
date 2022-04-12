@@ -49,7 +49,7 @@ configuration-as-code:1414.v878271fc496f
 configurationslicing:430.v966357576543
 conventional-commits:0.11.1
 copyartifact:1.46.3
-credentials:1111.v35a_307992395
+credentials:1112.vc87b_7a_3597f6
 credentials-binding:1.27.1
 dark-theme:165.vb_9cb_da_25112e
 data-tables-api:1.11.4-4
