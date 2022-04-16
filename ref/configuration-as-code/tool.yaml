@@ -26,7 +26,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.35.2\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.35.3\\mingw64\\bin\\git.exe"
     - home: "git"
       name: "git-windows"
       properties:
@@ -35,7 +35,7 @@ tool:
           - zip:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.35.2-64-bit.zip"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.35.3-64-bit.zip"
     - home: "git"
       name: "git-2.11.1"
       properties:
@@ -173,7 +173,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.35.2\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.35.3\\mingw64\\bin\\git.exe"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
