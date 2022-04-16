@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.2-29.v717aac953ff3
 checks-api:1.7.2
-cloudbees-bitbucket-branch-source:762.v969cfe087fc0
+cloudbees-bitbucket-branch-source:765.v5a_2d6a_23c01d
 cloudbees-folder:6.714.v79e858ef76a_2
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
@@ -87,7 +87,7 @@ h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-1.0
 htmlpublisher:1.29
-implied-labels:incrementals;org.jenkins-ci.plugins;0.9-rc53.5459bffcfe74
+implied-labels:0.9
 jackson2-api:2.13.2.20220328-273.v11d70a_b_a_1a_52
 jacoco:3.3.1
 javadoc:217.v905b_86277a_2a_
