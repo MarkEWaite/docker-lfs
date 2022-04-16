@@ -104,7 +104,7 @@ job-dsl:1.79
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
-junit:1.58
+junit:1.59
 junit-realtime-test-reporter:82.vc2a_3f0f7a_291
 label-verifier:1.4
 ldap:2.8
