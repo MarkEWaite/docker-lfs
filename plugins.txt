@@ -118,7 +118,7 @@ matrix-auth:3.1
 matrix-project:758.v7a_ea_491852f3
 maven-plugin:3.18
 mercurial:2.16
-metrics:4.1.6.1
+metrics:4.1.6.2
 momentjs:1.1.1
 monitoring:1.91.0
 naginator:1.18.1
