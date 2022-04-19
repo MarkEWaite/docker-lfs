@@ -51,7 +51,7 @@ conventional-commits:0.11.1
 copyartifact:1.46.3
 credentials:1118.v320cd028cb_a_0
 credentials-binding:1.27.1
-dark-theme:165.vb_9cb_da_25112e
+dark-theme:171.v2540e8184da_0
 data-tables-api:1.11.4-4
 description-setter:1.10
 design-library:51.v6f6b_b_59d6644
