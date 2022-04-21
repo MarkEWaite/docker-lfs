@@ -152,7 +152,7 @@ preSCMbuildstep:0.3
 prism-api:1.26.0-2
 promoted-builds:876.v99d29788b_36b_
 pubsub-light:1.16
-resource-disposer:0.18
+resource-disposer:0.19
 run-condition:1.5
 scm-api:602.v6a_81757a_31d2
 script-security:1145.vb_cf6cf6ed960
@@ -188,6 +188,6 @@ workflow-multibranch:711.vdfef37cda_816
 workflow-scm-step:2.13
 workflow-step-api:622.vb_8e7c15b_c95a_
 workflow-support:818.v4eb_969241b_c7
-ws-cleanup:0.41
+ws-cleanup:0.42
 xshell:0.10
 xunit:3.0.6
