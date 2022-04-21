@@ -2,7 +2,7 @@ PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.10.0
-ant:1.13
+ant:473.vcfd6b_16ca_581
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
@@ -169,7 +169,7 @@ text-finder:1.18
 theme-manager:0.6
 throttle-concurrents:2.7
 timestamper:1.17
-token-macro:285.vff7645a_56ff0
+token-macro:293.v283932a_0a_b_49
 trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
