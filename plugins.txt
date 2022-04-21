@@ -50,7 +50,7 @@ configurationslicing:430.v966357576543
 conventional-commits:0.11.0
 copyartifact:1.46.3
 credentials:1087.1089.v2f1b_9a_b_040e4
-credentials-binding:1.27.1
+credentials-binding:523.vd859a_4b_122e6
 dark-theme:156.v6cf16af6f9ef
 data-tables-api:1.11.4-4
 description-setter:1.10
@@ -114,7 +114,7 @@ log-parser:2.2
 mailer:408.vd726a_1130320
 mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
-matrix-auth:3.1
+matrix-auth:3.1.1
 matrix-project:758.v7a_ea_491852f3
 maven-plugin:3.18
 mercurial:2.16
@@ -178,7 +178,7 @@ warnings-ng:9.12.0
 windows-slaves:1.8
 workflow-aggregator:2.7
 workflow-api:1144.v61c3180fa_03f
-workflow-basic-steps:941.vdfe1b_a_132c64
+workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2687.v3f09155513c1
 workflow-cps-global-lib:570.v21311f4951f8
 workflow-durable-task-step:1130.v8fd69d0b_8857
