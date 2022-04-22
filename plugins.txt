@@ -129,7 +129,7 @@ parallel-test-executor:318.va_e768e2e32e3
 parameterized-trigger:2.44
 pipeline-build-step:2.17
 pipeline-github-lib:36.v4c01db_ca_ed16
-pipeline-graph-analysis:188.v3a01e7973f2c
+pipeline-graph-analysis:195.v5812d95a_a_2f9
 pipeline-graph-view:51.v5a693b766483
 pipeline-input-step:448.v37cea_9a_10a_70
 pipeline-maven:3.10.0
