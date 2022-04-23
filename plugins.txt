@@ -59,7 +59,7 @@ display-url-api:2.3.6
 docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.0
-durable-task:495.v29cd95ec10f2
+durable-task:496.va67c6f9eefa7
 echarts-api:5.3.2-1
 elastic-axis:1.4.6
 email-ext:2.87
@@ -81,7 +81,7 @@ github-branch-source:1598.v91207e9f9b_4a_
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:5.0.1-69.vcdc19e779072
-gitlab-branch-source:623.vcc98dc4b_0ce4
+gitlab-branch-source:625.v85cf3a_400cfe
 gitlab-plugin:1.5.31
 groovy-postbuild:2.5
 h2-api:1.4.199
@@ -162,7 +162,7 @@ ssh-agent:1.24.1
 ssh-credentials:1.19
 sshd:3.228.v4c9f9e652c86
 ssh-slaves:1.806.v2253cedd3295
-structs:308.v852b473a2b8c
+structs:317.vf68c51f71b_e2
 support-core:1158.v9189f64fec8c
 swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
