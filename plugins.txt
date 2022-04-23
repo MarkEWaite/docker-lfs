@@ -48,7 +48,7 @@ config-file-provider:3.9.0
 configuration-as-code:1429.v09b_044a_c93de
 configurationslicing:430.v966357576543
 conventional-commits:0.11.0
-copyartifact:1.46.3
+copyartifact:1.46.4
 credentials:1087.1089.v2f1b_9a_b_040e4
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:156.v6cf16af6f9ef
@@ -107,7 +107,7 @@ jsch:0.1.55.2
 junit:1.60
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
-ldap:2.8
+ldap:2.9
 leastload:3.0.0
 lockable-resources:2.14
 log-parser:2.2
@@ -127,7 +127,7 @@ okhttp-api:4.9.3-105.vb96869f8ac3a
 pam-auth:1.7
 parallel-test-executor:318.va_e768e2e32e3
 parameterized-trigger:2.44
-pipeline-build-step:2.17
+pipeline-build-step:2.18
 pipeline-github-lib:36.v4c01db_ca_ed16
 pipeline-graph-analysis:195.v5812d95a_a_2f9
 pipeline-graph-view:51.v5a693b766483
@@ -184,7 +184,7 @@ workflow-cps-global-lib:570.v21311f4951f8
 workflow-durable-task-step:1130.v8fd69d0b_8857
 workflow-job:1180.v04c4e75dce43
 workflow-multibranch:712.vc169a_1387405
-workflow-scm-step:2.13
+workflow-scm-step:399.v9b_8f4da_65061
 workflow-step-api:625.vd896b_f445a_f8
 workflow-support:819.v37d707a_71d9b_
 ws-cleanup:0.42
