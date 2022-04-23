@@ -126,13 +126,17 @@ jenkins:
                 script: "git --version 2>&1 | grep -F 2.35"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
-  labelString: "git-2.20 highmem"
+  labelString: "git-2.30 highmem"
   markupFormatter: "markdownFormatter"
   mode: NORMAL
   myViewsTabBar: "standard"
   nodeProperties:
   - envVars:
       env:
+      - key: "JAVA_HOME"
+        value: "/opt/java/openjdk"
+      - key: "PATH+JAVA_HOME"
+        value: "/opt/java/openjdk/bin"
       - key: "PATH+MAVEN_BIN"
         value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.5/bin"
   numExecutors: 2
