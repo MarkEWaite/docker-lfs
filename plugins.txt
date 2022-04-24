@@ -86,7 +86,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
-htmlpublisher:1.29
+htmlpublisher:1.30
 implied-labels:0.9
 jackson2-api:2.13.2.20220328-273.v11d70a_b_a_1a_52
 jacoco:3.3.1
