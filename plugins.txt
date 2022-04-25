@@ -160,7 +160,7 @@ sse-gateway:1.25
 ssh-agent:1.24.1
 ssh-credentials:1.19
 sshd:3.228.v4c9f9e652c86
-ssh-slaves:1.806.v2253cedd3295
+ssh-slaves:1.814.vc82988f54b_10
 structs:318.va_f3ccb_729b_71
 support-core:1162.vb_b_e5198c6b_22
 swarm:3.32
