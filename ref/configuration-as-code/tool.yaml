@@ -174,7 +174,7 @@ tool:
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-17.0.2+8"
+              toolHome: "/home/jagent/tools/jdk-17.0.3+7"
           - command:
               command: "true"
               label: "freebsd"
