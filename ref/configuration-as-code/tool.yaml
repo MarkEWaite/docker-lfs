@@ -223,12 +223,12 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.14.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.14.1_1.tar.gz"
+              subdir: "jdk-11.0.15+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.15_10.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.14.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.14.1_1.zip"
+              subdir: "jdk-11.0.15+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.15_10.tar.gz"
           - command:
               command: "true"
               label: "cloud"
@@ -245,12 +245,12 @@ tool:
           installers:
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-17.0.2+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip"
+              subdir: "jdk-17.0.3+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.3_7.zip"
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-17.0.2+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8.tar.gz"
+              subdir: "jdk-17.0.3+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.3_7.tar.gz"
           - command:
               command: "true"
               label: "cloud"
