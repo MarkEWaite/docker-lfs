@@ -29,7 +29,7 @@ blueocean-rest-impl:1.25.3
 blueocean-web:1.25.3
 bootstrap4-api:4.6.0-4
 bootstrap5-api:5.1.3-6
-bouncycastle-api:2.25
+bouncycastle-api:2.26
 branch-api:2.1046.v0ca_37783ecc5
 build-blocker-plugin:1.7.8
 build-name-setter:2.2.0
@@ -61,7 +61,7 @@ dtkit-api:3.0.0
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.2-1
 elastic-axis:1.4.6
-email-ext:2.87
+email-ext:2.88
 envinject:2.854.vfa_1657078c97
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
@@ -158,9 +158,9 @@ script-security:1158.v7c1b_73a_69a_08
 snakeyaml-api:1.30.1
 sse-gateway:1.25
 ssh-agent:1.24.1
-ssh-credentials:1.19
+ssh-credentials:277.v95c2fec1c047
 sshd:3.228.v4c9f9e652c86
-ssh-slaves:1.806.v2253cedd3295
+ssh-slaves:1.814.vc82988f54b_10
 structs:318.va_f3ccb_729b_71
 support-core:1162.vb_b_e5198c6b_22
 swarm:3.32
