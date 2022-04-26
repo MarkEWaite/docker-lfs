@@ -260,7 +260,7 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.2+8"
+              id: "jdk-17.0.3+7"
   maven:
     installations:
     - name: "maven-latest"
