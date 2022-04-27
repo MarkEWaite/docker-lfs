@@ -98,7 +98,7 @@ jdk-tool:1.5
 jenkins-design-language:1.25.3
 jersey2-api:2.35-7
 jira:3.7.1
-jjwt-api:0.11.2-9.c8b45b8bb173
+jjwt-api:0.11.2-71.v2722b_b_06a_2a_f
 jnr-posix-api:3.1.7-3
 job-dsl:1.79
 jquery:1.12.4-1
@@ -179,7 +179,7 @@ windows-slaves:1.8
 workflow-aggregator:2.7
 workflow-api:1144.v61c3180fa_03f
 workflow-basic-steps:948.v2c72a_091b_b_68
-workflow-cps:2687.v3f09155513c1
+workflow-cps:2689.v434009a_31b_f1
 workflow-cps-global-lib:570.v21311f4951f8
 workflow-durable-task-step:1130.v8fd69d0b_8857
 workflow-job:1180.v04c4e75dce43

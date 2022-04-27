@@ -73,51 +73,6 @@ tool:
               label: "git-2.25 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.26.2"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.26 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.28.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.28 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.29.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.29 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.29.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.29 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.29.2"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.29 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
       name: "git-2.30.0"
       properties:
       - installSource:
@@ -126,41 +81,6 @@ tool:
               command: "true"
               label: "git-2.30 && linux"
               toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.31.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.31 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.33.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.33 && linux"
-              toolHome: "/usr/bin/git"
-          - batchFile:
-              command: "exit 0"
-              label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.33.1\\mingw64\\bin\\git.exe"
-    - home: "git"
-      name: "git-2.34.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.34 && linux"
-              toolHome: "/usr/bin/git"
-          - batchFile:
-              command: "exit 0"
-              label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.34.1\\mingw64\\bin\\git.exe"
     - home: "git"
       name: "git-2.35.3"
       properties:
@@ -254,7 +174,7 @@ tool:
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-17.0.2+8"
+              toolHome: "/home/jagent/tools/jdk-17.0.3+7"
           - command:
               command: "true"
               label: "freebsd"
