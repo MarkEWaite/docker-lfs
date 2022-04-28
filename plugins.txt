@@ -42,7 +42,7 @@ cloudbees-folder:6.714.v79e858ef76a_2
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:2.0.4
-command-launcher:1.6
+command-launcher:81.v9c2cb_cb_db_392
 conditional-buildstep:1.4.2
 config-file-provider:3.9.0
 configuration-as-code:1429.v09b_044a_c93de
@@ -116,7 +116,7 @@ mailer:414.vcc4c33714601
 mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
 matrix-auth:3.1.1
-matrix-project:758.v7a_ea_491852f3
+matrix-project:771.v574584b_39e60
 maven-plugin:3.18
 mercurial:2.16
 metrics:4.1.6.2
@@ -125,7 +125,7 @@ monitoring:1.91.0
 naginator:1.18.1
 nodelabelparameter:1.10.3.1
 okhttp-api:4.9.3-105.vb96869f8ac3a
-pam-auth:1.7
+pam-auth:1.8
 parallel-test-executor:318.va_e768e2e32e3
 parameterized-trigger:2.44
 pipeline-build-step:2.18
