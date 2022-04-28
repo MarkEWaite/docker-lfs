@@ -42,7 +42,7 @@ cloudbees-folder:6.714.v79e858ef76a_2
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:2.0.4
-command-launcher:1.6
+command-launcher:81.v9c2cb_cb_db_392
 conditional-buildstep:1.4.2
 config-file-provider:3.9.0
 configuration-as-code:1429.v09b_044a_c93de
