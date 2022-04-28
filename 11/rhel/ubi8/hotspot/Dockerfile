@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11.0.14.1_1-jdk-centos7 as jre-build
+FROM eclipse-temurin:11.0.15_10-jdk-centos7 as jre-build
 
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
@@ -9,7 +9,7 @@ RUN jlink \
          --compress=2 \
          --output /javaruntime
 
-FROM registry.access.redhat.com/ubi8/ubi:8.5-236
+FROM registry.access.redhat.com/ubi8/ubi:8.5-239
 
 ENV LANG C.UTF-8
 
