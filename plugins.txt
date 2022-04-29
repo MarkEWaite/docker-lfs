@@ -141,7 +141,7 @@ pipeline-model-extensions:2.2077.vc78ec45162f1
 pipeline-rest-api:2.24
 pipeline-stage-step:293.v200037eefcd5
 pipeline-stage-tags-metadata:2.2077.vc78ec45162f1
-pipeline-utility-steps:2.12.0
+pipeline-utility-steps:2.12.1
 plain-credentials:1.8
 platformlabeler:1317.v822cd19db_d49
 plugin-util-api:2.16.0
