@@ -158,6 +158,44 @@ unclassified:
     regexpTimeoutMs: 30000
   pollSCM:
     pollingThreadCount: 7
+  priorityConfiguration:
+    jobGroups:
+    - description: "Highest Priority"
+      id: 1
+      jobGroupStrategy:
+        folderBased:
+          folderName: "Jenkins-Plugins-Folder"
+      priority: 1
+    - description: "High Priority"
+      id: 2
+      jobGroupStrategy:
+        folderBased:
+          folderName: "Hosting-Providers"
+      priority: 2
+    - description: "Medium Priority"
+      id: 3
+      jobGroupStrategy:
+        folderBased:
+          folderName: "Maintenance"
+      priority: 3
+    - description: "Low Priority"
+      id: 4
+      jobGroupStrategy:
+        folderBased:
+          folderName: "Bugs-Individual"
+      priority: 4
+    - description: "Lowest Priority"
+      id: 5
+      jobGroupStrategy:
+        folderBased:
+          folderName: "Bugs-Individual/Bugs-90-000-to-99-999"
+      priority: 5
+  prioritySorterConfiguration:
+    onlyAdminsMayEditPriorityConfiguration: false
+    strategy:
+      fQStrategy:
+        defaultPriority: 3
+        numberOfPriorities: 5
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
