@@ -1,9 +1,0 @@
-<?xml version='1.1' encoding='UTF-8'?>
-<jenkins.advancedqueue.PrioritySorterConfiguration plugin="PrioritySorter@4.0.1">
-  <allowPriorityOnJobs>false</allowPriorityOnJobs>
-  <onlyAdminsMayEditPriorityConfiguration>false</onlyAdminsMayEditPriorityConfiguration>
-  <strategy class="jenkins.advancedqueue.sorter.strategy.FQStrategy">
-    <numberOfPriorities>5</numberOfPriorities>
-    <defaultPriority>3</defaultPriority>
-  </strategy>
-</jenkins.advancedqueue.PrioritySorterConfiguration>
