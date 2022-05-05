@@ -36,7 +36,7 @@ build-name-setter:2.2.0
 build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
-checks-api:1.7.3
+checks-api:1.7.4
 cloudbees-bitbucket-branch-source:765.v5a_2d6a_23c01d
 cloudbees-folder:6.714.v79e858ef76a_2
 cloudbees-jenkins-advisor:3.3.2
@@ -149,7 +149,7 @@ pollscm:1.3.1
 popper-api:1.16.1-3
 popper2-api:2.11.5-1
 preSCMbuildstep:0.3
-prism-api:1.26.0-2
+prism-api:1.28.0-1
 promoted-builds:876.v99d29788b_36b_
 pubsub-light:1.16
 resource-disposer:0.19
