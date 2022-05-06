@@ -180,7 +180,7 @@ workflow-aggregator:2.7
 workflow-api:1144.v61c3180fa_03f
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2689.v434009a_31b_f1
-workflow-cps-global-lib:570.v21311f4951f8
+workflow-cps-global-lib:575.v24fa_0a_b_f7383
 workflow-durable-task-step:1130.v8fd69d0b_8857
 workflow-job:1180.v04c4e75dce43
 workflow-multibranch:712.vc169a_1387405
