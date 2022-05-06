@@ -158,7 +158,7 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.14.1+1"
+              id: "jdk-11.0.15+10"
     - name: "jdk17"
       properties:
       - installSource:
