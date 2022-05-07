@@ -138,8 +138,8 @@ def undo_replace_constants_in_ref():
 
 def get_available_updates_command(base_jenkins_version):
     available_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
-                                  "--plugin-download-directory", "ref/plugins",
-                                  "--plugin-file", "plugins.txt",
+                                  "-d", "ref/plugins",
+                                  "-f", "plugins.txt",
                                   "--no-download",
                                   "--available-updates",
     ]
@@ -149,10 +149,10 @@ def get_available_updates_command(base_jenkins_version):
 
 def report_update_plugins_commands(base_jenkins_version):
     download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
-                                 "--plugin-download-directory", "ref/plugins",
-                                 "--plugin-file", "plugins.txt",
+                                 "-d", "ref/plugins",
+                                 "-f", "plugins.txt",
     ]
-    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["--output", "txt"]) + " > x && mv x plugins.txt")
+    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " | grep -v ' ' > x && mv x plugins.txt")
     print("and " + " ".join(download_updates_command))
 
 #-----------------------------------------------------------------------
