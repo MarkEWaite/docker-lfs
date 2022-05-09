@@ -89,11 +89,11 @@ handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 htmlpublisher:1.30
 implied-labels:0.9
 jackson2-api:2.13.2.20220328-273.v11d70a_b_a_1a_52
-jacoco:3.3.1
+jacoco:3.3.2
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-3
 javax-mail-api:1.6.2-6
-jaxb:2.3.0.1
+jaxb:2.3.6-1
 jdk-tool:1.5
 jenkins-design-language:1.25.3
 jersey2-api:2.35-7
@@ -189,4 +189,4 @@ workflow-step-api:625.vd896b_f445a_f8
 workflow-support:819.v37d707a_71d9b_
 ws-cleanup:0.42
 xshell:0.10
-xunit:3.0.6
+xunit:3.0.7
