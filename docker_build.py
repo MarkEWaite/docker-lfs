@@ -152,7 +152,7 @@ def report_update_plugins_commands(base_jenkins_version):
                                  "-d", "ref/plugins",
                                  "-f", "plugins.txt",
     ]
-    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " | grep -v ' ' > x && mv x plugins.txt")
+    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " > x && mv x plugins.txt")
     print("and " + " ".join(download_updates_command))
 
 #-----------------------------------------------------------------------
