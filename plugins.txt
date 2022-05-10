@@ -96,7 +96,7 @@ javax-mail-api:1.6.2-6
 jaxb:2.3.6-1
 jdk-tool:1.5
 jenkins-design-language:1.25.3
-jersey2-api:2.35-7
+jersey2-api:2.35-8
 jira:3.7.1
 jjwt-api:0.11.2-71.v2722b_b_06a_2a_f
 jnr-posix-api:3.1.7-3
