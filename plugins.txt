@@ -1,7 +1,7 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc490.1a_a_0a_c9d4a_8e
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.10.0
+analysis-model-api:10.10.1
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -60,7 +60,7 @@ docker-workflow:1.28
 dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.2-1
-elastic-axis:1.4.6
+elastic-axis:1.5.0
 email-ext:2.88
 envinject:2.854.vfa_1657078c97
 envinject-api:1.199.v3ce31253ed13
@@ -79,7 +79,7 @@ github-api:1.303-400.v35c2d8258028
 github-branch-source:1628.vb_2f51293cb_78
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
-gitlab-api:5.0.1-69.vcdc19e779072
+gitlab-api:5.0.1-72.vb_8c272862e86
 gitlab-branch-source:625.v85cf3a_400cfe
 gitlab-plugin:1.5.31
 groovy-postbuild:2.5
@@ -157,12 +157,12 @@ scm-api:608.vfa_f971c5a_a_e9
 script-security:1158.v7c1b_73a_69a_08
 snakeyaml-api:1.30.1
 sse-gateway:1.25
-ssh-agent:1.24.1
+ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:277.v95c2fec1c047
 sshd:3.228.v4c9f9e652c86
 ssh-slaves:1.814.vc82988f54b_10
 structs:318.va_f3ccb_729b_71
-support-core:1162.vb_b_e5198c6b_22
+support-core:1172.va_1fcf85806d0
 swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
@@ -180,8 +180,8 @@ workflow-aggregator:2.7
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2689.v434009a_31b_f1
-workflow-cps-global-lib:575.v24fa_0a_b_f7383
-workflow-durable-task-step:1130.v8fd69d0b_8857
+workflow-cps-global-lib:581.ve633085a_8a_87
+workflow-durable-task-step:1139.v252a_e12e8463
 workflow-job:1180.v04c4e75dce43
 workflow-multibranch:712.vc169a_1387405
 workflow-scm-step:400.v6b_89a_1317c9a_
