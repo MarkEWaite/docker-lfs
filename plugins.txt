@@ -80,7 +80,7 @@ github-api:1.303-400.v35c2d8258028
 github-branch-source:1628.vb_2f51293cb_78
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
-gitlab-api:5.0.1-69.vcdc19e779072
+gitlab-api:5.0.1-72.vb_8c272862e86
 gitlab-branch-source:625.v85cf3a_400cfe
 gitlab-plugin:1.5.31
 groovy-postbuild:2.5
@@ -181,7 +181,7 @@ workflow-aggregator:2.7
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2689.v434009a_31b_f1
-workflow-cps-global-lib:575.v24fa_0a_b_f7383
+workflow-cps-global-lib:581.ve633085a_8a_87
 workflow-durable-task-step:1139.v252a_e12e8463
 workflow-job:1180.v04c4e75dce43
 workflow-multibranch:712.vc169a_1387405
