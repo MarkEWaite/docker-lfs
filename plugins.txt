@@ -38,7 +38,7 @@ buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.7.4
 cloudbees-bitbucket-branch-source:765.v5a_2d6a_23c01d
-cloudbees-folder:6.714.v79e858ef76a_2
+cloudbees-folder:6.722.v8165b_a_cf25e9
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:2.0.4
@@ -89,7 +89,7 @@ handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 htmlpublisher:1.30
 implied-labels:0.9
-jackson2-api:2.13.2.20220328-281.v9ecc7a_5e834f
+jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-3
@@ -177,7 +177,7 @@ versioncolumn:2.2
 view-job-filters:2.3
 warnings-ng:9.12.0
 windows-slaves:1.8
-workflow-aggregator:2.7
+workflow-aggregator:578.vf9a_f99755f4a_
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2689.v434009a_31b_f1
@@ -187,7 +187,7 @@ workflow-job:1180.v04c4e75dce43
 workflow-multibranch:712.vc169a_1387405
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:625.vd896b_f445a_f8
-workflow-support:819.v37d707a_71d9b_
+workflow-support:820.vd1a_6cc65ef33
 ws-cleanup:0.42
 xshell:0.10
 xunit:3.0.8
