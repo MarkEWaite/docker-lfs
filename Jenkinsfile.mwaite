@@ -6,13 +6,15 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+		deleteDir()
+		checkout scm
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
 			ls -al
 			git remote | grep -q public || git remote rename origin public
 			git remote | grep -q upstream || (git remote add upstream https://github.com/jenkinsci/docker && git fetch upstream)
 			git branch --set-upstream-to=public/lts-with-plugins lts-with-plugins
-			python ./docker_build.py
+			# python ./docker_build.py
 			git remote rename public origin
 			git remote -v
 		       '''
