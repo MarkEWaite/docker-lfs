@@ -117,7 +117,7 @@ markdown-formatter:0.2.0
 matrix-auth:3.1.2
 matrix-project:771.v574584b_39e60
 maven-plugin:3.18
-mercurial:2.16.1
+mercurial:2.16.2
 metrics:4.1.6.2
 momentjs:1.1.1
 monitoring:1.91.0
