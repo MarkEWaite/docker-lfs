@@ -6,12 +6,14 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-		checkout scm
-		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
+		// sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
-			python ./docker_build.py
+			if [ -d ref/plugins ]; then
+				 ls -altr ref/plugins/git.jpi
+			fi
+			ls -altr docker*
 		       '''
-		}
+		// }
             }
         }
     }
