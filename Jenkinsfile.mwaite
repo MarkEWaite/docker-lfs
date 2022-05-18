@@ -1,0 +1,15 @@
+pipeline {
+    agent {
+        label 'docker'
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+		sshagent(['MarkEWaite-github-rsa-private-key-from-mark-pc2']) {
+		    sh './docker_build.py'
+		}
+            }
+        }
+    }
+}
