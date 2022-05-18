@@ -9,7 +9,7 @@ pipeline {
 		deleteDir() // Temporary
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
-			ls -al docker*.py
+			ls -al
 			git remote | grep -q public || git remote rename origin public
 			python ./docker_build.py
 		       '''
