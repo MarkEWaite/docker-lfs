@@ -1,0 +1,20 @@
+pipeline {
+    agent {
+        label 'docker && python'
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+		// sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
+		    sh '''
+			if [ -d ref/plugins ]; then
+				 ls -altr ref/plugins/git.jpi
+			fi
+			ls -altr docker*
+		       '''
+		// }
+            }
+        }
+    }
+}
