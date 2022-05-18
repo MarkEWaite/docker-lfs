@@ -9,11 +9,6 @@ pipeline {
 		checkout scm
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
-			git remote -v
-			git remote rm public || true
-			git branch -a
-			git remote | grep -q upstream || (git remote add upstream https://github.com/jenkinsci/docker && git fetch upstream)
-			git pull || git branch --set-upstream-to=origin/lts-with-plugins lts-with-plugins
 			python ./docker_build.py
 		       '''
 		}
