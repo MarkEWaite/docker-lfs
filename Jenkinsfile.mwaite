@@ -7,7 +7,11 @@ pipeline {
         stage('Hello') {
             steps {
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
-		    sh 'ls -al ref/plugins'
+		    sh '''
+			ls -al ref/plugins
+			git remote | grep -q public || git remote rename origin public
+			./docker_build.py
+		       '''
 		}
             }
         }
