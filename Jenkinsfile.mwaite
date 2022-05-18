@@ -6,8 +6,6 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-		deleteDir()
-		checkout scm
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
 			ls -al
