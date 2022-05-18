@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+		deleteDir() // Temporary
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
 			ls -al docker*.py
