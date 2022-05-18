@@ -1,13 +1,15 @@
 pipeline {
     agent {
-        label 'docker'
+        label 'docker && python'
     }
 
     stages {
         stage('Hello') {
             steps {
-		// sshagent(['MarkEWaite-github-rsa-private-key-from-mark-pc2']) {
-		    sh 'ls -al ref/plugins && ./docker_build.py'
+		// sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
+		    sh '''
+			[ -d ref/plugins ] && ls -altr ref/plugins/git.jpi
+		       '''
 		// }
             }
         }
