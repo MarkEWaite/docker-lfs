@@ -8,9 +8,9 @@ pipeline {
             steps {
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
-			ls -al ref/plugins
+			ls -al docker*.py
 			git remote | grep -q public || git remote rename origin public
-			./docker_build.py
+			python ./docker_build.py
 		       '''
 		}
             }
