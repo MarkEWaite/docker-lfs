@@ -13,6 +13,8 @@ pipeline {
 			ls -al
 			git remote | grep -q public || git remote rename origin public
 			python ./docker_build.py
+			git remote rename public origin
+			git remote -v
 		       '''
 		}
             }
