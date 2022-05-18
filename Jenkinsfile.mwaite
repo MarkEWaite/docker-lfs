@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+		checkout scm
 		sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
 			git branch --set-upstream-to=origin/lts-with-plugins lts-with-plugins
