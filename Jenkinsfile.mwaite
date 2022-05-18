@@ -12,6 +12,7 @@ pipeline {
 		    sh '''
 			ls -al
 			git remote | grep -q public || git remote rename origin public
+			git remote | grep -q upstream || (git remote add upstream https://github.com/jenkinsci/docker && git fetch upstream)
 			git branch --set-upstream-to=public/lts-with-plugins lts-with-plugins
 			python ./docker_build.py
 			git remote rename public origin
