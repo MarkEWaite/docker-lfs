@@ -8,7 +8,10 @@ pipeline {
             steps {
 		// sshagent(['mark.earl.waite-gmail.com-ed25519-private-key-with-passphrase']) {
 		    sh '''
-			[ -d ref/plugins ] && ls -altr ref/plugins/git.jpi
+			if [ -d ref/plugins ]; then
+				 ls -altr ref/plugins/git.jpi
+			fi
+			ls -altr docker*
 		       '''
 		// }
             }
