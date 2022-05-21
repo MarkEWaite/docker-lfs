@@ -122,7 +122,7 @@ metrics:4.1.6.2
 momentjs:1.1.1
 monitoring:1.91.0
 naginator:1.18.1
-nodelabelparameter:1.10.3.1
+nodelabelparameter:incrementals;org.jenkins-ci.plugins;1.10.4-rc416.46eb_f46f6241
 okhttp-api:4.9.3-105.vb96869f8ac3a
 pam-auth:1.8
 parallel-test-executor:318.va_e768e2e32e3
