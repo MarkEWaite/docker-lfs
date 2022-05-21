@@ -102,7 +102,7 @@ jjwt-api:0.11.2-71.v2722b_b_06a_2a_f
 jnr-posix-api:3.1.7-3
 job-dsl:1.79
 jquery:1.12.4-1
-jquery3-api:3.6.0-3
+jquery3-api:3.6.0-4
 jsch:0.1.55.2
 junit:1.63
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
