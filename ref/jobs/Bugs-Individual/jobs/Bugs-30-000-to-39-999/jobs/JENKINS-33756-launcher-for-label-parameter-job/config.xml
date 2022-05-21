@@ -3,7 +3,9 @@
   <actions>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2081.v3919681ffc1e"/>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2081.v3919681ffc1e">
-      <jobProperties/>
+      <jobProperties>
+        <string>jenkins.model.BuildDiscarderProperty</string>
+      </jobProperties>
       <triggers/>
       <parameters>
         <string>PIPELINE_LETTER_PARAM</string>
@@ -25,6 +27,14 @@ Job may fail on first run because the parameters are not known</description>
       <scanQueueFor>DISABLED</scanQueueFor>
       <blockingJobs></blockingJobs>
     </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
     <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.32">
       <gitLabConnection>null</gitLabConnection>
       <jobCredentialId></jobCredentialId>
@@ -87,7 +97,9 @@ Job may fail on first run because the parameters are not known</description>
     parameters {
         choice name: &apos;PIPELINE_LETTER_PARAM&apos;, description: &apos;Single letter parameter&apos;, choices: [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;, &apos;h&apos;, &apos;i&apos;, &apos;j&apos;, &apos;k&apos;, &apos;l&apos;, &apos;m&apos;, &apos;n&apos;, &apos;o&apos;, &apos;p&apos;,  &apos;q&apos;, &apos;r&apos;, &apos;s&apos;, &apos;t&apos;, &apos;u&apos;, &apos;v&apos;, &apos;w&apos;, &apos;x&apos;, &apos;y&apos;, &apos;z&apos;]
     }
-
+    options {
+        buildDiscarder logRotator(numToKeepStr: &apos;20&apos;)
+    }
 
     stages {
         stage(&apos;Hello&apos;) {
