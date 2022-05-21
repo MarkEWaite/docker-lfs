@@ -28,7 +28,7 @@ blueocean-rest:1.25.5
 blueocean-rest-impl:1.25.5
 blueocean-web:1.25.5
 bootstrap4-api:4.6.0-5
-bootstrap5-api:5.1.3-6
+bootstrap5-api:5.1.3-7
 bouncycastle-api:2.26
 branch-api:2.1046.v0ca_37783ecc5
 build-blocker-plugin:1.7.8
@@ -37,7 +37,7 @@ build-timeout:1.20
 buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.7.4
-cloudbees-bitbucket-branch-source:765.v5a_2d6a_23c01d
+cloudbees-bitbucket-branch-source:773.v4b_9b_005b_562b_
 cloudbees-folder:6.722.v8165b_a_cf25e9
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
@@ -66,7 +66,7 @@ envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.1
-font-awesome-api:6.0.0-1
+font-awesome-api:6.1.1-1
 forensics-api:1.13.0
 git:4.11.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3048.0b_c2d113a_934
@@ -102,12 +102,12 @@ jjwt-api:0.11.2-71.v2722b_b_06a_2a_f
 jnr-posix-api:3.1.7-3
 job-dsl:1.79
 jquery:1.12.4-1
-jquery3-api:3.6.0-3
+jquery3-api:3.6.0-4
 jsch:0.1.55.2
 junit:1.63
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
-ldap:2.9
+ldap:2.10
 leastload:3.0.0
 lockable-resources:2.15
 log-parser:2.2
@@ -143,10 +143,10 @@ pipeline-stage-tags-metadata:2.2081.v3919681ffc1e
 pipeline-utility-steps:2.12.1
 plain-credentials:1.8
 platformlabeler:1317.v822cd19db_d49
-plugin-util-api:2.16.0
+plugin-util-api:2.17.0
 pollscm:1.3.1
 popper-api:1.16.1-3
-popper2-api:2.11.5-1
+popper2-api:2.11.5-2
 preSCMbuildstep:0.3
 prism-api:1.28.0-1
 promoted-builds:876.v99d29788b_36b_
@@ -159,7 +159,7 @@ snakeyaml-api:1.30.1
 sse-gateway:1.25
 ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:277.v95c2fec1c047
-sshd:3.236.ved5e1b_cb_50b_2
+sshd:3.237.v883d165a_c1d3
 ssh-slaves:1.814.vc82988f54b_10
 structs:318.va_f3ccb_729b_71
 support-core:1174.vc46f6b_04d894

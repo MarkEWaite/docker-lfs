@@ -232,7 +232,7 @@
             <hudson.model.labels.LabelAtom>FreeBSD-13</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">13.0-RELEASE-p12||13.0-RELEASE-p11||13.0-RELEASE-p10||13.0-RELEASE-p9||13.0-RELEASE-p8||13.0-RELEASE-p7||13.0-RELEASE-p6||13.0-RELEASE-p5||13.0-RELEASE-p4||13.0-RELEASE-p3||13.0-RELEASE-p2</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">13.1-RELEASE-p5||13.1-RELEASE-p4||13.1-RELEASE-p3||13.1-RELEASE-p2||13.1-RELEASE||13.0-RELEASE-p12||13.0-RELEASE-p11||13.0-RELEASE-p10||13.0-RELEASE-p9||13.0-RELEASE-p8||13.0-RELEASE-p7||13.0-RELEASE-p6||13.0-RELEASE-p5||13.0-RELEASE-p4||13.0-RELEASE-p3||13.0-RELEASE-p2</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
