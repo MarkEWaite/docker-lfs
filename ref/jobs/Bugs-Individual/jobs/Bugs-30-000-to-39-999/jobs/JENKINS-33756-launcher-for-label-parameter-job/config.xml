@@ -95,7 +95,7 @@ Job may fail on first run because the parameters are not known</description>
                 echo &apos;Starting downstream job&apos;
                 script {
                     Date date = new Date();
-                    def sleepTime = date.getAt(Calendar.SECOND) % 10;
+                    def sleepTime = date.getAt(Calendar.SECOND) % 4;
                     echo &quot;sleep time is ${sleepTime}&quot;
                     def buildResult = build job: &apos;JENKINS-33756-label-parameter-runs-twice-on-first-selected-agent&apos;, quietPeriod: 0,
                                         parameters: [string(name: &apos;SLEEP_TIME&apos;, value: &quot;${sleepTime}&quot;), string(name: &apos;LETTER_PARAM&apos;, value: &quot;${PIPELINE_LETTER_PARAM}&quot;)]
