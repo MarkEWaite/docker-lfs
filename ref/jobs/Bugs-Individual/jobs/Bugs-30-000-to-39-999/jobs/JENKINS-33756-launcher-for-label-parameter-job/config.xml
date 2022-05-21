@@ -1,0 +1,127 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1181.va_25d15548158">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2081.v3919681ffc1e"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2081.v3919681ffc1e">
+      <jobProperties>
+        <string>jenkins.model.BuildDiscarderProperty</string>
+      </jobProperties>
+      <triggers/>
+      <parameters>
+        <string>PIPELINE_LETTER_PARAM</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>Launches [JENKINS-33756-label-parameter-runs-twice-on-first-selected-agent](/job/Bugs-Individual/job/Bugs-30-000-to-39-999/job/JENKINS-33756-label-parameter-runs-twice-on-first-selected-agent/buildTimeTrend) to check for duplicate execution on one of the selected agents&#xd;
+&#xd;
+Job may fail on first run because the parameters are not known</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.7.1">
+      <siteName>https://issues.jenkins.io/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.8">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.32">
+      <gitLabConnection>null</gitLabConnection>
+      <jobCredentialId></jobCredentialId>
+      <useAlternativeCredential>false</useAlternativeCredential>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PIPELINE_LETTER_PARAM</name>
+          <description>Single letter parameter</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>a</string>
+              <string>b</string>
+              <string>c</string>
+              <string>d</string>
+              <string>e</string>
+              <string>f</string>
+              <string>g</string>
+              <string>h</string>
+              <string>i</string>
+              <string>j</string>
+              <string>k</string>
+              <string>l</string>
+              <string>m</string>
+              <string>n</string>
+              <string>o</string>
+              <string>p</string>
+              <string>q</string>
+              <string>r</string>
+              <string>s</string>
+              <string>t</string>
+              <string>u</string>
+              <string>v</string>
+              <string>w</string>
+              <string>x</string>
+              <string>y</string>
+              <string>z</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.8">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2692.v76b_089ccd026">
+    <script>pipeline {
+    agent any
+    parameters {
+        choice name: &apos;PIPELINE_LETTER_PARAM&apos;, description: &apos;Single letter parameter&apos;, choices: [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;, &apos;h&apos;, &apos;i&apos;, &apos;j&apos;, &apos;k&apos;, &apos;l&apos;, &apos;m&apos;, &apos;n&apos;, &apos;o&apos;, &apos;p&apos;,  &apos;q&apos;, &apos;r&apos;, &apos;s&apos;, &apos;t&apos;, &apos;u&apos;, &apos;v&apos;, &apos;w&apos;, &apos;x&apos;, &apos;y&apos;, &apos;z&apos;]
+    }
+    options {
+        buildDiscarder logRotator(numToKeepStr: &apos;20&apos;)
+    }
+
+    stages {
+        stage(&apos;Hello&apos;) {
+            steps {
+                echo &apos;Starting downstream job&apos;
+                script {
+                    Date date = new Date();
+                    def sleepTime = date.getAt(Calendar.SECOND) % 4;
+                    echo &quot;sleep time is ${sleepTime}&quot;
+                    def buildResult = build job: &apos;JENKINS-33756-label-parameter-runs-twice-on-first-selected-agent&apos;, quietPeriod: 0,
+                                        parameters: [string(name: &apos;SLEEP_TIME&apos;, value: &quot;${sleepTime}&quot;), string(name: &apos;LETTER_PARAM&apos;, value: &quot;${PIPELINE_LETTER_PARAM}&quot;)]
+                    echo &quot;Build result is ${buildResult.result} for build number ${buildResult.number} with id ${buildResult.id}&quot;
+                    buildName &quot;#${BUILD_NUMBER} launched ${buildResult.number}&quot;
+                }
+                echo &apos;Completed downstream job&apos;
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
