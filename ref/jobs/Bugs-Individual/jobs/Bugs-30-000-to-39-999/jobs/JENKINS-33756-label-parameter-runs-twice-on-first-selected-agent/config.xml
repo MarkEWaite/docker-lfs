@@ -31,7 +31,7 @@ Launched by [JENKINS-33756-launcher-for-label-parameter-job/](/job/Bugs-Individu
         <org.jvnet.jenkins.plugins.nodelabelparameter.LabelParameterDefinition plugin="nodelabelparameter@1.10.3.1">
           <name>LABEL_PARAM</name>
           <description>Label to select multiple agents to run the job</description>
-          <defaultValue>Debian</defaultValue>
+          <defaultValue>Ubuntu</defaultValue>
           <allNodesMatchingLabel>true</allNodesMatchingLabel>
           <triggerIfResult>allCases</triggerIfResult>
           <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.IgnoreOfflineNodeEligibility"/>
