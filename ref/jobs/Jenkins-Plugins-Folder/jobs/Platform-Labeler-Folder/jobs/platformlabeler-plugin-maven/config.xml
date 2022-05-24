@@ -86,18 +86,6 @@
   </globalSettings>
   <reporters/>
   <publishers>
-    <xunit plugin="xunit@3.0.0">
-      <tools/>
-      <thresholds/>
-      <thresholdMode>1</thresholdMode>
-      <extraConfiguration>
-        <testTimeMargin>3000</testTimeMargin>
-        <sleepTime>0</sleepTime>
-        <reduceLog>true</reduceLog>
-        <followSymlink>true</followSymlink>
-      </extraConfiguration>
-      <testDataPublishers class="empty-set"/>
-    </xunit>
     <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.1.0">
       <execPattern>**/**.exec</execPattern>
       <classPattern>**/classes</classPattern>
