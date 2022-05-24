@@ -150,8 +150,6 @@ unclassified:
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
-  logParser:
-    legacyFormatting: false
   mavenModuleSet:
     localRepository: "default"
   naginatorPublisher:
