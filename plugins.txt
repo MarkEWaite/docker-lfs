@@ -128,7 +128,7 @@ pam-auth:1.8
 parallel-test-executor:318.va_e768e2e32e3
 parameterized-trigger:2.44
 pipeline-build-step:2.18
-pipeline-github-lib:36.v4c01db_ca_ed16
+pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
 pipeline-graph-view:51.v5a693b766483
 pipeline-groovy-lib:589.vb_a_b_4a_a_8c443c
@@ -181,6 +181,7 @@ workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2692.v76b_089ccd026
+workflow-cps-global-lib:588.v576c103a_ff86
 workflow-durable-task-step:1139.v252a_e12e8463
 workflow-job:1182.v60a_e6279b_579
 workflow-multibranch:712.vc169a_1387405
