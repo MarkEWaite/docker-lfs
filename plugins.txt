@@ -10,7 +10,6 @@ authentication-tokens:1.4
 authorize-project:1.4.0
 badge:1.9.1
 basic-branch-build-strategies:1.3.2
-bitbucket:223.vd12f2bca5430
 blueocean-commons:1.25.5
 blueocean-config:1.25.5
 blueocean-core-js:1.25.5
@@ -116,7 +115,6 @@ markdown-formatter:0.2.0
 matrix-auth:3.1.2
 matrix-project:771.v574584b_39e60
 maven-plugin:3.18
-mercurial:2.16.2
 metrics:4.1.6.2
 momentjs:1.1.1
 monitoring:1.91.0
@@ -134,12 +132,12 @@ pipeline-groovy-lib:589.vb_a_b_4a_a_8c443c
 pipeline-input-step:448.v37cea_9a_10a_70
 pipeline-maven:3.10.0
 pipeline-milestone-step:101.vd572fef9d926
-pipeline-model-api:2.2081.v3919681ffc1e
-pipeline-model-definition:2.2081.v3919681ffc1e
-pipeline-model-extensions:2.2081.v3919681ffc1e
+pipeline-model-api:2.2084.v1d2999534103
+pipeline-model-definition:2.2084.v1d2999534103
+pipeline-model-extensions:2.2084.v1d2999534103
 pipeline-rest-api:2.24
 pipeline-stage-step:293.v200037eefcd5
-pipeline-stage-tags-metadata:2.2081.v3919681ffc1e
+pipeline-stage-tags-metadata:2.2084.v1d2999534103
 pipeline-utility-steps:2.12.1
 plain-credentials:1.8
 platformlabeler:1317.v822cd19db_d49
