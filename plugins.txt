@@ -133,12 +133,12 @@ pipeline-groovy-lib:589.vb_a_b_4a_a_8c443c
 pipeline-input-step:448.v37cea_9a_10a_70
 pipeline-maven:3.10.0
 pipeline-milestone-step:101.vd572fef9d926
-pipeline-model-api:2.2084.v1d2999534103
-pipeline-model-definition:2.2084.v1d2999534103
-pipeline-model-extensions:2.2084.v1d2999534103
+pipeline-model-api:2.2086.v12b_420f036e5
+pipeline-model-definition:2.2086.v12b_420f036e5
+pipeline-model-extensions:2.2086.v12b_420f036e5
 pipeline-rest-api:2.24
 pipeline-stage-step:293.v200037eefcd5
-pipeline-stage-tags-metadata:2.2084.v1d2999534103
+pipeline-stage-tags-metadata:2.2086.v12b_420f036e5
 pipeline-utility-steps:2.12.1
 plain-credentials:1.8
 platformlabeler:1317.v822cd19db_d49
@@ -179,7 +179,6 @@ workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2705.v0449852ee36f
-workflow-cps-global-lib:588.v576c103a_ff86
 workflow-durable-task-step:1139.v252a_e12e8463
 workflow-job:1182.v60a_e6279b_579
 workflow-multibranch:712.vc169a_1387405
