@@ -80,7 +80,7 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:5.0.1-72.vb_8c272862e86
 gitlab-branch-source:625.v85cf3a_400cfe
-gitlab-plugin:1.5.32
+gitlab-plugin:1.5.33
 groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
