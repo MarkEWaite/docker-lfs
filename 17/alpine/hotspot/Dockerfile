@@ -1,28 +1,52 @@
-FROM eclipse-temurin:11.0.15_10-jdk-centos7 as jre-build
+FROM eclipse-temurin:17.0.3_7-jdk-alpine AS jre-build
 
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
+RUN apk add --no-cache binutils && rm -rf /var/cache/apk/*
 RUN jlink \
          --add-modules ALL-MODULE-PATH \
+         --strip-debug \
          --no-man-pages \
+         --no-header-files \
          --compress=2 \
          --output /javaruntime
 
-FROM almalinux:8.6
+FROM alpine:3.16.0
+
+RUN apk add --no-cache \
+  bash \
+  coreutils \
+  curl \
+  git \
+  gnupg \
+  musl-locales \
+  musl-locales-lang \
+  openssh-client \
+  tini \
+  ttf-dejavu \
+  tzdata \
+  unzip
 
 ENV LANG C.UTF-8
 
 ARG TARGETARCH
 ARG COMMIT_SHA
+ARG GIT_LFS_VERSION=3.1.4
 
-RUN dnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y \
-	fontconfig \
-	freetype \
-	git-lfs \
-	unzip \
-	&& \
-    dnf clean all
+# required for multi-arch support, revert to package cloud after:
+# https://github.com/git-lfs/git-lfs/issues/4546
+COPY git_lfs_pub.gpg /tmp/git_lfs_pub.gpg
+RUN GIT_LFS_ARCHIVE="git-lfs-linux-${TARGETARCH}-v${GIT_LFS_VERSION}.tar.gz" \
+    GIT_LFS_RELEASE_URL="https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/${GIT_LFS_ARCHIVE}"\
+    set -x; curl --fail --silent --location --show-error --output "/tmp/${GIT_LFS_ARCHIVE}" "${GIT_LFS_RELEASE_URL}" && \
+    curl --fail --silent --location --show-error --output "/tmp/git-lfs-sha256sums.asc" https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/sha256sums.asc && \
+    gpg --no-tty --import /tmp/git_lfs_pub.gpg && \
+    gpg -d /tmp/git-lfs-sha256sums.asc | grep "${GIT_LFS_ARCHIVE}" | (cd /tmp; sha256sum -c ) && \
+    mkdir -p /tmp/git-lfs && \
+    tar xzvf "/tmp/${GIT_LFS_ARCHIVE}" -C /tmp/git-lfs && \
+    bash -x /tmp/git-lfs/install.sh && \
+    rm -rf /tmp/git-lfs*
 
 ARG user=jenkins
 ARG group=jenkins
@@ -42,8 +66,8 @@ ENV REF $REF
 # ensure you use the same uid
 RUN mkdir -p $JENKINS_HOME \
   && chown ${uid}:${gid} $JENKINS_HOME \
-  && groupadd -g ${gid} ${group} \
-  && useradd -N -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
+  && addgroup -g ${gid} ${group} \
+  && adduser -h "$JENKINS_HOME" -u ${uid} -G ${group} -s /bin/bash -D ${user}
 
 # Jenkins home directory is a volume, so configuration and build history
 # can be persisted and survive image upgrades
@@ -53,16 +77,6 @@ VOLUME $JENKINS_HOME
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
 RUN mkdir -p ${REF}/init.groovy.d
-
-# Use tini as subreaper in Docker container to adopt zombie processes
-ARG TINI_VERSION=v0.19.0
-COPY tini_pub.gpg "${JENKINS_HOME}/tini_pub.gpg"
-RUN curl -fsSL "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static-${TARGETARCH}" -o /sbin/tini \
-  && curl -fsSL "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static-${TARGETARCH}.asc" -o /sbin/tini.asc \
-  && gpg --no-tty --import "${JENKINS_HOME}/tini_pub.gpg" \
-  && gpg --verify /sbin/tini.asc \
-  && rm -rf /sbin/tini.asc /root/.gnupg \
-  && chmod +x /sbin/tini
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
@@ -94,6 +108,7 @@ EXPOSE ${http_port}
 # will be used by attached agents:
 EXPOSE ${agent_port}
 
+ENV JENKINS_ENABLE_FUTURE_JAVA=true
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
 ENV JAVA_HOME=/opt/java/openjdk
