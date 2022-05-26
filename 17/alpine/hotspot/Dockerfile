@@ -1,8 +1,9 @@
-FROM eclipse-temurin:11.0.15_10-jdk-alpine AS jre-build
+FROM eclipse-temurin:17.0.3_7-jdk-alpine AS jre-build
 
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
+RUN apk add --no-cache binutils && rm -rf /var/cache/apk/*
 RUN jlink \
          --add-modules ALL-MODULE-PATH \
          --strip-debug \
@@ -107,6 +108,7 @@ EXPOSE ${http_port}
 # will be used by attached agents:
 EXPOSE ${agent_port}
 
+ENV JENKINS_ENABLE_FUTURE_JAVA=true
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
 ENV JAVA_HOME=/opt/java/openjdk
