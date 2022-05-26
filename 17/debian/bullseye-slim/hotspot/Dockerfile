@@ -1,28 +1,38 @@
-FROM eclipse-temurin:11.0.15_10-jdk-centos7 as jre-build
+FROM eclipse-temurin:17.0.3_7-jdk-focal as jre-build
 
-# Generate smaller java runtime without unneeded files
-# for now we include the full module path to maintain compatibility
-# while still saving space (approx 200mb from the full distribution)
 RUN jlink \
          --add-modules ALL-MODULE-PATH \
+         --strip-debug \
          --no-man-pages \
+         --no-header-files \
          --compress=2 \
          --output /javaruntime
 
-FROM almalinux:8.6
+FROM debian:bullseye-20220509-slim
+
+RUN apt-get update && \
+    apt-get install -y git curl gpg unzip libfreetype6 libfontconfig1 && \
+    rm -rf /var/lib/apt/lists/*
 
 ENV LANG C.UTF-8
 
 ARG TARGETARCH
 ARG COMMIT_SHA
+ARG GIT_LFS_VERSION=3.1.4
 
-RUN dnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y \
-	fontconfig \
-	freetype \
-	git-lfs \
-	unzip \
-	&& \
-    dnf clean all
+# required for multi-arch support, revert to package cloud after:
+# https://github.com/git-lfs/git-lfs/issues/4546
+COPY git_lfs_pub.gpg /tmp/git_lfs_pub.gpg
+RUN GIT_LFS_ARCHIVE="git-lfs-linux-${TARGETARCH}-v${GIT_LFS_VERSION}.tar.gz" \
+    GIT_LFS_RELEASE_URL="https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/${GIT_LFS_ARCHIVE}"\
+    set -x; curl --fail --silent --location --show-error --output "/tmp/${GIT_LFS_ARCHIVE}" "${GIT_LFS_RELEASE_URL}" && \
+    curl --fail --silent --location --show-error --output "/tmp/git-lfs-sha256sums.asc" https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/sha256sums.asc && \
+    gpg --no-tty --import /tmp/git_lfs_pub.gpg && \
+    gpg -d /tmp/git-lfs-sha256sums.asc | grep "${GIT_LFS_ARCHIVE}" | (cd /tmp; sha256sum -c ) && \
+    mkdir -p /tmp/git-lfs && \
+    tar xzvf "/tmp/${GIT_LFS_ARCHIVE}" -C /tmp/git-lfs && \
+    bash -x /tmp/git-lfs/install.sh && \
+    rm -rf /tmp/git-lfs*
 
 ARG user=jenkins
 ARG group=jenkins
@@ -43,7 +53,7 @@ ENV REF $REF
 RUN mkdir -p $JENKINS_HOME \
   && chown ${uid}:${gid} $JENKINS_HOME \
   && groupadd -g ${gid} ${group} \
-  && useradd -N -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
+  && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 
 # Jenkins home directory is a volume, so configuration and build history
 # can be persisted and survive image upgrades
@@ -95,6 +105,7 @@ EXPOSE ${http_port}
 EXPOSE ${agent_port}
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
+ENV JENKINS_ENABLE_FUTURE_JAVA=true
 
 ENV JAVA_HOME=/opt/java/openjdk
 ENV PATH "${JAVA_HOME}/bin:${PATH}"
