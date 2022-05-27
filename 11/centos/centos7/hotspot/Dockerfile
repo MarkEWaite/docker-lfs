@@ -16,8 +16,14 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 ARG TARGETARCH
 ARG COMMIT_SHA
 
-RUN yum install -y git curl freetype fontconfig unzip which && \
-    yum clean all
+RUN yum install -y \
+    curl \
+    fontconfig \
+    freetype \
+    git \
+    unzip \
+    which \
+  && yum clean all
 
 ARG TARGETARCH
 ARG COMMIT_SHA
@@ -117,7 +123,6 @@ USER ${user}
 
 COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
-COPY tini-shim.sh /bin/tini
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]

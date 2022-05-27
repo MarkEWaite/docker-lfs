@@ -96,9 +96,9 @@ stage('Build') {
                     }
 
                 if (!infra.isTrusted()) {
-                    stage('hadolint') {
-                        // run hadolint to check Dockerfile syntax
-                        sh 'make hadolint'
+
+                    stage('Static analysis') {
+                        sh 'make hadolint shellcheck'
                     }
 
                     stage('shellcheck') {
