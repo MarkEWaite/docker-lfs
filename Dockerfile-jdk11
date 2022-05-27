@@ -15,7 +15,9 @@ RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommend
 USER jenkins
 
 # Check that expected utilities are available in the image
-RUN ps -ef | grep UID && git lfs version | grep git-lfs/ && wget -V 2>&1 | grep -i free
+RUN test -x /usr/bin/pgrep
+RUN test -x /usr/local/bin/git-lfs
+RUN test -x /usr/bin/wget
 
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
