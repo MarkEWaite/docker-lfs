@@ -3,7 +3,7 @@ FROM eclipse-temurin:17.0.3_7-jdk-alpine AS jre-build
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
-RUN apk add --no-cache binutils && rm -rf /var/cache/apk/*
+RUN apk add --no-cache binutils
 RUN jlink \
          --add-modules ALL-MODULE-PATH \
          --strip-debug \
@@ -119,7 +119,6 @@ USER ${user}
 
 COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
-COPY tini-shim.sh /bin/tini
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]

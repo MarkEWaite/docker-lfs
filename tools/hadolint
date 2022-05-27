@@ -1,10 +1,6 @@
 #!/bin/sh -e
 
-if [ -z "$1" ]; then
-    echo "Must provide one filename as argument"
-    echo
-    echo "tools/hadolint Dockerfile"
-    exit 1
-fi
-
-exec docker run --rm -i hadolint/hadolint < $1
+exec docker run --rm \
+	-w "${PWD}" \
+	-v "${PWD}:${PWD}" \
+	ghcr.io/hadolint/hadolint:v2.10.0-debian hadolint "$@"

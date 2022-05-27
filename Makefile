@@ -40,13 +40,10 @@ check-reqs:
 	@$(call check_cli,jq)
 
 hadolint:
-	@for d in Dockerfile* ; do \
-		echo "=== Checking $${d}"; \
-		$(ROOT_DIR)/tools/hadolint "$${d}"; \
-	done
+	find . -type f -name 'Dockerfile*' -print0 | xargs -0 $(ROOT_DIR)/tools/hadolint
 
 shellcheck:
-	$(ROOT_DIR)/tools/shellcheck -e SC1091 jenkins-support *.sh
+	$(ROOT_DIR)/tools/shellcheck -e SC1091 jenkins-support *.sh tests/test_helpers.bash tools/hadolint tools/shellcheck .ci/publish.sh
 
 build: check-reqs
 	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' $(shell make --silent list)
