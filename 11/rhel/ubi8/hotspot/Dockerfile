@@ -17,11 +17,11 @@ ARG TARGETARCH
 ARG COMMIT_SHA
 
 RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y \
+        curl \
+        fontconfig \
+        freetype \
         git \
         git-lfs \
-        curl \
-        freetype \
-        fontconfig \
         unzip \
         which \
     && dnf clean --disableplugin=subscription-manager all
@@ -106,7 +106,6 @@ USER ${user}
 
 COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
-COPY tini-shim.sh /bin/tini
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
