@@ -59,7 +59,7 @@ docker-workflow:1.28
 dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.2-2
-elastic-axis:1.5.1
+elastic-axis:1.6.0
 email-ext:2.88
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
@@ -97,13 +97,13 @@ jdk-tool:1.5
 jenkins-design-language:1.25.5
 jersey2-api:2.35-8
 jira:3.7.1
-jjwt-api:0.11.2-71.v2722b_b_06a_2a_f
+jjwt-api:0.11.5-77.v646c772fddb_0
 jnr-posix-api:3.1.7-3
 job-dsl:1.79
 jquery:1.12.4-1
 jquery3-api:3.6.0-4
 jsch:0.1.55.2
-junit:1.63
+junit:1119.va_a_5e9068da_d7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
 ldap:2.10
@@ -114,7 +114,7 @@ mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
 matrix-auth:3.1.2
 matrix-project:771.v574584b_39e60
-maven-plugin:3.18
+maven-plugin:3.19
 metrics:4.1.6.2
 momentjs:1.1.1
 monitoring:1.91.0
@@ -177,7 +177,7 @@ windows-slaves:1.8.1
 workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1153.vb_912c0e47fb_a_
 workflow-basic-steps:948.v2c72a_091b_b_68
-workflow-cps:2706.v71dd22b_c5a_a_2
+workflow-cps:2710.vcd48b_b_9e0e7d
 workflow-durable-task-step:1139.v252a_e12e8463
 workflow-job:1182.v60a_e6279b_579
 workflow-multibranch:716.vc692a_e52371b_
