@@ -16,7 +16,7 @@ USER jenkins
 
 # Check that expected utilities are available in the image
 RUN test -x /usr/bin/pgrep
-RUN test -x /usr/local/bin/git-lfs
+RUN test -x /usr/local/bin/git-lfs || test -x /usr/bin/git-lfs
 RUN test -x /usr/bin/wget
 
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
