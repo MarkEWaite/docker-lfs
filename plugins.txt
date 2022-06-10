@@ -58,7 +58,7 @@ docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
-echarts-api:5.3.2-2
+echarts-api:5.3.2-3
 elastic-axis:1.6.0
 email-ext:2.88
 envinject:2.866.v5c0403e3d4df
@@ -66,7 +66,7 @@ envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
 favorite:2.4.1
 font-awesome-api:6.1.1-1
-forensics-api:1.13.0
+forensics-api:1.14.0
 git:4.11.3
 git-client:incrementals;org.jenkins-ci.plugins;3.11.1-rc3048.0b_c2d113a_934
 git-forensics:1.8.0
@@ -178,7 +178,7 @@ workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1164.v760c223ddb_32
 workflow-basic-steps:948.v2c72a_091b_b_68
 workflow-cps:2725.v7b_c717eb_12ce
-workflow-durable-task-step:1144.vd77b_57189936
+workflow-durable-task-step:1146.v1a_d2e603f929
 workflow-job:1186.v8def1a_5f3944
 workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
