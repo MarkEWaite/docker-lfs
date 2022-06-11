@@ -1,6 +1,11 @@
 #!/bin/bash
 
-JENKINS_HOME=ref/
+# Tool does not have desired results because it relies on jobs having
+# a builds directory.  Jobs that have been run at least once will have a
+# builds directory.  Jobs that are newly defined will not have a builds
+# directory until they have been run once.
+
+JENKINS_HOME=ref
 
 if [ ! -d "${JENKINS_HOME}/jobs" ]; then
     echo "JENKINS_HOME=${JENKINS_HOME} seems wrong"
