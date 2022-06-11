@@ -1,0 +1,16 @@
+#!/bin/bash
+
+JENKINS_HOME=ref/
+
+if [ ! -d "${JENKINS_HOME}/jobs" ]; then
+    echo "JENKINS_HOME=${JENKINS_HOME} seems wrong"
+fi
+
+# Find all Job builds directory with a missing 'legacyIds' file.
+comm -1 -3 --zero-terminated \
+  <(find ${JENKINS_HOME}/jobs -depth -type f -iname 'legacyIds' -printf '%h\0' | sort -z) \
+  <(find ${JENKINS_HOME}/jobs -depth -type d -iname 'builds' -prune -print0 | sort -z) | while read -d $'\0' file;
+do
+  echo "Migrating build records in ${file}"
+  touch "${file}/legacyIds"
+done
