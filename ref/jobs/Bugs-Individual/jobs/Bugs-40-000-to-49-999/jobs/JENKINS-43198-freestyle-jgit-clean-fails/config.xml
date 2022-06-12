@@ -58,12 +58,12 @@
       <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
     </extensions>
   </scm>
-  <assignedNode>master || built-in || linux</assignedNode>
+  <assignedNode>built-in || Unix</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>(System)</jdk>
+  <jdk>jdk11</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
