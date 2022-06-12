@@ -45,7 +45,7 @@
       <hudson.plugins.git.extensions.impl.GitLFSPull/>
     </extensions>
   </scm>
-  <assignedNode>( master || built-in || windows || linux ) &amp;&amp; git-1.8+ &amp;&amp; git-lfs</assignedNode>
+  <assignedNode>( built-in || windows || Unix ) &amp;&amp; git-lfs</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

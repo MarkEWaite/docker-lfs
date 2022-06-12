@@ -56,7 +56,7 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2633.v6baeedc13805">
     <script>pipeline {
     agent {
-        label &apos;linux&apos; // Assumes Linux has bash shell available
+        label &apos;Unix&apos; // Assumes Unix has bash shell available
     }
     stages {
         stage(&apos;Hello&apos;) {

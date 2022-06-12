@@ -58,7 +58,7 @@
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>linux &amp;&amp; git-2.11+</assignedNode>
+  <assignedNode>Unix &amp;&amp; git-2.11+</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
