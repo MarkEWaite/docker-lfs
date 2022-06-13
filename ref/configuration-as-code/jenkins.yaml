@@ -138,7 +138,7 @@ jenkins:
       - key: "PATH+JAVA_HOME"
         value: "/opt/java/openjdk/bin"
       - key: "PATH+MAVEN_BIN"
-        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.5/bin"
+        value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.6/bin"
   numExecutors: 2
   primaryView:
     all:
