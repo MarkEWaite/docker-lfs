@@ -25,7 +25,7 @@ Test interactively with the elastic axis label field to confirm that comma separ
   <axes>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.4.2">
       <name>JENKINS-65043-label</name>
-      <label>windows , linux &amp;&amp; !cloud &amp;&amp; !master &amp;&amp; !built-in</label>
+      <label>windows , Unix &amp;&amp; !cloud &amp;&amp; !built-in</label>
       <ignoreOffline>true</ignoreOffline>
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>

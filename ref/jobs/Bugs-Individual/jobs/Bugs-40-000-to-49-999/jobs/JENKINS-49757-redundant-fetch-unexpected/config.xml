@@ -39,12 +39,12 @@
       <hudson.plugins.git.extensions.impl.WipeWorkspace/>
     </extensions>
   </scm>
-  <assignedNode>linux &amp;&amp; !cloud</assignedNode>
+  <assignedNode>Unix &amp;&amp; !cloud</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk8</jdk>
+  <jdk>jdk11</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>

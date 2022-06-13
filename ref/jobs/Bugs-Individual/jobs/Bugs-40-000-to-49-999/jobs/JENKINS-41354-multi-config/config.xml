@@ -76,11 +76,7 @@
   <axes>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>label</name>
-      <values>
-        <string>master</string>
-        <string>master</string>
-      </values>
-      <label>master, linux </label>
+      <label>built-in, Unix</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>

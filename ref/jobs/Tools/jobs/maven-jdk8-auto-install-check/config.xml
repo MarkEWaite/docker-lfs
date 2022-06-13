@@ -94,11 +94,12 @@
       <values>
         <string>jdk8</string>
         <string>jdk11</string>
+        <string>jdk17</string>
       </values>
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
       <name>label</name>
-      <label>windows,linux,freebsd</label>
+      <label>windows,Unix</label>
       <ignoreOffline>true</ignoreOffline>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
