@@ -48,9 +48,9 @@ configuration-as-code:1429.v09b_044a_c93de
 configurationslicing:430.v966357576543
 conventional-commits:0.11.2
 copyartifact:1.46.4
-credentials:1087.1089.v2f1b_9a_b_040e4
+credentials:1129.vef26f5df883c
 credentials-binding:523.vd859a_4b_122e6
-dark-theme:156.v6cf16af6f9ef
+dark-theme:185.v276b_5a_8966a_e
 data-tables-api:1.11.4-4
 description-setter:1.10
 display-url-api:2.3.6
@@ -164,7 +164,7 @@ support-core:1174.vc46f6b_04d894
 swarm:3.32
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
-theme-manager:0.6
+theme-manager:1.4
 throttle-concurrents:2.8
 timestamper:1.17
 token-macro:293.v283932a_0a_b_49
