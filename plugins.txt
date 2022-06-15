@@ -46,7 +46,7 @@ conditional-buildstep:1.4.2
 config-file-provider:3.10.0
 configuration-as-code:1429.v09b_044a_c93de
 configurationslicing:430.v966357576543
-conventional-commits:0.11.0
+conventional-commits:0.11.2
 copyartifact:1.46.4
 credentials:1087.1089.v2f1b_9a_b_040e4
 credentials-binding:523.vd859a_4b_122e6
