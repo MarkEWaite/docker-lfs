@@ -1,7 +1,7 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.11.0
+analysis-model-api:10.12.0
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
@@ -46,7 +46,7 @@ conditional-buildstep:1.4.2
 config-file-provider:3.10.0
 configuration-as-code:1429.v09b_044a_c93de
 configurationslicing:430.v966357576543
-conventional-commits:0.11.0
+conventional-commits:0.11.2
 copyartifact:1.46.4
 credentials:1087.1089.v2f1b_9a_b_040e4
 credentials-binding:523.vd859a_4b_122e6
@@ -132,12 +132,12 @@ pipeline-groovy-lib:593.va_a_fc25d520e9
 pipeline-input-step:448.v37cea_9a_10a_70
 pipeline-maven:3.10.0
 pipeline-milestone-step:101.vd572fef9d926
-pipeline-model-api:2.2086.v12b_420f036e5
-pipeline-model-definition:2.2086.v12b_420f036e5
-pipeline-model-extensions:2.2086.v12b_420f036e5
+pipeline-model-api:2.2097.v33db_b_de764b_e
+pipeline-model-definition:2.2097.v33db_b_de764b_e
+pipeline-model-extensions:2.2097.v33db_b_de764b_e
 pipeline-rest-api:2.24
 pipeline-stage-step:293.v200037eefcd5
-pipeline-stage-tags-metadata:2.2086.v12b_420f036e5
+pipeline-stage-tags-metadata:2.2097.v33db_b_de764b_e
 pipeline-utility-steps:2.12.2
 plain-credentials:1.8
 platformlabeler:1317.v822cd19db_d49
