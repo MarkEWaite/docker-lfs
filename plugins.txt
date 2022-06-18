@@ -51,7 +51,7 @@ copyartifact:1.46.4
 credentials:1087.1089.v2f1b_9a_b_040e4
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:156.v6cf16af6f9ef
-data-tables-api:1.11.4-4
+data-tables-api:1.12.1-1
 description-setter:1.10
 display-url-api:2.3.6
 docker-commons:1.19
@@ -60,7 +60,7 @@ dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.2-3
 elastic-axis:1.6.0
-email-ext:2.88
+email-ext:2.89
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
@@ -80,7 +80,7 @@ github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:5.0.1-74.v44f46b_54c775
 gitlab-branch-source:625.v85cf3a_400cfe
-gitlab-plugin:1.5.33
+gitlab-plugin:1.5.34
 groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
@@ -95,7 +95,7 @@ javax-mail-api:1.6.2-6
 jaxb:2.3.6-1
 jdk-tool:1.5
 jenkins-design-language:1.25.5
-jersey2-api:2.35-8
+jersey2-api:2.36-2
 jira:3.7.1
 jjwt-api:0.11.5-77.v646c772fddb_0
 jnr-posix-api:3.1.7-3
@@ -161,7 +161,7 @@ sshd:3.237.v883d165a_c1d3
 ssh-slaves:1.821.vd834f8a_c390e
 structs:318.va_f3ccb_729b_71
 support-core:1174.vc46f6b_04d894
-swarm:3.32
+swarm:3.33
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
 theme-manager:0.6
@@ -172,7 +172,7 @@ trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.12.0
+warnings-ng:9.13.0
 windows-slaves:1.8.1
 workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1164.v760c223ddb_32
