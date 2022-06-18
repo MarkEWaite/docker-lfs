@@ -51,7 +51,7 @@ copyartifact:1.46.4
 credentials:1087.1089.v2f1b_9a_b_040e4
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:156.v6cf16af6f9ef
-data-tables-api:1.11.4-4
+data-tables-api:1.12.1-1
 description-setter:1.10
 display-url-api:2.3.6
 docker-commons:1.19
