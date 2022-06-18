@@ -172,7 +172,7 @@ trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.12.0
+warnings-ng:9.13.0
 windows-slaves:1.8.1
 workflow-aggregator:581.v0c46fa_697ffd
 workflow-api:1164.v760c223ddb_32
