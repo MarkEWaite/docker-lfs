@@ -58,7 +58,7 @@ docker-commons:1.19
 docker-workflow:1.28
 dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
-echarts-api:5.3.2-3
+echarts-api:5.3.3-1
 elastic-axis:1.6.0
 email-ext:2.89
 envinject:2.866.v5c0403e3d4df
@@ -116,6 +116,8 @@ matrix-auth:3.1.2
 matrix-project:771.v574584b_39e60
 maven-plugin:3.19
 metrics:4.1.6.2
+mina-sshd-api-common:2.8.0-18.vd98674ecd652
+mina-sshd-api-core:2.8.0-18.vd98674ecd652
 momentjs:1.1.1
 monitoring:1.91.0
 naginator:1.18.1
@@ -157,7 +159,7 @@ snakeyaml-api:1.30.1
 sse-gateway:1.25
 ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:277.v95c2fec1c047
-sshd:3.237.v883d165a_c1d3
+sshd:3.242.va_db_9da_b_26a_c3
 ssh-slaves:1.821.vd834f8a_c390e
 structs:318.va_f3ccb_729b_71
 support-core:1174.vc46f6b_04d894
