@@ -116,8 +116,8 @@ matrix-auth:3.1.3
 matrix-project:771.v574584b_39e60
 maven-plugin:3.19
 metrics:4.1.6.2
-mina-sshd-api-common:2.8.0-18.vd98674ecd652
-mina-sshd-api-core:2.8.0-18.vd98674ecd652
+mina-sshd-api-common:2.8.0-21.v493b_6b_db_22c6
+mina-sshd-api-core:2.8.0-21.v493b_6b_db_22c6
 momentjs:1.1.1
 monitoring:1.91.0
 naginator:1.18.1
