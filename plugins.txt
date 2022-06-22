@@ -50,7 +50,7 @@ conventional-commits:0.11.2
 copyartifact:1.46.4
 credentials:1129.vef26f5df883c
 credentials-binding:523.vd859a_4b_122e6
-dark-theme:156.v6cf16af6f9ef
+dark-theme:185.v276b_5a_8966a_e
 data-tables-api:1.12.1-1
 description-setter:1.10
 display-url-api:2.3.6
