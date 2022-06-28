@@ -67,10 +67,10 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.303}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.356}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=4dfe49cd7422ec4317a7c7a7c083f40fa475a58a7747bd94187b2cf222006ac0
+ARG JENKINS_SHA=1163c4554dc93439c5eef02b06a8d74f98ca920bbc012c2b8a089d414cfa8075
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
@@ -87,7 +87,7 @@ ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 RUN chown -R ${user} "$JENKINS_HOME" "$REF"
 
-ARG PLUGIN_CLI_VERSION=2.9.3
+ARG PLUGIN_CLI_VERSION=2.12.7
 ARG PLUGIN_CLI_URL=https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/${PLUGIN_CLI_VERSION}/jenkins-plugin-manager-${PLUGIN_CLI_VERSION}.jar
 RUN curl -fsSL ${PLUGIN_CLI_URL} -o /opt/jenkins-plugin-manager.jar
 
@@ -97,7 +97,6 @@ EXPOSE ${http_port}
 # will be used by attached agents:
 EXPOSE ${agent_port}
 
-ENV JENKINS_ENABLE_FUTURE_JAVA=true
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
 ENV JAVA_HOME=/opt/java/openjdk
@@ -111,9 +110,6 @@ COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
-
-# from a derived Dockerfile, can use `RUN install-plugins.sh active.txt` to setup $REF/plugins from a support bundle
-COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # metadata labels
 LABEL \
