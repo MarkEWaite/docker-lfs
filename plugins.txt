@@ -157,7 +157,7 @@ resource-disposer:0.19
 run-condition:1.5
 scm-api:608.vfa_f971c5a_a_e9
 script-security:1175.v4b_d517d6db_f0
-snakeyaml-api:1.30.1
+snakeyaml-api:1.30.2-76.vc104f7ce9870
 sse-gateway:1.25
 ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:287.v0c2c2889c28d
