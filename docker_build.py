@@ -171,7 +171,7 @@ def update_plugins(base_jenkins_version):
 
 def build_one_image(branch_name, clean):
     replace_constants_in_ref()
-    if branch_name in ["lts-with-plugins", "lts-with-plugins-weekly", "lts-with-plugins-add-credentials-and-nodes-rc", "lts-with-plugins-add-credentials-and-nodes-weekly"]:
+    if branch_name in ["lts-with-plugins", "weekly-with-plugins", "lts-with-plugins-add-credentials-and-nodes-rc"]:
         base_jenkins_version = compute_jenkins_base_version(branch_name, True)
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
@@ -195,12 +195,8 @@ def get_predecessor_branch(current_branch, all_branches):
     last = "upstream/" + current_branch
     if current_branch == "lts":
         last = "upstream/master"
-    if current_branch == "cjd":
-        last = "cjd"
-    if current_branch == "cjt":
-        last = "cjt"
-    if current_branch == "cjp":
-        last = "cjp"
+    if current_branch == "weekly":
+        last = "upstream/master"
     for branch in all_branches:
         if branch == current_branch:
             return last
