@@ -192,20 +192,16 @@ def build_one_image(branch_name, clean):
 #-----------------------------------------------------------------------
 
 def get_predecessor_branch(current_branch, all_branches):
-    print("**** Current branch is " + current_branch)
     last = "upstream/" + current_branch
-    print("**** Last branch is " + last)
     if current_branch == "lts":
         last = "upstream/master"
     if current_branch == "weekly":
         last = "upstream/master"
-    print("**** Last branch is now " + last)
     for branch in all_branches:
         if branch == current_branch:
             return last
         if current_branch.startswith(branch):
             last = branch
-    print("**** Last branch is finally " + last)
     return last
 
 #-----------------------------------------------------------------------
