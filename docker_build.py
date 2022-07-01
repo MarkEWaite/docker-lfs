@@ -197,12 +197,6 @@ def get_predecessor_branch(current_branch, all_branches):
         last = "upstream/master"
     if current_branch == "weekly":
         last = "upstream/master"
-    if current_branch == "cjd":
-        last = "cjd"
-    if current_branch == "cjt":
-        last = "cjt"
-    if current_branch == "cjp":
-        last = "cjp"
     for branch in all_branches:
         if branch == current_branch:
             return last
