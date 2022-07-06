@@ -40,7 +40,7 @@ cloudbees-bitbucket-branch-source:773.v4b_9b_005b_562b_
 cloudbees-folder:6.729.v2b_9d1a_74d673
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
-code-coverage-api:3.0.1
+code-coverage-api:3.0.2
 command-launcher:84.v4a_97f2027398
 commons-lang3-api:3.12.0.0
 commons-text-api:1.9-9.v39a_53e2e0343
@@ -50,7 +50,7 @@ configuration-as-code:1464.vd8507b_82e41a_
 configurationslicing:430.v966357576543
 conventional-commits:0.11.2
 copyartifact:1.46.4
-credentials:1129.vef26f5df883c
+credentials:1139.veb_9579fca_33b_
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:185.v276b_5a_8966a_e
 data-tables-api:1.12.1-2
@@ -114,7 +114,7 @@ lockable-resources:2.15
 mailer:414.vcc4c33714601
 mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
-matrix-auth:3.1.3
+matrix-auth:3.1.5
 matrix-project:772.v494f19991984
 maven-plugin:3.19
 metrics:4.1.6.2
