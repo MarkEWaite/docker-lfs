@@ -179,7 +179,7 @@ view-job-filters:2.3
 warnings-ng:9.13.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
-workflow-api:1182.v41475e53ea_43
+workflow-api:1188.v0016b_4f29881
 workflow-basic-steps:961.vfe95552883f8
 workflow-cps:2746.v0da_83a_332669
 workflow-durable-task-step:1164.v2334ddcf48d0
