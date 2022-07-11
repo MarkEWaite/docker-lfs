@@ -165,7 +165,7 @@ sshd:3.242.va_db_9da_b_26a_c3
 ssh-slaves:1.821.vd834f8a_c390e
 structs:318.va_f3ccb_729b_71
 support-core:1195.v20a_701e8897e
-swarm:3.33
+swarm:3.34
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
 theme-manager:1.4
