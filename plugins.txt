@@ -127,7 +127,7 @@ nodelabelparameter:1.11.0
 okhttp-api:4.9.3-105.vb96869f8ac3a
 pam-auth:1.8
 parallel-test-executor:318.va_e768e2e32e3
-parameterized-trigger:2.44
+parameterized-trigger:2.45
 pipeline-build-step:2.18
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
@@ -176,7 +176,7 @@ trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.13.0
+warnings-ng:9.14.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1188.v0016b_4f29881
