@@ -63,7 +63,7 @@ durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
 elastic-axis:1.6.0
 email-ext:2.89
-embeddable-build-status:235.v27da_06040f5f
+embeddable-build-status:237.v37e2c03964c9
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
