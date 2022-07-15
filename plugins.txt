@@ -63,6 +63,7 @@ durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
 elastic-axis:1.6.0
 email-ext:2.89
+embeddable-build-status:235.v27da_06040f5f
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:191.v363d0d1efdf8
@@ -172,7 +173,7 @@ theme-manager:1.4
 throttle-concurrents:2.8
 timestamper:1.18
 token-macro:293.v283932a_0a_b_49
-trilead-api:1.57.v6e90e07157e1
+trilead-api:1.66.v49c6758b_b_360
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
@@ -183,7 +184,7 @@ workflow-api:1188.v0016b_4f29881
 workflow-basic-steps:969.vc4ec3e4854b_f
 workflow-cps:2746.v0da_83a_332669
 workflow-durable-task-step:1174.v73a_9a_17edce0
-workflow-job:1206.vc48d96b_930b_2
+workflow-job:1207.ve6191ff089f8
 workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:625.vd896b_f445a_f8
