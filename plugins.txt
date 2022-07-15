@@ -40,7 +40,7 @@ cloudbees-bitbucket-branch-source:773.v4b_9b_005b_562b_
 cloudbees-folder:6.729.v2b_9d1a_74d673
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
-code-coverage-api:3.0.3
+code-coverage-api:3.0.4
 command-launcher:84.v4a_97f2027398
 commons-lang3-api:3.12.0.0
 commons-text-api:1.9-9.v39a_53e2e0343
@@ -163,7 +163,7 @@ sse-gateway:1.25
 ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:291.v8211e4f8efb_c
 sshd:3.242.va_db_9da_b_26a_c3
-ssh-slaves:1.821.vd834f8a_c390e
+ssh-slaves:1.834.v622da_57f702c
 structs:318.va_f3ccb_729b_71
 support-core:1201.v8d1f54a_6ec7c
 swarm:3.34
@@ -173,7 +173,7 @@ theme-manager:1.4
 throttle-concurrents:2.8
 timestamper:1.18
 token-macro:293.v283932a_0a_b_49
-trilead-api:1.66.v49c6758b_b_360
+trilead-api:1.67.vc3938a_35172f
 variant:1.4
 versioncolumn:2.2
 view-job-filters:2.3
