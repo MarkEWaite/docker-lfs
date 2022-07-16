@@ -155,6 +155,7 @@ prism-api:1.28.0-2
 promoted-builds:878.v12d3f7937690
 pubsub-light:1.16
 resource-disposer:0.19
+robot:3.2.0
 run-condition:1.5
 scm-api:608.vfa_f971c5a_a_e9
 script-security:1175.v4b_d517d6db_f0
