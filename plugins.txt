@@ -92,6 +92,8 @@ htmlpublisher:1.30
 implied-labels:0.9
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
+jakarta-activation-api:2.0.0-2
+jakarta-mail-api:2.0.0-5
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-3
 javax-mail-api:1.6.2-6
@@ -112,7 +114,7 @@ label-verifier:1.4
 ldap:2.10
 leastload:3.0.0
 lockable-resources:2.15
-mailer:414.vcc4c33714601
+mailer:435.v79ef3972b_5c7
 mapdb-api:1.0.9.0
 markdown-formatter:0.2.0
 matrix-auth:3.1.5
@@ -182,7 +184,7 @@ warnings-ng:9.14.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1188.v0016b_4f29881
-workflow-basic-steps:969.vc4ec3e4854b_f
+workflow-basic-steps:975.v8d89b_e9579b_b_
 workflow-cps:2746.v0da_83a_332669
 workflow-durable-task-step:1174.v73a_9a_17edce0
 workflow-job:1226.v44f718dcfe1f
