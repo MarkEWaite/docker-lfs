@@ -92,11 +92,11 @@ htmlpublisher:1.30
 implied-labels:0.9
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
-jakarta-activation-api:2.0.0-2
-jakarta-mail-api:2.0.0-5
+jakarta-activation-api:2.0.0-3
+jakarta-mail-api:2.0.0-6
 javadoc:217.v905b_86277a_2a_
-javax-activation-api:1.2.0-3
-javax-mail-api:1.6.2-6
+javax-activation-api:1.2.0-4
+javax-mail-api:1.6.2-7
 jaxb:2.3.6-1
 jdk-tool:1.5
 jenkins-design-language:1.25.5
