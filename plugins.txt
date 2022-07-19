@@ -62,7 +62,7 @@ dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
 elastic-axis:1.6.0
-email-ext:2.89
+email-ext:2.90
 embeddable-build-status:237.v37e2c03964c9
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
@@ -184,9 +184,9 @@ warnings-ng:9.14.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1188.v0016b_4f29881
-workflow-basic-steps:975.v8d89b_e9579b_b_
+workflow-basic-steps:980.v82219a_ed188e
 workflow-cps:2746.v0da_83a_332669
-workflow-durable-task-step:1174.v73a_9a_17edce0
+workflow-durable-task-step:1190.vc93d7d457042
 workflow-job:1226.v44f718dcfe1f
 workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
