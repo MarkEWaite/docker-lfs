@@ -46,8 +46,8 @@ def volume_available(lhs):
 #-----------------------------------------------------------------------
 
 def get_maven_volume_map():
-    lhs = os.path.expanduser("~/.m2")
-    rhs = os.path.expanduser("/var/jenkins_home/.m2/")
+    lhs = os.path.expanduser("~/.m2/repository/")
+    rhs = os.path.expanduser("/var/jenkins_home/.m2/repository/")
     return lhs + ":" + rhs
 
 #-----------------------------------------------------------------------
