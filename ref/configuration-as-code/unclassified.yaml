@@ -43,19 +43,43 @@ unclassified:
     configs:
     - globalMavenSettings:
         comment: "Global settings for Jenkins development"
-        content: "<settings>\n  <pluginGroups>\n    <pluginGroup>org.jenkins-ci.tools</pluginGroup>\n\
-          \  </pluginGroups>\n \n  <profiles>\n    <!-- Give access to Jenkins plugins\
-          \ -->\n    <profile>\n      <id>jenkins</id>\n      <activation>\n     \
-          \   <activeByDefault>true</activeByDefault> <!-- change this to false, if\
-          \ you don't like to have it on per default -->\n      </activation>\n  \
-          \    <repositories>\n        <repository>\n          <id>repo.jenkins-ci.org</id>\n\
-          \          <url>https://repo.jenkins-ci.org/public/</url>\n        </repository>\n\
-          \      </repositories>\n      <pluginRepositories>\n        <pluginRepository>\n\
-          \          <id>repo.jenkins-ci.org</id>\n          <url>https://repo.jenkins-ci.org/public/</url>\n\
-          \        </pluginRepository>\n      </pluginRepositories>\n    </profile>\n\
-          \  </profiles>\n  <mirrors>\n    <mirror>\n      <id>repo.jenkins-ci.org</id>\n\
-          \      <url>https://repo.jenkins-ci.org/public/</url>\n      <mirrorOf>m.g.o-public</mirrorOf>\n\
-          \    </mirror>\n  </mirrors>\n</settings>"
+        content: |
+          <settings>
+            <pluginGroups>
+              <pluginGroup>org.jenkins-ci.tools</pluginGroup>
+            </pluginGroups>
+            <profiles>
+              <profile>
+                <id>jenkins</id>
+                <activation>
+                  <activeByDefault>true</activeByDefault>
+                </activation>
+                <repositories>
+                  <repository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>https://repo.jenkins-ci.org/public/</url>
+                  </repository>
+                  <repository>
+                    <id>jgit-repository</id>
+                    <url>https://repo.eclipse.org/content/groups/releases/</url>
+                  </repository>
+                </repositories>
+                <pluginRepositories>
+                  <pluginRepository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>https://repo.jenkins-ci.org/public/</url>
+                  </pluginRepository>
+                </pluginRepositories>
+              </profile>
+            </profiles>
+            <mirrors>
+              <mirror>
+                <id>repo.jenkins-ci.org</id>
+                <url>https://repo.jenkins-ci.org/public/</url>
+                <mirrorOf>*,!repo.jenkins-ci.org,!incrementals</mirrorOf>
+              </mirror>
+            </mirrors>
+          </settings>
         id: "jenkins-maven-global-settings-file"
         isReplaceAll: true
         name: "Jenkins Maven global settings file"
