@@ -95,7 +95,7 @@ jacoco:3.3.2
 jakarta-activation-api:2.0.0-3
 jakarta-mail-api:2.0.0-6
 javadoc:217.v905b_86277a_2a_
-javax-activation-api:1.2.0-3
+javax-activation-api:1.2.0-4
 javax-mail-api:1.6.2-6
 jaxb:2.3.6-1
 jdk-tool:1.5
