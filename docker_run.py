@@ -45,6 +45,13 @@ def volume_available(lhs):
 
 #-----------------------------------------------------------------------
 
+def get_maven_volume_map():
+    lhs = os.path.expanduser("~/.m2/repository/")
+    rhs = os.path.expanduser("/var/jenkins_home/.m2/repository/")
+    return lhs + ":" + rhs
+
+#-----------------------------------------------------------------------
+
 def get_user_content_volume_map():
     lhs = os.path.expanduser("~/public_html")
     rhs = os.path.expanduser("/var/jenkins_home/userContent/")
@@ -100,6 +107,7 @@ def memory_scale(upper_bound):
 
 def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False, access_mode=None):
     dns_server = get_dns_server()
+    maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
     git_reference_repo_volume_map = get_git_reference_repo_volume_map()
     jenkins_home_volume_map = get_jenkins_home_volume_map()
@@ -117,6 +125,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", jenkins_home_volume_map])
     if git_reference_repo_volume_map != None:
         docker_command.extend(["--volume", git_reference_repo_volume_map])
+    if maven_volume_map != None:
+        docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     if (detach):
