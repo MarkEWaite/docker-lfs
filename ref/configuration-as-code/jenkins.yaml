@@ -139,6 +139,14 @@ jenkins:
         value: "/opt/java/openjdk/bin"
       - key: "PATH+MAVEN_BIN"
         value: "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-latest/apache-maven-3.8.6/bin"
+  - platformLabeler:
+      labelConfig:
+        architecture: false
+        architectureName: false
+        name: false
+        nameVersion: false
+        version: false
+        windowsFeatureUpdate: false
   numExecutors: 2
   primaryView:
     all:
