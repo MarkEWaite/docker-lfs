@@ -46,7 +46,7 @@ commons-lang3-api:3.12.0.0
 commons-text-api:1.9-9.v39a_53e2e0343
 conditional-buildstep:1.4.2
 config-file-provider:3.11.1
-configuration-as-code:1511.vb_f985b_894e40
+configuration-as-code:1512.vb_79d418d5fc8
 configurationslicing:430.v966357576543
 conventional-commits:0.11.2
 copyartifact:1.46.4
