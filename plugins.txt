@@ -62,7 +62,7 @@ dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
 elastic-axis:1.6.0
-email-ext:2.90
+email-ext:2.91
 embeddable-build-status:237.v37e2c03964c9
 envinject:2.866.v5c0403e3d4df
 envinject-api:1.199.v3ce31253ed13
