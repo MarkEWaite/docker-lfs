@@ -159,7 +159,7 @@ pubsub-light:1.16
 resource-disposer:0.19
 robot:3.2.0
 run-condition:1.5
-scm-api:608.vfa_f971c5a_a_e9
+scm-api:616.ve67136f6c77d
 script-security:1175.v4b_d517d6db_f0
 snakeyaml-api:1.30.2-76.vc104f7ce9870
 sse-gateway:1.25
