@@ -36,7 +36,7 @@ build-timeout:1.21
 buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.7.4
-cloudbees-bitbucket-branch-source:773.v4b_9b_005b_562b_
+cloudbees-bitbucket-branch-source:784.v7fcdc7c670f6
 cloudbees-folder:6.729.v2b_9d1a_74d673
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
@@ -164,7 +164,7 @@ script-security:1175.v4b_d517d6db_f0
 snakeyaml-api:1.30.2-76.vc104f7ce9870
 sse-gateway:1.25
 ssh-agent:295.v9ca_a_1c7cc3a_a_
-ssh-credentials:291.v8211e4f8efb_c
+ssh-credentials:295.vced876c18eb_4
 sshd:3.242.va_db_9da_b_26a_c3
 ssh-slaves:1.834.v622da_57f702c
 structs:324.va_f5d6774f3a_d
