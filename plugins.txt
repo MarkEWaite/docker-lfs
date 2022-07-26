@@ -177,7 +177,7 @@ throttle-concurrents:2.8
 timestamper:1.18
 token-macro:308.v4f2b_ed62b_b_16
 trilead-api:1.67.vc3938a_35172f
-variant:1.4
+variant:59.vf075fe829ccb
 versioncolumn:2.2
 view-job-filters:2.3
 warnings-ng:9.14.0
