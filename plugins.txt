@@ -111,7 +111,7 @@ jsch:0.1.55.2
 junit:1119.1121.vc43d0fc45561
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
-ldap:2.10
+ldap:2.11
 leastload:3.0.0
 lockable-resources:2.16
 mailer:435.v79ef3972b_5c7
