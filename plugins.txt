@@ -37,7 +37,7 @@ buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.7.4
 cloudbees-bitbucket-branch-source:784.v7fcdc7c670f6
-cloudbees-folder:6.729.v2b_9d1a_74d673
+cloudbees-folder:6.736.v5f554b_b_a_52b_3
 cloudbees-jenkins-advisor:3.3.2
 clover:4.13.0
 code-coverage-api:3.0.4
