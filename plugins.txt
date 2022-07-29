@@ -98,7 +98,7 @@ javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-4
 javax-mail-api:1.6.2-7
 jaxb:2.3.6-1
-jdk-tool:1.5
+jdk-tool:55.v1b_32b_6ca_f9ca
 jenkins-design-language:1.25.5
 jersey2-api:2.36-2
 jira:3.7.1
