@@ -4,7 +4,7 @@ adoptopenjdk:1.4
 analysis-model-api:10.13.0
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
-apache-httpcomponents-client-4-api:4.5.13-1.0
+apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
 async-http-client:1.9.40.0
 authentication-tokens:1.4
 authorize-project:1.4.0
