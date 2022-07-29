@@ -172,7 +172,7 @@ support-core:1204.v7ee88742a_53f
 swarm:3.34
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
-theme-manager:1.4
+theme-manager:1.5
 throttle-concurrents:2.8
 timestamper:1.18
 token-macro:308.v4f2b_ed62b_b_16
