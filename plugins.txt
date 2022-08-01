@@ -64,7 +64,7 @@ echarts-api:5.3.3-1
 elastic-axis:1.6.0
 email-ext:2.91
 embeddable-build-status:237.v37e2c03964c9
-envinject:2.866.v5c0403e3d4df
+envinject:2.875.v9b_9e962da_a_ec
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:192.ve979ca_8b_3ccd
 favorite:2.4.1
