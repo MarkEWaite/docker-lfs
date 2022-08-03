@@ -43,7 +43,7 @@ clover:4.13.0
 code-coverage-api:3.0.4
 command-launcher:84.v4a_97f2027398
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
-commons-text-api:1.9-9.v39a_53e2e0343
+commons-text-api:1.9-19.v8df45c678366
 conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
