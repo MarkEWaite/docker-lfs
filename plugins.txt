@@ -92,7 +92,7 @@ htmlpublisher:1.30
 implied-labels:0.9
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
-jakarta-activation-api:2.0.0-3
+jakarta-activation-api:2.0.1-1
 jakarta-mail-api:2.0.0-6
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-4
