@@ -43,7 +43,7 @@ clover:4.13.0
 code-coverage-api:3.0.4
 command-launcher:84.v4a_97f2027398
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
-commons-text-api:1.9-9.v39a_53e2e0343
+commons-text-api:1.9-19.v8df45c678366
 conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
@@ -93,7 +93,7 @@ implied-labels:0.9
 instance-identity:116.vf8f487400980
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
-jakarta-activation-api:2.0.0-3
+jakarta-activation-api:2.0.1-1
 jakarta-mail-api:2.0.0-6
 javadoc:217.v905b_86277a_2a_
 javax-activation-api:1.2.0-4
@@ -108,7 +108,7 @@ jnr-posix-api:3.1.15-1
 job-dsl:1.81
 jquery:1.12.4-1
 jquery3-api:3.6.0-4
-jsch:0.1.55.2
+jsch:0.1.55.61.va_e9ee26616e7
 junit:1119.1121.vc43d0fc45561
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
@@ -177,7 +177,7 @@ theme-manager:1.5
 throttle-concurrents:2.8
 timestamper:1.18
 token-macro:308.v4f2b_ed62b_b_16
-trilead-api:1.67.vc3938a_35172f
+trilead-api:1.71.v9e7860a_67a_df
 variant:59.vf075fe829ccb
 versioncolumn:2.2
 view-job-filters:2.3
@@ -192,6 +192,6 @@ workflow-job:1232.v5a_4c994312f1
 workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:639.v6eca_cd8c04a_a_
-workflow-support:833.va_1c71061486b_
+workflow-support:838.va_3a_087b_4055b
 ws-cleanup:0.42
 xshell:0.10
