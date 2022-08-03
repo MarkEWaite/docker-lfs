@@ -107,7 +107,7 @@ jnr-posix-api:3.1.15-1
 job-dsl:1.81
 jquery:1.12.4-1
 jquery3-api:3.6.0-4
-jsch:0.1.55.2
+jsch:0.1.55.61.va_e9ee26616e7
 junit:1119.1121.vc43d0fc45561
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
