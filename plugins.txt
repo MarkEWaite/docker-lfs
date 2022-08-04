@@ -71,7 +71,7 @@ favorite:2.4.1
 font-awesome-api:6.1.1-1
 forensics-api:1.15.1
 git:4.11.4
-git-client:3.11.1
+git-client:3.11.2
 git-forensics:1.9.0
 git-parameter:0.9.17
 git-server:99.va_0826a_b_cdfa_d
@@ -177,7 +177,7 @@ theme-manager:1.5
 throttle-concurrents:2.8
 timestamper:1.18
 token-macro:308.v4f2b_ed62b_b_16
-trilead-api:1.71.v9e7860a_67a_df
+trilead-api:1.67.vc3938a_35172f
 variant:59.vf075fe829ccb
 versioncolumn:2.2
 view-job-filters:2.3
