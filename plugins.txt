@@ -71,7 +71,7 @@ favorite:2.4.1
 font-awesome-api:6.1.1-1
 forensics-api:1.15.1
 git:incrementals;org.jenkins-ci.plugins;4.12.0-rc4801.ff7a_6f4fc0b_b
-git-client:incrementals;org.jenkins-ci.plugins;3.12.0-rc3217.e158e19a_5d5d
+git-client:incrementals;org.jenkins-ci.plugins;3.12.0-rc3219.5a_36b_8580b_1b
 git-forensics:1.9.0
 git-parameter:0.9.17
 git-server:1.11
