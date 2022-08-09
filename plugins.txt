@@ -1,7 +1,7 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 ace-editor:1.1
 adoptopenjdk:1.4
-analysis-model-api:10.15.0
+analysis-model-api:10.16.0
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
@@ -94,7 +94,7 @@ jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
 jakarta-activation-api:2.0.1-1
 jakarta-mail-api:2.0.1-1
-javadoc:217.v905b_86277a_2a_
+javadoc:226.v71211feb_e7e9
 javax-activation-api:1.2.0-4
 javax-mail-api:1.6.2-7
 jaxb:2.3.6-1
