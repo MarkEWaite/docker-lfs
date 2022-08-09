@@ -99,14 +99,8 @@ stage('Build') {
                         checkout scm
                     }
 
-                if (!infra.isTrusted()) {
-
                     stage('Static analysis') {
                         sh 'make hadolint shellcheck'
-                    }
-
-                    stage('shellcheck') {
-                        sh 'make shellcheck'
                     }
 
                     /* Outside of the trusted.ci environment, we're building and testing
