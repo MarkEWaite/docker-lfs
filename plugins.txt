@@ -163,7 +163,7 @@ run-condition:1.5
 scm-api:620.v0a_5b_1f8054c0
 script-security:1175.v4b_d517d6db_f0
 snakeyaml-api:1.30.2-76.vc104f7ce9870
-sse-gateway:1.25
+sse-gateway:1.26
 ssh-agent:295.v9ca_a_1c7cc3a_a_
 ssh-credentials:295.vced876c18eb_4
 sshd:3.249.v2dc2ea_416e33
