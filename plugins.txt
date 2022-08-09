@@ -57,7 +57,7 @@ data-tables-api:1.12.1-2
 description-setter:1.10
 display-url-api:2.3.6
 docker-commons:1.19
-docker-workflow:1.29
+docker-workflow:521.v1a_a_dd2073b_2e
 dtkit-api:3.0.1
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
@@ -70,8 +70,8 @@ external-monitor-job:192.ve979ca_8b_3ccd
 favorite:2.4.1
 font-awesome-api:6.1.1-1
 forensics-api:1.15.1
-git:4.11.4
-git-client:3.11.2
+git:incrementals;org.jenkins-ci.plugins;4.12.0-rc4801.ff7a_6f4fc0b_b
+git-client:incrementals;org.jenkins-ci.plugins;3.12.0-rc3217.e158e19a_5d5d
 git-forensics:1.9.0
 git-parameter:0.9.17
 git-server:99.va_0826a_b_cdfa_d
