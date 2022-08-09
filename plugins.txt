@@ -94,7 +94,7 @@ jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
 jakarta-activation-api:2.0.1-1
 jakarta-mail-api:2.0.1-1
-javadoc:217.v905b_86277a_2a_
+javadoc:226.v71211feb_e7e9
 javax-activation-api:1.2.0-4
 javax-mail-api:1.6.2-7
 jaxb:2.3.6-1
