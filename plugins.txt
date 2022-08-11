@@ -35,7 +35,7 @@ build-name-setter:2.2.0
 build-timeout:1.21
 buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
-checks-api:1.7.4
+checks-api:1.7.5
 cloudbees-bitbucket-branch-source:785.ve724eb_44e286
 cloudbees-folder:6.740.ve4f4ffa_dea_54
 cloudbees-jenkins-advisor:3.3.2
