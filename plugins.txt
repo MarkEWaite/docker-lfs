@@ -35,10 +35,10 @@ build-name-setter:2.2.0
 build-timeout:1.21
 buildresult-trigger:0.17
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
-checks-api:1.7.4
+checks-api:1.7.5
 cloudbees-bitbucket-branch-source:785.ve724eb_44e286
 cloudbees-folder:6.758.vfd75d09eea_a_1
-cloudbees-jenkins-advisor:3.3.2
+cloudbees-jenkins-advisor:3.3.3
 clover:4.13.0
 code-coverage-api:3.0.5
 command-launcher:84.v4a_97f2027398
@@ -184,7 +184,7 @@ view-job-filters:2.3
 warnings-ng:9.16.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
-workflow-api:1188.v0016b_4f29881
+workflow-api:1192.v2d0deb_19d212
 workflow-basic-steps:986.v6b_9c830a_6b_37
 workflow-cps:2759.v87459c4eea_ca_
 workflow-durable-task-step:1199.v02b_9244f8064
