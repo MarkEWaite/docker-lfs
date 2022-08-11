@@ -181,11 +181,11 @@ trilead-api:1.67.vc3938a_35172f
 variant:59.vf075fe829ccb
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.16.0
+warnings-ng:9.17.0
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1192.v2d0deb_19d212
-workflow-basic-steps:986.v6b_9c830a_6b_37
+workflow-basic-steps:991.v43d80fea_ff66
 workflow-cps:2759.v87459c4eea_ca_
 workflow-durable-task-step:1199.v02b_9244f8064
 workflow-job:1232.v5a_4c994312f1
