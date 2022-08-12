@@ -27,7 +27,7 @@ blueocean-rest:1.25.6
 blueocean-rest-impl:1.25.6
 blueocean-web:1.25.6
 bootstrap4-api:4.6.0-5
-bootstrap5-api:5.1.3-7
+bootstrap5-api:5.2.0-1
 bouncycastle-api:2.26
 branch-api:2.1046.v0ca_37783ecc5
 build-blocker-plugin:1.7.8
@@ -68,7 +68,7 @@ envinject:2.875.v9b_9e962da_a_ec
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:192.ve979ca_8b_3ccd
 favorite:2.4.1
-font-awesome-api:6.1.1-1
+font-awesome-api:6.1.2-1
 forensics-api:1.15.1
 git:incrementals;org.jenkins-ci.plugins;4.12.0-rc4810.6525c2714322
 git-client:incrementals;org.jenkins-ci.plugins;3.12.0-rc3219.5a_36b_8580b_1b
