@@ -32,8 +32,21 @@ Build docker images.   Use -h for help."""
         docker_build.report_update_plugins_commands(base_jenkins_version)
         quit()
 
+    existing_plugins = []
+    with open('plugins.txt', 'r+') as f:
+        for line in f.readlines():
+            existing_plugins.append(line.strip())
+    existing_plugins.sort()
+
     get_available_updates_command = docker_build.get_available_updates_command(base_jenkins_version)
-    subprocess.check_call(get_available_updates_command)
+    get_available_updates_command += [ '-o', 'txt' ]
+    available_updates = subprocess.check_output(get_available_updates_command).decode('utf-8').split('\n')
+    available_updates.sort()
+
+    print("existing - available")
+    print(list(set(existing_plugins) - set(available_updates)))
+    print("available - existing")
+    print(list(set(available_updates) - set(existing_plugins)))
 
     get_download_updates_command = docker_build.get_download_updates_command(base_jenkins_version)
     subprocess.check_call(get_download_updates_command)
