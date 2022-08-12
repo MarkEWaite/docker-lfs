@@ -145,13 +145,26 @@ def get_available_updates_command(base_jenkins_version):
 
 #-----------------------------------------------------------------------
 
-def report_update_plugins_commands(base_jenkins_version):
+def get_download_updates_command(base_jenkins_version):
     download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
                                  "-d", "ref/plugins",
                                  "-f", "plugins.txt",
     ]
-    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " > x && mv x plugins.txt")
-    print("and " + " ".join(download_updates_command))
+    return download_updates_command
+
+#-----------------------------------------------------------------------
+
+def get_update_plugins_commands(base_jenkins_version):
+    commands = [ " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " > x && mv x plugins.txt",
+                 " ".join(get_download_updates_command(base_jenkins_version)) ]
+    return commands
+
+#-----------------------------------------------------------------------
+
+def report_update_plugins_commands(base_jenkins_version):
+    commands = get_update_plugins_commands(base_jenkins_version)
+    for command in commands:
+        print("Run " + command)
 
 #-----------------------------------------------------------------------
 
