@@ -42,6 +42,8 @@ Build docker images.   Use -h for help."""
     get_available_updates_command += [ '-o', 'txt' ]
     available_updates = subprocess.check_output(get_available_updates_command).decode('utf-8').split('\n')
     available_updates.sort()
+    if available_updates[0] == '':
+        available_updates = available_updates[1:]
 
     print("existing - available")
     print(list(set(existing_plugins) - set(available_updates)))
