@@ -32,6 +32,10 @@ tool:
       properties:
       - installSource:
           installers:
+          - batchFile:
+              command: "exit 0"
+              label: "windows"
+              toolHome: "C:\\tools\\MinGit-2.37.2\\mingw64\\bin\\git.exe"
           - zip:
               label: "windows && 64bit"
               subdir: "mingw64\\bin\\git.exe"
