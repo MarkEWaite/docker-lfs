@@ -46,12 +46,22 @@ Build docker images.   Use -h for help."""
         available_updates = available_updates[1:]
 
     print("existing - available")
-    print(list(set(existing_plugins) - set(available_updates)))
+    old_plugins = list(set(existing_plugins) - set(available_updates))
+    print(old_plugins)
     print("available - existing")
-    print(list(set(available_updates) - set(existing_plugins)))
-
-    get_download_updates_command = docker_build.get_download_updates_command(base_jenkins_version)
-    subprocess.check_call(get_download_updates_command)
+    new_plugins = list(set(available_updates) - set(existing_plugins))
+    print(new_plugins)
+    if len(old_plugins) == len(new_plugins) and len(old_plugins) > 0:
+        for old_plugin, new_plugin in zip(old_plugins, new_plugins):
+            with open('plugins.txt', 'r+') as f:
+                data = f.read()
+            data = data.replace(old_plugin, new_plugin)
+            with open('plugins.txt', 'wt') as f:
+                f.write(data)
+            get_download_updates_command = docker_build.get_download_updates_command(base_jenkins_version)
+            subprocess.check_call(get_download_updates_command)
+            message = 'Use ' + new_plugin.replace('-', ' ').replace(':', ' plugin ')
+            subprocess.check_call(['git', 'commit', '-m', message, 'plugins.txt', os.path.join('ref', 'plugins')])
 
 #-----------------------------------------------------------------------
 
