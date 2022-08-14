@@ -49,7 +49,7 @@ config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
 configurationslicing:430.v966357576543
 conventional-commits:0.11.2
-copyartifact:1.46.4
+copyartifact:1.47
 credentials:1139.veb_9579fca_33b_
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:185.v276b_5a_8966a_e
