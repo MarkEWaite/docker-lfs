@@ -1,19 +1,28 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.14">
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.740.ve4f4ffa_dea_54">
   <actions/>
-  <description></description>
+  <description>[![Elastic Axis Plugin](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/badge/icon?subject=Elastic%20axis)](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/)
+[![Embeddable Build Status](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/badge/icon?subject=Embeddable%20build%20status)](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/)
+[![Git Client Plugin Build Status](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/badge/icon?subject=Git%20client)](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/)
+[![Git Plugin Build Status](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/badge/icon?subject=Git)](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/)
+[![Implied Labels Build Status](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/badge/icon?subject=Implied%20labels)](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/)
+[![Build Status](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/badge/icon?subject=Node%20label%20parameter)](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/)
+[![Build Status](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/badge/icon?subject=Platform%20labeler)](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/)
+[![Build Status](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/badge/icon?subject=Priority%20sorter)](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/)
+[![Build Status](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/badge/icon?subject=Schedule%20build)](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/)
+[![Build Status](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/badge/icon?subject=TestNG%20results)](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/)</description>
   <displayName>Jenkins Plugins</displayName>
   <properties>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.24">
+    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@521.v1a_a_dd2073b_2e">
       <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.17"/>
+      <registry plugin="docker-commons@1.19"/>
     </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
-    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@2.17">
+    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="pipeline-groovy-lib@612.v84da_9c54906d">
       <libraries>
         <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
           <name>infra</name>
           <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-            <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.10.0-SNAPSHOT">
+            <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1677.v731f745ea_0cf">
               <id>862d151a-38ad-4e7d-b242-ca42f0134e0d</id>
               <apiUri>https://api.github.com</apiUri>
               <credentialsId>MarkEWaite-github-token-2019-05-25</credentialsId>
@@ -41,9 +50,9 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.9.2">
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@1161.v89a_7dcec5d31">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-      <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@3.6.3">
+      <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@3.11.1">
         <settingsConfigId>jenkins-maven-global-settings-file</settingsConfigId>
       </globalSettings>
       <override>true</override>
@@ -53,7 +62,7 @@
     <views>
       <hudson.model.AllView>
         <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
-        <name>All</name>
+        <name>all</name>
         <filterExecutors>false</filterExecutors>
         <filterQueue>false</filterQueue>
         <properties class="hudson.model.View$PropertyList"/>
@@ -149,6 +158,7 @@
         <recurse>true</recurse>
       </hudson.model.ListView>
     </views>
+    <primaryView>all</primaryView>
     <tabBar class="hudson.views.DefaultViewsTabBar"/>
   </folderViews>
   <healthMetrics>
