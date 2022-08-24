@@ -18,3 +18,6 @@ work-pester-jenkins-windows/
 /**/windows/**/jenkins-support.psm1
 
 tests/**/Dockerfile\.*
+
+/__pycache__/
+/ref/plugins/*.bak
