@@ -27,7 +27,7 @@ blueocean-rest:1.25.6
 blueocean-rest-impl:1.25.6
 blueocean-web:1.25.6
 bootstrap4-api:4.6.0-5
-bootstrap5-api:5.2.0-2
+jira:3.8
 bouncycastle-api:2.26
 branch-api:2.1046.v0ca_37783ecc5
 build-blocker-plugin:1.7.8
@@ -40,7 +40,7 @@ cloudbees-bitbucket-branch-source:785.ve724eb_44e286
 cloudbees-folder:6.758.vfd75d09eea_a_1
 cloudbees-jenkins-advisor:3.3.3
 clover:4.13.0
-code-coverage-api:3.0.5
+code-coverage-api:3.1.0
 command-launcher:84.v4a_97f2027398
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.9-19.v8df45c678366
@@ -53,7 +53,7 @@ copyartifact:1.47
 credentials:1139.veb_9579fca_33b_
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:185.v276b_5a_8966a_e
-data-tables-api:1.12.1-2
+data-tables-api:1.12.1-3
 description-setter:1.10
 display-url-api:2.3.6
 docker-commons:1.19
@@ -82,7 +82,7 @@ github-branch-source:1687.v7618247e672d
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
-gitlab-branch-source:633.ved9984f943da_
+bootstrap5-api:5.2.0-3
 gitlab-plugin:1.5.35
 groovy-postbuild:2.5
 h2-api:1.4.199
@@ -102,7 +102,7 @@ jaxb:2.3.6-1
 jdk-tool:55.v1b_32b_6ca_f9ca
 jenkins-design-language:1.25.6
 jersey2-api:2.36-2
-jira:3.7.1
+gitlab-branch-source:636.v55fd8144d335
 jjwt-api:0.11.5-77.v646c772fddb_0
 jnr-posix-api:3.1.15-1
 job-dsl:1.81
@@ -181,7 +181,7 @@ trilead-api:1.67.vc3938a_35172f
 variant:59.vf075fe829ccb
 versioncolumn:2.2
 view-job-filters:2.3
-warnings-ng:9.18.0
+warnings-ng:9.19.1
 windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1192.v2d0deb_19d212
