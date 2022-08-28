@@ -22,8 +22,6 @@ RUN test -x /usr/bin/wget
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
 # or config file with your custom jenkins Docker image.
-RUN mkdir -p "${REF}/init.groovy.d"
-
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
 ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/configuration-as-code/
