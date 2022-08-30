@@ -89,7 +89,7 @@ h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 htmlpublisher:1.30
-ionicons-api:22.v868b_0c347756
+ionicons-api:24.va_745a_b_a_97fc3
 implied-labels:0.9
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
