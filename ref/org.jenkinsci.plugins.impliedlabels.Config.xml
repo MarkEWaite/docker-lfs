@@ -16,7 +16,7 @@
             <hudson.model.labels.LabelAtom>linux</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">AlibabaCloud||Alma||Alpine||Amazon||AmazonAMI||CentOS||Debian||LinuxMint||openSUSE||OracleServer||Raspbian||RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient||SUSE||Ubuntu</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">AlibabaCloud||Alma||Alpine||Amazon||AmazonAMI||CentOS||Debian||LinuxMint||openSUSE||OracleServer||Raspbian||RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient||Rocky||SUSE||Ubuntu</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -493,10 +493,18 @@
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
           <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>Rocky-8</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">Rocky&amp;&amp;(8.9||8.8||8.7||8.6)</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
             <hudson.model.labels.LabelAtom>RedHat-8</hudson.model.labels.LabelAtom>
           </c>
         </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.9||8.8||8.7||8.6||8.5||8.4||8.3||8.2||8.1)||Alma-8||OracleServer-8</expression>
+        <expression class="hudson.model.labels.LabelExpression$Or">(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(8.9||8.8||8.7||8.6||8.5||8.4||8.3||8.2||8.1)||Alma-8||OracleServer-8||Rocky-8</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
       <org.jenkinsci.plugins.impliedlabels.Implication>
         <atoms class="java.util.Collections$UnmodifiableSet">
@@ -505,6 +513,22 @@
           </c>
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$Or">linux||FreeBSD||OpenBSD</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>Rocky-9</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">Rocky&amp;&amp;(9.3||9.2||9.1||9.0)</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>RedHat-9</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$Or">(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)||Alma-9||OracleServer-9||Rocky-9</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
