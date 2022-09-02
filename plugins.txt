@@ -175,7 +175,7 @@ testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.19
 theme-manager:1.5
 throttle-concurrents:2.8
-timestamper:1.18
+timestamper:1.19
 token-macro:308.v4f2b_ed62b_b_16
 trilead-api:1.67.vc3938a_35172f
 variant:59.vf075fe829ccb
