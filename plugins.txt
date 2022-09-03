@@ -70,7 +70,7 @@ external-monitor-job:192.ve979ca_8b_3ccd
 favorite:2.4.1
 font-awesome-api:6.1.2-1
 forensics-api:1.15.1
-git:4.11.5
+git:incrementals;org.jenkins-ci.plugins;4.12.0-rc4954.fa_57eb_7d6538
 git-client:incrementals;org.jenkins-ci.plugins;3.12.0-rc3219.5a_36b_8580b_1b
 git-forensics:1.9.0
 git-parameter:0.9.17
