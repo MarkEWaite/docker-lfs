@@ -291,3 +291,23 @@ If you wish to contribute fixes to this repository, please refer to the [dedicat
 ## Questions?
 
 We're on Gitter, https://gitter.im/jenkinsci/docker
+
+### Useful groovy scripts
+
+There are times when I need to perform operations that are most easily done from the system groovy console on the Jenkins controller.
+These are some of the scripts that I've found useful.
+
+Run all hosting provider jobs
+
+```groovy
+import hudson.model.FreeStyleProject
+import hudson.model.Cause.UserIdCause
+
+Jenkins.instance.getAllItems(FreeStyleProject.class).findAll {
+    return it.fullName =~ '^Hosting-Providers'
+}.each {
+    it.scheduleBuild(0, new UserIdCause())
+    println('Scheduled ' + it.fullName)
+ }
+return ""
+```
