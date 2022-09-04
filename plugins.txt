@@ -158,7 +158,7 @@ preSCMbuildstep:0.3
 prism-api:1.28.0-2
 promoted-builds:881.vb_72da_69ffca_1
 pubsub-light:1.17
-resource-disposer:0.19
+resource-disposer:0.20
 robot:3.2.0
 run-condition:1.5
 scm-api:621.vda_a_b_055e58f7
