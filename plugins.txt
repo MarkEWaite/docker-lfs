@@ -172,9 +172,9 @@ structs:324.va_f5d6774f3a_d
 support-core:1206.v14049fa_b_d860
 swarm:3.34
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
-text-finder:1.19
+text-finder:1.20
 theme-manager:1.5
-throttle-concurrents:2.8
+throttle-concurrents:2.9
 timestamper:1.19
 token-macro:308.v4f2b_ed62b_b_16
 trilead-api:1.67.vc3938a_35172f
@@ -193,5 +193,5 @@ workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:639.v6eca_cd8c04a_a_
 workflow-support:838.va_3a_087b_4055b
-ws-cleanup:0.42
+ws-cleanup:0.43
 xshell:0.10
