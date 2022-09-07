@@ -119,7 +119,7 @@ mailer:438.v02c7f0a_12fa_4
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:0.2.0
 matrix-auth:3.1.5
-matrix-project:772.v494f19991984
+matrix-project:785.v06b_7f47b_c631
 maven-plugin:3.19
 metrics:4.2.10-389.v93143621b_050
 mina-sshd-api-common:2.8.0-36.v8e25ce90d4b_1
