@@ -530,6 +530,22 @@
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$Or">(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&amp;&amp;(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)||Alma-9||OracleServer-9||Rocky-9</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>maven-17</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">java-17&amp;&amp;!windows</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
+      <org.jenkinsci.plugins.impliedlabels.Implication>
+        <atoms class="java.util.Collections$UnmodifiableSet">
+          <c class="sorted-set">
+            <hudson.model.labels.LabelAtom>maven-17-windows</hudson.model.labels.LabelAtom>
+          </c>
+        </atoms>
+        <expression class="hudson.model.labels.LabelExpression$And">java-17&amp;&amp;windows</expression>
+      </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
   </implications>
