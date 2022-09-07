@@ -115,7 +115,7 @@ label-verifier:1.4
 ldap:2.12
 leastload:3.0.0
 lockable-resources:2.16
-mailer:435.v79ef3972b_5c7
+mailer:438.v02c7f0a_12fa_4
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:0.2.0
 matrix-auth:3.1.5
