@@ -103,7 +103,7 @@ jaxb:2.3.6-1
 jdk-tool:55.v1b_32b_6ca_f9ca
 jenkins-design-language:1.25.8
 jersey2-api:2.37-1
-gitlab-branch-source:636.v55fd8144d335
+gitlab-branch-source:640.v7101b_1c0def9
 jjwt-api:0.11.5-77.v646c772fddb_0
 jnr-posix-api:3.1.15-1
 job-dsl:1.81
