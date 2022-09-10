@@ -171,7 +171,7 @@ sshd:3.249.v2dc2ea_416e33
 ssh-slaves:1.834.v622da_57f702c
 structs:324.va_f5d6774f3a_d
 support-core:1206.v14049fa_b_d860
-swarm:3.35
+swarm:3.36
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.20
 theme-manager:1.5
