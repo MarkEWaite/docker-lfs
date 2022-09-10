@@ -1,6 +1,6 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 ace-editor:1.1
-adoptopenjdk:1.4
+adoptopenjdk:incrementals;io.jenkins.plugins;1.5-rc68.06093e2310fd
 analysis-model-api:10.16.1
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
@@ -103,7 +103,7 @@ jaxb:2.3.6-1
 jdk-tool:55.v1b_32b_6ca_f9ca
 jenkins-design-language:1.25.8
 jersey2-api:2.37-1
-gitlab-branch-source:636.v55fd8144d335
+gitlab-branch-source:640.v7101b_1c0def9
 jjwt-api:0.11.5-77.v646c772fddb_0
 jnr-posix-api:3.1.15-1
 job-dsl:1.81
@@ -123,8 +123,8 @@ matrix-auth:3.1.5
 matrix-project:785.v06b_7f47b_c631
 maven-plugin:3.19
 metrics:4.2.10-389.v93143621b_050
-mina-sshd-api-common:2.8.0-36.v8e25ce90d4b_1
-mina-sshd-api-core:2.8.0-36.v8e25ce90d4b_1
+mina-sshd-api-common:2.9.1-44.v476733c11f82
+mina-sshd-api-core:2.9.1-44.v476733c11f82
 momentjs:1.1.1
 monitoring:1.91.0
 naginator:1.18.1
@@ -171,12 +171,12 @@ sshd:3.249.v2dc2ea_416e33
 ssh-slaves:1.834.v622da_57f702c
 structs:324.va_f5d6774f3a_d
 support-core:1206.v14049fa_b_d860
-swarm:3.34
+swarm:3.35
 testng-plugin:incrementals;org.jenkins-ci.plugins;581.v200b_22e1a_b_4e
 text-finder:1.20
 theme-manager:1.5
 throttle-concurrents:2.9
-timestamper:1.19
+timestamper:1.20
 token-macro:308.v4f2b_ed62b_b_16
 trilead-api:2.72.v2a_3236754f73
 variant:59.vf075fe829ccb
