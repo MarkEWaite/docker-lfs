@@ -88,7 +88,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
-htmlpublisher:1.30
+htmlpublisher:1.31
 ionicons-api:24.va_745a_b_a_97fc3
 implied-labels:0.9
 instance-identity:116.vf8f487400980
