@@ -103,7 +103,7 @@ parameterized-trigger:2.45
 pipeline-build-step:2.18
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
-pipeline-graph-view:72.v0786f44a_5b_10
+pipeline-graph-view:74.vb_74638b_4a_2b_f
 pipeline-groovy-lib:612.v84da_9c54906d
 pipeline-input-step:449.v77f0e8b_845c4
 pipeline-maven:1203.v75b_321f1c89f
