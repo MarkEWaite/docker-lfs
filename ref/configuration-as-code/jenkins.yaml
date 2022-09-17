@@ -170,7 +170,6 @@ jenkins:
       - "lastFailure"
       - "lastDuration"
       - "buildButton"
-      - "favoriteColumn"
       description: "Jobs currently executing"
       jobFilters:
       - buildStatusFilter:
