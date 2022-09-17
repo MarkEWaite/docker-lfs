@@ -69,7 +69,6 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -101,7 +100,6 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
@@ -130,7 +128,6 @@
           <hudson.views.LastFailureColumn/>
           <hudson.views.LastDurationColumn/>
           <hudson.views.BuildButtonColumn/>
-          <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
         </columns>
         <recurse>true</recurse>
       </hudson.model.ListView>
