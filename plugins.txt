@@ -28,7 +28,6 @@ conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
 configurationslicing:430.v966357576543
-conventional-commits:0.11.2
 copyartifact:1.47
 credentials:1143.vb_e8b_b_ceee347
 credentials-binding:523.vd859a_4b_122e6
