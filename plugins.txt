@@ -63,7 +63,6 @@ bootstrap5-api:5.2.0-3
 gitlab-plugin:1.5.35
 groovy-postbuild:2.5
 h2-api:1.4.199
-handlebars:3.0.8
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 htmlpublisher:1.31
 ionicons-api:24.va_745a_b_a_97fc3
