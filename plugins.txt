@@ -8,7 +8,6 @@ apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
 authentication-tokens:1.4
 badge:1.9.1
 basic-branch-build-strategies:1.3.2
-bootstrap4-api:4.6.0-5
 jira:3.8
 bouncycastle-api:2.26
 branch-api:2.1046.v0ca_37783ecc5
