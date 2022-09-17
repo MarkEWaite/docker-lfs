@@ -6,7 +6,6 @@ ant:481.v7b_09e538fcca
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
 authentication-tokens:1.4
-authorize-project:1.4.0
 badge:1.9.1
 basic-branch-build-strategies:1.3.2
 bootstrap4-api:4.6.0-5
