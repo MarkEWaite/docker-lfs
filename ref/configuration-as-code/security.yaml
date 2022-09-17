@@ -11,8 +11,6 @@ security:
     enableLoadingFromMaster: false
     enablePermissions: false
     hideInjectedVars: false
-  globalJobDslSecurityConfiguration:
-    useScriptSecurity: true
   sSHD:
     port: -1
   scriptApproval:
