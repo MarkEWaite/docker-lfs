@@ -78,7 +78,6 @@ jdk-tool:55.v1b_32b_6ca_f9ca
 jersey2-api:2.37-1
 gitlab-branch-source:640.v7101b_1c0def9
 jjwt-api:0.11.5-77.v646c772fddb_0
-jquery:1.12.4-1
 jquery3-api:3.6.0-4
 jsch:0.1.55.61.va_e9ee26616e7
 junit:1119.1121.vc43d0fc45561
