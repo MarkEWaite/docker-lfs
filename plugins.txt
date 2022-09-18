@@ -49,7 +49,7 @@ forensics-api:1.15.1
 git:4.12.1
 git-client:3.12.0
 git-forensics:1.9.0
-git-parameter:0.9.17
+git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
 gitea:1.4.3
 github:1.35.0
