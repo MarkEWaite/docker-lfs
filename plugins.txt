@@ -29,7 +29,7 @@ config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
 configurationslicing:430.v966357576543
 copyartifact:1.47
-credentials:1143.vb_e8b_b_ceee347
+credentials:1189.vf61b_a_5e2f62e
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:245.vb_a_2b_b_010ea_96
 data-tables-api:1.12.1-3
