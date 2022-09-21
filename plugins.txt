@@ -29,7 +29,7 @@ config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
 configurationslicing:430.v966357576543
 copyartifact:1.47
-credentials:1143.vb_e8b_b_ceee347
+credentials:1189.vf61b_a_5e2f62e
 credentials-binding:523.vd859a_4b_122e6
 dark-theme:245.vb_a_2b_b_010ea_96
 data-tables-api:1.12.1-3
@@ -45,7 +45,7 @@ envinject:2.875.v9b_9e962da_a_ec
 envinject-api:1.199.v3ce31253ed13
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.0-1
-forensics-api:1.15.1
+forensics-api:1.16.0
 git:4.12.1
 git-client:3.12.0
 git-forensics:1.9.0
@@ -58,7 +58,7 @@ github-branch-source:1695.v88de84e9f6b_9
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
-bootstrap5-api:5.2.0-3
+bootstrap5-api:5.2.1-1
 gitlab-plugin:1.5.35
 groovy-postbuild:2.5
 h2-api:1.4.199
@@ -78,7 +78,7 @@ jdk-tool:55.v1b_32b_6ca_f9ca
 jersey2-api:2.37-1
 gitlab-branch-source:640.v7101b_1c0def9
 jjwt-api:0.11.5-77.v646c772fddb_0
-jquery3-api:3.6.0-4
+jquery3-api:3.6.1-1
 jsch:0.1.55.61.va_e9ee26616e7
 junit:1119.1121.vc43d0fc45561
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
