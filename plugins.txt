@@ -1,7 +1,7 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 ace-editor:1.1
 adoptopenjdk:incrementals;io.jenkins.plugins;1.5-rc68.06093e2310fd
-analysis-model-api:10.16.1
+analysis-model-api:10.17.0
 ant:481.v7b_09e538fcca
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
