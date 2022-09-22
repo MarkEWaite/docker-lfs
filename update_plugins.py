@@ -57,8 +57,10 @@ Build docker images.   Use -h for help."""
         for old_plugin, new_plugin in zip(old_plugins, new_plugins):
             with open('plugins.txt', 'r+') as f:
                 data = f.read()
-            data.sort()
             data = data.replace(old_plugin, new_plugin)
+            lines = data.splitlines()
+            lines.sort()
+            data = '\n'.join(lines)
             with open('plugins.txt', 'wt') as f:
                 f.write(data)
             get_download_updates_command = docker_build.get_download_updates_command(base_jenkins_version)
