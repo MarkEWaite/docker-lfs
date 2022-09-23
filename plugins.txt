@@ -118,7 +118,7 @@ plugin-util-api:2.17.0
 pollscm:1.3.1
 popper2-api:2.11.6-1
 preSCMbuildstep:0.3
-prism-api:1.28.0-2
+prism-api:1.29.0-1
 promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.20
 run-condition:1.5
