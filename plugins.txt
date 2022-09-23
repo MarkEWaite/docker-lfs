@@ -42,7 +42,7 @@ echarts-api:5.3.3-1
 elastic-axis:1.6.0
 embeddable-build-status:255.va_d2370ee8fde
 envinject-api:1.199.v3ce31253ed13
-envinject:2.875.v9b_9e962da_a_ec
+envinject:2.881.v37c62073ff97
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.0-3
 forensics-api:1.16.0
