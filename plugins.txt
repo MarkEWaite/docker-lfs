@@ -65,7 +65,7 @@ h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 implied-labels:0.9
 instance-identity:116.vf8f487400980
-ionicons-api:26.vb_cd49d6a_5a_06
+ionicons-api:28.va_f3a_84439e5f
 jackson2-api:2.13.3-285.vc03c0256d517
 jacoco:3.3.2
 jakarta-activation-api:2.0.1-1
