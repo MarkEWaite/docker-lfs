@@ -63,6 +63,7 @@ gitlab-plugin:1.5.35
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
+http_request:1.16
 implied-labels:0.9
 instance-identity:116.vf8f487400980
 ionicons-api:28.va_f3a_84439e5f
@@ -101,7 +102,7 @@ parameterized-trigger:2.45
 pipeline-build-step:2.18
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
-pipeline-graph-view:98.v8b_ef5713a_144
+pipeline-graph-view:99.ve37f0c1e9a_50
 pipeline-groovy-lib:612.v84da_9c54906d
 pipeline-input-step:451.vf1a_a_4f405289
 pipeline-maven:1205.vceea_7b_972817
