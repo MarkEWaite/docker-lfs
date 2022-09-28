@@ -64,7 +64,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
-implied-labels:0.9
+implied-labels:incrementals;org.jenkins-ci.plugins;0.10-rc138.db_d996514636
 instance-identity:116.vf8f487400980
 ionicons-api:28.va_f3a_84439e5f
 jackson2-api:2.13.3-285.vc03c0256d517
