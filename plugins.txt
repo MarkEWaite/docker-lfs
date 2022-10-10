@@ -68,7 +68,7 @@ http_request:1.16
 implied-labels:0.10
 instance-identity:116.vf8f487400980
 ionicons-api:28.va_f3a_84439e5f
-jackson2-api:2.13.3-285.vc03c0256d517
+jackson2-api:2.13.4-293.vee957901b_6fb
 jacoco:3.3.2
 jakarta-activation-api:2.0.1-2
 jakarta-mail-api:2.0.1-2
