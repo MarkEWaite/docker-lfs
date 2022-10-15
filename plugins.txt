@@ -24,7 +24,7 @@ clover:4.13.0
 code-coverage-api:3.2.0
 command-launcher:90.v669d7ccb_7c31
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
-commons-text-api:1.9-19.v8df45c678366
+commons-text-api:1.10.0-27.vb_fa_3896786a_7
 conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1512.vb_79d418d5fc8
