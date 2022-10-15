@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.1-2
 jsch:0.1.55.61.va_e9ee26616e7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
-junit:1150.v5c2848328b_60
+junit:1153.v1c24f1a_d2553
 label-verifier:1.4
 mailer:438.v02c7f0a_12fa_4
 mapdb-api:1.0.9-28.vf251ce40855d
