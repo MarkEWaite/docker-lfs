@@ -60,7 +60,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.35.0
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:640.v7101b_1c0def9
-gitlab-plugin:1.5.35
+gitlab-plugin:1.5.36
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
