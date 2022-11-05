@@ -3,7 +3,7 @@ ace-editor:1.1
 adoptopenjdk:1.5
 analysis-model-api:10.17.0
 ant:481.v7b_09e538fcca
-antisamy-markup-formatter:2.7
+antisamy-markup-formatter:155.v795fb_8702324
 apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
 authentication-tokens:1.4
 badge:1.9.1
@@ -54,7 +54,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:4.13.0
 gitea:1.4.4
 github-api:1.303-400.v35c2d8258028
-github-branch-source:1695.v88de84e9f6b_9
+github-branch-source:1696.v3a_7603564d04
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 github:1.36.0
@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.1-2
 jsch:0.1.55.61.va_e9ee26616e7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
-junit:1153.v1c24f1a_d2553
+junit:1156.vcf492e95a_a_b_0
 label-verifier:1.4
 mailer:438.v02c7f0a_12fa_4
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -115,7 +115,7 @@ pipeline-stage-step:296.v5f6908f017a_5
 pipeline-stage-tags-metadata:2.2118.v31fd5b_9944b_5
 pipeline-utility-steps:2.13.1
 plain-credentials:139.ved2b_9cf7587b
-platformlabeler:1719.vb_68c7a_212e2e
+platformlabeler:1774.v72fe59cc815e
 plugin-util-api:2.18.0
 pollscm:1.3.1
 popper2-api:2.11.6-2
@@ -148,9 +148,9 @@ windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1200.v8005c684b_a_c6
 workflow-basic-steps:994.vd57e3ca_46d24
-workflow-cps:2803.v1a_f77ffcc773
+workflow-cps:3520.va_8fc49e2f96f
 workflow-durable-task-step:1210.va_1e5d77e122b
-workflow-job:1249.v7d974144cc14
+workflow-job:1254.v3f64639b_11dd
 workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:639.v6eca_cd8c04a_a_
