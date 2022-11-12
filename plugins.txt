@@ -1,7 +1,7 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 ace-editor:1.1
 adoptopenjdk:1.5
-analysis-model-api:10.19.0
+analysis-model-api:10.20.0
 ant:481.v7b_09e538fcca
 antisamy-markup-formatter:155.v795fb_8702324
 apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
@@ -60,7 +60,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.36.0
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:642.v9ed86b_b_54384
-gitlab-plugin:1.5.36
+gitlab-plugin:1.6.0
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.1-2
 jsch:0.1.55.61.va_e9ee26616e7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
-junit:1156.vcf492e95a_a_b_0
+junit:1159.v0b_396e1e07dd
 label-verifier:1.4
 mailer:438.v02c7f0a_12fa_4
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -103,7 +103,7 @@ parameterized-trigger:2.45
 pipeline-build-step:2.18
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
-pipeline-graph-view:141.v05c71b_1c9b_e3
+pipeline-graph-view:143.v33ca_60725f13
 pipeline-groovy-lib:613.v9c41a_160233f
 pipeline-input-step:456.vd8a_957db_5b_e9
 pipeline-maven:1205.vceea_7b_972817
@@ -142,7 +142,7 @@ timestamper:1.21
 token-macro:308.v4f2b_ed62b_b_16
 trilead-api:2.72.v2a_3236754f73
 variant:59.vf075fe829ccb
-versioncolumn:incrementals;org.jenkins-ci.plugins;2.3-rc71.a_d2d8262dd7c
+versioncolumn:83.vf59361a_44b_b_5
 view-job-filters:2.3
 warnings-ng:9.20.1
 windows-slaves:1.8.1
