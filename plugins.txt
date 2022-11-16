@@ -101,6 +101,7 @@ okhttp-api:4.9.3-108.v0feda04578cf
 parallel-test-executor:318.va_e768e2e32e3
 parameterized-trigger:2.45
 pipeline-build-step:2.18
+pipeline-github:2.8-138.d766e30bb08b
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-graph-analysis:195.v5812d95a_a_2f9
 pipeline-graph-view:143.v33ca_60725f13
