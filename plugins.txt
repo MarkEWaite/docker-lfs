@@ -21,7 +21,7 @@ cloudbees-bitbucket-branch-source:791.vb_eea_a_476405b
 cloudbees-folder:6.758.vfd75d09eea_a_1
 cloudbees-jenkins-advisor:326.v1821e6a_85e3f
 clover:4.13.0
-code-coverage-api:3.2.0
+code-coverage-api:3.3.0
 command-launcher:90.v669d7ccb_7c31
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-27.vb_fa_3896786a_7
