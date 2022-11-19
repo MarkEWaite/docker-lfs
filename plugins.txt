@@ -21,7 +21,7 @@ cloudbees-bitbucket-branch-source:791.vb_eea_a_476405b
 cloudbees-folder:6.758.vfd75d09eea_a_1
 cloudbees-jenkins-advisor:326.v1821e6a_85e3f
 clover:4.13.0
-code-coverage-api:3.3.0
+code-coverage-api:3.4.0
 command-launcher:90.v669d7ccb_7c31
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-27.vb_fa_3896786a_7
@@ -114,13 +114,13 @@ pipeline-model-definition:2.2118.v31fd5b_9944b_5
 pipeline-model-extensions:2.2118.v31fd5b_9944b_5
 pipeline-stage-step:296.v5f6908f017a_5
 pipeline-stage-tags-metadata:2.2118.v31fd5b_9944b_5
-pipeline-utility-steps:2.13.2
+pipeline-utility-steps:2.14.0
 plain-credentials:139.ved2b_9cf7587b
 platformlabeler:1774.v72fe59cc815e
 plugin-util-api:2.18.0
 pollscm:1.3.1
 popper2-api:2.11.6-2
-preSCMbuildstep:0.3
+preSCMbuildstep:36.vca_61785795a_2
 prism-api:1.29.0-1
 promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.20
@@ -146,7 +146,6 @@ variant:59.vf075fe829ccb
 versioncolumn:87.v8fe7c090a_d3b
 view-job-filters:2.3
 warnings-ng:9.20.1
-windows-slaves:1.8.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1200.v8005c684b_a_c6
 workflow-basic-steps:994.vd57e3ca_46d24
@@ -158,4 +157,4 @@ workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:639.v6eca_cd8c04a_a_
 workflow-support:839.v35e2736cfd5c
 ws-cleanup:0.43
-xshell:0.10
+xshell:120.v1307d168def8
