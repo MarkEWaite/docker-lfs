@@ -29,7 +29,7 @@ conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1569.vb_72405b_80249
 configurationslicing:430.v966357576543
-copyartifact:1.47
+copyartifact:1.48
 credentials-binding:523.vd859a_4b_122e6
 credentials:1189.vf61b_a_5e2f62e
 dark-theme:262.v0202a_4c8fb_6a
