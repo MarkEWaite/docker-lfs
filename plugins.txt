@@ -65,6 +65,7 @@ groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
+ignore-committer-strategy:1.0.4
 implied-labels:0.10
 instance-identity:116.vf8f487400980
 ionicons-api:31.v4757b_6987003
