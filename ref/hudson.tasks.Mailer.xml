@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@438.v02c7f0a_12fa_4">
+  <defaultSuffix>@gmail.com</defaultSuffix>
+  <authentication>
+    <username>mark.earl.waite@gmail.com</username>
+    <password>{AQAAABAAAAAgJbV/f9RKoBpAgBnV92LUuNtpDODdvmsa80p7BHjymJiuTkIXQqmv8FwQ8gQPLB0I}</password>
+  </authentication>
+  <replyToAddress>mark.earl.waite@gmail.com</replyToAddress>
+  <smtpHost>smtp.gmail.com</smtpHost>
+  <useSsl>false</useSsl>
+  <useTls>true</useTls>
+  <smtpPort>587</smtpPort>
+  <charset>UTF-8</charset>
+</hudson.tasks.Mailer_-DescriptorImpl>
