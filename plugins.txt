@@ -135,7 +135,7 @@ ssh-slaves:2.854.v7fd446b_337c9
 sshd:3.249.v2dc2ea_416e33
 structs:324.va_f5d6774f3a_d
 support-core:1229.v84a_e1b_3a_1d32
-swarm:3.37
+swarm:3.38
 testng-plugin:700.va_ea_5873a_3399
 text-finder:1.21
 theme-manager:1.5
