@@ -44,6 +44,7 @@
         stage(&apos;Hello&apos;) {
             steps {
                 script {
+                    sleep 10
                     def counter = env.BUILD_ID as int
                     if (counter % 10 == 1 || counter % 10 == 6) {
                         error(&quot;Fail 2 of 10 builds&quot;)
