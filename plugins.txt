@@ -92,7 +92,7 @@ markdown-formatter:0.2.0
 matrix-auth:3.1.5
 matrix-project:785.v06b_7f47b_c631
 maven-plugin:3.20
-metrics:4.2.10-405.v60a_9cc74e923
+metrics:4.2.13-420.vea_2f17932dd6
 mina-sshd-api-common:2.9.2-50.va_0e1f42659a_a
 mina-sshd-api-core:2.9.2-50.va_0e1f42659a_a
 monitoring:1.91.0
@@ -135,7 +135,7 @@ ssh-slaves:2.854.v7fd446b_337c9
 sshd:3.270.vb_a_e71e64c287
 structs:324.va_f5d6774f3a_d
 support-core:1229.v84a_e1b_3a_1d32
-swarm:3.38
+swarm:3.39
 testng-plugin:700.va_ea_5873a_3399
 text-finder:1.21
 theme-manager:1.5
