@@ -37,7 +37,7 @@ data-tables-api:1.12.1-4
 description-setter:1.10
 display-url-api:2.3.6
 docker-commons:1.21
-docker-workflow:528.v7c193a_0b_e67c
+docker-workflow:563.vd5d2e5c4007f
 durable-task:503.v57154d18d478
 echarts-api:5.4.0-1
 elastic-axis:1.6.0
