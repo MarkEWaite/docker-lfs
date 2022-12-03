@@ -47,7 +47,7 @@ envinject:2.881.v37c62073ff97
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.1-1
 forensics-api:1.16.0
-git-client:3.13.0
+git-client:incrementals;org.jenkins-ci.plugins;4.0.0-rc3300.80c23f8e08ec
 git-forensics:1.11.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
@@ -67,7 +67,7 @@ handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
 ignore-committer-strategy:1.0.4
 implied-labels:0.10
-instance-identity:116.vf8f487400980
+instance-identity:142.v04572ca_5b_265
 ionicons-api:31.v4757b_6987003
 jackson2-api:2.14.1-313.v504cdd45c18b
 jacoco:3.3.2
@@ -138,7 +138,7 @@ support-core:1229.v84a_e1b_3a_1d32
 swarm:3.39
 testng-plugin:730.v4c5283037693
 text-finder:1.21
-theme-manager:1.5
+theme-manager:1.6
 throttle-concurrents:2.10
 timestamper:1.21
 token-macro:321.vd7cc1f2a_52c8

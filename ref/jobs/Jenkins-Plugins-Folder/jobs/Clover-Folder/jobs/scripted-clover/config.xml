@@ -6,7 +6,7 @@
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
-        <numToKeep>7</numToKeep>
+        <numToKeep>-1</numToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
