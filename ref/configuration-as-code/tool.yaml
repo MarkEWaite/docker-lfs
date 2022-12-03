@@ -108,16 +108,16 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk8u345-b01"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_linux_hotspot_8u345b01.tar.gz"
+              subdir: "jdk8u352-b08"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_linux_hotspot_8u352b08.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk8u345-b01"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_windows_hotspot_8u345b01.zip"
+              subdir: "jdk8u352-b08"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK8U-jdk_x64_windows_hotspot_8u352b08.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u345-b01"
+              toolHome: "/home/jagent/tools/jdk8u352-b08"
           - command:
               command: "true"
               label: "Alpine"
@@ -127,19 +127,19 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u345-b01"
+              id: "jdk8u352-b08"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
           - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-11.0.16.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.16.1_1.zip"
-          - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.16.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.16.1_1.tar.gz"
+              subdir: "jdk-11.0.17+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.17_8.tar.gz"
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-11.0.17+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.17_8.zip"
           - command:
               command: "true"
               label: "cloud"
@@ -149,29 +149,29 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.16.1+1"
+              id: "jdk-11.0.17+8"
     - name: "jdk17"
       properties:
       - installSource:
           installers:
           - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-17.0.4.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.4.1_1.zip"
-          - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-17.0.4.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.4.1_1.tar.gz"
+              subdir: "jdk-17.0.5+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz"
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-17.0.5+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.5_8.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-17.0.4.1+1"
+              toolHome: "/home/jagent/tools/jdk-17.0.5+8"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.4.1+1"
+              id: "jdk-17.0.5+8"
   maven:
     installations:
     - name: "maven-latest"
