@@ -133,11 +133,11 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "windows && 64bit"
+              label: "linux && 64bit && !Alpine && !cloud"
               subdir: "jdk-11.0.17+8"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_linux_hotspot_11.0.17_8.tar.gz"
           - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
+              label: "windows && 64bit"
               subdir: "jdk-11.0.17+8"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK11U-jdk_x64_windows_hotspot_11.0.17_8.zip"
           - command:
@@ -155,23 +155,23 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-17.0.4.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.4.1_1.zip"
-          - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-17.0.4.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.4.1_1.tar.gz"
+              subdir: "jdk-17.0.5+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz"
+          - zip:
+              label: "windows && 64bit"
+              subdir: "jdk-17.0.5+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/OpenJDK17U-jdk_x64_windows_hotspot_17.0.5_8.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-17.0.4.1+1"
+              toolHome: "/home/jagent/tools/jdk-17.0.5+8"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.4.1+1"
+              id: "jdk-17.0.5+8"
   maven:
     installations:
     - name: "maven-latest"
