@@ -35,7 +35,7 @@ credentials:1214.v1de940103927
 dark-theme:262.v0202a_4c8fb_6a
 data-tables-api:1.12.1-4
 description-setter:1.10
-display-url-api:2.3.6
+display-url-api:2.3.7
 docker-commons:1.21
 docker-workflow:563.vd5d2e5c4007f
 durable-task:503.v57154d18d478
