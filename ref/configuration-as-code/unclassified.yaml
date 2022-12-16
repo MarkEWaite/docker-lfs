@@ -139,7 +139,7 @@ unclassified:
       retriever:
         modernSCM:
           scm:
-            git:
+            gitSCM:
               id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
               traits:
@@ -152,7 +152,7 @@ unclassified:
       retriever:
         legacySCM:
           scm:
-            git:
+            gitSCM:
               branches:
               - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
               buildChooser: "default"
@@ -184,7 +184,7 @@ unclassified:
       retriever:
         modernSCM:
           scm:
-            git:
+            gitSCM:
               id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
               traits:
