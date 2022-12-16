@@ -8,7 +8,7 @@ tool:
           - zip:
               subdir: "apache-ant-1.10.12"
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.12-bin.zip"
-  gitSCM:
+  git:
     installations:
     - home: "git"
       name: "Default"
