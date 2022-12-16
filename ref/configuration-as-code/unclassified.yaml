@@ -189,7 +189,7 @@ unclassified:
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
               traits:
               - "gitBranchDiscovery"
-              - discoverOtherRefsTrait:
+              - discoverOtherRefs:
                   ref: "*"
               - "gitTagDiscovery"
     - cachingConfiguration:
