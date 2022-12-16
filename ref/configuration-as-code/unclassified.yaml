@@ -176,7 +176,7 @@ unclassified:
               - gitHubBranchDiscovery:
                   strategyId: 1
               - "gitHubTagDiscovery"
-              - "localBranchTrait"
+              - "localBranch"
     - cachingConfiguration:
         refreshTimeMinutes: 509
       defaultVersion: "master"
