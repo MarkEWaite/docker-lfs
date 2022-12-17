@@ -156,6 +156,46 @@ jenkins:
                 script: "git --version 2>&1 | grep -F 2.38"
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.39"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.39"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.40"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.40"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.41"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.41"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+  - name: "git-2.42"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.42"
+            - regexNameVerifier:
+                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   labelString: "git-2.30 highmem"
   markupFormatter: "markdownFormatter"
   mode: NORMAL
