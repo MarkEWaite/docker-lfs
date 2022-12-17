@@ -24,7 +24,7 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
-  gitSCM:
+  scmGit:
     addGitTagAction: false
     allowSecondFetch: false
     createAccountBasedOnEmail: false
@@ -176,7 +176,7 @@ unclassified:
               - gitHubBranchDiscovery:
                   strategyId: 1
               - "gitHubTagDiscovery"
-              - "localBranchTrait"
+              - "localBranch"
     - cachingConfiguration:
         refreshTimeMinutes: 509
       defaultVersion: "master"
@@ -189,7 +189,7 @@ unclassified:
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
               traits:
               - "gitBranchDiscovery"
-              - discoverOtherRefsTrait:
+              - discoverOtherRefs:
                   ref: "*"
               - "gitTagDiscovery"
     - cachingConfiguration:
