@@ -152,7 +152,7 @@ unclassified:
       retriever:
         legacySCM:
           scm:
-            git:
+            scmGit:
               branches:
               - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
               buildChooser: "default"
