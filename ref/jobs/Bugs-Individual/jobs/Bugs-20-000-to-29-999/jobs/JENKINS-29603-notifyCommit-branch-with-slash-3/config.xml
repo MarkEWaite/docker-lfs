@@ -78,7 +78,7 @@ When &apos;/&apos; is not in the branchName value, the notifyCommit works as exp
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk8</jdk>
+  <jdk>jdk11</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
