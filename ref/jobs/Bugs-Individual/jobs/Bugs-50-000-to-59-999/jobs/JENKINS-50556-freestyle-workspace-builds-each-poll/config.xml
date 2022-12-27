@@ -88,7 +88,7 @@
   <buildWrappers>
     <hudson.tasks.AntWrapper plugin="ant@1.8">
       <installation>ant-latest</installation>
-      <jdk>jdk8</jdk>
+      <jdk>jdk11</jdk>
     </hudson.tasks.AntWrapper>
   </buildWrappers>
 </project>
