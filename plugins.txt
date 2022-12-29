@@ -47,11 +47,11 @@ envinject:2.892.v25453b_80e595
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.1-1
 forensics-api:1.17.0
-git-client:incrementals;org.jenkins-ci.plugins;4.0.0-rc3322.fa_4f895a_c687
+git-client:incrementals;org.jenkins-ci.plugins;4.0.0-rc3303.656c06003c66
 git-forensics:1.11.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
-git:incrementals;org.jenkins-ci.plugins;5.0.0-rc5177.eb_1c05805ea_b
+git:incrementals;org.jenkins-ci.plugins;5.0.0-rc5001.12d6962fb_47a
 gitea:1.4.5
 github-api:1.303-400.v35c2d8258028
 github-branch-source:1696.v3a_7603564d04
@@ -134,7 +134,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.854.v7fd446b_337c9
 sshd:3.275.v9e17c10f2571
 structs:324.va_f5d6774f3a_d
-support-core:1237.vdd0b_ed646870
+support-core:1241.v32a_39d7032e5
 swarm:3.39
 testng-plugin:730.v4c5283037693
 text-finder:1.22

@@ -1,21 +1,14 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<maven2-moduleset plugin="maven-plugin@3.10">
+<maven2-moduleset plugin="maven-plugin@3.20">
   <actions/>
   <description>[JENKINS-65276](https://issues.jenkins.io/browse/JENKINS-65276) reports that newly created maven jobs ignore the setting of the JDK as provided by the Jenkins job definition.  I can&apos;t duplicate the problem.&#xd;
 &#xd;
 &#xd;
-This job intentionally uses JDK 11 even though my typical Jenkins configuration runs on Java 8.  It will be unstable if the build is not run with Java 11.</description>
+This job intentionally uses JDK 17 even though my typical Jenkins configuration runs on Java 11.  It will be unstable if the build is not run with Java 17.
+The job fails on my swarm agent with class loading issues.
+Needs more investigation to understand if that is a long-standing issue with swarm agents and maven integration jobs or a recent development.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.2.1">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.7">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
@@ -24,20 +17,8 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty plugin="naginator@1.18.1">
-      <optOut>false</optOut>
-    </com.chikli.hudson.plugin.naginator.NaginatorOptOutProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.2">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.1-SNAPSHOT">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.0.0-rc5001.12d6962fb_47a">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -54,12 +35,12 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
     <submoduleCfg class="empty-list"/>
     <extensions/>
   </scm>
-  <assignedNode>!windows</assignedNode>
+  <assignedNode>!windows &amp;&amp; !swarm</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -90,11 +71,12 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
   <publishers>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@8.10.1">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@9.22.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@2.20.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -102,6 +84,7 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
         <io.jenkins.plugins.analysis.warnings.JUnit>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@2.20.0"/>
           <pattern>target/**/*.xml</pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -109,17 +92,19 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <sourceDirectory></sourceDirectory>
+      <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
       <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@9.8.1">
+      <minimumSeverity plugin="analysis-model-api@10.21.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
+      <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
       <publishAllIssues>false</publishAllIssues>
@@ -127,10 +112,10 @@ This job intentionally uses JDK 11 even though my typical Jenkins configuration 
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
       <scm></scm>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.15">
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.22">
       <textFinders>
         <hudson.plugins.textfinder.TextFinder>
-          <regexp>jdk-11.*bin.*java.*apache-maven</regexp>
+          <regexp>jdk-17.*bin.*java.*apache-maven</regexp>
           <buildResult>UNSTABLE</buildResult>
           <changeCondition>MATCH_NOT_FOUND</changeCondition>
           <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
