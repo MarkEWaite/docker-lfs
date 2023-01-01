@@ -150,7 +150,7 @@ warnings-ng:9.22.0
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1200.v8005c684b_a_c6
 workflow-basic-steps:994.vd57e3ca_46d24
-workflow-cps:incrementals;org.jenkins-ci.plugins.workflow;3599.v6c6b_68cd1d60
+workflow-cps:incrementals;org.jenkins-ci.plugins.workflow;3594.v24a_d926d6dc9
 workflow-durable-task-step:1217.v38306d8fa_b_5c
 workflow-job:1254.v3f64639b_11dd
 workflow-multibranch:716.vc692a_e52371b_
