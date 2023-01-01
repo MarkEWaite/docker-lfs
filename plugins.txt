@@ -13,7 +13,7 @@ bouncycastle-api:2.26
 branch-api:2.1051.v9985666b_f6cc
 build-blocker-plugin:1.7.8
 build-name-setter:2.2.0
-build-timeout:1.25
+build-timeout:1.26
 buildresult-trigger:0.18
 caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.8.1
@@ -150,7 +150,7 @@ warnings-ng:9.22.0
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1200.v8005c684b_a_c6
 workflow-basic-steps:994.vd57e3ca_46d24
-workflow-cps:incrementals;org.jenkins-ci.plugins.workflow;3599.v6c6b_68cd1d60
+workflow-cps:3583.v4f58de0d78d5
 workflow-durable-task-step:1217.v38306d8fa_b_5c
 workflow-job:1254.v3f64639b_11dd
 workflow-multibranch:716.vc692a_e52371b_
