@@ -47,7 +47,7 @@ envinject:2.892.v25453b_80e595
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.1-1
 forensics-api:1.17.0
-git-client:incrementals;org.jenkins-ci.plugins;4.1.0-rc3314.97ca_a_a_9fa_3b_3
+git-client:incrementals;org.jenkins-ci.plugins;4.1.0-rc3315.697db_6fcb_d59
 git-forensics:1.11.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
@@ -95,7 +95,6 @@ maven-plugin:3.20
 metrics:4.2.13-420.vea_2f17932dd6
 mina-sshd-api-common:2.9.2-50.va_0e1f42659a_a
 mina-sshd-api-core:2.9.2-50.va_0e1f42659a_a
-mina-sshd-api-sftp:2.9.2-50.va_0e1f42659a_a
 monitoring:1.91.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
