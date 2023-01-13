@@ -47,11 +47,11 @@ envinject:2.892.v25453b_80e595
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.2.1-1
 forensics-api:1.17.0
-git-client:incrementals;org.jenkins-ci.plugins;4.1.0-rc3314.4a_056a_b_d4dd9
+git-client:incrementals;org.jenkins-ci.plugins;4.1.0-rc3315.a_08a_9488da_15
 git-forensics:1.11.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
-git:5.0.0
+git:incrementals;org.jenkins-ci.plugins;5.0.1-rc5011.22f8ceb_044d0
 gitea:1.4.5
 github-api:1.303-400.v35c2d8258028
 github-branch-source:1696.v3a_7603564d04
