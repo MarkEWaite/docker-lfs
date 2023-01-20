@@ -150,7 +150,7 @@ warnings-ng:9.22.0
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:994.vd57e3ca_46d24
-workflow-cps:3601.v9b_36a_d99e1cc
+workflow-cps:3606.v0b_d8b_e512dcf
 workflow-durable-task-step:1223.v7f1a_98a_8863e
 workflow-job:1254.v3f64639b_11dd
 workflow-multibranch:716.vc692a_e52371b_
