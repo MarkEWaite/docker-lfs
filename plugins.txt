@@ -40,7 +40,7 @@ docker-commons:1.21
 docker-workflow:563.vd5d2e5c4007f
 durable-task:503.v57154d18d478
 echarts-api:5.4.0-1
-elastic-axis:1.6.0
+elastic-axis:409.v304cee6e7b_55
 embeddable-build-status:312.vf2de01b_051d0
 envinject-api:1.199.v3ce31253ed13
 envinject:2.892.v25453b_80e595
