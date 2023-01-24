@@ -29,7 +29,7 @@ conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1569.vb_72405b_80249
 configurationslicing:430.v966357576543
-copyartifact:1.48
+copyartifact:681.va_a_298c7f9c01
 credentials-binding:523.vd859a_4b_122e6
 credentials:1214.v1de940103927
 dark-theme:262.v0202a_4c8fb_6a
@@ -109,7 +109,7 @@ pipeline-graph-view:144.vf3924feb_7e35
 pipeline-groovy-lib:629.vb_5627b_ee2104
 pipeline-input-step:466.v6d0a_5df34f81
 pipeline-maven:1257.v89e586d3c58c
-pipeline-milestone-step:101.vd572fef9d926
+pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2118.v31fd5b_9944b_5
 pipeline-model-definition:2.2118.v31fd5b_9944b_5
 pipeline-model-extensions:2.2118.v31fd5b_9944b_5
