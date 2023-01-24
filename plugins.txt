@@ -146,7 +146,7 @@ trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:95.v82f3985cd6e1
 view-job-filters:2.3
-warnings-ng:9.22.0
+warnings-ng:9.23.0
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:994.vd57e3ca_46d24
