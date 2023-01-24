@@ -38,7 +38,7 @@ description-setter:1.10
 display-url-api:2.3.7
 docker-commons:1.21
 docker-workflow:563.vd5d2e5c4007f
-durable-task:503.v57154d18d478
+durable-task:504.vb10d1ae5ba2f
 echarts-api:5.4.0-1
 elastic-axis:409.v304cee6e7b_55
 embeddable-build-status:312.vf2de01b_051d0
