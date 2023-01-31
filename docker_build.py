@@ -42,9 +42,9 @@ def get_dockerfile(branch_name):
         return "Dockerfile-slim"
     if "jdk17" in branch_name:
         return "Dockerfile-jdk17"
-    if "jdk11" in branch_name:
+    if "lts-with-" in branch_name:
         return "Dockerfile-jdk11"
-    return "Dockerfile"
+    return "Dockerfile-jdk17"
 
 #-----------------------------------------------------------------------
 
