@@ -60,7 +60,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.36.1
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:644.va_a_66886e07b_5
-gitlab-plugin:1.6.0
+gitlab-plugin:1.7.1
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -86,7 +86,7 @@ jsch:0.1.55.61.va_e9ee26616e7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 junit:1166.va_436e268e972
 label-verifier:1.4
-mailer:438.v02c7f0a_12fa_4
+mailer:448.v5b_97805e3767
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:0.2.0
 matrix-auth:3.1.6
@@ -134,7 +134,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.854.v7fd446b_337c9
 sshd:3.275.v9e17c10f2571
 structs:324.va_f5d6774f3a_d
-support-core:1244.vceb_57079258a
+support-core:1256.vce1fc0f7dcde
 swarm:3.39
 testng-plugin:730.v4c5283037693
 text-finder:1.22
