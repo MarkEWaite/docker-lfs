@@ -32,7 +32,7 @@ configurationslicing:430.v966357576543
 copyartifact:686.v6fd37018d7c2
 credentials-binding:523.vd859a_4b_122e6
 credentials:1214.v1de940103927
-dark-theme:262.v0202a_4c8fb_6a
+dark-theme:297.vb_169690e0348
 data-tables-api:1.12.1-4
 description-setter:1.10
 display-url-api:2.3.7
@@ -79,7 +79,7 @@ javax-mail-api:1.6.2-8
 jaxb:2.3.7-1
 jdk-tool:63.v62d2fd4b_4793
 jersey2-api:2.38-1
-jira:3.8
+jira:3.9
 jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.1-2
 jsch:0.1.55.61.va_e9ee26616e7
@@ -134,7 +134,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.854.v7fd446b_337c9
 sshd:3.275.v9e17c10f2571
 structs:324.va_f5d6774f3a_d
-support-core:1256.vce1fc0f7dcde
+support-core:1258.v665d89fa_3607
 swarm:3.39
 testng-plugin:730.v4c5283037693
 text-finder:1.22
@@ -146,7 +146,7 @@ trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:95.v82f3985cd6e1
 view-job-filters:2.3
-warnings-ng:9.23.0
+warnings-ng:9.23.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:994.vd57e3ca_46d24
