@@ -210,13 +210,13 @@ tool:
           - zip:
               subdir: "apache-maven-3.9.0"
               url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.9.0-bin.zip"
-    - name: "maven-4.0.0-alpha-3"
+    - name: "maven-4.0.0-alpha-4"
       properties:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-4.0.0-alpha-3"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-4.0.0-alpha-3-bin.zip"
+              subdir: "apache-maven-4.0.0-alpha-4"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-4.0.0-alpha-4-bin.zip"
   mavenGlobalConfig:
     globalSettingsProvider: "standard"
     settingsProvider: "standard"

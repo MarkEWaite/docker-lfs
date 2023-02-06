@@ -40,7 +40,7 @@
   <builders>
     <hudson.tasks.Maven>
       <targets>verify</targets>
-      <mavenName>maven-4.0.0.-alpha-3</mavenName>
+      <mavenName>maven-4.0.0-alpha-4</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
