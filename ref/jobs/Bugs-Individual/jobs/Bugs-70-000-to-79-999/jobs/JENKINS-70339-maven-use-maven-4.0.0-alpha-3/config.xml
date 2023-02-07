@@ -34,7 +34,7 @@
     <artifactId>my-app</artifactId>
   </rootModule>
   <goals>clean verify</goals>
-  <mavenName>maven-4.0.0.-alpha-3</mavenName>
+  <mavenName>maven-4.0.0-alpha-4</mavenName>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
   <ignoreUpstremChanges>false</ignoreUpstremChanges>
