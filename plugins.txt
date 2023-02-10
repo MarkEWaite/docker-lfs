@@ -60,7 +60,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.36.1
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:644.va_a_66886e07b_5
-gitlab-plugin:1.7.4
+gitlab-plugin:1.7.5
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -150,7 +150,7 @@ warnings-ng:9.23.1
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:994.vd57e3ca_46d24
-workflow-cps:3611.v201b_d9f9eb_f7
+workflow-cps:3618.v13db_a_21f0fcf
 workflow-durable-task-step:1223.v7f1a_98a_8863e
 workflow-job:1268.v6eb_e2ee1a_85a
 workflow-multibranch:716.vc692a_e52371b_
