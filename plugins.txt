@@ -1,5 +1,4 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
-ace-editor:1.1
 adoptopenjdk:1.5
 analysis-model-api:10.23.1
 ant:481.v7b_09e538fcca
@@ -60,7 +59,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.36.1
 gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:644.va_a_66886e07b_5
-gitlab-plugin:1.7.5
+gitlab-plugin:1.7.6
 groovy-postbuild:2.5
 h2-api:1.4.199
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
