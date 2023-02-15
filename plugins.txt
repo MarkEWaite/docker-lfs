@@ -97,7 +97,7 @@ mina-sshd-api-core:2.9.2-50.va_0e1f42659a_a
 monitoring:1.91.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
-okhttp-api:4.9.3-108.v0feda04578cf
+okhttp-api:4.10.0-117.vf786fdfa_22c0
 parallel-test-executor:383.vde60119c849a
 parameterized-trigger:2.45
 pipeline-build-step:2.18
