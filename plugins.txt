@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.1-2
 jsch:0.1.55.61.va_e9ee26616e7
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
-junit:1166.va_436e268e972
+junit:1177.v90374a_ef4d09
 label-verifier:1.4
 mailer:448.v5b_97805e3767
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -97,10 +97,10 @@ mina-sshd-api-core:2.9.2-50.va_0e1f42659a_a
 monitoring:1.91.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
-okhttp-api:4.9.3-108.v0feda04578cf
+okhttp-api:4.10.0-117.vf786fdfa_22c0
 parallel-test-executor:383.vde60119c849a
 parameterized-trigger:2.45
-pipeline-build-step:2.18
+pipeline-build-step:2.18.1
 pipeline-github-lib:38.v445716ea_edda_
 pipeline-github:2.8-138.d766e30bb08b
 pipeline-graph-analysis:202.va_d268e64deb_3
