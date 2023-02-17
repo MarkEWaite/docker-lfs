@@ -123,7 +123,7 @@ popper2-api:2.11.6-2
 preSCMbuildstep:44.v6ef4fd97f56e
 prism-api:1.29.0-2
 promoted-builds:892.vd6219fc0a_efb
-resource-disposer:0.20
+resource-disposer:0.21
 run-condition:1.5
 scm-api:631.v9143df5b_e4a_a
 script-security:1229.v4880b_b_e905a_6
