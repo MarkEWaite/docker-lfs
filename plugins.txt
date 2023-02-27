@@ -18,7 +18,7 @@ caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.8.1
 cloudbees-bitbucket-branch-source:796.v6cb_1559e1673
 cloudbees-folder:6.800.v71307ca_b_986b
-cloudbees-jenkins-advisor:326.v1821e6a_85e3f
+cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
 code-coverage-api:3.5.0
 command-launcher:90.v669d7ccb_7c31
