@@ -3,7 +3,7 @@ adoptopenjdk:1.5
 analysis-model-api:10.23.1
 ant:481.v7b_09e538fcca
 antisamy-markup-formatter:155.v795fb_8702324
-apache-httpcomponents-client-4-api:incrementals;org.jenkins-ci.plugins;4.5.14-149.ve491c8971406
+apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
 authentication-tokens:1.4
 badge:1.9.1
 basic-branch-build-strategies:71.vc1421f89888e
