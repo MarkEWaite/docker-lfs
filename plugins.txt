@@ -107,7 +107,7 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:164.v4d8f64de99d3
 pipeline-groovy-lib:629.vb_5627b_ee2104
 pipeline-input-step:466.v6d0a_5df34f81
-pipeline-maven:1274.v870c8cb_fa_369
+pipeline-maven:1279.v5d711113020f
 pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2118.v31fd5b_9944b_5
 pipeline-model-definition:2.2118.v31fd5b_9944b_5
