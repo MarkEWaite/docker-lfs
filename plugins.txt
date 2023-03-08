@@ -146,7 +146,7 @@ variant:59.vf075fe829ccb
 versioncolumn:95.v82f3985cd6e1
 view-job-filters:2.3
 warnings-ng:9.23.1
-workflow-aggregator:590.v6a_d052e5a_a_b_5
+workflow-aggregator:596.v8c21c963d92d
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:1010.vf7a_b_98e847c1
 workflow-cps:3629.v8177e69e359a_
