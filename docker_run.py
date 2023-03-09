@@ -9,9 +9,9 @@
 import optparse
 import os
 import re
-import pipes
 import socket
 import subprocess
+import shlex
 import shutil
 import string
 import sys
@@ -158,7 +158,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     docker_command.extend([
                        "--env", 'CASC_YAML_MAX_ALIASES=100',
                        "--env", 'JAGENT_JAVA_HOME=' + get_jagent_java_home(),
-                       "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
+                       "--env", 'JAVA_OPTS=' + shlex.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
