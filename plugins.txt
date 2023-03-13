@@ -32,7 +32,7 @@ copyartifact:686.v6fd37018d7c2
 credentials-binding:523.vd859a_4b_122e6
 credentials:1214.v1de940103927
 dark-theme:315.va_22e7d692ea_a
-data-tables-api:1.13.3-1
+data-tables-api:1.13.3-2
 description-setter:1.10
 display-url-api:2.3.7
 docker-commons:419.v8e3cd84ef49c
@@ -46,7 +46,7 @@ envinject:2.901.v0038b_6471582
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.3.0-1
 forensics-api:2.0.1
-git-client:4.1.0
+git-client:incrementals;org.jenkins-ci.plugins;4.2.0-rc3363.a_f5e1cc15ee6
 git-forensics:2.0.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
