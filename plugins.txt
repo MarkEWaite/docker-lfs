@@ -31,7 +31,7 @@ configurationslicing:430.v966357576543
 copyartifact:686.v6fd37018d7c2
 credentials-binding:523.vd859a_4b_122e6
 credentials:1214.v1de940103927
-dark-theme:302.vf069cb_e01486
+dark-theme:315.va_22e7d692ea_a
 data-tables-api:1.12.1-4
 description-setter:1.10
 display-url-api:2.3.7
