@@ -83,7 +83,7 @@ def get_windows_dir():
 #-----------------------------------------------------------------------
 
 def get_jagent_java_home():
-    if "jdk17" in docker_build.get_current_branch():
+    if "jdk17" in docker_build.get_current_branch() or "weekly" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-17.0.6+10"
     return "/home/jagent/tools/jdk-11.0.18+10"
 
