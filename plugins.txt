@@ -61,7 +61,7 @@ gitlab-api:5.0.1-78.v47a_45b_9f78b_7
 gitlab-branch-source:646.vb_9560d64b_69f
 gitlab-plugin:1.7.9
 groovy-postbuild:2.5
-h2-api:1.4.199
+h2-api:10.v8dd81336a_ede
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
 ignore-committer-strategy:1.0.4
