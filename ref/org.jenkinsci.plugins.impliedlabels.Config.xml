@@ -618,14 +618,6 @@
         </atoms>
         <expression class="hudson.model.labels.LabelExpression$And">java-19&amp;&amp;windows</expression>
       </org.jenkinsci.plugins.impliedlabels.Implication>
-      <org.jenkinsci.plugins.impliedlabels.Implication>
-        <atoms class="java.util.Collections$UnmodifiableSet">
-          <c class="sorted-set">
-            <hudson.model.labels.LabelAtom>Debian-unstable</hudson.model.labels.LabelAtom>
-          </c>
-        </atoms>
-        <expression class="hudson.model.labels.LabelExpression$Or">gcp-debian-unstable-a||gcp-debian-unstable-b</expression>
-      </org.jenkinsci.plugins.impliedlabels.Implication>
     </c>
     <list reference="../c"/>
   </implications>
