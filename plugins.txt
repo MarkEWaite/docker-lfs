@@ -26,7 +26,7 @@ commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
 config-file-provider:3.11.1
-configuration-as-code:1569.vb_72405b_80249
+configuration-as-code:1612.v1d254764cf6b
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
 copyartifact:686.v6fd37018d7c2
 credentials-binding:523.vd859a_4b_122e6
