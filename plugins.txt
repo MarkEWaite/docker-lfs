@@ -136,7 +136,7 @@ structs:324.va_f5d6774f3a_d
 support-core:1266.v6d096c154c90
 swarm:3.39
 testng-plugin:730.v4c5283037693
-text-finder:1.22
+text-finder:1.23
 theme-manager:1.6
 throttle-concurrents:2.11
 timestamper:1.22
