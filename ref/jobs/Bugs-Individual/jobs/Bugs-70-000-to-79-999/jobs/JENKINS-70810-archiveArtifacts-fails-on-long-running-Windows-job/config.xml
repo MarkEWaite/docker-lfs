@@ -1,0 +1,110 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1284.v2fe8ed4573d4">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <jobProperties>
+        <string>org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty</string>
+      </jobProperties>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>[JENKINS-70810](https://issues.jenkins.io/browse/JENKINS-70810} reports that archiveArtifacts sometimes fails on long-running jobs</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.9">
+      <siteName>https://issues.jenkins.io/</siteName>
+    </hudson.plugins.jira.JiraProjectProperty>
+    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.8">
+      <useBuildBlocker>false</useBuildBlocker>
+      <blockLevel>GLOBAL</blockLevel>
+      <scanQueueFor>DISABLED</scanQueueFor>
+      <blockingJobs></blockingJobs>
+    </hudson.plugins.buildblocker.BuildBlockerProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.7.9">
+      <gitLabConnection>null</gitLabConnection>
+      <jobCredentialId></jobCredentialId>
+      <useAlternativeCredential>false</useAlternativeCredential>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
+      <hint>PERFORMANCE_OPTIMIZED</hint>
+    </org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.11">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3641.vf58904a_b_b_5d8">
+    <script>pipeline {
+  agent none
+  options {
+    durabilityHint(&apos;PERFORMANCE_OPTIMIZED&apos;)
+  }
+  tools {
+    jdk &apos;jdk11&apos;
+    ant &apos;ant-latest&apos;
+  }
+  stages {
+    stage(&apos;parallel&apos;) {
+      parallel {
+        stage(&apos;windows&apos;) {
+          agent {
+            label &apos;windows&apos;
+          }
+          steps {
+            git &apos;https://github.com/jenkinsci/elastic-axis-plugin.git&apos;
+            echo &quot;pipeline GIT_COMMIT is ${env.GIT_COMMIT}&quot;
+
+            script {
+              env.GIT_COMMIT = &apos;5a725696976c74ff698a32a6c4ce8fdc75deccd3&apos;
+              // extract author name, committer name, and commit message of GIT_COMMIT
+              def author_name = bat(script: &quot;@echo off\ngit log -n 1 ${env.GIT_COMMIT} --format=%%aN&quot;, returnStdout: true).trim()
+              echo &quot;Author name of last commit is ${author_name}&quot;
+              def committer_name = bat(script: &quot;@echo off\ngit log -n 1 ${env.GIT_COMMIT} --format=%%cN&quot;, returnStdout: true).trim()
+              echo &quot;Committer name of last commit is ${committer_name}&quot;
+              def commit_message = powershell(script: &quot;git log -1 --format=%B ${GIT_COMMIT}&quot;, returnStdout: true).trim()
+              echo &quot;Commit message of last commit is ${commit_message}&quot;
+            }
+
+            ws(dir: WORKSPACE + &apos;/windows-dir&apos;) {
+              git &apos;https://github.com/jenkinsci/elastic-axis-plugin.git&apos;
+              echo &quot;pipeline GIT_AUTHOR_NAME in windows ws is ${env.GIT_AUTHOR_NAME}&quot;
+              bat &quot;echo bat GIT_COMMITTER_NAME in windows ws is %GIT_COMMITTER_NAME%&quot;
+            }
+            echo &quot;pipeline GIT_COMMIT after windows ws is ${env.GIT_COMMIT}&quot;
+            bat &quot;echo bat GIT_COMMIT after windows ws is %GIT_COMMIT%&quot;
+            bat &apos;echo hello windows from %COMPUTERNAME%&apos;
+            withAnt(installation: &apos;ant-latest&apos;) {
+              bat &apos;ant info&apos;
+            }
+            // Archive artifacts from windows-dir
+            dir(WORKSPACE + &apos;/windows-dir&apos;) {
+              archiveArtifacts artifacts: &apos;*&apos;, followSymlinks: false
+            }
+          }
+        }
+        stage(&apos;linux&apos;) {
+          agent {
+            label &apos;linux&apos;
+          }
+          steps {
+            echo &quot;pipeline GIT_COMMIT before linux ws is ${env.GIT_COMMIT}&quot;
+          }
+        }
+      }
+    }
+  }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
