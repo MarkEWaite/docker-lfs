@@ -57,7 +57,7 @@ github-branch-source:1703.vd5a_2b_29c6cdc
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 github:1.37.0
-gitlab-api:5.0.1-78.v47a_45b_9f78b_7
+gitlab-api:5.1.0-84.v491924123a_f7
 gitlab-branch-source:incrementals;io.jenkins.plugins;648.v02883a_b_28a_0e
 gitlab-plugin:1.7.10
 groovy-postbuild:2.5
