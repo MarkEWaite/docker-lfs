@@ -65,7 +65,7 @@ h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
 ignore-committer-strategy:1.0.4
-implied-labels:0.11
+implied-labels:212.vf913fa_23080e
 instance-identity:142.v04572ca_5b_265
 ionicons-api:45.vf54fca_5d2154
 jackson2-api:2.14.2-319.v37853346a_229
