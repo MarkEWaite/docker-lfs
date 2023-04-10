@@ -105,7 +105,7 @@ pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-147.3206e8179b1c
 pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:183.v9e27732d970f
-pipeline-groovy-lib:incrementals;io.jenkins.plugins;652.vc722f7a_cf8c2
+pipeline-groovy-lib:629.vb_5627b_ee2104
 pipeline-input-step:466.v6d0a_5df34f81
 pipeline-maven:1279.v5d711113020f
 pipeline-milestone-step:111.v449306f708b_7
