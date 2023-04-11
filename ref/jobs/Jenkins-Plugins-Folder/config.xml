@@ -1,29 +1,42 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.758.vfd75d09eea_a_1">
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.815.v0dd5a_cb_40e0e">
   <actions/>
-  <description>[![Elastic Axis Plugin](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/badge/icon?subject=Elastic%20axis)](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/)
-[![Embeddable Build Status](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/badge/icon?subject=Embeddable%20build%20status)](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/)
-[![Git Client Plugin Build Status](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/badge/icon?subject=Git%20client)](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/)
-[![Git Plugin Build Status](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/badge/icon?subject=Git)](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/)
-[![GitLab Plugin Build Status](/job/Jenkins-Plugins-Folder/job/GitLab-Folder/job/gitlab-pipeline/job/master/badge/icon?subject=GitLab)](/job/Jenkins-Plugins-Folder/job/GitLab-Folder/job/gitlab-pipeline/job/master/)
-[![Implied Labels Build Status](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/badge/icon?subject=Implied%20labels)](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/)
-[![Build Status](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/badge/icon?subject=Node%20label%20parameter)](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/)
-[![Build Status](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/badge/icon?subject=Platform%20labeler)](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/)
-[![Build Status](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/badge/icon?subject=Priority%20sorter)](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/)
-[![Build Status](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/badge/icon?subject=Schedule%20build)](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/)
-[![Build Status](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/badge/icon?subject=TestNG%20results)](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/)</description>
+  <description>
+[![Apache HTTP Components 4](/job/Jenkins-Plugins-Folder/job/Apache-HTTP-Components-4-Folder/job/apache-httpcomponents-client-4-api-pipeline/job/master/badge/icon?subject=Apache%20HTTP%20Components%204)](/job/Jenkins-Plugins-Folder/job/Apache-HTTP-Components-4-Folder/job/apache-httpcomponents-client-4-api-pipeline/job/master/)
+[![Cloud stats](/job/Jenkins-Plugins-Folder/job/Cloud-Stats-Folder/job/cloud-stats-pipeline/job/master/badge/icon?subject=Cloud%20stats)](/job/Jenkins-Plugins-Folder/job/Cloud-Stats-Folder/job/cloud-stats-pipeline/job/master/)
+[![Elastic Axis Plugin](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/badge/icon?subject=Elastic%20axis)](/job/Jenkins-Plugins-Folder/job/Elastic-Axis-Folder/job/elastic-axis-pipeline/job/master/)
+[![Embeddable](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/badge/icon?subject=Embeddable)](/job/Jenkins-Plugins-Folder/job/Embeddable-Build-Status-Folder/job/embeddable-build-status-pipeline/job/master/)
+[![Git Client](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/badge/icon?subject=Git%20client)](/job/Jenkins-Plugins-Folder/job/Git-Client-Folder/job/git-client-pipeline-github/job/master/)
+[![Git](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/badge/icon?subject=Git)](/job/Jenkins-Plugins-Folder/job/Git-Folder/job/git-pipeline-github/job/master/)
+[![GitLab](/job/Jenkins-Plugins-Folder/job/GitLab-Folder/job/gitlab-pipeline/job/master/badge/icon?subject=GitLab)](/job/Jenkins-Plugins-Folder/job/GitLab-Folder/job/gitlab-pipeline/job/master/)
+[![Implied labels](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/badge/icon?subject=Implied%20labels)](/job/Jenkins-Plugins-Folder/job/Implied-Labels-Folder/job/implied-labels-pipeline/job/master/)
+[![Markdown](/job/Jenkins-Plugins-Folder/job/Markdown-Formatter-Folder/job/markdown-formatter-pipeline/job/master/badge/icon?subject=Markdown)](/job/Markdown-Formatter-Folder/job/markdown-formatter-pipeline/job/master/)
+[![Node label parameter](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/badge/icon?subject=Node%20label%20parameter)](/job/Jenkins-Plugins-Folder/job/NodeLabelParameter-Folder/job/nodelabelparameter-pipeline/job/master/)
+[![Platform labeler](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/badge/icon?subject=Platform%20labeler)](/job/Jenkins-Plugins-Folder/job/Platform-Labeler-Folder/job/platform-labeler-pipeline-github/job/master/)
+[![Priority sorter](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/badge/icon?subject=Priority%20sorter)](/job/Jenkins-Plugins-Folder/job/Priority-Sorter-Folder/job/priority-sorter-pipeline/job/master/)
+[![Schedule build](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/badge/icon?subject=Schedule%20build)](/job/Jenkins-Plugins-Folder/job/Schedule-Build-Folder/job/schedule-build-pipeline/job/master/)
+[![TestNG](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/badge/icon?subject=TestNG)](/job/Jenkins-Plugins-Folder/job/TestNG-Folder/job/testng-pipeline-github/job/master/)
+[![Version column](/job/Jenkins-Plugins-Folder/job/Version-Column-Folder/job/version-column-pipeline-github/job/master/badge/icon?subject=Version%20column)](/job/Jenkins-Plugins-Folder/job/Version-Column-Folder/job/version-column-pipeline-github/job/master/)
+[![XShell](/job/Jenkins-Plugins-Folder/job/Xshell-Folder/job/xshell-pipeline-github/job/master/badge/icon?subject=XShell)](/job/Jenkins-Plugins-Folder/job/Xshell-Folder/job/xshell-pipeline-github/job/master/)
+</description>
   <displayName>Jenkins Plugins</displayName>
   <properties>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@521.v1a_a_dd2073b_2e">
+    <org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty plugin="config-file-provider@3.11.1">
+      <configs class="sorted-set">
+        <comparator class="org.jenkinsci.plugins.configfiles.ConfigByIdComparator"/>
+      </configs>
+    </org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty>
+    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@563.vd5d2e5c4007f">
       <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.21"/>
+      <registry plugin="docker-commons@419.v8e3cd84ef49c"/>
     </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
-    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+    <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="pipeline-groovy-lib@652.vc722f7a_cf8c2">
       <libraries>
         <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
           <name>infra</name>
           <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
-            <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1695.v88de84e9f6b_9">
+            <clone>true</clone>
+            <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1703.vd5a_2b_29c6cdc">
               <id>862d151a-38ad-4e7d-b242-ca42f0134e0d</id>
               <apiUri>https://api.github.com</apiUri>
               <credentialsId>MarkEWaite-github-token-2019-05-25</credentialsId>
@@ -41,6 +54,15 @@
                   <strategyId>1</strategyId>
                   <trust class="org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustPermission"/>
                 </org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
+                <jenkins.plugins.git.traits.CloneOptionTrait plugin="git@5.0.0">
+                  <extension class="hudson.plugins.git.extensions.impl.CloneOption">
+                    <shallow>true</shallow>
+                    <noTags>true</noTags>
+                    <reference></reference>
+                    <depth>1</depth>
+                    <honorRefspec>true</honorRefspec>
+                  </extension>
+                </jenkins.plugins.git.traits.CloneOptionTrait>
               </traits>
             </scm>
           </retriever>
@@ -48,10 +70,14 @@
           <implicit>true</implicit>
           <allowVersionOverride>true</allowVersionOverride>
           <includeInChangesets>false</includeInChangesets>
+          <cachingConfiguration>
+            <refreshTimeMinutes>571</refreshTimeMinutes>
+            <excludedVersionsStr></excludedVersionsStr>
+          </cachingConfiguration>
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@1205.vceea_7b_972817">
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@1279.v5d711113020f">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@3.11.1">
         <settingsConfigId>jenkins-maven-global-settings-file</settingsConfigId>
@@ -79,7 +105,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.BuildStatusFilter plugin="view-job-filters@2.3">
+          <hudson.views.BuildStatusFilter plugin="view-job-filters@364.v48a_33389553d">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <neverBuilt>false</neverBuilt>
             <building>true</building>
@@ -108,7 +134,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@2.3">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@364.v48a_33389553d">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>false</unstable>
             <failed>true</failed>
@@ -138,7 +164,7 @@
           <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
         </jobNames>
         <jobFilters>
-          <hudson.views.JobStatusFilter plugin="view-job-filters@2.3">
+          <hudson.views.JobStatusFilter plugin="view-job-filters@364.v48a_33389553d">
             <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
             <unstable>true</unstable>
             <failed>false</failed>
