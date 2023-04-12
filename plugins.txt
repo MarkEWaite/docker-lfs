@@ -29,7 +29,7 @@ config-file-provider:3.11.1
 configuration-as-code:1625.v27444588cc3d
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
 copyartifact:686.v6fd37018d7c2
-credentials-binding:523.vd859a_4b_122e6
+credentials-binding:523.525.vb_72269281873
 credentials:1224.vc23ca_a_9a_2cb_0
 dark-theme:315.va_22e7d692ea_a
 data-tables-api:1.13.3-3
