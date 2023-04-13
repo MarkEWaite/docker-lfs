@@ -57,7 +57,7 @@ github-branch-source:1703.vd5a_2b_29c6cdc
 github-scm-filter-aged-refs:0.2.0
 github-scm-trait-commit-skip:0.4.0
 github:1.37.0
-gitlab-api:5.1.0-84.v491924123a_f7
+gitlab-api:5.2.0-86.v1ed41a_9cf486
 gitlab-branch-source:650.va_d1ce6d01959
 gitlab-plugin:1.7.10
 groovy-postbuild:2.5
