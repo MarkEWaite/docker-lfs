@@ -94,7 +94,7 @@ maven-plugin:3.21
 metrics:4.2.13-420.vea_2f17932dd6
 mina-sshd-api-common:2.9.2-62.v199162f0a_2f8
 mina-sshd-api-core:2.9.2-62.v199162f0a_2f8
-monitoring:1.92.0
+monitoring:1.94.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
 okhttp-api:4.10.0-132.v7a_7b_91cef39c
