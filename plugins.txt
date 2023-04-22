@@ -98,7 +98,7 @@ monitoring:1.94.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
 okhttp-api:4.10.0-132.v7a_7b_91cef39c
-parallel-test-executor:383.vde60119c849a
+parallel-test-executor:410.vb_85a_6ea_6cc7c
 parameterized-trigger:2.45
 pipeline-build-step:488.v8993df156e8d
 pipeline-github-lib:42.v0739460cda_c4
