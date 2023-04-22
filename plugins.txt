@@ -28,7 +28,7 @@ conditional-buildstep:1.4.2
 config-file-provider:3.11.1
 configuration-as-code:1625.v27444588cc3d
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
-copyartifact:697.v12c6e8c8fb_34
+copyartifact:698.v393f578eb_ddc
 credentials-binding:604.vb_64480b_c56ca_
 credentials:1224.vc23ca_a_9a_2cb_0
 dark-theme:315.va_22e7d692ea_a
@@ -59,7 +59,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.37.0
 gitlab-api:5.2.0-86.v1ed41a_9cf486
 gitlab-branch-source:650.va_d1ce6d01959
-gitlab-plugin:1.7.11
+gitlab-plugin:1.7.12
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -98,7 +98,7 @@ monitoring:1.94.0
 naginator:1.18.2
 nodelabelparameter:1.11.0
 okhttp-api:4.10.0-132.v7a_7b_91cef39c
-parallel-test-executor:383.vde60119c849a
+parallel-test-executor:410.vb_85a_6ea_6cc7c
 parameterized-trigger:2.45
 pipeline-build-step:488.v8993df156e8d
 pipeline-github-lib:42.v0739460cda_c4
@@ -107,7 +107,7 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:183.v9e27732d970f
 pipeline-groovy-lib:656.va_a_ceeb_6ffb_f7
 pipeline-input-step:466.v6d0a_5df34f81
-pipeline-maven:1279.v5d711113020f
+pipeline-maven:1290.vf21c81e8c57f
 pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2125.vddb_a_44a_d605e
 pipeline-model-definition:2.2125.vddb_a_44a_d605e
@@ -140,7 +140,7 @@ text-finder:1.24
 theme-manager:1.6
 throttle-concurrents:2.13
 timestamper:1.24
-token-macro:321.vd7cc1f2a_52c8
+token-macro:359.vb_cde11682e0c
 trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:145.va_e3ca_f8a_a_d23
@@ -149,7 +149,7 @@ warnings-ng:10.1.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:1010.vf7a_b_98e847c1
-workflow-cps:3653.v07ea_433c90b_4
+workflow-cps:3659.v582dc37621d8
 workflow-durable-task-step:1244.vee71f675dee6
 workflow-job:1289.vd1c337fd5354
 workflow-multibranch:733.v109046189126
