@@ -114,7 +114,7 @@ pipeline-model-definition:2.2125.vddb_a_44a_d605e
 pipeline-model-extensions:2.2125.vddb_a_44a_d605e
 pipeline-stage-step:305.ve96d0205c1c6
 pipeline-stage-tags-metadata:2.2125.vddb_a_44a_d605e
-pipeline-utility-steps:2.15.1
+pipeline-utility-steps:2.15.2
 plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2016.v003a_4f76e433
 plugin-util-api:3.2.0
