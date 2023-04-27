@@ -150,7 +150,7 @@ workflow-aggregator:596.v8c21c963d92d
 workflow-api:1208.v0cc7c6e0da_9e
 workflow-basic-steps:1017.vb_45b_302f0cea_
 workflow-cps:3659.v582dc37621d8
-workflow-durable-task-step:1244.vee71f675dee6
+workflow-durable-task-step:1246.v5524618ea_097
 workflow-job:1292.v27d8cc3e2602
 workflow-multibranch:746.v05814d19c001
 workflow-scm-step:408.v7d5b_135a_b_d49
