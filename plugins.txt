@@ -20,7 +20,7 @@ cloudbees-bitbucket-branch-source:800.va_b_b_9a_a_5035c1
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
-code-coverage-api:4.3.0
+code-coverage-api:4.4.0
 command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
