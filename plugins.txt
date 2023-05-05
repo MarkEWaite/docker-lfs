@@ -1,6 +1,6 @@
 PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc506.e9d3571a_3387
 adoptopenjdk:1.5
-analysis-model-api:11.1.0
+analysis-model-api:11.2.0
 ant:487.vd79d090d4ea_e
 antisamy-markup-formatter:159.v25b_c67cd35fb_
 apache-httpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5
@@ -37,7 +37,7 @@ description-setter:1.10
 display-url-api:2.3.7
 docker-commons:419.v8e3cd84ef49c
 docker-workflow:563.vd5d2e5c4007f
-durable-task:504.vb10d1ae5ba2f
+durable-task:506.v1b_3e14b_6f5da_
 echarts-api:5.4.0-3
 elastic-axis:409.v304cee6e7b_55
 embeddable-build-status:369.vb_a_68a_575a_b_11
@@ -81,7 +81,7 @@ jersey2-api:2.39.1-1
 jira:3.9
 jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.4-1
-jsch:0.1.55.61.va_e9ee26616e7
+jsch:0.2.8-65.v052c39de79b_2
 junit-realtime-test-reporter:102.v3f020960a_646
 junit:1198.ve38db_d1b_c975
 label-verifier:1.4
@@ -107,13 +107,13 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:183.v9e27732d970f
 pipeline-groovy-lib:656.va_a_ceeb_6ffb_f7
 pipeline-input-step:468.va_5db_051498a_4
-pipeline-maven:1293.v6c4d0ce54ee8
+pipeline-maven:1298.v43b_82f220a_e9
 pipeline-milestone-step:111.v449306f708b_7
-pipeline-model-api:2.2125.vddb_a_44a_d605e
-pipeline-model-definition:2.2125.vddb_a_44a_d605e
-pipeline-model-extensions:2.2125.vddb_a_44a_d605e
+pipeline-model-api:2.2131.vb_9788088fdb_5
+pipeline-model-definition:2.2131.vb_9788088fdb_5
+pipeline-model-extensions:2.2131.vb_9788088fdb_5
 pipeline-stage-step:305.ve96d0205c1c6
-pipeline-stage-tags-metadata:2.2125.vddb_a_44a_d605e
+pipeline-stage-tags-metadata:2.2131.vb_9788088fdb_5
 pipeline-utility-steps:2.15.2
 plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2016.v003a_4f76e433
@@ -133,7 +133,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.877.v365f5eb_a_b_eec
 sshd:3.275.v9e17c10f2571
 structs:324.va_f5d6774f3a_d
-support-core:1274.v097a_073e7733
+support-core:1278.vf26a_78c372f1
 swarm:3.40
 testng-plugin:730.v4c5283037693
 text-finder:1.24
