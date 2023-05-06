@@ -225,7 +225,6 @@ jenkins:
   quietPeriod: 5
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  systemMessage: "Jenkins for [Mark Waite](mailto:mark.earl.waite@gmail.com)"
   updateCenter:
     sites:
     - id: "default"
