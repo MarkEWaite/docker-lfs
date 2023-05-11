@@ -25,7 +25,7 @@ command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
-config-file-provider:3.11.1
+config-file-provider:938.ve2b_8a_591c596
 configuration-as-code:1625.v27444588cc3d
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
 copyartifact:698.v393f578eb_ddc
