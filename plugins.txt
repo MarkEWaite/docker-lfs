@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
 basic-branch-build-strategies:71.vc1421f89888e
-bootstrap5-api:5.2.2-2
+bootstrap5-api:5.2.2-3
 bouncycastle-api:2.27
 branch-api:2.1071.v1a_188a_562481
 build-blocker-plugin:1.7.8
@@ -20,17 +20,17 @@ cloudbees-bitbucket-branch-source:800.va_b_b_9a_a_5035c1
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
-code-coverage-api:4.4.0
+code-coverage-api:4.5.0
 command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
-config-file-provider:3.11.1
+config-file-provider:938.ve2b_8a_591c596
 configuration-as-code:1625.v27444588cc3d
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
 copyartifact:698.v393f578eb_ddc
 credentials-binding:604.vb_64480b_c56ca_
-credentials:1236.v31e44e6060c0
+credentials:1254.vb_96f366e7b_a_d
 dark-theme:315.va_22e7d692ea_a
 data-tables-api:1.13.3-3
 description-setter:1.10
@@ -50,7 +50,7 @@ git-client:4.2.0
 git-forensics:2.0.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
-git:incrementals;org.jenkins-ci.plugins;5.0.2-rc5074.9c5615b_7952b_
+git:incrementals;org.jenkins-ci.plugins;5.0.2-rc5078.0302159a_ea_a_e
 gitea:1.4.5
 github-api:1.303-417.ve35d9dd78549
 github-branch-source:1703.vd5a_2b_29c6cdc
@@ -59,7 +59,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.37.0
 gitlab-api:5.2.0-86.v1ed41a_9cf486
 gitlab-branch-source:659.va_685a_51fda_db_
-gitlab-plugin:1.7.12
+gitlab-plugin:1.7.13
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.6.4-1
 jsch:0.2.8-65.v052c39de79b_2
 junit-realtime-test-reporter:102.v3f020960a_646
-junit:1198.ve38db_d1b_c975
+junit:1202.v79a_986785076
 label-verifier:1.4
 mailer:448.v5b_97805e3767
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -94,7 +94,7 @@ maven-plugin:3.22
 metrics:4.2.13-420.vea_2f17932dd6
 mina-sshd-api-common:2.9.2-62.v199162f0a_2f8
 mina-sshd-api-core:2.9.2-62.v199162f0a_2f8
-monitoring:1.94.0
+monitoring:1.94.1
 naginator:1.18.2
 nodelabelparameter:1.11.0
 okhttp-api:4.10.0-132.v7a_7b_91cef39c
@@ -133,7 +133,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.877.v365f5eb_a_b_eec
 sshd:3.275.v9e17c10f2571
 structs:324.va_f5d6774f3a_d
-support-core:1278.vf26a_78c372f1
+support-core:1283.v9ddb_0284a_00c
 swarm:3.40
 testng-plugin:730.v4c5283037693
 text-finder:1.24
@@ -147,7 +147,7 @@ versioncolumn:145.va_e3ca_f8a_a_d23
 view-job-filters:364.v48a_33389553d
 warnings-ng:10.1.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1208.v0cc7c6e0da_9e
+workflow-api:1213.v646def1087f9
 workflow-basic-steps:1017.vb_45b_302f0cea_
 workflow-cps:3659.v582dc37621d8
 workflow-durable-task-step:1246.v5524618ea_097
