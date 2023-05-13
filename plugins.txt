@@ -104,7 +104,7 @@ pipeline-build-step:491.v1fec530da_858
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-147.3206e8179b1c
 pipeline-graph-analysis:202.va_d268e64deb_3
-pipeline-graph-view:190.vb_6fdf3c1ccfa
+pipeline-graph-view:191.vc6da_9d3eb_70a
 pipeline-groovy-lib:656.va_a_ceeb_6ffb_f7
 pipeline-input-step:468.va_5db_051498a_4
 pipeline-maven:1298.v43b_82f220a_e9
