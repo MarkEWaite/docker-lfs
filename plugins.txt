@@ -80,7 +80,7 @@ jdk-tool:66.vd8fa_64ee91b_d
 jersey2-api:2.39.1-1
 jira:3.9
 jjwt-api:0.11.5-77.v646c772fddb_0
-jquery3-api:3.6.4-1
+jquery3-api:3.7.0-1
 jsch:0.2.8-65.v052c39de79b_2
 junit-realtime-test-reporter:102.v3f020960a_646
 junit:1202.v79a_986785076
