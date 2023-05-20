@@ -32,7 +32,7 @@ copyartifact:702.va_c09cb_6e51cf
 credentials-binding:604.vb_64480b_c56ca_
 credentials:1254.vb_96f366e7b_a_d
 dark-theme:315.va_22e7d692ea_a
-data-tables-api:1.13.3-3
+data-tables-api:1.13.3-4
 description-setter:1.10
 display-url-api:2.3.7
 docker-commons:419.v8e3cd84ef49c
