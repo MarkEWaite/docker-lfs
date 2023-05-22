@@ -67,7 +67,7 @@ http_request:1.16
 ignore-committer-strategy:1.0.4
 implied-labels:212.vf913fa_23080e
 instance-identity:142.v04572ca_5b_265
-ionicons-api:45.vf54fca_5d2154
+ionicons-api:56.v1b_1c8c49374e
 jackson2-api:2.15.1-344.v6eb_55303dc3e
 jacoco:3.3.3
 jakarta-activation-api:2.0.1-3
