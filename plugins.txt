@@ -8,7 +8,7 @@ authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
 basic-branch-build-strategies:71.vc1421f89888e
 bootstrap5-api:5.2.2-4
-bouncycastle-api:2.27
+bouncycastle-api:2.28
 branch-api:2.1092.vda_3c2a_a_f0c11
 build-blocker-plugin:1.7.8
 build-name-setter:2.2.0
@@ -20,7 +20,7 @@ cloudbees-bitbucket-branch-source:800.va_b_b_9a_a_5035c1
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
-code-coverage-api:4.5.0
+code-coverage-api:4.6.0
 command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
@@ -28,7 +28,7 @@ conditional-buildstep:1.4.2
 config-file-provider:938.ve2b_8a_591c596
 configuration-as-code:1625.v27444588cc3d
 configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
-copyartifact:702.va_c09cb_6e51cf
+copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:1254.vb_96f366e7b_a_d
 dark-theme:315.va_22e7d692ea_a
@@ -40,7 +40,7 @@ docker-workflow:563.vd5d2e5c4007f
 durable-task:507.v050055d0cb_dd
 echarts-api:5.4.0-4
 elastic-axis:409.v304cee6e7b_55
-embeddable-build-status:369.vb_a_68a_575a_b_11
+embeddable-build-status:379.v1825c1804368
 envinject-api:1.199.v3ce31253ed13
 envinject:2.901.v0038b_6471582
 external-monitor-job:203.v683c09d993b_9
@@ -67,7 +67,7 @@ http_request:1.16
 ignore-committer-strategy:1.0.4
 implied-labels:212.vf913fa_23080e
 instance-identity:142.v04572ca_5b_265
-ionicons-api:45.vf54fca_5d2154
+ionicons-api:56.v1b_1c8c49374e
 jackson2-api:2.15.1-344.v6eb_55303dc3e
 jacoco:3.3.3
 jakarta-activation-api:2.0.1-3
@@ -121,7 +121,7 @@ plugin-util-api:3.2.1
 pollscm:1.3.1
 popper2-api:2.11.6-2
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-5
+prism-api:1.29.0-6
 promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.22
 run-condition:1.5
@@ -135,7 +135,7 @@ sshd:3.303.vefc7119b_ec23
 structs:324.va_f5d6774f3a_d
 support-core:1283.v9ddb_0284a_00c
 swarm:3.40
-testng-plugin:730.732.v959a_3a_a_eb_a_72
+testng-plugin:789.vfc860d1de85a_
 text-finder:1.24
 theme-manager:193.vcef22f6c5f2b_
 throttle-concurrents:2.13
@@ -157,4 +157,4 @@ workflow-scm-step:408.v7d5b_135a_b_d49
 workflow-step-api:639.v6eca_cd8c04a_a_
 workflow-support:839.v35e2736cfd5c
 ws-cleanup:0.45
-xshell:181.v88f274d9969c
+xshell:197.vccb_e4cf4d377
