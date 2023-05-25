@@ -85,7 +85,7 @@ jsch:0.2.8-65.v052c39de79b_2
 junit-realtime-test-reporter:102.v3f020960a_646
 junit:1202.v79a_986785076
 label-verifier:1.4
-mailer:448.v5b_97805e3767
+mailer:457.v3f72cb_e015e5
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:77.vf4787624a_796
 matrix-auth:3.1.7
