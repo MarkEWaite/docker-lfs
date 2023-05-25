@@ -119,7 +119,6 @@ plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2064.v2a_28b_50c8697
 plugin-util-api:3.2.1
 pollscm:1.3.1
-popper2-api:2.11.6-2
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-6
 promoted-builds:892.vd6219fc0a_efb
