@@ -27,7 +27,7 @@ commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
 config-file-provider:938.ve2b_8a_591c596
 configuration-as-code:1625.v27444588cc3d
-configurationslicing:incrementals;org.jenkins-ci.plugins;539.va_85da_25f3074
+configurationslicing:548.ve92d48e66b_f8
 copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:1254.vb_96f366e7b_a_d
@@ -119,7 +119,6 @@ plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2064.v2a_28b_50c8697
 plugin-util-api:3.2.1
 pollscm:1.3.1
-popper2-api:2.11.6-2
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-6
 promoted-builds:892.vd6219fc0a_efb
