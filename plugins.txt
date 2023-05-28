@@ -125,7 +125,7 @@ promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.22
 run-condition:1.5
 scm-api:672.v64378a_b_20c60
-script-security:1244.ve463715a_f89c
+script-security:incrementals;org.jenkins-ci.plugins;1248.v2954f1ed9b_ce
 snakeyaml-api:1.33-95.va_b_a_e3e47b_fa_4
 ssh-agent:333.v878b_53c89511
 ssh-credentials:305.v8f4381501156
