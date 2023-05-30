@@ -16,7 +16,7 @@ build-timeout:1.31
 buildresult-trigger:0.18
 caffeine-api:3.1.6-115.vb_8b_b_328e59d8
 checks-api:2.0.0
-cloudbees-bitbucket-branch-source:800.va_b_b_9a_a_5035c1
+cloudbees-bitbucket-branch-source:804.v8b_0642650b_d2
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
@@ -46,7 +46,7 @@ envinject:2.901.v0038b_6471582
 external-monitor-job:203.v683c09d993b_9
 font-awesome-api:6.3.0-2
 forensics-api:2.2.0
-git-client:incrementals;org.jenkins-ci.plugins;4.2.1-rc3395.93820341b_e05
+git-client:4.3.0
 git-forensics:2.0.0
 git-parameter:0.9.18
 git-server:99.va_0826a_b_cdfa_d
@@ -83,15 +83,15 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.7.0-1
 jsch:0.2.8-65.v052c39de79b_2
 junit-realtime-test-reporter:102.v3f020960a_646
-junit:1202.v79a_986785076
+junit:1207.va_09d5100410f
 label-verifier:1.4
 mailer:457.v3f72cb_e015e5
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:77.vf4787624a_796
-matrix-auth:3.1.7
+matrix-auth:3.1.8
 matrix-project:789.v57a_725b_63c79
 maven-plugin:3.22
-metrics:4.2.13-420.vea_2f17932dd6
+metrics:4.2.18-438.v0ede325a_4c68
 mina-sshd-api-common:2.10.0-69.v28e3e36d18eb_
 mina-sshd-api-core:2.10.0-69.v28e3e36d18eb_
 monitoring:1.94.1
