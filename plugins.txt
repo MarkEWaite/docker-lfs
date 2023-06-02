@@ -38,7 +38,7 @@ display-url-api:2.3.7
 docker-commons:419.v8e3cd84ef49c
 docker-workflow:563.vd5d2e5c4007f
 durable-task:507.v050055d0cb_dd
-echarts-api:5.4.0-4
+echarts-api:5.4.0-5
 elastic-axis:409.v304cee6e7b_55
 embeddable-build-status:379.v1825c1804368
 envinject-api:1.199.v3ce31253ed13
