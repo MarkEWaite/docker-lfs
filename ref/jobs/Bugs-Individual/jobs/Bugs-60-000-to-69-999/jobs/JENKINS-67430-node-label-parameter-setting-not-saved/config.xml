@@ -12,7 +12,6 @@ Tim Jacomb fixed my mistake with [PR-77](https://github.com/jenkinsci/nodelabelp
           <name>NODES_TO_USE</name>
           <description>Nodes used to run the job</description>
           <allowedSlaves>
-            <string>aws-arm-ubuntu-18-e</string>
             <string>debian11-a-jagent</string>
             <string>freebsd-13-a-jagent</string>
             <string>freebsd-13-b-jagent</string>
@@ -24,7 +23,6 @@ Tim Jacomb fixed my mistake with [PR-77](https://github.com/jenkinsci/nodelabelp
             <string>gcp-debian-10-b</string>
           </allowedSlaves>
           <defaultSlaves>
-            <string>aws-arm-ubuntu-18-e</string>
             <string>debian11-a-jagent</string>
           </defaultSlaves>
           <triggerIfResult>allowMultiSelectionForConcurrentBuilds</triggerIfResult>
