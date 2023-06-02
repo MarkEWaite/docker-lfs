@@ -53,7 +53,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:5.0.2
 gitea:1.4.5
 github-api:1.314-431.v78d72a_3fe4c3
-github-branch-source:1703.vd5a_2b_29c6cdc
+github-branch-source:incrementals;org.jenkins-ci.plugins;1716.v9e456e157e36
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.1
