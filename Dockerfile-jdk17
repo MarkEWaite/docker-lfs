@@ -11,6 +11,8 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
         wget \
     && dnf clean --disableplugin=subscription-manager all
 
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
+
 USER jenkins
 
 # Check that expected utilities are available in the image
