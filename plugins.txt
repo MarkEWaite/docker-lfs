@@ -1,4 +1,4 @@
-PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc667.28ddb_f715a_40
+PrioritySorter:incrementals;org.jenkins-ci.plugins;4.1.1-rc668.29a_cc42d49f5
 adoptopenjdk:1.5
 analysis-model-api:11.2.0
 ant:487.vd79d090d4ea_e
