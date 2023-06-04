@@ -95,7 +95,7 @@ metrics:4.2.18-438.v0ede325a_4c68
 mina-sshd-api-common:2.10.0-69.v28e3e36d18eb_
 mina-sshd-api-core:2.10.0-69.v28e3e36d18eb_
 monitoring:1.94.1
-naginator:1.18.2
+naginator:1.19.1
 nodelabelparameter:1.12.0
 okhttp-api:4.10.0-132.v7a_7b_91cef39c
 parallel-test-executor:418.v24f9a_141d726
