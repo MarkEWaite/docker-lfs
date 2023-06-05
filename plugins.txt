@@ -53,7 +53,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:incrementals;org.jenkins-ci.plugins;5.1.0-rc5094.7dc78c47163a_
 gitea:1.4.5
 github-api:1.314-431.v78d72a_3fe4c3
-github-branch-source:incrementals;org.jenkins-ci.plugins;1716.v9e456e157e36
+github-branch-source:1725.vd391eef681a_e
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.1
