@@ -68,7 +68,7 @@ ignore-committer-strategy:1.0.4
 implied-labels:228.v63b_3f8443d4e
 instance-identity:142.v04572ca_5b_265
 ionicons-api:56.v1b_1c8c49374e
-jackson2-api:2.15.1-344.v6eb_55303dc3e
+jackson2-api:2.15.2-350.v0c2f3f8fc595
 jacoco:3.3.3
 jakarta-activation-api:2.0.1-3
 jakarta-mail-api:2.0.1-3
