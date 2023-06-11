@@ -66,7 +66,7 @@ handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.16
 ignore-committer-strategy:1.0.4
 implied-labels:228.v63b_3f8443d4e
-instance-identity:142.v04572ca_5b_265
+instance-identity:173.va_37c494ec4e5
 ionicons-api:56.v1b_1c8c49374e
 jackson2-api:2.15.2-350.v0c2f3f8fc595
 jacoco:3.3.3
