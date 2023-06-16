@@ -16,7 +16,7 @@ build-timeout:1.31
 buildresult-trigger:0.18
 caffeine-api:3.1.6-115.vb_8b_b_328e59d8
 checks-api:2.0.0
-cloudbees-bitbucket-branch-source:805.v7f97d29dc0f5
+cloudbees-bitbucket-branch-source:809.vc1d904b_30426
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:336.v4d00382fe22c
 clover:4.13.0
@@ -31,7 +31,7 @@ configurationslicing:548.ve92d48e66b_f8
 copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
-dark-theme:315.va_22e7d692ea_a
+dark-theme:336.v02165cd8c2ee
 data-tables-api:1.13.4-2
 description-setter:1.10
 display-url-api:2.3.7
@@ -57,8 +57,8 @@ github-branch-source:1728.v859147241f49
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.1
-gitlab-api:5.2.0-86.v1ed41a_9cf486
-gitlab-branch-source:660.vd45c0f4c0042
+gitlab-api:5.3.0-88.vf8787b_92d679
+gitlab-branch-source:663.v2602c3e6376d
 gitlab-plugin:1.7.14
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
@@ -124,7 +124,7 @@ prism-api:1.29.0-7
 promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.22
 run-condition:1.5
-scm-api:672.v64378a_b_20c60
+scm-api:676.v886669a_199a_a_
 script-security:1251.vfe552ed55f8d
 snakeyaml-api:1.33-95.va_b_a_e3e47b_fa_4
 ssh-agent:333.v878b_53c89511
@@ -146,7 +146,7 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:364.v48a_33389553d
 warnings-ng:10.2.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1213.v646def1087f9
+workflow-api:1215.v2b_ee3e1b_dd39
 workflow-basic-steps:1017.vb_45b_302f0cea_
 workflow-cps:3691.v28b_14c465a_b_b_
 workflow-durable-task-step:1247.v7f9dfea_b_4fd0
