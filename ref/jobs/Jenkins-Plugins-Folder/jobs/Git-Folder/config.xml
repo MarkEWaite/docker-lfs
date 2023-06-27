@@ -44,7 +44,7 @@
         </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
       </libraries>
     </org.jenkinsci.plugins.workflow.libs.FolderLibraries>
-    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.9.2">
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.9.3">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <override>false</override>
