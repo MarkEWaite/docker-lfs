@@ -18,7 +18,7 @@
       <dockerLabel></dockerLabel>
       <registry plugin="docker-commons@1.17"/>
     </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
-    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.9.2">
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.9.3">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <override>false</override>
