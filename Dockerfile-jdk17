@@ -1,23 +1,26 @@
-FROM jenkins/jenkins:2.412-jdk17
+FROM jenkins/jenkins:2.412-rhel-ubi9-jdk17
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-# hadolint ignore=DL3008
-RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
-  gnupg \
-  make \
-  procps \
-  wget \
-  && rm -rf /var/lib/apt/lists/*
+RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y \
+        gnupg \
+        make \
+        procps \
+        wget \
+    && dnf clean --disableplugin=subscription-manager all
+
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
+
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
 USER jenkins
 
 # Check that expected utilities are available in the image
-RUN test -x /usr/bin/pgrep
-RUN test -x /usr/local/bin/git-lfs || test -x /usr/bin/git-lfs
-RUN test -x /usr/bin/wget
+RUN test -x /usr/bin/pgrep && \
+    test -x /usr/bin/wget && \
+    test -x /usr/bin/git-lfs
 
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
