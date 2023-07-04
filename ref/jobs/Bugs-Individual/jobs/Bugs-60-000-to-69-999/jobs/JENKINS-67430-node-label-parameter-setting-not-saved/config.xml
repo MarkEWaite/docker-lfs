@@ -13,14 +13,16 @@ Tim Jacomb fixed my mistake with [PR-77](https://github.com/jenkinsci/nodelabelp
           <description>Nodes used to run the job</description>
           <allowedSlaves>
             <string>debian11-a-jagent</string>
+            <string>debian12-a-jagent</string>
             <string>freebsd-13-a-jagent</string>
             <string>freebsd-13-b-jagent</string>
             <string>freebsd-13-c-jagent</string>
-            <string>freebsd12-d-jagent</string>
-            <string>gcp-centos-7-a</string>
-            <string>gcp-centos-7-d</string>
-            <string>gcp-debian-10-a</string>
-            <string>gcp-debian-10-b</string>
+            <string>gcp-debian-11-a</string>
+            <string>gcp-debain-11-b</string>
+            <string>gcp-debian-12-a</string>
+            <string>gcp-debain-12-b</string>
+            <string>gcp-debian-testing-a</string>
+            <string>gcp-debain-testing-b</string>
           </allowedSlaves>
           <defaultSlaves>
             <string>debian11-a-jagent</string>

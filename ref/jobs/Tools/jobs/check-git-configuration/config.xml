@@ -1,0 +1,43 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1316.vd2290d3341a_f">
+  <actions/>
+  <description>Check git configuration on all online agents</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3697.vb_470e454c232">
+    <script>def nodes = nodesByLabel label: &apos;windows || !windows&apos;
+
+Map tasks = [:]
+
+for (int i = 0; i &lt; nodes.size(); i++) {
+    def label = nodes[i]
+    def stageName = &apos;Git- &apos; + label.replaceAll(&apos;(-jagent)|(-ssh)|(-mwaite)|(.markwaite.net)|(-beemarkwaite)|(-jenkins)&apos;, &apos;&apos;)
+    tasks[label] = {
+        node(label) {
+            stage(stageName) {
+                if (isUnix()) {
+                    sh &apos;git config --system --list&apos;
+                    sh &apos;git config --global --list&apos;
+                    sh &apos;git config          --list&apos;
+                } else {
+                    bat &apos;git config --system --list&apos;
+                    bat &apos;git config --global --list&apos;
+                    bat &apos;git config          --list&apos;
+                }
+            }
+            stage(&apos;done&apos;) {
+                echo &apos;Done stage for graph viewer workaround&apos;
+            }
+        }
+    }
+}
+
+timeout(time: 3, unit: &apos;MINUTES&apos;) {
+    parallel(tasks)
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
