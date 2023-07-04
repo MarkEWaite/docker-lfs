@@ -6,7 +6,7 @@ antisamy-markup-formatter:159.v25b_c67cd35fb_
 apache-httpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
-basic-branch-build-strategies:71.vc1421f89888e
+basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.0-1
 bouncycastle-api:2.28
 branch-api:2.1122.v09cb_8ea_8a_724
@@ -27,7 +27,6 @@ commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
 config-file-provider:938.ve2b_8a_591c596
 configuration-as-code:1647.ve39ca_b_829b_42
-configurationslicing:548.ve92d48e66b_f8
 copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
@@ -40,7 +39,7 @@ docker-workflow:563.vd5d2e5c4007f
 durable-task:507.v050055d0cb_dd
 echarts-api:5.4.0-5
 elastic-axis:464.va_7ed499b_9d75
-embeddable-build-status:385.vc95f94e91fb_3
+embeddable-build-status:395.v96b_260870c38
 envinject-api:1.199.v3ce31253ed13
 envinject:2.901.v0038b_6471582
 external-monitor-job:206.v9a_94ff0b_4a_10
@@ -63,7 +62,7 @@ gitlab-plugin:1.7.14
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
-http_request:1.17
+http_request:1.18
 ignore-committer-strategy:1.0.4
 implied-labels:228.v63b_3f8443d4e
 instance-identity:173.va_37c494ec4e5
