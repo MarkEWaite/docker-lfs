@@ -6,7 +6,7 @@ antisamy-markup-formatter:159.v25b_c67cd35fb_
 apache-httpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
-basic-branch-build-strategies:incrementals;org.jenkins-ci.plugins;77.vb_92edef611b_5
+basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.0-1
 bouncycastle-api:2.28
 branch-api:2.1122.v09cb_8ea_8a_724
