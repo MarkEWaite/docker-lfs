@@ -1,5 +1,5 @@
 ARG JAVA_VERSION="17.0.7_7"
-ARG BULLSEYE_TAG=20230612
+ARG BULLSEYE_TAG=20230703
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-focal as jre-build
 
 RUN jlink \
@@ -25,6 +25,7 @@ RUN apt-get update \
     ssh-client \
     tini \
     unzip \
+    tzdata \
   && rm -rf /var/lib/apt/lists/*
 
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh -o /tmp/script.deb.sh \
