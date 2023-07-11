@@ -25,7 +25,7 @@ command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
-config-file-provider:938.ve2b_8a_591c596
+config-file-provider:951.v0461b_87b_721b_
 configuration-as-code:1647.ve39ca_b_829b_42
 copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
@@ -36,7 +36,7 @@ description-setter:1.10
 display-url-api:2.3.7
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:563.vd5d2e5c4007f
-durable-task:507.v050055d0cb_dd
+durable-task:510.v324450f8dca_4
 echarts-api:5.4.0-5
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:395.v96b_260870c38
