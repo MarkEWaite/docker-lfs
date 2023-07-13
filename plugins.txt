@@ -31,7 +31,7 @@ copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
 dark-theme:336.v02165cd8c2ee
-data-tables-api:1.13.4-3
+data-tables-api:1.13.5-1
 description-setter:1.10
 display-url-api:2.3.7
 docker-commons:439.va_3cb_0a_6a_fb_29
