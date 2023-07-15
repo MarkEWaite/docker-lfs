@@ -31,7 +31,7 @@ copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
 dark-theme:336.v02165cd8c2ee
-data-tables-api:1.13.4-3
+data-tables-api:1.13.5-1
 description-setter:1.10
 display-url-api:2.3.7
 docker-commons:439.va_3cb_0a_6a_fb_29
@@ -42,7 +42,7 @@ elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:395.v96b_260870c38
 envinject-api:1.199.v3ce31253ed13
 envinject:2.901.v0038b_6471582
-external-monitor-job:206.v9a_94ff0b_4a_10
+external-monitor-job:207.v98a_a_37a_85525
 font-awesome-api:6.4.0-1
 forensics-api:2.3.0
 git-client:4.4.0
@@ -145,7 +145,7 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:364.v48a_33389553d
 warnings-ng:10.2.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1223.v41b_0279c361a
+workflow-api:1232.v1679fa_2f0f76
 workflow-basic-steps:1017.vb_45b_302f0cea_
 workflow-cps:3705.va_6a_c2775a_c17
 workflow-durable-task-step:1247.v7f9dfea_b_4fd0
