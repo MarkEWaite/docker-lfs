@@ -16,9 +16,9 @@ build-timeout:1.31
 buildresult-trigger:0.18
 caffeine-api:3.1.6-115.vb_8b_b_328e59d8
 checks-api:2.0.0
-cloudbees-bitbucket-branch-source:820.v30b_e8c1e36f3
+cloudbees-bitbucket-branch-source:825.va_6a_dc46a_f97d
 cloudbees-folder:6.815.v0dd5a_cb_40e0e
-cloudbees-jenkins-advisor:336.v4d00382fe22c
+cloudbees-jenkins-advisor:340.v336f61c216f6
 clover:4.13.0
 code-coverage-api:4.7.0
 command-launcher:100.v2f6722292ee8
@@ -43,7 +43,7 @@ embeddable-build-status:395.v96b_260870c38
 envinject-api:1.199.v3ce31253ed13
 envinject:2.901.v0038b_6471582
 external-monitor-job:207.v98a_a_37a_85525
-font-awesome-api:6.4.0-1
+font-awesome-api:6.4.0-2
 forensics-api:2.3.0
 git-client:4.4.0
 git-forensics:2.0.0
@@ -87,7 +87,7 @@ label-verifier:1.4
 mailer:457.v3f72cb_e015e5
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:95.v17a_965e696ee
-matrix-auth:3.1.9
+matrix-auth:3.1.10
 matrix-project:789.v57a_725b_63c79
 maven-plugin:3.22
 metrics:4.2.18-439.v86a_20b_a_8318b_
@@ -108,11 +108,11 @@ pipeline-groovy-lib:656.va_a_ceeb_6ffb_f7
 pipeline-input-step:468.va_5db_051498a_4
 pipeline-maven:1298.v43b_82f220a_e9
 pipeline-milestone-step:111.v449306f708b_7
-pipeline-model-api:2.2141.v5402e818a_779
-pipeline-model-definition:2.2141.v5402e818a_779
-pipeline-model-extensions:2.2141.v5402e818a_779
+pipeline-model-api:2.2144.v077a_d1928a_40
+pipeline-model-definition:2.2144.v077a_d1928a_40
+pipeline-model-extensions:2.2144.v077a_d1928a_40
 pipeline-stage-step:305.ve96d0205c1c6
-pipeline-stage-tags-metadata:2.2141.v5402e818a_779
+pipeline-stage-tags-metadata:2.2144.v077a_d1928a_40
 pipeline-utility-steps:2.16.0
 plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2095.ve47c8663f6a_b_
