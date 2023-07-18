@@ -87,7 +87,7 @@ label-verifier:1.4
 mailer:457.v3f72cb_e015e5
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:95.v17a_965e696ee
-matrix-auth:3.1.9
+matrix-auth:3.1.10
 matrix-project:789.v57a_725b_63c79
 maven-plugin:3.22
 metrics:4.2.18-439.v86a_20b_a_8318b_
