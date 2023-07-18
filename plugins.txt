@@ -43,7 +43,7 @@ embeddable-build-status:395.v96b_260870c38
 envinject-api:1.199.v3ce31253ed13
 envinject:2.901.v0038b_6471582
 external-monitor-job:207.v98a_a_37a_85525
-font-awesome-api:6.4.0-1
+font-awesome-api:6.4.0-2
 forensics-api:2.3.0
 git-client:4.4.0
 git-forensics:2.0.0
