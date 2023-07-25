@@ -65,7 +65,7 @@ def get_jenkins_home_volume_map():
 
 def get_git_reference_repo_volume_map():
     lhs = os.path.expanduser("~/git/bare/")
-    rhs = os.path.expanduser("/var/lib/git/mwaite")
+    rhs = os.path.expanduser("/var/cache/git/mwaite")
     return lhs + ":" + rhs
 
 #-----------------------------------------------------------------------
@@ -84,8 +84,8 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk17" in docker_build.get_current_branch() or "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-17.0.7+7"
-    return "/home/jagent/tools/jdk-11.0.19+7"
+        return "/home/jagent/tools/jdk-17.0.8+7"
+    return "/home/jagent/tools/jdk-11.0.20+8"
 
 #-----------------------------------------------------------------------
 
