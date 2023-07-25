@@ -134,12 +134,12 @@ tool:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-11.0.19+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz"
+              subdir: "jdk-11.0.20+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-11.0.19+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.19_7.zip"
+              subdir: "jdk-11.0.20+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.20_8.zip"
           - command:
               command: "true"
               label: "cloud"
@@ -149,7 +149,7 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.19+7"
+              id: "jdk-11.0.20+8"
     - name: "jdk17"
       properties:
       - installSource:
