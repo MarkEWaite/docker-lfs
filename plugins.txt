@@ -25,8 +25,8 @@ command-launcher:100.v2f6722292ee8
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
-config-file-provider:951.v0461b_87b_721b_
-configuration-as-code:1647.ve39ca_b_829b_42
+config-file-provider:952.va_544a_6234b_46
+configuration-as-code:1670.v564dc8b_982d0
 copyartifact:705.v5295cffec284
 credentials-binding:604.vb_64480b_c56ca_
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
@@ -58,7 +58,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.37.1
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
 gitlab-branch-source:664.v877fdc293c89
-gitlab-plugin:1.7.14
+gitlab-plugin:1.7.15
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
@@ -145,9 +145,9 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:364.v48a_33389553d
 warnings-ng:10.2.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1232.v1679fa_2f0f76
+workflow-api:1241.v4edc8b_44933b_
 workflow-basic-steps:1017.vb_45b_302f0cea_
-workflow-cps:3705.va_6a_c2775a_c17
+workflow-cps:3717.va_180a_fe9d3cd
 workflow-durable-task-step:1247.v7f9dfea_b_4fd0
 workflow-job:1316.vd2290d3341a_f
 workflow-multibranch:756.v891d88f2cd46
