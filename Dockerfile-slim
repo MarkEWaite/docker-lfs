@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.415-slim
+FROM jenkins/jenkins:2.416-slim
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -12,14 +12,12 @@ RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommend
   wget \
   && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
-
 USER jenkins
 
 # Check that expected utilities are available in the image
-RUN test -x /usr/bin/pgrep && \
-    test -x /usr/bin/wget && \
-    test -x /usr/bin/git-lfs
+RUN test -x /usr/bin/pgrep
+RUN test -x /usr/local/bin/git-lfs || test -x /usr/bin/git-lfs
+RUN test -x /usr/bin/wget
 
 # $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins
