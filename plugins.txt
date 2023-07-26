@@ -28,7 +28,7 @@ conditional-buildstep:1.4.2
 config-file-provider:952.va_544a_6234b_46
 configuration-as-code:1670.v564dc8b_982d0
 copyartifact:705.v5295cffec284
-credentials-binding:604.vb_64480b_c56ca_
+credentials-binding:621.v58c0fb_d285a_c
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
 dark-theme:336.v02165cd8c2ee
 data-tables-api:1.13.5-1
