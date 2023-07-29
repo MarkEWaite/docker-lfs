@@ -11,7 +11,7 @@ bootstrap5-api:5.3.0-1
 bouncycastle-api:2.29
 branch-api:2.1122.v09cb_8ea_8a_724
 build-blocker-plugin:1.7.8
-build-name-setter:2.2.1
+build-name-setter:2.3.0
 build-timeout:1.31
 buildresult-trigger:0.18
 caffeine-api:3.1.6-115.vb_8b_b_328e59d8
@@ -28,7 +28,7 @@ conditional-buildstep:1.4.2
 config-file-provider:952.va_544a_6234b_46
 configuration-as-code:1670.v564dc8b_982d0
 copyartifact:705.v5295cffec284
-credentials-binding:621.v58c0fb_d285a_c
+credentials-binding:631.v861c06d062b_4
 credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
 dark-theme:336.v02165cd8c2ee
 data-tables-api:1.13.5-1
@@ -36,12 +36,12 @@ description-setter:1.10
 display-url-api:2.3.7
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:563.vd5d2e5c4007f
-durable-task:510.v324450f8dca_4
+durable-task:513.vc48a_a_075a_d93
 echarts-api:5.4.0-5
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:395.v96b_260870c38
 envinject-api:1.199.v3ce31253ed13
-envinject:2.901.v0038b_6471582
+envinject:2.908.v66a_774b_31d93
 external-monitor-job:207.v98a_a_37a_85525
 font-awesome-api:6.4.0-2
 forensics-api:2.3.0
@@ -99,7 +99,7 @@ nodelabelparameter:1.12.0
 okhttp-api:4.11.0-145.vcb_8de402ef81
 parallel-test-executor:418.v24f9a_141d726
 parameterized-trigger:2.46
-pipeline-build-step:496.v2449a_9a_221f2
+pipeline-build-step:505.v5f0844d8d126
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-147.3206e8179b1c
 pipeline-graph-analysis:202.va_d268e64deb_3
@@ -145,10 +145,10 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:364.v48a_33389553d
 warnings-ng:10.2.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1241.v4edc8b_44933b_
+workflow-api:1251.vd4889a_b_0a_065
 workflow-basic-steps:1017.vb_45b_302f0cea_
-workflow-cps:3722.v85ce2a_c6240b_
-workflow-durable-task-step:1247.v7f9dfea_b_4fd0
+workflow-cps:3726.v83f8cff396c9
+workflow-durable-task-step:1278.v94b_dc2b_50c6f
 workflow-job:1316.vd2290d3341a_f
 workflow-multibranch:756.v891d88f2cd46
 workflow-scm-step:415.v434365564324
