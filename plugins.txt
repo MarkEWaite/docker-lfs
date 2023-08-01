@@ -1,6 +1,6 @@
 PrioritySorter:5.0.0
 adoptopenjdk:1.5
-analysis-model-api:11.4.3
+analysis-model-api:11.5.1
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:159.v25b_c67cd35fb_
 apache-httpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5
@@ -29,7 +29,7 @@ config-file-provider:952.va_544a_6234b_46
 configuration-as-code:1670.v564dc8b_982d0
 copyartifact:705.v5295cffec284
 credentials-binding:631.v861c06d062b_4
-credentials:incrementals;org.jenkins-ci.plugins;1272.v5d89f693b_741
+credentials:1271.v54b_1c2c6388a_
 dark-theme:336.v02165cd8c2ee
 data-tables-api:1.13.5-1
 description-setter:1.10
@@ -93,7 +93,7 @@ maven-plugin:3.22
 metrics:4.2.18-439.v86a_20b_a_8318b_
 mina-sshd-api-common:2.10.0-69.v28e3e36d18eb_
 mina-sshd-api-core:2.10.0-69.v28e3e36d18eb_
-monitoring:1.94.1
+monitoring:1.95.0
 naginator:1.19.2
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-145.vcb_8de402ef81
@@ -131,7 +131,7 @@ ssh-credentials:305.v8f4381501156
 ssh-slaves:2.877.v365f5eb_a_b_eec
 sshd:3.303.vefc7119b_ec23
 structs:324.va_f5d6774f3a_d
-support-core:1328.vb_4e66d4d525c
+support-core:1330.v305a_08ca_979b_
 swarm:3.40
 testng-plugin:794.ve7e315837b_b_3
 text-finder:1.24
@@ -143,7 +143,7 @@ trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:162.v85841b_0790d5
 view-job-filters:364.v48a_33389553d
-warnings-ng:10.2.0
+warnings-ng:10.3.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1251.vd4889a_b_0a_065
 workflow-basic-steps:1017.vb_45b_302f0cea_
