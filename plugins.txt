@@ -39,7 +39,7 @@ docker-workflow:563.vd5d2e5c4007f
 durable-task:513.vc48a_a_075a_d93
 echarts-api:5.4.0-5
 elastic-axis:464.va_7ed499b_9d75
-embeddable-build-status:395.v96b_260870c38
+embeddable-build-status:412.v09da_db_1dee68
 envinject-api:1.199.v3ce31253ed13
 envinject:2.908.v66a_774b_31d93
 external-monitor-job:207.v98a_a_37a_85525
