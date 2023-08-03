@@ -27,7 +27,7 @@ commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
 config-file-provider:952.va_544a_6234b_46
 configuration-as-code:1670.v564dc8b_982d0
-copyartifact:705.v5295cffec284
+copyartifact:714.v28a_34f8c563f
 credentials-binding:631.v861c06d062b_4
 credentials:1271.v54b_1c2c6388a_
 dark-theme:336.v02165cd8c2ee
