@@ -21,7 +21,7 @@ cloudbees-folder:6.815.v0dd5a_cb_40e0e
 cloudbees-jenkins-advisor:340.v336f61c216f6
 clover:4.13.0
 code-coverage-api:4.7.0
-command-launcher:100.v2f6722292ee8
+command-launcher:106.vb_a_b_8f751309c
 commons-lang3-api:3.12.0-36.vd97de6465d5b_
 commons-text-api:1.10.0-36.vc008c8fcda_7b_
 conditional-buildstep:1.4.2
