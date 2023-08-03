@@ -52,7 +52,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:5.2.0
 gitea:1.4.5
 github-api:1.314-431.v78d72a_3fe4c3
-github-branch-source:1728.v859147241f49
+github-branch-source:1730.vff97c8a_1f804
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.1
