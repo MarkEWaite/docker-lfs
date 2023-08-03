@@ -137,7 +137,7 @@ testng-plugin:794.ve7e315837b_b_3
 text-finder:1.25
 theme-manager:193.vcef22f6c5f2b_
 throttle-concurrents:2.14
-timestamper:1.25
+timestamper:1.26
 token-macro:359.vb_cde11682e0c
 trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
