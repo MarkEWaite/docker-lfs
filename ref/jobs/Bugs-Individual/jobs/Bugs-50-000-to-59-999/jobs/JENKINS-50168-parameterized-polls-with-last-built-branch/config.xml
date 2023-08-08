@@ -81,7 +81,7 @@ Requires interactive verification that a commit to the [jenkins-bugs JENKINS-501
         <hudson.plugins.git.extensions.impl.CloneOption>
           <shallow>false</shallow>
           <noTags>true</noTags>
-          <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+          <reference>/var/cache/git/mwaite/bugs/jenkins-bugs.git</reference>
           <timeout>3</timeout>
           <depth>0</depth>
           <honorRefspec>true</honorRefspec>

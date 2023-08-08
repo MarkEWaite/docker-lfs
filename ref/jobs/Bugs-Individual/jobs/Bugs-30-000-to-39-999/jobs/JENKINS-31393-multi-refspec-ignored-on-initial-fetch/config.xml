@@ -61,7 +61,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>true</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <reference>/var/cache/git/mwaite/bugs/jenkins-bugs.git</reference>
         <timeout>6</timeout>
         <depth>3</depth>
         <honorRefspec>true</honorRefspec>

@@ -22,9 +22,9 @@ cloudbees-jenkins-advisor:340.v336f61c216f6
 clover:4.13.0
 code-coverage-api:4.7.0
 command-launcher:106.vb_a_b_8f751309c
-commons-lang3-api:3.12.0-36.vd97de6465d5b_
-commons-text-api:1.10.0-36.vc008c8fcda_7b_
-conditional-buildstep:1.4.2
+commons-lang3-api:3.13.0-62.v7d18e55f51e2
+commons-text-api:1.10.0-68.v0d0b_c439292b_
+conditional-buildstep:1.4.3
 config-file-provider:952.va_544a_6234b_46
 configuration-as-code:1670.v564dc8b_982d0
 copyartifact:714.v28a_34f8c563f
@@ -52,7 +52,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:5.2.0
 gitea:1.4.5
 github-api:1.314-431.v78d72a_3fe4c3
-github-branch-source:1730.vff97c8a_1f804
+github-branch-source:1732.v3f1889a_c475b_
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.2
@@ -89,14 +89,14 @@ mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:95.v17a_965e696ee
 matrix-auth:3.1.10
 matrix-project:802.v8013b_40c7edc
-maven-plugin:3.22
+maven-plugin:3.23
 metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.10.0-69.v28e3e36d18eb_
 mina-sshd-api-core:2.10.0-69.v28e3e36d18eb_
 monitoring:1.95.0
 naginator:1.19.2
 nodelabelparameter:1.12.0
-okhttp-api:4.11.0-145.vcb_8de402ef81
+okhttp-api:4.11.0-157.v6852a_a_fa_ec11
 parallel-test-executor:418.v24f9a_141d726
 parameterized-trigger:2.46
 pipeline-build-step:505.v5f0844d8d126
@@ -131,7 +131,7 @@ ssh-credentials:308.ve4497b_ccd8f4
 ssh-slaves:2.916.vd17b_43357ce4
 sshd:3.312.v1c601b_c83b_0e
 structs:324.va_f5d6774f3a_d
-support-core:1340.v9c6c9398c75e
+support-core:1346.v976da_cf026e1
 swarm:3.40
 testng-plugin:794.ve7e315837b_b_3
 text-finder:1.25

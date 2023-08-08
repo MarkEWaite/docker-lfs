@@ -33,7 +33,7 @@ node {
               extensions: [
                 [$class: &apos;AuthorInChangelog&apos;],
                 [$class: &apos;CleanCheckout&apos;],
-                [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;],
+                [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true, reference: &apos;/var/cache/git/mwaite/bugs/jenkins-bugs.git&apos;],
                 [$class: &apos;LocalBranch&apos;, localBranch: &apos;JENKINS-42020&apos;],
                 [$class: &apos;PruneStaleBranch&apos;],
               ],
