@@ -36,7 +36,7 @@ Job is expected to be unstable until JENKINS-56063 is fixed.</description>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>true</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <reference>/var/cache/git/mwaite/bugs/jenkins-bugs.git</reference>
         <depth>1</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
