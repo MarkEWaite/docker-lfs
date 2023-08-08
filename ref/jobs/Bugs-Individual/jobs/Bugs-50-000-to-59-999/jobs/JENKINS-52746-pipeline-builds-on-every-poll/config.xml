@@ -79,7 +79,7 @@ Even though there are no changes to detect.  See the bug trivially by clicking t
         <hudson.plugins.git.extensions.impl.CloneOption>
           <shallow>false</shallow>
           <noTags>true</noTags>
-          <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+          <reference>/var/cache/git/mwaite/bugs/jenkins-bugs.git</reference>
           <depth>0</depth>
           <honorRefspec>true</honorRefspec>
         </hudson.plugins.git.extensions.impl.CloneOption>

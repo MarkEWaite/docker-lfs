@@ -68,7 +68,7 @@ This job shows how to narrow the refspec based on a parameter</description>
                         branches: [[name: &quot;${env.SELECTED_BRANCH}&quot;]],
                         extensions: [
                             [$class: &apos;CloneOption&apos;, honorRefspec: true, noTags: true,
-                                reference: &apos;/var/lib/git/mwaite/bugs/jenkins-bugs.git&apos;,
+                                reference: &apos;/var/cache/git/mwaite/bugs/jenkins-bugs.git&apos;,
                                 shallow: true, depth: 1
                             ]
                         ],

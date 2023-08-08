@@ -33,7 +33,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>false</noTags>
-        <reference>/var/lib/git/mwaite/bugs/jenkins-bugs.git</reference>
+        <reference>/var/cache/git/mwaite/bugs/jenkins-bugs.git</reference>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.LocalBranch/>
