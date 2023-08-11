@@ -17,7 +17,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.6-115.vb_8b_b_328e59d8
 checks-api:2.0.0
 cloudbees-bitbucket-branch-source:825.va_6a_dc46a_f97d
-cloudbees-folder:6.815.v0dd5a_cb_40e0e
+cloudbees-folder:6.846.v23698686f0f6
 cloudbees-jenkins-advisor:340.v336f61c216f6
 clover:4.13.0
 code-coverage-api:4.7.0
@@ -131,14 +131,14 @@ ssh-credentials:308.ve4497b_ccd8f4
 ssh-slaves:2.916.vd17b_43357ce4
 sshd:3.312.v1c601b_c83b_0e
 structs:324.va_f5d6774f3a_d
-support-core:1346.v976da_cf026e1
+support-core:1354.v0d622276ca_de
 swarm:3.40
 testng-plugin:794.ve7e315837b_b_3
 text-finder:1.25
 theme-manager:193.vcef22f6c5f2b_
 throttle-concurrents:2.14
 timestamper:1.26
-token-macro:359.vb_cde11682e0c
+token-macro:383.v36161104b_002
 trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:162.v85841b_0790d5
