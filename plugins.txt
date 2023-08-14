@@ -55,7 +55,7 @@ github-api:1.314-431.v78d72a_3fe4c3
 github-branch-source:1732.v3f1889a_c475b_
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
-github:1.37.2
+github:1.37.3
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
 gitlab-branch-source:664.v877fdc293c89
 gitlab-plugin:1.7.15
@@ -138,7 +138,7 @@ text-finder:1.25
 theme-manager:193.vcef22f6c5f2b_
 throttle-concurrents:2.14
 timestamper:1.26
-token-macro:383.v36161104b_002
+token-macro:384.vf35b_f26814ec
 trilead-api:2.84.v72119de229b_7
 variant:59.vf075fe829ccb
 versioncolumn:162.v85841b_0790d5
