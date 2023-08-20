@@ -1,16 +1,31 @@
-ARG JAVA_VERSION="17.0.8_7"
-ARG BULLSEYE_TAG=20230725
-FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-focal as jre-build
+ARG BOOKWORM_TAG=20230725
+FROM debian:bookworm-"${BOOKWORM_TAG}"-slim as jre-build
+ARG BUILD_NUMBER=34
+ARG JAVA_VERSION=21+${BUILD_NUMBER}
+ARG TARGETPLATFORM
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+RUN set -x; apt-get update \
+  && apt-get install --no-install-recommends -y \
+    ca-certificates \
+    jq \
+    wget \
+  && JAVA_VERSION_ENCODED=$(echo "$JAVA_VERSION" | jq "@uri" -jRr) \
+  && CONVERTED_ARCH=$(arch | sed 's/x86_64/x64/') \
+  && wget --quiet https://github.com/adoptium/temurin21-binaries/releases/download/jdk-"${JAVA_VERSION_ENCODED}"-ea-beta/OpenJDK21U-jdk_"${CONVERTED_ARCH}"_linux_hotspot_ea_21-0-"${BUILD_NUMBER}".tar.gz -O /tmp/jdk.tar.gz \
+  && tar -xzf /tmp/jdk.tar.gz -C /opt/ \
+  && rm -f /tmp/jdk.tar.gz
+
+ENV PATH=/opt/jdk-${JAVA_VERSION}/bin:$PATH
 
 RUN jlink \
-         --add-modules ALL-MODULE-PATH \
-         --strip-debug \
-         --no-man-pages \
-         --no-header-files \
-         --compress=2 \
-         --output /javaruntime
+  --add-modules ALL-MODULE-PATH \
+  --no-man-pages \
+  --compress=zip-6 \
+  --output /javaruntime
 
-FROM debian:bullseye-"${BULLSEYE_TAG}"-slim
+FROM debian:bookworm-"${BOOKWORM_TAG}"-slim
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \

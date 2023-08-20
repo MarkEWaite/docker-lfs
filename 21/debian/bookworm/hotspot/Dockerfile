@@ -1,16 +1,31 @@
-ARG JAVA_VERSION="11.0.20_8"
-ARG BULLSEYE_TAG=20230725
-FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-focal as jre-build
+ARG BOOKWORM_TAG=20230725
+FROM debian:bookworm-"${BOOKWORM_TAG}"-slim as jre-build
+ARG BUILD_NUMBER=34
+ARG JAVA_VERSION=21+${BUILD_NUMBER}
+ARG TARGETPLATFORM
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+RUN set -x; apt-get update \
+  && apt-get install --no-install-recommends -y \
+    ca-certificates \
+    jq \
+    wget \
+  && JAVA_VERSION_ENCODED=$(echo "$JAVA_VERSION" | jq "@uri" -jRr) \
+  && CONVERTED_ARCH=$(arch | sed 's/x86_64/x64/') \
+  && wget --quiet https://github.com/adoptium/temurin21-binaries/releases/download/jdk-"${JAVA_VERSION_ENCODED}"-ea-beta/OpenJDK21U-jdk_"${CONVERTED_ARCH}"_linux_hotspot_ea_21-0-"${BUILD_NUMBER}".tar.gz -O /tmp/jdk.tar.gz \
+  && tar -xzf /tmp/jdk.tar.gz -C /opt/ \
+  && rm -f /tmp/jdk.tar.gz
+
+ENV PATH=/opt/jdk-${JAVA_VERSION}/bin:$PATH
 
 RUN jlink \
-         --add-modules ALL-MODULE-PATH \
-         --strip-debug \
-         --no-man-pages \
-         --no-header-files \
-         --compress=2 \
-         --output /javaruntime
+  --add-modules ALL-MODULE-PATH \
+  --no-man-pages \
+  --compress=zip-6 \
+  --output /javaruntime
 
-FROM debian:bullseye-"${BULLSEYE_TAG}"-slim
+FROM debian:bookworm-"${BOOKWORM_TAG}"
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -117,16 +132,13 @@ COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
-# from a derived Dockerfile, can use `RUN install-plugins.sh active.txt` to setup $REF/plugins from a support bundle
-COPY install-plugins.sh /usr/local/bin/install-plugins.sh
-
 # metadata labels
 LABEL \
-    org.opencontainers.image.vendor="Jenkins project" \
-    org.opencontainers.image.title="Official Jenkins Docker image" \
-    org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
-    org.opencontainers.image.version="${JENKINS_VERSION}" \
-    org.opencontainers.image.url="https://www.jenkins.io/" \
-    org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
-    org.opencontainers.image.revision="${COMMIT_SHA}" \
-    org.opencontainers.image.licenses="MIT"
+  org.opencontainers.image.vendor="Jenkins project" \
+  org.opencontainers.image.title="Official Jenkins Docker image" \
+  org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
+  org.opencontainers.image.version="${JENKINS_VERSION}" \
+  org.opencontainers.image.url="https://www.jenkins.io/" \
+  org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
+  org.opencontainers.image.revision="${COMMIT_SHA}" \
+  org.opencontainers.image.licenses="MIT"
