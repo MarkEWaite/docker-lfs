@@ -1,14 +1,16 @@
-ARG JAVA_VERSION="17.0.8_7"
-ARG BULLSEYE_TAG=20230725
+ARG JAVA_VERSION="11.0.20_8"
+ARG BOOKWORM_TAG=20230814
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-focal as jre-build
 
 RUN jlink \
-  --add-modules ALL-MODULE-PATH \
-  --no-man-pages \
-  --compress=2 \
-  --output /javaruntime
+         --add-modules ALL-MODULE-PATH \
+         --strip-debug \
+         --no-man-pages \
+         --no-header-files \
+         --compress=2 \
+         --output /javaruntime
 
-FROM debian:bullseye-"${BULLSEYE_TAG}"
+FROM debian:bookworm-"${BOOKWORM_TAG}"-slim
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -115,13 +117,16 @@ COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
+# from a derived Dockerfile, can use `RUN install-plugins.sh active.txt` to setup $REF/plugins from a support bundle
+COPY install-plugins.sh /usr/local/bin/install-plugins.sh
+
 # metadata labels
 LABEL \
-  org.opencontainers.image.vendor="Jenkins project" \
-  org.opencontainers.image.title="Official Jenkins Docker image" \
-  org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
-  org.opencontainers.image.version="${JENKINS_VERSION}" \
-  org.opencontainers.image.url="https://www.jenkins.io/" \
-  org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
-  org.opencontainers.image.revision="${COMMIT_SHA}" \
-  org.opencontainers.image.licenses="MIT"
+    org.opencontainers.image.vendor="Jenkins project" \
+    org.opencontainers.image.title="Official Jenkins Docker image" \
+    org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
+    org.opencontainers.image.version="${JENKINS_VERSION}" \
+    org.opencontainers.image.url="https://www.jenkins.io/" \
+    org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
+    org.opencontainers.image.revision="${COMMIT_SHA}" \
+    org.opencontainers.image.licenses="MIT"
