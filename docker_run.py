@@ -65,7 +65,7 @@ def get_jenkins_home_volume_map():
 
 def get_git_reference_repo_volume_map():
     lhs = os.path.expanduser("~/git/bare/")
-    rhs = os.path.expanduser("/var/lib/git/mwaite")
+    rhs = os.path.expanduser("/var/cache/git/mwaite")
     return lhs + ":" + rhs
 
 #-----------------------------------------------------------------------
@@ -84,8 +84,12 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk17" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-17.0.4.1+1"
-    return "/home/jagent/tools/jdk-11.0.16.1+1"
+        return "/home/jagent/tools/jdk-17.0.8+7"
+    if "jdk21" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21+34"
+    if "weekly" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21+34"
+    return "/home/jagent/tools/jdk-11.0.20+8"
 
 #-----------------------------------------------------------------------
 
@@ -144,6 +148,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Djenkins.install.runSetupWizard=false",
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
+                  "-Djenkins.plugins.git.AbstractGitSCMSource.cacheRootDir=/var/cache/jenkins/git-cache",
+                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
