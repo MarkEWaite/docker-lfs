@@ -172,50 +172,28 @@ tool:
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
               id: "jdk-17.0.8+7"
-    - name: "jdk19"
+    - name: "jdk21"
       properties:
       - installSource:
           installers:
           - zip:
               label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-19.0.2+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/19/OpenJDK19U-jdk_x64_linux_hotspot_19.0.2_7.tar.gz"
+              subdir: "jdk-21+34"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_2023-08-09-06-56.tar.gz"
           - zip:
               label: "windows && 64bit"
-              subdir: "jdk-19.0.2+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/19/OpenJDK19U-jdk_x64_windows_hotspot_19.0.2_7.zip"
+              subdir: "jdk-21+35"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_ea_21-0-35.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-19.0.2+7"
+              toolHome: "/home/jagent/tools/jdk-21+34"
           - command:
               command: "true"
               label: "freebsd"
-              toolHome: "/usr/local/openjdk19"
+              toolHome: "/usr/local/openjdk21"
           - adoptOpenJdkInstaller:
-              id: "jdk-19.0.2+7"
-    - name: "jdk20"
-      properties:
-      - installSource:
-          installers:
-          - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
-              subdir: "jdk-20.0.2+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/20/OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz"
-          - zip:
-              label: "windows && 64bit"
-              subdir: "jdk-20.0.2+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/20/OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip"
-          - command:
-              command: "true"
-              label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-20.0.2+9"
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/openjdk20"
-          - adoptOpenJdkInstaller:
-              id: "jdk-20.0.2+9"
+              id: "jdk-21+34"
   maven:
     installations:
     - name: "maven-latest"
