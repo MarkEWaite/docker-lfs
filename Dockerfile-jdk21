@@ -1,15 +1,16 @@
-FROM jenkins/jenkins:2.420-rhel-ubi9-jdk21-preview
+FROM jenkins/jenkins:2.414.1-slim-jdk21-preview
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y \
-        gnupg \
-        make \
-        procps \
-        wget \
-    && dnf clean --disableplugin=subscription-manager all
+# hadolint ignore=DL3008
+RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
+  gnupg \
+  make \
+  procps \
+  wget \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
