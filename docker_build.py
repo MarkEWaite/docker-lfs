@@ -76,8 +76,6 @@ def compute_tag(branch_name):
 #-----------------------------------------------------------------------
 
 def is_home_network():
-    if "hp-ux" in sys.platform:
-        return False # No HP-UX on my home networks
     from socket import socket, SOCK_DGRAM, AF_INET
     s = socket(AF_INET, SOCK_DGRAM)
     s.settimeout(1.0)
