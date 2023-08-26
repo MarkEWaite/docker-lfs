@@ -36,6 +36,8 @@ def get_all_branches():
 #-----------------------------------------------------------------------
 
 def get_dockerfile(branch_name):
+    if "jdk21" in branch_name:
+        return "Dockerfile-jdk21"
     if "alpine" in branch_name:
         return "Dockerfile-alpine"
     if "slim" in branch_name:
