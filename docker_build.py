@@ -36,6 +36,8 @@ def get_all_branches():
 #-----------------------------------------------------------------------
 
 def get_dockerfile(branch_name):
+    if "jdk21" in branch_name:
+        return "Dockerfile-jdk21"
     if "alpine" in branch_name:
         return "Dockerfile-alpine"
     if "slim" in branch_name:
@@ -74,8 +76,6 @@ def compute_tag(branch_name):
 #-----------------------------------------------------------------------
 
 def is_home_network():
-    if "hp-ux" in sys.platform:
-        return False # No HP-UX on my home networks
     from socket import socket, SOCK_DGRAM, AF_INET
     s = socket(AF_INET, SOCK_DGRAM)
     s.settimeout(1.0)
@@ -189,7 +189,7 @@ def build_one_image(branch_name, clean):
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
-    print(("Building " + tag))
+    print("Building " + tag + " from " + get_dockerfile(tag))
     if os.path.exists('ref/jobs'):
         subprocess.check_call(['tools/create-missing-legacyIds']) # Avoid RunIdMigrator warnings
     command = [ "docker", "build",
