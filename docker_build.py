@@ -36,15 +36,17 @@ def get_all_branches():
 #-----------------------------------------------------------------------
 
 def get_dockerfile(branch_name):
+    if "jdk21" in branch_name:
+        return "Dockerfile-jdk21"
     if "alpine" in branch_name:
         return "Dockerfile-alpine"
     if "slim" in branch_name:
         return "Dockerfile-slim"
     if "jdk17" in branch_name:
         return "Dockerfile-jdk17"
-    if "jdk11" in branch_name:
+    if "lts-with-" in branch_name:
         return "Dockerfile-jdk11"
-    return "Dockerfile"
+    return "Dockerfile-jdk17"
 
 #-----------------------------------------------------------------------
 
@@ -74,8 +76,6 @@ def compute_tag(branch_name):
 #-----------------------------------------------------------------------
 
 def is_home_network():
-    if "hp-ux" in sys.platform:
-        return False # No HP-UX on my home networks
     from socket import socket, SOCK_DGRAM, AF_INET
     s = socket(AF_INET, SOCK_DGRAM)
     s.settimeout(1.0)
@@ -145,13 +145,26 @@ def get_available_updates_command(base_jenkins_version):
 
 #-----------------------------------------------------------------------
 
-def report_update_plugins_commands(base_jenkins_version):
+def get_download_updates_command(base_jenkins_version):
     download_updates_command = [ "./jenkins-plugin-cli.sh", "--jenkins-version", base_jenkins_version,
                                  "-d", "ref/plugins",
                                  "-f", "plugins.txt",
     ]
-    print("Run " + " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " > x && mv x plugins.txt")
-    print("and " + " ".join(download_updates_command))
+    return download_updates_command
+
+#-----------------------------------------------------------------------
+
+def get_update_plugins_commands(base_jenkins_version):
+    commands = [ " ".join(get_available_updates_command(base_jenkins_version) + ["-o", "txt"]) + " > x && mv x plugins.txt",
+                 " ".join(get_download_updates_command(base_jenkins_version)) ]
+    return commands
+
+#-----------------------------------------------------------------------
+
+def report_update_plugins_commands(base_jenkins_version):
+    commands = get_update_plugins_commands(base_jenkins_version)
+    for command in commands:
+        print("Run " + command)
 
 #-----------------------------------------------------------------------
 
@@ -176,7 +189,7 @@ def build_one_image(branch_name, clean):
         print(("Updating plugins for " + base_jenkins_version))
         update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
-    print(("Building " + tag))
+    print("Building " + tag + " from " + get_dockerfile(tag))
     if os.path.exists('ref/jobs'):
         subprocess.check_call(['tools/create-missing-legacyIds']) # Avoid RunIdMigrator warnings
     command = [ "docker", "build",

@@ -9,9 +9,9 @@
 import optparse
 import os
 import re
-import pipes
 import socket
 import subprocess
+import shlex
 import shutil
 import string
 import sys
@@ -45,13 +45,6 @@ def volume_available(lhs):
 
 #-----------------------------------------------------------------------
 
-def get_maven_volume_map():
-    lhs = os.path.expanduser("~/.m2")
-    rhs = os.path.expanduser("/var/jenkins_home/.m2/")
-    return lhs + ":" + rhs
-
-#-----------------------------------------------------------------------
-
 def get_user_content_volume_map():
     lhs = os.path.expanduser("~/public_html")
     rhs = os.path.expanduser("/var/jenkins_home/userContent/")
@@ -72,7 +65,7 @@ def get_jenkins_home_volume_map():
 
 def get_git_reference_repo_volume_map():
     lhs = os.path.expanduser("~/git/bare/")
-    rhs = os.path.expanduser("/var/lib/git/mwaite")
+    rhs = os.path.expanduser("/var/cache/git/mwaite")
     return lhs + ":" + rhs
 
 #-----------------------------------------------------------------------
@@ -91,8 +84,12 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk17" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-17.0.3+7"
-    return "/home/jagent/tools/jdk-11.0.15+10"
+        return "/home/jagent/tools/jdk-17.0.8+7"
+    if "jdk21" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21+34"
+    if "weekly" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21+34"
+    return "/home/jagent/tools/jdk-11.0.20+8"
 
 #-----------------------------------------------------------------------
 
@@ -107,7 +104,6 @@ def memory_scale(upper_bound):
 
 def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False, access_mode=None):
     dns_server = get_dns_server()
-    maven_volume_map = get_maven_volume_map()
     user_content_volume_map = get_user_content_volume_map()
     git_reference_repo_volume_map = get_git_reference_repo_volume_map()
     jenkins_home_volume_map = get_jenkins_home_volume_map()
@@ -125,8 +121,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
         docker_command.extend(["--volume", jenkins_home_volume_map])
     if git_reference_repo_volume_map != None:
         docker_command.extend(["--volume", git_reference_repo_volume_map])
-    if maven_volume_map != None:
-        docker_command.extend(["--volume", maven_volume_map])
     if user_content_volume_map != None:
         docker_command.extend(["--volume", user_content_volume_map])
     if (detach):
@@ -154,6 +148,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Djenkins.install.runSetupWizard=false",
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
+                  "-Djenkins.plugins.git.AbstractGitSCMSource.cacheRootDir=/var/cache/jenkins/git-cache",
+                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
@@ -168,10 +164,11 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
     docker_command.extend([
                        "--env", 'CASC_YAML_MAX_ALIASES=100',
                        "--env", 'JAGENT_JAVA_HOME=' + get_jagent_java_home(),
-                       "--env", 'JAVA_OPTS=' + pipes.quote(" ".join(java_opts)),
+                       "--env", 'JAVA_OPTS=' + shlex.quote(" ".join(java_opts)),
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
+                       "--env", 'JENKINS_OPTS=--enable-future-java',
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
