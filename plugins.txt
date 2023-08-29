@@ -57,7 +57,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:670.vf7df45517001
+gitlab-branch-source:671.v67b_7169092ca_
 gitlab-plugin:1.7.15
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
@@ -134,7 +134,7 @@ structs:325.vcb_307d2a_2782
 support-core:1356.vd0f980edfa_46
 swarm:3.40
 testng-plugin:794.ve7e315837b_b_3
-text-finder:1.25
+text-finder:1.26
 theme-manager:211.vef2a_42c645a_b_
 throttle-concurrents:2.14
 timestamper:1.26
@@ -145,7 +145,7 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:369.ve0513a_a_f5524
 warnings-ng:10.4.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1261.va_2ff5204f17e
+workflow-api:1267.vd9b_a_ddd9eb_47
 workflow-basic-steps:1042.ve7b_140c4a_e0c
 workflow-cps:3773.v505e0052522c
 workflow-durable-task-step:1289.v4d3e7b_01546b_
