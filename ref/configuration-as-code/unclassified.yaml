@@ -379,6 +379,8 @@ unclassified:
       expression: "cloud&&linux&&(amd64||aarch64)"
     - atoms: "highram"
       expression: "highmem"
+    - atoms: "arm64"
+      expression: "aarch64"
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
