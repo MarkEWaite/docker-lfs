@@ -296,7 +296,7 @@ unclassified:
       expression: "cloud||linux||windows||FreeBSD"
 
     - atoms: "jdk21"
-     expression: "(aarch64&&linux)||(amd64&&linux)||(amd64&&windows))||s390x"
+     expression: "(aarch64&&linux)||(amd64&&linux)||(amd64&&windows)||s390x"
 
     - atoms: "java"
       expression: "jdk8||jdk11||jdk17||jdk21"
