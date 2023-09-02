@@ -24,16 +24,6 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
-  scmGit:
-    addGitTagAction: false
-    allowSecondFetch: false
-    createAccountBasedOnEmail: false
-    disableGitToolChooser: false
-    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
-    globalConfigName: "Jenkins Docker User"
-    hideCredentials: false
-    showEntireCommitSummaryInChanges: true
-    useExistingAccountWithSameEmail: false
   giteaServers:
     servers:
     - displayName: "home.markwaite.net"
@@ -261,6 +251,16 @@ unclassified:
       fQStrategy:
         defaultPriority: 3
         numberOfPriorities: 5
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    globalConfigName: "Jenkins Docker User"
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: true
+    useExistingAccountWithSameEmail: false
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
