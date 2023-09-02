@@ -258,7 +258,7 @@ unclassified:
     - atoms: "Alma-8"
       expression: "almalinux&&(8.9||8.8||8.7||8.6||8.5)"
     - atoms: "Alma-9"
-      expression: "almalinux&&&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)"
+      expression: "almalinux&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)"
 
     - atoms: "OracleServer-8"
       expression: "OracleServer&&(8.8||8.7||8.6||8.5||8.4||8.4.2105||8.3||8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)"
