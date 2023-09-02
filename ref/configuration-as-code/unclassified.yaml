@@ -24,16 +24,6 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
-  scmGit:
-    addGitTagAction: false
-    allowSecondFetch: false
-    createAccountBasedOnEmail: false
-    disableGitToolChooser: false
-    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
-    globalConfigName: "Jenkins Docker User"
-    hideCredentials: false
-    showEntireCommitSummaryInChanges: true
-    useExistingAccountWithSameEmail: false
   giteaServers:
     servers:
     - displayName: "home.markwaite.net"
@@ -209,6 +199,137 @@ unclassified:
               - gitHubBranchDiscovery:
                   strategyId: 1
               - "gitHubTagDiscovery"
+
+  impliedLabels:
+    implications:
+
+    - atoms: "git-1.8+"
+      expression: "git-1.8||git-2.11+"
+    - atoms: "git-1.9+"
+      expression: "git-2.11+"
+    - atoms: "git-2.11+"
+      expression: "git-2.11||git-2.17+"
+    - atoms: "git-2.17+"
+      expression: "git-2.17||git-2.20+"
+    - atoms: "git-2.20+"
+      expression: "git-2.20||git-2.25+"
+    - atoms: "git-2.25+"
+      expression: "git-2.25||git-2.27+"
+    - atoms: "git-2.27+"
+      expression: "git-2.27||git-2.30+"
+    - atoms: "git-2.30+"
+      expression: "git-2.30||git-2.31+"
+    - atoms: "git-2.31+"
+      expression: "git-2.31||git-2.32+"
+    - atoms: "git-2.32+"
+      expression: "git-2.32||git-2.34+"
+    - atoms: "git-2.34+"
+      expression: "git-2.34||git-2.35+"
+    - atoms: "git-2.35+"
+      expression: "git-2.35||git-2.36+"
+    - atoms: "git-2.36+"
+      expression: "git-2.36||git-2.37+"
+    - atoms: "git-2.37+"
+      expression: "git-2.37||git-2.38+"
+    - atoms: "git-2.38+"
+      expression: "git-2.38||git-2.39+"
+    - atoms: "git-2.39+"
+      expression: "git-2.39||git-2.40+"
+    - atoms: "git-2.40+"
+      expression: "git-2.40||git-2.41+"
+    - atoms: "git-2.41+"
+      expression: "git-2.41||git-2.42+"
+    - atoms: "git-2.42+"
+      expression: "git-2.42||git-2.43+"
+    - atoms: "git-2.43+"
+      expression: "git-2.43||git-2.44+"
+
+    - atoms: "git-lfs"
+      expression: "git-2.11+"
+
+    - atoms: "Ubuntu-20"
+      expression: "Ubuntu&&20.04"
+    - atoms: "Ubuntu-22"
+      expression: "Ubuntu&&22.04"
+
+    - atoms: "openSUSE-15"
+      expression: "openSUSE&&(15.0||15.1||15.2||15.3||15.4||15.5||15.6)"
+
+    - atoms: "Alma-8"
+      expression: "almalinux&&(8.9||8.8||8.7||8.6||8.5)"
+    - atoms: "Alma-9"
+      expression: "almalinux&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)"
+
+    - atoms: "OracleServer-8"
+      expression: "OracleServer&&(8.8||8.7||8.6||8.5||8.4||8.4.2105||8.3||8.3.2011||8.2||8.2.2011||8.2.2004||8.1||8.1.1911||8.0||8.0.1905)"
+    - atoms: "OracleServer-9"
+      expression: "OracleServer&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)"
+
+    - atoms: "Rocky-8"
+      expression: "Rocky&&(8.9||8.8||8.7||8.6)"
+    - atoms: "Rocky-9"
+      expression: "Rocky&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)"
+
+    - atoms: "RedHat-7"
+      expression: "(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&&(7.9||7.8||7.7||7.6||7.5||7.4||7.3||7.2||7.1)||CentOS-7"
+    - atoms: "RedHat-8"
+      expression: "(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&&(8.9||8.8||8.7||8.6||8.5||8.4||8.3||8.2||8.1)||Alma-8||OracleServer-8||Rocky-8"
+    - atoms: "RedHat-9"
+      expression: "(RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient)&&(9.9||9.8||9.7||9.6||9.5||9.4||9.3||9.2||9.1||9.0)||Alma-9||OracleServer-9||Rocky-9"
+
+    - atoms: "Alma"
+      expression: "almalinux"
+
+    - atoms: "linux"
+      expression: "Alma||Alpine||Amazon||AmazonAMI||CentOS||Debian||LinuxMint||openSUSE||OracleServer||Raspbian||RedHatEnterprise||RedHatEnterpriseServer||RedHatEnterpriseClient||Rocky||SUSE||Ubuntu"
+
+    - atoms: "Unix"
+      expression: "linux||FreeBSD"
+
+    - atoms: "jdk8"
+      expression: "(cloud||linux||windows||FreeBSD)&&!s390x"
+
+    - atoms: "jdk11"
+      expression: "cloud||linux||windows||FreeBSD"
+
+    - atoms: "jdk17"
+      expression: "cloud||linux||windows||FreeBSD"
+
+    - atoms: "jdk21"
+      expression: "(aarch64&&linux)||(amd64&&linux)||(amd64&&windows)||s390x"
+
+    - atoms: "java"
+      expression: "jdk8||jdk11||jdk17||jdk21"
+
+    - atoms: "maven"
+      expression: "jdk8&&!windows"
+    - atoms: "maven-windows"
+      expression: "jdk8&&windows"
+
+    - atoms: "maven-11"
+      expression: "jdk11&&!windows"
+    - atoms: "maven-11-windows"
+      expression: "jdk11&&windows"
+
+    - atoms: "maven-17"
+      expression: "jdk17&&!windows"
+    - atoms: "maven-17-windows"
+      expression: "jdk17&&windows"
+
+    - atoms: "maven-21"
+      expression: "jdk21&&!windows"
+    - atoms: "maven-21-windows"
+      expression: "jdk21&&windows"
+
+    - atoms: "vm"
+      expression: "cloud&&linux"
+
+    - atoms: "aws"
+      expression: "cloud&&linux&&(amd64||aarch64)"
+
+    - atoms: "highram"
+      expression: "highmem"
+
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
@@ -261,6 +382,16 @@ unclassified:
       fQStrategy:
         defaultPriority: 3
         numberOfPriorities: 5
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    globalConfigEmail: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
+    globalConfigName: "Jenkins Docker User"
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: true
+    useExistingAccountWithSameEmail: false
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
