@@ -24,10 +24,24 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - clientBuilderId: "v4"
+      connectionTimeout: 10
+      ignoreCertificateErrors: false
+      name: "gitlab-connection-1"
+      readTimeout: 10
+      url: "https://gitlab.com/"
+    useAuthenticatedEndpoint: true
+  gitLabServers:
+    servers:
+    - name: "gitlab-server-1"
+      serverUrl: "https://gitlab.com"
+      webhookSecretCredentialsId: ""
   giteaServers:
     servers:
     - displayName: "home.markwaite.net"
-      manageHooks: false
+      manageHooks: true
       serverUrl: "https://home.markwaite.net/gitea"
   globalConfigFiles:
     configs:
@@ -128,6 +142,7 @@ unclassified:
       name: "globalPipelineLibraryMarkEWaiteModern"
       retriever:
         modernSCM:
+          clone: true
           scm:
             git:
               id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
@@ -135,17 +150,30 @@ unclassified:
               traits:
               - "gitBranchDiscovery"
               - "gitTagDiscovery"
+              - cloneOption:
+                  extension:
+                    depth: 1
+                    honorRefspec: true
+                    noTags: true
+                    shallow: true
     - cachingConfiguration:
         refreshTimeMinutes: 491
       defaultVersion: "master"
       name: "globalPipelineLibraryMarkEWaite"
       retriever:
         legacySCM:
+          clone: true
           scm:
             scmGit:
               branches:
               - name: "origin/^${library.globalPipelineLibraryMarkEWaite.version}"
               buildChooser: "default"
+              extensions:
+              - cloneOption:
+                  depth: 1
+                  honorRefspec: true
+                  noTags: true
+                  shallow: true
               gitTool: "Default"
               userRemoteConfigs:
               - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
@@ -155,6 +183,7 @@ unclassified:
       name: "globalPipelineLibraryMarkEWaiteModernGitHub"
       retriever:
         modernSCM:
+          clone: true
           scm:
             github:
               configuredByUrl: true
@@ -166,13 +195,41 @@ unclassified:
               - gitHubBranchDiscovery:
                   strategyId: 1
               - "gitHubTagDiscovery"
+              - cloneOption:
+                  extension:
+                    depth: 1
+                    honorRefspec: true
+                    noTags: true
+                    shallow: true
               - "localBranch"
+    - cachingConfiguration:
+        refreshTimeMinutes: 501
+      defaultVersion: "master"
+      name: "bitbucket-modern-3.8.0"
+      retriever:
+        modernSCM:
+          clone: true
+          scm:
+            git:
+              id: "6d3b3892-221f-4845-88b3-d9c3ffc4bd0b"
+              remote: "git@bitbucket.org:markewaite/jenkins-pipeline-utils.git"
+              traits:
+              - "gitBranchDiscovery"
+              - discoverOtherRefs:
+                  ref: "*"
+              - cloneOption:
+                  extension:
+                    depth: 1
+                    honorRefspec: true
+                    noTags: true
+                    shallow: true
     - cachingConfiguration:
         refreshTimeMinutes: 509
       defaultVersion: "master"
       name: "git-modern-3.8.0"
       retriever:
         modernSCM:
+          clone: true
           scm:
             git:
               id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
@@ -182,12 +239,19 @@ unclassified:
               - discoverOtherRefs:
                   ref: "*"
               - "gitTagDiscovery"
+              - cloneOption:
+                  extension:
+                    depth: 1
+                    honorRefspec: true
+                    noTags: true
+                    shallow: true
     - cachingConfiguration:
         refreshTimeMinutes: 521
       defaultVersion: "master"
       name: "github-modern-3.8.0"
       retriever:
         modernSCM:
+          clone: true
           scm:
             github:
               configuredByUrl: true
@@ -199,6 +263,16 @@ unclassified:
               - gitHubBranchDiscovery:
                   strategyId: 1
               - "gitHubTagDiscovery"
+              - cloneOption:
+                  extension:
+                    depth: 1
+                    honorRefspec: true
+                    noTags: true
+                    shallow: true
+  globalTimeOutConfiguration:
+    operations:
+    - "abortOperation"
+    overwriteable: false
   impliedLabels:
     implications:
     - atoms: "git-2.43+"
@@ -310,6 +384,8 @@ unclassified:
     - url: "https://issues.jenkins.io/"
       useHTTPAuth: true
       userPattern: "(JENKINS-[1-9][0-9][0-9][0-9]*)"
+  junitTestResultStorage:
+    storage: "file"
   location:
     adminAddress: "mwaite@${JENKINS_ADVERTISED_HOSTNAME}"
     url: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/"
@@ -317,6 +393,8 @@ unclassified:
     localRepository: "default"
   naginatorPublisher:
     regexpTimeoutMs: 30000
+  pipeline-model-docker:
+    dockerLabel: "docker"
   pollSCM:
     pollingThreadCount: 7
   priorityConfiguration:
@@ -357,6 +435,8 @@ unclassified:
       fQStrategy:
         defaultPriority: 3
         numberOfPriorities: 5
+  prismConfiguration:
+    theme: PRISM
   scmGit:
     addGitTagAction: false
     allowSecondFetch: false
@@ -367,6 +447,8 @@ unclassified:
     hideCredentials: false
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
+  themeManager:
+    disableUserThemes: false
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
