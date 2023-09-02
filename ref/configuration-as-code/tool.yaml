@@ -37,7 +37,7 @@ tool:
               label: "windows"
               toolHome: "C:\\tools\\MinGit-2.42.0.2\\mingw64\\bin\\git.exe"
           - zip:
-              label: "windows && 64bit"
+              label: "windows && amd64"
               subdir: "mingw64\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/MinGit-2.42.0.2-64-bit.zip"
     - home: "git"
@@ -107,11 +107,11 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !cloud"
               subdir: "jdk8u382-b05"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u382b05.tar.gz"
           - zip:
-              label: "windows && 64bit"
+              label: "windows && amd64"
               subdir: "jdk8u382-b05"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u382b05.zip"
           - command:
@@ -133,11 +133,11 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !cloud"
               subdir: "jdk-11.0.20.1+1"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20.1_1.tar.gz"
           - zip:
-              label: "windows && 64bit"
+              label: "windows && amd64"
               subdir: "jdk-11.0.20.1+1"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.20.1_1.zip"
           - command:
@@ -155,11 +155,11 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !cloud"
               subdir: "jdk-17.0.8.1+1"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_linux_hotspot_17.0.8.1_1.tar.gz"
           - zip:
-              label: "windows && 64bit"
+              label: "windows && amd64"
               subdir: "jdk-17.0.8.1+1"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_windows_hotspot_17.0.8.1_1.zip"
           - command:
@@ -177,11 +177,11 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && 64bit && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !cloud"
               subdir: "jdk-21+34"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_2023-08-09-06-56.tar.gz"
           - zip:
-              label: "windows && 64bit"
+              label: "windows && amd64"
               subdir: "jdk-21+35"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_ea_21-0-35.zip"
           - command:
