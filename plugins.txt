@@ -140,7 +140,7 @@ throttle-concurrents:2.14
 timestamper:1.26
 token-macro:384.vf35b_f26814ec
 trilead-api:2.84.v72119de229b_7
-variant:59.vf075fe829ccb
+variant:60.v7290fc0eb_b_cd
 versioncolumn:162.v85841b_0790d5
 view-job-filters:369.ve0513a_a_f5524
 warnings-ng:10.4.0
