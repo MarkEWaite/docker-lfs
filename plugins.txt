@@ -23,10 +23,10 @@ clover:4.13.0
 code-coverage-api:4.7.0
 command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
-commons-text-api:1.10.0-68.v0d0b_c439292b_
+commons-text-api:1.10.0-78.v3e7b_ea_d5a_fe1
 conditional-buildstep:1.4.3
 config-file-provider:953.v0432a_802e4d2
-configuration-as-code:1670.v564dc8b_982d0
+configuration-as-code:1700.v6f448841296e
 copyartifact:722.v0662a_9b_e22a_c
 credentials-binding:631.v861c06d062b_4
 credentials:1271.v54b_1c2c6388a_
@@ -125,7 +125,7 @@ resource-disposer:0.23
 run-condition:1.7
 scm-api:676.v886669a_199a_a_
 script-security:1275.v23895f409fb_d
-snakeyaml-api:1.33-95.va_b_a_e3e47b_fa_4
+snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:333.v878b_53c89511
 ssh-credentials:308.ve4497b_ccd8f4
 ssh-slaves:2.916.vd17b_43357ce4
