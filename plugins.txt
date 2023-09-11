@@ -101,7 +101,7 @@ parallel-test-executor:418.v24f9a_141d726
 parameterized-trigger:2.46
 pipeline-build-step:505.v5f0844d8d126
 pipeline-github-lib:42.v0739460cda_c4
-pipeline-github:2.8-147.3206e8179b1c
+pipeline-github:2.8-155.8eab375ac9f8
 pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:198.v0844db_6ca_554
 pipeline-groovy-lib:685.v8ee9ed91d574
