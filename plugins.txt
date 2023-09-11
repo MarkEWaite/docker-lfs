@@ -57,7 +57,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:671.v67b_7169092ca_
+gitlab-branch-source:672.vd8b_0b_b_a_db_1b_3
 gitlab-plugin:1.7.16
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
@@ -94,14 +94,14 @@ metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.10.0-69.v28e3e36d18eb_
 mina-sshd-api-core:2.10.0-69.v28e3e36d18eb_
 monitoring:1.95.0
-naginator:1.19.2
+naginator:1.421.v85c11e2db_507
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-157.v6852a_a_fa_ec11
 parallel-test-executor:418.v24f9a_141d726
 parameterized-trigger:2.46
 pipeline-build-step:505.v5f0844d8d126
 pipeline-github-lib:42.v0739460cda_c4
-pipeline-github:2.8-147.3206e8179b1c
+pipeline-github:2.8-155.8eab375ac9f8
 pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:198.v0844db_6ca_554
 pipeline-groovy-lib:685.v8ee9ed91d574
@@ -145,7 +145,7 @@ versioncolumn:162.v85841b_0790d5
 view-job-filters:369.ve0513a_a_f5524
 warnings-ng:10.4.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1267.vd9b_a_ddd9eb_47
+workflow-api:1275.veb_e0969ddf9e
 workflow-basic-steps:1042.ve7b_140c4a_e0c
 workflow-cps:3787.v8f5dcd14a_fa_c
 workflow-durable-task-step:1289.v4d3e7b_01546b_
