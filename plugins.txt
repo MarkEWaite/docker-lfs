@@ -119,7 +119,7 @@ platformlabeler:2095.ve47c8663f6a_b_
 plugin-util-api:3.3.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-7
+prism-api:1.29.0-8
 promoted-builds:892.vd6219fc0a_efb
 resource-disposer:0.23
 run-condition:1.7
