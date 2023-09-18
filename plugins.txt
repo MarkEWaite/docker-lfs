@@ -25,7 +25,7 @@ command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.10.0-78.v3e7b_ea_d5a_fe1
 conditional-buildstep:1.4.3
-config-file-provider:953.v0432a_802e4d2
+config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1700.v6f448841296e
 copyartifact:722.v0662a_9b_e22a_c
 credentials-binding:636.v55f1275c7b_27
