@@ -31,7 +31,7 @@ copyartifact:722.v0662a_9b_e22a_c
 credentials-binding:636.v55f1275c7b_27
 credentials:1271.v54b_1c2c6388a_
 dark-theme:336.v02165cd8c2ee
-data-tables-api:1.13.5-1
+data-tables-api:1.13.6-1
 description-setter:1.10
 display-url-api:2.3.9
 docker-commons:439.va_3cb_0a_6a_fb_29
