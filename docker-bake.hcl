@@ -89,11 +89,11 @@ variable "ALPINE_SHORT_TAG" {
 }
 
 variable "JAVA11_VERSION" {
-  default = "11.0.20_8"
+  default = "11.0.20.1_1"
 }
 
 variable "JAVA17_VERSION" {
-  default = "17.0.8_7"
+  default = "17.0.8.1_1"
 }
 
 # not passed through currently as inconsistent versions are published (2023-08-14)
@@ -103,7 +103,7 @@ variable "JAVA21_VERSION" {
 }
 
 variable "BOOKWORM_TAG" {
-  default = "20230814"
+  default = "20230904"
 }
 
 # ----  user-defined functions ----
@@ -142,6 +142,7 @@ target "almalinux_jdk11" {
     JENKINS_SHA = JENKINS_SHA
     COMMIT_SHA = COMMIT_SHA
     PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
+    JAVA_VERSION = JAVA11_VERSION
   }
   tags = [
     tag(true, "almalinux"),
@@ -298,7 +299,7 @@ target "debian_jdk21" {
     tag_lts(false, "lts-jdk21-preview"),
     tag_lts(true, "lts-jdk21-preview")
   ]
-  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le"]
+  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le", "linux/s390x", "linux/arm/v7"]
 }
 
 target "debian_slim_jdk11" {
@@ -358,7 +359,7 @@ target "debian_slim_jdk21" {
     tag_weekly(false, "slim-jdk21-preview"),
     tag_lts(false, "lts-slim-jdk21-preview"),
   ]
-  platforms = ["linux/amd64", "linux/arm64"]
+  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le", "linux/s390x", "linux/arm/v7"]
 }
 
 target "rhel_ubi8_jdk11" {
@@ -369,6 +370,7 @@ target "rhel_ubi8_jdk11" {
     JENKINS_SHA = JENKINS_SHA
     COMMIT_SHA = COMMIT_SHA
     PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
+    JAVA_VERSION = JAVA11_VERSION
   }
   tags = [
     tag(true, "rhel-ubi8-jdk11"),
