@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.414.1-rhel-ubi9-jdk17
+FROM jenkins/jenkins:2.414.2-rhel-ubi9-jdk17
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -10,8 +10,6 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
         procps \
         wget \
     && dnf clean --disableplugin=subscription-manager all
-
-RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
