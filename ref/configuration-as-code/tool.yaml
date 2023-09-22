@@ -6,8 +6,8 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-ant-1.10.13"
-              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.13-bin.zip"
+              subdir: "apache-ant-1.10.14"
+              url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.14-bin.zip"
   git:
     installations:
     - home: "git"
