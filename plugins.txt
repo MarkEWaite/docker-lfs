@@ -16,7 +16,7 @@ build-timeout:1.31
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.0.2
-cloudbees-bitbucket-branch-source:832.v43175a_425ea_6
+cloudbees-bitbucket-branch-source:843.vd09104df7988
 cloudbees-folder:6.848.ve3b_fd7839a_81
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.13.0
@@ -106,8 +106,8 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:198.v0844db_6ca_554
 pipeline-groovy-lib:689.veec561a_dee13
 pipeline-input-step:477.v339683a_8d55e
-pipeline-maven-api:1340.v05ef7525987e
-pipeline-maven:1340.v05ef7525987e
+pipeline-maven-api:1342.vfc697b_789147
+pipeline-maven:1342.vfc697b_789147
 pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2144.v077a_d1928a_40
 pipeline-model-definition:2.2144.v077a_d1928a_40
