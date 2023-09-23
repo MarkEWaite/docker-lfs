@@ -143,7 +143,7 @@ tool:
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "${JAGENT_JAVA_HOME}"
+              toolHome: "/opt/jdk11"
           - command:
               command: "true"
               label: "freebsd"
