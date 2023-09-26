@@ -26,7 +26,7 @@ commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.10.0-78.v3e7b_ea_d5a_fe1
 conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
-configuration-as-code:1700.v6f448841296e
+configuration-as-code:1714.v09593e830cfa
 copyartifact:722.v0662a_9b_e22a_c
 credentials-binding:636.v55f1275c7b_27
 credentials:1271.v54b_1c2c6388a_
