@@ -51,7 +51,7 @@ git-parameter:0.9.19
 git-server:99.va_0826a_b_cdfa_d
 git:5.2.0
 gitea:1.4.5
-github-api:1.314-431.v78d72a_3fe4c3
+github-api:1.316-451.v15738eef3414
 github-branch-source:1741.va_3028eb_9fd21
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
