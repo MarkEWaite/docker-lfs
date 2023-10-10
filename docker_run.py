@@ -86,9 +86,9 @@ def get_jagent_java_home():
     if "lts-with-plugins" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-11.0.20.1+1"
     if "jdk21" in docker_build.get_current_branch():
-        return "/opt/jdk-21"
+        return "/home/jagent/tools/jdk-21+35"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21+34"
+        return "/home/jagent/tools/jdk-21+35"
     return "/home/jagent/tools/jdk-17.0.8.1+1"
 
 #-----------------------------------------------------------------------
