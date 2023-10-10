@@ -1,6 +1,6 @@
 PrioritySorter:5.0.0
 adoptopenjdk:1.5
-analysis-model-api:11.9.0
+analysis-model-api:11.10.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
@@ -57,7 +57,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:680.vc179a_1a_37915
+gitlab-branch-source:684.vea_fa_7c1e2fe3
 gitlab-plugin:1.7.16
 groovy-postbuild:2.5
 h2-api:11.1.4.199-12.v9f4244395f7a_
@@ -117,7 +117,7 @@ pipeline-stage-tags-metadata:2.2144.v077a_d1928a_40
 pipeline-utility-steps:2.16.0
 plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2095.ve47c8663f6a_b_
-plugin-util-api:3.5.0
+plugin-util-api:3.6.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-8
