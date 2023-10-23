@@ -1,18 +1,6 @@
 ARG ALPINE_TAG=3.18.4
-FROM alpine:"${ALPINE_TAG}" AS jre-build
-ARG JAVA_VERSION=21+35
-ARG TARGETPLATFORM
-
-# hadolint ignore=DL4006
-RUN apk add --no-cache jq wget \
-  && BUILD_NUMBER=$(echo $JAVA_VERSION | cut -d'+' -f2) \
-  && JAVA_VERSION_ENCODED=$(echo $JAVA_VERSION | jq '@uri' -jRr) \
-  && CONVERTED_ARCH=$(arch | sed 's/x86_64/x64/') \
-  && wget --quiet https://github.com/adoptium/temurin21-binaries/releases/download/jdk-"${JAVA_VERSION_ENCODED}"-ea-beta/OpenJDK21U-jdk_"${CONVERTED_ARCH}"_alpine-linux_hotspot_ea_21-0-"${BUILD_NUMBER}".tar.gz -O /tmp/jdk.tar.gz \
-  && tar -xzf /tmp/jdk.tar.gz -C /opt/ \
-  && rm -f /tmp/jdk.tar.gz
-
-ENV PATH=/opt/jdk-${JAVA_VERSION}/bin:$PATH
+ARG JAVA_VERSION=21_35
+FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-alpine AS jre-build
 
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
@@ -31,7 +19,7 @@ RUN if [ "$TARGETPLATFORM" != 'linux/arm/v7' ]; then \
       --compress=zip-6 \
       --output /javaruntime; \
   else \
-    cp -r /opt/jdk-${JAVA_VERSION} /javaruntime; \
+    cp -r /opt/java/openjdk /javaruntime; \
   fi
 
 FROM alpine:"${ALPINE_TAG}" AS build
@@ -89,10 +77,10 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.418}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.428}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=7edc92816d30f8cef0241faa60c068f75ddf824152808b347007b9072df49191
+ARG JENKINS_SHA=b4f596923eb37b93c3f5a21a6a32fc3bedd57d04a1b63186811c0ce8b3d9f07c
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
