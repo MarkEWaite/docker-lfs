@@ -1,4 +1,4 @@
-ARG BOOKWORM_TAG=20230919
+ARG BOOKWORM_TAG=20231009
 ARG JAVA_VERSION=17.0.8.1_1
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
 
@@ -73,10 +73,10 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.418}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.428}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=7edc92816d30f8cef0241faa60c068f75ddf824152808b347007b9072df49191
+ARG JENKINS_SHA=b4f596923eb37b93c3f5a21a6a32fc3bedd57d04a1b63186811c0ce8b3d9f07c
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
