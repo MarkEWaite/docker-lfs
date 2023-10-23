@@ -1,14 +1,41 @@
-ARG JAVA_VERSION=11.0.20.1_1
 ARG BOOKWORM_TAG=20231009
-FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
+FROM debian:bookworm-"${BOOKWORM_TAG}"-slim as jre-build
+ARG JAVA_VERSION=21+35
+ARG TARGETPLATFORM
 
-RUN jlink \
-         --add-modules ALL-MODULE-PATH \
-         --strip-debug \
-         --no-man-pages \
-         --no-header-files \
-         --compress=2 \
-         --output /javaruntime
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+## Example of preview (EA) jdk21 JAVA_VERSION values:
+# 21+35 (special case)
+# 21.0.1+12
+## Example of preview (EA) release download link:
+# https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21%2B35-ea-beta/OpenJDK21U-jdk_x64_linux_hotspot_ea_21-0-35.tar.gz
+# https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12-ea-beta/OpenJDK21U-jdk_x64_alpine-linux_hotspot_ea_21-0-1-12.tar.gz
+RUN set -x; apt-get update \
+  && apt-get install --no-install-recommends -y \
+    ca-certificates \
+    jq \
+    wget \
+  && DASHED_JAVA_VERSION=$(echo "${JAVA_VERSION}" | sed -e 's/\./-/g' -e 's/+/-/' -e 's/21-35/21-0-35/') \
+  && ENCODED_JAVA_VERSION=$(echo "$JAVA_VERSION" | jq "@uri" -jRr) \
+  && CONVERTED_ARCH=$(arch | sed -e 's/x86_64/x64/' -e 's/armv7l/arm/') \
+  && wget --quiet https://github.com/adoptium/temurin21-binaries/releases/download/jdk-"${ENCODED_JAVA_VERSION}"-ea-beta/OpenJDK21U-jdk_"${CONVERTED_ARCH}"_linux_hotspot_ea_"${DASHED_JAVA_VERSION}".tar.gz -O /tmp/jdk.tar.gz \
+  && tar -xzf /tmp/jdk.tar.gz -C /opt/ \
+  && rm -f /tmp/jdk.tar.gz
+
+ENV PATH=/opt/jdk-${JAVA_VERSION}/bin:$PATH
+
+RUN if test "${TARGETPLATFORM}" != 'linux/arm/v7'; then \
+      jlink \
+        --add-modules ALL-MODULE-PATH \
+        --no-man-pages \
+        --compress=zip-6 \
+        --output /javaruntime; \
+    # It is acceptable to have a larger image in arm/v7 (arm 32 bits) environment.
+    # Because jlink fails with the error "jmods: Value too large for defined data type" error.
+    else  \
+      cp -r "/opt/jdk-${JAVA_VERSION}" /javaruntime; \
+    fi
 
 FROM debian:bookworm-"${BOOKWORM_TAG}"-slim
 
@@ -116,9 +143,6 @@ COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
-
-# from a derived Dockerfile, can use `RUN install-plugins.sh active.txt` to setup $REF/plugins from a support bundle
-COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # metadata labels
 LABEL \
