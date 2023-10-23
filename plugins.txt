@@ -20,7 +20,7 @@ cloudbees-bitbucket-branch-source:848.v42c6a_317eda_e
 cloudbees-folder:6.858.v898218f3609d
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.0.573.vcb_f5a_63a_5e1b_
-code-coverage-api:4.10.0
+code-coverage-api:4.99.0
 command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.10.0-78.v3e7b_ea_d5a_fe1
@@ -28,6 +28,7 @@ conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1714.v09593e830cfa
 copyartifact:722.v0662a_9b_e22a_c
+coverage:1.1.0
 credentials-binding:636.v55f1275c7b_27
 credentials:1293.vff276f713473
 dark-theme:336.v02165cd8c2ee
@@ -148,7 +149,7 @@ warnings-ng:10.5.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1283.v99c10937efcb_
 workflow-basic-steps:1042.ve7b_140c4a_e0c
-workflow-cps:3802.vd42b_fcf00b_a_c
+workflow-cps:3805.v769b_b_74b_db_14
 workflow-durable-task-step:1289.v4d3e7b_01546b_
 workflow-job:1348.v32a_a_f150910e
 workflow-multibranch:756.v891d88f2cd46
