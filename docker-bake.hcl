@@ -191,6 +191,7 @@ target "alpine_jdk17" {
   }
   tags = [
     tag(true, "alpine"),
+    tag(true, "alpine-jdk17"),
     tag_weekly(false, "alpine"),
     tag_weekly(false, "alpine-jdk17"),
     tag_weekly(false, "alpine${ALPINE_SHORT_TAG}-jdk17"),
@@ -364,6 +365,7 @@ target "debian_slim_jdk17" {
   }
   tags = [
     tag(true, "slim"),
+    tag(true, "slim-jdk17"),
     tag_weekly(false, "slim"),
     tag_weekly(false, "slim-jdk17"),
     tag_lts(false, "lts-slim"),
