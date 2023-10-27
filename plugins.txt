@@ -30,7 +30,7 @@ configuration-as-code:1714.v09593e830cfa
 copyartifact:722.v0662a_9b_e22a_c
 coverage:1.2.0
 credentials-binding:642.v737c34dea_6c2
-credentials:1293.vff276f713473
+credentials:1305.v04f5ec1f3743
 dark-theme:336.v02165cd8c2ee
 data-tables-api:1.13.6-5
 description-setter:1.10
