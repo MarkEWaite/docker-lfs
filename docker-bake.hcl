@@ -91,7 +91,7 @@ variable "ALPINE_SHORT_TAG" {
 }
 
 variable "JAVA11_VERSION" {
-  default = "11.0.20.1_1"
+  default = "11.0.21_9"
 }
 
 variable "JAVA17_VERSION" {
@@ -105,7 +105,7 @@ variable "JAVA21_PREVIEW_VERSION" {
 }
 
 variable "JAVA21_VERSION" {
-  default = "21_35"
+  default = "21.0.1_12"
 }
 
 variable "BOOKWORM_TAG" {
