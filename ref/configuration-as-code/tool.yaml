@@ -143,7 +143,7 @@ tool:
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/opt/jdk11"
+              toolHome: "/home/jagent/tools/jdk-11.0.21+9"
           - command:
               command: "true"
               label: "freebsd"
@@ -156,22 +156,22 @@ tool:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !cloud"
-              subdir: "jdk-17.0.8.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_linux_hotspot_17.0.8.1_1.tar.gz"
+              subdir: "jdk-17.0.9+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_linux_hotspot_17.0.9_9.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk-17.0.8.1+1"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_windows_hotspot_17.0.8.1_1.zip"
+              subdir: "jdk-17.0.9+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-17.0.8.1+1"
+              toolHome: "/home/jagent/tools/jdk-17.0.9+9"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.8.1+1"
+              id: "jdk-17.0.9+9"
     - name: "jdk21"
       properties:
       - installSource:
