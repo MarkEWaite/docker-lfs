@@ -383,6 +383,8 @@ unclassified:
       expression: "aarch64"
     - atoms: "FreeBSD"
       expression: "freebsd"
+    - atoms: "linux-amd64"
+      expression: "linux&&amd64"
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
