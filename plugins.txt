@@ -1,6 +1,6 @@
 PrioritySorter:5.0.0
 adoptopenjdk:1.5
-analysis-model-api:11.11.0
+analysis-model-api:11.13.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
@@ -65,10 +65,10 @@ h2-api:11.1.4.199-12.v9f4244395f7a_
 handy-uri-templates-2-api:2.1.8-22.v77d5b_75e6953
 http_request:1.18
 ignore-committer-strategy:1.0.4
-implied-labels:278.v7fc7ed998039
+implied-labels:280.ve218c64f476a_
 instance-identity:185.v303dc7c645f9
 ionicons-api:56.v1b_1c8c49374e
-jackson2-api:2.15.3-366.vfe8d1fa_f8c87
+jackson2-api:2.15.3-372.v309620682326
 jacoco:3.3.5
 jakarta-activation-api:2.0.1-3
 jakarta-mail-api:2.0.1-3
@@ -104,7 +104,7 @@ pipeline-build-step:516.v8ee60a_81c5b_9
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-155.8eab375ac9f8
 pipeline-graph-analysis:202.va_d268e64deb_3
-pipeline-graph-view:203.vdb_a_10c0076b_6
+pipeline-graph-view:204.vf6b_83d21e246
 pipeline-groovy-lib:689.veec561a_dee13
 pipeline-input-step:477.v339683a_8d55e
 pipeline-maven-api:1345.va_0ef5530a_5ca_
