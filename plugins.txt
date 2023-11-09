@@ -125,7 +125,7 @@ prism-api:1.29.0-8
 promoted-builds:936.va_571a_a_b_f8da_5
 resource-disposer:0.23
 run-condition:1.7
-scm-api:676.v886669a_199a_a_
+scm-api:683.vb_16722fb_b_80b_
 script-security:1275.v23895f409fb_d
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
