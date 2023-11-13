@@ -50,7 +50,7 @@ git-client:4.5.0
 git-forensics:2.0.0
 git-parameter:0.9.19
 git-server:99.va_0826a_b_cdfa_d
-git:incrementals;org.jenkins-ci.plugins;5.2.1-rc5174.056f12a_59728
+git:5.2.1
 gitea:1.4.5
 github-api:1.316-451.v15738eef3414
 github-branch-source:1741.va_3028eb_9fd21
