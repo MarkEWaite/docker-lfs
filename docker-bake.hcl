@@ -6,7 +6,6 @@ group "linux" {
     "alpine_jdk11",
     "alpine_jdk17",
     "alpine_jdk21",
-    "centos7_jdk11",
     "debian_jdk11",
     "debian_jdk17",
     "debian_jdk21",
@@ -95,7 +94,7 @@ variable "JAVA11_VERSION" {
 }
 
 variable "JAVA17_VERSION" {
-  default = "17.0.8.1_1"
+  default = "17.0.9_9"
 }
 
 # not passed through currently as inconsistent versions are published (2023-08-14)
@@ -220,27 +219,6 @@ target "alpine_jdk21" {
     tag_lts(false, "lts-alpine-jdk21")
   ]
   platforms = ["linux/amd64", "linux/arm64"]
-}
-
-target "centos7_jdk11" {
-  dockerfile = "11/centos/centos7/hotspot/Dockerfile"
-  context    = "."
-  args = {
-    JENKINS_VERSION    = JENKINS_VERSION
-    JENKINS_SHA        = JENKINS_SHA
-    COMMIT_SHA         = COMMIT_SHA
-    PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
-    JAVA_VERSION       = JAVA11_VERSION
-  }
-  tags = [
-    tag(true, "centos7"),
-    tag_weekly(false, "centos7"),
-    tag_weekly(false, "centos7-jdk11"),
-    tag_lts(true, "lts-centos7"),
-    tag_lts(false, "lts-centos7"),
-    tag_lts(false, "lts-centos7-jdk11")
-  ]
-  platforms = ["linux/amd64"]
 }
 
 target "debian_jdk11" {
