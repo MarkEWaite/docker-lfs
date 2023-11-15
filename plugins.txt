@@ -31,7 +31,7 @@ copyartifact:722.v0662a_9b_e22a_c
 coverage:1.4.0
 credentials-binding:642.v737c34dea_6c2
 credentials:1309.v8835d63eb_d8a_
-dark-theme:336.v02165cd8c2ee
+dark-theme:372.v79b_02c754b_29
 data-tables-api:1.13.6-5
 description-setter:1.10
 display-url-api:2.200.vb_9327d658781
