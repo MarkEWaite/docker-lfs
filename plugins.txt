@@ -28,7 +28,7 @@ conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1737.v652ee9b_a_e0d9
 copyartifact:722.v0662a_9b_e22a_c
-coverage:1.4.0
+coverage:1.5.0
 credentials-binding:642.v737c34dea_6c2
 credentials:1309.v8835d63eb_d8a_
 dark-theme:372.v79b_02c754b_29
@@ -53,7 +53,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:5.2.1
 gitea:1.4.5
 github-api:1.316-451.v15738eef3414
-github-branch-source:1750.v6b_fb_8df8f985
+github-branch-source:1751.v90e17c48a_6a_c
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3.1
@@ -126,7 +126,7 @@ promoted-builds:936.va_571a_a_b_f8da_5
 resource-disposer:0.23
 run-condition:1.7
 scm-api:683.vb_16722fb_b_80b_
-script-security:1275.v23895f409fb_d
+script-security:1281.v22fb_899df1a_e
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
 ssh-credentials:308.ve4497b_ccd8f4
