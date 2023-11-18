@@ -26,7 +26,7 @@ commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-94.v3e1f4a_926e49
 conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
-configuration-as-code:1737.v652ee9b_a_e0d9
+configuration-as-code:1738.v2d8b_a_b_8a_54b_1
 copyartifact:722.v0662a_9b_e22a_c
 coverage:1.5.0
 credentials-binding:642.v737c34dea_6c2
@@ -117,7 +117,7 @@ pipeline-stage-step:305.ve96d0205c1c6
 pipeline-stage-tags-metadata:2.2151.ve32c9d209a_3f
 pipeline-utility-steps:2.16.0
 plain-credentials:143.v1b_df8b_d3b_e48
-platformlabeler:2287.va_d728a_42d7f1
+platformlabeler:2305.v3c580e5b_6f86
 plugin-util-api:3.6.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
