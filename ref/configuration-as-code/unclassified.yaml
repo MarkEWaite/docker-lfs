@@ -441,8 +441,6 @@ unclassified:
       fQStrategy:
         defaultPriority: 3
         numberOfPriorities: 5
-  prismConfiguration:
-    theme: PRISM
   scmGit:
     addGitTagAction: false
     allowSecondFetch: false
