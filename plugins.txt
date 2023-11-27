@@ -26,7 +26,7 @@ commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-94.v3e1f4a_926e49
 conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
-configuration-as-code:1738.v2d8b_a_b_8a_54b_1
+configuration-as-code:1746.vf1673cfe690a
 copyartifact:722.v0662a_9b_e22a_c
 coverage:1.5.0
 credentials-binding:642.v737c34dea_6c2
@@ -52,7 +52,7 @@ git-parameter:0.9.19
 git-server:99.va_0826a_b_cdfa_d
 git:5.2.1
 gitea:1.4.5
-github-api:1.316-451.v15738eef3414
+github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1751.v90e17c48a_6a_c
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
