@@ -53,7 +53,7 @@ git-server:99.va_0826a_b_cdfa_d
 git:5.2.1
 gitea:1.4.5
 github-api:1.318-461.v7a_c09c9fa_d63
-github-branch-source:1751.v90e17c48a_6a_c
+github-branch-source:1752.vc201a_0235d80
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3.1
@@ -126,7 +126,7 @@ promoted-builds:936.va_571a_a_b_f8da_5
 resource-disposer:0.23
 run-condition:1.7
 scm-api:683.vb_16722fb_b_80b_
-script-security:1281.v22fb_899df1a_e
+script-security:1294.v99333c047434
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
 ssh-credentials:308.ve4497b_ccd8f4
