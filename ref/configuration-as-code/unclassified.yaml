@@ -441,8 +441,6 @@ unclassified:
     hideCredentials: false
     showEntireCommitSummaryInChanges: true
     useExistingAccountWithSameEmail: false
-  themeManager:
-    disableUserThemes: false
   timestamper:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
