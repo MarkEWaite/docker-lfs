@@ -41,24 +41,6 @@ tool:
               subdir: "mingw64\\bin\\git.exe"
               url: "https://home.markwaite.net/~mwaite/git/MinGit-2.43.0-64-bit.zip"
     - home: "git"
-      name: "git-2.11.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.11 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.17.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.17 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
       name: "git-2.20.1"
       properties:
       - installSource:
