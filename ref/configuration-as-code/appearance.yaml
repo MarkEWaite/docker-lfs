@@ -1,0 +1,6 @@
+appearance:
+  prism:
+    theme: PRISM
+  themeManager:
+    disableUserThemes: false
+    theme: "noOp"
