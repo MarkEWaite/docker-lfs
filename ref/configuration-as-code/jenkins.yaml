@@ -97,6 +97,18 @@ jenkins:
             - regexNameVerifier:
                 regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
   labelString: "git-2.40 highmem"
+  log:
+    recorders:
+    - loggers:
+      - level: "WARNING"
+        name: "org.eclipse.jgit"
+      name: "JGit"
+    - loggers:
+      - level: "INFO"
+        name: "hudson.plugins.git.util.GitUtils"
+      - level: "INFO"
+        name: "jenkins.plugins.git.AbstractGitSCMSource"
+      name: "GitUtils-and-AbstractGitSCMSource-info"
   markupFormatter: "markdownFormatter"
   mode: NORMAL
   myViewsTabBar: "standard"
