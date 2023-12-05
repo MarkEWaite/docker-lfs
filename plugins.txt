@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
 basic-branch-build-strategies:81.v05e333931c7d
-bootstrap5-api:5.3.2-2
+bootstrap5-api:5.3.2-3
 bouncycastle-api:2.29
 branch-api:2.1135.v8de8e7899051
 build-blocker-plugin:1.7.9
@@ -32,13 +32,13 @@ coverage:1.6.0
 credentials-binding:642.v737c34dea_6c2
 credentials:1309.v8835d63eb_d8a_
 dark-theme:398.vb_e1e7f1f8a_a_6
-data-tables-api:1.13.8-1
+data-tables-api:1.13.8-2
 description-setter:1.10
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:572.v950f58993843
 durable-task:523.va_a_22cf15d5e0
-echarts-api:5.4.3-1
+echarts-api:5.4.3-2
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:412.v09da_db_1dee68
 envinject-api:1.199.v3ce31253ed13
@@ -121,7 +121,7 @@ platformlabeler:2325.v8f074df8840d
 plugin-util-api:3.6.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-9
+prism-api:1.29.0-10
 promoted-builds:940.va_9b_59a_717a_b_1
 resource-disposer:0.23
 run-condition:1.7
