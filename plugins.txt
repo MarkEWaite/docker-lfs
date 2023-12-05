@@ -122,7 +122,7 @@ plugin-util-api:3.6.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-9
-promoted-builds:936.va_571a_a_b_f8da_5
+promoted-builds:940.va_9b_59a_717a_b_1
 resource-disposer:0.23
 run-condition:1.7
 scm-api:683.vb_16722fb_b_80b_
