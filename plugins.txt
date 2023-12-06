@@ -95,7 +95,7 @@ metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.11.0-86.v836f585d47fa_
 mina-sshd-api-core:2.11.0-86.v836f585d47fa_
 monitoring:incrementals;org.jvnet.hudson.plugins;1.95.1-rc526.44032e0339fd
-naginator:1.421.v85c11e2db_507
+naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-157.v6852a_a_fa_ec11
 parallel-test-executor:418.v24f9a_141d726
