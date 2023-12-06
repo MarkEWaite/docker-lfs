@@ -23,7 +23,7 @@ clover:4.14.1.577.vb_ff5a_f69b_37b_
 code-coverage-api:4.99.0
 command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
-commons-text-api:1.11.0-94.v3e1f4a_926e49
+commons-text-api:1.11.0-95.v22a_d30ee5d36
 conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1752.v0ccc3b_6064b_0
@@ -95,7 +95,7 @@ metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.11.0-86.v836f585d47fa_
 mina-sshd-api-core:2.11.0-86.v836f585d47fa_
 monitoring:incrementals;org.jvnet.hudson.plugins;1.95.1-rc526.44032e0339fd
-naginator:1.421.v85c11e2db_507
+naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-157.v6852a_a_fa_ec11
 parallel-test-executor:418.v24f9a_141d726
