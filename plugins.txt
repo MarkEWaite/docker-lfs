@@ -26,12 +26,12 @@ commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-95.v22a_d30ee5d36
 conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
-configuration-as-code:1752.v0ccc3b_6064b_0
+configuration-as-code:1756.v2b_7eea_874392
 copyartifact:722.v0662a_9b_e22a_c
 coverage:1.6.0
 credentials-binding:642.v737c34dea_6c2
-credentials:1309.v8835d63eb_d8a_
-dark-theme:403.v9b_c3e80ceb_f6
+credentials:1311.vcf0a_900b_37c2
+dark-theme:404.v3a_7fdced40f9
 data-tables-api:1.13.8-2
 description-setter:1.10
 display-url-api:2.200.vb_9327d658781
@@ -82,6 +82,7 @@ jira:3.12
 jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.7.1-1
 jsch:0.2.8-65.v052c39de79b_2
+json-api:20231013-3.v20f3c247f2fe
 junit-realtime-test-reporter:135.vf92a_7fe68b_15
 junit:1240.vf9529b_881428
 label-verifier:1.4
@@ -100,7 +101,7 @@ nodelabelparameter:1.12.0
 okhttp-api:4.11.0-157.v6852a_a_fa_ec11
 parallel-test-executor:418.v24f9a_141d726
 parameterized-trigger:787.v665fcf2a_830b_
-pipeline-build-step:516.v8ee60a_81c5b_9
+pipeline-build-step:539.v8c889169451f
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-155.8eab375ac9f8
 pipeline-graph-analysis:202.va_d268e64deb_3
@@ -149,7 +150,7 @@ warnings-ng:10.5.2
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1283.v99c10937efcb_
 workflow-basic-steps:1042.ve7b_140c4a_e0c
-workflow-cps:3821.v9d3888c583b_1
+workflow-cps:3826.v3b_5707fe44da_
 workflow-durable-task-step:1289.v4d3e7b_01546b_
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:756.v891d88f2cd46
