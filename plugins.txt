@@ -84,6 +84,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 jquery3-api:3.7.1-1
 jsch:0.2.8-65.v052c39de79b_2
 json-api:20231013-3.v20f3c247f2fe
+json-path-api:2.8.0-5.v07cb_a_1ca_738c
 junit-realtime-test-reporter:135.vf92a_7fe68b_15
 junit:1240.vf9529b_881428
 label-verifier:1.4
