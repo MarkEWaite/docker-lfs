@@ -74,7 +74,7 @@ variable "LATEST_LTS" {
 }
 
 variable "PLUGIN_CLI_VERSION" {
-  default = "2.12.13"
+  default = "2.12.14"
 }
 
 variable "COMMIT_SHA" {
@@ -82,7 +82,7 @@ variable "COMMIT_SHA" {
 }
 
 variable "ALPINE_FULL_TAG" {
-  default = "3.18.5"
+  default = "3.19.0"
 }
 
 variable "ALPINE_SHORT_TAG" {
