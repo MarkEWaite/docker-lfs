@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <maven2-moduleset plugin="maven-plugin@3.23">
   <actions/>
-  <description>Jenkins [platform labeler plugin](https://plugins.jenkins.io/platformlabeler) maven job</description>
+  <description>Jenkins [TestNG plugin](https://plugins.jenkins.io/testng-plugin) maven job</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -17,8 +17,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
-        <url>https://github.com/MarkEWaite/platformlabeler-plugin</url>
+        <url>https://github.com/MarkEWaite/testng-plugin-plugin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -33,8 +32,8 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/platformlabeler-plugin.git</reference>
-        <honorRefspec>true</honorRefspec>
+        <reference>/var/lib/git/mwaite/jenkins/testng-plugin-plugin.git</reference>
+        <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.CleanCheckout>
@@ -54,7 +53,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk21</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -63,8 +62,8 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <rootModule>
-    <groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>platformlabeler</artifactId>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>testng-plugin</artifactId>
   </rootModule>
   <goals>-P enable-jacoco -U clean verify spotbugs:check jacoco:report</goals>
   <mavenName>maven-latest</mavenName>
@@ -84,6 +83,18 @@
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
   <publishers>
+    <hudson.plugins.testng.Publisher plugin="testng-plugin@835.v51ed3da_fcc35">
+      <reportFilenamePattern>**/testng-results.xml</reportFilenamePattern>
+      <escapeTestDescp>true</escapeTestDescp>
+      <escapeExceptionMsg>true</escapeExceptionMsg>
+      <failureOnFailedTestConfig>false</failureOnFailedTestConfig>
+      <showFailedBuilds>false</showFailedBuilds>
+      <unstableSkips>100</unstableSkips>
+      <unstableFails>0</unstableFails>
+      <failedSkips>100</failedSkips>
+      <failedFails>100</failedFails>
+      <thresholdMode>2</thresholdMode>
+    </hudson.plugins.testng.Publisher>
     <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.3.5">
       <execPattern>**/**.exec</execPattern>
       <classPattern>**/classes</classPattern>
