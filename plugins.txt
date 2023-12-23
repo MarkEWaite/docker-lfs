@@ -122,7 +122,7 @@ pipeline-stage-tags-metadata:2.2151.ve32c9d209a_3f
 pipeline-utility-steps:2.16.0
 plain-credentials:143.v1b_df8b_d3b_e48
 platformlabeler:2325.v8f074df8840d
-plugin-util-api:3.7.0
+plugin-util-api:3.8.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-10
