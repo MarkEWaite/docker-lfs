@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<maven2-moduleset plugin="maven-plugin@3.8">
+<maven2-moduleset plugin="maven-plugin@3.23">
   <actions/>
   <description>Jenkins [platform labeler plugin](https://plugins.jenkins.io/platformlabeler) maven job</description>
   <keepDependencies>false</keepDependencies>
@@ -13,7 +13,7 @@
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.2">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -28,7 +28,7 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
-    <submoduleCfg class="list"/>
+    <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
@@ -70,7 +70,7 @@
   <mavenName>maven-latest</mavenName>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
-  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUpstremChanges>true</ignoreUpstremChanges>
   <ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
   <archivingDisabled>false</archivingDisabled>
   <siteArchivingDisabled>false</siteArchivingDisabled>
@@ -81,12 +81,10 @@
   <runHeadless>true</runHeadless>
   <disableTriggerDownstreamProjects>true</disableTriggerDownstreamProjects>
   <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-  <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@3.7.0">
-    <settingsConfigId>jenkins-maven-global-settings-file</settingsConfigId>
-  </globalSettings>
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
   <publishers>
-    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.1.0">
+    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.3.5">
       <execPattern>**/**.exec</execPattern>
       <classPattern>**/classes</classPattern>
       <sourcePattern>**/src/main/java</sourcePattern>
@@ -117,11 +115,12 @@
       <deltaClassCoverage>0</deltaClassCoverage>
       <buildOverBuild>false</buildOverBuild>
     </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@8.6.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.5.2">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@3.6.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -129,6 +128,7 @@
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@3.6.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -137,22 +137,25 @@
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <sourceDirectory></sourceDirectory>
+      <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
       <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@9.6.0">
+      <minimumSeverity plugin="analysis-model-api@11.13.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
+      <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
       <publishAllIssues>false</publishAllIssues>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
+      <scm></scm>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
