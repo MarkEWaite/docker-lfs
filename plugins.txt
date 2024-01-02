@@ -12,7 +12,7 @@ bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
 branch-api:2.1135.v8de8e7899051
 build-blocker-plugin:1.7.9
 build-name-setter:2.4.0
-build-timeout:1.31
+build-timeout:1.32
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.0.2
@@ -111,8 +111,8 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:205.vb_8e3a_b_51f12e
 pipeline-groovy-lib:689.veec561a_dee13
 pipeline-input-step:477.v339683a_8d55e
-pipeline-maven-api:1362.vee39a_d4b_02b_1
-pipeline-maven:1362.vee39a_d4b_02b_1
+pipeline-maven-api:1368.vfb_8509d7b_869
+pipeline-maven:1368.vfb_8509d7b_869
 pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2151.ve32c9d209a_3f
 pipeline-model-definition:2.2151.ve32c9d209a_3f
