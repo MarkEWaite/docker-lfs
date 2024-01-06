@@ -353,8 +353,6 @@ unclassified:
       expression: "highmem"
     - atoms: "arm64"
       expression: "aarch64"
-    - atoms: "FreeBSD"
-      expression: "freebsd"
     - atoms: "linux-amd64"
       expression: "linux&&amd64"
   jiraGlobalConfiguration:
