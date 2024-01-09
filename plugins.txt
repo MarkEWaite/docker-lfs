@@ -149,11 +149,11 @@ trilead-api:2.133.vfb_8a_7b_9c5dd1
 variant:60.v7290fc0eb_b_cd
 versioncolumn:233.v2d198f8212a_2
 view-job-filters:369.ve0513a_a_f5524
-warnings-ng:10.5.3
+warnings-ng:10.6.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1283.v99c10937efcb_
 workflow-basic-steps:1042.ve7b_140c4a_e0c
-workflow-cps:3835.vc2a_8f9167e92
+workflow-cps:3837.v305192405b_c0
 workflow-durable-task-step:1313.vcb_970b_d2a_fb_3
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:770.v1a_d0708dd1f6
