@@ -28,12 +28,12 @@ config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1763.vb_fe9c1b_83f7b
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:14.v53389d076a_eb_
-coverage:1.7.0
+coverage:1.8.0
 credentials-binding:642.v737c34dea_6c2
 credentials:1311.vcf0a_900b_37c2
 dark-theme:416.v535839b_c4e88
 data-tables-api:1.13.8-2
-description-setter:1.10
+description-setter:incrementals;org.jenkins-ci.plugins;1.11-rc237.1ff52a_c10fe7
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:572.v950f58993843
@@ -149,7 +149,7 @@ trilead-api:2.133.vfb_8a_7b_9c5dd1
 variant:60.v7290fc0eb_b_cd
 versioncolumn:233.v2d198f8212a_2
 view-job-filters:369.ve0513a_a_f5524
-warnings-ng:10.6.0
+warnings-ng:10.7.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1283.v99c10937efcb_
 workflow-basic-steps:1042.ve7b_140c4a_e0c
