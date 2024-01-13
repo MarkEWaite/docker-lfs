@@ -1,6 +1,6 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
-analysis-model-api:11.14.0
+analysis-model-api:11.15.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
@@ -33,7 +33,7 @@ credentials-binding:642.v737c34dea_6c2
 credentials:1311.vcf0a_900b_37c2
 dark-theme:416.v535839b_c4e88
 data-tables-api:1.13.8-2
-description-setter:incrementals;org.jenkins-ci.plugins;1.11-rc237.1ff52a_c10fe7
+description-setter:239.vd0a_6b_785f92d
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:572.v950f58993843
