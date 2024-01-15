@@ -27,7 +27,7 @@ conditional-buildstep:1.4.3
 config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1763.vb_fe9c1b_83f7b
 copyartifact:722.v0662a_9b_e22a_c
-coverage-badges-extension:14.v53389d076a_eb_
+coverage-badges-extension:27.v943f8d610436
 coverage:1.8.0
 credentials-binding:642.v737c34dea_6c2
 credentials:1311.vcf0a_900b_37c2
