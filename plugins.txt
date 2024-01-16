@@ -16,7 +16,7 @@ build-timeout:1.32
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.0.2
-cloudbees-bitbucket-branch-source:856.v04c46c86f911
+cloudbees-bitbucket-branch-source:866.vdea_7dcd3008e
 cloudbees-folder:6.858.v898218f3609d
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.1.577.vb_ff5a_f69b_37b_
@@ -87,7 +87,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20231013-17.v1c97069404b_e
 json-path-api:2.8.0-21.v8b_7dc8b_1037b_
 junit-realtime-test-reporter:135.vf92a_7fe68b_15
-junit:1252.vfc2e5efa_294f
+junit:1256.v002534a_5f33e
 label-verifier:1.4
 mailer:463.vedf8358e006b_
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -108,7 +108,7 @@ pipeline-build-step:540.vb_e8849e1a_b_d8
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:202.va_d268e64deb_3
-pipeline-graph-view:208.v8cb_1eea_dc5e1
+pipeline-graph-view:209.ve8c2e5305867
 pipeline-groovy-lib:689.veec561a_dee13
 pipeline-input-step:477.v339683a_8d55e
 pipeline-maven-api:1368.vfb_8509d7b_869
@@ -134,7 +134,7 @@ script-security:1313.v7a_6067dc7087
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
 ssh-credentials:308.ve4497b_ccd8f4
-ssh-slaves:2.947.v64ee6b_f87b_c1
+ssh-slaves:2.948.vb_8050d697fec
 sshd:3.312.v1c601b_c83b_0e
 structs:325.vcb_307d2a_2782
 support-core:1366.v9d076592655d
