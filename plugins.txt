@@ -134,7 +134,7 @@ script-security:1313.v7a_6067dc7087
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
 ssh-credentials:308.ve4497b_ccd8f4
-ssh-slaves:2.947.v64ee6b_f87b_c1
+ssh-slaves:2.948.vb_8050d697fec
 sshd:3.312.v1c601b_c83b_0e
 structs:325.vcb_307d2a_2782
 support-core:1366.v9d076592655d
