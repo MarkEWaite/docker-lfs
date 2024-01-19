@@ -97,7 +97,7 @@ matrix-project:822.v01b_8c85d16d2
 maven-plugin:3.23
 metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
-mina-sshd-api-core:2.11.0-86.v836f585d47fa_
+mina-sshd-api-core:2.12.0-90.v9f7fb_9fa_3d3b_
 monitoring:1.95.0
 naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
