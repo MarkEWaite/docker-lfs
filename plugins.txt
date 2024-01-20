@@ -28,8 +28,8 @@ config-file-provider:959.vcff671a_4518b_
 configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:27.v943f8d610436
-coverage:1.8.0
-credentials-binding:642.v737c34dea_6c2
+coverage:1.9.0
+credentials-binding:657.v2b_19db_7d6e6d
 credentials:1311.vcf0a_900b_37c2
 dark-theme:416.v535839b_c4e88
 data-tables-api:1.13.8-2
@@ -70,7 +70,6 @@ implied-labels:295.v770c54615e6a_
 instance-identity:185.v303dc7c645f9
 ionicons-api:56.v1b_1c8c49374e
 jackson2-api:2.16.1-373.ve709c6871598
-jacoco:3.3.5
 jakarta-activation-api:2.0.1-3
 jakarta-mail-api:2.0.1-3
 javadoc:243.vb_b_503b_b_45537
@@ -96,8 +95,8 @@ matrix-auth:3.2.1
 matrix-project:822.v01b_8c85d16d2
 maven-plugin:3.23
 metrics:4.2.18-442.v02e107157925
-mina-sshd-api-common:2.11.0-86.v836f585d47fa_
-mina-sshd-api-core:2.11.0-86.v836f585d47fa_
+mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
+mina-sshd-api-core:2.12.0-90.v9f7fb_9fa_3d3b_
 monitoring:1.95.0
 naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
@@ -158,7 +157,7 @@ workflow-durable-task-step:1313.vcb_970b_d2a_fb_3
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:415.v434365564324
-workflow-step-api:653.v84d381622a_a_d
+workflow-step-api:657.v03b_e8115821b_
 workflow-support:865.v43e78cc44e0d
 ws-cleanup:0.45
 xshell:203.v80a_c62d7886f
