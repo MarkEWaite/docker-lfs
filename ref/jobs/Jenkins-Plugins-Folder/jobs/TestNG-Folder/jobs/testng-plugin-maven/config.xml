@@ -95,43 +95,41 @@
       <failedFails>100</failedFails>
       <thresholdMode>2</thresholdMode>
     </hudson.plugins.testng.Publisher>
-    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.3.5">
-      <execPattern>**/**.exec</execPattern>
-      <classPattern>**/classes</classPattern>
-      <sourcePattern>**/src/main/java</sourcePattern>
-      <sourceInclusionPattern>**/*.java,**/*.groovy,**/*.kt,**/*.kts</sourceInclusionPattern>
-      <sourceExclusionPattern></sourceExclusionPattern>
-      <inclusionPattern></inclusionPattern>
-      <exclusionPattern></exclusionPattern>
-      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
-      <minimumInstructionCoverage>0</minimumInstructionCoverage>
-      <minimumBranchCoverage>0</minimumBranchCoverage>
-      <minimumComplexityCoverage>0</minimumComplexityCoverage>
-      <minimumLineCoverage>0</minimumLineCoverage>
-      <minimumMethodCoverage>0</minimumMethodCoverage>
-      <minimumClassCoverage>0</minimumClassCoverage>
-      <maximumInstructionCoverage>0</maximumInstructionCoverage>
-      <maximumBranchCoverage>0</maximumBranchCoverage>
-      <maximumComplexityCoverage>0</maximumComplexityCoverage>
-      <maximumLineCoverage>0</maximumLineCoverage>
-      <maximumMethodCoverage>0</maximumMethodCoverage>
-      <maximumClassCoverage>0</maximumClassCoverage>
-      <changeBuildStatus>false</changeBuildStatus>
-      <runAlways>false</runAlways>
-      <deltaInstructionCoverage>0</deltaInstructionCoverage>
-      <deltaBranchCoverage>0</deltaBranchCoverage>
-      <deltaComplexityCoverage>0</deltaComplexityCoverage>
-      <deltaLineCoverage>0</deltaLineCoverage>
-      <deltaMethodCoverage>0</deltaMethodCoverage>
-      <deltaClassCoverage>0</deltaClassCoverage>
-      <buildOverBuild>false</buildOverBuild>
-    </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.5.2">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.8.0">
+      <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
+        <java.util.CollSer>
+          <default>
+            <tag>1</tag>
+          </default>
+          <int>1</int>
+          <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
+            <jenkins plugin="plugin-util-api@3.8.0"/>
+            <pattern></pattern>
+            <parser>JACOCO</parser>
+          </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
+        </java.util.CollSer>
+      </tools>
+      <qualityGates/>
+      <id></id>
+      <name></name>
+      <skipPublishingChecks>false</skipPublishingChecks>
+      <checksName>Code Coverage</checksName>
+      <checksAnnotationScope>MODIFIED_LINES</checksAnnotationScope>
+      <ignoreParsingErrors>false</ignoreParsingErrors>
+      <failOnError>false</failOnError>
+      <enabledForFailure>false</enabledForFailure>
+      <skipSymbolicLinks>false</skipSymbolicLinks>
+      <scm></scm>
+      <sourceCodeEncoding></sourceCodeEncoding>
+      <sourceDirectories/>
+      <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
+    </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.7.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.6.0"/>
+          <jenkins plugin="plugin-util-api@3.8.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -139,7 +137,7 @@
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.6.0"/>
+          <jenkins plugin="plugin-util-api@3.8.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -154,7 +152,7 @@
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@11.13.0">
+      <minimumSeverity plugin="analysis-model-api@11.15.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
@@ -164,6 +162,7 @@
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
       <publishAllIssues>false</publishAllIssues>
+      <skipPostProcessing>false</skipPostProcessing>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
       <scm></scm>

@@ -84,7 +84,7 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "lts-with-plugins" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.21+9"
+        return "/home/jagent/tools/jdk-11.0.22+7"
     if "jdk21" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-21.0.1+12"
     if "weekly" in docker_build.get_current_branch():

@@ -4,15 +4,6 @@
   <description>Jenkins platform labeler plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.3">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
@@ -21,7 +12,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.32.0">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.3.1">
       <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
       <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -35,7 +26,7 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.5.2">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -49,7 +40,7 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
-    <submoduleCfg class="list"/>
+    <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
@@ -93,48 +84,52 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.29">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1256.v002534a_5f33e">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
+      <keepProperties>false</keepProperties>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
+      <skipPublishingChecks>false</skipPublishingChecks>
+      <checksName></checksName>
+      <skipMarkingBuildUnstable>false</skipMarkingBuildUnstable>
+      <skipOldReports>false</skipOldReports>
     </hudson.tasks.junit.JUnitResultArchiver>
-    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.6">
-      <execPattern>**/**.exec</execPattern>
-      <classPattern>**/classes</classPattern>
-      <sourcePattern>**/src/main/java</sourcePattern>
-      <sourceInclusionPattern>**/*.java</sourceInclusionPattern>
-      <sourceExclusionPattern></sourceExclusionPattern>
-      <inclusionPattern></inclusionPattern>
-      <exclusionPattern></exclusionPattern>
-      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
-      <minimumInstructionCoverage>0</minimumInstructionCoverage>
-      <minimumBranchCoverage>0</minimumBranchCoverage>
-      <minimumComplexityCoverage>0</minimumComplexityCoverage>
-      <minimumLineCoverage>0</minimumLineCoverage>
-      <minimumMethodCoverage>0</minimumMethodCoverage>
-      <minimumClassCoverage>0</minimumClassCoverage>
-      <maximumInstructionCoverage>0</maximumInstructionCoverage>
-      <maximumBranchCoverage>0</maximumBranchCoverage>
-      <maximumComplexityCoverage>0</maximumComplexityCoverage>
-      <maximumLineCoverage>0</maximumLineCoverage>
-      <maximumMethodCoverage>0</maximumMethodCoverage>
-      <maximumClassCoverage>0</maximumClassCoverage>
-      <changeBuildStatus>false</changeBuildStatus>
-      <runAlways>false</runAlways>
-      <deltaInstructionCoverage>0</deltaInstructionCoverage>
-      <deltaBranchCoverage>0</deltaBranchCoverage>
-      <deltaComplexityCoverage>0</deltaComplexityCoverage>
-      <deltaLineCoverage>0</deltaLineCoverage>
-      <deltaMethodCoverage>0</deltaMethodCoverage>
-      <deltaClassCoverage>0</deltaClassCoverage>
-      <buildOverBuild>false</buildOverBuild>
-    </hudson.plugins.jacoco.JacocoPublisher>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@8.1.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.8.0">
+      <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
+        <java.util.CollSer>
+          <default>
+            <tag>1</tag>
+          </default>
+          <int>1</int>
+          <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
+            <jenkins plugin="plugin-util-api@3.8.0"/>
+            <pattern></pattern>
+            <parser>JACOCO</parser>
+          </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
+        </java.util.CollSer>
+      </tools>
+      <qualityGates/>
+      <id></id>
+      <name></name>
+      <skipPublishingChecks>false</skipPublishingChecks>
+      <checksName>Code Coverage</checksName>
+      <checksAnnotationScope>MODIFIED_LINES</checksAnnotationScope>
+      <ignoreParsingErrors>false</ignoreParsingErrors>
+      <failOnError>false</failOnError>
+      <enabledForFailure>false</enabledForFailure>
+      <skipSymbolicLinks>false</skipSymbolicLinks>
+      <scm></scm>
+      <sourceCodeEncoding></sourceCodeEncoding>
+      <sourceDirectories/>
+      <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
+    </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.7.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@3.8.0"/>
           <pattern>**/target/spotbugs.xml</pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -143,27 +138,35 @@
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
+          <jenkins plugin="plugin-util-api@3.8.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
         </io.jenkins.plugins.analysis.warnings.Java>
       </analysisTools>
       <sourceCodeEncoding>UTF-8</sourceCodeEncoding>
-      <sourceDirectory>src</sourceDirectory>
+      <sourceDirectory></sourceDirectory>
+      <sourceDirectories>
+        <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.29.0-10">
+          <path>src</path>
+        </io.jenkins.plugins.prism.SourceCodeDirectory>
+      </sourceDirectories>
       <ignoreQualityGate>false</ignoreQualityGate>
       <ignoreFailedBuilds>true</ignoreFailedBuilds>
-      <referenceJobName>-</referenceJobName>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@8.1.3">
+      <minimumSeverity plugin="analysis-model-api@11.15.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
+      <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
-      <isForensicsDisabled>false</isForensicsDisabled>
+      <skipPublishingChecks>false</skipPublishingChecks>
+      <publishAllIssues>false</publishAllIssues>
+      <skipPostProcessing>false</skipPostProcessing>
       <qualityGates>
         <io.jenkins.plugins.analysis.core.util.QualityGate>
           <threshold>1</threshold>
