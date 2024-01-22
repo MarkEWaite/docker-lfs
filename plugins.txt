@@ -44,7 +44,7 @@ embeddable-build-status:467.v4a_954796e45d
 envinject-api:1.199.v3ce31253ed13
 envinject:2.908.v66a_774b_31d93
 external-monitor-job:215.v2e88e894db_f8
-font-awesome-api:6.5.1-1
+font-awesome-api:6.5.1-2
 forensics-api:2.3.0
 git-client:incrementals;org.jenkins-ci.plugins;4.6.1-rc3494.b_6010712ee93
 git-forensics:2.0.0
