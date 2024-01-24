@@ -28,7 +28,7 @@ config-file-provider:968.ve1ca_eb_913f8c
 configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:27.v943f8d610436
-coverage:1.9.0
+coverage:1.10.0
 credentials-binding:657.v2b_19db_7d6e6d
 credentials:1311.vcf0a_900b_37c2
 dark-theme:416.v535839b_c4e88
@@ -49,7 +49,7 @@ forensics-api:2.3.0
 git-client:incrementals;org.jenkins-ci.plugins;4.6.1-rc3494.b_6010712ee93
 git-forensics:2.0.0
 git-parameter:0.9.19
-git-server:99.va_0826a_b_cdfa_d
+git-server:114.v068a_c7cc2574
 git:5.2.1
 gitea:1.4.6
 github-api:1.318-461.v7a_c09c9fa_d63
@@ -58,7 +58,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3.1
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:684.vea_fa_7c1e2fe3
+gitlab-branch-source:688.v5fa_356ee8520
 gitlab-plugin:1.8.0
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
@@ -92,7 +92,7 @@ mailer:463.vedf8358e006b_
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:95.v17a_965e696ee
 matrix-auth:3.2.1
-matrix-project:822.v01b_8c85d16d2
+matrix-project:822.824.v14451b_c0fd42
 maven-plugin:3.23
 metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
@@ -153,7 +153,7 @@ workflow-aggregator:596.v8c21c963d92d
 workflow-api:1283.v99c10937efcb_
 workflow-basic-steps:1042.ve7b_140c4a_e0c
 workflow-cps:3853.vb_a_490d892963
-workflow-durable-task-step:1313.vcb_970b_d2a_fb_3
+workflow-durable-task-step:1317.v5337e0c1fe28
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:415.v434365564324
