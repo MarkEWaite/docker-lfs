@@ -24,7 +24,7 @@ command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-95.v22a_d30ee5d36
 conditional-buildstep:1.4.3
-config-file-provider:959.vcff671a_4518b_
+config-file-provider:968.ve1ca_eb_913f8c
 configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:27.v943f8d610436
