@@ -11,7 +11,7 @@ bootstrap5-api:5.3.2-3
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
 branch-api:2.1144.v1425d1c3d5a_7
 build-blocker-plugin:1.7.9
-build-name-setter:2.4.0
+build-name-setter:2.4.1
 build-timeout:1.32
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
@@ -28,7 +28,7 @@ config-file-provider:968.ve1ca_eb_913f8c
 configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:27.v943f8d610436
-coverage:1.9.0
+coverage:1.10.0
 credentials-binding:657.v2b_19db_7d6e6d
 credentials:1311.vcf0a_900b_37c2
 dark-theme:416.v535839b_c4e88
@@ -49,7 +49,7 @@ forensics-api:2.3.0
 git-client:incrementals;org.jenkins-ci.plugins;4.6.1-rc3494.b_6010712ee93
 git-forensics:2.0.0
 git-parameter:0.9.19
-git-server:99.va_0826a_b_cdfa_d
+git-server:114.v068a_c7cc2574
 git:5.2.1
 gitea:1.4.6
 github-api:1.318-461.v7a_c09c9fa_d63
@@ -58,7 +58,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3.1
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:684.vea_fa_7c1e2fe3
+gitlab-branch-source:692.va_ed303b_62eff
 gitlab-plugin:1.8.0
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
@@ -92,7 +92,7 @@ mailer:463.vedf8358e006b_
 mapdb-api:1.0.9-28.vf251ce40855d
 markdown-formatter:95.v17a_965e696ee
 matrix-auth:3.2.1
-matrix-project:822.v01b_8c85d16d2
+matrix-project:822.824.v14451b_c0fd42
 maven-plugin:3.23
 metrics:4.2.18-442.v02e107157925
 mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
@@ -110,8 +110,8 @@ pipeline-graph-analysis:202.va_d268e64deb_3
 pipeline-graph-view:215.vc0ea_557e4d6f
 pipeline-groovy-lib:704.vc58b_8890a_384
 pipeline-input-step:477.v339683a_8d55e
-pipeline-maven-api:1368.vfb_8509d7b_869
-pipeline-maven:1368.vfb_8509d7b_869
+pipeline-maven-api:1376.v18876d10ce9c
+pipeline-maven:1376.v18876d10ce9c
 pipeline-milestone-step:111.v449306f708b_7
 pipeline-model-api:2.2175.v76a_fff0a_2618
 pipeline-model-definition:2.2175.v76a_fff0a_2618
@@ -136,7 +136,7 @@ ssh-credentials:308.ve4497b_ccd8f4
 ssh-slaves:2.948.vb_8050d697fec
 sshd:3.322.v159e91f6a_550
 structs:337.v1b_04ea_4df7c8
-support-core:1371.v709cef748b_d0
+support-core:1375.va_256158e8881
 swarm:3.44
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.26
@@ -150,10 +150,10 @@ versioncolumn:233.v2d198f8212a_2
 view-job-filters:369.ve0513a_a_f5524
 warnings-ng:10.7.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1283.v99c10937efcb_
+workflow-api:1289.va_cf779f32df0
 workflow-basic-steps:1042.ve7b_140c4a_e0c
 workflow-cps:3853.vb_a_490d892963
-workflow-durable-task-step:1313.vcb_970b_d2a_fb_3
+workflow-durable-task-step:1317.v5337e0c1fe28
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:415.v434365564324
