@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi9/ubi:9.3-1361 as jre-build
-ARG JAVA_VERSION=21.0.1_12
+ARG JAVA_VERSION=21.0.2_13
 ARG TARGETPLATFORM
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -130,9 +130,6 @@ COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
-
-# from a derived Dockerfile, can use `RUN install-plugins.sh active.txt` to setup $REF/plugins from a support bundle
-COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # metadata labels
 LABEL \
