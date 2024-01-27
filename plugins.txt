@@ -30,7 +30,7 @@ copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:27.v943f8d610436
 coverage:1.10.0
 credentials-binding:657.v2b_19db_7d6e6d
-credentials:1311.vcf0a_900b_37c2
+credentials:1319.v7eb_51b_3a_c97b_
 dark-theme:416.v535839b_c4e88
 data-tables-api:1.13.8-2
 description-setter:239.vd0a_6b_785f92d
@@ -58,7 +58,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.37.3.1
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:692.va_ed303b_62eff
+gitlab-branch-source:694.v1b_045877a_b_92
 gitlab-plugin:1.8.0
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
@@ -94,7 +94,7 @@ markdown-formatter:95.v17a_965e696ee
 matrix-auth:3.2.1
 matrix-project:822.824.v14451b_c0fd42
 maven-plugin:3.23
-metrics:4.2.18-442.v02e107157925
+metrics:4.2.21-449.v6960d7c54c69
 mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
 mina-sshd-api-core:2.12.0-90.v9f7fb_9fa_3d3b_
 monitoring:1.95.0
