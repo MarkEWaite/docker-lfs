@@ -2,11 +2,17 @@ ARG BOOKWORM_TAG=20240110
 ARG JAVA_VERSION=21.0.2_13
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
 
+# Generate smaller java runtime without unneeded files
+# for now we include the full module path to maintain compatibility
+# while still saving space (approx 200mb from the full distribution)
+# Arguments to jlink are specific to Java 21 jlink
 RUN if test "${TARGETPLATFORM}" != 'linux/arm/v7'; then \
       jlink \
         --add-modules ALL-MODULE-PATH \
+        --strip-java-debug-attributes \
         --no-man-pages \
-        --compress=zip-6 \
+        --no-header-files \
+        --compress zip-6 \
         --output /javaruntime; \
     # It is acceptable to have a larger image in arm/v7 (arm 32 bits) environment.
     # Because jlink fails with the error "jmods: Value too large for defined data type" error.
