@@ -37,7 +37,7 @@ description-setter:239.vd0a_6b_785f92d
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-workflow:572.v950f58993843
-durable-task:543.v262f6a_803410
+durable-task:547.vd1ea_007d100c
 echarts-api:5.4.3-2
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:467.v4a_954796e45d
@@ -51,7 +51,7 @@ git-forensics:2.0.0
 git-parameter:0.9.19
 git-server:114.v068a_c7cc2574
 git:5.2.1
-gitea:1.4.6
+gitea:1.4.7
 github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1772.va_69eda_d018d4
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
