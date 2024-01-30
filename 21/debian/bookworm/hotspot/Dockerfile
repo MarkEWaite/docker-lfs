@@ -2,11 +2,17 @@ ARG BOOKWORM_TAG=20240110
 ARG JAVA_VERSION=21.0.2_13
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
 
+# Generate smaller java runtime without unneeded files
+# for now we include the full module path to maintain compatibility
+# while still saving space (approx 200mb from the full distribution)
+# Arguments to jlink are specific to Java 21 jlink
 RUN if test "${TARGETPLATFORM}" != 'linux/arm/v7'; then \
       jlink \
         --add-modules ALL-MODULE-PATH \
+        --strip-java-debug-attributes \
         --no-man-pages \
-        --compress=zip-6 \
+        --no-header-files \
+        --compress zip-6 \
         --output /javaruntime; \
     # It is acceptable to have a larger image in arm/v7 (arm 32 bits) environment.
     # Because jlink fails with the error "jmods: Value too large for defined data type" error.
@@ -77,7 +83,7 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.428}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.442}
 
 # jenkins.war checksum, download will be validated using it
 ARG JENKINS_SHA=b4f596923eb37b93c3f5a21a6a32fc3bedd57d04a1b63186811c0ce8b3d9f07c
@@ -123,11 +129,11 @@ ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
 # metadata labels
 LABEL \
-  org.opencontainers.image.vendor="Jenkins project" \
-  org.opencontainers.image.title="Official Jenkins Docker image" \
-  org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
-  org.opencontainers.image.version="${JENKINS_VERSION}" \
-  org.opencontainers.image.url="https://www.jenkins.io/" \
-  org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
-  org.opencontainers.image.revision="${COMMIT_SHA}" \
-  org.opencontainers.image.licenses="MIT"
+    org.opencontainers.image.vendor="Jenkins project" \
+    org.opencontainers.image.title="Official Jenkins Docker image" \
+    org.opencontainers.image.description="The Jenkins Continuous Integration and Delivery server" \
+    org.opencontainers.image.version="${JENKINS_VERSION}" \
+    org.opencontainers.image.url="https://www.jenkins.io/" \
+    org.opencontainers.image.source="https://github.com/jenkinsci/docker" \
+    org.opencontainers.image.revision="${COMMIT_SHA}" \
+    org.opencontainers.image.licenses="MIT"
