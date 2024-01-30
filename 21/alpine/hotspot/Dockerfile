@@ -5,19 +5,15 @@ FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-alpine AS jre-build
 # Generate smaller java runtime without unneeded files
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
+# Arguments to jlink are specific to Java 21 jlink
 RUN if [ "$TARGETPLATFORM" != 'linux/arm/v7' ]; then \
-    case "$(jlink --version 2>&1)" in \
-      # jlink version 11 has less features than JDK17+
-      "11."*) strip_java_debug_flags="--strip-debug" ;; \
-      *) strip_java_debug_flags="--strip-java-debug-attributes" ;; \
-    esac; \
     jlink \
-      --add-modules ALL-MODULE-PATH \
-      "$strip_java_debug_flags" \
-      --no-man-pages \
-      --no-header-files \
-      --compress=zip-6 \
-      --output /javaruntime; \
+        --add-modules ALL-MODULE-PATH \
+        --strip-java-debug-attributes \
+        --no-man-pages \
+        --no-header-files \
+        --compress zip-6 \
+        --output /javaruntime; \
   else \
     cp -r /opt/java/openjdk /javaruntime; \
   fi
@@ -77,7 +73,7 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.428}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.442}
 
 # jenkins.war checksum, download will be validated using it
 ARG JENKINS_SHA=b4f596923eb37b93c3f5a21a6a32fc3bedd57d04a1b63186811c0ce8b3d9f07c
