@@ -51,7 +51,7 @@ git-forensics:2.0.0
 git-parameter:0.9.19
 git-server:114.v068a_c7cc2574
 git:5.2.1
-gitea:1.4.6
+gitea:1.4.7
 github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1772.va_69eda_d018d4
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
