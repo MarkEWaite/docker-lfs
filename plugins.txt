@@ -19,7 +19,7 @@ checks-api:2.0.2
 cloudbees-bitbucket-branch-source:866.vdea_7dcd3008e
 cloudbees-folder:6.858.v898218f3609d
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
-clover:4.14.1.577.vb_ff5a_f69b_37b_
+clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-95.v22a_d30ee5d36
@@ -56,7 +56,7 @@ github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1772.va_69eda_d018d4
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
-github:1.37.3.1
+github:1.38.0
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
 gitlab-branch-source:694.v1b_045877a_b_92
 gitlab-plugin:1.8.0
@@ -85,8 +85,8 @@ jquery3-api:3.7.1-1
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20231013-17.v1c97069404b_e
 json-path-api:2.9.0-33.v2527142f2e1d
-junit-realtime-test-reporter:135.vf92a_7fe68b_15
-junit:1256.v002534a_5f33e
+junit-realtime-test-reporter:146.v82b_01a_5d2b_3a_
+junit:1259.v65ffcef24a_88
 label-verifier:1.4
 mailer:463.vedf8358e006b_
 mapdb-api:1.0.9-28.vf251ce40855d
@@ -129,7 +129,7 @@ promoted-builds:945.v597f5c6a_d3fd
 resource-disposer:0.23
 run-condition:1.7
 scm-api:683.vb_16722fb_b_80b_
-script-security:1313.v7a_6067dc7087
+script-security:1321.va_73c0795b_923
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:346.vda_a_c4f2c8e50
 ssh-credentials:308.ve4497b_ccd8f4
@@ -153,7 +153,7 @@ workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1042.ve7b_140c4a_e0c
 workflow-cps:3853.vb_a_490d892963
-workflow-durable-task-step:1317.v5337e0c1fe28
+workflow-durable-task-step:1327.ve57634fb_09ce
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:415.v434365564324
