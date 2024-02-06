@@ -1,4 +1,4 @@
-ARG BOOKWORM_TAG=20240110
+ARG BOOKWORM_TAG=20240130
 ARG JAVA_VERSION=21.0.2_13
 FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
 
@@ -6,19 +6,13 @@ FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-jammy as jre-build
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
 # Arguments to jlink are specific to Java 21 jlink
-RUN if test "${TARGETPLATFORM}" != 'linux/arm/v7'; then \
-      jlink \
+RUN jlink \
         --add-modules ALL-MODULE-PATH \
         --strip-java-debug-attributes \
         --no-man-pages \
         --no-header-files \
         --compress zip-6 \
-        --output /javaruntime; \
-    # It is acceptable to have a larger image in arm/v7 (arm 32 bits) environment.
-    # Because jlink fails with the error "jmods: Value too large for defined data type" error.
-    else  \
-      cp -r "/opt/jdk-${JAVA_VERSION}" /javaruntime; \
-    fi
+        --output /javaruntime
 
 FROM debian:bookworm-"${BOOKWORM_TAG}"-slim
 
@@ -103,7 +97,7 @@ ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 RUN chown -R ${user} "$JENKINS_HOME" "$REF"
 
-ARG PLUGIN_CLI_VERSION=2.12.14
+ARG PLUGIN_CLI_VERSION=2.12.15
 ARG PLUGIN_CLI_URL=https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/${PLUGIN_CLI_VERSION}/jenkins-plugin-manager-${PLUGIN_CLI_VERSION}.jar
 RUN curl -fsSL ${PLUGIN_CLI_URL} -o /opt/jenkins-plugin-manager.jar
 
