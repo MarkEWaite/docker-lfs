@@ -6,17 +6,13 @@ FROM eclipse-temurin:"${JAVA_VERSION}"-jdk-alpine AS jre-build
 # for now we include the full module path to maintain compatibility
 # while still saving space (approx 200mb from the full distribution)
 # Arguments to jlink are specific to Java 21 jlink
-RUN if [ "$TARGETPLATFORM" != 'linux/arm/v7' ]; then \
-    jlink \
+RUN jlink \
         --add-modules ALL-MODULE-PATH \
         --strip-java-debug-attributes \
         --no-man-pages \
         --no-header-files \
         --compress zip-6 \
-        --output /javaruntime; \
-  else \
-    cp -r /opt/java/openjdk /javaruntime; \
-  fi
+        --output /javaruntime
 
 FROM alpine:"${ALPINE_TAG}" AS build
 
@@ -93,7 +89,7 @@ ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 RUN chown -R ${user} "$JENKINS_HOME" "$REF"
 
-ARG PLUGIN_CLI_VERSION=2.12.14
+ARG PLUGIN_CLI_VERSION=2.12.15
 ARG PLUGIN_CLI_URL=https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/${PLUGIN_CLI_VERSION}/jenkins-plugin-manager-${PLUGIN_CLI_VERSION}.jar
 RUN curl -fsSL ${PLUGIN_CLI_URL} -o /opt/jenkins-plugin-manager.jar
 
