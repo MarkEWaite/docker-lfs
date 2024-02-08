@@ -50,7 +50,6 @@
   <publishers>
     <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1166.va_436e268e972">
       <testResults>target/surefire-reports/*.xml</testResults>
-      <keepLongStdio>false</keepLongStdio>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
       <skipPublishingChecks>true</skipPublishingChecks>
