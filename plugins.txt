@@ -58,7 +58,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.38.0
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:698.vfca_1f2cd150a_
+gitlab-branch-source:699.vde45e0b_d2cc9
 gitlab-plugin:1.8.0
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
