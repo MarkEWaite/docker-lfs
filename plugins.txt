@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
 jquery3-api:3.7.1-1
 jsch:0.2.16-86.v42e010d9484b_
-json-api:20231013-17.v1c97069404b_e
+json-api:20240205-27.va_007549e895c
 json-path-api:2.9.0-33.v2527142f2e1d
 junit-realtime-test-reporter:146.v82b_01a_5d2b_3a_
 junit:1259.v65ffcef24a_88
