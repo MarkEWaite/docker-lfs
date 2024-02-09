@@ -58,7 +58,7 @@ github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
 github:1.38.0
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
-gitlab-branch-source:698.vfca_1f2cd150a_
+gitlab-branch-source:699.vde45e0b_d2cc9
 gitlab-plugin:1.8.0
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
@@ -83,7 +83,7 @@ jjwt-api:0.11.5-77.v646c772fddb_0
 joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
 jquery3-api:3.7.1-1
 jsch:0.2.16-86.v42e010d9484b_
-json-api:20231013-17.v1c97069404b_e
+json-api:20240205-27.va_007549e895c
 json-path-api:2.9.0-33.v2527142f2e1d
 junit-realtime-test-reporter:146.v82b_01a_5d2b_3a_
 junit:1259.v65ffcef24a_88
@@ -101,7 +101,7 @@ monitoring:1.95.0
 naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-172.vda_da_1feeb_c6e
-parallel-test-executor:418.v24f9a_141d726
+parallel-test-executor:453.va_f398e86a_9ec
 parameterized-trigger:787.v665fcf2a_830b_
 pipeline-build-step:540.vb_e8849e1a_b_d8
 pipeline-github-lib:42.v0739460cda_c4
