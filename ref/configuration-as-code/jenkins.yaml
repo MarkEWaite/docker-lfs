@@ -104,9 +104,15 @@ jenkins:
   myViewsTabBar: "standard"
   nodeMonitors:
   - diskSpaceMonitor:
-      freeSpaceThreshold: "1GB"
+      freeSpaceThreshold: "2GB"
   - tmpSpace:
       freeSpaceThreshold: "1GB"
+  - jvmVersion:
+      comparisonMode: RUNTIME_GREATER_OR_EQUAL_MASTER_BYTECODE
+      disconnect: true
+      ignored: false
+  - remotingVersion:
+      ignored: true
   nodeProperties:
   - envVars:
       env:
