@@ -15,7 +15,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 1.8"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.20"
     properties:
     - ? ''
@@ -25,7 +25,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.20"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.25"
     properties:
     - ? ''
@@ -35,7 +35,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.25"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.30"
     properties:
     - ? ''
@@ -45,7 +45,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.30"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.34"
     properties:
     - ? ''
@@ -55,7 +55,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.34"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.35"
     properties:
     - ? ''
@@ -65,7 +65,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.35"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.39"
     properties:
     - ? ''
@@ -75,7 +75,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.39"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.43"
     properties:
     - ? ''
@@ -85,7 +85,7 @@ jenkins:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.43"
             - regexNameVerifier:
-                regexExpression: "(coleen.*|heather.*|cb-pc|mark-pc[3-9].*)"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   labelString: "git-2.30 highmem"
   log:
     recorders:
@@ -102,9 +102,21 @@ jenkins:
   markupFormatter: "markdownFormatter"
   mode: NORMAL
   myViewsTabBar: "standard"
+  nodeMonitors:
+  - diskSpace:
+      freeSpaceThreshold: "1GB"
+  - tmpSpace:
+      freeSpaceThreshold: "1GB"
+  - jvmVersion:
+      comparisonMode: RUNTIME_GREATER_OR_EQUAL_MASTER_BYTECODE
+      ignored: true
+  - remotingVersion:
+      ignored: true
   nodeProperties:
   - envVars:
       env:
+      - key: "ARTIFACT_CACHING_PROXY_PROVIDER"
+        value: "none"
       - key: "JAVA_HOME"
         value: "/opt/java/openjdk"
       - key: "PATH+JAVA_HOME"
