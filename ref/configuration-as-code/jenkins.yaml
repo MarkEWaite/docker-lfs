@@ -102,6 +102,16 @@ jenkins:
   markupFormatter: "markdownFormatter"
   mode: NORMAL
   myViewsTabBar: "standard"
+  nodeMonitors:
+  - diskSpace:
+      freeSpaceThreshold: "1GB"
+  - tmpSpace:
+      freeSpaceThreshold: "1GB"
+  - jvmVersion:
+      comparisonMode: RUNTIME_GREATER_OR_EQUAL_MASTER_BYTECODE
+      ignored: true
+  - remotingVersion:
+      ignored: true
   nodeProperties:
   - envVars:
       env:
