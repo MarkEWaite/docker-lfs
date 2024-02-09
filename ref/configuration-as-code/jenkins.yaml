@@ -105,6 +105,8 @@ jenkins:
   nodeProperties:
   - envVars:
       env:
+      - key: "ARTIFACT_CACHING_PROXY_PROVIDER"
+        value: "none"
       - key: "JAVA_HOME"
         value: "/opt/java/openjdk"
       - key: "PATH+JAVA_HOME"
