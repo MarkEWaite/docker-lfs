@@ -37,6 +37,7 @@ data-tables-api:1.13.8-2
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
+docker-java-api:3.3.4-86.v39b_a_5ede342c
 docker-workflow:572.v950f58993843
 durable-task:550.v0930093c4b_a_6
 echarts-api:5.4.3-2
