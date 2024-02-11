@@ -4,6 +4,7 @@ analysis-model-api:11.15.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
+apache-httpcomponents-client-5-api:5.3.1-1.0
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
 basic-branch-build-strategies:81.v05e333931c7d
