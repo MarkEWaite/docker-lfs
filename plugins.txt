@@ -27,7 +27,7 @@ conditional-buildstep:1.4.3
 config-file-provider:968.ve1ca_eb_913f8c
 configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
-coverage-badges-extension:27.v943f8d610436
+coverage-badges-extension:47.v41e62ecf0928
 coverage:1.10.0
 credentials-binding:657.v2b_19db_7d6e6d
 credentials:1319.v7eb_51b_3a_c97b_
@@ -152,7 +152,7 @@ warnings-ng:10.7.0
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1042.ve7b_140c4a_e0c
-workflow-cps:3859.v7f65cc865019
+workflow-cps:3867.v535458ce43fd
 workflow-durable-task-step:1331.vc8c2fed35334
 workflow-job:1385.vb_58b_86ea_fff1
 workflow-multibranch:773.vc4fe1378f1d5
