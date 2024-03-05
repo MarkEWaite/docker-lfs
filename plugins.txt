@@ -119,7 +119,7 @@ pipeline-model-extensions:2.2175.v76a_fff0a_2618
 pipeline-stage-step:305.ve96d0205c1c6
 pipeline-stage-tags-metadata:2.2175.v76a_fff0a_2618
 pipeline-utility-steps:2.16.2
-plain-credentials:143.v1b_df8b_d3b_e48
+plain-credentials:179.vc5cb_98f6db_38
 platformlabeler:2325.v8f074df8840d
 plugin-util-api:4.1.0
 pollscm:1.5
