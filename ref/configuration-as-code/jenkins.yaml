@@ -103,7 +103,7 @@ jenkins:
   mode: NORMAL
   myViewsTabBar: "standard"
   nodeMonitors:
-  - diskSpaceMonitor:
+  - diskSpace:
       freeSpaceThreshold: "2GB"
   - tmpSpace:
       freeSpaceThreshold: "1GB"
