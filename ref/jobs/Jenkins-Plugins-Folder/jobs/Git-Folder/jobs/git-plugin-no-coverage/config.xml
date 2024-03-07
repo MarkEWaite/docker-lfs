@@ -149,7 +149,6 @@ surefire.rerunFailingTestsCount=4</properties>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <isBlameDisabled>false</isBlameDisabled>
-      <isForensicsDisabled>false</isForensicsDisabled>
       <qualityGates/>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
