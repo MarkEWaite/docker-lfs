@@ -138,7 +138,6 @@ surefire.rerunFailingTestsCount=4</properties>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <ignoreQualityGate>false</ignoreQualityGate>
-      <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <referenceJobName>-</referenceJobName>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
