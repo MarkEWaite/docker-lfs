@@ -148,7 +148,6 @@
       <sourceDirectory></sourceDirectory>
       <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
-      <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>

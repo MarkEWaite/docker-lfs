@@ -94,7 +94,6 @@ Needs more investigation to understand if that is a long-standing issue with swa
       <sourceDirectory></sourceDirectory>
       <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
-      <ignoreFailedBuilds>true</ignoreFailedBuilds>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
