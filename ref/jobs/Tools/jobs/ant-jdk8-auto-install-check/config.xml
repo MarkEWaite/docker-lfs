@@ -52,7 +52,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/jenkins-demo.git/</reference>
+        <reference>/var/cache/git/mwaite/jenkins/jenkins-demo.git/</reference>
         <timeout>3</timeout>
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
