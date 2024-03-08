@@ -24,7 +24,6 @@
       <throttleOption>project</throttleOption>
       <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
       <paramsToUseForLimit></paramsToUseForLimit>
-      <configVersion>1</configVersion>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
@@ -87,10 +86,11 @@
   <publishers>
     <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1259.v65ffcef24a_88">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
+      <stdioRetention>FAILED</stdioRetention>
       <keepProperties>false</keepProperties>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
-      <skipPublishingChecks>false</skipPublishingChecks>
+      <skipPublishingChecks>true</skipPublishingChecks>
       <checksName></checksName>
       <skipMarkingBuildUnstable>false</skipMarkingBuildUnstable>
       <skipOldReports>false</skipOldReports>
@@ -109,7 +109,20 @@
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
         </java.util.CollSer>
       </tools>
-      <qualityGates/>
+      <qualityGates class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
+        <java.util.CollSer>
+          <default>
+            <tag>1</tag>
+          </default>
+          <int>1</int>
+          <io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
+            <threshold>80.0</threshold>
+            <criticality>UNSTABLE</criticality>
+            <metric>BRANCH</metric>
+            <baseline>PROJECT</baseline>
+          </io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
+        </java.util.CollSer>
+      </qualityGates>
       <id></id>
       <name></name>
       <skipPublishingChecks>false</skipPublishingChecks>
