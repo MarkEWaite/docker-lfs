@@ -38,7 +38,7 @@
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/git-plugin.git</reference>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
