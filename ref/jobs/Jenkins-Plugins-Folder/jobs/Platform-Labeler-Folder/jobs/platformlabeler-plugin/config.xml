@@ -144,7 +144,6 @@
         </io.jenkins.plugins.analysis.warnings.Java>
       </analysisTools>
       <sourceCodeEncoding>UTF-8</sourceCodeEncoding>
-      <sourceDirectory></sourceDirectory>
       <sourceDirectories>
         <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.29.0-10">
           <path>src</path>

@@ -166,7 +166,6 @@
         </io.jenkins.plugins.analysis.warnings.JavaDoc>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
-      <sourceDirectory></sourceDirectory>
       <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>

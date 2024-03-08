@@ -145,7 +145,6 @@
         </io.jenkins.plugins.analysis.warnings.SpotBugs>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
-      <sourceDirectory></sourceDirectory>
       <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
