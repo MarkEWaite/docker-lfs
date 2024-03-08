@@ -91,7 +91,6 @@ Needs more investigation to understand if that is a long-standing issue with swa
         </io.jenkins.plugins.analysis.warnings.JUnit>
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
-      <sourceDirectory></sourceDirectory>
       <sourceDirectories/>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
