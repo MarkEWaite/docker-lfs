@@ -70,7 +70,7 @@ This version of the job uses lightweight checkout</description>
         <hudson.plugins.git.extensions.impl.CloneOption>
           <shallow>true</shallow>
           <noTags>true</noTags>
-          <reference>/var/lib/git/mwaite/linux/linux-stable.git</reference>
+          <reference>/var/cache/git/mwaite/linux/linux-stable.git</reference>
           <timeout>42</timeout>
           <depth>1</depth>
           <honorRefspec>true</honorRefspec>

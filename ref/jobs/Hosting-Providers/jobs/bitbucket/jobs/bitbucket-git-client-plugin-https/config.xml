@@ -52,7 +52,7 @@
       <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/git-client-plugin.git</reference>
         <timeout>7</timeout>
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
