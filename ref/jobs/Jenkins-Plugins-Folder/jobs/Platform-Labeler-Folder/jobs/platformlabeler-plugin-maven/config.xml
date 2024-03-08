@@ -84,7 +84,7 @@
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
   <publishers>
-    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.8.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.13.0">
       <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
         <java.util.CollSer>
           <default>
@@ -92,13 +92,26 @@
           </default>
           <int>1</int>
           <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
-            <jenkins plugin="plugin-util-api@3.8.0"/>
+            <jenkins plugin="plugin-util-api@4.1.0"/>
             <pattern></pattern>
             <parser>JACOCO</parser>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
         </java.util.CollSer>
       </tools>
-      <qualityGates/>
+      <qualityGates class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
+        <java.util.CollSer>
+          <default>
+            <tag>1</tag>
+          </default>
+          <int>1</int>
+          <io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
+            <threshold>80.0</threshold>
+            <criticality>NOTE</criticality>
+            <metric>BRANCH</metric>
+            <baseline>PROJECT</baseline>
+          </io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
+        </java.util.CollSer>
+      </qualityGates>
       <id></id>
       <name></name>
       <skipPublishingChecks>false</skipPublishingChecks>
@@ -113,12 +126,12 @@
       <sourceDirectories/>
       <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
     </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.7.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@11.2.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -126,7 +139,7 @@
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -135,11 +148,12 @@
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <sourceDirectories/>
+      <sourceCodeRetention>EVERY_BUILD</sourceCodeRetention>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@11.15.0">
+      <minimumSeverity plugin="analysis-model-api@12.1.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
@@ -148,7 +162,7 @@
       <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
-      <publishAllIssues>false</publishAllIssues>
+      <checksAnnotationScope>NEW</checksAnnotationScope>
       <skipPostProcessing>false</skipPostProcessing>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
