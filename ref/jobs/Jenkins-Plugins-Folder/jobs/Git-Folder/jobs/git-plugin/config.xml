@@ -67,7 +67,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>false</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/git-plugin.git</reference>
         <depth>0</depth>
         <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>

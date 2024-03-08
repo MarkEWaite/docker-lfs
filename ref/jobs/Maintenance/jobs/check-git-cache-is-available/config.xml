@@ -44,7 +44,7 @@
   </axes>
   <builders>
     <hudson.tasks.Shell>
-      <command>[ -d /var/lib/git/mwaite ] || (echo /var/lib/git/mwaite directory not found; exit 1)</command>
+      <command>[ -d /var/cache/git/mwaite ] || (echo /var/cache/git/mwaite directory not found; exit 1)</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

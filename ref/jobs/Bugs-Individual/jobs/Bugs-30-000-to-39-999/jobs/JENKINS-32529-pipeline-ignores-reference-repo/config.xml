@@ -45,7 +45,7 @@
       deleteDir()
      // Get some code from a GitHub repository
      checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]],
-         extensions: [[$class: &apos;CloneOption&apos;, noTags: true, reference: &apos;/var/lib/git/mwaite/jenkins/git-plugin.git&apos;, timeout: 1],
+         extensions: [[$class: &apos;CloneOption&apos;, noTags: true, reference: &apos;/var/cache/git/mwaite/jenkins/git-plugin.git&apos;, timeout: 1],
              [$class: &apos;CleanBeforeCheckout&apos;]
              ],
          gitTool: &apos;Default&apos;,

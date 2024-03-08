@@ -53,7 +53,7 @@ the root issue, and really cannot be fixed and still retain compatibility with o
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/git-client-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/git-client-plugin.git</reference>
         <depth>0</depth>
         <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
