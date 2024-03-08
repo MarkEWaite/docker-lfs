@@ -53,7 +53,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/bin.git</reference>
+        <reference>/var/cache/git/mwaite/bin.git</reference>
         <timeout>6</timeout>
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
