@@ -12,11 +12,11 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.3.1">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.38.0">
       <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
       <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.2">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.14">
       <maxConcurrentPerNode>0</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -24,6 +24,7 @@
       <throttleOption>project</throttleOption>
       <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
       <paramsToUseForLimit></paramsToUseForLimit>
+      <configVersion>1</configVersion>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
@@ -84,7 +85,7 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1256.v002534a_5f33e">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1259.v65ffcef24a_88">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
       <keepProperties>false</keepProperties>
       <healthScaleFactor>1.0</healthScaleFactor>
@@ -94,7 +95,7 @@
       <skipMarkingBuildUnstable>false</skipMarkingBuildUnstable>
       <skipOldReports>false</skipOldReports>
     </hudson.tasks.junit.JUnitResultArchiver>
-    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.8.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.13.0">
       <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
         <java.util.CollSer>
           <default>
@@ -102,7 +103,7 @@
           </default>
           <int>1</int>
           <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
-            <jenkins plugin="plugin-util-api@3.8.0"/>
+            <jenkins plugin="plugin-util-api@4.1.0"/>
             <pattern></pattern>
             <parser>JACOCO</parser>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
@@ -123,12 +124,12 @@
       <sourceDirectories/>
       <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
     </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.7.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@11.2.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern>**/target/spotbugs.xml</pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -137,7 +138,7 @@
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -145,15 +146,16 @@
       </analysisTools>
       <sourceCodeEncoding>UTF-8</sourceCodeEncoding>
       <sourceDirectories>
-        <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.29.0-10">
+        <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.29.0-13">
           <path>src</path>
         </io.jenkins.plugins.prism.SourceCodeDirectory>
       </sourceDirectories>
+      <sourceCodeRetention>EVERY_BUILD</sourceCodeRetention>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@11.15.0">
+      <minimumSeverity plugin="analysis-model-api@12.1.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
@@ -162,16 +164,11 @@
       <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
-      <publishAllIssues>false</publishAllIssues>
+      <checksAnnotationScope>NEW</checksAnnotationScope>
       <skipPostProcessing>false</skipPostProcessing>
-      <qualityGates>
-        <io.jenkins.plugins.analysis.core.util.QualityGate>
-          <threshold>1</threshold>
-          <type>TOTAL</type>
-          <status>WARNING</status>
-        </io.jenkins.plugins.analysis.core.util.QualityGate>
-      </qualityGates>
+      <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
+      <scm></scm>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
