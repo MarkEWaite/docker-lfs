@@ -47,7 +47,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/platformlabeler-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/platformlabeler-plugin.git</reference>
         <depth>0</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>

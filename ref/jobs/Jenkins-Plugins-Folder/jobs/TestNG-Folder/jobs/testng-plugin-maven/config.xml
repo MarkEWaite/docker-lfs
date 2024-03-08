@@ -32,7 +32,7 @@
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
         <noTags>true</noTags>
-        <reference>/var/lib/git/mwaite/jenkins/testng-plugin-plugin.git</reference>
+        <reference>/var/cache/git/mwaite/jenkins/testng-plugin-plugin.git</reference>
         <honorRefspec>false</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
