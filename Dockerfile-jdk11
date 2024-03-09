@@ -6,10 +6,12 @@ USER root
 
 # hadolint ignore=DL3008
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
+  auto-apt-proxy \
   gnupg \
   make \
   procps \
   wget \
+  && auto-apt-proxy \
   && rm -rf /var/lib/apt/lists/*
 
 USER jenkins
