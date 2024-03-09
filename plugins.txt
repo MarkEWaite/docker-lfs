@@ -46,7 +46,7 @@ envinject:2.908.v66a_774b_31d93
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.5.1-3
 forensics-api:2.4.0
-git-client:incrementals;org.jenkins-ci.plugins;4.7.0-rc3529.e74b_004a_ffcb_
+git-client:4.7.0
 git-forensics:2.1.0
 git-parameter:0.9.19
 git-server:114.v068a_c7cc2574
@@ -107,7 +107,7 @@ pipeline-build-step:540.vb_e8849e1a_b_d8
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
-pipeline-graph-view:227.v2a_fb_476da_3a_9
+pipeline-graph-view:230.vcd408a_1308dc
 pipeline-groovy-lib:704.vc58b_8890a_384
 pipeline-input-step:491.vb_07d21da_1a_fb_
 pipeline-maven-api:1381.v08b_63fa_30559
