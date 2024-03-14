@@ -90,16 +90,16 @@ tool:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !cloud"
-              subdir: "jdk8u392-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u392b08.tar.gz"
+              subdir: "jdk8u402-b06"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk8u392-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u392b08.zip"
+              subdir: "jdk8u402-b06"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u402b06.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk8u392-b08"
+              toolHome: "/home/jagent/tools/jdk8u402-b06"
           - command:
               command: "true"
               label: "Alpine"
@@ -109,29 +109,29 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u392-b08"
+              id: "jdk8u402-b06"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !cloud"
-              subdir: "jdk-11.0.21+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.21_9.tar.gz"
+              subdir: "jdk-11.0.22+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk-11.0.21+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.21_9.zip"
+              subdir: "jdk-11.0.22+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-11.0.21+9"
+              toolHome: "/home/jagent/tools/jdk-11.0.22+7"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.21+9"
+              id: "jdk-11.0.22+7"
     - name: "jdk17"
       properties:
       - installSource:
@@ -160,22 +160,22 @@ tool:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !cloud"
-              subdir: "jdk-21.0.1+12"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz"
+              subdir: "jdk-21.0.2+13"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk-21.0.1+12"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.1_12.zip"
+              subdir: "jdk-21.0.2+13"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.2_13.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-21.0.1+12"
+              toolHome: "/home/jagent/tools/jdk-21.0.2+13"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk21"
           - adoptOpenJdkInstaller:
-              id: "jdk-21.0.1+12"
+              id: "jdk-21.0.2+13"
   maven:
     installations:
     - name: "maven-latest"
