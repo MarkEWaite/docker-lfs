@@ -160,22 +160,22 @@ tool:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !cloud"
-              subdir: "jdk-21.0.1+12"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz"
+              subdir: "jdk-21.0.2+13"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk-21.0.1+12"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.1_12.zip"
+              subdir: "jdk-21.0.2+13"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.2_13.zip"
           - command:
               command: "true"
               label: "cloud"
-              toolHome: "/home/jagent/tools/jdk-21.0.1+12"
+              toolHome: "/home/jagent/tools/jdk-21.0.2+13"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk21"
           - adoptOpenJdkInstaller:
-              id: "jdk-21.0.1+12"
+              id: "jdk-21.0.2+13"
   maven:
     installations:
     - name: "maven-latest"
