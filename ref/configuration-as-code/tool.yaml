@@ -26,7 +26,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.43.0\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.44.0\\mingw64\\bin\\git.exe"
     - home: "git"
       name: "git-windows"
       properties:
@@ -35,11 +35,11 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.43.0\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.44.0\\mingw64\\bin\\git.exe"
           - zip:
               label: "windows && amd64"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.43.0-64-bit.zip"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.44.0-64-bit.zip"
     - home: "git"
       name: "git-2.20.1"
       properties:
@@ -76,10 +76,19 @@ tool:
               command: "true"
               label: "git-2.43 && linux"
               toolHome: "/usr/bin/git"
+    - home: "git"
+      name: "git-2.44.0"
+      properties:
+      - installSource:
+          installers:
+          - command:
+              command: "true"
+              label: "git-2.44 && linux"
+              toolHome: "/usr/bin/git"
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.43.0\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.44.0\\mingw64\\bin\\git.exe"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
@@ -98,7 +107,7 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u402b06.zip"
           - command:
               command: "true"
-              label: "cloud"
+              label: "cloud && !freebsd"
               toolHome: "/home/jagent/tools/jdk8u402-b06"
           - command:
               command: "true"
@@ -124,7 +133,7 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip"
           - command:
               command: "true"
-              label: "cloud"
+              label: "cloud && !freebsd"
               toolHome: "/home/jagent/tools/jdk-11.0.22+7"
           - command:
               command: "true"
@@ -146,7 +155,7 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_windows_hotspot_17.0.10_7.zip"
           - command:
               command: "true"
-              label: "cloud"
+              label: "cloud && !freebsd"
               toolHome: "/home/jagent/tools/jdk-17.0.10+7"
           - command:
               command: "true"
@@ -168,7 +177,7 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.2_13.zip"
           - command:
               command: "true"
-              label: "cloud"
+              label: "cloud && !freebsd"
               toolHome: "/home/jagent/tools/jdk-21.0.2+13"
           - command:
               command: "true"
