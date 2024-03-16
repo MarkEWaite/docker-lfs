@@ -98,7 +98,7 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && amd64 && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !alpine && !cloud"
               subdir: "jdk8u402-b06"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz"
           - zip:
@@ -115,6 +115,10 @@ tool:
               toolHome: "/usr/lib/jvm/java-1.8-openjdk"
           - command:
               command: "true"
+              label: "alpine"
+              toolHome: "/usr/lib/jvm/java-1.8-openjdk"
+          - command:
+              command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
@@ -124,7 +128,7 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && amd64 && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !alpine && !cloud"
               subdir: "jdk-11.0.22+7"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz"
           - zip:
@@ -137,6 +141,14 @@ tool:
               toolHome: "/home/jagent/tools/jdk-11.0.22+7"
           - command:
               command: "true"
+              label: "Alpine"
+              toolHome: "/usr/lib/jvm/java-11-openjdk"
+          - command:
+              command: "true"
+              label: "alpine"
+              toolHome: "/usr/lib/jvm/java-11-openjdk"
+          - command:
+              command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
           - adoptOpenJdkInstaller:
@@ -146,7 +158,7 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && amd64 && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !alpine && !cloud"
               subdir: "jdk-17.0.10+7"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz"
           - zip:
@@ -159,6 +171,14 @@ tool:
               toolHome: "/home/jagent/tools/jdk-17.0.10+7"
           - command:
               command: "true"
+              label: "Alpine"
+              toolHome: "/usr/lib/jvm/java-17-openjdk"
+          - command:
+              command: "true"
+              label: "alpine"
+              toolHome: "/usr/lib/jvm/java-17-openjdk"
+          - command:
+              command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - adoptOpenJdkInstaller:
@@ -168,7 +188,7 @@ tool:
       - installSource:
           installers:
           - zip:
-              label: "linux && amd64 && !Alpine && !cloud"
+              label: "linux && amd64 && !Alpine && !alpine && !cloud"
               subdir: "jdk-21.0.2+13"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz"
           - zip:
@@ -179,6 +199,14 @@ tool:
               command: "true"
               label: "cloud && !freebsd"
               toolHome: "/home/jagent/tools/jdk-21.0.2+13"
+          - command:
+              command: "true"
+              label: "Alpine"
+              toolHome: "/usr/lib/jvm/java-21-openjdk"
+          - command:
+              command: "true"
+              label: "alpine"
+              toolHome: "/usr/lib/jvm/java-21-openjdk"
           - command:
               command: "true"
               label: "freebsd"
