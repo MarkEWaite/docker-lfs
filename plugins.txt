@@ -70,7 +70,7 @@ ignore-committer-strategy:1.0.4
 implied-labels:295.v770c54615e6a_
 instance-identity:185.v303dc7c645f9
 ionicons-api:56.v1b_1c8c49374e
-jackson2-api:2.16.2-378.v7e79818f53ce
+jackson2-api:2.17.0-379.v02de8ec9f64c
 jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
 javadoc:243.vb_b_503b_b_45537
@@ -137,7 +137,7 @@ ssh-credentials:322.v124df57ed808
 ssh-slaves:2.948.vb_8050d697fec
 sshd:3.322.v159e91f6a_550
 structs:337.v1b_04ea_4df7c8
-support-core:1416.v3a_46b_9b_c041a_
+support-core:1418.v579a_3fa_77453
 swarm:3.44
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.26
@@ -149,7 +149,7 @@ trilead-api:2.142.v748523a_76693
 variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:369.ve0513a_a_f5524
-warnings-ng:11.2.1
+warnings-ng:11.2.2
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1049.v257a_e6b_30fb_d
