@@ -149,7 +149,7 @@ trilead-api:2.142.v748523a_76693
 variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:369.ve0513a_a_f5524
-warnings-ng:11.2.1
+warnings-ng:11.2.2
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1049.v257a_e6b_30fb_d
