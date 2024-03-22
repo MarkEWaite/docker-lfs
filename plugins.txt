@@ -85,7 +85,7 @@ joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
-json-path-api:2.9.0-52.v57de85cc4722
+json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:146.v82b_01a_5d2b_3a_
 junit:1259.v65ffcef24a_88
 label-verifier:1.4
