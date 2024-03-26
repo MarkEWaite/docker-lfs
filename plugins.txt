@@ -87,7 +87,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
 json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1259.v65ffcef24a_88
+junit:1265.v65b_14fa_f12f0
 label-verifier:1.4
 mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-28.vf251ce40855d
