@@ -81,7 +81,7 @@ javax-activation-api:1.2.0-6
 javax-mail-api:1.6.2-9
 jaxb:2.3.9-1
 jdk-tool:73.vddf737284550
-jersey2-api:2.41-133.va_03323b_a_1396
+jersey2-api:2.42-147.va_28a_44603b_d5
 jira:3.13
 jjwt-api:0.11.5-77.v646c772fddb_0
 joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
@@ -99,8 +99,8 @@ matrix-auth:3.2.2
 matrix-project:822.824.v14451b_c0fd42
 maven-plugin:3.23
 metrics:4.2.21-449.v6960d7c54c69
-mina-sshd-api-common:2.12.0-90.v9f7fb_9fa_3d3b_
-mina-sshd-api-core:2.12.0-90.v9f7fb_9fa_3d3b_
+mina-sshd-api-common:2.12.0-99.vdb_f07841c2db_
+mina-sshd-api-core:2.12.0-99.vdb_f07841c2db_
 monitoring:1.98.0
 naginator:1.436.vb_e769dcb_cdf6
 nodelabelparameter:1.12.0
@@ -156,7 +156,7 @@ warnings-ng:11.2.2
 workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1049.v257a_e6b_30fb_d
-workflow-cps:3883.vb_3ff2a_e3eea_f
+workflow-cps:3889.v937e0b_3412d3
 workflow-durable-task-step:1331.vc8c2fed35334
 workflow-job:1400.v7fd111b_ec82f
 workflow-multibranch:783.va_6eb_ef636fb_d
