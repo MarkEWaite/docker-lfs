@@ -18,8 +18,9 @@ build-timeout:1.32
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.0.2
-cloudbees-bitbucket-branch-source:880.vcf4056c5a_71f
-cloudbees-folder:6.928.v7c780211d66e
+cloud-stats:336.v788e4055508b_
+cloudbees-bitbucket-branch-source:883.v041fa_695e9c2
+cloudbees-folder:6.901.vb_4c7a_da_75da_3
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:107.v773860566e2e
@@ -83,7 +84,7 @@ jaxb:2.3.9-1
 jdk-tool:73.vddf737284550
 jersey2-api:2.42-147.va_28a_44603b_d5
 jira:3.13
-jjwt-api:0.11.5-77.v646c772fddb_0
+jjwt-api:0.11.5-112.ve82dfb_224b_a_d
 joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
@@ -93,7 +94,7 @@ junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1265.v65b_14fa_f12f0
 label-verifier:1.4
 mailer:472.vf7c289a_4b_420
-mapdb-api:1.0.9-28.vf251ce40855d
+mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:167.v8a_428ca_49f89
 matrix-auth:3.2.2
 matrix-project:822.824.v14451b_c0fd42
@@ -116,11 +117,11 @@ pipeline-groovy-lib:704.vc58b_8890a_384
 pipeline-input-step:491.vb_07d21da_1a_fb_
 pipeline-maven-api:1396.veb_f07b_2fc1d8
 pipeline-maven:1396.veb_f07b_2fc1d8
-pipeline-milestone-step:111.v449306f708b_7
+pipeline-milestone-step:119.vdfdc43fc3b_9a_
 pipeline-model-api:2.2184.v0b_358b_953e69
 pipeline-model-definition:2.2184.v0b_358b_953e69
 pipeline-model-extensions:2.2184.v0b_358b_953e69
-pipeline-stage-step:305.ve96d0205c1c6
+pipeline-stage-step:312.v8cd10304c27a_
 pipeline-stage-tags-metadata:2.2184.v0b_358b_953e69
 pipeline-utility-steps:2.16.2
 plain-credentials:179.vc5cb_98f6db_38
@@ -159,9 +160,9 @@ workflow-basic-steps:1049.v257a_e6b_30fb_d
 workflow-cps:3889.v937e0b_3412d3
 workflow-durable-task-step:1331.vc8c2fed35334
 workflow-job:1400.v7fd111b_ec82f
-workflow-multibranch:783.va_6eb_ef636fb_d
+workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:657.v03b_e8115821b_
-workflow-support:881.v7663695646cf
+workflow-support:896.v175a_a_9c5b_78f
 ws-cleanup:0.45
 xshell:203.v80a_c62d7886f
