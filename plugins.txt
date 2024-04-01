@@ -5,7 +5,7 @@ ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.3.1-1.0
-asm-api:9.6-3.v2e1fa_b_338cd7
+asm-api:9.7-33.v4d23ef79fcc8
 authentication-tokens:1.53.v1c90fd9191a_b_
 badge:1.9.1
 basic-branch-build-strategies:81.v05e333931c7d
@@ -73,7 +73,7 @@ http_request:1.18
 ignore-committer-strategy:1.0.4
 implied-labels:295.v770c54615e6a_
 instance-identity:185.v303dc7c645f9
-ionicons-api:56.v1b_1c8c49374e
+ionicons-api:70.v2959a_b_74e3cf
 jackson2-api:2.17.0-379.v02de8ec9f64c
 jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
@@ -158,7 +158,7 @@ workflow-aggregator:596.v8c21c963d92d
 workflow-api:1291.v51fd2a_625da_7
 workflow-basic-steps:1049.v257a_e6b_30fb_d
 workflow-cps:3889.v937e0b_3412d3
-workflow-durable-task-step:1331.vc8c2fed35334
+workflow-durable-task-step:1336.v768003e07199
 workflow-job:1400.v7fd111b_ec82f
 workflow-multibranch:773.vc4fe1378f1d5
 workflow-scm-step:427.v4ca_6512e7df1
