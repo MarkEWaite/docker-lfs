@@ -25,7 +25,7 @@ cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:107.v773860566e2e
 commons-lang3-api:3.13.0-62.v7d18e55f51e2
-commons-text-api:1.11.0-95.v22a_d30ee5d36
+commons-text-api:1.11.0-109.vfe16c66636eb_
 conditional-buildstep:1.4.3
 config-file-provider:973.vb_a_80ecb_9a_4d0
 configuration-as-code:1775.v810dc950b_514
@@ -103,7 +103,7 @@ metrics:4.2.21-449.v6960d7c54c69
 mina-sshd-api-common:2.12.1-101.v85b_e08b_780dd
 mina-sshd-api-core:2.12.1-101.v85b_e08b_780dd
 monitoring:1.98.0
-naginator:1.436.vb_e769dcb_cdf6
+naginator:1.449.ve19751d70eb_0
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-172.vda_da_1feeb_c6e
 parallel-test-executor:473.v81c8f8d1675f
