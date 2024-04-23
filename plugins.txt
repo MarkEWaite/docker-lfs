@@ -1,6 +1,6 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
-analysis-model-api:12.1.0
+analysis-model-api:12.3.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
@@ -11,7 +11,7 @@ badge:1.9.1
 basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
-branch-api:2.1152.v6f101e97dd77
+branch-api:2.1163.va_f1064e4a_a_f3
 build-blocker-plugin:1.7.9
 build-name-setter:2.4.2
 build-timeout:1.32
@@ -35,7 +35,7 @@ coverage:1.13.0
 credentials-binding:657.v2b_19db_7d6e6d
 credentials:1337.v60b_d7b_c7b_c9f
 dark-theme:439.vdef09f81f85e
-data-tables-api:2.0.3-1
+data-tables-api:2.0.5-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.200.vb_9327d658781
 docker-commons:439.va_3cb_0a_6a_fb_29
@@ -49,7 +49,7 @@ embeddable-build-status:487.va_0ef04c898a_2
 envinject-api:1.199.v3ce31253ed13
 envinject:2.908.v66a_774b_31d93
 external-monitor-job:215.v2e88e894db_f8
-font-awesome-api:6.5.1-3
+font-awesome-api:6.5.2-1
 forensics-api:2.4.0
 git-client:4.7.0
 git-forensics:2.1.0
@@ -57,7 +57,7 @@ git-parameter:0.9.19
 git-server:114.v068a_c7cc2574
 git:5.2.1
 gitea:1.4.7
-github-api:1.318-461.v7a_c09c9fa_d63
+github-api:incrementals;org.jenkins-ci.plugins;1.321-466.vd020c22d5512
 github-branch-source:1787.v8b_8cd49a_f8f1
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
@@ -133,7 +133,7 @@ prism-api:1.29.0-13
 promoted-builds:945.v597f5c6a_d3fd
 resource-disposer:0.23
 run-condition:1.7
-scm-api:689.v237b_6d3a_ef7f
+scm-api:690.vfc8b_54395023
 script-security:1335.vf07d9ce377a_e
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:367.vf9076cd4ee21
