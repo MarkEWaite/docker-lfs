@@ -12,7 +12,7 @@ basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
 branch-api:2.1163.va_f1064e4a_a_f3
-build-blocker-plugin:1.7.9
+build-blocker-plugin:165.v5ecb_fb_f61520
 build-name-setter:2.4.2
 build-timeout:1.32
 buildresult-trigger:0.18
