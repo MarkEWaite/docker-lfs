@@ -1,6 +1,6 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
-analysis-model-api:12.3.0
+analysis-model-api:12.3.3
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
