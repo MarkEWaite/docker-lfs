@@ -32,7 +32,7 @@ configuration-as-code:1775.v810dc950b_514
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.14.0
-credentials-binding:657.v2b_19db_7d6e6d
+credentials-binding:677.vdc9d38cb_254d
 credentials:1337.v60b_d7b_c7b_c9f
 dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.5-1
