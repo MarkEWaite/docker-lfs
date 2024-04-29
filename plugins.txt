@@ -37,7 +37,7 @@ credentials:1337.v60b_d7b_c7b_c9f
 dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.5-1
 description-setter:239.vd0a_6b_785f92d
-display-url-api:2.200.vb_9327d658781
+display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-java-api:3.3.4-86.v39b_a_5ede342c
 docker-plugin:1.6
