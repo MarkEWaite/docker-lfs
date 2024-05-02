@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.3.1-1.0
 asm-api:9.7-33.v4d23ef79fcc8
 authentication-tokens:1.53.v1c90fd9191a_b_
-badge:1.9.1
+badge:incrementals;org.jenkins-ci.plugins;1.10-rc358.e7ec39c8d77d
 basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
