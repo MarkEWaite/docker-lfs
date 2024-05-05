@@ -144,7 +144,7 @@ structs:337.v1b_04ea_4df7c8
 support-core:1427.v083f1d9372a_f
 swarm:3.45
 testng-plugin:835.v51ed3da_fcc35
-text-finder:1.26
+text-finder:1.27
 theme-manager:215.vc1ff18d67920
 throttle-concurrents:2.14
 timestamper:1.26
