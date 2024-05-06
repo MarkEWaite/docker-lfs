@@ -24,22 +24,25 @@ RUN Write-Host 'javac --version' ; javac --version ; `
     Write-Host 'java --version' ; java --version
 
 RUN $version = (jlink --version) ; `
-    $stripJavaDebugFlags = '--strip-java-debug-attributes' ; `
+    $stripJavaDebugArg = '--strip-java-debug-attributes' ; `
     $compressArg = '--compress=2' ; `
-    # jlink version 11 has less features than JDK17+
-    if ($version.StartsWith('11')) { `
-        $stripJavaDebugFlags = '--strip-debug' ; `
-    } `
-    # jlink version 11 has less features than JDK17+
-    if ($version.StartsWith('21')) { `
-        $compressArg = '--compress=zip-6' ; `
+    switch ($version.Substring(0,3)) { `
+        # jlink version 11 has less features than JDK17+
+        '11.' { $stripJavaDebugArg = '--strip-debug' } `
+        '17.' {} `
+        # the compression argument is different for JDK21
+        '21.' { $compressArg = '--compress=zip-6' } `
+        Default { `
+            Write-Error 'ERROR: unmanaged jlink version pattern' ; `
+            exit 1 ; `
+        } `
     } `
     & jlink `
+    $stripJavaDebugArg `
+    $compressArg `
     --add-modules ALL-MODULE-PATH `
-    $stripJavaDebugFlags `
     --no-man-pages `
     --no-header-files `
-    --compress=2 `
     --output /javaruntime
 
 FROM mcr.microsoft.com/windows/servercore:"${WINDOWS_VERSION}" AS controller
@@ -111,9 +114,11 @@ ENV JENKINS_UC https://updates.jenkins.io
 ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 
-ARG PLUGIN_CLI_VERSION=2.12.15
+ARG PLUGIN_CLI_VERSION=2.12.17
 ARG PLUGIN_CLI_URL=https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/${PLUGIN_CLI_VERSION}/jenkins-plugin-manager-${PLUGIN_CLI_VERSION}.jar
-RUN Invoke-WebRequest -Uri "$env:PLUGIN_CLI_URL" -OutFile C:/ProgramData/Jenkins/jenkins-plugin-manager.jar
+RUN $sha256sum = [System.Text.Encoding]::UTF8.GetString((Invoke-WebRequest -Uri ($env:PLUGIN_CLI_URL + '.sha256') -UseBasicParsing).Content); `
+    Invoke-WebRequest -Uri "$env:PLUGIN_CLI_URL" -OutFile C:/ProgramData/Jenkins/jenkins-plugin-manager.jar; `
+    if ((Get-FileHash -Path C:/ProgramData/Jenkins/jenkins-plugin-manager.jar -Algorithm SHA256).Hash -ne $sha256sum) {exit 1}
 
 # for main web interface:
 EXPOSE ${http_port}
