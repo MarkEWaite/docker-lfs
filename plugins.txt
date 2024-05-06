@@ -112,7 +112,7 @@ pipeline-build-step:540.vb_e8849e1a_b_d8
 pipeline-github-lib:42.v0739460cda_c4
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
-pipeline-graph-view:243.vc9e11fec486a_
+pipeline-graph-view:271.v330cf007b_fe6
 pipeline-groovy-lib:incrementals;io.jenkins.plugins;707.ve1a_5059a_b_774
 pipeline-input-step:495.ve9c153f6067b_
 pipeline-maven-api:1396.veb_f07b_2fc1d8
