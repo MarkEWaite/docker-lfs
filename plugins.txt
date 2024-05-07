@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.3.1-1.0
 asm-api:9.7-33.v4d23ef79fcc8
 authentication-tokens:1.53.v1c90fd9191a_b_
-badge:incrementals;org.jenkins-ci.plugins;1.10-rc375.a_7b_8cf375e87
+badge:incrementals;org.jenkins-ci.plugins;1.10-rc380.4c8283f95a_db_
 basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
@@ -19,7 +19,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.0
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:883.v041fa_695e9c2
+cloudbees-bitbucket-branch-source:886.v44cf5e4ecec5
 cloudbees-folder:6.901.vb_4c7a_da_75da_3
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -55,7 +55,7 @@ git-client:incrementals;org.jenkins-ci.plugins;4.7.1-rc3564.39d253b_d0eff
 git-forensics:2.1.0
 git-parameter:0.9.19
 git-server:117.veb_68868fa_027
-git:incrementals;org.jenkins-ci.plugins;5.2.2-rc5230.8d618a_2c8118
+git:incrementals;org.jenkins-ci.plugins;5.2.2-rc5238.7552457b_12a_c
 gitea:1.4.7
 github-api:incrementals;org.jenkins-ci.plugins;1.321-466.vd020c22d5512
 github-branch-source:1789.v5b_0c0cea_18c3
