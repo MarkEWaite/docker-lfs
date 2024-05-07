@@ -19,7 +19,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.0
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:883.v041fa_695e9c2
+cloudbees-bitbucket-branch-source:886.v44cf5e4ecec5
 cloudbees-folder:6.901.vb_4c7a_da_75da_3
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -55,7 +55,7 @@ git-client:incrementals;org.jenkins-ci.plugins;4.7.1-rc3564.39d253b_d0eff
 git-forensics:2.1.0
 git-parameter:0.9.19
 git-server:117.veb_68868fa_027
-git:incrementals;org.jenkins-ci.plugins;5.2.2-rc5230.8d618a_2c8118
+git:incrementals;org.jenkins-ci.plugins;5.2.2-rc5238.7552457b_12a_c
 gitea:1.4.7
 github-api:incrementals;org.jenkins-ci.plugins;1.321-466.vd020c22d5512
 github-branch-source:1789.v5b_0c0cea_18c3
