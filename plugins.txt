@@ -34,7 +34,7 @@ coverage-badges-extension:47.v41e62ecf0928
 coverage:1.14.0
 credentials-binding:677.vdc9d38cb_254d
 credentials:1337.v60b_d7b_c7b_c9f
-dark-theme:460.va_de13e406a_14
+dark-theme:465.vd8b_419b_0728f
 data-tables-api:2.0.6-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
