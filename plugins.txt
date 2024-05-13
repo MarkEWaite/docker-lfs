@@ -57,7 +57,7 @@ git-parameter:0.9.19
 git-server:117.veb_68868fa_027
 git:5.2.2
 gitea:1.4.7
-github-api:incrementals;org.jenkins-ci.plugins;1.321-466.vd020c22d5512
+github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1789.v5b_0c0cea_18c3
 github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
 github-scm-trait-commit-skip:0.4.0
