@@ -28,7 +28,7 @@ commons-lang3-api:3.13.0-62.v7d18e55f51e2
 commons-text-api:1.11.0-109.vfe16c66636eb_
 conditional-buildstep:1.4.3
 config-file-provider:973.vb_a_80ecb_9a_4d0
-configuration-as-code:1806.v78e3a_7fd4358
+configuration-as-code:999999-SNAPSHOT
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.14.0
