@@ -1,6 +1,4 @@
 unclassified:
-  badgePlugin:
-    disableFormatHTML: false
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
