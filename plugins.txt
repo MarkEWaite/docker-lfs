@@ -12,7 +12,7 @@ basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.77-225.v26ea_c9455fd9
 branch-api:2.1169.va_f810c56e895
-build-blocker-plugin:165.v5ecb_fb_f61520
+build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.2
 build-timeout:1.32
 buildresult-trigger:0.18
@@ -35,7 +35,7 @@ coverage:1.14.0
 credentials-binding:677.vdc9d38cb_254d
 credentials:1337.v60b_d7b_c7b_c9f
 dark-theme:439.vdef09f81f85e
-data-tables-api:2.0.6-1
+data-tables-api:2.0.7-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:439.va_3cb_0a_6a_fb_29
@@ -98,7 +98,7 @@ mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:167.v8a_428ca_49f89
 matrix-auth:3.2.2
 matrix-project:822.824.v14451b_c0fd42
-maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2445.7a_e02e21e980
+maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
 metrics:4.2.21-449.v6960d7c54c69
 mina-sshd-api-common:2.12.1-101.v85b_e08b_780dd
 mina-sshd-api-core:2.12.1-101.v85b_e08b_780dd
@@ -142,7 +142,7 @@ ssh-slaves:2.948.vb_8050d697fec
 sshd:3.322.v159e91f6a_550
 structs:337.v1b_04ea_4df7c8
 support-core:1427.v083f1d9372a_f
-swarm:3.45
+swarm:3.46
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.27
 theme-manager:215.vc1ff18d67920
