@@ -5,6 +5,14 @@ tool:
       properties:
       - installSource:
           installers:
+          - command:
+              command: "echo 'Using pre-installed ant for jagent and not Windows'"
+              label: "jagent && !windows"
+              toolHome: "/home/jagent/tools/apache-ant-1.10.14"
+          - batchFile:
+              command: "echo 'Using pre-installed ant for Windows'"
+              label: "windows"
+              toolHome: "C:\\tools\\apache-ant-1.10.14"
           - zip:
               subdir: "apache-ant-1.10.14"
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.14-bin.zip"
