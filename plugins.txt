@@ -41,7 +41,7 @@ display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:439.va_3cb_0a_6a_fb_29
 docker-java-api:3.3.4-86.v39b_a_5ede342c
 docker-plugin:1.6.1
-docker-workflow:572.v950f58993843
+docker-workflow:580.vc0c340686b_54
 durable-task:555.v6802fe0f0b_82
 echarts-api:5.5.0-1
 elastic-axis:464.va_7ed499b_9d75
