@@ -67,7 +67,7 @@ gitlab-branch-source:704.vc7f1202d7e14
 gitlab-plugin:1.8.1
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
-h2-api:11.1.4.199-12.v9f4244395f7a_
+h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.18
 ignore-committer-strategy:1.0.4
