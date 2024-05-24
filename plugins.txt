@@ -155,7 +155,7 @@ versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:377.v66f4b_796e5fa_
 warnings-ng:11.3.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1311.v4250456a_e552
+workflow-api:1312.ve804c2f2d51e
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3894.3896.vca_2c931e7935
 workflow-durable-task-step:1353.v1891a_b_01da_18
