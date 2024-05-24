@@ -79,7 +79,7 @@ jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
 javadoc:243.vb_b_503b_b_45537
 javax-activation-api:1.2.0-7
-javax-mail-api:1.6.2-9
+javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
 jdk-tool:73.vddf737284550
 jersey2-api:2.42-147.va_28a_44603b_d5
