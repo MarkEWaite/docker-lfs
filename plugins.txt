@@ -6,7 +6,7 @@ antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.3.1-1.0
 asm-api:9.7-33.v4d23ef79fcc8
-authentication-tokens:1.53.v1c90fd9191a_b_
+authentication-tokens:1.113.v81215a_241826
 badge:1.12
 basic-branch-build-strategies:81.v05e333931c7d
 bootstrap5-api:5.3.3-1
@@ -67,7 +67,7 @@ gitlab-branch-source:704.vc7f1202d7e14
 gitlab-plugin:1.8.1
 groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.10.1-15.v0d99f670e0a_7
-h2-api:11.1.4.199-12.v9f4244395f7a_
+h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.18
 ignore-committer-strategy:1.0.4
@@ -78,8 +78,8 @@ jackson2-api:2.17.0-379.v02de8ec9f64c
 jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
 javadoc:243.vb_b_503b_b_45537
-javax-activation-api:1.2.0-6
-javax-mail-api:1.6.2-9
+javax-activation-api:1.2.0-7
+javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
 jdk-tool:73.vddf737284550
 jersey2-api:2.42-147.va_28a_44603b_d5
@@ -97,9 +97,9 @@ mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:167.v8a_428ca_49f89
 matrix-auth:3.2.2
-matrix-project:822.824.v14451b_c0fd42
+matrix-project:830.v7ea_da_561b_a_34
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
-metrics:4.2.21-449.v6960d7c54c69
+metrics:4.2.21-451.vd51df8df52ec
 mina-sshd-api-common:2.12.1-101.v85b_e08b_780dd
 mina-sshd-api-core:2.12.1-101.v85b_e08b_780dd
 monitoring:1.98.0
@@ -109,7 +109,7 @@ okhttp-api:4.11.0-172.vda_da_1feeb_c6e
 parallel-test-executor:473.v81c8f8d1675f
 parameterized-trigger:806.vf6fff3e28c3e
 pipeline-build-step:540.vb_e8849e1a_b_d8
-pipeline-github-lib:42.v0739460cda_c4
+pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
 pipeline-graph-view:287.v3ef017b_780d5
@@ -141,7 +141,7 @@ ssh-credentials:337.v395d2403ccd4
 ssh-slaves:2.948.vb_8050d697fec
 sshd:3.322.v159e91f6a_550
 structs:337.v1b_04ea_4df7c8
-support-core:1427.v083f1d9372a_f
+support-core:1441.vcdfefe55b_f34
 swarm:3.46
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.27
@@ -155,7 +155,7 @@ versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:377.v66f4b_796e5fa_
 warnings-ng:11.3.0
 workflow-aggregator:596.v8c21c963d92d
-workflow-api:1311.v4250456a_e552
+workflow-api:1312.ve804c2f2d51e
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3894.3896.vca_2c931e7935
 workflow-durable-task-step:1353.v1891a_b_01da_18
@@ -164,5 +164,5 @@ workflow-multibranch:783.va_6eb_ef636fb_d
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:657.v03b_e8115821b_
 workflow-support:907.v6713a_ed8a_573
-ws-cleanup:0.45
+ws-cleanup:0.46
 xshell:203.v80a_c62d7886f
