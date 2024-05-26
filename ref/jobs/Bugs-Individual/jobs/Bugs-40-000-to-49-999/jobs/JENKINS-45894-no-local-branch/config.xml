@@ -4,30 +4,12 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.9">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
-      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.39.0">
+      <projectUrl>https://github.com/MarkEWaite/jenkins-bugs/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0-beta11">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -46,7 +28,7 @@
     <browser class="hudson.plugins.git.browser.GithubWeb">
       <url>https://github.com/MarkEWaite/jenkins-bugs</url>
     </browser>
-    <submoduleCfg class="list"/>
+    <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
@@ -58,12 +40,11 @@
     </extensions>
   </scm>
   <quietPeriod>0</quietPeriod>
-  <assignedNode>git-1.8+</assignedNode>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk21</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec>@daily</spec>
@@ -72,20 +53,24 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.10">
+    <hudson.plugins.xshell.XShellBuilder plugin="xshell@203.v80a_c62d7886f">
       <commandLine>git branch -v --no-abbrev</commandLine>
+      <workingDir></workingDir>
       <executeFromWorkingDir>false</executeFromWorkingDir>
       <regexToKill></regexToKill>
       <timeAllocated></timeAllocated>
     </hudson.plugins.xshell.XShellBuilder>
   </builders>
   <publishers>
-    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.12">
-      <regexp>.*[*] .*detached .*</regexp>
-      <succeedIfFound>true</succeedIfFound>
-      <unstableIfFound>false</unstableIfFound>
-      <notBuiltIfFound>false</notBuiltIfFound>
-      <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+    <hudson.plugins.textfinder.TextFinderPublisher plugin="text-finder@1.27">
+      <textFinders>
+        <hudson.plugins.textfinder.TextFinder>
+          <regexp>.*[*] .*detached .*</regexp>
+          <buildResult>FAILURE</buildResult>
+          <changeCondition>MATCH_NOT_FOUND</changeCondition>
+          <alsoCheckConsoleOutput>true</alsoCheckConsoleOutput>
+        </hudson.plugins.textfinder.TextFinder>
+      </textFinders>
     </hudson.plugins.textfinder.TextFinderPublisher>
   </publishers>
   <buildWrappers/>
