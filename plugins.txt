@@ -102,7 +102,7 @@ maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
 metrics:4.2.21-451.vd51df8df52ec
 mina-sshd-api-common:2.12.1-101.v85b_e08b_780dd
 mina-sshd-api-core:2.12.1-101.v85b_e08b_780dd
-monitoring:1.98.0
+monitoring:1.99.0
 naginator:1.449.ve19751d70eb_0
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-172.vda_da_1feeb_c6e
