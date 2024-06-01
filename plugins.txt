@@ -44,6 +44,7 @@ docker-plugin:1.6.1
 docker-workflow:580.vc0c340686b_54
 durable-task:555.v6802fe0f0b_82
 echarts-api:5.5.0-1
+eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:487.va_0ef04c898a_2
 envinject-api:1.199.v3ce31253ed13
