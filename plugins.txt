@@ -98,7 +98,7 @@ mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:167.v8a_428ca_49f89
 matrix-auth:3.2.2
-matrix-project:831.v084e85a_b_4ea_d
+matrix-project:832.va_66e270d2946
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
 metrics:4.2.21-451.vd51df8df52ec
 mina-sshd-api-common:2.12.1-101.v85b_e08b_780dd
