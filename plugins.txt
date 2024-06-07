@@ -24,14 +24,14 @@ cloudbees-folder:6.928.v7c780211d66e
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:107.v773860566e2e
-commons-lang3-api:3.13.0-62.v7d18e55f51e2
+commons-lang3-api:3.14.0-76.vda_5591261cfe
 commons-text-api:1.11.0-109.vfe16c66636eb_
 conditional-buildstep:1.4.3
 config-file-provider:973.vb_a_80ecb_9a_4d0
 configuration-as-code:1810.v9b_c30a_249a_4c
 copyartifact:722.v0662a_9b_e22a_c
 coverage-badges-extension:47.v41e62ecf0928
-coverage:1.14.0
+coverage:1.15.0
 credentials-binding:677.vdc9d38cb_254d
 credentials:1337.v60b_d7b_c7b_c9f
 dark-theme:439.vdef09f81f85e
@@ -116,8 +116,8 @@ pipeline-graph-analysis:216.vfd8b_ece330ca_
 pipeline-graph-view:287.v3ef017b_780d5
 pipeline-groovy-lib:incrementals;io.jenkins.plugins;712.v8365337955f0
 pipeline-input-step:495.ve9c153f6067b_
-pipeline-maven-api:1419.v89b_ec7a_c8b_c5
-pipeline-maven:1419.v89b_ec7a_c8b_c5
+pipeline-maven-api:1421.v610fa_b_e2d60e
+pipeline-maven:1421.v610fa_b_e2d60e
 pipeline-milestone-step:119.vdfdc43fc3b_9a_
 pipeline-model-api:2.2198.v41dd8ef6dd56
 pipeline-model-definition:2.2198.v41dd8ef6dd56
