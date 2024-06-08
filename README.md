@@ -374,3 +374,18 @@ Jenkins.instance.getAllItems(FreeStyleProject.class).findAll {
  }
 return ""
 ```
+
+Alternate way to run all hosting provider jobs:
+
+```groovy
+// Schedule every job in each folder of the Hosting-Providers folder
+import hudson.model.Cause.UserIdCause
+def hostingProviders = Jenkins.instance.getJob('Hosting-Providers')
+def hostingFolders = hostingProviders.getItems()
+hostingFolders.each {
+  def jobs = it.getItems()
+  jobs.each {
+    it.scheduleBuild(0, new UserIdCause())
+  }
+}
+```
