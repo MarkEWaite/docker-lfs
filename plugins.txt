@@ -20,6 +20,7 @@ caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.0
 cloud-stats:336.v788e4055508b_
 cloudbees-bitbucket-branch-source:886.v44cf5e4ecec5
+cloudbees-enabler:1.43.v5b_7c0c898e84
 cloudbees-folder:6.928.v7c780211d66e
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -52,7 +53,7 @@ envinject:2.908.v66a_774b_31d93
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.5.2-1
 forensics-api:2.4.0
-git-client:incrementals;org.jenkins-ci.plugins;4.8.0-rc3651.8176ea_b_58d22
+git-client:5.0.0
 git-forensics:2.1.0
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
