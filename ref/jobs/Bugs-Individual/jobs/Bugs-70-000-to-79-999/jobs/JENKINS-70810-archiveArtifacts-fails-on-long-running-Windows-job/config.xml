@@ -82,7 +82,7 @@
             bat &quot;echo bat GIT_COMMIT after windows ws is %GIT_COMMIT%&quot;
             bat &apos;echo hello windows from %COMPUTERNAME%&apos;
             withAnt(installation: &apos;ant-latest&apos;) {
-              bat &apos;ant info&apos;
+              bat &apos;ant -version&apos;
             }
             // Archive artifacts from windows-dir
             dir(WORKSPACE + &apos;/windows-dir&apos;) {
