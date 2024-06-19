@@ -11,7 +11,7 @@
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
-  <description>[JENKINS-70810](https://issues.jenkins.io/browse/JENKINS-70810} reports that archiveArtifacts sometimes fails on long-running jobs</description>
+  <description>[JENKINS-70810](https://issues.jenkins.io/browse/JENKINS-70810) reports that archiveArtifacts sometimes fails on long-running jobs</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.9">
