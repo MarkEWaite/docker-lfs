@@ -84,12 +84,22 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "lts-with-plugins" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.21+9"
+        return "/home/jagent/tools/jdk-11.0.23+9"
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.1+12"
+        return "/home/jagent/tools/jdk-21.0.3+9"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.1+12"
-    return "/home/jagent/tools/jdk-17.0.9+9"
+        return "/home/jagent/tools/jdk-21.0.3+9"
+    return "/home/jagent/tools/jdk-17.0.11+9"
+
+#-----------------------------------------------------------------------
+
+def get_java_gc_args():
+    # Use generational GC with Java 21
+    if "jdk21" in docker_build.get_current_branch():
+        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+    if "weekly" in docker_build.get_current_branch():
+        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+    return [ "-XX:+UseG1GC", ]
 
 #-----------------------------------------------------------------------
 
@@ -129,8 +139,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+AlwaysPreTouch",
                   "-XX:+HeapDumpOnOutOfMemoryError",
                   "-XX:HeapDumpPath=/var/jenkins_home/logs",
-                  "-XX:+UseG1GC",
-                  "-verbose:gc",
+                ]
+    java_opts.extend(get_java_gc_args())
+    java_opts.extend([
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
                   "-XX:+DisableExplicitGC",
@@ -153,7 +164,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
-                ]
+                ])
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
     if debug_port != None:
@@ -168,7 +179,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
-                       "--env", 'JENKINS_OPTS=--enable-future-java',
+                       # Not needed until Java 25 support begins arriving
+                       # "--env", 'JENKINS_OPTS=--enable-future-java',
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
