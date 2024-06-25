@@ -24,4 +24,4 @@ RUN test -x /usr/bin/pgrep && \
 # or config file with your custom jenkins Docker image.
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
-ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/configuration-as-code/
+ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
