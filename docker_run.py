@@ -179,8 +179,10 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
-                       # Not needed until Java 25 support begins arriving
-                       # "--env", 'JENKINS_OPTS=--enable-future-java',
+                       # Avoid Jetty 12 limitation of total parameter count
+                       # Jetty 10 set limit based on unique parameter count
+                       # https://issues.jenkins.io/browse/JENKINS-73285
+                       "--env", 'JENKINS_OPTS=--maxParamCount=30000',
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
