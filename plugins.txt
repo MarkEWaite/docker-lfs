@@ -24,6 +24,7 @@ cloudbees-folder:6.928.v7c780211d66e
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:107.v773860566e2e
+commons-compress-api:1.26.1-2
 commons-lang3-api:3.14.0-76.vda_5591261cfe
 commons-text-api:1.12.0-119.v73ef73f2345d
 conditional-buildstep:1.4.3
@@ -124,7 +125,7 @@ pipeline-model-definition:2.2198.v41dd8ef6dd56
 pipeline-model-extensions:2.2198.v41dd8ef6dd56
 pipeline-stage-step:312.v8cd10304c27a_
 pipeline-stage-tags-metadata:2.2198.v41dd8ef6dd56
-pipeline-utility-steps:2.16.2
+pipeline-utility-steps:2.17.0
 plain-credentials:182.v468b_97b_9dcb_8
 platformlabeler:2596.v4304971d3eb_b_
 plugin-util-api:4.1.0
