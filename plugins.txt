@@ -19,7 +19,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.0
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:886.v44cf5e4ecec5
+cloudbees-bitbucket-branch-source:887.va_d359b_3d2d8d
 cloudbees-folder:6.928.v7c780211d66e
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -32,9 +32,9 @@ config-file-provider:973.vb_a_80ecb_9a_4d0
 configuration-as-code:1810.v9b_c30a_249a_4c
 copyartifact:746.vd2a_674fb_4f6f
 coverage-badges-extension:47.v41e62ecf0928
-coverage:1.15.0
+coverage:1.16.0
 credentials-binding:677.vdc9d38cb_254d
-credentials:1337.v60b_d7b_c7b_c9f
+credentials:1344.v5a_3f65a_1e173
 dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.8-1
 description-setter:239.vd0a_6b_785f92d
@@ -126,7 +126,7 @@ pipeline-model-extensions:2.2198.v41dd8ef6dd56
 pipeline-stage-step:312.v8cd10304c27a_
 pipeline-stage-tags-metadata:2.2198.v41dd8ef6dd56
 pipeline-utility-steps:2.17.0
-plain-credentials:182.v468b_97b_9dcb_8
+plain-credentials:183.va_de8f1dd5a_2b_
 platformlabeler:2596.v4304971d3eb_b_
 plugin-util-api:4.1.0
 pollscm:1.5
@@ -142,7 +142,7 @@ ssh-agent:367.vf9076cd4ee21
 ssh-credentials:337.v395d2403ccd4
 ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
-structs:337.v1b_04ea_4df7c8
+structs:338.v848422169819
 support-core:1449.v261d6f7b_f9f3
 swarm:3.46
 testng-plugin:835.v51ed3da_fcc35
