@@ -82,7 +82,7 @@ tool:
           installers:
           - command:
               command: "true"
-              label: "git-2.44 && linux"
+              label: "git-2.45 && linux"
               toolHome: "/usr/bin/git"
           - batchFile:
               command: "exit 0"

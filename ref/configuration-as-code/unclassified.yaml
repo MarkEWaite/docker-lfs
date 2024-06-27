@@ -275,10 +275,8 @@ unclassified:
     implications:
     - atoms: "git-2.45+"
       expression: "git-2.45||git-2.46+"
-    - atoms: "git-2.44+"
-      expression: "git-2.44||git-2.45+"
     - atoms: "git-2.43+"
-      expression: "git-2.43||git-2.44+"
+      expression: "git-2.43||git-2.45+"
     - atoms: "git-2.39+"
       expression: "git-2.39||git-2.43+"
     - atoms: "git-2.35+"
