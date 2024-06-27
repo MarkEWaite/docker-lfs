@@ -7,26 +7,6 @@ jenkins:
   disabledAdministrativeMonitors:
   - "org.jenkinsci.plugins.pipeline.maven.NonProductionGradeDatabaseWarningAdministrativeMonitor"
   labelAtoms:
-  - name: "git-1.8"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 1.8"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
-  - name: "git-2.20"
-    properties:
-    - ? ''
-      : verifiers:
-        - or:
-            verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.20"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.25"
     properties:
     - ? ''
@@ -35,8 +15,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.25"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.30"
     properties:
     - ? ''
@@ -45,8 +23,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.30"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.34"
     properties:
     - ? ''
@@ -55,8 +31,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.34"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.35"
     properties:
     - ? ''
@@ -65,8 +39,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.35"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.39"
     properties:
     - ? ''
@@ -75,8 +47,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.39"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
   - name: "git-2.43"
     properties:
     - ? ''
@@ -85,9 +55,17 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.43"
+  - name: "git-2.45"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.45"
             - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*)"
-  labelString: "git-2.43 highmem"
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*|win-.*)"
+  labelString: "git-2.45 highmem"
   log:
     recorders:
     - loggers:
