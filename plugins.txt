@@ -61,7 +61,7 @@ git:5.2.2
 gitea:215.v71113b_7a_4c76
 github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1789.v5b_0c0cea_18c3
-github-scm-filter-aged-refs:31.ve3b_ca_fc71d5b_
+github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
 github:1.39.0
 gitlab-api:5.3.0-91.v1f9a_fda_d654f
