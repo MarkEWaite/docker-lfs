@@ -34,7 +34,7 @@ copyartifact:746.vd2a_674fb_4f6f
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.16.1
 credentials-binding:679.v6288482e873c
-credentials:1344.v5a_3f65a_1e173
+credentials:1350.v1b_df4d227d1b_
 dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.8-1
 description-setter:239.vd0a_6b_785f92d
