@@ -4,7 +4,7 @@ analysis-model-api:12.3.3
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
-apache-httpcomponents-client-5-api:5.3.1-1.0
+apache-httpcomponents-client-5-api:5.3.1-110.v77252fb_d4da_5
 asm-api:9.7-33.v4d23ef79fcc8
 authentication-tokens:1.113.v81215a_241826
 badge:1.13
@@ -33,8 +33,8 @@ configuration-as-code:1810.v9b_c30a_249a_4c
 copyartifact:746.vd2a_674fb_4f6f
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.16.1
-credentials-binding:679.v6288482e873c
-credentials:1350.v1b_df4d227d1b_
+credentials-binding:681.vf91669a_32e45
+credentials:1355.v46f52a_b_98d64
 dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.8-1
 description-setter:239.vd0a_6b_785f92d
@@ -58,7 +58,7 @@ git-forensics:2.1.0
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
 git:5.2.2
-gitea:215.v71113b_7a_4c76
+gitea:220.v4618c82a_40fb_
 github-api:1.318-461.v7a_c09c9fa_d63
 github-branch-source:1789.v5b_0c0cea_18c3
 github-scm-filter-aged-refs:47.v5450b_74d684c
@@ -102,10 +102,10 @@ matrix-auth:3.2.2
 matrix-project:832.va_66e270d2946
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
 metrics:4.2.21-451.vd51df8df52ec
-mina-sshd-api-common:2.12.1-113.v4d3ea_5eb_7f72
-mina-sshd-api-core:2.12.1-113.v4d3ea_5eb_7f72
+mina-sshd-api-common:2.13.1-117.v2f1a_b_66ff91d
+mina-sshd-api-core:2.13.1-117.v2f1a_b_66ff91d
 monitoring:1.99.0
-naginator:1.462.v500e7a_87cec7
+naginator:1.475.v9c4e215e3416
 nodelabelparameter:1.12.0
 okhttp-api:4.11.0-172.vda_da_1feeb_c6e
 parallel-test-executor:473.v81c8f8d1675f
@@ -143,10 +143,10 @@ ssh-credentials:337.v395d2403ccd4
 ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
-support-core:1449.v261d6f7b_f9f3
+support-core:1459.va_f527ce9a_d64
 swarm:3.46
 testng-plugin:835.v51ed3da_fcc35
-text-finder:1.27
+text-finder:1.29
 theme-manager:262.vc57ee4a_eda_5d
 throttle-concurrents:2.14
 timestamper:1.27
@@ -156,7 +156,7 @@ variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:382.vdf2d5e3f02f0
 warnings-ng:11.3.0
-workflow-aggregator:596.v8c21c963d92d
+workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1316.v33eb_726c50b_a_
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3903.v48a_8836749e9
