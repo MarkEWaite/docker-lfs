@@ -13,7 +13,7 @@ bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
 branch-api:2.1169.va_f810c56e895
 build-blocker-plugin:166.vc82fc20b_a_ed6
-build-name-setter:2.4.2
+build-name-setter:2.4.3
 build-timeout:1.33
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
@@ -165,6 +165,6 @@ workflow-job:1400.v7fd111b_ec82f
 workflow-multibranch:783.787.v50539468395f
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:678.v3ee58b_469476
-workflow-support:907.v6713a_ed8a_573
+workflow-support:920.v59f71ce16f04
 ws-cleanup:0.46
 xshell:203.v80a_c62d7886f
