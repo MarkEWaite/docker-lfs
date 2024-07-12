@@ -127,7 +127,7 @@ pipeline-stage-step:312.v8cd10304c27a_
 pipeline-stage-tags-metadata:2.2205.vc9522a_9d5711
 pipeline-utility-steps:2.17.0
 plain-credentials:183.va_de8f1dd5a_2b_
-platformlabeler:2616.v07df00c08d42
+platformlabeler:2617.v5444054f5e35
 plugin-util-api:4.1.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
