@@ -29,7 +29,7 @@ commons-lang3-api:3.14.0-76.vda_5591261cfe
 commons-text-api:1.12.0-119.v73ef73f2345d
 conditional-buildstep:1.4.3
 config-file-provider:973.vb_a_80ecb_9a_4d0
-configuration-as-code:1810.v9b_c30a_249a_4c
+configuration-as-code:1836.vccda_4a_122a_a_e
 copyartifact:746.vd2a_674fb_4f6f
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.16.1
