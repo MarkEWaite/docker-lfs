@@ -1,6 +1,6 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
-analysis-model-api:12.3.3
+analysis-model-api:12.4.0
 ant:497.v94e7d9fffa_b_9
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
@@ -9,6 +9,7 @@ asm-api:9.7-33.v4d23ef79fcc8
 authentication-tokens:1.119.v50285141b_7e1
 badge:1.13
 basic-branch-build-strategies:81.v05e333931c7d
+better-pipeline-flowgraph-table:1.3.ve851b_1721eb_0
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
 branch-api:2.1169.va_f810c56e895
@@ -29,8 +30,8 @@ commons-lang3-api:3.14.0-76.vda_5591261cfe
 commons-text-api:1.12.0-119.v73ef73f2345d
 conditional-buildstep:1.4.3
 config-file-provider:973.vb_a_80ecb_9a_4d0
-configuration-as-code:1810.v9b_c30a_249a_4c
-copyartifact:746.vd2a_674fb_4f6f
+configuration-as-code:1836.vccda_4a_122a_a_e
+copyartifact:749.vfb_dca_a_9b_6549
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
@@ -60,7 +61,7 @@ git-server:126.v0d945d8d2b_39
 git:5.2.2
 gitea:220.v4618c82a_40fb_
 github-api:1.318-461.v7a_c09c9fa_d63
-github-branch-source:1789.v5b_0c0cea_18c3
+github-branch-source:1790.v5a_7859812c8d
 github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
 github:1.39.0
@@ -157,7 +158,7 @@ versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:382.vdf2d5e3f02f0
 warnings-ng:11.3.0
 workflow-aggregator:600.vb_57cdd26fdd7
-workflow-api:1316.v33eb_726c50b_a_
+workflow-api:1322.v857eeeea_9902
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3908.vd6b_b_5a_a_54010
 workflow-durable-task-step:1360.v82d13453da_a_f
