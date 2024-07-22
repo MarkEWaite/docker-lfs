@@ -112,11 +112,11 @@ variable "JAVA11_VERSION" {
 }
 
 variable "JAVA17_VERSION" {
-  default = "17.0.11_9"
+  default = "17.0.12_7"
 }
 
 variable "JAVA21_VERSION" {
-  default = "21.0.3_9"
+  default = "21.0.4_7"
 }
 
 variable "BOOKWORM_TAG" {
