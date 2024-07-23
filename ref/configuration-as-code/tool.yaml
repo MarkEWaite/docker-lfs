@@ -98,16 +98,16 @@ tool:
           installers:
           - zip:
               label: "linux && amd64 && !Alpine && !alpine && !cloud"
-              subdir: "jdk8u412-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u412b08.tar.gz"
+              subdir: "jdk8u422-b05"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u422b05.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk8u412-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u412b08.zip"
+              subdir: "jdk8u422-b05"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u422b05.zip"
           - command:
               command: "true"
               label: "cloud && !freebsd && !Alpine && !alpine"
-              toolHome: "/home/jagent/tools/jdk8u412-b08"
+              toolHome: "/home/jagent/tools/jdk8u422-b05"
           - command:
               command: "true"
               label: "Alpine"
@@ -121,7 +121,7 @@ tool:
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u412-b08"
+              id: "jdk8u422-b05"
     - name: "jdk11"
       properties:
       - installSource:
@@ -192,8 +192,8 @@ tool:
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz"
           - zip:
               label: "windows && amd64"
-              subdir: "jdk-21.0.3+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.3_9.zip"
+              subdir: "jdk-21.0.4+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip"
           - command:
               command: "true"
               label: "cloud && !freebsd && !Alpine && !alpine"
