@@ -60,7 +60,7 @@ git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
 git:5.2.2
 gitea:220.v4618c82a_40fb_
-github-api:1.318-461.v7a_c09c9fa_d63
+github-api:1.321-468.v6a_9f5f2d5a_7e
 github-branch-source:1790.v5a_7859812c8d
 github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
@@ -136,7 +136,7 @@ prism-api:1.29.0-15
 promoted-builds:957.vf5b_cee587563
 resource-disposer:0.23
 run-condition:1.7
-scm-api:690.vfc8b_54395023
+scm-api:695.v81d99a_b_a_9e35
 script-security:1341.va_2819b_414686
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:367.vf9076cd4ee21
