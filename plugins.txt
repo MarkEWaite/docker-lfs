@@ -12,7 +12,7 @@ basic-branch-build-strategies:81.v05e333931c7d
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
-branch-api:2.1169.va_f810c56e895
+branch-api:2.1178.v969d9eb_c728e
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.3
 build-timeout:1.33
@@ -94,7 +94,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
 json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1265.v65b_14fa_f12f0
+junit:1279.v72cf99b_25c43
 label-verifier:105.vf9d080687b_92
 mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-40.v58107308b_7a_7
@@ -140,7 +140,7 @@ scm-api:690.vfc8b_54395023
 script-security:1341.va_2819b_414686
 snakeyaml-api:2.2-111.vc6598e30cc65
 ssh-agent:367.vf9076cd4ee21
-ssh-credentials:341.vf31377f30378
+ssh-credentials:342.ve5a_f1db_5a_132
 ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
