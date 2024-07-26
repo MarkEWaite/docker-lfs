@@ -60,7 +60,7 @@ git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
 git:5.2.2
 gitea:220.v4618c82a_40fb_
-github-api:1.318-461.v7a_c09c9fa_d63
+github-api:1.321-468.v6a_9f5f2d5a_7e
 github-branch-source:1790.v5a_7859812c8d
 github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
