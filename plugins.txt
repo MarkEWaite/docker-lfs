@@ -85,7 +85,7 @@ javax-activation-api:1.2.0-7
 javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
 jdk-tool:73.vddf737284550
-jersey2-api:2.42-147.va_28a_44603b_d5
+jersey2-api:2.44-151.v6df377fff741
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
 joda-time-api:2.12.7-29.v5a_b_e3a_82269a_
