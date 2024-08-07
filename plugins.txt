@@ -80,7 +80,7 @@ ionicons-api:74.v93d5eb_813d5f
 jackson2-api:2.17.0-379.v02de8ec9f64c
 jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
-javadoc:243.vb_b_503b_b_45537
+javadoc:280.v050b_5c849f69
 javax-activation-api:1.2.0-7
 javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
