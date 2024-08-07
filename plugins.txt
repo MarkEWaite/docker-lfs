@@ -1,7 +1,7 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
 analysis-model-api:12.4.0
-ant:497.v94e7d9fffa_b_9
+ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.3.1-110.v77252fb_d4da_5
@@ -24,7 +24,7 @@ cloudbees-bitbucket-branch-source:888.v8e6d479a_1730
 cloudbees-folder:6.928.v7c780211d66e
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
-command-launcher:107.v773860566e2e
+command-launcher:115.vd8b_301cc15d0
 commons-compress-api:1.26.1-2
 commons-lang3-api:incrementals;io.jenkins.plugins;3.15.0-79.v0b_7dfdfa_7f0e
 commons-text-api:1.12.0-129.v99a_50df237f7
@@ -40,7 +40,7 @@ dark-theme:439.vdef09f81f85e
 data-tables-api:2.0.8-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
-docker-commons:439.va_3cb_0a_6a_fb_29
+docker-commons:443.v921729d5611d
 docker-java-api:3.3.6-90.ve7c5c7535ddd
 docker-plugin:1.6.2
 docker-workflow:580.vc0c340686b_54
@@ -65,7 +65,7 @@ github-branch-source:1793.v1831e9c68d77
 github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
 github:1.39.0
-gitlab-api:5.3.0-91.v1f9a_fda_d654f
+gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:704.vc7f1202d7e14
 gitlab-plugin:1.8.1
 groovy-postbuild:228.vcdb_cf7265066
@@ -80,11 +80,11 @@ ionicons-api:74.v93d5eb_813d5f
 jackson2-api:2.17.0-379.v02de8ec9f64c
 jakarta-activation-api:2.1.3-1
 jakarta-mail-api:2.1.3-1
-javadoc:243.vb_b_503b_b_45537
+javadoc:280.v050b_5c849f69
 javax-activation-api:1.2.0-7
 javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
-jdk-tool:73.vddf737284550
+jdk-tool:80.v8a_dee33ed6f0
 jersey2-api:2.44-151.v6df377fff741
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
@@ -94,7 +94,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
 json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1280.v310a_78b_9a_1e0
+junit:1284.vf75d778f98c5
 label-verifier:105.vf9d080687b_92
 mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-40.v58107308b_7a_7
@@ -138,7 +138,7 @@ resource-disposer:0.23
 run-condition:1.7
 scm-api:696.v778d637b_a_762
 script-security:1341.va_2819b_414686
-snakeyaml-api:2.2-111.vc6598e30cc65
+snakeyaml-api:2.2-121.v5a_68b_9300b_d4
 ssh-agent:376.v8933585c69d3
 ssh-credentials:343.v884f71d78167
 ssh-slaves:2.973.v0fa_8c0dea_f9f
@@ -156,7 +156,7 @@ trilead-api:2.147.vb_73cc728a_32e
 variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:382.vdf2d5e3f02f0
-warnings-ng:11.3.0
+warnings-ng:11.4.0
 workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1322.v857eeeea_9902
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
