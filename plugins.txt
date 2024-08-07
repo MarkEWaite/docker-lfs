@@ -84,7 +84,7 @@ javadoc:280.v050b_5c849f69
 javax-activation-api:1.2.0-7
 javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
-jdk-tool:73.vddf737284550
+jdk-tool:80.v8a_dee33ed6f0
 jersey2-api:2.44-151.v6df377fff741
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
