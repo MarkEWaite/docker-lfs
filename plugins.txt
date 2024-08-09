@@ -72,7 +72,7 @@ groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.11.0-41.v019fcf6125dc
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
-http_request:1.18
+http_request:1.19
 ignore-committer-strategy:1.0.4
 implied-labels:295.v770c54615e6a_
 instance-identity:185.v303dc7c645f9
