@@ -2,14 +2,18 @@ FROM jenkins/jenkins:2.471-alpine-jdk21
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
+USER root
+
 # Check that expected utilities are available in the image
 RUN test -x /usr/bin/pgrep && \
     test -x /usr/bin/wget && \
     test -x /usr/bin/git-lfs
 
-# $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
-# to set on a fresh new installation. Use it to bundle additional plugins
-# or config file with your custom jenkins Docker image.
+# Create cache directory for git repository mirrors
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
+
+USER jenkins
+
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
 ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
