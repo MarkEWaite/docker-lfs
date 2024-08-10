@@ -4,28 +4,22 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
+# Install and check expected utilities in the image
+# hadolint ignore=DL3008
 RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y \
         gnupg \
         make \
         procps \
         wget \
-    && dnf clean --disableplugin=subscription-manager all
+    && dnf clean --disableplugin=subscription-manager all \
+    && test -x /usr/bin/pgrep \
+    && test -x /usr/bin/wget \
+    && test -x /usr/bin/git-lfs
 
-RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
-
+# Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
 USER jenkins
-
-# Check that expected utilities are available in the image
-RUN test -x /usr/bin/pgrep && \
-    test -x /usr/bin/wget && \
-    test -x /usr/bin/git-lfs
-
-# $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
-# to set on a fresh new installation. Use it to bundle additional plugins
-# or config file with your custom jenkins Docker image.
-RUN mkdir -p "${REF}/init.groovy.d"
 
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
