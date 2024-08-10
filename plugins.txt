@@ -64,7 +64,7 @@ github-api:1.321-468.v6a_9f5f2d5a_7e
 github-branch-source:1793.v1831e9c68d77
 github-scm-filter-aged-refs:47.v5450b_74d684c
 github-scm-trait-commit-skip:0.4.0
-github:1.39.0
+github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:704.vc7f1202d7e14
 gitlab-plugin:1.8.1
@@ -72,7 +72,7 @@ groovy-postbuild:228.vcdb_cf7265066
 gson-api:2.11.0-41.v019fcf6125dc
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
-http_request:1.18
+http_request:1.19
 ignore-committer-strategy:1.0.4
 implied-labels:295.v770c54615e6a_
 instance-identity:185.v303dc7c645f9
@@ -145,7 +145,7 @@ ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
 support-core:1461.v3ed77a_a_8e1c4
-swarm:3.46
+swarm:3.47
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.29
 theme-manager:262.vc57ee4a_eda_5d
@@ -158,7 +158,7 @@ versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:382.vdf2d5e3f02f0
 warnings-ng:11.4.0
 workflow-aggregator:600.vb_57cdd26fdd7
-workflow-api:1322.v857eeeea_9902
+workflow-api:1332.vc21122317a_8e
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3922.va_f73b_7c4246b_
 workflow-durable-task-step:1364.v2fd76fb_6fd41
