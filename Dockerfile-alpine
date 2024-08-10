@@ -4,14 +4,14 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
-
-USER jenkins
-
 # Check that expected utilities are available in the image
 RUN test -x /usr/bin/pgrep && \
     test -x /usr/bin/wget && \
     test -x /usr/bin/git-lfs
+
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
+
+USER jenkins
 
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
 
