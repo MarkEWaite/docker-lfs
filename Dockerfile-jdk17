@@ -4,7 +4,7 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-# Install and check expected utilities in the image
+# Install and check that expected utilities are available in the image
 # hadolint ignore=DL3008
 RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y \
         gnupg \
