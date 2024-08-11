@@ -9,6 +9,7 @@ RUN test -x /usr/bin/pgrep && \
     test -x /usr/bin/wget && \
     test -x /usr/bin/git-lfs
 
+# Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 
 USER jenkins
