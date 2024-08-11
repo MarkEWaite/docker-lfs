@@ -13,10 +13,6 @@ tool:
               command: "echo 'Using tools\\apache-ant-1.10.14 Ant for windows'"
               label: "windows"
               toolHome: "C:\\tools\\apache-ant-1.10.14"
-          - command:
-              command: "echo 'Using tools/apache-ant-1.10.14 Ant for git.markwaite.net'"
-              label: "git.markwaite.net"
-              toolHome: "/home/mwaite/tools/apache-ant-1.10.14"
           - zip:
               subdir: "apache-ant-1.10.14"
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.14-bin.zip"
