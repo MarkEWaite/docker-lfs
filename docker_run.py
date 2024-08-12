@@ -84,12 +84,12 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "lts-with-plugins" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-11.0.23+9"
+        return "/home/jagent/tools/jdk-11.0.24+8"
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.3+9"
+        return "/home/jagent/tools/jdk-21.0.4+7"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.3+9"
-    return "/home/jagent/tools/jdk-17.0.11+9"
+        return "/home/jagent/tools/jdk-21.0.4+7"
+    return "/home/jagent/tools/jdk-17.0.12+7"
 
 #-----------------------------------------------------------------------
 
@@ -182,7 +182,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        # Avoid Jetty 12 limitation of total parameter count
                        # Jetty 10 set limit based on unique parameter count
                        # https://issues.jenkins.io/browse/JENKINS-73285
-                       "--env", 'JENKINS_OPTS=--maxParamCount=30000',
+                       "--env", 'JENKINS_OPTS=--maxParamCount=10000',
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
