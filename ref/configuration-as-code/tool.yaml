@@ -6,11 +6,11 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using pre-installed ant for jagent and not Windows'"
+              command: "echo 'Using tools/apache-ant-1.10.14 Ant for jagent && !windows'"
               label: "jagent && !windows"
               toolHome: "/home/jagent/tools/apache-ant-1.10.14"
           - batchFile:
-              command: "echo 'Using pre-installed ant for Windows'"
+              command: "echo 'Using tools\\apache-ant-1.10.14 Ant for windows'"
               label: "windows"
               toolHome: "C:\\tools\\apache-ant-1.10.14"
           - zip:
@@ -25,11 +25,11 @@ tool:
           installers:
           - command:
               command: "true"
-              label: "!windows && !freebsd && !openbsd"
+              label: "!windows && !freebsd"
               toolHome: "/usr/bin/git"
           - command:
               command: "true"
-              label: "freebsd || openbsd"
+              label: "freebsd"
               toolHome: "/usr/local/bin/git"
           - batchFile:
               command: "exit 0"
@@ -84,6 +84,10 @@ tool:
               command: "true"
               label: "git-2.46 && linux"
               toolHome: "/usr/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.45 && freebsd"
+              toolHome: "/usr/local/bin/git"
           - batchFile:
               command: "exit 0"
               label: "windows"
@@ -96,62 +100,42 @@ tool:
       properties:
       - installSource:
           installers:
-          - zip:
-              label: "linux && amd64 && !Alpine && !alpine && !cloud"
-              subdir: "jdk8u422-b05"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_linux_hotspot_8u422b05.tar.gz"
-          - zip:
-              label: "windows && amd64"
-              subdir: "jdk8u422-b05"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_windows_hotspot_8u422b05.zip"
           - command:
-              command: "true"
-              label: "cloud && !freebsd && !Alpine && !alpine"
-              toolHome: "/home/jagent/tools/jdk8u422-b05"
+              command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
+              label: "!alpine && !freebsd && !windows && !s390x"
+              toolHome: "/opt/jdk-8"
           - command:
-              command: "true"
-              label: "Alpine"
-              toolHome: "/usr/lib/jvm/java-1.8-openjdk"
+              command: "echo 'Using C:\\tools\\jdk-8 for windows'"
+              label: "windows"
+              toolHome: "c:\\tools\\jdk-8"
           - command:
-              command: "true"
-              label: "alpine"
-              toolHome: "/usr/lib/jvm/java-1.8-openjdk"
-          - command:
-              command: "true"
+              command: "echo 'Using /usr/local/openjdk8 for freebsd'"
               label: "freebsd"
               toolHome: "/usr/local/openjdk8"
-          - adoptOpenJdkInstaller:
-              id: "jdk8u422-b05"
+          - zip:
+              label: "alpine"
+              subdir: "jdk8u422-b05"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u422b05.tar.gz"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
+          - command:
+              command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows'"
+              label: "!alpine && !freebsd && !windows"
+              toolHome: "/opt/jdk-11"
+          - command:
+              command: "echo 'Using C:\\tools\\jdk-11 for windows'"
+              label: "windows"
+              toolHome: "c:\\tools\\jdk-11"
           - zip:
-              label: "linux && amd64 && !Alpine && !alpine && !cloud"
-              subdir: "jdk-11.0.24+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.24_8.tar.gz"
-          - zip:
-              label: "windows && amd64"
-              subdir: "jdk-11.0.24+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_windows_hotspot_11.0.24_8.zip"
-          - command:
-              command: "true"
-              label: "cloud && !freebsd && !Alpine && !alpine"
-              toolHome: "/home/jagent/tools/jdk-11.0.24+8"
-          - command:
-              command: "true"
-              label: "Alpine"
-              toolHome: "/usr/lib/jvm/java-11-openjdk"
-          - command:
-              command: "true"
               label: "alpine"
-              toolHome: "/usr/lib/jvm/java-11-openjdk"
+              subdir: "jdk-11.0.24+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.24_8.tar.gz"
           - command:
-              command: "true"
+              command: "echo 'Using /usr/local/openjdk11 for freebsd'"
               label: "freebsd"
               toolHome: "/usr/local/openjdk11"
-          - adoptOpenJdkInstaller:
-              id: "jdk-11.0.24+8"
     - name: "jdk17"
       properties:
       - installSource:
