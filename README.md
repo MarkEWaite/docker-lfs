@@ -389,3 +389,9 @@ hostingFolders.each {
   }
 }
 ```
+
+Cancel all jobs in the queue:
+
+```
+Jenkins.instance.queue.clear()
+```
