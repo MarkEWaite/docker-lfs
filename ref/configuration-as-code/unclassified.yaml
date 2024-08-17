@@ -46,7 +46,10 @@ unclassified:
     - mavenSettings:
         comment: "User settings for Jenkins development"
         content: |-
-          <settings>
+          <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
             <pluginGroups>
               <pluginGroup>org.jenkins-ci.tools</pluginGroup>
             </pluginGroups>
@@ -61,10 +64,6 @@ unclassified:
                     <id>repo.jenkins-ci.org</id>
                     <url>https://repo.jenkins-ci.org/public/</url>
                   </repository>
-                  <repository>
-                    <id>jgit-repository</id>
-                    <url>https://repo.eclipse.org/content/groups/releases/</url>
-                  </repository>
                 </repositories>
                 <pluginRepositories>
                   <pluginRepository>
@@ -74,13 +73,6 @@ unclassified:
                 </pluginRepositories>
               </profile>
             </profiles>
-            <mirrors>
-              <mirror>
-                <id>repo.jenkins-ci.org</id>
-                <url>https://repo.jenkins-ci.org/public/</url>
-                <mirrorOf>*,!repo.jenkins-ci.org,!incrementals</mirrorOf>
-              </mirror>
-            </mirrors>
           </settings>
         id: "Jenkins-development-user-settings"
         isReplaceAll: false
@@ -88,8 +80,11 @@ unclassified:
         providerId: "org.jenkinsci.plugins.configfiles.maven.MavenSettingsConfig"
     - globalMavenSettings:
         comment: "Global settings for Jenkins development"
-        content: |
-          <settings>
+        content: |-
+          <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
             <pluginGroups>
               <pluginGroup>org.jenkins-ci.tools</pluginGroup>
             </pluginGroups>
@@ -104,10 +99,6 @@ unclassified:
                     <id>repo.jenkins-ci.org</id>
                     <url>https://repo.jenkins-ci.org/public/</url>
                   </repository>
-                  <repository>
-                    <id>jgit-repository</id>
-                    <url>https://repo.eclipse.org/content/groups/releases/</url>
-                  </repository>
                 </repositories>
                 <pluginRepositories>
                   <pluginRepository>
@@ -117,13 +108,6 @@ unclassified:
                 </pluginRepositories>
               </profile>
             </profiles>
-            <mirrors>
-              <mirror>
-                <id>repo.jenkins-ci.org</id>
-                <url>https://repo.jenkins-ci.org/public/</url>
-                <mirrorOf>*,!repo.jenkins-ci.org,!incrementals</mirrorOf>
-              </mirror>
-            </mirrors>
           </settings>
         id: "jenkins-maven-global-settings-file"
         isReplaceAll: true
