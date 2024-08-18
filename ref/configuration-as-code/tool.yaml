@@ -203,15 +203,15 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.9.8"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.9.8-bin.zip"
+              subdir: "apache-maven-3.9.9"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.9.9-bin.zip"
     - name: "mvn"
       properties:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.9.8"
-              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.9.8-bin.zip"
+              subdir: "apache-maven-3.9.9"
+              url: "https://home.markwaite.net/~mwaite/maven/apache-maven-3.9.9-bin.zip"
     - name: "maven-4.0.0-alpha-4"
       properties:
       - installSource:
