@@ -37,7 +37,7 @@ coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
 credentials:1371.vfee6b_095f0a_3
 dark-theme:479.v661b_1b_911c01
-data-tables-api:2.1.3-1
+data-tables-api:2.1.4-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:443.v921729d5611d
@@ -156,7 +156,7 @@ trilead-api:2.147.vb_73cc728a_32e
 variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:382.vdf2d5e3f02f0
-warnings-ng:11.4.0
+warnings-ng:11.4.1
 workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
