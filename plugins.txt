@@ -53,7 +53,7 @@ envinject-api:1.199.v3ce31253ed13
 envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.6.0-1
-forensics-api:2.4.0
+forensics-api:2.5.0
 git-client:5.0.0
 git-forensics:2.1.0
 git-parameter:0.9.19
@@ -132,7 +132,7 @@ platformlabeler:2617.v5444054f5e35
 plugin-util-api:4.1.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-15
+prism-api:1.29.0-16
 promoted-builds:957.vf5b_cee587563
 resource-disposer:0.23
 run-condition:1.7
