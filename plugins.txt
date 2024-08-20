@@ -53,9 +53,9 @@ envinject-api:1.199.v3ce31253ed13
 envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.6.0-1
-forensics-api:2.4.0
+forensics-api:2.5.0
 git-client:incrementals;org.jenkins-ci.plugins;6.0.0-rc3597.c14430c1b_b_85
-git-forensics:2.1.0
+git-forensics:2.2.0
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
 git:5.3.0
@@ -94,7 +94,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
 json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1284.vf75d778f98c5
+junit:1291.v60776881903c
 label-verifier:105.vf9d080687b_92
 mailer:472.vf7c289a_4b_420
 mapdb-api:1.0.9-40.v58107308b_7a_7
@@ -132,7 +132,7 @@ platformlabeler:2617.v5444054f5e35
 plugin-util-api:4.1.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-15
+prism-api:1.29.0-16
 promoted-builds:957.vf5b_cee587563
 resource-disposer:0.23
 run-condition:1.7
