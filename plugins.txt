@@ -132,7 +132,7 @@ platformlabeler:2617.v5444054f5e35
 plugin-util-api:4.1.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-16
+prism-api:1.29.0-17
 promoted-builds:957.vf5b_cee587563
 resource-disposer:0.23
 run-condition:1.7
