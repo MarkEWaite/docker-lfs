@@ -58,7 +58,7 @@ git-client:incrementals;org.jenkins-ci.plugins;6.0.0-rc3601.42b_753349d6d
 git-forensics:2.2.0
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
-git:5.4.0
+git:5.4.1
 gitea:220.v4618c82a_40fb_
 github-api:1.321-475.vf7ef62885c83
 github-branch-source:1797.v86fdb_4d57d43
@@ -101,7 +101,7 @@ mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:201.v7057261b_8dff
 matrix-auth:3.2.2
 matrix-project:832.va_66e270d2946
-maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2453.b_e1706f00a_8c
+maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2456.f85a_3d75535c
 metrics:4.2.21-451.vd51df8df52ec
 mina-sshd-api-common:2.13.2-125.v200281b_61d59
 mina-sshd-api-core:2.13.2-125.v200281b_61d59
@@ -160,7 +160,7 @@ warnings-ng:11.4.1
 workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
-workflow-cps:3943.v3519a_3260660
+workflow-cps:3946.v7935cb_edb_f82
 workflow-durable-task-step:1371.vb_7cec8f3b_95e
 workflow-job:1436.vfa_244484591f
 workflow-multibranch:795.ve0cb_1f45ca_9a_
