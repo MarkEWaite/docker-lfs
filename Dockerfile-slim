@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.472-slim-jdk21
+FROM jenkins/jenkins:2.474-slim-jdk21
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
