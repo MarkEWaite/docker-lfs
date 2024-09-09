@@ -2,6 +2,8 @@ FROM jenkins/jenkins:2.462.2-alpine
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
+ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
+
 USER root
 
 # Check that expected utilities are available in the image
@@ -15,5 +17,3 @@ RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 USER jenkins
 
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
-
-ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
