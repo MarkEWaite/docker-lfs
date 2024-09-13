@@ -44,7 +44,7 @@ docker-commons:443.v921729d5611d
 docker-java-api:3.3.6-90.ve7c5c7535ddd
 docker-plugin:1.6.2
 docker-workflow:580.vc0c340686b_54
-durable-task:568.v8fb_5c57e8417
+durable-task:577.v2a_8a_4b_7c0247
 echarts-api:5.5.1-1
 eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:464.va_7ed499b_9d75
