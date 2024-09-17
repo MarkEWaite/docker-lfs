@@ -5,8 +5,6 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
-  badgePlugin:
-    disableFormatHTML: false
   copyartifact:
     mode: PRODUCTION
   envInject:
