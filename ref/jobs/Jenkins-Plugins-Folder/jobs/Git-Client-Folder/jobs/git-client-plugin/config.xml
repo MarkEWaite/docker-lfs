@@ -10,9 +10,10 @@
         <numToKeep>25</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.3.1">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.40.0">
       <projectUrl>https://github.com/MarkEWaite/git-client-plugin/</projectUrl>
       <displayName>Git client plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -35,7 +36,7 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.4.2-rc5314.233e3d7a_f859">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -55,11 +56,6 @@
         <name>beanstalk</name>
         <url>git@jenkins-git-plugin.git.beanstalkapp.com:/jenkins-git-plugin/git-client-plugin.git</url>
         <credentialsId>beanstalk-private-key-MarkEWaite</credentialsId>
-      </hudson.plugins.git.UserRemoteConfig>
-      <hudson.plugins.git.UserRemoteConfig>
-        <name>visualstudio</name>
-        <url>markwaite@vs-ssh.visualstudio.com:v3/markwaite/git-client-plugin/git-client-plugin</url>
-        <credentialsId>markewaite-live-com-ssh-private-key</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -91,7 +87,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk21</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -111,9 +107,11 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1256.v002534a_5f33e">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1300.v03d9d8a_cf1fb_">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
+      <stdioRetention>NONE</stdioRetention>
       <keepProperties>false</keepProperties>
+      <keepTestNames>false</keepTestNames>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
       <skipPublishingChecks>false</skipPublishingChecks>
@@ -121,7 +119,7 @@
       <skipMarkingBuildUnstable>false</skipMarkingBuildUnstable>
       <skipOldReports>false</skipOldReports>
     </hudson.tasks.junit.JUnitResultArchiver>
-    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.8.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.16.1">
       <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
         <java.util.CollSer>
           <default>
@@ -129,7 +127,7 @@
           </default>
           <int>1</int>
           <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
-            <jenkins plugin="plugin-util-api@3.8.0"/>
+            <jenkins plugin="plugin-util-api@4.1.0"/>
             <pattern></pattern>
             <parser>JACOCO</parser>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
@@ -150,12 +148,12 @@
       <sourceDirectories/>
       <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
     </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@10.7.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@11.6.0">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -164,7 +162,7 @@
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -172,7 +170,7 @@
         <io.jenkins.plugins.analysis.warnings.JavaDoc>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@3.8.0"/>
+          <jenkins plugin="plugin-util-api@4.1.0"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
@@ -180,11 +178,12 @@
       </analysisTools>
       <sourceCodeEncoding></sourceCodeEncoding>
       <sourceDirectories/>
+      <sourceCodeRetention>EVERY_BUILD</sourceCodeRetention>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@11.15.0">
+      <minimumSeverity plugin="analysis-model-api@12.5.0">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
@@ -193,8 +192,9 @@
       <quiet>false</quiet>
       <isBlameDisabled>false</isBlameDisabled>
       <skipPublishingChecks>false</skipPublishingChecks>
-      <publishAllIssues>false</publishAllIssues>
+      <checksAnnotationScope>NEW</checksAnnotationScope>
       <skipPostProcessing>false</skipPostProcessing>
+      <skipDeltaCalculation>false</skipDeltaCalculation>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
       <scm></scm>
