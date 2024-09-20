@@ -58,7 +58,7 @@ git-client:incrementals;org.jenkins-ci.plugins;6.0.0-rc3605.0f8f75358774
 git-forensics:2.2.1
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
-git:5.5.0
+git:5.5.1
 gitea:220.v4618c82a_40fb_
 github-api:1.321-478.vc9ce627ce001
 github-branch-source:1797.v86fdb_4d57d43
