@@ -96,7 +96,7 @@ json-path-api:2.9.0-58.v62e3e85b_a_655
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1302.va_b_878c32eb_b_5
 label-verifier:105.vf9d080687b_92
-mailer:472.vf7c289a_4b_420
+mailer:488.v0c9639c1a_eb_3
 mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:225.v859f46dea_3b_5
 matrix-auth:3.2.2
