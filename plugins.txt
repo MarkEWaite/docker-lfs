@@ -1,13 +1,13 @@
 PrioritySorter:5.1.0
 adoptopenjdk:1.5
-analysis-model-api:12.7.0
+analysis-model-api:12.9.0
 ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-118.v199115451c4d
-asm-api:9.7-33.v4d23ef79fcc8
+asm-api:9.7.1-95.v9f552033802a_
 authentication-tokens:1.119.v50285141b_7e1
-badge:2.1
+badge:incrementals;org.jenkins-ci.plugins;2.2-rc425.2d06b_84a_a_75d
 basic-branch-build-strategies:81.v05e333931c7d
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
@@ -58,7 +58,7 @@ git-client:incrementals;org.jenkins-ci.plugins;6.0.0-rc3605.0f8f75358774
 git-forensics:2.2.1
 git-parameter:0.9.19
 git-server:126.v0d945d8d2b_39
-git:5.5.1
+git:5.5.2
 gitea:220.v4618c82a_40fb_
 github-api:1.321-478.vc9ce627ce001
 github-branch-source:1797.v86fdb_4d57d43
@@ -103,8 +103,8 @@ matrix-auth:3.2.2
 matrix-project:838.v4d7b_7b_f9b_d4b_
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2456.f85a_3d75535c
 metrics:4.2.21-451.vd51df8df52ec
-mina-sshd-api-common:2.14.0-131.v04e9b_6b_e0362
-mina-sshd-api-core:2.14.0-131.v04e9b_6b_e0362
+mina-sshd-api-common:2.14.0-133.vcc091215a_358
+mina-sshd-api-core:2.14.0-133.vcc091215a_358
 monitoring:1.99.0
 naginator:1.481.vcb_b_384a_3de89
 nodelabelparameter:1.12.0
@@ -147,7 +147,7 @@ structs:338.v848422169819
 support-core:1511.v3f5cc9b_a_ff55
 swarm:3.47
 testng-plugin:835.v51ed3da_fcc35
-text-finder:1.29
+text-finder:1.30
 theme-manager:262.vc57ee4a_eda_5d
 throttle-concurrents:2.14
 timestamper:1.27
