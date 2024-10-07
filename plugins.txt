@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-118.v199115451c4d
 asm-api:9.7.1-95.v9f552033802a_
 authentication-tokens:1.119.v50285141b_7e1
-badge:incrementals;org.jenkins-ci.plugins;2.2-rc425.2d06b_84a_a_75d
+badge:2.2
 basic-branch-build-strategies:81.v05e333931c7d
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
@@ -35,9 +35,9 @@ copyartifact:749.vfb_dca_a_9b_6549
 coverage-badges-extension:47.v41e62ecf0928
 coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
-credentials:1381.v2c3a_12074da_b_
+credentials:1384.vf0a_2ed06f9c6
 dark-theme:479.v661b_1b_911c01
-data-tables-api:2.1.6-1
+data-tables-api:2.1.8-1
 description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:443.v921729d5611d
