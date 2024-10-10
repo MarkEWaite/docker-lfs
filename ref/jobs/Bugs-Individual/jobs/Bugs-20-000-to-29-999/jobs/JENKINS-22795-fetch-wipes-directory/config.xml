@@ -62,7 +62,7 @@ Job is expected to fail until an option is added to the plugin to not clean on f
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
