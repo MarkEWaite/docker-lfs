@@ -93,7 +93,7 @@ Launched by [JENKINS-33756-launcher-for-label-parameter-job/](/job/Bugs-Individu
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers/>
   <concurrentBuild>true</concurrentBuild>
   <builders>

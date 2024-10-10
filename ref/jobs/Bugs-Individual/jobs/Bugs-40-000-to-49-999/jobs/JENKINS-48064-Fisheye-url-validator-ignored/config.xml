@@ -52,7 +52,7 @@ Refer to [github](https://github.com/aeshell/aesh/) for the repository history</
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>

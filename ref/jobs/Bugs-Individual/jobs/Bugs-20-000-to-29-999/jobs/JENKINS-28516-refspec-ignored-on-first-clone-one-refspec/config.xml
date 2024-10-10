@@ -43,7 +43,7 @@
       </hudson.plugins.git.extensions.impl.CloneOption>
     </extensions>
   </scm>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <quietPeriod>0</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
