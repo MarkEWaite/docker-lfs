@@ -48,7 +48,7 @@
     durabilityHint(&apos;PERFORMANCE_OPTIMIZED&apos;)
   }
   tools {
-    jdk &apos;jdk11&apos;
+    jdk &apos;jdk17&apos;
     ant &apos;ant-latest&apos;
   }
   stages {

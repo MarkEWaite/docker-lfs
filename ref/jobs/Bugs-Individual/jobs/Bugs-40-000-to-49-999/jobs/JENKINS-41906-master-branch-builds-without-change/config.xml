@@ -65,7 +65,7 @@ Otherwise, should only build on those rare occasions when the master branch chan
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
