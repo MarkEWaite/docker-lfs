@@ -89,7 +89,7 @@ This job should succeed when default parameters are selected and should be unsta
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk11</jdk>
+  <jdk>jdk17</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
