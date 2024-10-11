@@ -67,7 +67,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:710.v6f19df32544b_
-gitlab-plugin:1.9.3
+gitlab-plugin:1.9.4
 groovy-postbuild:incrementals;org.jvnet.hudson.plugins;257.v3a_b_6da_5d8d18
 gson-api:2.11.0-41.v019fcf6125dc
 h2-api:11.1.4.199-30.v1c64e772f3a_c
@@ -116,7 +116,7 @@ pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
 pipeline-graph-view:367.vb_18b_b_5c0cfb_e
-pipeline-groovy-lib:730.ve57b_34648c63
+pipeline-groovy-lib:740.va_2701257fe8d
 pipeline-input-step:495.ve9c153f6067b_
 pipeline-maven-api:1457.vf7a_de13b_c0d4
 pipeline-maven:1457.vf7a_de13b_c0d4
@@ -126,7 +126,7 @@ pipeline-model-definition:2.2214.vb_b_34b_2ea_9b_83
 pipeline-model-extensions:2.2214.vb_b_34b_2ea_9b_83
 pipeline-stage-step:312.v8cd10304c27a_
 pipeline-stage-tags-metadata:2.2214.vb_b_34b_2ea_9b_83
-pipeline-utility-steps:2.17.0
+pipeline-utility-steps:2.18.0
 plain-credentials:183.va_de8f1dd5a_2b_
 platformlabeler:2617.v5444054f5e35
 plugin-util-api:5.1.0
