@@ -5,7 +5,7 @@ ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-118.v199115451c4d
-asm-api:9.7.1-95.v9f552033802a_
+asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
 badge:2.2
 basic-branch-build-strategies:81.v05e333931c7d
