@@ -88,7 +88,7 @@ jdk-tool:80.v8a_dee33ed6f0
 jersey2-api:2.44-151.v6df377fff741
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
-joda-time-api:2.13.0-85.vb_64d1c2921f1
+joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-41.v94e11e6de726
