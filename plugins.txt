@@ -32,7 +32,7 @@ conditional-buildstep:1.4.3
 config-file-provider:978.v8e85886ffdc4
 configuration-as-code:1850.va_a_8c31d3158b_
 copyartifact:749.vfb_dca_a_9b_6549
-coverage-badges-extension:47.v41e62ecf0928
+coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
 credentials:1384.vf0a_2ed06f9c6
@@ -42,10 +42,10 @@ description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:443.v921729d5611d
 docker-java-api:3.4.0-94.v65ced49b_a_7d5
-docker-plugin:1.6.2
+docker-plugin:1.7.0
 docker-workflow:580.vc0c340686b_54
 durable-task:577.v2a_8a_4b_7c0247
-echarts-api:5.5.1-1
+echarts-api:5.5.1-2
 eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:487.va_0ef04c898a_2
