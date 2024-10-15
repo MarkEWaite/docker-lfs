@@ -5,7 +5,7 @@ ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-118.v199115451c4d
-asm-api:9.7.1-95.v9f552033802a_
+asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
 badge:2.2
 basic-branch-build-strategies:81.v05e333931c7d
@@ -32,7 +32,7 @@ conditional-buildstep:1.4.3
 config-file-provider:978.v8e85886ffdc4
 configuration-as-code:1850.va_a_8c31d3158b_
 copyartifact:749.vfb_dca_a_9b_6549
-coverage-badges-extension:47.v41e62ecf0928
+coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
 credentials:1384.vf0a_2ed06f9c6
@@ -42,10 +42,10 @@ description-setter:239.vd0a_6b_785f92d
 display-url-api:2.204.vf6fddd8a_8b_e9
 docker-commons:443.v921729d5611d
 docker-java-api:3.4.0-94.v65ced49b_a_7d5
-docker-plugin:1.6.2
+docker-plugin:1.7.0
 docker-workflow:580.vc0c340686b_54
 durable-task:577.v2a_8a_4b_7c0247
-echarts-api:5.5.1-1
+echarts-api:5.5.1-2
 eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:464.va_7ed499b_9d75
 embeddable-build-status:487.va_0ef04c898a_2
@@ -69,7 +69,7 @@ gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:710.v6f19df32544b_
 gitlab-plugin:1.8.2
 groovy-postbuild:264.vf6e02a_77d5b_c
-gson-api:2.11.0-41.v019fcf6125dc
+gson-api:2.11.0-85.v1f4e87273c33
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.19
@@ -88,11 +88,11 @@ jdk-tool:80.v8a_dee33ed6f0
 jersey2-api:2.44-151.v6df377fff741
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
-joda-time-api:2.13.0-85.vb_64d1c2921f1
+joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
-json-api:20240303-41.v94e11e6de726
-json-path-api:2.9.0-58.v62e3e85b_a_655
+json-api:20240303-101.v7a_8666713110
+json-path-api:2.9.0-118.v7f23ed82a_8b_8
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1304.vc85a_b_ca_96613
 label-verifier:105.vf9d080687b_92
@@ -137,7 +137,7 @@ promoted-builds:965.vcda_c6a_e0998f
 resource-disposer:0.24
 run-condition:1.7
 scm-api:696.v778d637b_a_762
-script-security:1362.v67dc1f0e1b_b_3
+script-security:1365.v4778ca_84b_de5
 snakeyaml-api:2.3-123.v13484c65210a_
 ssh-agent:376.v8933585c69d3
 ssh-credentials:343.v884f71d78167
