@@ -98,7 +98,7 @@ junit:1307.vdd5b_2646279e
 label-verifier:105.vf9d080687b_92
 mailer:488.v0c9639c1a_eb_3
 mapdb-api:1.0.9-40.v58107308b_7a_7
-markdown-formatter:225.v859f46dea_3b_5
+markdown-formatter:232.vfd558d47524b_
 matrix-auth:3.2.2
 matrix-project:839.vff91cd7e3a_b_2
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2459.92567fa_a_4b_65
