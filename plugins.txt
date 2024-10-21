@@ -1,4 +1,4 @@
-PrioritySorter:5.1.0
+PrioritySorter:5.2.0
 adoptopenjdk:1.5
 analysis-model-api:12.9.0
 ant:511.v0a_a_1a_334f41b_
