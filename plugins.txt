@@ -99,7 +99,7 @@ label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:232.vfd558d47524b_
-matrix-auth:3.2.2
+matrix-auth:3.2.3
 matrix-project:840.v812f627cb_578
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2459.92567fa_a_4b_65
 metrics:4.2.21-451.vd51df8df52ec
