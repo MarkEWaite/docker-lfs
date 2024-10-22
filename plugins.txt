@@ -4,7 +4,7 @@ analysis-model-api:12.9.0
 ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
-apache-httpcomponents-client-5-api:5.4-118.v199115451c4d
+apache-httpcomponents-client-5-api:5.4-120.v6b_5b_322da_5c4
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
 badge:2.2
@@ -12,7 +12,7 @@ basic-branch-build-strategies:81.v05e333931c7d
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
-branch-api:2.1178.v969d9eb_c728e
+branch-api:2.1182.va_e67548fb_ed2
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.3
 build-timeout:1.33
@@ -99,7 +99,7 @@ label-verifier:105.vf9d080687b_92
 mailer:488.v0c9639c1a_eb_3
 mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:232.vfd558d47524b_
-matrix-auth:3.2.2
+matrix-auth:3.2.3
 matrix-project:839.vff91cd7e3a_b_2
 maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2459.92567fa_a_4b_65
 metrics:4.2.21-451.vd51df8df52ec
@@ -116,7 +116,7 @@ pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
 pipeline-graph-view:340.v28cecee8b_25f
-pipeline-groovy-lib:740.va_2701257fe8d
+pipeline-groovy-lib:744.v5b_556ee7c253
 pipeline-input-step:495.ve9c153f6067b_
 pipeline-maven-api:1457.vf7a_de13b_c0d4
 pipeline-maven:1457.vf7a_de13b_c0d4
