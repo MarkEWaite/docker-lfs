@@ -29,7 +29,7 @@ commons-compress-api:1.26.1-2
 commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.12.0-129.v99a_50df237f7
 conditional-buildstep:1.4.3
-config-file-provider:978.v8e85886ffdc4
+config-file-provider:980.v88956a_a_5d6a_d
 configuration-as-code:1850.va_a_8c31d3158b_
 copyartifact:749.vfb_dca_a_9b_6549
 coverage-badges-extension:127.v8f212c1db_3b_9
