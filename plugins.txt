@@ -4,7 +4,7 @@ analysis-model-api:12.9.0
 ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
-apache-httpcomponents-client-5-api:5.4-120.v6b_5b_322da_5c4
+apache-httpcomponents-client-5-api:incrementals;io.jenkins.plugins;5.4-123.vc05512ff8f29
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
 badge:2.2
@@ -29,7 +29,7 @@ commons-compress-api:1.26.1-2
 commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.12.0-129.v99a_50df237f7
 conditional-buildstep:1.4.3
-config-file-provider:978.v8e85886ffdc4
+config-file-provider:980.v88956a_a_5d6a_d
 configuration-as-code:1850.va_a_8c31d3158b_
 copyartifact:749.vfb_dca_a_9b_6549
 coverage-badges-extension:127.v8f212c1db_3b_9
@@ -144,7 +144,7 @@ ssh-credentials:343.v884f71d78167
 ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
-support-core:1511.v3f5cc9b_a_ff55
+support-core:1519.vb_f214b_a_25a_a_5
 swarm:3.47
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.30
