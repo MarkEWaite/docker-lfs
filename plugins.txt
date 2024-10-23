@@ -101,7 +101,7 @@ mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:232.vfd558d47524b_
 matrix-auth:3.2.3
 matrix-project:839.vff91cd7e3a_b_2
-maven-plugin:incrementals;org.jenkins-ci.main;3.24-rc2459.92567fa_a_4b_65
+maven-plugin:3.24
 metrics:4.2.21-451.vd51df8df52ec
 mina-sshd-api-common:2.14.0-133.vcc091215a_358
 mina-sshd-api-core:2.14.0-133.vcc091215a_358
