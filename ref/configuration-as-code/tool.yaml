@@ -5,14 +5,14 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
-              command: "echo 'Using tools/apache-ant-1.10.15 Ant for jagent && !windows'"
-              label: "jagent && !windows"
-              toolHome: "/home/jagent/tools/apache-ant-1.10.15"
           - batchFile:
               command: "echo 'Using tools\\apache-ant-1.10.15 Ant for windows'"
               label: "windows"
               toolHome: "C:\\tools\\apache-ant-1.10.15"
+          - command:
+              command: "echo 'Using tools/apache-ant-1.10.15 Ant for jagent && !windows'"
+              label: "jagent && !windows"
+              toolHome: "/home/jagent/tools/apache-ant-1.10.15"
           - zip:
               subdir: "apache-ant-1.10.15"
               url: "https://home.markwaite.net/~mwaite/ant/apache-ant-1.10.15-bin.zip"
@@ -23,18 +23,18 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
-              command: "true"
-              label: "!windows && !freebsd"
-              toolHome: "/usr/bin/git"
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/bin/git"
           - batchFile:
               command: "exit 0"
               label: "windows"
               toolHome: "C:\\tools\\MinGit-2.47.0.2\\mingw64\\bin\\git.exe"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/bin/git"
+          - command:
+              command: "true"
+              label: "!windows && !freebsd"
+              toolHome: "/usr/bin/git"
     - home: "git"
       name: "git-windows"
       properties:
@@ -80,18 +80,18 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
-              command: "true"
-              label: "git-2.47 && linux"
-              toolHome: "/usr/bin/git"
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/bin/git"
           - batchFile:
               command: "exit 0"
               label: "windows"
               toolHome: "C:\\tools\\MinGit-2.47.0.2\\mingw64\\bin\\git.exe"
+          - command:
+              command: "true"
+              label: "freebsd"
+              toolHome: "/usr/local/bin/git"
+          - command:
+              command: "true"
+              label: "git-2.47 && linux"
+              toolHome: "/usr/bin/git"
     - name: "jgit"
     - name: "jgitapache"
   jdk:
