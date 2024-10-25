@@ -101,10 +101,6 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
-              label: "!alpine && !freebsd && !windows && !s390x"
-              toolHome: "/opt/jdk-8"
-          - command:
               command: "echo 'Using C:\\tools\\jdk-8 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-8"
@@ -116,30 +112,30 @@ tool:
               label: "alpine"
               subdir: "jdk8u422-b05"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u422b05.tar.gz"
+          - command:
+              command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
+              label: "!alpine && !freebsd && !windows && !s390x"
+              toolHome: "/opt/jdk-8"
     - name: "jdk11"
       properties:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows' && !s390x"
-              label: "!alpine && !freebsd && !windows"
-              toolHome: "/opt/jdk-11"
-          - command:
-              command: "echo 'Using /opt/jdk-11 for s390x'"
-              label: "s390x"
-              toolHome: "/opt/jdk-11"
-          - command:
               command: "echo 'Using C:\\tools\\jdk-11 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-11"
+          - command:
+              command: "echo 'Using /usr/local/openjdk11 for freebsd'"
+              label: "freebsd"
+              toolHome: "/usr/local/openjdk11"
           - zip:
               label: "alpine"
               subdir: "jdk-11.0.24+8"
               url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.24_8.tar.gz"
           - command:
-              command: "echo 'Using /usr/local/openjdk11 for freebsd'"
-              label: "freebsd"
-              toolHome: "/usr/local/openjdk11"
+              command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows'"
+              label: "!alpine && !freebsd && !windows"
+              toolHome: "/opt/jdk-11"
     - name: "jdk17"
       properties:
       - installSource:
