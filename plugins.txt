@@ -31,7 +31,7 @@ commons-text-api:1.12.0-129.v99a_50df237f7
 conditional-buildstep:1.4.3
 config-file-provider:980.v88956a_a_5d6a_d
 configuration-as-code:1850.va_a_8c31d3158b_
-copyartifact:749.vfb_dca_a_9b_6549
+copyartifact:757.v05365583a_455
 coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
 credentials-binding:681.vf91669a_32e45
@@ -62,7 +62,7 @@ git:5.5.2
 gitea:220.v4618c82a_40fb_
 github-api:1.321-468.v6a_9f5f2d5a_7e
 github-branch-source:1807.v50351eb_7dd13
-github-scm-filter-aged-refs:55.v9d01cee685e4
+github-scm-filter-aged-refs:58.v2ca_09cc16938
 github-scm-trait-commit-skip:0.4.0
 github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
@@ -102,7 +102,7 @@ markdown-formatter:232.vfd558d47524b_
 matrix-auth:3.2.3
 matrix-project:839.vff91cd7e3a_b_2
 maven-plugin:3.24
-metrics:4.2.21-451.vd51df8df52ec
+metrics:4.2.21-458.vcf496cb_839e4
 mina-sshd-api-common:2.14.0-133.vcc091215a_358
 mina-sshd-api-core:2.14.0-133.vcc091215a_358
 monitoring:1.99.0
