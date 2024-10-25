@@ -102,7 +102,7 @@ markdown-formatter:232.vfd558d47524b_
 matrix-auth:3.2.3
 matrix-project:839.vff91cd7e3a_b_2
 maven-plugin:3.24
-metrics:4.2.21-451.vd51df8df52ec
+metrics:4.2.21-458.vcf496cb_839e4
 mina-sshd-api-common:2.14.0-133.vcc091215a_358
 mina-sshd-api-core:2.14.0-133.vcc091215a_358
 monitoring:1.99.0
