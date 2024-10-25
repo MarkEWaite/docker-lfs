@@ -140,34 +140,22 @@ tool:
       properties:
       - installSource:
           installers:
-          - zip:
-              label: "linux && amd64 && !Alpine && !alpine && !cloud && !s390x"
-              subdir: "jdk-17.0.13+11"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_linux_hotspot_17.0.13_11.tar.gz"
-          - zip:
-              label: "windows && amd64"
-              subdir: "jdk-17.0.13+11"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_windows_hotspot_17.0.13_11.zip"
           - command:
-              command: "echo 'Using /opt/jdk-17 for s390x'"
-              label: "s390x"
-              toolHome: "/opt/jdk-17"
-          - command:
-              command: "true"
-              label: "cloud && !freebsd && !Alpine && !alpine"
-              toolHome: "/home/jagent/tools/jdk-17.0.13+11"
-          - command:
-              command: "true"
-              label: "Alpine"
-              toolHome: "/usr/lib/jvm/java-17-openjdk"
-          - command:
-              command: "true"
-              label: "alpine"
-              toolHome: "/usr/lib/jvm/java-17-openjdk"
+              command: "echo 'Using C:\\tools\\jdk-17.0.13+11 for windows'"
+              label: "windows"
+              toolHome: "c:\\tools\\jdk-17.0.13+11"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
+          - zip:
+              label: "alpine"
+              subdir: "jdk-17.0.13+11"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK11U-jdk_x64_alpine-linux_hotspot_17.0.13_11.tar.gz"
+          - command:
+              command: "echo 'Using /opt/jdk-17 for !alpine && !freebsd && !windows'"
+              label: "!alpine && !freebsd && !windows && !built-in"
+              toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
               id: "jdk-17.0.13+11"
     - name: "jdk21"
