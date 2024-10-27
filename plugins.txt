@@ -73,7 +73,7 @@ gson-api:2.11.0-85.v1f4e87273c33
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.19
-ignore-committer-strategy:1.0.4
+ignore-committer-strategy:incrementals;au.com.versent.jenkins.plugins;1.0.5-rc50.a_4b_5665ff9ce
 implied-labels:342.vf0a_690315013
 instance-identity:201.vd2a_b_5a_468a_a_6
 ionicons-api:74.v93d5eb_813d5f
