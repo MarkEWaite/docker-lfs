@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:888.v8e6d479a_1730
+cloudbees-bitbucket-branch-source:895.v15dc41668f03
 cloudbees-folder:6.955.v81e2a_35c08d3
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -73,7 +73,7 @@ gson-api:2.11.0-85.v1f4e87273c33
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.19
-ignore-committer-strategy:incrementals;au.com.versent.jenkins.plugins;1.0.5-rc26.fc1a_11e4b_e9a_
+ignore-committer-strategy:29.v7c3891a_434c3
 implied-labels:342.vf0a_690315013
 instance-identity:201.vd2a_b_5a_468a_a_6
 ionicons-api:74.v93d5eb_813d5f
