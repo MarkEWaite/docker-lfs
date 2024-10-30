@@ -149,7 +149,7 @@ swarm:3.47
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.30
 theme-manager:262.vc57ee4a_eda_5d
-throttle-concurrents:2.14
+throttle-concurrents:2.15
 timestamper:1.27
 token-macro:400.v35420b_922dcb_
 trilead-api:2.147.vb_73cc728a_32e
