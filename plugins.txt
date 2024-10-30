@@ -34,7 +34,7 @@ configuration-as-code:1873.vea_5814ca_9c93
 copyartifact:757.v05365583a_455
 coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
-credentials-binding:681.vf91669a_32e45
+credentials-binding:687.v619cb_15e923f
 credentials:1384.vf0a_2ed06f9c6
 dark-theme:479.v661b_1b_911c01
 data-tables-api:2.1.8-1
