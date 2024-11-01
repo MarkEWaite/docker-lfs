@@ -134,7 +134,7 @@ pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-17
 promoted-builds:965.vcda_c6a_e0998f
-resource-disposer:0.24
+resource-disposer:0.25
 run-condition:1.7
 scm-api:698.v8e3b_c788f0a_6
 script-security:1367.vdf2fc45f229c
