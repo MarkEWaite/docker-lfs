@@ -12,7 +12,7 @@ basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
-branch-api:2.1193.v64a_61471c489
+branch-api:2.1197.vfa_d0c47c267d
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.3
 build-timeout:1.33
@@ -56,7 +56,7 @@ font-awesome-api:6.6.0-2
 forensics-api:2.6.0
 git-client:6.1.0
 git-forensics:2.2.1
-git-parameter:0.9.19
+git-parameter:0.10.0
 git-server:126.v0d945d8d2b_39
 git:5.6.0
 gitea:220.v4618c82a_40fb_
@@ -115,7 +115,7 @@ pipeline-build-step:540.vb_e8849e1a_b_d8
 pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
-pipeline-graph-view:367.vb_18b_b_5c0cfb_e
+pipeline-graph-view:382.vb_9a_27b_7b_ea_71
 pipeline-groovy-lib:744.v5b_556ee7c253
 pipeline-input-step:495.ve9c153f6067b_
 pipeline-maven-api:1457.vf7a_de13b_c0d4
@@ -134,7 +134,7 @@ pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-17
 promoted-builds:965.vcda_c6a_e0998f
-resource-disposer:0.24
+resource-disposer:0.25
 run-condition:1.7
 scm-api:698.v8e3b_c788f0a_6
 script-security:1367.vdf2fc45f229c
@@ -145,12 +145,12 @@ ssh-slaves:2.973.v0fa_8c0dea_f9f
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
 support-core:1521.va_992a_0879034
-swarm:3.47
+swarm:3.48
 testng-plugin:835.v51ed3da_fcc35
-text-finder:1.30
+text-finder:1.31
 theme-manager:262.vc57ee4a_eda_5d
-throttle-concurrents:2.15
-timestamper:1.27
+throttle-concurrents:2.16
+timestamper:1.28
 token-macro:400.v35420b_922dcb_
 trilead-api:2.147.vb_73cc728a_32e
 variant:60.v7290fc0eb_b_cd
@@ -162,10 +162,10 @@ workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3990.vd281dd77a_388
 workflow-durable-task-step:1371.vb_7cec8f3b_95e
-workflow-job:1459.v6c531091efcd
+workflow-job:1460.v28178c1ef6e6
 workflow-multibranch:795.ve0cb_1f45ca_9a_
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:678.v3ee58b_469476
 workflow-support:930.vf51d22b_ce488
-ws-cleanup:0.47
+ws-cleanup:0.48
 xshell:203.v80a_c62d7886f
