@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-124.v31e2987e48f4
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
-badge:2.3
+badge:2.4
 basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
@@ -105,7 +105,7 @@ maven-plugin:3.24
 metrics:4.2.21-458.vcf496cb_839e4
 mina-sshd-api-common:2.14.0-133.vcc091215a_358
 mina-sshd-api-core:2.14.0-133.vcc091215a_358
-monitoring:1.99.0
+monitoring:2.3.0
 naginator:1.481.vcb_b_384a_3de89
 nodelabelparameter:1.13.0
 okhttp-api:4.11.0-181.v1de5b_83857df
