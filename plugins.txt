@@ -66,7 +66,7 @@ github-scm-filter-aged-refs:58.v2ca_09cc16938
 github-scm-trait-commit-skip:0.4.0
 github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
-gitlab-branch-source:711.v41fb_c8b_2b_7a_e
+gitlab-branch-source:714.v45a_1ef5eb_247
 gitlab-plugin:1.9.6
 groovy-postbuild:264.vf6e02a_77d5b_c
 gson-api:2.11.0-85.v1f4e87273c33
@@ -94,7 +94,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-101.v7a_8666713110
 json-path-api:2.9.0-118.v7f23ed82a_8b_8
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1307.vdd5b_2646279e
+junit:1308.vb_90591b_eb_996
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-40.v58107308b_7a_7
