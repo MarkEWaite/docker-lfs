@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
 apache-httpcomponents-client-5-api:5.4-124.v31e2987e48f4
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
-badge:2.4
+badge:2.5
 basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
@@ -49,6 +49,7 @@ echarts-api:5.5.1-4
 eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:487.va_0ef04c898a_2
+emoji-symbols-api:13.v723a_b_8e234d1
 envinject-api:1.199.v3ce31253ed13
 envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
@@ -66,9 +67,9 @@ github-scm-filter-aged-refs:58.v2ca_09cc16938
 github-scm-trait-commit-skip:0.4.0
 github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
-gitlab-branch-source:711.v41fb_c8b_2b_7a_e
+gitlab-branch-source:714.v45a_1ef5eb_247
 gitlab-plugin:1.9.6
-groovy-postbuild:264.vf6e02a_77d5b_c
+groovy-postbuild:incrementals;org.jvnet.hudson.plugins;267.v54f339dcdcd9
 gson-api:2.11.0-85.v1f4e87273c33
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
@@ -94,7 +95,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20240303-101.v7a_8666713110
 json-path-api:2.9.0-118.v7f23ed82a_8b_8
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1307.vdd5b_2646279e
+junit:1309.v0078b_fecd6ed
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-40.v58107308b_7a_7
