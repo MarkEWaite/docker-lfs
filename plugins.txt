@@ -133,7 +133,7 @@ platformlabeler:2734.v604521b_646b_b_
 plugin-util-api:5.1.0
 pollscm:1.5
 preSCMbuildstep:71.v1f2990a_37e27
-prism-api:1.29.0-17
+prism-api:1.29.0-18
 promoted-builds:965.vcda_c6a_e0998f
 resource-disposer:0.25
 run-condition:1.7
@@ -157,7 +157,7 @@ trilead-api:2.147.vb_73cc728a_32e
 variant:60.v7290fc0eb_b_cd
 versioncolumn:243.vda_c20eea_a_8a_f
 view-job-filters:392.v2c0a_4dd46909
-warnings-ng:11.10.0
+warnings-ng:11.11.0
 workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
