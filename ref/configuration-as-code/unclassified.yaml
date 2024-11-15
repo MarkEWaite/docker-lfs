@@ -281,6 +281,8 @@ unclassified:
       expression: "Ubuntu&&20.04"
     - atoms: "Ubuntu-22"
       expression: "Ubuntu&&22.04"
+    - atoms: "Ubuntu-24"
+      expression: "Ubuntu&&24.04"
     - atoms: "openSUSE-15"
       expression: "openSUSE&&(15.7||15.6||15.5||15.4)"
     - atoms: "Rocky-8"
