@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:912.v3b_f74026941c
+cloudbees-bitbucket-branch-source:914.vc8c12e22f10e
 cloudbees-folder:6.959.v4ed5cc9e2dd4
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -67,7 +67,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
-gitlab-branch-source:714.v45a_1ef5eb_247
+gitlab-branch-source:715.v4c830b_ca_ef95
 gitlab-plugin:1.9.6
 groovy-postbuild:267.va_df06de9fa_fa_
 gson-api:2.11.0-85.v1f4e87273c33
@@ -162,7 +162,7 @@ workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3996.va_f5c1799f978
-workflow-durable-task-step:1378.v6a_3e903058a_3
+workflow-durable-task-step:1398.vf6c9e89e5988
 workflow-job:1468.vcf4f5ee92395
 workflow-multibranch:795.ve0cb_1f45ca_9a_
 workflow-scm-step:427.v4ca_6512e7df1
