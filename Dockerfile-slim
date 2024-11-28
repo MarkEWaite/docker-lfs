@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.479.1-slim
+FROM jenkins/jenkins:2.479.2-slim
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -20,7 +20,7 @@ RUN apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && test -x /usr/bin/pgrep \
   && test -x /usr/bin/wget  \
-  && test -x /usr/bin/git-lfs
+  && test -x /usr/local/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
