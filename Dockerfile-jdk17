@@ -2,6 +2,8 @@ FROM jenkins/jenkins:2.487-rhel-ubi9-jdk17
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
+ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
+
 USER root
 
 # Install and check that expected utilities are available in the image
@@ -14,7 +16,7 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
     && dnf clean --disableplugin=subscription-manager all \
     && test -x /usr/bin/pgrep \
     && test -x /usr/bin/wget \
-    && test -x /usr/bin/git-lfs
+    && test -x /usr/local/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
@@ -22,5 +24,3 @@ RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
 USER jenkins
 
 COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
-
-ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
