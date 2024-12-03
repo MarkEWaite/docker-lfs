@@ -30,7 +30,7 @@ commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.12.0-129.v99a_50df237f7
 conditional-buildstep:1.4.3
 config-file-provider:980.v88956a_a_5d6a_d
-configuration-as-code:1897.v79281e066ea_7
+configuration-as-code:1903.v004d55388f30
 copyartifact:757.v05365583a_455
 coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
@@ -55,11 +55,11 @@ envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.6.0-2
 forensics-api:2.6.0
-git-client:6.1.0
+git-client:incrementals;org.jenkins-ci.plugins;6.1.1-rc3643.ff37e600016d
 git-forensics:2.2.1
 git-parameter:0.10.0
 git-server:126.v0d945d8d2b_39
-git:5.6.0
+git:incrementals;org.jenkins-ci.plugins;5.6.1-rc5357.7a_4955e76288
 gitea:220.v4618c82a_40fb_
 github-api:1.321-478.vc9ce627ce001
 github-branch-source:1807.v50351eb_7dd13
@@ -163,7 +163,7 @@ workflow-api:1336.vee415d95c521
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:3996.va_f5c1799f978
 workflow-durable-task-step:1398.vf6c9e89e5988
-workflow-job:1468.vcf4f5ee92395
+workflow-job:1472.ve4d5eca_143c4
 workflow-multibranch:795.ve0cb_1f45ca_9a_
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:678.v3ee58b_469476
