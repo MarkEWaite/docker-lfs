@@ -36,7 +36,7 @@ coverage-badges-extension:127.v8f212c1db_3b_9
 coverage:1.16.1
 credentials-binding:687.v619cb_15e923f
 credentials:1389.vd7a_b_f5fa_50a_2
-dark-theme:479.v661b_1b_911c01
+dark-theme:514.va_3ea_73d65dc1
 data-tables-api:2.1.8-1
 description-setter:258.vcd25251271a_a_
 display-url-api:2.209.v582ed814ff2f
@@ -106,7 +106,7 @@ maven-plugin:3.24
 metrics:4.2.21-458.vcf496cb_839e4
 mina-sshd-api-common:2.14.0-133.vcc091215a_358
 mina-sshd-api-core:2.14.0-133.vcc091215a_358
-monitoring:2.3.0
+monitoring:2.4.0
 naginator:1.481.vcb_b_384a_3de89
 nodelabelparameter:1.13.0
 okhttp-api:4.11.0-181.v1de5b_83857df
