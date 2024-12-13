@@ -1,0 +1,1 @@
+JENKINS-74985-Docker-builder-publisher-requires-commons-compress

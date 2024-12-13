@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1472.ve4d5eca_143c4">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>[JENKINS-74985](https://issues.jenkins.io/browse/JENKINS-74985) Docker builder publisher reports `ClassNotFound: org.apache.commons.compress.archivers.ArchiveEntry` on 2.489</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4000.v5198556e9cea_">
+    <script>pipeline {
+    agent {
+        label &apos;docker&apos;
+    }
+    stages {
+        stage(&apos;Build container&apos;) {
+            steps {
+                sh &quot;echo &apos;FROM jenkins/jenkins:lts&apos; &gt; Dockerfile&quot;
+                step([$class: &apos;DockerBuilderPublisher&apos;,
+                        cloud: &apos;mark-pc2&apos;,
+                        dockerFileDirectory: &apos;.&apos;,
+                        pushOnSuccess: false,
+                        tagsString: &apos;my-image&apos;])
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
