@@ -20,8 +20,8 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:933.v7119e94e8f56
-cloudbees-folder:6.969.v7d22c6eb_fde1
+cloudbees-bitbucket-branch-source:933.0.1
+cloudbees-folder:6.973.vc9b_85a_61e4fc
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:116.vd85919c54a_d6
@@ -41,7 +41,7 @@ data-tables-api:2.1.8-1
 description-setter:258.vcd25251271a_a_
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
-docker-java-api:3.4.0-94.v65ced49b_a_7d5
+docker-java-api:incrementals;org.jenkins-ci.plugins;3.4.0-95.vb_f6a_57b_7d3e7
 docker-plugin:1.7.0
 docker-workflow:580.vc0c340686b_54
 durable-task:581.v299a_5609d767
@@ -104,8 +104,8 @@ matrix-auth:3.2.3
 matrix-project:840.v812f627cb_578
 maven-plugin:3.24
 metrics:4.2.21-458.vcf496cb_839e4
-mina-sshd-api-common:2.14.0-133.vcc091215a_358
-mina-sshd-api-core:2.14.0-133.vcc091215a_358
+mina-sshd-api-common:2.14.0-136.v4d2b_0853615e
+mina-sshd-api-core:2.14.0-136.v4d2b_0853615e
 monitoring:2.4.0
 naginator:1.481.vcb_b_384a_3de89
 nodelabelparameter:1.13.0
