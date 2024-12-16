@@ -20,8 +20,8 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:933.0.1
-cloudbees-folder:6.973.vc9b_85a_61e4fc
+cloudbees-bitbucket-branch-source:933.0.2
+cloudbees-folder:incrementals;org.jenkins-ci.plugins;6.975.v7d3a_415b_024d
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:116.vd85919c54a_d6
@@ -142,7 +142,7 @@ script-security:1369.v9b_98a_4e95b_2d
 snakeyaml-api:2.3-123.v13484c65210a_
 ssh-agent:376.v8933585c69d3
 ssh-credentials:349.vb_8b_6b_9709f5b_
-ssh-slaves:2.973.v0fa_8c0dea_f9f
+ssh-slaves:2.1010.v64ec48721231
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
 support-core:1523.v5486c8d6da_f3
