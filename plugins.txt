@@ -12,7 +12,7 @@ basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
 bouncycastle-api:2.30.1.78.1-248.ve27176eb_46cb_
-branch-api:2.1200.v4b_a_3da_2eb_db_4
+branch-api:2.1202.vc51412f3ed84
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.3
 build-timeout:1.33
@@ -145,7 +145,7 @@ ssh-credentials:349.vb_8b_6b_9709f5b_
 ssh-slaves:2.1010.v64ec48721231
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
-support-core:1523.v5486c8d6da_f3
+support-core:1534.v39e20b_212219
 swarm:3.48
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.31
