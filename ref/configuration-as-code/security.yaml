@@ -19,7 +19,7 @@ security:
           git.assembla.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCgF2nbN5k2W4gUAkyE7+iI5T5Ng2f5xiL4+gGkARwRhftogPzqYi3+IM4PZnDW6nKPzWGo+b+mx2LR4FO0+2IE=
           git.assembla.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN+whKLd9tzS4IIbZD7rCgly2LNxlvxef4JvwSaL/YZ7
           git.assembla.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr06hg4ep5IKc85rjYZkEmer+BMkpLfsYi7iOMWytiqyow0jqMiVg7t32a4WW0349QV4rmfcMg5ULuIP//mBjSb2G1jSmqPvWx4JCzZLKu3nmsx1YdBWmVvn/qyVLQ5E+NCSkJJORKqIIgiL1WuAEaxUODYmBExwv1eMZWBpyeKZrrsBEmogKt2Q+igQ31+rb1fQI9/hDE+SktOpT9sWJ9brSDgsQNXAtV52DFDA8mzq7FL+4TbLjDoDdK7v3LFYn2cnN2kD57gW8qvP6V6mrkjc6I2aCNBHwdcIynUQ8HKdU+Sd4u7pZsCCK7odgPCcM5Jj+/PladSR8+DCtvs6JWw==
-          gitea-server.markwaite.net ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPyNSl1xAqUJnh/vZb+Xl/LL3kMpKZuvLcrcz1jBsb3bbwT/AZqroEOmQa26KGzMTVjUqUZPDXWYN6V+IXrgyhc=
+          gitea-server.markwaite.net ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFgZa32zJfApdbgaxIec6sVjyX05uiP7izOuFxb3npJQ
           github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
           github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
           github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
