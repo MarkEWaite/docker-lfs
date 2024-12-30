@@ -12,22 +12,7 @@ security:
     enablePermissions: false
     hideInjectedVars: false
   gitHostKeyVerificationConfiguration:
-    sshHostKeyVerificationStrategy:
-      manuallyProvidedKeyVerificationStrategy:
-        approvedHostKeys: |-
-          bitbucket.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIazEu89wgQZ4bqs3d63QSMzYVa0MuJ2e2gKTKqu+UUO
-          git.assembla.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCgF2nbN5k2W4gUAkyE7+iI5T5Ng2f5xiL4+gGkARwRhftogPzqYi3+IM4PZnDW6nKPzWGo+b+mx2LR4FO0+2IE=
-          git.assembla.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN+whKLd9tzS4IIbZD7rCgly2LNxlvxef4JvwSaL/YZ7
-          git.assembla.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr06hg4ep5IKc85rjYZkEmer+BMkpLfsYi7iOMWytiqyow0jqMiVg7t32a4WW0349QV4rmfcMg5ULuIP//mBjSb2G1jSmqPvWx4JCzZLKu3nmsx1YdBWmVvn/qyVLQ5E+NCSkJJORKqIIgiL1WuAEaxUODYmBExwv1eMZWBpyeKZrrsBEmogKt2Q+igQ31+rb1fQI9/hDE+SktOpT9sWJ9brSDgsQNXAtV52DFDA8mzq7FL+4TbLjDoDdK7v3LFYn2cnN2kD57gW8qvP6V6mrkjc6I2aCNBHwdcIynUQ8HKdU+Sd4u7pZsCCK7odgPCcM5Jj+/PladSR8+DCtvs6JWw==
-          gitea-server.markwaite.net ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPyNSl1xAqUJnh/vZb+Xl/LL3kMpKZuvLcrcz1jBsb3bbwT/AZqroEOmQa26KGzMTVjUqUZPDXWYN6V+IXrgyhc=
-          github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
-          github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
-          github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
-          gitlab.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFSMqzJeV9rUzU4kWitGjeR4PWSa29SPqJ1fVkhtj3Hw9xjLVXVYrU9QlYWrOLXBpQ6KWjbjTDTdDkoohFzgbEY=
-          gitlab.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAfuCHKVTjquxvt6CM6tdG4SLp1Btn/nOeHHE5UOzRdf
-          git.markwaite.net ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKFbpQ2cC4/TUbOSnTjXtk7/ZHyS68wKAzebDW8ooD2lK3Aco4aOjSv/IjHzI+rPH4SAEUvlcmM6OJbGEctuGXo=
-          jenkins-git-plugin.git.beanstalkapp.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAs8kTMKf0NYeC1msU/qSYI8pdBzU+CWr1vPNAEaLKY1647UpZ5XtaGvU4JYZVpHXE8GJr0mmOUZAkpLkoj9I70qJFCpAQkxB+VDotxEgZ1SVwci/RLdoDbyRfHnt0gnwyiP5mzLXw0aBNvyIHcU9dSYxe5ZVMwSbxsOtwWeaPap1IKjGIiR/6UJ93+md+7nhbhf9A3QNHzF9w91DjJLwX4OvutodGi7Y8ox+17+PHujcz5WshEz8rIpE2GqatQydF3dKmtbGhR1baLsNqjL2PzE9A6E+to3+0KCUp/CH7whMwIdMM8pEHp6EX9o0bmPIq4uwFggvlCU6dAWuN7jCgXQ==
-          vs-ssh.visualstudio.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Hr1oTWqNqOlzGJOfGJ4NakVyIzf1rXYd4d7wo6jBlkLvCA4odBlL0mDUyZ0/QUfTTqeu+tm22gOsv+VrVTMk6vwRU75gY/y9ut5Mb3bR5BV58dKXyq9A9UeB5Cakehn5Zgm6x1mKoVyf+FFn26iYqXJRgzIZZcZ5V6hrE0Qg39kZm4az48o0AUbf6Sp4SLdvnuMa2sVNwHBboS7EJkm57XQPVU3/QpyNLHbWDdzwtrlS+ez30S3AdYhLKEOxAG8weOnyrtLJAUen9mTkol8oII1edf7mWWbWVf0nBmly21+nZcmCTISQBtdcyPaEno7fFQMDD26/s0lfKob4Kw8H
+    sshHostKeyVerificationStrategy: "acceptFirstConnectionStrategy"
   sSHD:
     port: -1
   scriptApproval:
