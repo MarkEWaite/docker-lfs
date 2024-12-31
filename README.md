@@ -15,7 +15,7 @@ docker run -i --rm -p 8080:8080 -p 50000:50000 --restart=on-failure -v ~/.m2/:/v
 ```
 
 NOTE: read the section [_Connecting agents_](#connecting-agents) below for the role of the `50000` port mapping.
-NOTE: read the section [_DNS Configuration_](#dns-configuration) in case you see the message "This Jenkins instance appears to be offline." 
+NOTE: read the section [_DNS Configuration_](#dns-configuration) in case you see the message "This Jenkins instance appears to be offline."
 
 This will store the workspace in `/var/jenkins_home`.
 All Jenkins data lives in there - including plugins and configuration.
@@ -415,4 +415,20 @@ Cancel all jobs in the queue:
 
 ```
 Jenkins.instance.queue.clear()
+```
+
+Run all the Pipeline jobs in the individual bugs folder:
+
+```groovy
+import hudson.model.FreeStyleProject
+import org.jenkinsci.plugins.workflow.job.WorkflowJob
+import hudson.model.Cause.UserIdCause
+
+Jenkins.instance.getAllItems(WorkflowJob.class).findAll {
+    return it.fullName =~ '^Bugs-Individual'
+}.each {
+    it.scheduleBuild(0, new UserIdCause())
+    println('Scheduled ' + it.fullName)
+ }
+return ""
 ```
