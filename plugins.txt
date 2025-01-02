@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:933.1.0
+cloudbees-bitbucket-branch-source:933.2.0
 cloudbees-folder:incrementals;org.jenkins-ci.plugins;6.978.v39065d8f5719
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -31,7 +31,7 @@ commons-text-api:1.12.0-129.v99a_50df237f7
 conditional-buildstep:1.4.3
 config-file-provider:980.v88956a_a_5d6a_d
 configuration-as-code:1909.vb_b_f59a_27d013
-copyartifact:757.v05365583a_455
+copyartifact:761.vea_2b_25523e84
 coverage-badges-extension:147.vb_b_2f87a_c7a_54
 coverage:1.16.1
 credentials-binding:687.v619cb_15e923f
@@ -59,7 +59,7 @@ git-client:6.1.0
 git-forensics:2.2.1
 git-parameter:0.10.0
 git-server:126.v0d945d8d2b_39
-git:incrementals;org.jenkins-ci.plugins;5.7.0-rc5362.1ee6a_f0c2c1b_
+git:5.7.0
 gitea:220.v4618c82a_40fb_
 github-api:1.321-478.vc9ce627ce001
 github-branch-source:1807.v50351eb_7dd13
@@ -117,7 +117,7 @@ pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
 pipeline-graph-view:382.vb_9a_27b_7b_ea_71
-pipeline-groovy-lib:744.v5b_556ee7c253
+pipeline-groovy-lib:745.vdf6077913de0
 pipeline-input-step:495.ve9c153f6067b_
 pipeline-maven-api:1469.ve15ca_a_b_90b_44
 pipeline-maven:1469.ve15ca_a_b_90b_44
