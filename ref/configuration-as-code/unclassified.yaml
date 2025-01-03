@@ -36,11 +36,6 @@ unclassified:
     - name: "gitlab-server-1"
       serverUrl: "https://gitlab.com"
       webhookSecretCredentialsId: ""
-  giteaServers:
-    servers:
-    - displayName: "home.markwaite.net"
-      manageHooks: true
-      serverUrl: "https://home.markwaite.net/gitea"
   globalConfigFiles:
     configs:
     - mavenSettings:
