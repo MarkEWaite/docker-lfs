@@ -49,7 +49,7 @@ echarts-api:5.5.1-5
 eddsa-api:0.3.0-4.v84c6f0f4969e
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:548.v5653c6e28c41
-emoji-symbols-api:13.v723a_b_8e234d1
+emoji-symbols-api:16.0-26.v9818ff7423f0
 envinject-api:1.199.v3ce31253ed13
 envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
