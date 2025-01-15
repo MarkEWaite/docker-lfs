@@ -11,7 +11,7 @@ badge:2.5
 basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-1
-bouncycastle-api:2.30.1.79-254.vfdb_814e7791e
+bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
 branch-api:2.1208.vf528356feca_4
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.4.3
@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:336.v788e4055508b_
-cloudbees-bitbucket-branch-source:933.3.1
+cloudbees-bitbucket-branch-source:934.3.1
 cloudbees-folder:6.976.v4dc79fb_c458d
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -55,7 +55,7 @@ envinject:2.919.v009a_a_1067cd0
 external-monitor-job:215.v2e88e894db_f8
 font-awesome-api:6.6.0-2
 forensics-api:2.7.0
-git-client:incrementals;org.jenkins-ci.plugins;6.1.1-rc3667.8d5f9c37c25e
+git-client:6.1.1
 git-forensics:2.2.1
 git-parameter:0.10.0
 git-server:126.v0d945d8d2b_39
