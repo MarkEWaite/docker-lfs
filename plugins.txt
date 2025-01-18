@@ -69,7 +69,7 @@ github:1.40.0
 gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:715.v4c830b_ca_ef95
 gitlab-plugin:1.9.6
-groovy-postbuild:267.va_df06de9fa_fa_
+groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.11.0-85.v1f4e87273c33
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
@@ -92,7 +92,7 @@ jjwt-api:0.11.5-112.ve82dfb_224b_a_d
 joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
-json-api:20241224-119.va_dca_a_b_ea_7da_5
+json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-118.v7f23ed82a_8b_8
 junit-attachments:239.v9e003a_c80a_8c
 junit-realtime-test-reporter:149.v05a_d403e2f48
@@ -133,7 +133,7 @@ plain-credentials:183.va_de8f1dd5a_2b_
 platformlabeler:2734.v604521b_646b_b_
 plot:2.3.0
 plugin-util-api:5.1.0
-pollscm:1.8
+pollscm:1.9
 preSCMbuildstep:71.v1f2990a_37e27
 prism-api:1.29.0-18
 promoted-builds:965.vcda_c6a_e0998f
@@ -157,7 +157,7 @@ timestamper:1.28
 token-macro:400.v35420b_922dcb_
 trilead-api:2.147.vb_73cc728a_32e
 variant:60.v7290fc0eb_b_cd
-versioncolumn:243.vda_c20eea_a_8a_f
+versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:392.v2c0a_4dd46909
 warnings-ng:11.12.0
 workflow-aggregator:600.vb_57cdd26fdd7
@@ -165,7 +165,7 @@ workflow-api:1358.vfb_5780da_64cb_
 workflow-basic-steps:1058.vcb_fc1e3a_21a_9
 workflow-cps:4009.v0089238351a_9
 workflow-durable-task-step:1400.v7a_fd50a_091de
-workflow-job:1496.v5b_18defc07f2
+workflow-job:1498.v33a_0c6f3a_4b_4
 workflow-multibranch:795.ve0cb_1f45ca_9a_
 workflow-scm-step:427.v4ca_6512e7df1
 workflow-step-api:678.v3ee58b_469476
