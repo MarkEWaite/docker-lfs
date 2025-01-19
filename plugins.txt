@@ -109,7 +109,7 @@ mina-sshd-api-common:2.14.0-138.v6341ee58e1df
 mina-sshd-api-core:2.14.0-138.v6341ee58e1df
 monitoring:2.4.0
 naginator:1.481.vcb_b_384a_3de89
-nodelabelparameter:1.13.0
+nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
 parallel-test-executor:522.vfe4fd4a_3382a_
 parameterized-trigger:806.vf6fff3e28c3e
