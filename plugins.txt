@@ -43,7 +43,7 @@ display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
 docker-plugin:1.7.0
-docker-workflow:580.vc0c340686b_54
+docker-workflow:592.v1001d948426c
 durable-task:581.v299a_5609d767
 echarts-api:5.5.1-5
 eddsa-api:0.3.0-4.v84c6f0f4969e
