@@ -1,5 +1,5 @@
 PrioritySorter:5.2.0
-adoptopenjdk:1.5
+adoptopenjdk:1.6
 analysis-model-api:12.9.1
 ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
