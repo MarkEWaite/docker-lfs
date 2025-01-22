@@ -28,7 +28,7 @@ command-launcher:118.v72741845c17a_
 commons-compress-api:1.26.1-2
 commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.13.0-153.v91dcd89e2a_22
-conditional-buildstep:1.4.3
+conditional-buildstep:1.5.0
 config-file-provider:980.v88956a_a_5d6a_d
 configuration-as-code:1915.vcdd0a_d0d2625
 copyartifact:761.vea_2b_25523e84
