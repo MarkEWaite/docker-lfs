@@ -328,6 +328,8 @@ unclassified:
       expression: "aarch64"
     - atoms: "linux-amd64"
       expression: "linux&&amd64"
+    - atoms: "windows-2019"
+      expression: "docker-windows"
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
