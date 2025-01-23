@@ -141,9 +141,9 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using C:\\tools\\jdk-17.0.13+11 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17.0.14+7 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.13+11"
+              toolHome: "c:\\tools\\jdk-17.0.14+7"
           - command:
               command: "true"
               label: "freebsd"
@@ -163,9 +163,9 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using C:\\tools\\jdk-21.0.5+11 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-21.0.6+7 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-21.0.5+11"
+              toolHome: "c:\\tools\\jdk-21.0.6+7"
           - command:
               command: "true"
               label: "freebsd"
