@@ -157,7 +157,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.13+11"
+              id: "jdk-17.0.14+7"
     - name: "jdk21"
       properties:
       - installSource:
