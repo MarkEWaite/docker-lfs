@@ -19,7 +19,7 @@ build-timeout:1.35
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
-cloud-stats:336.v788e4055508b_
+cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:934.3.2
 cloudbees-folder:6.980.v5a_cc0cb_25881
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
@@ -112,7 +112,7 @@ nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
 parallel-test-executor:522.vfe4fd4a_3382a_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
-pipeline-build-step:540.vb_e8849e1a_b_d8
+pipeline-build-step:551.v178956c49ef8
 pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
