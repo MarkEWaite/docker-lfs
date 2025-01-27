@@ -41,7 +41,7 @@ description-setter:258.vcd25251271a_a_
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
-docker-plugin:1.8.0
+docker-plugin:1.9.0
 docker-workflow:592.v1001d948426c
 durable-task:581.v299a_5609d767
 echarts-api:5.5.1-5
@@ -155,7 +155,7 @@ throttle-concurrents:2.16
 timestamper:1.28
 token-macro:400.v35420b_922dcb_
 trilead-api:2.147.vb_73cc728a_32e
-variant:60.v7290fc0eb_b_cd
+variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:392.v2c0a_4dd46909
 warnings-ng:11.12.0
