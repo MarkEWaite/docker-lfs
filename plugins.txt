@@ -93,7 +93,7 @@ joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
-json-path-api:2.9.0-118.v7f23ed82a_8b_8
+json-path-api:2.9.0-138.vc943da_d833b_6
 junit-attachments:239.v9e003a_c80a_8c
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1312.v1a_235a_b_94a_31
