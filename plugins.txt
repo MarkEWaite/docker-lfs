@@ -30,7 +30,7 @@ commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
-configuration-as-code:1915.vcdd0a_d0d2625
+configuration-as-code:1929.v036b_5a_e1f123
 copyartifact:761.vea_2b_25523e84
 coverage-badges-extension:147.vb_b_2f87a_c7a_54
 coverage:1.16.1
@@ -70,7 +70,7 @@ gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:715.v4c830b_ca_ef95
 gitlab-plugin:1.9.7
 groovy-postbuild:272.v52a_03efb_8653
-gson-api:2.11.0-85.v1f4e87273c33
+gson-api:2.11.0-109.v1ef91dd0829a_
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.20
@@ -93,7 +93,7 @@ joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
-json-path-api:2.9.0-118.v7f23ed82a_8b_8
+json-path-api:2.9.0-138.vc943da_d833b_6
 junit-attachments:239.v9e003a_c80a_8c
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1312.v1a_235a_b_94a_31
