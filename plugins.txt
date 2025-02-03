@@ -4,7 +4,7 @@ analysis-model-api:12.9.1
 ant:511.v0a_a_1a_334f41b_
 antisamy-markup-formatter:162.v0e6ec0fcfcf6
 apache-httpcomponents-client-4-api:4.5.14-208.v438351942757
-apache-httpcomponents-client-5-api:5.4-135.v4da_349961256
+apache-httpcomponents-client-5-api:5.4-136.v5a_21779c63f8
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.119.v50285141b_7e1
 badge:2.5
@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.1
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:934.3.2
+cloudbees-bitbucket-branch-source:934.4.1
 cloudbees-folder:6.980.v5a_cc0cb_25881
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -30,7 +30,7 @@ commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
-configuration-as-code:1915.vcdd0a_d0d2625
+configuration-as-code:1929.v036b_5a_e1f123
 copyartifact:761.vea_2b_25523e84
 coverage-badges-extension:147.vb_b_2f87a_c7a_54
 coverage:1.16.1
@@ -70,7 +70,7 @@ gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:715.v4c830b_ca_ef95
 gitlab-plugin:1.9.7
 groovy-postbuild:272.v52a_03efb_8653
-gson-api:2.11.0-85.v1f4e87273c33
+gson-api:2.11.0-109.v1ef91dd0829a_
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.20
@@ -93,7 +93,7 @@ joda-time-api:2.13.0-93.v9934da_29b_a_e9
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
-json-path-api:2.9.0-118.v7f23ed82a_8b_8
+json-path-api:2.9.0-138.vc943da_d833b_6
 junit-attachments:239.v9e003a_c80a_8c
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1312.v1a_235a_b_94a_31
@@ -107,7 +107,7 @@ maven-plugin:3.24
 metrics:4.2.21-461.v881e35d8fa_b_a_
 mina-sshd-api-common:2.14.0-143.v2b_362fc39576
 mina-sshd-api-core:2.14.0-143.v2b_362fc39576
-monitoring:2.4.0
+monitoring:2.5.0
 naginator:1.489.v5808b_a_72e0fc
 nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
@@ -117,7 +117,7 @@ pipeline-build-step:551.v178956c49ef8
 pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:216.vfd8b_ece330ca_
-pipeline-graph-view:402.va_9d108235846
+pipeline-graph-view:406.v06871361eb_2d
 pipeline-groovy-lib:749.v70084559234a_
 pipeline-input-step:508.v584c0e9a_2177
 pipeline-maven-api:1469.ve15ca_a_b_90b_44
@@ -147,14 +147,14 @@ ssh-credentials:349.vb_8b_6b_9709f5b_
 ssh-slaves:3.1021.va_cc11b_de26a_e
 sshd:3.330.vc866a_8389b_58
 structs:338.v848422169819
-support-core:1553.v4dd20218b_cb_2
+support-core:1557.v3435ec4057a_e
 swarm:3.49
 testng-plugin:835.v51ed3da_fcc35
 text-finder:1.31
 theme-manager:278.v2e3c063e42cc
 throttle-concurrents:2.16
 timestamper:1.28
-token-macro:400.v35420b_922dcb_
+token-macro:442.v4f452dc3c7c0
 trilead-api:2.147.vb_73cc728a_32e
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
