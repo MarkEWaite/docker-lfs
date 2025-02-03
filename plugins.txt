@@ -57,7 +57,7 @@ font-awesome-api:6.6.0-2
 forensics-api:2.7.0
 git-client:6.1.1
 git-forensics:2.2.1
-git-parameter:0.10.0
+git-parameter:0.11.0
 git-server:126.v0d945d8d2b_39
 git:5.7.0
 gitea:234.v60def593ec50
@@ -70,7 +70,7 @@ gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:715.v4c830b_ca_ef95
 gitlab-plugin:1.9.7
 groovy-postbuild:272.v52a_03efb_8653
-gson-api:2.11.0-109.v1ef91dd0829a_
+gson-api:2.12.1-113.v347686d6729f
 h2-api:11.1.4.199-30.v1c64e772f3a_c
 handy-uri-templates-2-api:2.1.8-30.v7e777411b_148
 http_request:1.20
@@ -89,7 +89,7 @@ jdk-tool:83.v417146707a_3d
 jersey2-api:2.45-154.v4ded3dc34f81
 jira:3.13
 jjwt-api:0.11.5-112.ve82dfb_224b_a_d
-joda-time-api:2.13.0-93.v9934da_29b_a_e9
+joda-time-api:2.13.1-115.va_6b_5f8efb_1d8
 jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
