@@ -38,7 +38,7 @@ credentials-binding:687.v619cb_15e923f
 credentials:1405.vb_cda_74a_f8974
 dark-theme:524.vd675b_22b_30cb_
 data-tables-api:2.1.8-1
-description-setter:258.vcd25251271a_a_
+description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
