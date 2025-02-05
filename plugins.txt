@@ -18,7 +18,7 @@ build-name-setter:2.4.3
 build-timeout:1.35
 buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
-checks-api:2.2.1
+checks-api:2.2.2
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:934.4.1
 cloudbees-folder:6.980.v5a_cc0cb_25881
@@ -26,6 +26,7 @@ cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
 command-launcher:118.v72741845c17a_
 commons-compress-api:1.27.1-2
+commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
