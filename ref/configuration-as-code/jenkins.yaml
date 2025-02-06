@@ -1,7 +1,4 @@
 jenkins:
-  agentProtocols:
-  - "JNLP4-connect"
-  - "Ping"
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
