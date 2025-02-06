@@ -20,7 +20,7 @@ buildresult-trigger:0.18
 caffeine-api:3.1.8-133.v17b_1ff2e0599
 checks-api:2.2.2
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:934.4.1
+cloudbees-bitbucket-branch-source:934.4.2
 cloudbees-folder:6.980.v5a_cc0cb_25881
 cloudbees-jenkins-advisor:358.v58972d19b_1f0
 clover:4.14.2.596.vb_4d6475e990b_
@@ -103,7 +103,7 @@ mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:235.v2b_16f8e14918
 matrix-auth:3.2.4
 matrix-project:845.vffd7fa_f27555
-maven-plugin:3.24
+maven-plugin:3.25
 metrics:4.2.21-461.v881e35d8fa_b_a_
 mina-sshd-api-common:2.14.0-143.v2b_362fc39576
 mina-sshd-api-core:2.14.0-143.v2b_362fc39576
@@ -111,6 +111,7 @@ monitoring:2.5.0
 naginator:1.489.v5808b_a_72e0fc
 nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
+oss-symbols-api:296.v4981240eeb_1a_
 parallel-test-executor:522.vfe4fd4a_3382a_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:551.v178956c49ef8
