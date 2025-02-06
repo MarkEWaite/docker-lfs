@@ -103,7 +103,7 @@ mapdb-api:1.0.9-40.v58107308b_7a_7
 markdown-formatter:235.v2b_16f8e14918
 matrix-auth:3.2.4
 matrix-project:845.vffd7fa_f27555
-maven-plugin:3.24
+maven-plugin:3.25
 metrics:4.2.21-461.v881e35d8fa_b_a_
 mina-sshd-api-common:2.14.0-143.v2b_362fc39576
 mina-sshd-api-core:2.14.0-143.v2b_362fc39576
