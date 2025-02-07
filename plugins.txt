@@ -31,7 +31,7 @@ commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
 configuration-as-code:1932.v75cb_b_f1b_698d
-copyartifact:761.vea_2b_25523e84
+copyartifact:763.v66351b_9c297f
 coverage-badges-extension:147.vb_b_2f87a_c7a_54
 coverage:1.16.1
 credentials-binding:687.v619cb_15e923f
