@@ -94,7 +94,7 @@ jquery3-api:3.7.1-2
 jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-138.vc943da_d833b_6
-junit-attachments:239.v9e003a_c80a_8c
+junit-attachments:275.v54db_1ed8e66f
 junit-realtime-test-reporter:149.v05a_d403e2f48
 junit:1314.vd966e9a_88895
 label-verifier:105.vf9d080687b_92
