@@ -318,8 +318,9 @@ unclassified:
       expression: "jdk21&&!windows&&!freebsd&&!alpine"
     - atoms: "maven-21-windows"
       expression: "jdk21&&windows"
+    # All container agents in this config use Alpine OS
     - atoms: "vm"
-      expression: "cloud&&linux"
+      expression: "!container"
     - atoms: "aws"
       expression: "cloud&&linux&&(amd64||aarch64)"
     - atoms: "highram"
