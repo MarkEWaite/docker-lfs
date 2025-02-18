@@ -37,7 +37,7 @@ coverage:2.1.0
 credentials-binding:687.v619cb_15e923f
 credentials:1408.va_622a_b_f5b_1b_1
 dark-theme:524.vd675b_22b_30cb_
-data-tables-api:2.1.8-2
+data-tables-api:2.2.2-1
 description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
