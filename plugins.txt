@@ -15,7 +15,7 @@ bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
 branch-api:2.1214.v3f652804588d
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
-build-timeout:1.35
+build-timeout:1.36
 buildresult-trigger:0.18
 caffeine-api:3.2.0-161.v691ef352cee1
 checks-api:2.2.3
@@ -43,7 +43,7 @@ display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
 docker-plugin:1.9.0
-docker-workflow:595.v60cec912059b_
+docker-workflow:596.v3e6972b_46b_e2
 durable-task:581.v299a_5609d767
 echarts-api:5.5.1-6
 eddsa-api:0.3.0-4.v84c6f0f4969e
@@ -96,7 +96,7 @@ json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 junit-attachments:275.v54db_1ed8e66f
 junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1314.vd966e9a_88895
+junit:1316.v13ec14a_de230
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-40.v58107308b_7a_7
