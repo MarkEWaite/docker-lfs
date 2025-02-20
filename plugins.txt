@@ -16,7 +16,7 @@ branch-api:2.1214.v3f652804588d
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
 build-timeout:1.36
-buildresult-trigger:0.18
+buildresult-trigger:1.01
 caffeine-api:3.2.0-161.v691ef352cee1
 checks-api:2.2.3
 cloud-stats:377.vd8a_6c953e98e
@@ -149,7 +149,7 @@ ssh-credentials:349.vb_8b_6b_9709f5b_
 ssh-slaves:3.1031.v72c6b_883b_869
 sshd:3.353.v2b_d33c46e970
 structs:338.v848422169819
-support-core:1557.v3435ec4057a_e
+support-core:1575.v49b_01a_460e3b_
 swarm:3.49
 testng-plugin:934.v5c898162fa_5d
 text-finder:1.31
