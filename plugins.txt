@@ -65,7 +65,7 @@ github-api:1.321-478.vc9ce627ce001
 github-branch-source:1810.v913311241fa_9
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
-github:1.41.0
+github:1.42.0
 gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.7
