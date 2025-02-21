@@ -174,3 +174,4 @@ workflow-step-api:686.v603d058a_e148
 workflow-support:946.v2a_79d8a_4b_e14
 ws-cleanup:0.48
 xshell:325.v3fda_132b_2641
+xtrigger-api:1.2
