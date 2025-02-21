@@ -65,7 +65,7 @@ github-api:1.321-478.vc9ce627ce001
 github-branch-source:1810.v913311241fa_9
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
-github:1.41.0
+github:1.42.0
 gitlab-api:5.6.0-97.v6603a_83f8690
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.7
@@ -119,10 +119,10 @@ pipeline-build-step:555.v589d5c24a_3d6
 pipeline-github-lib:61.v629f2cc41d83
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:231.v56354571a_da_0
-pipeline-graph-view:409.v98f212e980b_4
+pipeline-graph-view:413.v204a_03785b_92
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:513.v7eb_fe7e2c0fc
-pipeline-maven-api:1485.v9a_5a_116d6fb_0
+pipeline-maven-api:1487.v293550cd03d4
 pipeline-maven:1485.v9a_5a_116d6fb_0
 pipeline-milestone-step:119.vdfdc43fc3b_9a_
 pipeline-model-api:2.2221.vc657003fb_d93
@@ -174,3 +174,4 @@ workflow-step-api:686.v603d058a_e148
 workflow-support:946.v2a_79d8a_4b_e14
 ws-cleanup:0.48
 xshell:325.v3fda_132b_2641
+xtrigger-api:1.2
