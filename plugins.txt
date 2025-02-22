@@ -82,7 +82,7 @@ jackson2-api:2.17.0-389.va_5c7e45cd806
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
 javadoc:310.v032f3f16b_0f8
-javax-activation-api:1.2.0-7
+javax-activation-api:1.2.0-8
 javax-mail-api:1.6.2-10
 jaxb:2.3.9-1
 jdk-tool:83.v417146707a_3d
