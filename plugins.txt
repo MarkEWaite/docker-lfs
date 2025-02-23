@@ -32,7 +32,7 @@ conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
 configuration-as-code:1932.v75cb_b_f1b_698d
 copyartifact:765.v0357cc6e6eb_3
-coverage-badges-extension:147.vb_b_2f87a_c7a_54
+coverage-badges-extension:157.vf5d725246222
 coverage:2.1.0
 credentials-binding:687.v619cb_15e923f
 credentials:1408.va_622a_b_f5b_1b_1
