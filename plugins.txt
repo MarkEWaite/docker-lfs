@@ -96,7 +96,7 @@ json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.18.3-30.v952e9442d416
 junit-attachments:275.v54db_1ed8e66f
-junit-realtime-test-reporter:149.v05a_d403e2f48
+junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1316.v13ec14a_de230
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
