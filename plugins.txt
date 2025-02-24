@@ -95,7 +95,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.18.3-30.v952e9442d416
-junit-attachments:275.v54db_1ed8e66f
+junit-attachments:277.v2174c461cb_5c
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1317.v5b_35d792b_06a_
 label-verifier:105.vf9d080687b_92
