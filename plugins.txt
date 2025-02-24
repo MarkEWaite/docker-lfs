@@ -66,7 +66,7 @@ github-branch-source:1810.v913311241fa_9
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.42.0
-gitlab-api:5.6.0-97.v6603a_83f8690
+gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.7
 groovy-postbuild:272.v52a_03efb_8653
@@ -96,8 +96,8 @@ json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.18.3-30.v952e9442d416
 junit-attachments:275.v54db_1ed8e66f
-junit-realtime-test-reporter:149.v05a_d403e2f48
-junit:1316.v13ec14a_de230
+junit-realtime-test-reporter:166.v889e7b_0e23a_a_
+junit:1317.v5b_35d792b_06a_
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-40.v58107308b_7a_7
@@ -119,7 +119,7 @@ pipeline-build-step:555.v589d5c24a_3d6
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-159.09e4403bc62f
 pipeline-graph-analysis:231.v56354571a_da_0
-pipeline-graph-view:413.v204a_03785b_92
+pipeline-graph-view:419.v946ff4a_49e1c
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:513.v7eb_fe7e2c0fc
 pipeline-maven-api:1488.vfd8c04864236
