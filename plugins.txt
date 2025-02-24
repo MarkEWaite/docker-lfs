@@ -10,7 +10,7 @@ authentication-tokens:1.119.v50285141b_7e1
 badge:2.6
 basic-branch-build-strategies:190.v343a_ee70d920
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
-bootstrap5-api:5.3.3-2
+bootstrap5-api:5.3.3-3
 bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
 branch-api:2.1214.v3f652804588d
 build-blocker-plugin:166.vc82fc20b_a_ed6
