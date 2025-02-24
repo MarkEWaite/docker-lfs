@@ -2,7 +2,7 @@ PrioritySorter:5.3.0
 adoptopenjdk:1.6
 analysis-model-api:13.1.0
 ant:513.vde9e7b_a_0da_0f
-antisamy-markup-formatter:162.v0e6ec0fcfcf6
+antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.4-136.v5a_21779c63f8
 asm-api:9.7.1-97.v4cc844130d97
@@ -46,7 +46,7 @@ docker-plugin:1.9.0
 docker-workflow:596.v3e6972b_46b_e2
 durable-task:581.v299a_5609d767
 echarts-api:5.5.1-6
-eddsa-api:0.3.0-4.v84c6f0f4969e
+eddsa-api:0.3.0-13.v7cb_69ed68f00
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:548.v5653c6e28c41
 emoji-symbols-api:16.0-26.v9818ff7423f0
@@ -77,7 +77,7 @@ http_request:1.20
 ignore-committer-strategy:29.v7c3891a_434c3
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:201.vd2a_b_5a_468a_a_6
-ionicons-api:74.v93d5eb_813d5f
+ionicons-api:82.v0597178874e1
 jackson2-api:2.17.0-389.va_5c7e45cd806
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
@@ -95,7 +95,7 @@ jsch:0.2.16-86.v42e010d9484b_
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.18.3-30.v952e9442d416
-junit-attachments:275.v54db_1ed8e66f
+junit-attachments:277.v2174c461cb_5c
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1317.v5b_35d792b_06a_
 label-verifier:105.vf9d080687b_92
@@ -170,7 +170,7 @@ workflow-durable-task-step:1405.v1fcd4a_d00096
 workflow-job:1505.vea_4b_20a_4a_495
 workflow-multibranch:800.v5f0a_a_660950e
 workflow-scm-step:437.v05a_f66b_e5ef8
-workflow-step-api:686.v603d058a_e148
+workflow-step-api:700.v6e45cb_a_5a_a_21
 workflow-support:946.v2a_79d8a_4b_e14
 ws-cleanup:0.48
 xshell:325.v3fda_132b_2641
