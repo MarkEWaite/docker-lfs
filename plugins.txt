@@ -1,6 +1,6 @@
 PrioritySorter:5.3.0
 adoptopenjdk:1.6
-analysis-model-api:13.1.0
+analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -8,7 +8,7 @@ apache-httpcomponents-client-5-api:5.4-136.v5a_21779c63f8
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.131.v7199556c3004
 badge:2.7
-basic-branch-build-strategies:190.v343a_ee70d920
+basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-2
 bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
@@ -42,8 +42,8 @@ description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
-docker-plugin:1.9.0
-docker-workflow:596.v3e6972b_46b_e2
+docker-plugin:incrementals;io.jenkins.docker;1.9.1-rc1265.8d3fd9a_a_a_e86
+docker-workflow:599.v76126c79a_a_2d
 durable-task:581.v299a_5609d767
 echarts-api:5.6.0-1
 eddsa-api:0.3.0-13.v7cb_69ed68f00
@@ -113,7 +113,7 @@ naginator:1.496.v94260e77b_3f5
 nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
 oss-symbols-api:296.v4981240eeb_1a_
-parallel-test-executor:522.vfe4fd4a_3382a_
+parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:555.v589d5c24a_3d6
 pipeline-github-lib:65.v203688e7727e
@@ -157,7 +157,7 @@ theme-manager:278.v2e3c063e42cc
 throttle-concurrents:2.16
 timestamper:1.28
 token-macro:444.v52de7e9c573d
-trilead-api:2.190.v1ed19f8137f8
+trilead-api:2.192.vc50a_d147e369
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:396.veea_3d19b_9551
