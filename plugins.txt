@@ -1,6 +1,6 @@
 PrioritySorter:5.3.0
 adoptopenjdk:1.6
-analysis-model-api:13.1.0
+analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -43,7 +43,7 @@ display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
 docker-plugin:1.9.0
-docker-workflow:596.v3e6972b_46b_e2
+docker-workflow:599.v76126c79a_a_2d
 durable-task:581.v299a_5609d767
 echarts-api:5.6.0-1
 eddsa-api:0.3.0-13.v7cb_69ed68f00
@@ -157,7 +157,7 @@ theme-manager:278.v2e3c063e42cc
 throttle-concurrents:2.16
 timestamper:1.28
 token-macro:444.v52de7e9c573d
-trilead-api:2.190.v1ed19f8137f8
+trilead-api:2.192.vc50a_d147e369
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:396.veea_3d19b_9551
