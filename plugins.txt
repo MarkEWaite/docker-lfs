@@ -45,7 +45,7 @@ docker-java-api:3.4.1-96.v77147a_de67f8
 docker-plugin:1.9.0
 docker-workflow:596.v3e6972b_46b_e2
 durable-task:581.v299a_5609d767
-echarts-api:5.5.1-6
+echarts-api:5.6.0-1
 eddsa-api:0.3.0-13.v7cb_69ed68f00
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:548.v5653c6e28c41
