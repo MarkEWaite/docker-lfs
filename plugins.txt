@@ -1,5 +1,5 @@
 PrioritySorter:5.3.0
-adoptopenjdk:1.6
+adoptopenjdk:1.7
 analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
 antisamy-markup-formatter:173.v680e3a_b_69ff3
@@ -18,7 +18,7 @@ build-name-setter:2.5.0
 build-timeout:1.36
 buildresult-trigger:1.01
 caffeine-api:3.2.0-161.v691ef352cee1
-checks-api:2.2.3
+checks-api:367.v18b_7f530e54a_
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:935.0.0
 cloudbees-folder:6.982.vf165a_16c9507
@@ -42,7 +42,7 @@ description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
-docker-plugin:incrementals;io.jenkins.docker;1.9.1-rc1265.8d3fd9a_a_a_e86
+docker-plugin:1.10.0
 docker-workflow:599.v76126c79a_a_2d
 durable-task:581.v299a_5609d767
 echarts-api:5.6.0-1
@@ -71,7 +71,7 @@ gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.7
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.12.1-113.v347686d6729f
-h2-api:11.1.4.199-30.v1c64e772f3a_c
+h2-api:11.1.4.199-36.vb_ee07e965744
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 http_request:1.20
 ignore-committer-strategy:29.v7c3891a_434c3
@@ -100,7 +100,7 @@ junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1317.v5b_35d792b_06a_
 label-verifier:105.vf9d080687b_92
 mailer:489.vd4b_25144138f
-mapdb-api:1.0.9-40.v58107308b_7a_7
+mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:235.v2b_16f8e14918
 matrix-auth:3.2.4
 matrix-project:845.vffd7fa_f27555
@@ -168,7 +168,7 @@ workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4018.vf02e01888da_f
 workflow-durable-task-step:1405.v1fcd4a_d00096
 workflow-job:1505.vea_4b_20a_4a_495
-workflow-multibranch:800.v5f0a_a_660950e
+workflow-multibranch:803.v08103b_87c280
 workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
 workflow-support:961.v51869f7b_d409
