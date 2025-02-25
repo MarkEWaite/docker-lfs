@@ -8,7 +8,7 @@ apache-httpcomponents-client-5-api:5.4-136.v5a_21779c63f8
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.131.v7199556c3004
 badge:2.7
-basic-branch-build-strategies:190.v343a_ee70d920
+basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-2
 bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
@@ -113,7 +113,7 @@ naginator:1.496.v94260e77b_3f5
 nodelabelparameter:1.14.0
 okhttp-api:4.11.0-183.va_87fc7a_89810
 oss-symbols-api:296.v4981240eeb_1a_
-parallel-test-executor:522.vfe4fd4a_3382a_
+parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:555.v589d5c24a_3d6
 pipeline-github-lib:65.v203688e7727e
