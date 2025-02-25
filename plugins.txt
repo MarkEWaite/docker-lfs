@@ -8,7 +8,7 @@ apache-httpcomponents-client-5-api:5.4-136.v5a_21779c63f8
 asm-api:9.7.1-97.v4cc844130d97
 authentication-tokens:1.131.v7199556c3004
 badge:2.7
-basic-branch-build-strategies:190.v343a_ee70d920
+basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.3-2
 bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
