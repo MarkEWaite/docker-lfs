@@ -44,7 +44,7 @@ docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
 docker-plugin:1.10.0
 docker-workflow:603.va_6964865a_9b_9
-durable-task:581.v299a_5609d767
+durable-task:587.v84b_877235b_45
 echarts-api:5.6.0-2
 eddsa-api:0.3.0-13.v7cb_69ed68f00
 elastic-axis:615.vb_f7c20ec040e
@@ -149,7 +149,7 @@ ssh-credentials:349.vb_8b_6b_9709f5b_
 ssh-slaves:3.1031.v72c6b_883b_869
 sshd:3.353.v2b_d33c46e970
 structs:343.vdcf37b_a_c81d5
-support-core:1637.v6a_6b_f31d4373
+support-core:1668.v8377d290cb_57
 swarm:3.49
 testng-plugin:934.v5c898162fa_5d
 text-finder:1.31
@@ -165,7 +165,7 @@ warnings-ng:12.3.0
 workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1363.v03f731255494
 workflow-basic-steps:1079.vce64b_a_929c5a_
-workflow-cps:4030.v7c3a_975886a_8
+workflow-cps:4032.vf3248d9c3fee
 workflow-durable-task-step:1405.v1fcd4a_d00096
 workflow-job:1505.vea_4b_20a_4a_495
 workflow-multibranch:803.v08103b_87c280
