@@ -74,7 +74,7 @@ gson-api:2.12.1-113.v347686d6729f
 h2-api:11.1.4.199-36.vb_ee07e965744
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 http_request:1.20
-ignore-committer-strategy:29.v7c3891a_434c3
+ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:201.vd2a_b_5a_468a_a_6
 ionicons-api:82.v0597178874e1
