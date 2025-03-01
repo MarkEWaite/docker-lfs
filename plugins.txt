@@ -98,7 +98,7 @@ jsoup:1.18.3-30.v952e9442d416
 junit-attachments:277.v2174c461cb_5c
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1317.v5b_35d792b_06a_
-label-verifier:105.vf9d080687b_92
+label-verifier:116.vb_845759df630
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:235.v2b_16f8e14918
