@@ -1,4 +1,4 @@
-PrioritySorter:5.3.0
+PrioritySorter:849.v459ea_77d16d4
 adoptopenjdk:1.7
 analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
