@@ -112,7 +112,7 @@ monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-183.va_87fc7a_89810
-oss-symbols-api:296.v4981240eeb_1a_
+oss-symbols-api:308.v0c48656b_15c1
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:557.v95d96f77b_2b_8
