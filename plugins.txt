@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:221.v35059272565b_
 font-awesome-api:6.7.2-1
 forensics-api:3.0.0
-git-client:6.1.2
+git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3707.8141ea_1eb_e43
 git-forensics:3.1.0
 git-parameter:0.11.0
 git-server:126.v0d945d8d2b_39
@@ -78,7 +78,7 @@ ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:82.v0597178874e1
-jackson2-api:2.17.0-389.va_5c7e45cd806
+jackson2-api:2.18.3-399.v74c9ce452ea_8
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
 javadoc:310.v032f3f16b_0f8
