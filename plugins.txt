@@ -42,7 +42,7 @@ description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:445.v6b_646c962a_94
 docker-java-api:3.4.1-96.v77147a_de67f8
-docker-plugin:1.10.0
+docker-plugin:incrementals;io.jenkins.docker;1.10.1-rc1273.7c5a_f25fe379
 docker-workflow:611.v16e84da_6d3ff
 durable-task:587.v84b_877235b_45
 echarts-api:5.6.0-2
