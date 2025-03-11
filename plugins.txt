@@ -58,7 +58,7 @@ forensics-api:3.0.0
 git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3710.111f814fdc4b_
 git-forensics:3.1.0
 git-parameter:0.11.0
-git-server:126.v0d945d8d2b_39
+git-server:137.ve0060b_432302
 git:5.7.0
 gitea:238.v626a_cf5e1940
 github-api:1.321-478.vc9ce627ce001
