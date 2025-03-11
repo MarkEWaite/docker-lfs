@@ -122,7 +122,7 @@ pipeline-graph-analysis:231.v56354571a_da_0
 pipeline-graph-view:423.v765c49ca_da_3f
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
-pipeline-maven-api:1488.vfd8c04864236
+pipeline-maven-api:1508.v347c4b_692202
 pipeline-maven:1488.vfd8c04864236
 pipeline-milestone-step:127.vb_52887ca_3b_6d
 pipeline-model-api:2.2247.va_423189a_7dff
