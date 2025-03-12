@@ -87,7 +87,7 @@ javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.45-154.v4ded3dc34f81
-jira:3.13
+jira:3.14
 jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.13.1-115.va_6b_5f8efb_1d8
 jquery3-api:3.7.1-3
