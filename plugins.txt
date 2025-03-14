@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:221.v35059272565b_
 font-awesome-api:6.7.2-1
 forensics-api:3.0.0
-git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3710.111f814fdc4b_
+git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3714.865694da_b_cd7
 git-forensics:3.1.0
 git-parameter:0.11.0
 git-server:137.ve0060b_432302
