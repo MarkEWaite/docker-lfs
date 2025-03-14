@@ -23,7 +23,7 @@ cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:935.1.2
 cloudbees-folder:6.985.va_f1635030cc5
 cloudbees-jenkins-advisor:374.v194b_d4f0c8c8
-clover:4.14.2.596.vb_4d6475e990b_
+clover:4.14.2.626.vddc5a_c8c27e0
 command-launcher:118.v72741845c17a_
 commons-compress-api:1.27.1-2
 commons-lang3-api:3.17.0-84.vb_b_938040b_078
@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:221.v35059272565b_
 font-awesome-api:6.7.2-1
 forensics-api:3.0.0
-git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3710.111f814fdc4b_
+git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3714.865694da_b_cd7
 git-forensics:3.1.0
 git-parameter:0.11.0
 git-server:137.ve0060b_432302
@@ -106,8 +106,8 @@ matrix-auth:3.2.4
 matrix-project:845.vffd7fa_f27555
 maven-plugin:3.25
 metrics:4.2.21-464.vc9fa_a_0d6265d
-mina-sshd-api-common:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-157.v5e9d4d0860eb_
-mina-sshd-api-core:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-157.v5e9d4d0860eb_
+mina-sshd-api-common:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-158.vc368a_4a_d8a_9a_
+mina-sshd-api-core:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-158.vc368a_4a_d8a_9a_
 monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
