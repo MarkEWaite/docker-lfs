@@ -56,7 +56,7 @@ external-monitor-job:221.v35059272565b_
 font-awesome-api:6.7.2-1
 forensics-api:3.1.0
 git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3714.865694da_b_cd7
-git-forensics:3.1.0
+git-forensics:3.2.0
 git-parameter:0.11.0
 git-server:137.ve0060b_432302
 git:5.7.0
