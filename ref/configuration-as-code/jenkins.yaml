@@ -54,12 +54,6 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.43"
-  - name: "git-2.45"
-    properties:
-    - ? ''
-      : verifiers:
-        - shellScriptVerifier:
-            script: "git --version 2>&1 | grep -F 2.45"
   - name: "git-2.47"
     properties:
     - ? ''
@@ -68,14 +62,22 @@ jenkins:
             verifiers:
             - shellScriptVerifier:
                 script: "git --version 2>&1 | grep -F 2.47"
-            - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*|win-.*)"
   - name: "git-2.48"
     properties:
     - ? ''
       : verifiers:
         - shellScriptVerifier:
             script: "git --version 2>&1 | grep -F 2.48"
+  - name: "git-2.49"
+    properties:
+    - ? ''
+      : verifiers:
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.49"
+            - regexNameVerifier:
+                regexExpression: "(cb-pc.*|mark-pc[3-9].*|win-.*)"
   labelString: "git-2.39 highmem"
   log:
     recorders:
