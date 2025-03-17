@@ -25,7 +25,7 @@ cloudbees-folder:6.985.va_f1635030cc5
 cloudbees-jenkins-advisor:374.v194b_d4f0c8c8
 clover:4.14.2.626.vddc5a_c8c27e0
 command-launcher:118.v72741845c17a_
-commons-compress-api:1.27.1-2
+commons-compress-api:1.27.1-3
 commons-lang3-api:3.17.0-84.vb_b_938040b_078
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
