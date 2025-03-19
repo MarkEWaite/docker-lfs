@@ -46,7 +46,7 @@ docker-plugin:1274.vc0203fdf2e74
 docker-workflow:611.v16e84da_6d3ff
 durable-task:587.v84b_877235b_45
 echarts-api:5.6.0-2
-eddsa-api:0.3.0-13.v7cb_69ed68f00
+eddsa-api:0.3.0.1-16.vcb_4a_98a_3531c
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:548.v5653c6e28c41
 emoji-symbols-api:16.0-26.v9818ff7423f0
@@ -162,7 +162,7 @@ variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:396.veea_3d19b_9551
 warnings-ng:12.4.1
-workflow-aggregator:600.vb_57cdd26fdd7
+workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1366.vf1fb_e1a_f6b_22
 workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4045.v0efb_cb_7cea_e9
