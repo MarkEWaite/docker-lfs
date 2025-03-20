@@ -15,7 +15,7 @@ bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
 branch-api:2.1214.v3f652804588d
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
-build-timeout:1.36
+build-timeout:1.37
 buildresult-trigger:1.01
 caffeine-api:3.2.0-161.v691ef352cee1
 checks-api:367.v18b_7f530e54a_
