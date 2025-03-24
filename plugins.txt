@@ -95,7 +95,7 @@ jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.19.1-36.v63b_c859911d0
-junit-attachments:288.vcb_96b_d3a_b_350
+junit-attachments:295.vf1a_b_1e7c5051
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1319.v000471ca_e5e2
 label-verifier:116.vb_845759df630
@@ -134,7 +134,7 @@ pipeline-utility-steps:2.19.0
 plain-credentials:183.va_de8f1dd5a_2b_
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
-plugin-util-api:6.0.0
+plugin-util-api:6.1.0
 pollscm:1.9
 preSCMbuildstep:115.vf9808414429d
 prism-api:1.30.0-1
@@ -149,7 +149,7 @@ ssh-credentials:355.v9b_e5b_cde5003
 ssh-slaves:3.1031.v72c6b_883b_869
 sshd:3.353.v2b_d33c46e970
 structs:343.vdcf37b_a_c81d5
-support-core:1671.v1a_d55b_86706a_
+support-core:1686.va_77077e932eb_
 swarm:3.49
 testng-plugin:940.vc244edffc2ec
 text-finder:1.31
@@ -161,7 +161,7 @@ trilead-api:2.192.vc50a_d147e369
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:396.veea_3d19b_9551
-warnings-ng:12.4.1
+warnings-ng:12.5.0
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1366.vf1fb_e1a_f6b_22
 workflow-basic-steps:1079.vce64b_a_929c5a_
