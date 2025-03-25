@@ -41,7 +41,7 @@ data-tables-api:2.2.2-1
 description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:451.vd12c371eeeb_3
-docker-java-api:3.4.1-96.v77147a_de67f8
+docker-java-api:3.4.1-104.vf450e3eb_8e2e
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:611.v16e84da_6d3ff
 durable-task:587.v84b_877235b_45
