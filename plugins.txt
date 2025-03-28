@@ -41,7 +41,7 @@ data-tables-api:2.2.2-1
 description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:451.vd12c371eeeb_3
-docker-java-api:3.4.1-104.vf450e3eb_8e2e
+docker-java-api:3.4.2-106.vb_984cf93b_5db_
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:611.v16e84da_6d3ff
 durable-task:587.v84b_877235b_45
@@ -65,7 +65,7 @@ github-api:1.321-488.v9b_c0da_9533f8
 github-branch-source:1815.v9152b_2ff7a_1b_
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
-github:1.42.0
+github:1.43.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.7
