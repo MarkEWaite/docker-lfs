@@ -106,8 +106,8 @@ matrix-auth:3.2.5
 matrix-project:847.v88a_f90ff9f20
 maven-plugin:3.25
 metrics:4.2.21-464.vc9fa_a_0d6265d
-mina-sshd-api-common:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-158.vc368a_4a_d8a_9a_
-mina-sshd-api-core:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-158.vc368a_4a_d8a_9a_
+mina-sshd-api-core:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-160.ve752fb_2d75a_d
+mina-sshd-api-common:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-160.ve752fb_2d75a_d
 monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
