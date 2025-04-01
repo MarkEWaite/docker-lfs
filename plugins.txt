@@ -102,7 +102,7 @@ label-verifier:116.vb_845759df630
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:235.v2b_16f8e14918
-matrix-auth:3.2.5
+matrix-auth:3.2.6
 matrix-project:847.v88a_f90ff9f20
 maven-plugin:3.25
 metrics:4.2.21-464.vc9fa_a_0d6265d
