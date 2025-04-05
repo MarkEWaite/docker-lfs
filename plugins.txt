@@ -33,7 +33,7 @@ config-file-provider:982.vb_a_e458a_37021
 configuration-as-code:1950.v506f96a_69516
 copyartifact:765.v0357cc6e6eb_3
 coverage-badges-extension:157.vf5d725246222
-coverage:2.2.0
+coverage:2.3.0
 credentials-binding:687.v619cb_15e923f
 credentials:1413.va_51c53703df1
 dark-theme:524.vd675b_22b_30cb_
@@ -112,7 +112,7 @@ monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
-oss-symbols-api:308.v0c48656b_15c1
+oss-symbols-api:313.vd9dc470e16a_0
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:557.v95d96f77b_2b_8
