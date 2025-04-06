@@ -30,10 +30,10 @@ commons-lang3-api:3.17.0-87.v5cf526e63b_8b_
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:982.vb_a_e458a_37021
-configuration-as-code:1947.v7d33fe23569c
+configuration-as-code:1950.v506f96a_69516
 copyartifact:765.v0357cc6e6eb_3
 coverage-badges-extension:157.vf5d725246222
-coverage:2.2.0
+coverage:2.3.0
 credentials-binding:687.v619cb_15e923f
 credentials:1413.va_51c53703df1
 dark-theme:524.vd675b_22b_30cb_
@@ -95,7 +95,7 @@ jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.19.1-38.v216a_f3721b_3c
-junit-attachments:295.vf1a_b_1e7c5051
+junit-attachments:299.v2e00f511b_538
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1319.v000471ca_e5e2
 label-verifier:116.vb_845759df630
@@ -112,7 +112,7 @@ monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
-oss-symbols-api:308.v0c48656b_15c1
+oss-symbols-api:313.vd9dc470e16a_0
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:557.v95d96f77b_2b_8
