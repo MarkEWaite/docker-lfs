@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:6.7.2-1
 forensics-api:3.1.0
-git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3733.9547992dc0e2
+git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3744.2070ea_eec2b_0
 git-forensics:3.2.0
 git-parameter:435.va_f85861c663a_
 git-server:137.ve0060b_432302
@@ -112,7 +112,7 @@ monitoring:2.5.0
 naginator:1.496.v94260e77b_3f5
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
-oss-symbols-api:313.vd9dc470e16a_0
+oss-symbols-api:318.ve82d80c8e1c4
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:840.v3c7d4a_a_5e6c7
 pipeline-build-step:557.v95d96f77b_2b_8
@@ -157,7 +157,7 @@ theme-manager:278.v2e3c063e42cc
 throttle-concurrents:2.16
 timestamper:1.28
 token-macro:444.v52de7e9c573d
-trilead-api:2.192.vc50a_d147e369
+trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:399.v6c89d5e6ff54
@@ -171,7 +171,7 @@ workflow-job:1508.v9cb_c3a_a_89dfd
 workflow-multibranch:803.v08103b_87c280
 workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
-workflow-support:963.va_600813d04a_a_
+workflow-support:968.v8f17397e87b_8
 ws-cleanup:0.48
 xshell:325.v3fda_132b_2641
 xtrigger-api:1.2
