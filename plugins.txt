@@ -68,7 +68,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.43.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
-gitlab-plugin:1.9.7
+gitlab-plugin:1.9.8
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.12.1-113.v347686d6729f
 h2-api:11.1.4.199-36.vb_ee07e965744
