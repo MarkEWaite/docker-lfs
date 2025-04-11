@@ -97,7 +97,7 @@ json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.19.1-38.v216a_f3721b_3c
 junit-attachments:299.v2e00f511b_538
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1321.v399b_3e395b_5a_
+junit:1322.v1556dc1c59a_f
 label-verifier:116.vb_845759df630
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-44.va_1e1310c9118
