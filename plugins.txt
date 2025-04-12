@@ -21,7 +21,7 @@ caffeine-api:3.2.0-166.v72a_6d74b_870f
 checks-api:367.v18b_7f530e54a_
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:935.1.3
-cloudbees-folder:6.1008.v5ed27a_3a_e475
+cloudbees-folder:6.1012.v79a_86a_1ea_c1f
 cloudbees-jenkins-advisor:374.v194b_d4f0c8c8
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
@@ -45,7 +45,7 @@ docker-java-api:3.5.0-108.v211cdd21c383
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:611.v16e84da_6d3ff
 durable-task:587.v84b_877235b_45
-echarts-api:5.6.0-2
+echarts-api:5.6.0-3
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:548.v5653c6e28c41
@@ -81,7 +81,7 @@ ionicons-api:82.v0597178874e1
 jackson2-api:2.18.3-402.v74c4eb_f122b_2
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
-javadoc:310.v032f3f16b_0f8
+javadoc:327.vdfe586651ee0
 javax-activation-api:1.2.0-8
 javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:430.v4cf821b_20632
+pipeline-graph-view:433.v28288510b_b_6d
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
