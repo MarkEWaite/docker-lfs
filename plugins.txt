@@ -33,7 +33,7 @@ config-file-provider:982.vb_a_e458a_37021
 configuration-as-code:1953.v148f87d74b_1e
 copyartifact:765.v0357cc6e6eb_3
 coverage-badges-extension:157.vf5d725246222
-coverage:2.3.0
+coverage:2.4.0
 credentials-binding:687.v619cb_15e923f
 credentials:1413.va_51c53703df1
 dark-theme:524.vd675b_22b_30cb_
