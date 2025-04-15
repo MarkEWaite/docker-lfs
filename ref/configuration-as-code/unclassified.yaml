@@ -343,6 +343,11 @@ unclassified:
       expression: "linux&&amd64"
     - atoms: "windows-2019"
       expression: "docker-windows"
+    # All agents in this config can satisfy either spot or non-spot label
+    - atoms: "spot"
+      expression: "!built-in"
+    - atoms: "non-spot"
+      expression: "!built-in"
   jiraGlobalConfiguration:
     sites:
     - url: "https://issues.jenkins.io/"
