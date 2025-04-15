@@ -57,7 +57,7 @@ font-awesome-api:6.7.2-1
 forensics-api:3.1.0
 git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3755.2717849a_17b_9
 git-forensics:3.2.0
-git-parameter:435.va_f85861c663a_
+git-parameter:439.vb_0e46ca_14534
 git-server:137.ve0060b_432302
 git:5.7.0
 gitea:238.v626a_cf5e1940
