@@ -57,7 +57,7 @@ font-awesome-api:6.7.2-1
 forensics-api:3.1.0
 git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3755.2717849a_17b_9
 git-forensics:3.2.0
-git-parameter:435.va_f85861c663a_
+git-parameter:439.vb_0e46ca_14534
 git-server:137.ve0060b_432302
 git:5.7.0
 gitea:238.v626a_cf5e1940
@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:434.v8d09a_8427c04
+pipeline-graph-view:435.vcfcb_fb_d4ef85
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
