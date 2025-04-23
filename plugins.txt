@@ -1,4 +1,4 @@
-PrioritySorter:incrementals;org.jenkins-ci.plugins;862.v4129ed85d58a_
+PrioritySorter:863.v4a_b_974a_5d042
 adoptopenjdk:1.7
 analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
@@ -87,7 +87,7 @@ javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.45-154.v4ded3dc34f81
-jira:3.14
+jira:3.15
 jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.14.0-127.v7d9da_295a_d51
 jquery3-api:3.7.1-3
@@ -105,7 +105,7 @@ markdown-formatter:235.v2b_16f8e14918
 matrix-auth:3.2.6
 matrix-project:847.v88a_f90ff9f20
 maven-plugin:3.25
-metrics:4.2.30-468.v5973151f8cfc
+metrics:4.2.30-471.v55fa_495f2b_f5
 mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
 mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
 monitoring:2.5.0
@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:443.v042b_a_f2fda_c1
+pipeline-graph-view:447.v0c0a_f171b_643
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
