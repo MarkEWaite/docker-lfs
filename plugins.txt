@@ -4,7 +4,7 @@ analysis-model-api:13.2.0
 ant:513.vde9e7b_a_0da_0f
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.4.3-140.v2516ccde99e7
+apache-httpcomponents-client-5-api:5.4.4-144.vc483d91903d2
 asm-api:9.8-135.vb_2239d08ee90
 authentication-tokens:1.131.v7199556c3004
 badge:2.8
@@ -103,7 +103,7 @@ mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:235.v2b_16f8e14918
 matrix-auth:3.2.6
-matrix-project:847.v88a_f90ff9f20
+matrix-project:849.v0cd64ed7e531
 maven-plugin:3.25
 metrics:4.2.30-471.v55fa_495f2b_f5
 mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:451.v4471731966f8
+pipeline-graph-view:458.vda_20b_9b_63f10
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
