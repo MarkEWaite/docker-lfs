@@ -128,8 +128,8 @@ tool:
               toolHome: "/usr/local/openjdk8"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk8u442-b06"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u442b06.tar.gz"
+              subdir: "jdk8u452-b09"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_jdk8u452b09.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
               label: "!alpine && !freebsd && !windows && !s390x && !built-in"
@@ -148,8 +148,8 @@ tool:
               toolHome: "/usr/local/openjdk11"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-11.0.26+4"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.26_4.tar.gz"
+              subdir: "jdk-11.0.27+6"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.27_6.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -159,45 +159,45 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using C:\\tools\\jdk-17.0.14+7 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17.0.15+6 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.14+7"
+              toolHome: "c:\\tools\\jdk-17.0.15+6"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-17.0.14+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.14_7.tar.gz"
+              subdir: "jdk-17.0.15+6"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.15_6.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-17 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.14+7"
+              id: "jdk-17.0.15+6"
     - name: "jdk21"
       properties:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using C:\\tools\\jdk-21.0.6+7 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-21.0.7+6 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-21.0.6+7"
+              toolHome: "c:\\tools\\jdk-21.0.7+6"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk17"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-21.0.6+7"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.6_7.tar.gz"
+              subdir: "jdk-21.0.7+6"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.7_6.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-21 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-21"
           - adoptOpenJdkInstaller:
-              id: "jdk-21.0.6+7"
+              id: "jdk-21.0.7+6"
   maven:
     installations:
     - name: "maven-latest"
