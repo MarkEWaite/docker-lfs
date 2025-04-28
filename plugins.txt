@@ -28,7 +28,7 @@ commons-compress-api:1.27.1-3
 commons-lang3-api:3.17.0-87.v5cf526e63b_8b_
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
-config-file-provider:982.vb_a_e458a_37021
+config-file-provider:988.v0461fcc2b_9d1
 configuration-as-code:1958.vddc0d369b_e16
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:157.vf5d725246222
@@ -124,11 +124,11 @@ pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
 pipeline-maven:1508.v347c4b_692202
 pipeline-milestone-step:127.vb_52887ca_3b_6d
-pipeline-model-api:2.2254.v2a_978de46f35
-pipeline-model-definition:2.2254.v2a_978de46f35
-pipeline-model-extensions:2.2254.v2a_978de46f35
+pipeline-model-api:2.2255.v56a_15e805f12
+pipeline-model-definition:2.2255.v56a_15e805f12
+pipeline-model-extensions:2.2255.v56a_15e805f12
 pipeline-stage-step:322.vecffa_99f371c
-pipeline-stage-tags-metadata:2.2254.v2a_978de46f35
+pipeline-stage-tags-metadata:2.2255.v56a_15e805f12
 pipeline-utility-steps:2.19.0
 plain-credentials:195.vb_906e9073dee
 platformlabeler:2734.v604521b_646b_b_
