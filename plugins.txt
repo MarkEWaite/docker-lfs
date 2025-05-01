@@ -19,7 +19,7 @@ build-timeout:1.38
 caffeine-api:3.2.0-166.v72a_6d74b_870f
 checks-api:370.vb_61a_c57328f3
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:936.1.0
+cloudbees-bitbucket-branch-source:936.1.1
 cloudbees-folder:6.1012.v79a_86a_1ea_c1f
 cloudbees-jenkins-advisor:374.v194b_d4f0c8c8
 clover:4.14.2.628.ve412b_714e733
@@ -32,7 +32,7 @@ config-file-provider:988.v0461fcc2b_9d1
 configuration-as-code:1958.vddc0d369b_e16
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:157.vf5d725246222
-coverage:2.4.0
+coverage:2.5.0
 credentials-binding:687.v619cb_15e923f
 credentials:1415.v831096eb_5534
 dark-theme:524.vd675b_22b_30cb_
@@ -93,7 +93,7 @@ jquery3-api:3.7.1-3
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20250107-125.v28b_a_ffa_eb_f01
 json-path-api:2.9.0-148.v22a_7ffe323ce
-jsoup:1.19.1-38.v216a_f3721b_3c
+jsoup:1.20.1-46.ve5f1416988c2
 junit-attachments:299.v2e00f511b_538
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1322.v1556dc1c59a_f
@@ -118,7 +118,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:477.v42d998fde36d
+pipeline-graph-view:491.v11235f4a_6095
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
