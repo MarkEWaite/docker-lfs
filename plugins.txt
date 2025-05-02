@@ -76,7 +76,7 @@ http_request:1.20
 ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:203.v15e81a_1b_7a_38
-ionicons-api:82.v0597178874e1
+ionicons-api:87.ve74b_60c10b_57
 jackson2-api:2.18.3-402.v74c4eb_f122b_2
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
