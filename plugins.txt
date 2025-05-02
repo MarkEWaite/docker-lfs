@@ -29,7 +29,7 @@ commons-lang3-api:3.17.0-87.v5cf526e63b_8b_
 commons-text-api:1.13.0-153.v91dcd89e2a_22
 conditional-buildstep:1.5.0
 config-file-provider:988.v0461fcc2b_9d1
-configuration-as-code:1958.vddc0d369b_e16
+configuration-as-code:1963.v24e046127a_3f
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:157.vf5d725246222
 coverage:2.5.0
@@ -76,7 +76,7 @@ http_request:1.20
 ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:203.v15e81a_1b_7a_38
-ionicons-api:82.v0597178874e1
+ionicons-api:87.ve74b_60c10b_57
 jackson2-api:2.18.3-402.v74c4eb_f122b_2
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
@@ -118,7 +118,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:491.v11235f4a_6095
+pipeline-graph-view:504.vb_643f0e2e9c0
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1508.v347c4b_692202
