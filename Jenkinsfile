@@ -23,7 +23,7 @@ pipeline {
 			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
-		stage('jdk17') {
+		stage('UBI-9 JDK 17') {
 		    agent {
 			dockerfile {
 			    filename 'Dockerfile-jdk17'
