@@ -10,7 +10,7 @@ pipeline {
 			}
 		    }
 		    steps {
-			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
 		stage('Slim') {
@@ -20,7 +20,7 @@ pipeline {
 			}
 		    }
 		    steps {
-			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
 		stage('jdk17') {
@@ -30,7 +30,7 @@ pipeline {
 			}
 		    }
 		    steps {
-			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
 		stage('jdk21') {
@@ -40,7 +40,7 @@ pipeline {
 			}
 		    }
 		    steps {
-			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
 	    }
