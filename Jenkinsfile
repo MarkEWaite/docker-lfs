@@ -2,7 +2,6 @@ pipeline {
     agent {
 	dockerfile {
 	    filename 'Dockerfile-alpine'
-            label 'markewaite-ci/lts:2.504.1-alpine'
 	}
     }
     stages {
