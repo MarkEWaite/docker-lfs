@@ -2,6 +2,9 @@ FROM jenkins/jenkins:2.508-slim-jdk21
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
+# Modified jenkins.sh to allow use inside a dockerfile based Jenkins job
+COPY jenkins.sh /usr/local/bin/jenkins.sh
+
 ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
 
 USER root
