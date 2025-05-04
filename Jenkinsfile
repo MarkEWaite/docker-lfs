@@ -2,7 +2,9 @@ pipeline {
     agent none
     stages {
 	stage('Launch') {
-	    echo "Branch is ${BRANCH}"
+            steps {
+	        echo "Branch is ${BRANCH}"
+            }
         }
 	stage('Containers') {
 	    parallel {
