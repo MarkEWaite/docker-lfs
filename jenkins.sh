@@ -7,6 +7,8 @@
 
 if ! [ -r "${JENKINS_HOME}" ] || ! [ -w "${JENKINS_HOME}" ]; then
         echo "INSTALL WARNING: User: ${USER} missing rw permissions on JENKINS_HOME: ${JENKINS_HOME}"
+        # Wrong permissions, just run the passed in command
+        exec "$@"
 fi
 touch "${COPY_REFERENCE_FILE_LOG}" || { echo "Can not write to ${COPY_REFERENCE_FILE_LOG}. Wrong volume permissions?"; exit 1; }
 echo "--- Copying files at $(date)" >> "$COPY_REFERENCE_FILE_LOG"
