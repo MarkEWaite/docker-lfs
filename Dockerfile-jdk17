@@ -19,7 +19,7 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
     && dnf clean --disableplugin=subscription-manager all \
     && test -x /usr/bin/pgrep \
     && test -x /usr/bin/wget \
-    && test -x /usr/local/bin/git-lfs
+    && test -x /usr/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
