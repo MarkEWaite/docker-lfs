@@ -1,25 +1,27 @@
 pipeline {
     agent none
     stages {
-        stage('Alpine') {
-	    agent {
-		dockerfile {
-		    filename 'Dockerfile-alpine'
+	parallel {
+	    stage('Alpine') {
+		agent {
+		    dockerfile {
+			filename 'Dockerfile-alpine'
+		    }
+		}
+		steps {
+		    sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
 		}
 	    }
-            steps {
-                sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
-            }
-        }
-        stage('Slim') {
-	    agent {
-		dockerfile {
-		    filename 'Dockerfile-slim'
+	    stage('Slim') {
+		agent {
+		    dockerfile {
+			filename 'Dockerfile-slim'
+		    }
+		}
+		steps {
+		    sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
 		}
 	    }
-            steps {
-                sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
-            }
-        }
+	}
     }
 }
