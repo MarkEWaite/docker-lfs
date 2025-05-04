@@ -2,8 +2,11 @@ pipeline {
     agent none
     stages {
 	stage('Launch') {
+            agent {
+                label '!windows'
+            }
             steps {
-	        echo "Branch is ${BRANCH}"
+	        sh 'env | sort'
             }
         }
 	stage('Containers') {
