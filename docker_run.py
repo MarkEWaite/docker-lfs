@@ -72,7 +72,7 @@ def get_git_reference_repo_volume_map():
 
 def get_dns_server():
     if is_home_network():
-        return "172.16.16.249"
+        return "172.16.16.20"
     return "8.8.8.8"
 
 #-----------------------------------------------------------------------
@@ -84,10 +84,10 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.5+11"
+        return "/home/jagent/tools/jdk-21.0.7+6"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.5+11"
-    return "/home/jagent/tools/jdk-17.0.13+11"
+        return "/home/jagent/tools/jdk-21.0.7+6"
+    return "/home/jagent/tools/jdk-17.0.15+6"
 
 #-----------------------------------------------------------------------
 
@@ -184,6 +184,8 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
+                       "--env", "PLUGINS_FORCE_UPGRADE=true", # https://community.jenkins.io/t/saml-plugin-failure-blocking-upgrade-of-4000-jenkins-instances-2-462-3-to-2-479-3/29626/2
+                       "--env", "TRY_UPGRADE_IF_NO_MARKER=true", # https://community.jenkins.io/t/saml-plugin-failure-blocking-upgrade-of-4000-jenkins-instances-2-462-3-to-2-479-3/29626/2
                        "--env", "TZ=America/Boise",
                        "--env", "user.timezone=America/Denver",
                        "-t", docker_tag,
