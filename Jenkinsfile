@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Version Report') {
             steps {
-                sh 'java --version; java -jar /usr/share/jenkins/jenkins.war --version'
+                sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
             }
         }
     }
