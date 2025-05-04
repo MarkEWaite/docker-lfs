@@ -1,11 +1,12 @@
 pipeline {
-    agent {
-	dockerfile {
-	    filename 'Dockerfile-alpine'
-	}
-    }
+    agent none
     stages {
-        stage('Version Report') {
+        stage('Alpine') {
+	    agent {
+		dockerfile {
+		    filename 'Dockerfile-alpine'
+		}
+	    }
             steps {
                 sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
             }
