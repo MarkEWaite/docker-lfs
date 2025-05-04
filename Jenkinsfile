@@ -23,6 +23,26 @@ pipeline {
 			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
 		    }
 		}
+		stage('jdk17') {
+		    agent {
+			dockerfile {
+			    filename 'Dockerfile-jdk17'
+			}
+		    }
+		    steps {
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+		    }
+		}
+		stage('jdk21') {
+		    agent {
+			dockerfile {
+			    filename 'Dockerfile-jdk21'
+			}
+		    }
+		    steps {
+			sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+		    }
+		}
 	    }
 	}
     }
