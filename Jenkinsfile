@@ -6,7 +6,7 @@ pipeline {
                 label '!windows'
             }
             steps {
-                sh 'eho Branch is ${GIT_LOCAL_BRANCH}'
+                sh 'echo Branch is ${GIT_LOCAL_BRANCH}'
             }
         }
         stage('Containers') {
