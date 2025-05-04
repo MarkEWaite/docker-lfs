@@ -2,8 +2,11 @@ pipeline {
     agent none
     stages {
         stage('Launch') {
+            agent {
+                label '!windows'
+            }
             steps {
-                echo "Branch is ${env.GIT_BRANCH}"
+                sh "Branch is ${GIT_LOCAL_BRANCH}"
             }
         }
         stage('Containers') {
