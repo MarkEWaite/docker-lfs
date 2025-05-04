@@ -1,6 +1,9 @@
 pipeline {
     agent none
     stages {
+	stage('Launch') {
+	    echo "Branch is ${BRANCH}"
+        }
 	stage('Containers') {
 	    parallel {
 		stage('Alpine JDK 17') {
