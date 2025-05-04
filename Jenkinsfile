@@ -11,5 +11,15 @@ pipeline {
                 sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
             }
         }
+        stage('Slim') {
+	    agent {
+		dockerfile {
+		    filename 'Dockerfile-slim'
+		}
+	    }
+            steps {
+                sh 'java -jar /usr/share/jenkins/jenkins.war --version; java --version'
+            }
+        }
     }
 }
