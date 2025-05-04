@@ -1,6 +1,9 @@
-FROM jenkins/jenkins:2.492.3-rhel-ubi9-jdk17
+FROM jenkins/jenkins:2.504.1-rhel-ubi9-jdk17
 
 LABEL maintainer="mark.earl.waite@gmail.com"
+
+# Modified jenkins.sh to allow use inside a dockerfile based Jenkins job
+COPY jenkins.sh /usr/local/bin/jenkins.sh
 
 ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
 
@@ -16,7 +19,7 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
     && dnf clean --disableplugin=subscription-manager all \
     && test -x /usr/bin/pgrep \
     && test -x /usr/bin/wget \
-    && test -x /usr/local/bin/git-lfs
+    && test -x /usr/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
