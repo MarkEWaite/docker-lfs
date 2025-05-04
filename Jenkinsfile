@@ -3,7 +3,7 @@ pipeline {
     stages {
 	stage('Containers') {
 	    parallel {
-		stage('Alpine JDK 17') {
+		stage('Alpine JDK 21') {
 		    agent {
 			dockerfile {
 			    filename 'Dockerfile-alpine'
@@ -13,7 +13,7 @@ pipeline {
 			sh 'java -jar /usr/share/jenkins/jenkins.war --version; cat /etc/os-release; java --version'
 		    }
 		}
-		stage('Slim JDK 17') {
+		stage('Slim JDK 21') {
 		    agent {
 			dockerfile {
 			    filename 'Dockerfile-slim'
