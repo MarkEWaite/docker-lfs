@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stages {
-	stage('Parallel') {
+	stage('Containers') {
 	    parallel {
 		stage('Alpine') {
 		    agent {
