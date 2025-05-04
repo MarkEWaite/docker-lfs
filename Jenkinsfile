@@ -2,7 +2,6 @@ pipeline {
     agent {
 	dockerfile {
 	    filename 'Dockerfile-alpine'
-	    additionalBuildArgs '-u 1000:1000'
 	}
     }
     stages {
