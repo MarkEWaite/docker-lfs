@@ -21,7 +21,7 @@ checks-api:370.vb_61a_c57328f3
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:936.1.1
 cloudbees-folder:6.1012.v79a_86a_1ea_c1f
-cloudbees-jenkins-advisor:374.376.v3a_41a_a_142efe
+cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-compress-api:1.27.1-3
