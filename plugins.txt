@@ -11,7 +11,7 @@ badge:2.8
 basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.5-1
-bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
+bouncycastle-api:2.30.1.80-261.v00c0e2618ec3
 branch-api:2.1217.v43d8b_b_d8b_2c7
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
@@ -26,13 +26,13 @@ clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-compress-api:1.27.1-3
 commons-lang3-api:3.17.0-87.v5cf526e63b_8b_
-commons-text-api:1.13.0-153.v91dcd89e2a_22
+commons-text-api:1.13.1-176.v74d88f22034b_
 conditional-buildstep:1.5.0
 config-file-provider:988.v0461fcc2b_9d1
 configuration-as-code:1967.va_968e15fd05b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:157.vf5d725246222
-coverage:2.5.0
+coverage:2.6.0
 credentials-binding:687.v619cb_15e923f
 credentials:1415.v831096eb_5534
 dark-theme:524.vd675b_22b_30cb_
@@ -108,7 +108,7 @@ metrics:4.2.30-471.v55fa_495f2b_f5
 mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
 mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
 monitoring:2.5.0
-naginator:1.496.v94260e77b_3f5
+naginator:1.504.vfc3736332f16
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
 oss-symbols-api:324.v432cce4172ca_
@@ -118,12 +118,12 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:237.v2b_75640ca_888
-pipeline-graph-view:527.v60564e206c1c
+pipeline-graph-view:533.v1610543dc627
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
 pipeline-maven-api:1530.v625a_45ca_0fdd
 pipeline-maven:1530.v625a_45ca_0fdd
-pipeline-milestone-step:134.vdf60d179845f
+pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2255.v56a_15e805f12
 pipeline-model-definition:2.2255.v56a_15e805f12
 pipeline-model-extensions:2.2255.v56a_15e805f12
@@ -154,7 +154,7 @@ testng-plugin:940.vc244edffc2ec
 text-finder:1.31
 theme-manager:294.vf2c2fd783821
 throttle-concurrents:2.16
-timestamper:1.28
+timestamper:1.29
 token-macro:444.v52de7e9c573d
 trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
