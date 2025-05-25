@@ -19,7 +19,7 @@ build-timeout:1.38
 caffeine-api:3.2.0-166.v72a_6d74b_870f
 checks-api:370.vb_61a_c57328f3
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:936.2.0
+cloudbees-bitbucket-branch-source:936.3.0
 cloudbees-folder:6.1012.v79a_86a_1ea_c1f
 cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
 clover:4.14.2.628.ve412b_714e733
@@ -91,7 +91,7 @@ jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.14.0-127.v7d9da_295a_d51
 jquery3-api:3.7.1-3
 jsch:0.2.16-95.v3eecb_55fa_b_78
-json-api:20250107-125.v28b_a_ffa_eb_f01
+json-api:20250517-153.vc8a_a_d87c0ce3
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.20.1-46.ve5f1416988c2
 junit-attachments:299.v2e00f511b_538
