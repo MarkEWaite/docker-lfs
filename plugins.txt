@@ -61,7 +61,7 @@ git-server:137.ve0060b_432302
 git:5.7.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
-github-branch-source:1815.v9152b_2ff7a_1b_
+github-branch-source:1822.v9eec8e5e69e3
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.43.0
