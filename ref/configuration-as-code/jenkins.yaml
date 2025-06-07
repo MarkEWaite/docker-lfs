@@ -79,7 +79,6 @@ jenkins:
       name: "GitUtils-and-AbstractGitSCMSource-info"
   markupFormatter: "markdownFormatter"
   mode: NORMAL
-  myViewsTabBar: "standard"
   nodeMonitors:
   - diskSpace:
       freeSpaceThreshold: "2GB"
