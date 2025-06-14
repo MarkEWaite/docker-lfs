@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:565.vb_991078a_56d6
+pipeline-graph-view:573.v7fc7fb_cfd029
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1530.v625a_45ca_0fdd
