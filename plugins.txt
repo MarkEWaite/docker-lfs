@@ -86,7 +86,7 @@ javax-activation-api:1.2.0-8
 javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
-jersey2-api:2.45-154.v4ded3dc34f81
+jersey2-api:2.47-165.ve7809a_3e87e0
 jira:3.17
 jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.14.0-127.v7d9da_295a_d51
@@ -165,9 +165,9 @@ warnings-ng:12.6.0
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1373.v7b_813f10efa_b_
 workflow-basic-steps:1079.vce64b_a_929c5a_
-workflow-cps:4106.v7a_8a_8176d450
+workflow-cps:4117.vc0f3c515a_a_a_0
 workflow-durable-task-step:1405.v1fcd4a_d00096
-workflow-job:1532.va_9a_d244074a_3
+workflow-job:1537.v66038d35fc76
 workflow-multibranch:806.vb_b_688f609ee9
 workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
