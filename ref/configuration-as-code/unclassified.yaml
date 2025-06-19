@@ -280,8 +280,6 @@ unclassified:
       expression: "git-1.8||git-2.11+"
     - atoms: "git-lfs"
       expression: "git-2.25+"
-    - atoms: "Ubuntu-20"
-      expression: "Ubuntu&&20.04"
     - atoms: "Ubuntu-22"
       expression: "Ubuntu&&22.04"
     - atoms: "Ubuntu-24"
