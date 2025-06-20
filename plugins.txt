@@ -101,7 +101,7 @@ junit:1335.v6b_a_a_e18534e1
 label-verifier:116.vb_845759df630
 mailer:489.vd4b_25144138f
 mapdb-api:1.0.9-44.va_1e1310c9118
-markdown-formatter:235.v2b_16f8e14918
+markdown-formatter:283.v0f6e0efb_f8b_a_
 matrix-auth:3.2.6
 matrix-project:849.v0cd64ed7e531
 maven-plugin:3.26
