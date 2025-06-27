@@ -119,7 +119,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:580.v8f4746b_45a_a_d
+pipeline-graph-view:584.v32e797f976a_2
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1541.vc01544b_d27e8
@@ -161,7 +161,7 @@ trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:401.va_809f6a_b_0c26
-warnings-ng:12.6.0
+warnings-ng:12.7.0
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1373.v7b_813f10efa_b_
 workflow-basic-steps:1079.vce64b_a_929c5a_
