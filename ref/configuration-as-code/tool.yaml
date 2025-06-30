@@ -129,7 +129,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk8u452-b09"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_jdk8u452b09.tar.gz"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u452b09.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
               label: "!alpine && !freebsd && !windows && !s390x && !built-in"
