@@ -152,7 +152,7 @@ structs:350.v3b_30f09f2363
 support-core:1739.v0d10c0a_57cb_e
 swarm:3.49
 testng-plugin:940.vc244edffc2ec
-text-finder:1.31
+text-finder:1.32
 theme-manager:310.v234c7de84f9c
 throttle-concurrents:2.16
 timestamper:1.30
