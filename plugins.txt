@@ -37,7 +37,7 @@ coverage:2.7.1
 credentials-binding:687.v619cb_15e923f
 credentials:1415.v831096eb_5534
 dark-theme:524.vd675b_22b_30cb_
-data-tables-api:2.3.2-2
+data-tables-api:2.3.2-3
 description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:457.v0f62a_94f11a_3
@@ -119,7 +119,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:590.v06d574696250
+pipeline-graph-view:593.va_10fb_d14025a_
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1541.vc01544b_d27e8
