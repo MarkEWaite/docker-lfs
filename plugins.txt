@@ -59,6 +59,7 @@ git-client:6.2.0
 git-forensics:3.2.0
 git-parameter:439.vb_0e46ca_14534
 git-server:137.ve0060b_432302
+git-version-monitor:5.v9a_1e79cdff09
 git:5.7.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
@@ -95,6 +96,7 @@ jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20250517-153.vc8a_a_d87c0ce3
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.21.1-52.v96e4041b_60fd
+jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:299.v2e00f511b_538
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1335.v6b_a_a_e18534e1
@@ -119,7 +121,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:594.v595395fa_3656
+pipeline-graph-view:596.v55503fe10d5d
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1541.vc01544b_d27e8
