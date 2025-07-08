@@ -26,7 +26,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.50.0.2\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.50.1\\mingw64\\bin\\git.exe"
           - command:
               command: "true"
               label: "freebsd"
@@ -43,11 +43,11 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.50.0.2\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.50.1\\mingw64\\bin\\git.exe"
           - zip:
               label: "windows && amd64"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.50.0.2-64-bit.zip"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.50.1-64-bit.zip"
     - home: "git"
       name: "git-2.30.0"
       properties:
@@ -98,17 +98,17 @@ tool:
               label: "git-2.49 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.50.0.2"
+      name: "git-2.50.1"
       properties:
       - installSource:
           installers:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.50.0.2\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.50.1\\mingw64\\bin\\git.exe"
           - command:
               command: "true"
-              label: "git-2.49 && linux"
+              label: "git-2.50 && linux"
               toolHome: "/usr/bin/git"
     - name: "jgit"
     - name: "jgitapache"
