@@ -22,6 +22,7 @@ Build docker images.   Use -h for help."""
 
     # keep at optparse for 2.6. compatibility
     parser.add_option("-r", "--report", action="store_true", default=False, help="Report the command to update plugins and exit without building the image")
+    parser.add_option("-n", "--dryrun", action="store_true", default=False, help="Report the updates without applying any change")
 
     options, arg_hosts = parser.parse_args()
 
@@ -53,6 +54,8 @@ Build docker images.   Use -h for help."""
     new_plugins = list(set(available_updates) - set(existing_plugins))
     new_plugins.sort()
     print(new_plugins)
+    if options.dryrun:
+        quit()
     if len(old_plugins) == len(new_plugins) and len(old_plugins) > 0:
         for old_plugin, new_plugin in zip(old_plugins, new_plugins):
             with open('plugins.txt', 'r+') as f:
