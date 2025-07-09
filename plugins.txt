@@ -59,7 +59,7 @@ git-client:6.2.0
 git-forensics:3.2.0
 git-parameter:439.vb_0e46ca_14534
 git-server:137.ve0060b_432302
-git-version-monitor:5.v9a_1e79cdff09
+git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.7.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
