@@ -168,8 +168,8 @@ tool:
               toolHome: "/usr/local/openjdk17"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-17.0.15+6"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.15_6.tar.gz"
+              subdir: "jdk-17.0.16+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.16_8.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-17 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -190,8 +190,8 @@ tool:
               toolHome: "/usr/local/openjdk17"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-21.0.7+6"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.7_6.tar.gz"
+              subdir: "jdk-21.0.8+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.8_9.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-21 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
