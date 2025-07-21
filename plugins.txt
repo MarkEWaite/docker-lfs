@@ -16,7 +16,7 @@ branch-api:2.1233.vfb_6b_2b_3ed499
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
 build-timeout:1.38
-caffeine-api:3.2.0-166.v72a_6d74b_870f
+caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:936.4.4
@@ -79,7 +79,7 @@ ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:356.v6cfef6a_81c0b_
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:88.va_4187cb_eddf1
-jackson2-api:2.19.0-404.vb_b_0fd2fea_e10
+jackson2-api:2.19.2-408.v18248a_324cfe
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
 javadoc:327.vdfe586651ee0
@@ -121,7 +121,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:600.vc287d1a_d4b_47
+pipeline-graph-view:603.v23e636851f81
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1541.vc01544b_d27e8
