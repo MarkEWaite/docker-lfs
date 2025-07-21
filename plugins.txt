@@ -66,7 +66,7 @@ github-api:1.321-488.v9b_c0da_9533f8
 github-branch-source:1824.v046257273408
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
-github:1.43.0
+github:1.44.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-plugin:1.9.8
@@ -114,7 +114,7 @@ monitoring:2.5.0
 naginator:1.504.vfc3736332f16
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
-oss-symbols-api:356.v2da_d59a_3742b_
+oss-symbols-api:388.v1e168e8f0d76
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:859.vb_e3907a_07a_16
 pipeline-build-step:571.v08a_fffd4b_0ce
