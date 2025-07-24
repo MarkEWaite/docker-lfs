@@ -121,7 +121,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:605.vcf27336c096b_
+pipeline-graph-view:609.v8a_70a_c44a_376
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:527.vd61b_1d3c5078
 pipeline-maven-api:1541.vc01544b_d27e8
@@ -168,7 +168,7 @@ workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1380.ve03e7a_63d139
 workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4169.vb_7e492a_1c7b_e
-workflow-durable-task-step:1434.v1b_595c29ddd7
+workflow-durable-task-step:1442.vb_a_b_f5f3da_9f9
 workflow-job:1540.v295eccc9778f
 workflow-multibranch:806.vb_b_688f609ee9
 workflow-scm-step:437.v05a_f66b_e5ef8
