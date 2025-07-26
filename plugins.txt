@@ -48,7 +48,7 @@ durable-task:594.v093d5387225c
 echarts-api:5.6.0-5
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
-embeddable-build-status:548.v5653c6e28c41
+embeddable-build-status:incrementals;org.jenkins-ci.plugins;617.vc8514d83fecc
 emoji-symbols-api:16.0-26.v9818ff7423f0
 envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
