@@ -27,7 +27,7 @@ command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.27.1-3
 commons-lang3-api:3.18.0-98.v3a_674c06072d
-commons-text-api:1.13.1-176.v74d88f22034b_
+commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
 conditional-buildstep:1.5.0
 config-file-provider:988.v0461fcc2b_9d1
 configuration-as-code:1971.vf9280461ea_89
