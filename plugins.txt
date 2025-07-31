@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-150.veb_76e719855b_
 asm-api:9.8-163.vb_2a_96d3f9c3c
 authentication-tokens:1.131.v7199556c3004
-badge:2.8
+badge:2.9.1
 basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.7-1
