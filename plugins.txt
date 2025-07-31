@@ -45,7 +45,7 @@ docker-java-api:3.5.2-119.v54c784c71fa_3
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:621.va_73f881d9232
 durable-task:595.ve87b_f1318d67
-echarts-api:5.6.0-5
+echarts-api:6.0.0-1
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:incrementals;org.jenkins-ci.plugins;621.v5e85b_a_e8ef39
