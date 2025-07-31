@@ -20,7 +20,7 @@ caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:936.4.4
-cloudbees-folder:6.1036.vb_94fd035b_287
+cloudbees-folder:6.1037.v4cb_8573b_72a_a_
 cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
