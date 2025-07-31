@@ -63,7 +63,7 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.7.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
-github-branch-source:1824.v046257273408
+github-branch-source:1833.v77b_6542df5a_8
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.44.0
