@@ -181,9 +181,9 @@ tool:
       - installSource:
           installers:
           - command:
-              command: "echo 'Using C:\\tools\\jdk-21.0.7+6 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-21.0.8+9 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-21.0.7+6"
+              toolHome: "c:\\tools\\jdk-21.0.8+9"
           - command:
               command: "true"
               label: "freebsd"
@@ -197,7 +197,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-21"
           - adoptOpenJdkInstaller:
-              id: "jdk-21.0.7+6"
+              id: "jdk-21.0.8+9"
   maven:
     installations:
     - name: "maven-latest"
