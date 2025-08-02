@@ -41,7 +41,7 @@ data-tables-api:2.3.2-3
 description-setter:264.v1957f215dcd5
 display-url-api:2.209.v582ed814ff2f
 docker-commons:457.v0f62a_94f11a_3
-docker-java-api:incrementals;org.jenkins-ci.plugins;3.5.3-120.v7040fa_ec0d71
+docker-java-api:3.5.3-122.v156e51f30c0a_
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:621.va_73f881d9232
 durable-task:595.ve87b_f1318d67
@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.0.0-1
 forensics-api:3.1.0
-git-client:incrementals;org.jenkins-ci.plugins;6.2.1-rc3761.0ec8ffc3f299
+git-client:6.3.0
 git-forensics:3.2.0
 git-parameter:444.vca_b_84d3703c2
 git-server:137.ve0060b_432302
