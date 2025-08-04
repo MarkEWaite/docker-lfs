@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1540.v295eccc9778f">
+  <actions/>
+  <description>[JENKINS-75958](https://issues.jenkins.io/browse/JENKINS-75958) reports that git parameter plugin shows a warning message on first run of a Pipeline job</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4175.ve65b_fa_663eed">
+    <script>pipeline {
+  agent any
+  parameters {
+    gitParameter type: &apos;PT_BRANCH&apos;,
+                 name: &apos;A_BRANCH&apos;,
+                 branchFilter: &apos;origin/(.*)&apos;,
+                 defaultValue: &apos;master&apos;,
+                 description: &apos;Choose a branch to checkout&apos;,
+                 selectedValue: &apos;DEFAULT&apos;,
+                 sortMode: &apos;DESCENDING_SMART&apos;
+  }
+  stages {
+    stage(&apos;Example&apos;) {
+      steps {
+        git branch: params.A_BRANCH,
+            url: &apos;https://github.com/jenkinsci/git-plugin.git&apos;
+      }
+    }
+  }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
