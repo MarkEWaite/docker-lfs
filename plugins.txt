@@ -11,7 +11,7 @@ badge:2.9.1
 basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.7-2
-bouncycastle-api:2.30.1.80-261.v00c0e2618ec3
+bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1235.v04e86c7ce54c
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
@@ -97,7 +97,7 @@ json-api:20250517-163.v1c5da_e99c775
 json-path-api:2.9.0-178.vca_b_c71881321
 jsoup:1.21.1-58.vfc578e6e2610
 jspecify-api:1.0.0-1.ve7231e6d0d15
-junit-attachments:323.v438b_00dcdb_fb_
+junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1335.v6b_a_a_e18534e1
 label-verifier:116.vb_845759df630
