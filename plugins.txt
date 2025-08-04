@@ -11,7 +11,7 @@ badge:2.9.1
 basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.7-2
-bouncycastle-api:2.30.1.80-261.v00c0e2618ec3
+bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1235.v04e86c7ce54c
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.0
