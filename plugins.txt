@@ -6,7 +6,7 @@ antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-150.veb_76e719855b_
 asm-api:9.8-163.vb_2a_96d3f9c3c
-authentication-tokens:1.131.v7199556c3004
+authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.9.1
 basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
@@ -25,7 +25,7 @@ cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
-commons-compress-api:1.27.1-3
+commons-compress-api:1.28.0-1
 commons-lang3-api:3.18.0-98.v3a_674c06072d
 commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
 conditional-buildstep:1.5.0
@@ -68,7 +68,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.44.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
-gitlab-branch-source:718.v40b_5f0e67cd3
+gitlab-branch-source:723.v090f23d3cc49
 gitlab-plugin:1.9.8
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.1-153.vb_3d0c48a_a_b_4a_
@@ -103,7 +103,7 @@ junit:1335.v6b_a_a_e18534e1
 label-verifier:116.vb_845759df630
 mailer:515.vd788654779b_1
 mapdb-api:1.0.9-44.va_1e1310c9118
-markdown-formatter:283.v0f6e0efb_f8b_a_
+markdown-formatter:292.vf6975a_44502a_
 matrix-auth:3.2.6
 matrix-project:849.v0cd64ed7e531
 maven-plugin:3.26
