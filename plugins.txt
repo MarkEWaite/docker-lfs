@@ -14,7 +14,7 @@ bootstrap5-api:5.3.7-2
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1240.vca_710512d944
 build-blocker-plugin:166.vc82fc20b_a_ed6
-build-name-setter:2.5.0
+build-name-setter:2.5.1
 build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
