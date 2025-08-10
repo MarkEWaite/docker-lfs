@@ -1,6 +1,6 @@
 PrioritySorter:863.v4a_b_974a_5d042
 adoptopenjdk:146.v1898676a_f04e
-analysis-model-api:13.7.0
+analysis-model-api:13.8.0-902.v26f80296f743
 ant:513.vde9e7b_a_0da_0f
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -12,9 +12,9 @@ basic-branch-build-strategies:228.v68c089762a_db_
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bootstrap5-api:5.3.7-2
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
-branch-api:2.1235.v04e86c7ce54c
+branch-api:2.1240.vca_710512d944
 build-blocker-plugin:166.vc82fc20b_a_ed6
-build-name-setter:2.5.0
+build-name-setter:2.5.1
 build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
@@ -116,7 +116,7 @@ nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.11.0-189.v976fa_d3379d6
 oss-symbols-api:392.v27a_482d90083
 parallel-test-executor:535.v0343a_314327b_
-parameterized-trigger:859.vb_e3907a_07a_16
+parameterized-trigger:873.v8b_e37dd8418f
 pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
@@ -149,7 +149,7 @@ snakeyaml-api:2.3-125.v4d77857a_b_402
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1071.v0d059c7b_c555
-sshd:3.372.v5d04a_e92d8cf
+sshd:3.374.v19b_d59ce6610
 structs:353.v261ea_40a_80fb_
 support-core:1744.vf4f8e8f2b_0b_5
 swarm:3.50
