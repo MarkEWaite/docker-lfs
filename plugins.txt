@@ -33,7 +33,7 @@ config-file-provider:994.v3d4a_5fa_f353a_
 configuration-as-code:1985.vdda_32d0c4ea_b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
-coverage:2.8.0
+coverage:2.2873.v430507dfc44b_
 credentials-binding:702.vfe613e537e88
 credentials:1419.v2337d1ceceef
 dark-theme:574.va_19f05d54df5
@@ -54,7 +54,7 @@ envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.0.0-1
-forensics-api:3.1.0
+forensics-api:3.1740.v1d0305a_2747b_
 git-client:6.3.0
 git-forensics:3.2.0
 git-parameter:444.vca_b_84d3703c2
