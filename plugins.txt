@@ -9,10 +9,10 @@ asm-api:9.8-163.vb_2a_96d3f9c3c
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.9.1
 basic-branch-build-strategies:275.vde2351b_4a_58b_
-better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
+better-pipeline-flowgraph-table:1.8.v7718fd869731
 bootstrap5-api:5.3.7-2
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
-branch-api:2.1240.vca_710512d944
+branch-api:2.1244.vf95c81f1641c
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.1
 build-timeout:1.38
@@ -151,7 +151,7 @@ ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1071.v0d059c7b_c555
 sshd:3.374.v19b_d59ce6610
 structs:353.v261ea_40a_80fb_
-support-core:1756.v5b_e146d607fd
+support-core:1758.v87f0f880c067
 swarm:3.50
 testng-plugin:940.vc244edffc2ec
 text-finder:1.32
@@ -163,7 +163,7 @@ trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:401.va_809f6a_b_0c26
-warnings-ng:12.10.0
+warnings-ng:12.9749.va_2c1361722d3
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1384.vdc05a_48f535f
 workflow-basic-steps:1079.vce64b_a_929c5a_
