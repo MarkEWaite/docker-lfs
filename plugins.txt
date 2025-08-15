@@ -9,10 +9,10 @@ asm-api:9.8-163.vb_2a_96d3f9c3c
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.9.1
 basic-branch-build-strategies:275.vde2351b_4a_58b_
-better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
+better-pipeline-flowgraph-table:1.8.v7718fd869731
 bootstrap5-api:5.3.7-2
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
-branch-api:2.1240.vca_710512d944
+branch-api:2.1244.vf95c81f1641c
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.1
 build-timeout:1.38
@@ -33,7 +33,7 @@ config-file-provider:994.v3d4a_5fa_f353a_
 configuration-as-code:1985.vdda_32d0c4ea_b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
-coverage:2.8.0
+coverage:2.2875.ve560756ff429
 credentials-binding:702.vfe613e537e88
 credentials:1419.v2337d1ceceef
 dark-theme:574.va_19f05d54df5
@@ -54,7 +54,7 @@ envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.0.0-1
-forensics-api:3.1.0
+forensics-api:3.1740.v1d0305a_2747b_
 git-client:6.3.0
 git-forensics:3.2.0
 git-parameter:444.vca_b_84d3703c2
@@ -105,7 +105,7 @@ mailer:515.vd788654779b_1
 mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:292.vf6975a_44502a_
 matrix-auth:3.2.7
-matrix-project:855.va_10985fa_3219
+matrix-project:856.v4c352b_3a_b_23e
 maven-plugin:3.27
 metrics:4.2.32-481.v75f035fdc894
 mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
@@ -151,7 +151,7 @@ ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1071.v0d059c7b_c555
 sshd:3.374.v19b_d59ce6610
 structs:353.v261ea_40a_80fb_
-support-core:1756.v5b_e146d607fd
+support-core:1758.v87f0f880c067
 swarm:3.50
 testng-plugin:940.vc244edffc2ec
 text-finder:1.32
@@ -163,12 +163,12 @@ trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:401.va_809f6a_b_0c26
-warnings-ng:12.10.0
+warnings-ng:12.9749.va_2c1361722d3
 workflow-aggregator:608.v67378e9d3db_1
-workflow-api:1382.veca_a_efe062fa_
+workflow-api:1384.vdc05a_48f535f
 workflow-basic-steps:1079.vce64b_a_929c5a_
-workflow-cps:4177.vb_203fe395445
-workflow-durable-task-step:1446.v3efd13441220
+workflow-cps:4183.v94b_6fd39da_c1
+workflow-durable-task-step:1452.v0ee719c104a_7
 workflow-job:1540.v295eccc9778f
 workflow-multibranch:811.vcd33d074c2a_0
 workflow-scm-step:437.v05a_f66b_e5ef8
