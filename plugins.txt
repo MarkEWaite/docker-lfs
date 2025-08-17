@@ -136,7 +136,7 @@ pipeline-utility-steps:2.19.0
 plain-credentials:199.v9f8e1f741799
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
-plugin-util-api:6.1.0
+plugin-util-api:6.1154.ved7e7d3035a_5
 pollscm:1.9
 preSCMbuildstep:115.vf9808414429d
 prism-api:1.30.0-1
