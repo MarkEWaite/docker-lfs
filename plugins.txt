@@ -81,7 +81,7 @@ instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson2-api:2.19.2-408.v18248a_324cfe
 jakarta-activation-api:2.1.3-2
-jakarta-mail-api:2.1.3-2
+jakarta-mail-api:2.1.3-3
 javadoc:354.vee1a_660b_4990
 javax-activation-api:1.2.0-8
 javax-mail-api:1.6.2-11
