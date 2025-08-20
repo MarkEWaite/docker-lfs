@@ -53,7 +53,7 @@ emoji-symbols-api:16.0-26.v9818ff7423f0
 envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
-font-awesome-api:7.0.0-1
+font-awesome-api:7.0.0-840.vd6c7a_a_a_a_88e1
 forensics-api:3.1740.v1d0305a_2747b_
 git-client:6.3.0
 git-forensics:3.2.0
