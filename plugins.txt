@@ -46,7 +46,7 @@ docker-java-api:3.5.3-122.v156e51f30c0a_
 docker-plugin:1274.vc0203fdf2e74
 docker-workflow:621.va_73f881d9232
 durable-task:595.ve87b_f1318d67
-echarts-api:6.0.0-1
+echarts-api:6.0.0-1137.vfd5f348e1952
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:602.v766a_264519c7
@@ -125,8 +125,8 @@ pipeline-graph-analysis:241.vc3d48fb_b_2582
 pipeline-graph-view:628.va_6f6a_1d12848
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:534.v352f0a_e98918
-pipeline-maven-api:1563.v2e75645a_7d43
-pipeline-maven:1563.v2e75645a_7d43
+pipeline-maven-api:1566.v53e0fd49f92a_
+pipeline-maven:1566.v53e0fd49f92a_
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2265.v140e610fe9d5
 pipeline-model-definition:2.2265.v140e610fe9d5
