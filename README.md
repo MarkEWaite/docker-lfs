@@ -10,8 +10,8 @@ This is a fully functional Jenkins server.
 # Usage
 
 ```
-docker build -t markewaite/lts-with-plugins:latest .
-docker run -i --rm -p 8080:8080 -p 50000:50000 --restart=on-failure -v ~/.m2/:/var/jenkins_home/.m2/ -v ~/public_html/:/var/jenkins_home/userContent/ -t markewaite/lts-with-plugins:latest
+python docker_build.py
+python docker_run.py --quiet
 ```
 
 NOTE: read the section [_Connecting agents_](#connecting-agents) below for the role of the `50000` port mapping.
