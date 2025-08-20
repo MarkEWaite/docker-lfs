@@ -139,7 +139,7 @@ plot:2.4.0
 plugin-util-api:6.1157.vc75ef7129d86
 pollscm:1.9
 preSCMbuildstep:115.vf9808414429d
-prism-api:1.30.0-1
+prism-api:1.30.0-600.v0b_eeeb_e43a_f9
 promoted-builds:992.va_00888f21b_74
 resource-disposer:0.25
 run-condition:243.v3c3f94e46a_8b_
