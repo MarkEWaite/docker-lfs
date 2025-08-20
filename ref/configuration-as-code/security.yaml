@@ -5,6 +5,10 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
+  contentSecurityPolicyConfiguration:
+    reportOnly: true
+    # https://github.com/jenkins-infra/helpdesk/issues/4776#issuecomment-3206262731
+    rule: "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: avatars.githubusercontent.com; media-src 'self' data: ; script-src 'self' 'report-sample' usage.jenkins.io;"
   copyartifact:
     mode: PRODUCTION
   envInject:
