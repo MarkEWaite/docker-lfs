@@ -64,7 +64,7 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:incrementals;org.jenkins-ci.plugins;5.7.1-rc5461.f88c5004fe1f
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
-github-branch-source:1834.v857721ea_74c6
+github-branch-source:1844.v4a_9883d49126
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.44.0
@@ -89,7 +89,7 @@ javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.47-165.ve7809a_3e87e0
-jira:3.18
+jira:3.19
 jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.14.0-149.v1c3ce991d1b_9
 jquery3-api:3.7.1-594.vb_3864f326cf0
@@ -152,7 +152,7 @@ ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1071.v0d059c7b_c555
 sshd:3.374.v19b_d59ce6610
 structs:353.v261ea_40a_80fb_
-support-core:1758.v87f0f880c067
+support-core:1763.ve4ce0d10a_3f0
 swarm:3.50
 testng-plugin:940.vc244edffc2ec
 text-finder:1.32
