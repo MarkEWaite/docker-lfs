@@ -109,7 +109,7 @@ matrix-auth:3.2.8
 matrix-project:856.v4c352b_3a_b_23e
 maven-plugin:3.27
 metrics:4.2.33-484.v2fcd689980d1
-mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
+mina-sshd-api-common:2.16.0-167.va_269f38cc024
 mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
 monitoring:2.5.0
 naginator:1.504.vfc3736332f16
