@@ -95,7 +95,7 @@ joda-time-api:2.14.0-149.v1c3ce991d1b_9
 jquery3-api:3.7.1-594.vb_3864f326cf0
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20250517-173.v596efb_962a_31
-json-path-api:2.9.0-178.vca_b_c71881321
+json-path-api:2.9.0-190.veefca_05d5477
 jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
