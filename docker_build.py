@@ -193,6 +193,7 @@ def build_one_image(branch_name, clean):
     tag = compute_tag(branch_name)
     print("Building " + tag + " from " + get_dockerfile(tag))
     command = [ "docker", "build",
+                    "--add-host", "home.markwaite.net:216.110.174.159",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
               ]
