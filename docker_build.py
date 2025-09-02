@@ -192,9 +192,8 @@ def build_one_image(branch_name, clean):
         update_plugins(base_jenkins_version)
     tag = compute_tag(branch_name)
     print("Building " + tag + " from " + get_dockerfile(tag))
-    if os.path.exists('ref/jobs'):
-        subprocess.check_call(['tools/create-missing-legacyIds']) # Avoid RunIdMigrator warnings
     command = [ "docker", "build",
+                    "--add-host", "home.markwaite.net:216.110.174.159",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
               ]

@@ -84,18 +84,24 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.7+6"
+        return "/home/jagent/tools/jdk-21.0.8+9"
     if "alpine" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.7+6"
+        return "/home/jagent/tools/jdk-21.0.8+9"
+    if "slim" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21.0.8+9"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.7+6"
-    return "/home/jagent/tools/jdk-17.0.15+6"
+        return "/home/jagent/tools/jdk-21.0.8+9"
+    return "/home/jagent/tools/jdk-17.0.16+8"
 
 #-----------------------------------------------------------------------
 
 def get_java_gc_args():
     # Use generational GC with Java 21
     if "jdk21" in docker_build.get_current_branch():
+        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+    if "alpine" in docker_build.get_current_branch():
+        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+    if "slim" in docker_build.get_current_branch():
         return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
     if "weekly" in docker_build.get_current_branch():
         return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
