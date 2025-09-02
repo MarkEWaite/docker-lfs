@@ -4,7 +4,7 @@ analysis-model-api:13.8.0-902.v26f80296f743
 ant:518.v8d8dc7945eca_
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.5-157.vb_43ef2f6845e
+apache-httpcomponents-client-5-api:5.5-166.v870a_96374f91
 asm-api:9.8-163.vb_2a_96d3f9c3c
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.9.1
@@ -109,8 +109,8 @@ matrix-auth:3.2.8
 matrix-project:856.v4c352b_3a_b_23e
 maven-plugin:3.27
 metrics:4.2.33-484.v2fcd689980d1
-mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
-mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
+mina-sshd-api-common:2.16.0-167.va_269f38cc024
+mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.5.0
 naginator:1.504.vfc3736332f16
 nodelabelparameter:759.vb_b_e95db_f3251
