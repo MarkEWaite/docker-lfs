@@ -21,7 +21,7 @@ checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:936.4.4
 cloudbees-folder:6.1037.v4cb_8573b_72a_a_
-cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
+cloudbees-jenkins-advisor:392.v6ca_b_ff4e12fa_
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -64,7 +64,7 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:incrementals;org.jenkins-ci.plugins;5.7.1-rc5461.f88c5004fe1f
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.321-488.v9b_c0da_9533f8
-github-branch-source:1844.v4a_9883d49126
+github-branch-source:1848.v42f74f7f4500
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.44.0
@@ -94,8 +94,8 @@ jjwt-api:0.11.5-120.v0268cf544b_89
 joda-time-api:2.14.0-149.v1c3ce991d1b_9
 jquery3-api:3.7.1-594.vb_3864f326cf0
 jsch:0.2.16-95.v3eecb_55fa_b_78
-json-api:20250517-163.v1c5da_e99c775
-json-path-api:2.9.0-178.vca_b_c71881321
+json-api:20250517-173.v596efb_962a_31
+json-path-api:2.9.0-190.veefca_05d5477
 jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
