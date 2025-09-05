@@ -56,14 +56,14 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.0.0-851.vd1feb_218a_a_63
 forensics-api:3.1754.v2a_6613b_77002
-git-client:incrementals;org.jenkins-ci.plugins;6.2.1-rc3748.b_a_ce0a_f7232c
+git-client:6.3.3
 git-forensics:3.2088.v3a_896f5e4937
 git-parameter:444.vca_b_84d3703c2
 git-server:137.ve0060b_432302
 git-version-monitor:7.v2a_0f40b_9f2f4
 git:incrementals;org.jenkins-ci.plugins;5.7.1-rc5461.f88c5004fe1f
 gitea:250.v76a_0b_d4fef5b_
-github-api:1.321-488.v9b_c0da_9533f8
+github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1848.v42f74f7f4500
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
@@ -100,7 +100,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1335.v6b_a_a_e18534e1
+junit:1354.v5b_348580de7f
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 mapdb-api:1.0.9-44.va_1e1310c9118
