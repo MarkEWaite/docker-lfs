@@ -19,7 +19,7 @@ build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:936.4.4
+cloudbees-bitbucket-branch-source:937.0.1
 cloudbees-folder:6.1040.v8a_e6330a_54e3
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
@@ -55,7 +55,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.0.0-851.vd1feb_218a_a_63
 forensics-api:3.1754.v2a_6613b_77002
-git-client:6.3.3
+git-client:incrementals;org.jenkins-ci.plugins;6.4.0-rc3786.10c56e5fd700
 git-forensics:3.2088.v3a_896f5e4937
 git-parameter:444.vca_b_84d3703c2
 git-server:137.ve0060b_432302
@@ -66,10 +66,10 @@ github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1848.v42f74f7f4500
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
-github:1.44.0
+github:1.45.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:723.v090f23d3cc49
-gitlab-plugin:1.9.8
+gitlab-plugin:1.9.9
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.1-153.vb_3d0c48a_a_b_4a_
 h2-api:11.1.4.199-36.vb_ee07e965744
@@ -121,7 +121,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:628.va_6f6a_1d12848
+pipeline-graph-view:637.vb_6105ed84508
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:534.v352f0a_e98918
 pipeline-maven-api:1567.vb_2c3a_2116860
