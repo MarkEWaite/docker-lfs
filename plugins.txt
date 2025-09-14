@@ -71,7 +71,7 @@ gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:723.v090f23d3cc49
 gitlab-plugin:1.9.9
 groovy-postbuild:272.v52a_03efb_8653
-gson-api:2.13.1-153.vb_3d0c48a_a_b_4a_
+gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 http_request:1.20
