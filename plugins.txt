@@ -19,7 +19,7 @@ build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.0.2
+cloudbees-bitbucket-branch-source:937.0.3
 cloudbees-folder:6.1040.v8a_e6330a_54e3
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
@@ -32,7 +32,7 @@ config-file-provider:994.v3d4a_5fa_f353a_
 configuration-as-code:1985.vdda_32d0c4ea_b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
-coverage:2.2912.v3dea_6a_4a_73f7
+coverage:2.2933.v84e9b_19d9e6f
 credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
 csp:1.43.vb_e0a_fd67d28d
