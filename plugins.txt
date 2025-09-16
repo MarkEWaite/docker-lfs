@@ -32,7 +32,7 @@ config-file-provider:994.v3d4a_5fa_f353a_
 configuration-as-code:1985.vdda_32d0c4ea_b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
-coverage:2.2933.v84e9b_19d9e6f
+coverage:2.2941.v08df75b_767f1
 credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
 csp:1.43.vb_e0a_fd67d28d
