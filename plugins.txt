@@ -10,7 +10,7 @@ authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.10
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 better-pipeline-flowgraph-table:1.8.v7718fd869731
-bootstrap5-api:5.3.7-860.v1251c115c90c
+bootstrap5-api:5.3.8-876.vb_c62a_27d9a_77
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1244.vf95c81f1641c
 build-blocker-plugin:166.vc82fc20b_a_ed6
@@ -32,12 +32,12 @@ config-file-provider:994.v3d4a_5fa_f353a_
 configuration-as-code:1985.vdda_32d0c4ea_b_
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
-coverage:2.2933.v84e9b_19d9e6f
+coverage:2.2941.v08df75b_767f1
 credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
 csp:1.43.vb_e0a_fd67d28d
 dark-theme:574.va_19f05d54df5
-data-tables-api:2.3.3-1383.va_5607a_a_3f3c2
+data-tables-api:2.3.4-1400.vb_1e3e3c4dfc8
 description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:457.v0f62a_94f11a_3
@@ -53,7 +53,7 @@ emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
 envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
-font-awesome-api:7.0.0-851.vd1feb_218a_a_63
+font-awesome-api:7.0.1-859.v128d3a_efb_6e5
 forensics-api:3.1754.v2a_6613b_77002
 git-client:6.4.0
 git-forensics:3.2088.v3a_896f5e4937
@@ -121,7 +121,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:245.v88f03631a_b_21
-pipeline-graph-view:637.vb_6105ed84508
+pipeline-graph-view:642.v39f37c8e1e70
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:534.v352f0a_e98918
 pipeline-maven-api:1567.vb_2c3a_2116860
