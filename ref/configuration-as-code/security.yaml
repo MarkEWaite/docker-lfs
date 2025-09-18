@@ -1,6 +1,4 @@
 security:
-  anonymizeSupportBundle:
-    enabled: false
   apiToken:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
