@@ -102,7 +102,6 @@ junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit:1355.v45e2ea_65863c
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
-mapdb-api:1.0.9-44.va_1e1310c9118
 markdown-formatter:292.vf6975a_44502a_
 matrix-auth:3.2.8
 matrix-project:858.vb_b_eb_9a_7ea_99e
