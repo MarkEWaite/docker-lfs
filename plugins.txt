@@ -67,7 +67,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:incrementals;io.jenkins.plugins;5.8.1-106.vf8710a_872da_e
-gitlab-branch-source:723.v090f23d3cc49
+gitlab-branch-source:724.v6e30226050b_3
 gitlab-plugin:1.9.9
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
