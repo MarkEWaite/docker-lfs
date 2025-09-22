@@ -11,7 +11,7 @@ badge:2.10
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 bootstrap5-api:5.3.8-876.vb_c62a_27d9a_77
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
-branch-api:2.1244.vf95c81f1641c
+branch-api:2.1253.v6e7f7519f710
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.1
 build-timeout:1.38
