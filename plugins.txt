@@ -1,6 +1,6 @@
 PrioritySorter:863.v4a_b_974a_5d042
 adoptopenjdk:146.v1898676a_f04e
-analysis-model-api:13.8.0-902.v26f80296f743
+analysis-model-api:13.9.0-909.v97dd3a_07c53e
 ant:518.v8d8dc7945eca_
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -111,7 +111,7 @@ mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.5.0
 naginator:1.530.vb_6d120f250b_1
 nodelabelparameter:759.vb_b_e95db_f3251
-okhttp-api:4.11.0-189.v976fa_d3379d6
+okhttp-api:4.12.0-195.vc02552c04ffd
 oss-symbols-api:392.v27a_482d90083
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:873.v8b_e37dd8418f
