@@ -111,7 +111,7 @@ mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.5.0
 naginator:1.530.vb_6d120f250b_1
 nodelabelparameter:759.vb_b_e95db_f3251
-okhttp-api:4.11.0-189.v976fa_d3379d6
+okhttp-api:4.12.0-195.vc02552c04ffd
 oss-symbols-api:392.v27a_482d90083
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:873.v8b_e37dd8418f
