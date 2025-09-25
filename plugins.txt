@@ -18,7 +18,7 @@ build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.0.3
+cloudbees-bitbucket-branch-source:937.0.4
 cloudbees-folder:6.1045.vb_ddd55e2d03f
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
