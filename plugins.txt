@@ -130,7 +130,7 @@ pipeline-model-definition:2.2273.v643f36ed9e94
 pipeline-model-extensions:2.2273.v643f36ed9e94
 pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2273.v643f36ed9e94
-pipeline-utility-steps:2.19.0
+pipeline-utility-steps:2.20.0
 plain-credentials:199.v9f8e1f741799
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
