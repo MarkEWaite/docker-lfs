@@ -3,7 +3,6 @@ unclassified:
     endpoints:
     - bitbucketCloudEndpoint:
         enableCache: true
-        manageHooks: true
         repositoriesCacheDuration: 0
         teamCacheDuration: 0
   buildDiscarders:
