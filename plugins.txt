@@ -7,11 +7,11 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
 asm-api:9.8-163.vb_2a_96d3f9c3c
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:2.10
+badge:2.11
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
-branch-api:2.1253.v6e7f7519f710
+branch-api:2.1255.v2f5fe203584a_
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.1
 build-timeout:1.38
@@ -19,7 +19,7 @@ caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:937.0.4
-cloudbees-folder:6.1045.vb_ddd55e2d03f
+cloudbees-folder:6.1053.vd62fb_b_f7367b_
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -62,7 +62,7 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:incrementals;org.jenkins-ci.plugins;5.7.1-rc5461.f88c5004fe1f
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1869.vdb_846d75405b_
+github-branch-source:1871.v50ffb_786515e
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
@@ -98,14 +98,14 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1355.v45e2ea_65863c
+junit:1359.v71188fea_0df5
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:292.vf6975a_44502a_
 matrix-auth:3.2.8
 matrix-project:858.vb_b_eb_9a_7ea_99e
 maven-plugin:3.27
-metrics:4.2.33-484.v2fcd689980d1
+metrics:4.2.37-487.v7d6048d8733c
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.5.0
@@ -141,7 +141,7 @@ prism-api:1.30.0-630.va_e19d17f83b_0
 promoted-builds:992.va_00888f21b_74
 resource-disposer:0.25
 run-condition:243.v3c3f94e46a_8b_
-scm-api:709.v6c27075a_b_1c7
+scm-api:710.v7b_a_484d81f45
 script-security:1378.vf25626395f49
 snakeyaml-api:2.3-125.v4d77857a_b_402
 ssh-agent:386.v36cc0c7582f0
@@ -159,7 +159,7 @@ token-macro:477.vd4f0dc3cb_cf1
 trilead-api:2.209.v0e69b_c43c245
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
-view-job-filters:401.va_809f6a_b_0c26
+view-job-filters:405.v9a_5fddc9230d
 warnings-ng:12.9824.v4de304561b_de
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1384.vdc05a_48f535f
@@ -170,6 +170,6 @@ workflow-job:1549.vc8d7f497b_22f
 workflow-multibranch:821.vc3b_4ea_780798
 workflow-scm-step:452.vdf1ca_c8d3a_87
 workflow-step-api:710.v3e456cc85233
-workflow-support:989.va_20a_1a_57710a_
+workflow-support:991.v66c18437d509
 ws-cleanup:0.49
 xshell:325.v3fda_132b_2641
