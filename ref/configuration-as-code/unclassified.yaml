@@ -32,7 +32,7 @@ unclassified:
     useAuthenticatedEndpoint: true
   gitLabServers:
     servers:
-    - name: "gitlab-server-1"
+    - name: "default"
       serverUrl: "https://gitlab.com"
       webhookSecretCredentialsId: ""
   globalConfigFiles:
@@ -302,9 +302,9 @@ unclassified:
     - atoms: "jdk17"
       expression: "cloud||linux||windows||freebsd"
     - atoms: "jdk21"
-      expression: "(aarch64&&linux)||(amd64&&linux)||(amd64&&windows)||s390x"
+      expression: "cloud||linux||windows||freebsd"
     - atoms: "jdk25"
-      expression: "(aarch64&&linux)||(amd64&&linux)||(amd64&&windows)||s390x"
+      expression: "cloud||linux||windows"
     - atoms: "java"
       expression: "jdk8||jdk11||jdk17||jdk21||jdk25"
     - atoms: "maven"
