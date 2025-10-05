@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@818.v7eb_e657db_924">
+<matrix-project plugin="matrix-project@858.vb_b_eb_9a_7ea_99e">
   <actions/>
   <description>Confirm that Ant automatically installs on each agent</description>
   <keepDependencies>false</keepDependencies>
@@ -10,9 +10,10 @@
         <numToKeep>7</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.14">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.18">
       <maxConcurrentPerNode>1</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -84,21 +85,21 @@
         <string>jdk25</string>
       </values>
     </hudson.matrix.JDKAxis>
-    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@464.va_7ed499b_9d75">
+    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@615.vb_f7c20ec040e">
       <name>label</name>
-      <label>windows,Unix</label>
+      <label>Unix || windows</label>
       <ignoreOffline>true</ignoreOffline>
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;)</combinationFilter>
+  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;))</combinationFilter>
   <builders>
-    <hudson.tasks.Ant plugin="ant@481.v7b_09e538fcca">
+    <hudson.tasks.Ant plugin="ant@518.v8d8dc7945eca_">
       <targets>configure-my-system</targets>
       <antName>ant-latest</antName>
       <buildFile>sample_ant/build.xml</buildFile>
     </hudson.tasks.Ant>
-    <hudson.tasks.Ant plugin="ant@481.v7b_09e538fcca">
+    <hudson.tasks.Ant plugin="ant@518.v8d8dc7945eca_">
       <targets>info</targets>
       <antName>ant-latest</antName>
     </hudson.tasks.Ant>
