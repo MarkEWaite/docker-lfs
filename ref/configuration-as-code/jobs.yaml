@@ -1,2 +1,2 @@
 jobs:
-  - file: configuration-as-code/job-samples.groovy
+  - file: /var/jenkins_home/configuration-as-code/job-samples.groovy
