@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <matrix-project plugin="matrix-project@818.v7eb_e657db_924">
   <actions/>
-  <description>Confirm that Maven and JDK 8 auto-install on each Windows and Linux node</description>
+  <description>Confirm that Maven automatically installs on each agent</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -32,7 +32,7 @@
       <hudson.plugins.git.UserRemoteConfig>
         <name>origin</name>
         <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
-        <url>https://github.com/MarkEWaite/jenkins-demo</url>
+        <url>https://github.com/MarkEWaite/jenkins-demo.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -43,16 +43,16 @@
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <gitTool>Default</gitTool>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url>https://github.com/MarkEWaite/jenkins-demo</url>
+      <url>https://github.com/MarkEWaite/jenkins-demo/</url>
     </browser>
     <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
-        <shallow>false</shallow>
+        <shallow>true</shallow>
         <noTags>true</noTags>
         <reference>/var/cache/git/mwaite/jenkins/jenkins-demo.git/</reference>
         <timeout>3</timeout>
-        <depth>0</depth>
+        <depth>1</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
@@ -98,7 +98,7 @@
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>!((label == &apos;mark-pc7&apos; || label == &apos;ibm-s390-jagent&apos; || label == &apos;openbsd-c-jagent&apos;) &amp;&amp; (jdk == &apos;jdk8&apos; || jdk == &apos;jdk19&apos;) || ((label == &apos;FreeBSD&apos;) &amp;&amp; (jdk == &apos;jdk21&apos;)) )</combinationFilter>
+  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;)</combinationFilter>
   <builders>
     <hudson.tasks.Maven>
       <targets>--show-version clean verify javadoc:javadoc</targets>

@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@785.v06b_7f47b_c631">
+<matrix-project plugin="matrix-project@818.v7eb_e657db_924">
   <actions/>
-  <description>Confirm that Ant and JDK 8 auto-install on each Windows and Linux node</description>
+  <description>Confirm that Ant automatically installs on each agent</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
@@ -12,7 +12,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.10">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.14">
       <maxConcurrentPerNode>1</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
       <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -48,10 +48,11 @@
     <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
+        <shallow>true</shallow>
         <noTags>true</noTags>
         <reference>/var/cache/git/mwaite/jenkins/jenkins-demo.git/</reference>
         <timeout>3</timeout>
-        <depth>0</depth>
+        <depth>1</depth>
         <honorRefspec>true</honorRefspec>
       </hudson.plugins.git.extensions.impl.CloneOption>
       <hudson.plugins.git.extensions.impl.AuthorInChangelog/>
@@ -83,7 +84,7 @@
         <string>jdk25</string>
       </values>
     </hudson.matrix.JDKAxis>
-    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.6.0">
+    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@464.va_7ed499b_9d75">
       <name>label</name>
       <label>windows,Unix</label>
       <ignoreOffline>true</ignoreOffline>
