@@ -1,15 +1,9 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<matrix-project plugin="matrix-project@1.13">
+<matrix-project plugin="matrix-project@818.v7eb_e657db_924">
   <actions/>
   <description>Confirm that Maven and JDK 8 auto-install on each Windows and Linux node</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
@@ -18,12 +12,10 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.14">
       <maxConcurrentPerNode>1</maxConcurrentPerNode>
       <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList">
-        <string>upkeep-one-per-node</string>
-      </categories>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
       <throttleEnabled>true</throttleEnabled>
       <throttleOption>category</throttleOption>
       <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
@@ -34,7 +26,7 @@
       <paramsToUseForLimit></paramsToUseForLimit>
     </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.2.1-SNAPSHOT">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.7.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -45,7 +37,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>origin/master</name>
+        <name>master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -53,7 +45,7 @@
     <browser class="hudson.plugins.git.browser.GithubWeb">
       <url>https://github.com/MarkEWaite/jenkins-demo</url>
     </browser>
-    <submoduleCfg class="list"/>
+    <submoduleCfg class="empty-list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.CloneOption>
         <shallow>false</shallow>
@@ -96,19 +88,22 @@
         <string>jdk11</string>
         <string>jdk17</string>
         <string>jdk21</string>
+        <string>jdk25</string>
       </values>
     </hudson.matrix.JDKAxis>
-    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@1.2">
+    <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@464.va_7ed499b_9d75">
       <name>label</name>
       <label>windows,Unix</label>
       <ignoreOffline>true</ignoreOffline>
+      <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>(label==&quot;master&quot;).implies(jdk==&quot;jdk8&quot;)</combinationFilter>
+  <combinationFilter>!((label == &apos;mark-pc7&apos; || label == &apos;ibm-s390-jagent&apos; || label == &apos;openbsd-c-jagent&apos;) &amp;&amp; (jdk == &apos;jdk8&apos; || jdk == &apos;jdk19&apos;) || ((label == &apos;FreeBSD&apos;) &amp;&amp; (jdk == &apos;jdk21&apos;)) )</combinationFilter>
   <builders>
     <hudson.tasks.Maven>
-      <targets>clean verify</targets>
+      <targets>--show-version clean verify javadoc:javadoc</targets>
       <mavenName>maven-latest</mavenName>
+      <jvmOptions>-Xmx128m</jvmOptions><!-- Required for OpenBSD - unclear why -->
       <pom>sample_maven/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
@@ -117,14 +112,14 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.3.1">
-      <script plugin="script-security@1.27">
+    <org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildRecorder plugin="groovy-postbuild@2.5">
+      <script plugin="script-security@1275.v23895f409fb_d">
         <script>if (manager.logContains(&quot;.*your Apache Maven build is setup to use a config with id .* but can not find the config.*&quot;)) {
     manager.addWarningBadge(&quot;Config file provider failure warning.&quot;)
     manager.createSummary(&quot;warning.gif&quot;).appendText(&quot;# Config file provider failure warning!&quot;, false, false, false, &quot;red&quot;)
     manager.buildUnstable()
 }</script>
-        <sandbox>false</sandbox>
+        <sandbox>true</sandbox>
       </script>
       <behavior>0</behavior>
       <runForMatrixParent>false</runForMatrixParent>
