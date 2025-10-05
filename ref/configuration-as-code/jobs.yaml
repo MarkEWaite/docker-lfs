@@ -1,2 +1,2 @@
 jobs:
-  - file: /var/jenkins_home/configuration-as-code/job-dsl-git-client-plugin.groovy
+  - file: /var/jenkins_home/configuration-as-code/jobs/dsl-git-client-plugin.groovy
