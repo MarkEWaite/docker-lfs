@@ -1,0 +1,2 @@
+jobs:
+  - file: configuration-as-code/job-samples.groovy
