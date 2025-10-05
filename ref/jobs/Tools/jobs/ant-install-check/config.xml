@@ -87,12 +87,13 @@
     </hudson.matrix.JDKAxis>
     <org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis plugin="elastic-axis@615.vb_f7c20ec040e">
       <name>label</name>
+      <values/>
       <label>Unix || windows</label>
       <ignoreOffline>true</ignoreOffline>
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;))</combinationFilter>
+  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;)) &amp;&amp; !((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot; || label == &quot;freebsd-b-jagent&quot; || label == &quot;freebsd-a-jagent&quot;) &amp;&amp; (jdk == &quot;jdk25&quot;))</combinationFilter>
   <builders>
     <hudson.tasks.Ant plugin="ant@518.v8d8dc7945eca_">
       <targets>configure-my-system</targets>
