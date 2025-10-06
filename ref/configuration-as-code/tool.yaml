@@ -118,7 +118,7 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
+          - batchFile:
               command: "echo 'Using C:\\tools\\jdk-8 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-8"
@@ -140,7 +140,7 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
+          - batchFile:
               command: "echo 'Using C:\\tools\\jdk-11 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-11"
@@ -162,7 +162,7 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
+          - batchFile:
               command: "echo 'Using C:\\tools\\jdk-17.0.16+8 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-17.0.16+8"
@@ -184,7 +184,7 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
+          - batchFile:
               command: "echo 'Using C:\\tools\\jdk-21.0.8+9 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-21.0.8+9"
@@ -206,7 +206,7 @@ tool:
       properties:
       - installSource:
           installers:
-          - command:
+          - batchFile:
               command: "echo 'Using C:\\tools\\jdk-25+36 for windows'"
               label: "windows"
               toolHome: "c:\\tools\\jdk-25+36"
