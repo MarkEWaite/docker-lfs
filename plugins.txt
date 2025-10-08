@@ -1,6 +1,6 @@
 PrioritySorter:905.v35c21f62f980
 adoptopenjdk:146.v1898676a_f04e
-analysis-model-api:13.9.0-911.v94cd6dcdedf7
+analysis-model-api:13.10.0-914.v0e7249a_76a_13
 ant:518.v8d8dc7945eca_
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -52,7 +52,7 @@ emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
 envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
-font-awesome-api:7.0.1-872.vb_679b_2c95492
+font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1772.v99ca_3d83b_9fa_
 git-client:6.4.0
 git-forensics:3.2138.vf25ea_d549e33
@@ -100,7 +100,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1361.vfed194a_de34a_
+junit:1363.v2ea_b_461a_1480
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:292.vf6975a_44502a_
