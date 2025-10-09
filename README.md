@@ -12,6 +12,7 @@ This is a fully functional Jenkins server.
 ```
 python docker_build.py
 python docker_run.py --quiet
+```
 
 NOTE: read the section [_Connecting agents_](#connecting-agents) below for the role of the `50000` port mapping.
 NOTE: read the section [_DNS Configuration_](#dns-configuration) in case you see the message "This Jenkins instance appears to be offline."
