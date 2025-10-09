@@ -36,7 +36,7 @@ credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
 csp:1.43.vb_e0a_fd67d28d
 dark-theme:574.va_19f05d54df5
-data-tables-api:2.3.4-1413.va_57c35d0a_9ec
+data-tables-api:2.3.4-1427.v2e5c477e8b_83
 description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:457.v0f62a_94f11a_3
