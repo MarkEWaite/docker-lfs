@@ -120,7 +120,7 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
               traits:
@@ -186,7 +186,7 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "6d3b3892-221f-4845-88b3-d9c3ffc4bd0b"
               remote: "git@bitbucket.org:markewaite/jenkins-pipeline-utils.git"
               traits:
@@ -207,7 +207,7 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
               remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
               traits:
