@@ -120,9 +120,9 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "c56b8580-a687-4e76-bd15-4f95ce68875c"
-              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils.git"
               traits:
               - "gitBranchDiscovery"
               - "gitTagDiscovery"
@@ -152,7 +152,7 @@ unclassified:
                   shallow: true
               gitTool: "Default"
               userRemoteConfigs:
-              - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              - url: "https://github.com/MarkEWaite/jenkins-pipeline-utils.git"
     - cachingConfiguration:
         refreshTimeMinutes: 499
       defaultVersion: "master"
@@ -166,7 +166,7 @@ unclassified:
               id: "cfd6a3c0-e2d4-4a4d-b7a7-4f63acb357a6"
               repoOwner: "MarkEWaite"
               repository: "jenkins-pipeline-utils"
-              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils.git"
               traits:
               - gitHubBranchDiscovery:
                   strategyId: 1
@@ -186,7 +186,7 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "6d3b3892-221f-4845-88b3-d9c3ffc4bd0b"
               remote: "git@bitbucket.org:markewaite/jenkins-pipeline-utils.git"
               traits:
@@ -207,9 +207,9 @@ unclassified:
         modernSCM:
           clone: true
           scm:
-            git:
+            gitSource:
               id: "8b99289b-72f9-48af-bd23-dec3a36d1b4e"
-              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils/"
+              remote: "https://github.com/MarkEWaite/jenkins-pipeline-utils.git"
               traits:
               - "gitBranchDiscovery"
               - discoverOtherRefs:
@@ -234,7 +234,7 @@ unclassified:
               id: "41cbe5ba-a9c1-472a-9535-a1415aadf844"
               repoOwner: "MarkEWaite"
               repository: "jenkins-pipeline-utils"
-              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils"
+              repositoryUrl: "https://github.com/MarkEWaite/jenkins-pipeline-utils.git"
               traits:
               - gitHubBranchDiscovery:
                   strategyId: 1
