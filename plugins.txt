@@ -100,7 +100,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1363.v2ea_b_461a_1480
+junit:1366.v23fd7b_ec4a_74
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:312.va_b_3dea_1413a_f
@@ -114,7 +114,7 @@ monitoring:2.5.0
 naginator:1.530.vb_6d120f250b_1
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.12.0-195.vc02552c04ffd
-oss-symbols-api:408.ve05d306d2354
+oss-symbols-api:412.v719e66895255
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:873.v8b_e37dd8418f
 pipeline-build-step:571.v08a_fffd4b_0ce
