@@ -1,7 +1,7 @@
 PrioritySorter:905.v35c21f62f980
 adoptopenjdk:146.v1898676a_f04e
 analysis-model-api:13.10.0-914.v0e7249a_76a_13
-ant:518.v8d8dc7945eca_
+ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
@@ -19,7 +19,7 @@ caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:937.2.0
-cloudbees-folder:6.1053.vd62fb_b_f7367b_
+cloudbees-folder:6.1062.v2877b_d6b_b_eeb_
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -100,7 +100,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1363.v2ea_b_461a_1480
+junit:1367.v9ea_a_13875e39
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:312.va_b_3dea_1413a_f
@@ -114,7 +114,7 @@ monitoring:2.5.0
 naginator:1.530.vb_6d120f250b_1
 nodelabelparameter:759.vb_b_e95db_f3251
 okhttp-api:4.12.0-195.vc02552c04ffd
-oss-symbols-api:408.ve05d306d2354
+oss-symbols-api:412.v719e66895255
 parallel-test-executor:535.v0343a_314327b_
 parameterized-trigger:873.v8b_e37dd8418f
 pipeline-build-step:571.v08a_fffd4b_0ce
