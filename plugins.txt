@@ -47,7 +47,7 @@ durable-task:605.v9a_b_9040c9970
 echarts-api:6.0.0-1165.vd1283a_3e37d4
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
-embeddable-build-status:incrementals;org.jenkins-ci.plugins;647.v3a_b_2972b_9f42
+embeddable-build-status:incrementals;org.jenkins-ci.plugins;649.ve0871a_3b_3d96
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
 envinject-api:1.235.va_14c74f8f487
 envinject:2.926.v69c9b_3896a_96
@@ -62,7 +62,7 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.8.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1871.v50ffb_786515e
+github-branch-source:1906.v21c5c13d25c6
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
@@ -100,7 +100,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1367.v9ea_a_13875e39
+junit:1369.v15da_00283f06
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:312.va_b_3dea_1413a_f
@@ -172,6 +172,6 @@ workflow-job:1551.v7320b_88b_d5e6
 workflow-multibranch:821.vc3b_4ea_780798
 workflow-scm-step:452.vdf1ca_c8d3a_87
 workflow-step-api:710.v3e456cc85233
-workflow-support:991.v66c18437d509
+workflow-support:1004.veee3a_d67cdb_9
 ws-cleanup:0.49
 xshell:325.v3fda_132b_2641
