@@ -28,7 +28,7 @@ commons-lang3-api:3.19.0-104.v12125f33a_255
 commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
 conditional-buildstep:1.5.0
 config-file-provider:1002.v93e06b_792d44
-configuration-as-code:1998.v3e50e6e9d9d3
+configuration-as-code:2006.v001a_2ca_6b_574
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
 coverage:2.2977.v0e1c1d11042d
