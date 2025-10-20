@@ -18,7 +18,7 @@ build-timeout:1.38
 caffeine-api:3.2.2-178.v353b_8428ed56
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.2.0
+cloudbees-bitbucket-branch-source:937.2.1
 cloudbees-folder:6.1062.v2877b_d6b_b_eeb_
 clover:4.14.2.628.ve412b_714e733
 command-launcher:123.v37cfdc92ef67
@@ -28,7 +28,7 @@ commons-lang3-api:3.19.0-104.v12125f33a_255
 commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
 conditional-buildstep:1.5.0
 config-file-provider:1002.v93e06b_792d44
-configuration-as-code:1998.v3e50e6e9d9d3
+configuration-as-code:2006.v001a_2ca_6b_574
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:179.v6c477ce0c246
 coverage:2.2977.v0e1c1d11042d
@@ -36,7 +36,7 @@ credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
 csp:1.43.vb_e0a_fd67d28d
 dark-theme:574.va_19f05d54df5
-data-tables-api:2.3.4-1427.v2e5c477e8b_83
+data-tables-api:2.3.4-1445.v196c776fe69c
 description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:457.v0f62a_94f11a_3
@@ -56,7 +56,7 @@ font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1772.v99ca_3d83b_9fa_
 git-client:6.4.0
 git-forensics:3.2138.vf25ea_d549e33
-git-parameter:incrementals;org.jenkins-ci.tools;457.v7ec876b_a_5f39
+git-parameter:444.vca_b_84d3703c2
 git-server:137.ve0060b_432302
 git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.8.0
@@ -66,7 +66,7 @@ github-branch-source:1906.v21c5c13d25c6
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
-gitlab-api:incrementals;io.jenkins.plugins;5.8.1-106.vf8710a_872da_e
+gitlab-api:5.8.1-106.vef1de800710e
 gitlab-branch-source:724.v6e30226050b_3
 gitlab-plugin:1.9.9
 groovy-postbuild:272.v52a_03efb_8653
@@ -154,7 +154,7 @@ structs:353.v261ea_40a_80fb_
 swarm:3.51
 testng-plugin:940.vc244edffc2ec
 text-finder:1.33
-theme-manager:319.v9193461f9671
+theme-manager:327.v780d7096ec29
 throttle-concurrents:2.18
 timestamper:1.30
 token-macro:477.vd4f0dc3cb_cf1
