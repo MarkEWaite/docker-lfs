@@ -62,11 +62,11 @@ git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.8.0
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1906.v21c5c13d25c6
+github-branch-source:1910.v4ca_b_2c639cb_0
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
-gitlab-api:5.8.1-106.vef1de800710e
+gitlab-api:incrementals;io.jenkins.plugins;6.1.0-124.v711d0eda_59a_8
 gitlab-branch-source:724.v6e30226050b_3
 gitlab-plugin:1.9.9
 groovy-postbuild:272.v52a_03efb_8653
@@ -88,6 +88,7 @@ javax-mail-api:1.6.2-11
 jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.47-165.ve7809a_3e87e0
+jersey3-api:3.1.11-4.v77818819c2e1
 jira:3.19
 jjwt-api:0.11.5-120.v0268cf544b_89
 job-dsl:1.93
