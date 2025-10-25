@@ -128,8 +128,8 @@ tool:
               toolHome: "/usr/local/openjdk8"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk8u462-b08"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u462b08.tar.gz"
+              subdir: "jdk8u472-b08"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u472b08.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows && !s390x'"
               label: "!alpine && !freebsd && !windows && !s390x && !built-in"
@@ -172,8 +172,8 @@ tool:
               toolHome: "/usr/local/openjdk17"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-17.0.16+8"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.16_8.tar.gz"
+              subdir: "jdk-17.0.17+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.17_10.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-17 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -194,8 +194,8 @@ tool:
               toolHome: "/usr/local/openjdk21"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-21.0.8+9"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.8_9.tar.gz"
+              subdir: "jdk-21.0.9+10"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.9_10.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-21 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -216,8 +216,8 @@ tool:
               toolHome: "/usr/local/openjdk25"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-25+36"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz"
+              subdir: "jdk-25.0.1+8"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.1_8.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-25 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
