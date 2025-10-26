@@ -146,7 +146,7 @@ resource-disposer:0.25
 run-condition:243.v3c3f94e46a_8b_
 scm-api:712.v8846fdd68c88
 script-security:1378.vf25626395f49
-snakeyaml-api:2.3-125.v4d77857a_b_402
+snakeyaml-api:2.5-143.v93b_c004f89de
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1085.vc64d040efa_85
