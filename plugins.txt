@@ -30,7 +30,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1002.v93e06b_792d44
 configuration-as-code:2006.v001a_2ca_6b_574
 copyartifact:770.va_6c69e063442
-coverage-badges-extension:179.v6c477ce0c246
+coverage-badges-extension:197.vb_390173d00ec
 coverage:2.2977.v0e1c1d11042d
 credentials-binding:702.vfe613e537e88
 credentials:1447.v4cb_b_539b_5321
