@@ -68,7 +68,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:incrementals;io.jenkins.plugins;6.1.0-124.v711d0eda_59a_8
 gitlab-branch-source:incrementals;io.jenkins.plugins;732.va_0786f1f2b_10
-gitlab-plugin:1.9.9
+gitlab-plugin:1.9.10
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
