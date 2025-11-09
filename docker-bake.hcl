@@ -91,11 +91,15 @@ variable "JAVA17_VERSION" {
 }
 
 variable "JAVA21_VERSION" {
-  default = "21.0.8_9"
+  default = "21.0.9_10"
 }
 
 variable "TRIXIE_TAG" {
-  default = "20251020"
+  default = "20251103"
+}
+
+variable "UBI9_TAG" {
+  default = "9.6-1760340943"
 }
 
 # ----  user-defined functions ----
