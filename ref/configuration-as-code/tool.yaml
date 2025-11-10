@@ -26,7 +26,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.51.1\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.51.2\\mingw64\\bin\\git.exe"
           - command:
               command: "true"
               label: "freebsd"
@@ -43,11 +43,11 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.51.1\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.51.2\\mingw64\\bin\\git.exe"
           - zip:
               label: "windows && amd64"
               subdir: "mingw64\\bin\\git.exe"
-              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.51.1-64-bit.zip"
+              url: "https://home.markwaite.net/~mwaite/git/MinGit-2.51.2-64-bit.zip"
     - home: "git"
       name: "git-2.30.0"
       properties:
@@ -98,14 +98,14 @@ tool:
               label: "git-2.49 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.51.1"
+      name: "git-2.51.2"
       properties:
       - installSource:
           installers:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.51.1\\mingw64\\bin\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.51.2\\mingw64\\bin\\git.exe"
           - command:
               command: "true"
               label: "git-2.51 && linux"
@@ -163,9 +163,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-17.0.16+8 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17.0.17+10 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.16+8"
+              toolHome: "c:\\tools\\jdk-17.0.17+10"
           - command:
               command: "true"
               label: "freebsd"
@@ -179,7 +179,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.16+8"
+              id: "jdk-17.0.17+10"
     - name: "jdk21"
       properties:
       - installSource:
@@ -207,9 +207,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-25+36 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-25.0.1+8 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-25+36"
+              toolHome: "c:\\tools\\jdk-25.0.1+8"
           - command:
               command: "true"
               label: "freebsd"
@@ -223,7 +223,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-25"
           - adoptOpenJdkInstaller:
-              id: "jdk-25+36"
+              id: "jdk-25.0.1+8"
   maven:
     installations:
     - name: "maven-latest"
