@@ -163,9 +163,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-17.0.16+8 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17.0.17+10 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.16+8"
+              toolHome: "c:\\tools\\jdk-17.0.17+10"
           - command:
               command: "true"
               label: "freebsd"
@@ -179,7 +179,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.16+8"
+              id: "jdk-17.0.17+10"
     - name: "jdk21"
       properties:
       - installSource:
@@ -207,9 +207,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-25+36 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-25.0.1+8 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-25+36"
+              toolHome: "c:\\tools\\jdk-25.0.1+8"
           - command:
               command: "true"
               label: "freebsd"
@@ -223,7 +223,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-25"
           - adoptOpenJdkInstaller:
-              id: "jdk-25+36"
+              id: "jdk-25.0.1+8"
   maven:
     installations:
     - name: "maven-latest"
