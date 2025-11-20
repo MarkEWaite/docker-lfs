@@ -11,7 +11,7 @@ badge:2.12
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
-branch-api:2.1259.v45c101731c76
+branch-api:2.1268.v044a_87612da_8
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-name-setter:2.5.1
 build-timeout:1.38
@@ -144,7 +144,7 @@ prism-api:1.30.0-630.va_e19d17f83b_0
 promoted-builds:992.va_00888f21b_74
 resource-disposer:0.25
 run-condition:243.v3c3f94e46a_8b_
-scm-api:712.v8846fdd68c88
+scm-api:724.v7d839074eb_5c
 script-security:1385.v7d2d9ec4d909
 snakeyaml-api:2.5-143.v93b_c004f89de
 ssh-agent:386.v36cc0c7582f0
