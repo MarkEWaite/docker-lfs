@@ -40,7 +40,7 @@ data-tables-api:2.3.4-1451.vb_0b_5238f9054
 description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:457.v0f62a_94f11a_3
-docker-java-api:incrementals;org.jenkins-ci.plugins;3.7.0-133.v2a_9174cd5822
+docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 docker-plugin:1308.vff6e33248305
 docker-workflow:634.vedc7242b_eda_7
 durable-task:635.v3733cef34b_5e
