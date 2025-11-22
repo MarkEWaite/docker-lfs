@@ -79,7 +79,7 @@ implied-labels:356.v6cfef6a_81c0b_
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson2-api:2.20.1-423.v13951f6b_6532
-jakarta-activation-api:incrementals;io.jenkins.plugins;2.1.4-1-rc116.21b_d57c87503
+jakarta-activation-api:2.1.4-1
 jakarta-mail-api:incrementals;io.jenkins.plugins;2.1.5-1-rc140.6783b_3a_3db_57
 jakarta-xml-bind-api:4.0.6-10.v9b_7e1d1fc40b_
 javadoc:354.vee1a_660b_4990
