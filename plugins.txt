@@ -101,7 +101,7 @@ jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
-junit:1380.v491ff054cd35
+junit:1369.v15da_00283f06
 label-verifier:116.vb_845759df630
 mailer:522.va_995fa_cfb_8b_d
 markdown-formatter:312.va_b_3dea_1413a_f
