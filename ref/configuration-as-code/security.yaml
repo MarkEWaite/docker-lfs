@@ -4,16 +4,6 @@ security:
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
   contentSecurityPolicy:
-    advanced:
-    - custom:
-        rules:
-        - allowFetch:
-            allow:
-              byDomain:
-                domain: "avatars.githubusercontent.com"
-            directive: "img-src"
-    - reporting:
-        ignoreAnonymousReports: false
     enforce: true
   copyartifact:
     mode: PRODUCTION
