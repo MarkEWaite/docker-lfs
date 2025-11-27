@@ -4,7 +4,7 @@ security:
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
   contentSecurityPolicyConfiguration:
-    reportOnly: true
+    reportOnly: false
     rule: "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: ; script-src 'self' 'report-sample' usage.jenkins.io;"
   copyartifact:
     mode: PRODUCTION
