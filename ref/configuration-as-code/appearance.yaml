@@ -1,6 +1,13 @@
 appearance:
   coverage:
+    defaultMetric: BRANCH
+    defaultName: "Coverage"
     enableColumnByDefault: false
+  pipelineGraphView:
+    showGraphOnBuildPage: true
+    showGraphOnJobPage: false
+    showStageDurations: false
+    showStageNames: false
   prism:
     theme: PRISM
   themeManager:
