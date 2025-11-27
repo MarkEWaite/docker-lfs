@@ -1,11 +1,6 @@
 appearance:
   coverage:
     enableColumnByDefault: false
-  pipelineGraphView:
-    showGraphOnBuildPage: true
-    showGraphOnJobPage: false
-    showStageDurations: true
-    showStageNames: true
   prism:
     theme: PRISM
   themeManager:
