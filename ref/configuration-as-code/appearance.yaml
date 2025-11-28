@@ -1,5 +1,7 @@
 appearance:
   coverage:
+    defaultMetric: BRANCH
+    defaultName: "Coverage"
     enableColumnByDefault: false
   pipelineGraphView:
     showGraphOnBuildPage: true
