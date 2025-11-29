@@ -49,7 +49,7 @@ eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:627.v0249270b_488e
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
-envinject-api:1.235.va_14c74f8f487
+envinject-api:1.236.v35fd4d7eb_515
 envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
@@ -72,7 +72,7 @@ gitlab-plugin:1.9.10
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
-handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
+handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 http_request:1.22
 ignore-committer-strategy:37.v0d3157c4a_ef8
 implied-labels:439.v4900744249a_3
