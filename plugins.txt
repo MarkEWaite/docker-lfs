@@ -31,7 +31,7 @@ config-file-provider:1002.v93e06b_792d44
 configuration-as-code:2006.v001a_2ca_6b_574
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3036.v90d485b_810c6
+coverage:2.3054.ve1ff7b_a_a_123b_
 credentials-binding:702.vfe613e537e88
 credentials:1453.v9b_a_29777a_b_fd
 dark-theme:574.va_19f05d54df5
