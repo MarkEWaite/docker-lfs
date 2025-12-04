@@ -158,7 +158,7 @@ theme-manager:327.v780d7096ec29
 throttle-concurrents:2.18
 timestamper:1.30
 token-macro:477.vd4f0dc3cb_cf1
-trilead-api:incrementals;org.jenkins-ci.plugins;2.284.v7e977124098f
+trilead-api:2.284.v1974ea_324382
 variant:70.va_d9f17f859e0
 versioncolumn:320.v6b_b_814ca_01f7
 view-job-filters:405.v9a_5fddc9230d
