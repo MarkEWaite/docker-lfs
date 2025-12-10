@@ -79,7 +79,7 @@ variable "COMMIT_SHA" {
 }
 
 variable "ALPINE_FULL_TAG" {
-  default = "3.22.2"
+  default = "3.23.0"
 }
 
 variable "ALPINE_SHORT_TAG" {
@@ -99,7 +99,7 @@ variable "TRIXIE_TAG" {
 }
 
 variable "UBI9_TAG" {
-  default = "9.7-1764578509"
+  default = "9.7-1764794285"
 }
 
 # ----  user-defined functions ----
