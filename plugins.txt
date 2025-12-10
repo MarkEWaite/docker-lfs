@@ -24,7 +24,7 @@ clover:4.15.0.677.v22c71ca_e6450
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-2
-commons-lang3-api:3.19.0-104.v12125f33a_255
+commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-210.v7480a_da_70b_9e
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
