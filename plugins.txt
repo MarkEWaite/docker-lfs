@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
 asm-api:9.9-185.va_6c6b_3348b_c3
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:2.12
+badge:2.560.v5135054c2e76
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
