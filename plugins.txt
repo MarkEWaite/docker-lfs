@@ -46,7 +46,7 @@ durable-task:639.vefb_3d8372f6d
 echarts-api:6.0.0-1165.vd1283a_3e37d4
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 elastic-axis:615.vb_f7c20ec040e
-embeddable-build-status:627.v0249270b_488e
+embeddable-build-status:637.vd878e68178f8
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
 envinject-api:1.236.v35fd4d7eb_515
 envinject:2.926.v69c9b_3896a_96
