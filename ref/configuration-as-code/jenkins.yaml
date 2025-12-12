@@ -71,6 +71,10 @@ jenkins:
       - level: "INFO"
         name: "jenkins.plugins.git.AbstractGitSCMSource"
       name: "GitUtils-and-AbstractGitSCMSource-info"
+    - loggers:
+      - level: "FINE"
+        name: "jenkins.security.csp.impl.LoggingReceiver"
+      name: "Content Security Policy"
   markupFormatter: "markdownFormatter"
   mode: NORMAL
   nodeMonitors:
