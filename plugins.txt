@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
 asm-api:9.9-185.va_6c6b_3348b_c3
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:2.12
+badge:2.560.v5135054c2e76
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
@@ -18,7 +18,7 @@ build-timeout:1.38
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
 checks-api:373.vfe7645102093
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.2.1
+cloudbees-bitbucket-branch-source:937.2.2
 cloudbees-folder:6.1073.va_7888eb_dd514
 clover:4.15.0.677.v22c71ca_e6450
 command-launcher:123.v37cfdc92ef67
@@ -31,7 +31,7 @@ config-file-provider:1006.vc7366c201f57
 configuration-as-code:2006.v001a_2ca_6b_574
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3056.v1dfe888b_0249
+coverage:2.3060.v035a_5557cdb_c
 credentials-binding:702.vfe613e537e88
 credentials:1453.v9b_a_29777a_b_fd
 dark-theme:574.va_19f05d54df5
@@ -53,7 +53,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1772.v99ca_3d83b_9fa_
-git-client:6.4.1
+git-client:incrementals;org.jenkins-ci.plugins;6.5.0-rc3821.2c3779943e77
 git-forensics:3.2138.vf25ea_d549e33
 git-parameter:460.v71e7583a_c099
 git-server:137.ve0060b_432302
@@ -66,7 +66,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-gitlab-branch-source:736.v10e786eeea_19
+gitlab-branch-source:incrementals;io.jenkins.plugins;738.v6919eb_7114b_c
 gitlab-plugin:1.9.11
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
