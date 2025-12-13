@@ -53,7 +53,7 @@ envinject:2.926.v69c9b_3896a_96
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1772.v99ca_3d83b_9fa_
-git-client:incrementals;org.jenkins-ci.plugins;6.5.0-rc3821.2c3779943e77
+git-client:incrementals;org.jenkins-ci.plugins;6.5.0-rc3823.2e0df9fddde0
 git-forensics:3.2138.vf25ea_d549e33
 git-parameter:460.v71e7583a_c099
 git-server:137.ve0060b_432302
@@ -66,7 +66,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-gitlab-branch-source:incrementals;io.jenkins.plugins;738.v6919eb_7114b_c
+gitlab-branch-source:739.v9781b_1cdb_72a_
 gitlab-plugin:1.9.11
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
