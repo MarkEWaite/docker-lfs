@@ -251,6 +251,8 @@ unclassified:
     overwriteable: false
   impliedLabels:
     implications:
+    - atoms: "git-2.54+"
+      expression: "git-2.54||git-2.54+"
     - atoms: "git-2.53+"
       expression: "git-2.53||git-2.54+"
     - atoms: "git-2.52+"
