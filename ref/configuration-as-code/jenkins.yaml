@@ -109,10 +109,6 @@ jenkins:
   quietPeriod: 5
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  updateCenter:
-    sites:
-    - id: "default"
-      url: "https://updates.jenkins.io/update-center.json"
   views:
   - list:
       columns:
