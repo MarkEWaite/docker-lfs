@@ -18,12 +18,6 @@ jenkins:
       : verifiers:
         - shellScriptVerifier:
             script: "git --version 2>&1 | grep -F 2.34"
-  - name: "git-2.35"
-    properties:
-    - ? ''
-      : verifiers:
-        - shellScriptVerifier:
-            script: "git --version 2>&1 | grep -F 2.35"
   - name: "git-2.39"
     properties:
     - ? ''
@@ -42,22 +36,22 @@ jenkins:
       : verifiers:
         - shellScriptVerifier:
             script: "git --version 2>&1 | grep -F 2.47"
-  - name: "git-2.48"
+  - name: "git-2.51"
     properties:
     - ? ''
       : verifiers:
         - shellScriptVerifier:
-            script: "git --version 2>&1 | grep -F 2.48"
-  - name: "git-2.49"
+            script: "git --version 2>&1 | grep -F 2.51"
+  - name: "git-2.52"
     properties:
     - ? ''
       : verifiers:
         - or:
             verifiers:
             - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.49"
+                script: "git --version 2>&1 | grep -F 2.52"
             - regexNameVerifier:
-                regexExpression: "(cb-pc.*|mark-pc[3-9].*|win-.*)"
+                regexExpression: "(cb-pc.*|diane-.*|mark-pc[3-9].*|win-.*)"
   labelString: "git-2.47 highmem"
   log:
     recorders:
@@ -115,10 +109,6 @@ jenkins:
   quietPeriod: 5
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
-  updateCenter:
-    sites:
-    - id: "default"
-      url: "https://updates.jenkins.io/update-center.json"
   views:
   - list:
       columns:
