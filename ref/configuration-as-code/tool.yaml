@@ -76,28 +76,6 @@ tool:
               label: "git-2.47 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.48.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.48 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.49.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "freebsd"
-              toolHome: "/usr/local/bin/git"
-          - command:
-              command: "true"
-              label: "git-2.49 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
       name: "git-2.51.1"
       properties:
       - installSource:
