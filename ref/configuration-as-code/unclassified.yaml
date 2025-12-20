@@ -21,15 +21,6 @@ unclassified:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
     hookUrl: "http://${JENKINS_ADVERTISED_HOSTNAME}:8080/github-webhook/"
-  gitLabConnectionConfig:
-    connections:
-    - clientBuilderId: "v4"
-      connectionTimeout: 10
-      ignoreCertificateErrors: false
-      name: "gitlab-connection-1"
-      readTimeout: 10
-      url: "https://gitlab.com/"
-    useAuthenticatedEndpoint: true
   gitLabServers:
     servers:
     - name: "default"
