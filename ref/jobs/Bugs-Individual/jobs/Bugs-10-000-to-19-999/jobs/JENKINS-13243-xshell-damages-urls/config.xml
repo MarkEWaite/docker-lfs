@@ -4,9 +4,6 @@
   <description>[JENKINS-13243](https://issues.jenkins.io/browse/JENKINS-13243) reports that XShell converts forward slash into backslash in Windows URLs</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.8">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.8">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>

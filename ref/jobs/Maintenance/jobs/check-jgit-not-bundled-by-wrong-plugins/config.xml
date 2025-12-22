@@ -4,9 +4,6 @@
   <description>Check that JGit is only bundled in git-client plugin and not in any other Jenkins plugin</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.1.1">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
     <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
       <useBuildBlocker>false</useBuildBlocker>
       <blockLevel>GLOBAL</blockLevel>
