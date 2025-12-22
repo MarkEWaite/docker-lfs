@@ -14,6 +14,26 @@ function assert {
     fi
 }
 
+# Assert that golden file $1 matches the output of a command $2
+assert_matches_golden() {
+    local golden="$1"
+    shift
+    local golden_path="tests/golden/${golden}.txt"
+
+    if [[ ! -f "${golden_path}" ]]; then
+        echo "Golden file '${golden_path}' does not exist"
+        return 1
+    fi
+
+    # Run the command passed as arguments and capture its output
+    local output
+    output="$(mktemp)"
+    "$@" > "${output}"
+
+    # Compare with golden file
+    diff -u "${golden_path}" <(cat "${output}")
+}
+
 # Retry a command $1 times until it succeeds. Wait $2 seconds between retries.
 function retry {
     local attempts=$1
@@ -42,19 +62,19 @@ function get_sut_image {
     # Option --print for 'docker buildx bake' prints the JSON configuration on the stdout
     # Option --silent for 'make' suppresses the echoing of command so the output is valid JSON
     # The image name is the 1st of the "tags" array, on the first "image" found
-    make --silent show | jq -r ".target.${IMAGE}.tags[0]"
+    make --silent show | jq -r '.target."'"${IMAGE}"'".tags[0]'
 }
 
 function get_jenkins_version() {
   test -n "${IMAGE:?"[sut_image] Please set the variable 'IMAGE' to the name of the image to test in 'docker-bake.hcl'."}"
 
-  make --silent show | jq -r ".target.${IMAGE}.args.JENKINS_VERSION"
+  make --silent show | jq -r '.target."'"${IMAGE}"'".args.JENKINS_VERSION'
 }
 
 function get_commit_sha() {
   test -n "${IMAGE:?"[sut_image] Please set the variable 'IMAGE' to the name of the image to test in 'docker-bake.hcl'."}"
 
-  make --silent show | jq -r ".target.${IMAGE}.args.COMMIT_SHA"
+  make --silent show | jq -r '.target."'"${IMAGE}"'".args.COMMIT_SHA'
 }
 
 function get_test_image {
