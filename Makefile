@@ -67,7 +67,13 @@ build-%: check-reqs
 	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' '$*'
 
 show:
-	@$(bake_base_cli) linux --print
+	@$(bake_base_cli) --progress=quiet linux --print | jq
+
+tags:
+	@make show | jq -r ' .target | to_entries[] | .key as $$name | .value.tags[] | "\(.) (\($$name))"' | LC_ALL=C sort -u
+
+platforms:
+	@make show | jq -r ' .target | to_entries[] | .key as $$name | .value.platforms[] | "\($$name):\(.)"' | LC_ALL=C sort -u
 
 list: check-reqs
 	@set -x; make --silent show | jq -r '.target | path(.. | select(.platforms[] | contains("linux/$(ARCH)"))?) | add'
