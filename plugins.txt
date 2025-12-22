@@ -4,7 +4,7 @@ analysis-model-api:13.18.0-935.v784ca_107400a_
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
+apache-httpcomponents-client-5-api:5.6-183.ve5a_8a_b_e71e59
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.562.vc3c0b_6925377
@@ -67,7 +67,6 @@ github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:739.v9781b_1cdb_72a_
-gitlab-plugin:1.9.11
 groovy-postbuild:272.v52a_03efb_8653
 gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
@@ -88,7 +87,6 @@ jaxb:2.3.9-133.vb_ec76a_73f706
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
-jira:3.21
 jjwt-api:0.11.5-120.v0268cf544b_89
 job-dsl:1.93
 joda-time-api:2.14.0-149.v1c3ce991d1b_9

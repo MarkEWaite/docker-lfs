@@ -12,9 +12,6 @@
   <description>Confirm that [JENKINS-44277](https://issues.jenkins.io/browse/JENKINS-44277) adds `checkoutToSubdirectory` to declarative pipeline</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11">
-      <siteName>https://issues.jenkins.io/</siteName>
-    </hudson.plugins.jira.JiraProjectProperty>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
