@@ -37,12 +37,6 @@ Even though there are no changes to detect.  See the bug trivially by clicking t
     <org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
       <hint>PERFORMANCE_OPTIMIZED</hint>
     </org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.4">
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName></displayName>
