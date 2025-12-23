@@ -7,12 +7,6 @@ Expected to be built only once, when the first polling detects that it has never
 Otherwise, should only build on those rare occasions when the master branch changes.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.26.0">
       <projectUrl>https://github.com/MarkEWaite/jenkins-bugs</projectUrl>
       <displayName>Jenkins Bugs Repo</displayName>
