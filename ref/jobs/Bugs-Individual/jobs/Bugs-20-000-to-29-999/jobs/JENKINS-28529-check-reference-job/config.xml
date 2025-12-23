@@ -7,12 +7,6 @@ When [JENKINS-28529 job](/job/Bugs-Individual/job/JENKINS-28529-polling-unexpect
 The [JENKINS-28529 workspace](/job/Bugs-Individual/job/JENKINS-28529-polling-unexpectedly-cleans-workspace/ws/) should contain at least one file info*.txt</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <quietPeriod>0</quietPeriod>
