@@ -10,12 +10,6 @@ This job also shows continuous rebuild problem, likely due to checkout to local 
 Continuous rebuild problem can be hidden by defining the branch to build as &apos;*/has-slash/JENKINS-29603&apos; instead of &apos;has-slash/JENKINS-29603&apos;.</description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.buildblocker.BuildBlockerProperty plugin="build-blocker-plugin@1.7.3">
-      <useBuildBlocker>false</useBuildBlocker>
-      <blockLevel>GLOBAL</blockLevel>
-      <scanQueueFor>DISABLED</scanQueueFor>
-      <blockingJobs></blockingJobs>
-    </hudson.plugins.buildblocker.BuildBlockerProperty>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
