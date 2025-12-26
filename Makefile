@@ -50,18 +50,18 @@ docker-init: check-reqs
 ifeq ($(CI),true)
 ifeq ($(wildcard /etc/buildkitd.toml),)
 	@echo 'WARNING: /etc/buildkitd.toml not found, using default configuration.'
-	@docker buildx create --use --bootstrap --driver docker-container
+	docker buildx create --use --bootstrap --driver docker-container
 else
-	@docker buildx create --use --bootstrap --driver docker-container --config /etc/buildkitd.toml
+	docker buildx create --use --bootstrap --driver docker-container --config /etc/buildkitd.toml
 endif
 else
-	@docker buildx create --use --bootstrap --driver docker-container
+	docker buildx create --use --bootstrap --driver docker-container
 endif
-	@docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+	docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
 # Lint check on all Dockerfiles
 hadolint:
-	@find . -type f -name 'Dockerfile*' -not -path "./bats/*" -print0 | xargs -0 $(ROOT_DIR)/tools/hadolint
+	find . -type f -name 'Dockerfile*' -not -path "./bats/*" -print0 | xargs -0 $(ROOT_DIR)/tools/hadolint
 
 # Shellcheck on all bash scripts
 shellcheck:
@@ -69,12 +69,12 @@ shellcheck:
 
 # Build targets depending on the current architecture
 build: check-reqs
-	@$(bake_base_cli) --set '*.platform=linux/$(ARCH)' $(shell make --silent list)
+	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' $(shell make --silent list)
 
 # Build a specific target with the current architecture
 build-%: check-reqs
 	@$(call check_image,$*)
-	@$(bake_base_cli) --set '*.platform=linux/$(ARCH)' '$*'
+	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' '$*'
 
 # Show all targets
 show:
@@ -90,7 +90,7 @@ platforms:
 
 # Return the list of targets depending on the current architecture
 list: check-reqs
-	@make --silent show | jq -r '.target | path(.. | select(.platforms[] | contains("linux/$(ARCH)"))?) | add'
+	@set -x; make --silent show | jq -r '.target | path(.. | select(.platforms[] | contains("linux/$(ARCH)"))?) | add'
 
 # Ensure bats exists in the current folder
 bats:
