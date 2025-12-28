@@ -10,7 +10,13 @@ export BUILDKIT_PROGRESS=plain
 export COMMIT_SHA=$(shell git rev-parse HEAD)
 
 current_arch := $(shell uname -m)
-export ARCH ?= $(shell case $(current_arch) in (x86_64) echo "amd64" ;; (aarch64|arm64) echo "arm64" ;; (s390*|riscv*|ppc64le) echo $(current_arch);; (*) echo "UNKNOWN-CPU";; esac)
+export ARCH ?= $(shell \
+	case $(current_arch) in \
+		(x86_64) echo "amd64" ;; \
+		(aarch64|arm64) echo "arm64" ;; \
+		(s390*|riscv*|ppc64le) echo $(current_arch);; \
+		(*) echo "UNKNOWN-CPU";; \
+	esac)
 
 all: hadolint shellcheck build test
 
@@ -43,7 +49,7 @@ check-reqs:
 docker-init: check-reqs
 ifeq ($(CI),true)
 ifeq ($(wildcard /etc/buildkitd.toml),)
-	echo 'WARNING: /etc/buildkitd.toml not found, using default configuration.'
+	@echo 'WARNING: /etc/buildkitd.toml not found, using default configuration.'
 	docker buildx create --use --bootstrap --driver docker-container
 else
 	docker buildx create --use --bootstrap --driver docker-container --config /etc/buildkitd.toml
@@ -51,38 +57,59 @@ endif
 else
 	docker buildx create --use --bootstrap --driver docker-container
 endif
+# There is only an amd64 qemu image
+ifeq ($(ARCH),amd64)
 	docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+endif
 
+# Lint check on all Dockerfiles
 hadolint:
 	find . -type f -name 'Dockerfile*' -not -path "./bats/*" -print0 | xargs -0 $(ROOT_DIR)/tools/hadolint
 
+# Shellcheck on all bash scripts
 shellcheck:
-	$(ROOT_DIR)/tools/shellcheck -e SC1091 jenkins-support *.sh tests/test_helpers.bash tools/hadolint tools/shellcheck .ci/publish.sh
+	@$(ROOT_DIR)/tools/shellcheck -e SC1091 jenkins-support *.sh tests/test_helpers.bash tools/hadolint tools/shellcheck .ci/publish.sh
 
+# Build targets depending on the current architecture
 build: check-reqs
 	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' $(shell make --silent list)
 
+# Build targets depending on the architecture
+buildarch-%: check-reqs
+	@$(bake_base_cli) --set '*.platform=linux/$*' $(shell make --silent listarch-$*)
+
+# Build a specific target with the current architecture
 build-%: check-reqs
 	@$(call check_image,$*)
 	@set -x; $(bake_base_cli) --set '*.platform=linux/$(ARCH)' '$*'
 
+# Show all targets
 show:
 	@$(bake_base_cli) --progress=quiet linux --print | jq
 
+# List all tags
 tags:
 	@make show | jq -r ' .target | to_entries[] | .key as $$name | .value.tags[] | "\(.) (\($$name))"' | LC_ALL=C sort -u
 
+# List all platforms
 platforms:
 	@make show | jq -r ' .target | to_entries[] | .key as $$name | .value.platforms[] | "\($$name):\(.)"' | LC_ALL=C sort -u
 
+# Return the list of targets depending on the current architecture
 list: check-reqs
 	@set -x; make --silent show | jq -r '.target | path(.. | select(.platforms[] | contains("linux/$(ARCH)"))?) | add'
 
+# Return the list of targets depending on the architecture
+listarch-%: check-reqs
+	@make --silent show | jq -r '.target | path(.. | select(.platforms[] | contains("linux/$*"))?) | add'
+
+# Ensure bats exists in the current folder
 bats:
 	git clone https://github.com/bats-core/bats-core bats ;\
 	cd bats ;\
-	git checkout 410dd229a5ed005c68167cc90ed0712ad2a1c909; # v1.7.0
+	git checkout 3bca150ec86275d6d9d5a4fd7d48ab8b6c6f3d87; # v1.13.0
 
+# Ensure all bats submodules are up to date and that the tests target folder exists
 prepare-test: bats check-reqs
 	git submodule update --init --recursive
 	mkdir -p target
@@ -100,22 +127,30 @@ test-%: PARALLEL_JOBS ?= $(shell echo $$(( $(shell docker run --rm alpine grep -
 test-%: bats_flags += --jobs $(PARALLEL_JOBS)
 endif
 endif
+# Optional bats flags (see https://bats-core.readthedocs.io/en/stable/usage.html)
+ifneq (,$(BATS_FLAGS))
+test-%: bats_flags += $(BATS_FLAGS)
+endif
 test-%: prepare-test
 # Check that the image exists in the manifest
 	@$(call check_image,$*)
 # Ensure that the image is built
 	@make --silent build-$*
+# Show bats version
+	@bats/bin/bats --version
 ifeq ($(CI), true)
 # Execute the test harness and write result to a TAP file
 	IMAGE=$* bats/bin/bats $(bats_flags) --formatter junit | tee target/junit-results-$*.xml
 else
 # Execute the test harness
-	IMAGE=$* bats/bin/bats $(bats_flags)
+	IMAGE=$* bats/bin/bats $(bats_flags) --timing
 endif
 
+# Test targets depending on the current architecture
 test: prepare-test
 	@make --silent list | while read image; do make --silent "test-$${image}"; done
 
+# Set all required variables and publish all targets
 publish:
 	./.ci/publish.sh
 
