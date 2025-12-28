@@ -118,6 +118,14 @@ def memory_scale(upper_bound):
 
 #-----------------------------------------------------------------------
 
+def cpu_count(upper_bound):
+    cpu_count = psutil.cpu_count()
+    if cpu_count < upper_bound:
+        return str(cpu_count)
+    return str(upper_bound)
+
+#-----------------------------------------------------------------------
+
 def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, debug_port=None, detach=False, quiet=False, access_mode=None):
     dns_server = get_dns_server()
     user_content_volume_map = get_user_content_volume_map()
@@ -155,9 +163,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+UnlockExperimentalVMOptions",
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
+                  "-XX:ActiveProcessorCount=" + cpu_count(32),
                   "-XshowSettings:vm"
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                  "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
