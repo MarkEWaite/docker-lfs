@@ -8,7 +8,7 @@ apache-httpcomponents-client-5-api:5.6-183.ve5a_8a_b_e71e59
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:2.562.vc3c0b_6925377
-basic-branch-build-strategies:275.vde2351b_4a_58b_
+basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
 branch-api:2.1268.v044a_87612da_8
@@ -32,7 +32,7 @@ copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3060.v035a_5557cdb_c
 credentials-binding:702.vfe613e537e88
-credentials:1453.v9b_a_29777a_b_fd
+credentials:1458.v7291f840651c
 dark-theme:574.va_19f05d54df5
 data-tables-api:2.3.5-1497.v38449eb_7d5a_1
 description-setter:264.v1957f215dcd5
@@ -53,11 +53,11 @@ external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1772.v99ca_3d83b_9fa_
 git-client:6.5.0
-git-forensics:3.2138.vf25ea_d549e33
+git-forensics:3.2274.v3dc0fd546572
 git-parameter:460.v71e7583a_c099
 git-server:137.ve0060b_432302
 git-version-monitor:7.v2a_0f40b_9f2f4
-git:5.8.1
+git:incrementals;org.jenkins-ci.plugins;5.8.2-rc5536.2da_0f9e5a_9e6
 gitea:250.v76a_0b_d4fef5b_
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1917.v9ee8a_39b_3d0d
@@ -152,7 +152,7 @@ swarm:3.51
 testng-plugin:940.vc244edffc2ec
 text-finder:1.33
 theme-manager:327.v780d7096ec29
-throttle-concurrents:2.18
+throttle-concurrents:624.vc427fa_e0e503
 timestamper:1.30
 token-macro:477.vd4f0dc3cb_cf1
 trilead-api:2.284.v1974ea_324382
