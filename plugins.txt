@@ -32,7 +32,7 @@ copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3060.v035a_5557cdb_c
 credentials-binding:702.vfe613e537e88
-credentials:1453.v9b_a_29777a_b_fd
+credentials:1458.v7291f840651c
 dark-theme:574.va_19f05d54df5
 data-tables-api:2.3.5-1497.v38449eb_7d5a_1
 description-setter:264.v1957f215dcd5
@@ -78,11 +78,11 @@ ionicons-api:94.vcc3065403257
 jackson2-api:2.20.1-423.v13951f6b_6532
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
-jakarta-xml-bind-api:4.0.6-10.v9b_7e1d1fc40b_
+jakarta-xml-bind-api:4.0.6-12.vb_1833c1231d3
 javadoc:354.vee1a_660b_4990
 javax-activation-api:1.2.0-8
 javax-mail-api:1.6.2-11
-jaxb:2.3.9-133.vb_ec76a_73f706
+jaxb:2.3.9-143.v5979df3304e6
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
