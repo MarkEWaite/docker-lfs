@@ -51,7 +51,7 @@ envinject-api:1.236.v35fd4d7eb_515
 envinject:2.934.vc674e76cf954
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
-forensics-api:3.1772.v99ca_3d83b_9fa_
+forensics-api:3.1832.va_1179842528b_
 git-client:6.5.0
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:460.v71e7583a_c099
