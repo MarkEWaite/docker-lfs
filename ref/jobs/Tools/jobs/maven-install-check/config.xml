@@ -100,7 +100,7 @@
       <dontExpandLabels>false</dontExpandLabels>
     </org.jenkinsci.plugins.elasticaxisplugin.ElasticAxis>
   </axes>
-  <combinationFilter>!((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;)) &amp;&amp; !((label == &quot;mark-pc7&quot; || label == &quot;ibm-s390-jagent&quot; || label == &quot;freebsd-b-jagent&quot; || label == &quot;freebsd-a-jagent&quot;) &amp;&amp; (jdk == &quot;jdk25&quot;))</combinationFilter>
+  <combinationFilter>!((label == &quot;mark-pc7&quot;) &amp;&amp; (jdk == &quot;jdk8&quot;)) &amp;&amp; !((label == &quot;mark-pc7&quot; || label == &quot;freebsd-b-jagent&quot; || label == &quot;freebsd-a-jagent&quot;) &amp;&amp; (jdk == &quot;jdk25&quot;))</combinationFilter>
   <builders>
     <hudson.tasks.Maven>
       <targets>--show-version clean verify javadoc:javadoc</targets>
