@@ -84,14 +84,14 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.8+9"
+        return "/home/jagent/tools/jdk-21.0.9+10"
     if "alpine" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.8+9"
+        return "/home/jagent/tools/jdk-21.0.9+10"
     if "slim" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.8+9"
+        return "/home/jagent/tools/jdk-21.0.9+10"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.8+9"
-    return "/home/jagent/tools/jdk-17.0.16+8"
+        return "/home/jagent/tools/jdk-21.0.9+10"
+    return "/home/jagent/tools/jdk-17.0.17+10"
 
 #-----------------------------------------------------------------------
 
@@ -114,6 +114,14 @@ def memory_scale(upper_bound):
     eight_GB = 8 * 1024 * 1024 * 1024
     if mem.total < eight_GB:
         return str(int(upper_bound / 2))
+    return str(upper_bound)
+
+#-----------------------------------------------------------------------
+
+def cpu_count(upper_bound):
+    cpu_count = psutil.cpu_count()
+    if cpu_count < upper_bound:
+        return str(cpu_count)
     return str(upper_bound)
 
 #-----------------------------------------------------------------------
@@ -155,9 +163,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+UnlockExperimentalVMOptions",
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
+                  "-XX:ActiveProcessorCount=" + cpu_count(32),
                   "-XshowSettings:vm"
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
-                  "-Dhudson.lifecycle=hudson.lifecycle.ExitLifecycle", # Temp until https://github.com/jenkinsci/docker/pull/1268
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
