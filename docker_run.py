@@ -166,7 +166,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
                   "-XX:ActiveProcessorCount=" + cpu_count(32),
-                  "-XshowSettings:vm"
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
