@@ -90,13 +90,15 @@ def get_jagent_java_home():
     if "slim" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-21.0.9+10"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.9+10"
+        return "/home/jagent/tools/jdk-25.0.1+8"
     return "/home/jagent/tools/jdk-17.0.17+10"
 
 #-----------------------------------------------------------------------
 
 def get_java_gc_args():
     # Use generational GC with Java 21
+    if "jdk25" in docker_build.get_current_branch():
+        return [ "-XX:+UseG1GC", ]
     if "jdk21" in docker_build.get_current_branch():
         return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
     if "alpine" in docker_build.get_current_branch():
@@ -104,7 +106,7 @@ def get_java_gc_args():
     if "slim" in docker_build.get_current_branch():
         return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
     if "weekly" in docker_build.get_current_branch():
-        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+        return [ "-XX:+UseG1GC", ]
     return [ "-XX:+UseG1GC", ]
 
 #-----------------------------------------------------------------------
@@ -164,7 +166,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Xms" + memory_scale(3) + "g",
                   "-Xmx" + memory_scale(7) + "g",
                   "-XX:ActiveProcessorCount=" + cpu_count(32),
-                  "-XshowSettings:vm"
                   # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
