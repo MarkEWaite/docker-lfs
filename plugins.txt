@@ -15,7 +15,7 @@ branch-api:2.1268.v044a_87612da_8
 build-name-setter:2.5.1
 build-timeout:1.39
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
-checks-api:373.vfe7645102093
+checks-api:402.vca_263b_f200e3
 cloud-stats:377.vd8a_6c953e98e
 cloudbees-bitbucket-branch-source:937.2.3
 cloudbees-folder:6.1073.va_7888eb_dd514
@@ -51,7 +51,7 @@ envinject-api:1.236.v35fd4d7eb_515
 envinject:2.934.vc674e76cf954
 external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
-forensics-api:3.1772.v99ca_3d83b_9fa_
+forensics-api:3.1832.va_1179842528b_
 git-client:6.5.0
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:460.v71e7583a_c099
@@ -93,10 +93,10 @@ jquery3-api:3.7.1-619.vdb_10e002501a_
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
 json-path-api:2.10.0-202.va_9cc16c1e476
-jsoup:1.21.2-66.v6ea_38164b_8a_2
+jsoup:1.22.1-76.v9cdb_2456c0e3
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
-junit-realtime-test-reporter:166.v889e7b_0e23a_a_
+junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1369.v15da_00283f06
 label-verifier:116.vb_845759df630
 mailer:525.v2458b_d8a_1a_71
