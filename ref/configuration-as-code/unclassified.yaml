@@ -401,7 +401,5 @@ unclassified:
     allPipelines: true
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
-  upstream:
-    globalUpstreamFilterStrategy: UseNewest
   warningsParsers:
     consoleLogScanningPermitted: false
