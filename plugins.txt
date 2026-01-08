@@ -43,7 +43,7 @@ docker-plugin:1308.vff6e33248305
 docker-workflow:634.vedc7242b_eda_7
 durable-task:639.vefb_3d8372f6d
 echarts-api:6.0.0-1165.vd1283a_3e37d4
-eddsa-api:0.3.0.1-19.vc432d923e5ee
+eddsa-api:0.3.0.1-27.v6ea_07b_e90d1a_
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:637.vd878e68178f8
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
