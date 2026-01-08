@@ -18,9 +18,9 @@ def envVars = ['PUBLISH=true']
 def architecturesAndCiJioAgentLabels = [
     'amd64': 'docker && amd64',
     'arm64': 'arm64docker',
-    // No corresponding agent, using qemu
+    // Using qemu
     'ppc64le': 'docker && amd64',
-    's390x': 's390xdocker',
+    's390x': 'docker && amd64',
 ]
 
 // Set to true in a replay to simulate a LTS build on ci.jenkins.io
@@ -116,6 +116,8 @@ stage('Build') {
         }
 
         if (!infra.isTrusted()) {
+            // This list can be updated with the following command:
+            // make show | jq -r '.target | keys[]' | sort
             def images = [
                 'alpine_jdk17',
                 'alpine_jdk21',
