@@ -1,0 +1,50 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1559.va_a_533730b_ea_d">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>The [Security914Test](https://github.com/jenkinsci/jenkins/blob/96f17d5953fea0f1f45b5fa3de6b4fc35cfb3486/test/src/test/java/jenkins/security/stapler/Security914Test.java#L59) started failing with the UI improvements of [Credentials Plugin 1460.v48765a_c7d849](https://github.com/jenkinsci/credentials-plugin/releases/tag/1460.v48765a_c7d849).&#xd;
+&#xd;
+A [pull request](https://github.com/jenkinsci/jenkins/pull/26090) was submitted to fix the tests.  This job confirms that the test passes on the Jenkins master branch.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4238.va_6fb_65c1f699">
+    <script>pipeline {
+    agent {
+        label &apos;windows&apos;
+    }
+    tools {
+        jdk &apos;jdk25&apos;
+        maven &apos;mvn&apos;
+    }
+    stages {
+        stage(&apos;Checkout&apos;) {
+            steps {
+                checkout scmGit(branches: [[name: &apos;master&apos;]],
+                                extensions: [cloneOption(depth: 1, honorRefspec: true, noTags: true, shallow: true)],
+                                gitTool: &apos;Default&apos;,
+                                userRemoteConfigs: [[refspec: &apos;+refs/heads/master:refs/remotes/origin/master&apos;,
+                                                     url: &apos;https://github.com/jenkinsci/jenkins.git&apos;]])
+            }
+        }
+        stage(&apos;Test&apos;) {
+            steps {
+                bat &apos;mvn -am -pl war,bom -Pquick-build clean install&apos;
+                bat &apos;mvn -pl test -Dtest=Security914Test -Dmaven.test.failure.ignore=true test&apos;
+                junit &apos;**/surefire-reports/*.xml&apos;
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
