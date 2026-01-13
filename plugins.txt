@@ -57,7 +57,7 @@ git-forensics:3.2274.v3dc0fd546572
 git-parameter:460.v71e7583a_c099
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
-git:incrementals;org.jenkins-ci.plugins;5.8.2-rc5536.2da_0f9e5a_9e6
+git:incrementals;org.jenkins-ci.plugins;5.8.2-rc5521.b_cccc849b_330
 gitea:268.v75e47974c01d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1917.v9ee8a_39b_3d0d
