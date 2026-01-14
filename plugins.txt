@@ -32,7 +32,7 @@ copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3060.v035a_5557cdb_c
 credentials-binding:702.vfe613e537e88
-credentials:1465.ve8c9516d78b_f
+credentials:1480.v2246fd131e83
 dark-theme:574.va_19f05d54df5
 data-tables-api:2.3.5-1497.v38449eb_7d5a_1
 description-setter:264.v1957f215dcd5
@@ -41,7 +41,7 @@ docker-commons:457.v0f62a_94f11a_3
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 docker-plugin:1308.vff6e33248305
 docker-workflow:634.vedc7242b_eda_7
-durable-task:639.vefb_3d8372f6d
+durable-task:651.v1f5e074fc83f
 echarts-api:6.0.0-1165.vd1283a_3e37d4
 eddsa-api:0.3.0.1-27.v6ea_07b_e90d1a_
 elastic-axis:615.vb_f7c20ec040e
@@ -56,8 +56,8 @@ git-client:6.5.0
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:460.v71e7583a_c099
 git-server:137.ve0060b_432302
-git-version-monitor:7.v2a_0f40b_9f2f4
-git:incrementals;org.jenkins-ci.plugins;5.8.2-rc5536.2da_0f9e5a_9e6
+git-version-monitor:41.v0cfdf922b_b_0c
+git:incrementals;org.jenkins-ci.plugins;5.8.2-rc5521.b_cccc849b_330
 gitea:268.v75e47974c01d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1917.v9ee8a_39b_3d0d
@@ -88,7 +88,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.11.5-120.v0268cf544b_89
 job-dsl:1.93
-joda-time-api:2.14.0-149.v1c3ce991d1b_9
+joda-time-api:2.14.0-177.vd7e9347b_e7d5
 jquery3-api:3.7.1-619.vdb_10e002501a_
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
@@ -104,7 +104,7 @@ markdown-formatter:312.va_b_3dea_1413a_f
 matrix-auth:3.2.9
 matrix-project:870.v9db_fcfc2f45b_
 maven-plugin:3.27
-metrics:4.2.37-489.vb_6db_69b_ce753
+metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.6.0
@@ -145,7 +145,7 @@ script-security:1385.v7d2d9ec4d909
 snakeyaml-api:2.5-143.v93b_c004f89de
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
-ssh-slaves:3.1085.vc64d040efa_85
+ssh-slaves:3.1096.v0b_cc466e4323
 sshd:3.374.v19b_d59ce6610
 structs:362.va_b_695ef4fdf9
 swarm:3.51
@@ -159,11 +159,11 @@ trilead-api:2.284.v1974ea_324382
 variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
 view-job-filters:406.va_0ec67147ee2
-warnings-ng:12.9983.v671a_6b_46f8f1
+warnings-ng:12.9989.v3eb_01467fe59
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1384.vdc05a_48f535f
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4238.va_6fb_65c1f699
+workflow-cps:4250.v2eecc0881a_e6
 workflow-durable-task-step:1464.v2d3f5c68f84c
 workflow-job:1559.va_a_533730b_ea_d
 workflow-multibranch:821.vc3b_4ea_780798
