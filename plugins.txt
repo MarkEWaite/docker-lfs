@@ -27,7 +27,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-210.v7480a_da_70b_9e
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2006.v001a_2ca_6b_574
+configuration-as-code:incrementals;io.jenkins;2033.v54c45a_770e0c
 copyartifact:770.va_6c69e063442
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3060.v035a_5557cdb_c
