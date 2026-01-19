@@ -30,7 +30,7 @@ config-file-provider:1006.vc7366c201f57
 configuration-as-code:2031.veb_a_fdda_b_3ffd
 copyartifact:795.ve8e151429b_27
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3060.v035a_5557cdb_c
+coverage:2.3120.v73353a_97726e
 credentials-binding:702.vfe613e537e88
 credentials:1480.v2246fd131e83
 dark-theme:574.va_19f05d54df5
