@@ -28,9 +28,9 @@ commons-text-api:1.15.0-210.v7480a_da_70b_9e
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
 configuration-as-code:2031.veb_a_fdda_b_3ffd
-copyartifact:770.va_6c69e063442
+copyartifact:795.ve8e151429b_27
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3060.v035a_5557cdb_c
+coverage:2.3120.v73353a_97726e
 credentials-binding:702.vfe613e537e88
 credentials:1480.v2246fd131e83
 dark-theme:574.va_19f05d54df5
@@ -66,7 +66,7 @@ github-scm-trait-commit-skip:0.4.0
 github:1.45.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:740.v04f287f9194d
-groovy-postbuild:272.v52a_03efb_8653
+groovy-postbuild:300.va_253b_2988cb_1
 gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
@@ -100,7 +100,7 @@ junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1380.v491ff054cd35
 label-verifier:116.vb_845759df630
 mailer:525.v2458b_d8a_1a_71
-markdown-formatter:312.va_b_3dea_1413a_f
+markdown-formatter:331.vf411395008f9
 matrix-auth:3.2.9
 matrix-project:870.v9db_fcfc2f45b_
 maven-plugin:3.27
@@ -109,7 +109,7 @@ mina-sshd-api-common:2.16.0-167.va_269f38cc024
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
 monitoring:2.6.0
 naginator:1.530.vb_6d120f250b_1
-nodelabelparameter:759.vb_b_e95db_f3251
+nodelabelparameter:851.vd94e5048d321
 okhttp-api:4.12.0-195.vc02552c04ffd
 oss-symbols-api:438.vcb_7a_29c179e0
 parallel-test-executor:611.va_92b_d1852e52
@@ -149,10 +149,10 @@ ssh-slaves:3.1096.v0b_cc466e4323
 sshd:3.374.v19b_d59ce6610
 structs:362.va_b_695ef4fdf9
 swarm:3.51
-testng-plugin:980.v6d04f0a_e3741
+testng-plugin:981.v1dc64d227855
 text-finder:1.33
 theme-manager:327.v780d7096ec29
-throttle-concurrents:624.vc427fa_e0e503
+throttle-concurrents:625.vc8b_e469e9a_b_c
 timestamper:1.30
 token-macro:477.vd4f0dc3cb_cf1
 trilead-api:2.284.v1974ea_324382
