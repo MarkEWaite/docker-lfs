@@ -387,6 +387,23 @@ For information related to the security of this Docker image, please refer to th
 
 We're on Gitter, https://gitter.im/jenkinsci/docker
 
+### Specific details of this configuration
+
+The container definition enables content security policy and assigns a root resource URL.
+The root resource URL is assumed to be an alias for the fully qualified domain name of the controller.
+The alias is the same as the hostname with "assets-" as a prefix.
+For example, the following DNS entries are assumed:
+
+```
+# My Jenkins controller DNS entries, one for the controller and an alias for resource root URL
+10.0.0.123 my-jenkins-controller
+10.0.0.123 assets-my-jenkins-controller
+10.0.0.123 my-jenkins-controller.example.com
+10.0.0.123 assets-my-jenkins-controller.example.com
+```
+
+Refer to the [Jenkins help desk ticket](https://github.com/jenkins-infra/helpdesk/issues/4959) for alternate examples.
+
 ### Useful groovy scripts
 
 There are times when I need to perform operations that are most easily done from the system groovy console on the Jenkins controller.
