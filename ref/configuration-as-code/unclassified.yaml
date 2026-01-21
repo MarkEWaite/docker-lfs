@@ -387,6 +387,8 @@ unclassified:
       fQStrategy:
         defaultPriority: 3
         numberOfPriorities: 5
+  resourceRoot:
+    url: "http://assets-${JENKINS_ADVERTISED_HOSTNAME}:8080/"
   scmGit:
     addGitTagAction: false
     allowSecondFetch: false
