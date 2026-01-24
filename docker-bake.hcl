@@ -1,17 +1,9 @@
 ## Variables
-variable "jdks_to_build_for_lts" {
-  default = [17, 21, 25]
-}
-
-variable "jdks_to_build_for_weekly" {
+variable "jdks_to_build" {
   default = [21, 25]
 }
 
-variable "windows_version_to_build_for_lts" {
-  default = ["windowsservercore-ltsc2019", "windowsservercore-ltsc2022"]
-}
-
-variable "windows_version_to_build_for_weekly" {
+variable "windows_version_to_build" {
   default = ["windowsservercore-ltsc2019", "windowsservercore-ltsc2022"]
 }
 
@@ -21,10 +13,6 @@ variable "default_jdk" {
 
 variable "JENKINS_VERSION" {
   default = "2.547"
-}
-
-variable "WAR_SHA" {
-  default = "ef0301ce35bff7ead76201a8202acad6338568f0832666a2672831b260e08088"
 }
 
 variable "WAR_URL" {
@@ -116,14 +104,13 @@ variable "current_rhel" {
 ## Targets
 target "alpine" {
   matrix = {
-    jdk = jdks_to_build()
+    jdk = jdks_to_build
   }
   name       = "alpine_jdk${jdk}"
   dockerfile = "alpine/hotspot/Dockerfile"
   context    = "."
   args = {
     JENKINS_VERSION    = JENKINS_VERSION
-    WAR_SHA            = WAR_SHA
     WAR_URL            = war_url()
     COMMIT_SHA         = COMMIT_SHA
     PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
@@ -136,7 +123,7 @@ target "alpine" {
 
 target "debian" {
   matrix = {
-    jdk     = jdks_to_build()
+    jdk     = jdks_to_build
     variant = debian_variants
   }
   name       = "${variant}_jdk${jdk}"
@@ -144,7 +131,6 @@ target "debian" {
   context    = "."
   args = {
     JENKINS_VERSION     = JENKINS_VERSION
-    WAR_SHA             = WAR_SHA
     WAR_URL             = war_url()
     COMMIT_SHA          = COMMIT_SHA
     PLUGIN_CLI_VERSION  = PLUGIN_CLI_VERSION
@@ -159,14 +145,13 @@ target "debian" {
 
 target "rhel" {
   matrix = {
-    jdk = jdks_to_build()
+    jdk = jdks_to_build
   }
   name       = "rhel_jdk${jdk}"
   dockerfile = "rhel/Dockerfile"
   context    = "."
   args = {
     JENKINS_VERSION    = JENKINS_VERSION
-    WAR_SHA            = WAR_SHA
     WAR_URL            = war_url()
     COMMIT_SHA         = COMMIT_SHA
     PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
@@ -180,7 +165,7 @@ target "rhel" {
 
 target "windowsservercore" {
   matrix = {
-    jdk             = jdks_to_build()
+    jdk             = jdks_to_build
     windows_version = windowsversions()
   }
   name       = "${windows_version}_jdk${jdk}"
@@ -188,7 +173,6 @@ target "windowsservercore" {
   context    = "."
   args = {
     JENKINS_VERSION    = JENKINS_VERSION
-    WAR_SHA            = WAR_SHA
     WAR_URL            = war_url()
     COMMIT_SHA         = COMMIT_SHA
     PLUGIN_CLI_VERSION = PLUGIN_CLI_VERSION
@@ -230,12 +214,6 @@ function "is_jenkins_version_weekly" {
   # 2.516.1 has two sequences of digits with a trailing literal '.'
   params = []
   result = length(regexall("[0-9]+[.]", JENKINS_VERSION)) < 2 ? true : false
-}
-
-# return the list of jdk to build depending on JENKINS_VERSION
-function "jdks_to_build" {
-  params = []
-  result = is_jenkins_version_weekly() ? jdks_to_build_for_weekly : jdks_to_build_for_lts
 }
 
 # return a tag prefixed by the Jenkins version
@@ -424,7 +402,5 @@ function "debian_tags" {
 # Ex: WINDOWS_VERSION_OVERRIDE=ltsc2025 docker buildx bake windows
 function "windowsversions" {
   params = []
-  result = (notequal(WINDOWS_VERSION_OVERRIDE, "")
-    ? [WINDOWS_VERSION_OVERRIDE]
-  : is_jenkins_version_weekly() ? windows_version_to_build_for_weekly : windows_version_to_build_for_lts)
+  result = notequal(WINDOWS_VERSION_OVERRIDE, "") ? [WINDOWS_VERSION_OVERRIDE] : windows_version_to_build
 }
