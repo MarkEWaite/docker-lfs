@@ -101,7 +101,6 @@ junit:1380.v491ff054cd35
 label-verifier:116.vb_845759df630
 mailer:525.v2458b_d8a_1a_71
 markdown-formatter:331.vf411395008f9
-matrix-auth:3.2.9
 matrix-project:870.v9db_fcfc2f45b_
 maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
