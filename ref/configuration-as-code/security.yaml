@@ -5,8 +5,6 @@ security:
     usageStatisticsEnabled: true
   contentSecurityPolicy:
     enforce: true
-  copyartifact:
-    mode: PRODUCTION
   envInject:
     enableLoadingFromMaster: false
     enablePermissions: false
