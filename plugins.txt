@@ -127,7 +127,7 @@ pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2277.v00573e73ddf1
 pipeline-utility-steps:2.20.0
 plain-credentials:199.v9f8e1f741799
-platformlabeler:2734.v604521b_646b_b_
+platformlabeler:3198.v06b_04fa_fea_6e
 plot:2.4.0
 plugin-util-api:6.1192.v30fe6e2837ff
 pollscm:1.9
