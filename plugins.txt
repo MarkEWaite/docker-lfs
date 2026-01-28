@@ -28,7 +28,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
 configuration-as-code:2036.v0b_c2de701dcb_
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3130.vcc932e7702b_8
+coverage:2.3139.v731d2e83ea_8a_
 credentials-binding:702.vfe613e537e88
 credentials:1480.v2246fd131e83
 dark-theme:574.va_19f05d54df5
@@ -127,7 +127,7 @@ pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2277.v00573e73ddf1
 pipeline-utility-steps:2.20.0
 plain-credentials:199.v9f8e1f741799
-platformlabeler:2734.v604521b_646b_b_
+platformlabeler:3198.v06b_04fa_fea_6e
 plot:2.4.0
 plugin-util-api:6.1192.v30fe6e2837ff
 pollscm:1.9
