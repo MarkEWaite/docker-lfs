@@ -1,0 +1,33 @@
+FROM jenkins/jenkins:2.541.1-slim-jdk25
+
+LABEL maintainer="mark.earl.waite@gmail.com"
+
+# Modified jenkins.sh to allow use inside a dockerfile based Jenkins job
+COPY jenkins.sh /usr/local/bin/jenkins.sh
+
+ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
+
+USER root
+
+# Install and check that expected utilities are available in the image
+# hadolint ignore=DL3008
+RUN apt-get clean \
+  && apt-get update \
+  && apt-get install -y auto-apt-proxy --no-install-recommends \
+  && auto-apt-proxy \
+  && apt-get install -y --no-install-recommends \
+        gnupg \
+        make \
+        procps \
+        wget \
+  && rm -rf /var/lib/apt/lists/* \
+  && test -x /usr/bin/pgrep \
+  && test -x /usr/bin/wget  \
+  && test -x /usr/local/bin/git-lfs
+
+# Create cache directory for git repository mirrors
+RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
+
+USER jenkins
+
+COPY --chown=jenkins:jenkins ref /usr/share/jenkins/ref/
