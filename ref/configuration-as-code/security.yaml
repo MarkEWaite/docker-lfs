@@ -3,6 +3,8 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
+  contentSecurityPolicy:
+    enforce: true
   envInject:
     enableLoadingFromMaster: false
     enablePermissions: false
