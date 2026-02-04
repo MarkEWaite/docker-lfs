@@ -11,7 +11,7 @@ badge:2.562.vc3c0b_6925377
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
-branch-api:2.1268.v044a_87612da_8
+branch-api:2.1278.v167c2809b_fb_9
 build-name-setter:2.5.1
 build-timeout:1.39
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
@@ -58,7 +58,7 @@ git-version-monitor:41.v0cfdf922b_b_0c
 git:5.9.0
 gitea:268.v75e47974c01d
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1936.vfa_a_5c2cef4e7
+github-branch-source:1967.vdea_d580c1a_b_a_
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.45.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
