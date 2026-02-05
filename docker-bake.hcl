@@ -12,7 +12,7 @@ variable "default_jdk" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.548"
+  default = "2.549"
 }
 
 variable "WAR_URL" {
@@ -36,7 +36,7 @@ variable "LATEST_LTS" {
 }
 
 variable "PLUGIN_CLI_VERSION" {
-  default = "2.13.2"
+  default = "2.14.0"
 }
 
 variable "COMMIT_SHA" {
@@ -52,11 +52,11 @@ variable "ALPINE_SHORT_TAG" {
 }
 
 variable "JAVA17_VERSION" {
-  default = "17.0.17_10"
+  default = "17.0.18_8"
 }
 
 variable "JAVA21_VERSION" {
-  default = "21.0.9_10"
+  default = "21.0.10_7"
 }
 
 variable "JAVA25_VERSION" {
@@ -72,7 +72,7 @@ variable "DEBIAN_VERSION" {
 }
 
 variable "RHEL_TAG" {
-  default = "9.7-1769417801"
+  default = "9.7-1770238273"
 }
 
 variable "RHEL_RELEASE_LINE" {
