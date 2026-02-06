@@ -40,6 +40,7 @@ def volume_available(lhs):
     stat_info = os.stat(lhs)
     gid = stat_info.st_gid
     if gid not in os.getgroups():
+        print("!!! **** !!!! Volume " + lhs + " not available because " + str(gid) + " not in groups")
         return False
     return True
 
@@ -48,7 +49,7 @@ def volume_available(lhs):
 def get_user_content_volume_map():
     lhs = os.path.expanduser("~/public_html")
     rhs = os.path.expanduser("/var/jenkins_home/userContent/")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
@@ -57,16 +58,17 @@ def get_jenkins_home_volume_map():
         os.mkdir(jenkins_home_dir)
     lhs = jenkins_home_dir
     if not volume_available(lhs):
+        print("!!! **** !!!! Volume " + lhs + " not available")
         return None
     rhs = os.path.expanduser("/var/jenkins_home")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
 def get_git_reference_repo_volume_map():
     lhs = os.path.expanduser("~/git/bare/")
     rhs = os.path.expanduser("/var/cache/git/mwaite")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
