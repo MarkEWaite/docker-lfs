@@ -2,7 +2,7 @@ ARG ALPINE_TAG=3.23.3
 
 FROM alpine:"${ALPINE_TAG}" AS jre-and-war
 
-ARG JAVA_VERSION=17.0.17_10
+ARG JAVA_VERSION=17.0.18_8
 
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
@@ -42,7 +42,7 @@ RUN java_major_version="$(jlink --version 2>&1 | cut -c1-2)"; \
     fi
 
 # Jenkins version being bundled in this docker image
-ARG JENKINS_VERSION=2.548
+ARG JENKINS_VERSION=2.549
 # Can be used to customize where jenkins.war get downloaded from
 ARG WAR_URL=https://get.jenkins.io/war/${JENKINS_VERSION}/jenkins.war
 
@@ -112,7 +112,7 @@ ENV JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
 ENV JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
 RUN chown -R ${user} "$JENKINS_HOME" "$REF"
 
-ARG PLUGIN_CLI_VERSION=2.13.2
+ARG PLUGIN_CLI_VERSION=2.14.0
 ARG PLUGIN_CLI_URL=https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/${PLUGIN_CLI_VERSION}/jenkins-plugin-manager-${PLUGIN_CLI_VERSION}.jar
 RUN curl -fsSL ${PLUGIN_CLI_URL} -o /opt/jenkins-plugin-manager.jar \
   && echo "$(curl -fsSL "${PLUGIN_CLI_URL}.sha256")  /opt/jenkins-plugin-manager.jar" >/tmp/jpm_sha \
@@ -138,7 +138,7 @@ COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
-ARG JENKINS_VERSION=2.548
+ARG JENKINS_VERSION=2.549
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
