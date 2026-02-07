@@ -172,23 +172,23 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-21.0.9+10 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-21.0.10+7 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-21.0.9+10"
+              toolHome: "c:\\tools\\jdk-21.0.10+7"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk21"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-21.0.9+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.9_10.tar.gz"
+              subdir: "jdk-21.0.10+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.10_7.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-21 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-21"
           - adoptOpenJdkInstaller:
-              id: "jdk-21.0.9+10"
+              id: "jdk-21.0.10+7"
     - name: "jdk25"
       properties:
       - installSource:
