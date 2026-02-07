@@ -95,7 +95,7 @@ def get_jagent_java_home():
         return "/home/jagent/tools/jdk-21.0.9+10"
     if "weekly" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-25.0.1+8"
-    return "/home/jagent/tools/jdk-17.0.17+10"
+    return "/home/jagent/tools/jdk-17.0.18+8"
 
 #-----------------------------------------------------------------------
 
