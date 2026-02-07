@@ -40,6 +40,7 @@ def volume_available(lhs):
     stat_info = os.stat(lhs)
     gid = stat_info.st_gid
     if gid not in os.getgroups():
+        print("!!! **** !!!! Volume " + lhs + " not available because " + str(gid) + " not in groups")
         return False
     return True
 
@@ -48,7 +49,7 @@ def volume_available(lhs):
 def get_user_content_volume_map():
     lhs = os.path.expanduser("~/public_html")
     rhs = os.path.expanduser("/var/jenkins_home/userContent/")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
@@ -57,16 +58,17 @@ def get_jenkins_home_volume_map():
         os.mkdir(jenkins_home_dir)
     lhs = jenkins_home_dir
     if not volume_available(lhs):
+        print("!!! **** !!!! Volume " + lhs + " not available")
         return None
     rhs = os.path.expanduser("/var/jenkins_home")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
 def get_git_reference_repo_volume_map():
     lhs = os.path.expanduser("~/git/bare/")
     rhs = os.path.expanduser("/var/cache/git/mwaite")
-    return lhs + ":" + rhs
+    return lhs + ":" + rhs + ":z"
 
 #-----------------------------------------------------------------------
 
@@ -83,28 +85,32 @@ def get_windows_dir():
 #-----------------------------------------------------------------------
 
 def get_jagent_java_home():
+    if "jdk25" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-25.0.2+10"
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.9+10"
+        return "/home/jagent/tools/jdk-21.0.10+7"
     if "alpine" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.9+10"
+        return "/home/jagent/tools/jdk-21.0.10+7"
     if "slim" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.9+10"
+        return "/home/jagent/tools/jdk-21.0.10+7"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.9+10"
-    return "/home/jagent/tools/jdk-17.0.17+10"
+        return "/home/jagent/tools/jdk-25.0.2+10"
+    return "/home/jagent/tools/jdk-17.0.18+8"
 
 #-----------------------------------------------------------------------
 
 def get_java_gc_args():
     # Use generational GC with Java 21
+    if "jdk25" in docker_build.get_current_branch():
+        return [ "-XX:+UseG1GC", ]
     if "jdk21" in docker_build.get_current_branch():
-        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+        return [ "-XX:+UseG1GC", ]
     if "alpine" in docker_build.get_current_branch():
-        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+        return [ "-XX:+UseG1GC", ]
     if "slim" in docker_build.get_current_branch():
-        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+        return [ "-XX:+UseG1GC", ]
     if "weekly" in docker_build.get_current_branch():
-        return [ "-XX:+UseZGC", "-XX:+ZGenerational", ]
+        return [ "-XX:+UseG1GC", ]
     return [ "-XX:+UseG1GC", ]
 
 #-----------------------------------------------------------------------
@@ -160,12 +166,9 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+ParallelRefProcEnabled",
                   "-XX:+DisableExplicitGC",
                   "-XX:+UnlockDiagnosticVMOptions",
-                  "-XX:+UnlockExperimentalVMOptions",
-                  "-Xms" + memory_scale(3) + "g",
-                  "-Xmx" + memory_scale(7) + "g",
+                  "-XX:MaxRAMPercentage=70.0",
+                  "-XX:InitialRAMPercentage=30.0",
                   "-XX:ActiveProcessorCount=" + cpu_count(32),
-                  "-XshowSettings:vm"
-                  # "-Dhudson.model.DownloadService.noSignatureCheck=true",
                   "-Dhudson.model.ParametersAction.keepUndefinedParameters=false",
                   "-Dhudson.model.ParametersAction.safeParameters=DESCRIPTION_SETTER_DESCRIPTION",
                   "-Dhudson.TcpSlaveAgentListener.hostName=" + get_base_hostname(),
@@ -193,10 +196,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                        "--env", "JENKINS_ADVERTISED_HOSTNAME=" + get_fqdn(),
                        "--env", "JENKINS_EXTERNAL_URL=" + "http://" + get_fqdn() + ":" + str(http_port) + "/",
                        "--env", "JENKINS_HOSTNAME=" + get_fqdn(),
-                       # Avoid Jetty 12 limitation of total parameter count
-                       # Jetty 10 set limit based on unique parameter count
-                       # https://issues.jenkins.io/browse/JENKINS-73285
-                       "--env", 'JENKINS_OPTS=--maxParamCount=10000',
                        "--env", "JENKINS_WINDOWS_DIR=" + get_windows_dir(),
                        "--env", "LANG=C.UTF-8",
                        "--env", "START_QUIET=" + str(quiet),
