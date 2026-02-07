@@ -137,14 +137,14 @@ tool:
               toolHome: "/usr/local/openjdk11"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-11.0.28+6"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.28_6.tar.gz"
+              subdir: "jdk-11.0.30+7"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.30_7.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-11"
           - adoptOpenJdkInstaller:
-              id: "jdk-11.0.28+6"
+              id: "jdk-11.0.30+7"
     - name: "jdk17"
       properties:
       - installSource:
