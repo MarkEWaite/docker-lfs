@@ -47,7 +47,6 @@ embeddable-build-status:637.vd878e68178f8
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
 envinject-api:1.237.v82803a_511906
 envinject:2.934.vc674e76cf954
-external-monitor-job:223.vb_fddcf42c9b_3
 font-awesome-api:7.1.0-882.v1dfb_771e3278
 forensics-api:3.1832.va_1179842528b_
 git-client:6.5.0
@@ -55,7 +54,7 @@ git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
-git:5.9.0
+git:incrementals;org.jenkins-ci.plugins;5.9.1-rc5529.a_b_48129a_db_27
 gitea:268.v75e47974c01d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.vdea_d580c1a_b_a_
@@ -65,7 +64,6 @@ gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:300.va_253b_2988cb_1
 gson-api:2.13.2-173.va_a_092315913c
-h2-api:11.1.4.199-36.vb_ee07e965744
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 http_request:1.24
 ignore-committer-strategy:55.v51410e712e0c
