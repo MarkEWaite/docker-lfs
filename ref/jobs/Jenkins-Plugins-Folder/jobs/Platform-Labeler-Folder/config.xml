@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.14">
   <actions/>
-  <description>Jenkins plaform labeler folder with custom pipeline library</description>
+  <description>Jenkins platform labeler folder with custom pipeline library</description>
   <displayName>Platform Labeler Folder</displayName>
   <properties>
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>

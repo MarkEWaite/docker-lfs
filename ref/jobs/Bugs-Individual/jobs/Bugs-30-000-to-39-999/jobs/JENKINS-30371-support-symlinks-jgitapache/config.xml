@@ -3,7 +3,7 @@
   <actions/>
   <description>[JENKINS-30371](https://issues.jenkins.io/browse/JENKINS-30371) includes symlink support for Java 7 file systems which support them.&#xd;
 &#xd;
-Requires a file system and operating system configured to support symoblic links.</description>
+Requires a file system and operating system configured to support symbolic links.</description>
   <logRotator class="hudson.tasks.LogRotator">
     <daysToKeep>-1</daysToKeep>
     <numToKeep>15</numToKeep>
