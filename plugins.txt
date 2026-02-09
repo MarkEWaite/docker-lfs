@@ -83,8 +83,7 @@ jdk-tool:83.v417146707a_3d
 jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.11.5-120.v0268cf544b_89
-# Testing the latest dependency updates to Job DSL
-job-dsl:incrementals;org.jenkins-ci.plugins;1.94-rc3643.5ffc2a_14db_55
+job-dsl:1.93
 joda-time-api:2.14.0-177.vd7e9347b_e7d5
 jquery3-api:3.7.1-619.vdb_10e002501a_
 jsch:0.2.16-95.v3eecb_55fa_b_78
