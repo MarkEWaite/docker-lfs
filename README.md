@@ -387,7 +387,7 @@ For information related to the security of this Docker image, please refer to th
 
 We're on Gitter, https://gitter.im/jenkinsci/docker
 
-### Specific details of this configuration
+### Specific details of this branch and its derivatives
 
 The container definition enables content security policy and assigns a root resource URL.
 The root resource URL is assumed to be an alias for the fully qualified domain name of the controller.
