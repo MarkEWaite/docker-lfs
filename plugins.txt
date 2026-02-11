@@ -30,7 +30,7 @@ configuration-as-code:2037.v8e5349845172
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3139.v731d2e83ea_8a_
 credentials-binding:717.v951d49b_5f3a_a_
-credentials:1487.va_d001ede2c31
+credentials:1488.v9049e8c8b_d98
 dark-theme:574.va_19f05d54df5
 data-tables-api:2.3.5-1497.v38449eb_7d5a_1
 description-setter:264.v1957f215dcd5
