@@ -21,7 +21,7 @@ cloudbees-bitbucket-branch-source:937.2.4
 cloudbees-folder:6.1079.vc0975c2de294
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
-commons-compress-api:1.28.0-2
+commons-compress-api:incrementals;io.jenkins.plugins;1.28.0-3-rc67.a_21a_2ccd10ff
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-210.v7480a_da_70b_9e
 conditional-buildstep:1.5.0
