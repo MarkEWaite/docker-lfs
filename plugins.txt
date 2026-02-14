@@ -54,7 +54,7 @@ git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
-git:incrementals;org.jenkins-ci.plugins;5.9.1-rc5529.a_b_48129a_db_27
+git:5.10.0
 gitea:268.v75e47974c01d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.vdea_d580c1a_b_a_
@@ -153,7 +153,7 @@ trilead-api:2.284.v1974ea_324382
 variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
 view-job-filters:406.va_0ec67147ee2
-warnings-ng:12.10007.va_42704b_594d3
+warnings-ng:12.10010.vca_9e003f32a_2
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4

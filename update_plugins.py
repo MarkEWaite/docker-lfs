@@ -20,7 +20,6 @@ def update_plugins(args = []):
 Build docker images.   Use -h for help."""
     parser = optparse.OptionParser(usage=help_text)
 
-    # keep at optparse for 2.6. compatibility
     parser.add_option("-r", "--report", action="store_true", default=False, help="Report the command to update plugins and exit without building the image")
     parser.add_option("-n", "--dryrun", action="store_true", default=False, help="Report the updates without applying any change")
 
