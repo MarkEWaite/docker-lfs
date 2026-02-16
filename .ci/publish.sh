@@ -12,7 +12,6 @@ set -eu -o pipefail
 : "${DOCKERHUB_ORGANISATION:=jenkins}"
 : "${DOCKERHUB_REPO:=jenkins}"
 : "${BAKE_TARGET:=linux}"
-: "${BYPASS_LATEST_PUBLICATION_ONLY:=false}"
 
 export JENKINS_REPO="${DOCKERHUB_ORGANISATION}/${DOCKERHUB_REPO}"
 
@@ -30,7 +29,7 @@ debug=false
 
 while [[ $# -gt 0 ]]; do
     key="$1"
-    case $key in
+    case "${key}" in
         -n)
         dry_run=true
         ;;
@@ -38,7 +37,7 @@ while [[ $# -gt 0 ]]; do
         debug=true
         ;;
         *)
-        echo "ERROR: Unknown option: $key"
+        echo "ERROR: Unknown option: ${key}"
         exit 1
         ;;
     esac
@@ -46,12 +45,12 @@ while [[ $# -gt 0 ]]; do
 done
 
 
-if [ "$debug" = true ]; then
+if [[ "${debug}" = true ]]; then
     echo "Debug mode enabled"
     set -x
 fi
 
-if [ "$dry_run" = true ]; then
+if [[ "${dry_run}" = true ]]; then
     echo "Dry run, will not publish images"
 fi
 
@@ -75,16 +74,6 @@ then
     LATEST_LTS="true"
 else
     LATEST_LTS="false"
-fi
-
-if [[ "${LATEST_WEEKLY}" == "false" && "${LATEST_LTS}" == "false" ]]; then
-    if [[ "${BYPASS_LATEST_PUBLICATION_ONLY}" == "false" ]]; then
-        echo "ERROR: ${JENKINS_VERSION} is neither the lastest Weekly nor the latest LTS version, not publishing any image"
-        exit 1
-    else
-        echo "WARNING: ${JENKINS_VERSION} is neither the lastest Weekly nor the latest LTS version"
-        echo 'As BYPASS_LATEST_PUBLICATION_ONLY has been set to "true", still proceeding to its publication'
-    fi
 fi
 
 build_opts=("--pull")
@@ -111,16 +100,21 @@ Using the following settings:
 * COMMIT_SHA: ${COMMIT_SHA}
 * LATEST_WEEKLY: ${LATEST_WEEKLY}
 * LATEST_LTS: ${LATEST_LTS}
-* latest_weekly_version: ${latest_weekly_version}
-* latest_lts_version: ${latest_lts_version}
-* BYPASS_ONLY_LATEST_PUBLICATION: ${BYPASS_ONLY_LATEST_PUBLICATION}
 * BUILD_METADATA_PATH: ${BUILD_METADATA_PATH}
 * BAKE_TARGET: ${BAKE_TARGET}
 * BAKE OPTIONS:
 $(printf '  %s\n' "${build_opts[@]}")
-
-* RESOLVED BAKE CONFIG:
-$(docker buildx bake --file docker-bake.hcl --print "${BAKE_TARGET}")
 EOF
+
+echo '* RESOLVED BAKE CONFIG:'
+docker buildx bake --file docker-bake.hcl --progress=quiet --print "${BAKE_TARGET}"
+
+if [[ "${CI:-false}" == "false" ]]; then
+  read -rp "Confirm? [y/N] " answer
+
+  if [[ ! "${answer}" =~ ^[Yy]$ ]]; then
+      exit 0
+  fi
+fi
 
 docker buildx bake --file docker-bake.hcl "${build_opts[@]}" "${BAKE_TARGET}"
