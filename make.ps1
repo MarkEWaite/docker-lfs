@@ -173,14 +173,19 @@ function Initialize-DockerComposeFile {
     # For each target name as service key, return a map consisting of:
     # - 'image' set to the first tag value
     # - 'build' set to the content of the bake target
-    $yqMainQuery = '.target[] | del(.output) | {(. | key): {\"image\": .tags[0], \"build\": .}}'
+    $yqMainQuery = '.target[] | del(.output) | {(. | key): {"image": .tags[0], "build": .}}'
     # Encapsulate under a top level 'services' map
-    $yqServicesQuery = '{\"services\": .}'
+    $yqServicesQuery = '{"services": .}'
+
+    if ($PSVersionTable.PSVersion.Major -eq 5) {
+        $yqMainQuery = $yqMainQuery -replace '"', '\"'
+        $yqServicesQuery = $yqServicesQuery -replace '"', '\"'
+    }
 
     # - Use docker buildx bake to output image definitions from the "<windowsFlavor>" bake target
     # - Convert with yq to the format expected by docker compose
     # - Store the result in the docker compose file
-    docker buildx bake --progress=plain --file=docker-bake.hcl $windowsFlavor --print |
+    docker buildx bake --progress=quiet --file=docker-bake.hcl $windowsFlavor --print |
         yq --prettyPrint $yqMainQuery |
         yq $yqServicesQuery |
         Out-File -FilePath $DockerComposeFile
@@ -205,9 +210,9 @@ $isJenkinsVersionLatest = Test-IsLatestJenkinsRelease -Version $JenkinsVersion
 
 if ($JenkinsVersion.Split('.').Count -eq 3) {
     $releaseLine = 'war-stable'
-    $env:LATEST_LTS = $isJenkinsVersionLatest
+    $env:LATEST_LTS = If ($isJenkinsVersionLatest) { "true" } Else { "false" }
 } else {
-    $env:LATEST_WEEKLY = $isJenkinsVersionLatest
+    $env:LATEST_WEEKLY = If ($isJenkinsVersionLatest) { "true" } Else { "false" }
 }
 
 # If there is no WAR_URL set, using get.jenkins.io URL depending on the release line
@@ -288,17 +293,6 @@ if ($target -eq 'test') {
 
 if ($target -eq 'publish') {
     Write-Host '= PUBLISH: push all images and tags'
-
-    # Prevent publication if JENKINS_VERSION is not the latest Weekly or LTS version
-    if (!$isJenkinsVersionLatest) {
-        if ($env:BYPASS_LATEST_PUBLICATION_ONLY) {
-            Write-Host 'WARNING: as BYPASS_LATEST_PUBLICATION_ONLY has been set to "true", still proceeding to publication'
-        } else {
-            Write-Host "ERROR: $JenkinsVersion is neither the lastest Weekly nor the latest LTS version"
-            exit 1
-        }
-    }
-
     switch($DryRun) {
         $true { Write-Host "(dry-run) $baseDockerCmd push" }
         $false { Invoke-Expression "$baseDockerCmd push" }
