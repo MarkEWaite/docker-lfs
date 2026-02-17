@@ -99,22 +99,6 @@ def get_jagent_java_home():
 
 #-----------------------------------------------------------------------
 
-def get_java_gc_args():
-    # Use generational GC with Java 21
-    if "jdk25" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "jdk21" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "alpine" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "slim" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "weekly" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    return [ "-XX:+UseG1GC", ]
-
-#-----------------------------------------------------------------------
-
 def memory_scale(upper_bound):
     mem = psutil.virtual_memory()
     eight_GB = 8 * 1024 * 1024 * 1024
@@ -160,7 +144,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+HeapDumpOnOutOfMemoryError",
                   "-XX:HeapDumpPath=/var/jenkins_home/logs",
                 ]
-    java_opts.extend(get_java_gc_args())
     java_opts.extend([
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
