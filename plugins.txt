@@ -66,7 +66,7 @@ groovy-postbuild:300.va_253b_2988cb_1
 gson-api:2.13.2-173.va_a_092315913c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 http_request:1.24
-ignore-committer-strategy:55.v51410e712e0c
+ignore-committer-strategy:57.v0756db_b_f6926
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
