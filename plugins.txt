@@ -87,7 +87,7 @@ joda-time-api:2.14.0-177.vd7e9347b_e7d5
 jquery3-api:3.7.1-619.vdb_10e002501a_
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
-json-path-api:2.10.0-202.va_9cc16c1e476
+json-path-api:3.0.0-218.vcd4dd1355de2
 jsoup:1.22.1-76.v9cdb_2456c0e3
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:330.v25180b_263160
@@ -115,8 +115,8 @@ pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:777.vdeb_113b_b_94da_
 pipeline-groovy-lib:787.ve2fef0efdca_6
 pipeline-input-step:540.v14b_100d754dd
-pipeline-maven-api:1611.v6a_00c04177b_b_
-pipeline-maven:1611.v6a_00c04177b_b_
+pipeline-maven-api:1672.v1b_d4c0435b_20
+pipeline-maven:1672.v1b_d4c0435b_20
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2277.v00573e73ddf1
 pipeline-model-definition:2.2277.v00573e73ddf1
