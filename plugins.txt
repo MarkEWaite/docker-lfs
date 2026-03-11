@@ -37,7 +37,7 @@ description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:457.v0f62a_94f11a_3
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
-docker-plugin:1308.vff6e33248305
+docker-plugin:1316.v75635a_002b_0a_
 docker-workflow:634.vedc7242b_eda_7
 durable-task:651.v1f5e074fc83f
 echarts-api:6.0.0-1165.vd1283a_3e37d4
