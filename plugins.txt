@@ -30,7 +30,7 @@ configuration-as-code:2053.vb_0da_47381a_25
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3139.v731d2e83ea_8a_
 credentials-binding:717.v951d49b_5f3a_a_
-credentials:1491.v6d6145e96e1c
+credentials:1495.v2cc3d2266b_75
 dark-theme:574.va_19f05d54df5
 data-tables-api:2.3.7-1534.v539d4edf109d
 description-setter:264.v1957f215dcd5
@@ -40,7 +40,7 @@ docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 docker-plugin:1316.v75635a_002b_0a_
 docker-workflow:634.vedc7242b_eda_7
 durable-task:664.v2b_e7a_dfff66c
-echarts-api:6.0.0-1165.vd1283a_3e37d4
+echarts-api:6.0.0-1247.vf3e35a_c1813f
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:637.vd878e68178f8
@@ -49,7 +49,7 @@ envinject-api:1.237.v82803a_511906
 envinject:2.934.vc674e76cf954
 font-awesome-api:7.2.0-965.ve3840b_696418
 forensics-api:3.1832.va_1179842528b_
-git-client:6.5.0
+git-client:incrementals;org.jenkins-ci.plugins;6.6.0-rc3865.b_182d0ccd56c
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
