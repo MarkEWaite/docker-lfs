@@ -49,7 +49,7 @@ envinject-api:1.237.v82803a_511906
 envinject:2.934.vc674e76cf954
 font-awesome-api:7.2.0-965.ve3840b_696418
 forensics-api:3.1832.va_1179842528b_
-git-client:6.5.0
+git-client:incrementals;org.jenkins-ci.plugins;6.6.0-rc3865.b_182d0ccd56c
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
