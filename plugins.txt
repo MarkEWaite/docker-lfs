@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.6-191.vb_47e2b_41c698
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:2.562.vc3c0b_6925377
+badge:3.583.vdc8d4a_a_1d586
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.83-289.v8426fcd19371
@@ -65,7 +65,7 @@ gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:300.va_253b_2988cb_1
 gson-api:2.13.2-173.va_a_092315913c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
-http_request:1.24
+http_request:1.25
 ignore-committer-strategy:57.v0756db_b_f6926
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
