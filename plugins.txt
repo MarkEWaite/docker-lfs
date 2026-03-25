@@ -7,7 +7,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.6-191.vb_47e2b_41c698
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:2.562.vc3c0b_6925377
+badge:3.583.vdc8d4a_a_1d586
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bouncycastle-api:2.30.1.83-289.v8426fcd19371
@@ -30,7 +30,7 @@ configuration-as-code:2056.v6a_e126e16620
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3139.v731d2e83ea_8a_
 credentials-binding:717.v951d49b_5f3a_a_
-credentials:1497.v6ea_e85a_ce970
+credentials:1498.vd852f8831d79
 dark-theme:652.vea_da_dfea_e769
 data-tables-api:2.3.7-1534.v539d4edf109d
 description-setter:264.v1957f215dcd5
@@ -54,7 +54,7 @@ git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
-git:5.10.0
+git:5.10.1
 gitea:273.vb_78d13f6d9a_d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.vdea_d580c1a_b_a_
@@ -65,7 +65,7 @@ gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:300.va_253b_2988cb_1
 gson-api:2.13.2-173.va_a_092315913c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
-http_request:1.24
+http_request:1.25
 ignore-committer-strategy:57.v0756db_b_f6926
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
