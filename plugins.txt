@@ -17,7 +17,7 @@ build-timeout:1.40
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
 checks-api:402.vca_263b_f200e3
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.2.5
+cloudbees-bitbucket-branch-source:937.2.6
 cloudbees-folder:6.1079.vc0975c2de294
 command-launcher:123.v37cfdc92ef67
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -49,7 +49,7 @@ envinject-api:1.237.v82803a_511906
 envinject:2.934.vc674e76cf954
 font-awesome-api:7.2.0-965.ve3840b_696418
 forensics-api:3.1832.va_1179842528b_
-git-client:incrementals;org.jenkins-ci.plugins;6.6.0-rc3865.b_182d0ccd56c
+git-client:6.6.0
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
@@ -159,7 +159,7 @@ warnings-ng:12.10012.v753ff0d0363a_
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4261.va_1fa_c7e4db_da_
+workflow-cps:4262.va_74628df1ff2
 workflow-durable-task-step:1464.v2d3f5c68f84c
 workflow-job:1571.vb_423c255d6d9
 workflow-multibranch:821.vc3b_4ea_780798
