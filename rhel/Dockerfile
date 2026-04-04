@@ -2,7 +2,7 @@ ARG RHEL_TAG=9.7-1774415752
 ARG RHEL_RELEASE_LINE=ubi9
 FROM registry.access.redhat.com/${RHEL_RELEASE_LINE}/ubi:${RHEL_TAG} AS jre-and-war
 
-ARG JAVA_VERSION=17.0.18_8
+ARG JAVA_VERSION=21.0.10_7
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -27,7 +27,6 @@ RUN java_major_version="$(jlink --version 2>&1 | cut -c1-2)"; \
       cp -r "/opt/jdk-${JAVA_VERSION}" /javaruntime; \
     else \
       case "$java_major_version" in \
-        "17") options="--compress=2" ;; \
         "21") options="--compress=zip-6" ;; \
         *) echo "ERROR: unmanaged jlink version pattern" && exit 1 ;; \
       esac; \
@@ -41,7 +40,7 @@ RUN java_major_version="$(jlink --version 2>&1 | cut -c1-2)"; \
     fi
 
 # Jenkins version being bundled in this docker image
-ARG JENKINS_VERSION=2.556
+ARG JENKINS_VERSION=2.557
 # Can be used to customize where jenkins.war get downloaded from
 ARG WAR_URL=https://get.jenkins.io/war/${JENKINS_VERSION}/jenkins.war
 
@@ -142,7 +141,7 @@ COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
-ARG JENKINS_VERSION=2.556
+ARG JENKINS_VERSION=2.557
 ENV JENKINS_VERSION=${JENKINS_VERSION}
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
