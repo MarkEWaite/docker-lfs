@@ -95,6 +95,9 @@ def get_jagent_java_home():
         return "/home/jagent/tools/jdk-21.0.10+7"
     if "weekly" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-25.0.2+10"
+    # TODO: Remove when lts-with-plugins uses Java 21 after 2.555.1 release
+    if "lts-with-plugins-add-credentials-and-nodes-rc" in docker_build.get_current_branch():
+        return "/home/jagent/tools/jdk-21.0.10+7"
     return "/home/jagent/tools/jdk-17.0.18+8"
 
 #-----------------------------------------------------------------------
