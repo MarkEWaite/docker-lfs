@@ -32,7 +32,7 @@ coverage:3.3202.vcc45760d9b_8c
 credentials-binding:719.v80e905ef14eb_
 credentials:1502.v5c95e620ddfe
 dark-theme:652.vea_da_dfea_e769
-data-tables-api:2.3.7-1552.v887990436269
+data-tables-api:2.3.7-1554.v6113418a_6935
 description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:472.vee120e23d3a_c
