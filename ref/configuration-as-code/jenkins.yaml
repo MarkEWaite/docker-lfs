@@ -1,7 +1,5 @@
 jenkins:
   disableRememberMe: false
-  disabledAdministrativeMonitors:
-  - "org.jenkinsci.plugins.pipeline.maven.NonProductionGradeDatabaseWarningAdministrativeMonitor"
   labelAtoms:
   - name: "git-2.30"
     properties:
