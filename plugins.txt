@@ -28,7 +28,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
 configuration-as-code:2071.vea_ed8d491f81
 coverage-badges-extension:197.vb_390173d00ec
-coverage:2.3139.v731d2e83ea_8a_
+coverage:3.3202.vcc45760d9b_8c
 credentials-binding:719.v80e905ef14eb_
 credentials:1502.v5c95e620ddfe
 dark-theme:652.vea_da_dfea_e769
