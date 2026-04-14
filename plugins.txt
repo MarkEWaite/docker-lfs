@@ -50,7 +50,7 @@ envinject:2.934.vc674e76cf954
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
 forensics-api:4.1875.vefb_f97cb_4987
 git-client:6.6.0
-git-forensics:3.2274.v3dc0fd546572
+git-forensics:4.2367.vb_399b_30a_e8fb_
 git-parameter:462.vdcf3df2ed2ca_
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
