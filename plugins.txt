@@ -4,7 +4,7 @@ analysis-model-api:13.21.0-945.va_f5a_0b_c1404b_
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6-191.vb_47e2b_41c698
+apache-httpcomponents-client-5-api:5.6-193.vf028a_770a_fa_c
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.590.v1c3de0b_d2fb_2
