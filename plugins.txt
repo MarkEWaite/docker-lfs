@@ -4,10 +4,10 @@ analysis-model-api:14.2.0-964.v3eb_80540a_92f
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6-191.vb_47e2b_41c698
+apache-httpcomponents-client-5-api:5.6-193.vf028a_770a_fa_c
 asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
-badge:3.590.v1c3de0b_d2fb_2
+badge:3.591.v9074c6c6f0b_9
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-1024.v127320880c60
 bouncycastle-api:2.30.1.83-289.v8426fcd19371
@@ -114,7 +114,7 @@ pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:819.ved496c19e082
-pipeline-groovy-lib:787.ve2fef0efdca_6
+pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-input-step:551.vdff487c5998c
 pipeline-maven-api:1672.v1b_d4c0435b_20
 pipeline-maven:1672.v1b_d4c0435b_20
