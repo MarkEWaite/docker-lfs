@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2069.vb_a_36d7a_570c8
+configuration-as-code:2071.vea_ed8d491f81
 coverage-badges-extension:197.vb_390173d00ec
 coverage:2.3139.v731d2e83ea_8a_
 credentials-binding:719.v80e905ef14eb_
@@ -71,7 +71,7 @@ implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson2-api:2.21.2-433.v6d50b_92cfe52
-jackson3-api:3.1.1-68.v2a_4b_025ea_657
+jackson3-api:3.1.2-71.v0a_23916945fe
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.6-12.vb_1833c1231d3
