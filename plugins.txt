@@ -9,7 +9,7 @@ asm-api:9.9.1-189.vb_5ef2964da_91
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.591.v9074c6c6f0b_9
 basic-branch-build-strategies:317.v85b_331d6cc42
-bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
+bootstrap5-api:5.3.8-1024.v127320880c60
 bouncycastle-api:2.30.1.84-291.v9f17b_21896e2
 branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
