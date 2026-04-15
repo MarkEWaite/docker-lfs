@@ -40,16 +40,12 @@ def get_dockerfile(branch_name):
         return "Dockerfile-jdk25"
     if "jdk21" in branch_name:
         return "Dockerfile-jdk21"
-    if "jdk17" in branch_name:
-        return "Dockerfile-jdk17"
     if "alpine" in branch_name:
         return "Dockerfile-alpine"
     if "slim" in branch_name:
         return "Dockerfile-slim"
     if "weekly" in branch_name:
         return "Dockerfile-jdk25"
-    if "lts-with-" in branch_name:
-        return "Dockerfile-jdk17"
     return "Dockerfile-jdk21"
 
 #-----------------------------------------------------------------------
