@@ -10,7 +10,7 @@ authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.591.v9074c6c6f0b_9
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-1024.v127320880c60
-bouncycastle-api:2.30.1.83-289.v8426fcd19371
+bouncycastle-api:2.30.1.84-291.v9f17b_21896e2
 branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
 build-timeout:1.40
@@ -63,7 +63,7 @@ github:1.46.0
 gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:303.v5fe3da_6233f0
-gson-api:2.13.2-173.va_a_092315913c
+gson-api:2.13.2-198.v45e4a_55d9b_a_a_
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 http_request:1.25
 ignore-committer-strategy:57.v0756db_b_f6926
