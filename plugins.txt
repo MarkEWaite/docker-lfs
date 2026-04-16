@@ -17,8 +17,8 @@ build-timeout:1.40
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
 checks-api:402.vca_263b_f200e3
 cloud-stats:377.vd8a_6c953e98e
-cloudbees-bitbucket-branch-source:937.3.0
-cloudbees-folder:6.1098.vb_9a_23a_b_c566a_
+cloudbees-bitbucket-branch-source:937.3.1
+cloudbees-folder:6.1100.ve9eed61d16c4
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-3
@@ -70,6 +70,7 @@ ignore-committer-strategy:57.v0756db_b_f6926
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
+jackson-annotations2-api:2.21-7.v4777a_f3a_a_d47
 jackson2-api:2.21.2-433.v6d50b_92cfe52
 jackson3-api:3.1.2-71.v0a_23916945fe
 jakarta-activation-api:2.1.4-1
@@ -113,7 +114,7 @@ pipeline-build-step:584.vdb_a_2cc3a_d07a_
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:819.ved496c19e082
+pipeline-graph-view:835.v8fc0587a_55e6
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-input-step:551.vdff487c5998c
 pipeline-maven-api:1672.v1b_d4c0435b_20
