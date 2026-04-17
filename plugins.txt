@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2074.va_57f83f7a_10b_
+configuration-as-code:2077.v41f1011a_5110
 coverage-badges-extension:197.vb_390173d00ec
 coverage:3.3208.v500334516e20
 credentials-binding:719.v80e905ef14eb_
@@ -71,7 +71,7 @@ implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.21-7.v4777a_f3a_a_d47
-jackson2-api:incrementals;org.jenkins-ci.plugins;2.21.2-436.v19711b_8444b_f
+jackson2-api:2.21.2-436.v29efdb_7418ff
 jackson3-api:3.1.2-73.v3e5485d8b_148
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -114,7 +114,7 @@ pipeline-build-step:584.vdb_a_2cc3a_d07a_
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:835.v8fc0587a_55e6
+pipeline-graph-view:836.v68ef091500dd
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-input-step:551.vdff487c5998c
 pipeline-maven-api:1672.v1b_d4c0435b_20
@@ -156,7 +156,7 @@ trilead-api:2.284.v1974ea_324382
 variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
 view-job-filters:406.va_0ec67147ee2
-warnings-ng:13.10083.va_ea_921999f73
+warnings-ng:13.10087.ve5ccdb_b_17f4c
 woodstox-core-api:7.1.1-1.v4d297985f397
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
