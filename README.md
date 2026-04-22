@@ -15,7 +15,7 @@ python docker_run.py --quiet
 ```
 
 NOTE: Read the section [_Connecting agents_](#connecting-agents) below for the role of the `50000` port mapping.
-NOTE: Read the section [_DNS Configuration_](#dns-configuration) in case you see the message "This Jenkins instance appears to be offline.
+NOTE: Read the section [_DNS Configuration_](#dns-configuration) in case you see the message "This Jenkins instance appears to be offline."
 
 This will store the workspace in `/var/jenkins_home`.
 All Jenkins data lives in there - including plugins and configuration.
