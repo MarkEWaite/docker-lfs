@@ -12,7 +12,7 @@ variable "default_jdk" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.559"
+  default = "2.561"
 }
 
 variable "WAR_URL" {
@@ -44,7 +44,7 @@ variable "COMMIT_SHA" {
 }
 
 variable "ALPINE_FULL_TAG" {
-  default = "3.23.3"
+  default = "3.23.4"
 }
 
 variable "ALPINE_SHORT_TAG" {
@@ -64,11 +64,11 @@ variable "DEBIAN_RELEASE_LINE" {
 }
 
 variable "DEBIAN_VERSION" {
-  default = 20260406
+  default = 20260421
 }
 
 variable "RHEL_TAG" {
-  default = "9.7-1776113524"
+  default = "9.7-1776834047"
 }
 
 variable "RHEL_RELEASE_LINE" {

@@ -1,6 +1,6 @@
 PrioritySorter:936.v2c01c6b_84449
 adoptopenjdk:146.v1898676a_f04e
-analysis-model-api:14.2.0-964.v3eb_80540a_92f
+analysis-model-api:14.5.0-968.v4b_155edf8f68
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
@@ -83,14 +83,14 @@ jaxb:2.3.9-143.v5979df3304e6
 jdk-tool:83.v417146707a_3d
 jersey2-api:2.48-180.ve47b_264f849b_
 jersey3-api:3.1.11-4.v77818819c2e1
-jjwt-api:0.11.5-120.v0268cf544b_89
+jjwt-api:0.13.0-141.vd58b_a_9592b_6c
 job-dsl:3654.vdf58f53e2d15
 joda-time-api:2.14.1-187.vdf2def02b_8a_1
 jquery3-api:3.7.1-682.vfa_cdce169929
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
 json-path-api:3.0.0-218.vcd4dd1355de2
-jsoup:1.22.1-76.v9cdb_2456c0e3
+jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
@@ -114,7 +114,7 @@ pipeline-build-step:584.vdb_a_2cc3a_d07a_
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:837.vb_2654da_2a_fa_b_
+pipeline-graph-view:842.va_457d5d7654f
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-input-step:551.vdff487c5998c
 pipeline-maven-api:1672.v1b_d4c0435b_20
@@ -140,7 +140,7 @@ scm-api:728.vc30dcf7a_0df5
 script-security:1399.ve6a_66547f6e1
 snakeyaml-api:2.5-149.v72471e9c6371
 snakeyaml-engine-api:3.0.1-5.vd98ea_ff3b_92e
-ssh-agent:386.v36cc0c7582f0
+ssh-agent:396.vcc7d84e622ec
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
 sshd:3.384.vc89b_5e138cf9
