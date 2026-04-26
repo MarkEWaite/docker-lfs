@@ -45,7 +45,7 @@ eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:637.vd878e68178f8
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
-envinject-api:1.237.v82803a_511906
+envinject-api:1.241.vdd714803b_403
 envinject:2.934.vc674e76cf954
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
 forensics-api:4.1881.v79c6e496c613
