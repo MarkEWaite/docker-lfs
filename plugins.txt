@@ -103,7 +103,7 @@ maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
-monitoring:2.6.0
+monitoring:2.7.0
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
