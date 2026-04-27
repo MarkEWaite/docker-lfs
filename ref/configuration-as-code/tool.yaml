@@ -203,14 +203,14 @@ tool:
               toolHome: "/usr/local/openjdk25"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-25.0.2+10"
-              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.2_10.tar.gz"
+              subdir: "jdk-25.0.3+9"
+              url: "https://home.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.3_9.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-25 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-25"
           - adoptOpenJdkInstaller:
-              id: "jdk-25.0.2+10"
+              id: "jdk-25.0.3+9"
   maven:
     installations:
     - name: "maven-latest"
