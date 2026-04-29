@@ -59,7 +59,7 @@ gitea:273.vb_78d13f6d9a_d
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.1969.v205fd594c821
 github-scm-filter-aged-refs:59.vc6b_39c26988c
-github:1.46.0
+github:1.46.0.1
 gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:303.v5fe3da_6233f0
