@@ -72,7 +72,7 @@ instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.21-7.v4777a_f3a_a_d47
 jackson2-api:2.21.2-436.v29efdb_7418ff
-jackson3-api:3.1.2-73.v3e5485d8b_148
+jackson3-api:3.1.3-76.vd9b_7cd2e80b_8
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.6-12.vb_1833c1231d3
@@ -86,7 +86,7 @@ jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.13.0-141.vd58b_a_9592b_6c
 job-dsl:3654.vdf58f53e2d15
 joda-time-api:2.14.2-193.v422b_efce56e0
-jquery3-api:3.7.1-682.vfa_cdce169929
+jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
 json-path-api:3.0.0-218.vcd4dd1355de2
