@@ -52,11 +52,11 @@ variable "ALPINE_SHORT_TAG" {
 }
 
 variable "JAVA21_VERSION" {
-  default = "21.0.10_7"
+  default = "21.0.11_10"
 }
 
 variable "JAVA25_VERSION" {
-  default = "25.0.2_10"
+  default = "25.0.3_9"
 }
 
 variable "DEBIAN_RELEASE_LINE" {
@@ -68,7 +68,7 @@ variable "DEBIAN_VERSION" {
 }
 
 variable "RHEL_TAG" {
-  default = "9.7-1776834047"
+  default = "9.7-1777858048"
 }
 
 variable "RHEL_RELEASE_LINE" {
