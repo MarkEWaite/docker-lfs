@@ -125,7 +125,7 @@ pipeline-model-definition:2.2277.v00573e73ddf1
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-stage-step:345.va_96187909426
 pipeline-stage-tags-metadata:2.2277.v00573e73ddf1
-pipeline-utility-steps:2.20.0
+pipeline-utility-steps:3.810.va_7672d206740
 plain-credentials:199.v9f8e1f741799
 platformlabeler:3198.v06b_04fa_fea_6e
 plot:2.4.0
