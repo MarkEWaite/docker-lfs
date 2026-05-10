@@ -150,9 +150,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-17.0.18+8 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17.0.19+10 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.18+8"
+              toolHome: "c:\\tools\\jdk-17.0.19+10"
           - command:
               command: "true"
               label: "freebsd"
@@ -166,7 +166,7 @@ tool:
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-17"
           - adoptOpenJdkInstaller:
-              id: "jdk-17.0.18+8"
+              id: "jdk-17.0.19+10"
     - name: "jdk21"
       properties:
       - installSource:
