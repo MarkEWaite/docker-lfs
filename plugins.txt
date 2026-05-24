@@ -60,7 +60,7 @@ github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.1969.v205fd594c821
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.46.0.1
-gitlab-api:6.2.0-111.vf174d6b_8c12e
+gitlab-api:6.3.0-126.vd066b_d896159
 gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:303.v5fe3da_6233f0
 gson-api:2.14.0-201.v8eefe5515533
@@ -103,7 +103,7 @@ maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.17.1-187.v0341274c2905
 mina-sshd-api-core:2.17.1-187.v0341274c2905
-monitoring:2.7.0
+monitoring:2.8.0
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
