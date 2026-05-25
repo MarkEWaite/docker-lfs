@@ -5,7 +5,7 @@ ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 apache-httpcomponents-client-5-api:5.6.1-195.v65ffe15189a_d
-asm-api:9.10-211.v7d13903b_a_d89
+asm-api:9.10.1-216.va_9256d3b_844b_
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.591.v9074c6c6f0b_9
 basic-branch-build-strategies:317.v85b_331d6cc42
@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2080.vd4d4535f0ec8
+configuration-as-code:2081.v2d0940662a_34
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3240.vb_5a_8809f7523
 credentials-binding:720.v3f6decef43ea_
@@ -60,7 +60,7 @@ github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1967.1969.v205fd594c821
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.46.0.1
-gitlab-api:6.2.0-111.vf174d6b_8c12e
+gitlab-api:6.3.0-126.vd066b_d896159
 gitlab-branch-source:740.v04f287f9194d
 groovy-postbuild:303.v5fe3da_6233f0
 gson-api:2.14.0-201.v8eefe5515533
@@ -88,7 +88,7 @@ job-dsl:3654.vdf58f53e2d15
 joda-time-api:2.14.2-193.v422b_efce56e0
 jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
-json-api:20251224-185.v0cc18490c62c
+json-api:20260522-217.v0b_18b_8cd4672
 json-path-api:3.0.0-218.vcd4dd1355de2
 jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
@@ -103,7 +103,7 @@ maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.17.1-187.v0341274c2905
 mina-sshd-api-core:2.17.1-187.v0341274c2905
-monitoring:2.7.0
+monitoring:2.8.0
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
@@ -127,7 +127,7 @@ pipeline-stage-step:345.va_96187909426
 pipeline-stage-tags-metadata:2.2277.v00573e73ddf1
 pipeline-utility-steps:3.810.va_7672d206740
 plain-credentials:199.v9f8e1f741799
-platformlabeler:3198.v06b_04fa_fea_6e
+platformlabeler:3327.v5c3a_291d19c0
 plot:2.4.0
 plugin-util-api:7.1341.v039f146993d9
 pollscm:1.9
