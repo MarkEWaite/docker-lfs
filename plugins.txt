@@ -88,7 +88,7 @@ job-dsl:3654.vdf58f53e2d15
 joda-time-api:2.14.2-193.v422b_efce56e0
 jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
-json-api:20251224-185.v0cc18490c62c
+json-api:20260522-217.v0b_18b_8cd4672
 json-path-api:3.0.0-218.vcd4dd1355de2
 jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
