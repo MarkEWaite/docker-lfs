@@ -120,7 +120,7 @@ pipeline-input-step:551.vdff487c5998c
 pipeline-maven-api:1724.vfcd808f49a_0c
 pipeline-maven:1724.vfcd808f49a_0c
 pipeline-milestone-step:152.v6e22b_8cfc66c
-pipeline-model-api:2.2277.v00573e73ddf1
+pipeline-model-api:2.2289.v6f731d0a_02da_
 pipeline-model-definition:2.2277.v00573e73ddf1
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-stage-step:345.va_96187909426
