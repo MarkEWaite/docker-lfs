@@ -121,10 +121,10 @@ pipeline-maven-api:1724.vfcd808f49a_0c
 pipeline-maven:1724.vfcd808f49a_0c
 pipeline-milestone-step:152.v6e22b_8cfc66c
 pipeline-model-api:2.2289.v6f731d0a_02da_
-pipeline-model-definition:2.2277.v00573e73ddf1
-pipeline-model-extensions:2.2277.v00573e73ddf1
+pipeline-model-definition:2.2289.v6f731d0a_02da_
+pipeline-model-extensions:2.2289.v6f731d0a_02da_
 pipeline-stage-step:345.va_96187909426
-pipeline-stage-tags-metadata:2.2277.v00573e73ddf1
+pipeline-stage-tags-metadata:2.2289.v6f731d0a_02da_
 pipeline-utility-steps:3.810.va_7672d206740
 plain-credentials:199.v9f8e1f741799
 platformlabeler:3328.vb_e88232045e0
