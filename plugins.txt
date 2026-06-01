@@ -1,6 +1,6 @@
 PrioritySorter:936.v2c01c6b_84449
 adoptopenjdk:146.v1898676a_f04e
-analysis-model-api:14.8.0-976.v5097f60f61a_4
+analysis-model-api:14.10.0-980.v408a_383cb_94d
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
