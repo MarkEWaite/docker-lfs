@@ -157,7 +157,7 @@ variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
 view-job-filters:406.va_0ec67147ee2
 warnings-ng:13.10097.v277a_958a_b_c09
-woodstox-core-api:7.1.1-1.v4d297985f397
+woodstox-core-api:7.2.1-6.v3718a_a_11f5c4
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
