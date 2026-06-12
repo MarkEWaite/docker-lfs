@@ -4,7 +4,7 @@ variable "jdks_to_build" {
 }
 
 variable "windows_version_to_build" {
-  default = ["ltsc2019", "ltsc2022"]
+  default = ["ltsc2019", "ltsc2022", "ltsc2025"]
 }
 
 variable "default_jdk" {
@@ -68,7 +68,7 @@ variable "DEBIAN_VERSION" {
 }
 
 variable "RHEL_TAG" {
-  default = "9.8-1780900431"
+  default = "9.8-1779808651"
 }
 
 variable "RHEL_RELEASE_LINE" {
