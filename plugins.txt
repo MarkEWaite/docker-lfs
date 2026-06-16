@@ -1,5 +1,5 @@
 PrioritySorter:936.v2c01c6b_84449
-adoptopenjdk:146.v1898676a_f04e
+adoptopenjdk:162.v10ecf4271760
 analysis-model-api:14.12.0-992.v1093094f193e
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
