@@ -28,7 +28,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
 configuration-as-code:2089.v970a_0b_a_8cc6d
 coverage-badges-extension:234.v43c3ef3878b_c
-coverage:3.3277.v65df46531e43
+coverage:3.3278.va_04d3e352354
 credentials-binding:725.ve52b_2328a_fde
 credentials:1502.v5c95e620ddfe
 dark-theme:652.vea_da_dfea_e769
@@ -107,7 +107,7 @@ monitoring:2.8.0
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
-oss-symbols-api:463.vff8a_5631a_09d
+oss-symbols-api:465.v25d9fdc88c26
 parallel-test-executor:611.va_92b_d1852e52
 parameterized-trigger:893.va_383a_9b_a_4c11
 pipeline-build-step:584.vdb_a_2cc3a_d07a_
