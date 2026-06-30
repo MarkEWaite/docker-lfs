@@ -14,7 +14,7 @@ bouncycastle-api:2.30.1.84-291.v9f17b_21896e2
 branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
 build-timeout:1.40
-caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
+caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.2
