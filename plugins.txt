@@ -17,7 +17,7 @@ build-timeout:1.40
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.3
+cloudbees-bitbucket-branch-source:937.3.4
 cloudbees-folder:6.1100.ve9eed61d16c4
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -72,7 +72,7 @@ instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
 jackson2-api:2.22.0-439.vb_b_43658d6176
-jackson3-api:3.2.0-83.vfb_04cee1ea_0f
+jackson3-api:3.2.0-89.v014d02108ea_7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.9-19.v2b_a_5b_44d9a_1c
@@ -116,7 +116,7 @@ pipeline-github:2.8-191.cb_1a_07f10b_a_f
 pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:953.v23894ccf0079
 pipeline-groovy-lib:798.v5cc688825312
-pipeline-input-step:551.vdff487c5998c
+pipeline-input-step:560.v56198a_642157
 pipeline-maven-api:1735.v63b_5b_1b_d25d9
 pipeline-maven:1735.v63b_5b_1b_d25d9
 pipeline-milestone-step:152.v6e22b_8cfc66c
@@ -161,7 +161,7 @@ woodstox-core-api:7.2.1-6.v3718a_a_11f5c4
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4331.4333.v50a_b_076c5199
+workflow-cps:4350.vcc65d4958821
 workflow-durable-task-step:1479.v56e587f413a_7
 workflow-job:1571.1580.v18e46842c125
 workflow-multibranch:821.vc3b_4ea_780798
