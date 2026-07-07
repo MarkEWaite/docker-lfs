@@ -17,7 +17,7 @@ build-timeout:1.40
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.4
+cloudbees-bitbucket-branch-source:937.3.5
 cloudbees-folder:6.1100.ve9eed61d16c4
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
-configuration-as-code:2095.vef6db_3a_b_5b_9c
+configuration-as-code:2099.ve3a_6e23f4960
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3278.va_04d3e352354
 credentials-binding:725.ve52b_2328a_fde
