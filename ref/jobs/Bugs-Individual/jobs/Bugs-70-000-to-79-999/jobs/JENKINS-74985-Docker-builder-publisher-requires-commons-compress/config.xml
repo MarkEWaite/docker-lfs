@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1472.ve4d5eca_143c4">
+<flow-definition plugin="workflow-job@1520.v56d65e3b_4566">
   <actions>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72"/>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12">
       <jobProperties/>
       <triggers/>
       <parameters/>
@@ -12,7 +12,7 @@
   <description>[JENKINS-74985](https://issues.jenkins.io/browse/JENKINS-74985) Docker builder publisher reports `ClassNotFound: org.apache.commons.compress.archivers.ArchiveEntry` on 2.489</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4000.v5198556e9cea_">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4106.v7a_8a_8176d450">
     <script>pipeline {
     agent {
         label &apos;docker&apos;
@@ -22,7 +22,7 @@
             steps {
                 sh &quot;echo &apos;FROM jenkins/jenkins:lts&apos; &gt; Dockerfile&quot;
                 step([$class: &apos;DockerBuilderPublisher&apos;,
-                        cloud: &apos;mark-pc2&apos;,
+                        cloud: &apos;fedora-a&apos;,
                         dockerFileDirectory: &apos;.&apos;,
                         pushOnSuccess: false,
                         tagsString: &apos;my-image&apos;])
