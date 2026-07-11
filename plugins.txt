@@ -72,7 +72,7 @@ instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
 jackson2-api:2.22.0-439.vb_b_43658d6176
-jackson3-api:3.2.0-89.v014d02108ea_7
+jackson3-api:3.2.1-92.vd25c2e23c180
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.9-19.v2b_a_5b_44d9a_1c
