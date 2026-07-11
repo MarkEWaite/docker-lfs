@@ -17,7 +17,7 @@ build-timeout:1.40
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.5
+cloudbees-bitbucket-branch-source:937.3.6
 cloudbees-folder:6.1100.ve9eed61d16c4
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
-configuration-as-code:2099.ve3a_6e23f4960
+configuration-as-code:2100.vb_fd699d2a_09c
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3278.va_04d3e352354
 credentials-binding:728.v902a_273b_8947
@@ -39,7 +39,7 @@ docker-commons:472.vee120e23d3a_c
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1324.v2fb_b_df97fe1d
 docker-workflow:634.vedc7242b_eda_7
-durable-task:683.vc64df45d8780
+durable-task:686.v80ff80875b_82
 echarts-api:6.0.0-1287.vfd24c22a_3d00
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 elastic-axis:615.vb_f7c20ec040e
@@ -72,7 +72,7 @@ instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
 jackson2-api:2.22.0-439.vb_b_43658d6176
-jackson3-api:3.2.0-89.v014d02108ea_7
+jackson3-api:3.2.1-92.vd25c2e23c180
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.9-19.v2b_a_5b_44d9a_1c
