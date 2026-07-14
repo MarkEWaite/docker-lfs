@@ -53,7 +53,7 @@ RUN New-Item -ItemType Directory -Path C:/temp | Out-Null ; `
     Remove-Item -Path C:\temp -Recurse | Out-Null
 
 # Jenkins version being bundled in this docker image
-ARG JENKINS_VERSION=2.572
+ARG JENKINS_VERSION=2.573
 # Can be used to customize where jenkins.war get downloaded from
 ARG WAR_URL=https://get.jenkins.io/war/${JENKINS_VERSION}/jenkins.war
 ENV WAR_URL=${WAR_URL}
@@ -68,8 +68,8 @@ RUN New-Item -ItemType Directory -Path C:/war | Out-Null ; `
 COPY jenkins.io-2026.key /war/jenkins-key.pub
 
 RUN & 'C:/Program Files/GnuPG/bin/gpg.exe' --version ; `
-    & 'C:/Program Files/GnuPG/bin/gpg.exe' --import C:/war/jenkins-key.pub ; `
-    & 'C:/Program Files/GnuPG/bin/gpg.exe' --verify --trust-model direct C:/war/jenkins.war.asc C:/war/jenkins.war
+    & 'C:/Program Files/GnuPG/bin/gpg.exe' --dearmor --output C:/war/jenkins-key.pgp C:/war/jenkins-key.pub ; `
+    & 'C:/Program Files/GnuPG/bin/gpgv.exe' --keyring C:/war/jenkins-key.pgp C:/war/jenkins.war.asc C:/war/jenkins.war
 
 FROM mcr.microsoft.com/windows/servercore:"${WINDOWS_VERSION}" AS controller
 
@@ -145,7 +145,7 @@ COPY jenkins.ps1 C:/ProgramData/Jenkins
 # See https://github.com/jenkinsci/plugin-installation-manager-tool#cli-options for information on parameters for jenkins-plugin-cli.ps1 for installing plugins into the docker image
 COPY jenkins-plugin-cli.ps1 C:/ProgramData/Jenkins
 
-ARG JENKINS_VERSION=2.572
+ARG JENKINS_VERSION=2.573
 ENV JENKINS_VERSION=${JENKINS_VERSION}
 
 ENTRYPOINT ["powershell.exe", "-f", "C:/ProgramData/Jenkins/jenkins.ps1"]
