@@ -94,7 +94,7 @@ jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
-junit:1413.v736fa_5b_61d80
+junit:1415.vcb_3245e24402
 label-verifier:116.vb_845759df630
 mailer:534.v1b_36f5864073
 markdown-formatter:346.v3c6828ddd39e
