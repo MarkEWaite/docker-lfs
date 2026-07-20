@@ -40,7 +40,7 @@ docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1324.v2fb_b_df97fe1d
 docker-workflow:634.vedc7242b_eda_7
 durable-task:686.v80ff80875b_82
-echarts-api:6.0.0-1287.vfd24c22a_3d00
+echarts-api:6.1.0-1306.vcee1648c16a_4
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:637.vd878e68178f8
@@ -110,7 +110,7 @@ okhttp-api:5.3.2-200.vedb_720a_cf1f8
 oss-symbols-api:465.v25d9fdc88c26
 parallel-test-executor:611.va_92b_d1852e52
 parameterized-trigger:893.va_383a_9b_a_4c11
-pipeline-build-step:584.vdb_a_2cc3a_d07a_
+pipeline-build-step:599.v4b_67ea_11b_152
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-191.cb_1a_07f10b_a_f
 pipeline-graph-analysis:254.v0f63a_a_447dca_
