@@ -49,8 +49,8 @@
       <command>failures=0
 which wget | grep -q -s wget || failures=$(( $failures + 1 ))
 which curl | grep -q -s curl || failures=$(( $failures + 1 ))
-wget -O mwaite-wget.html https://home.markwaite.net/~mwaite/
-curl -o mwaite-curl.html https://home.markwaite.net/~mwaite/
+wget -O mwaite-wget.html http://testing-e.markwaite.net/~mwaite/
+curl -o mwaite-curl.html http://testing-e.markwaite.net/~mwaite/
 rm -f *.html
 exit $failures</command>
     </hudson.tasks.Shell>
