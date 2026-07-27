@@ -28,7 +28,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.xshell.XShellBuilder plugin="xshell@0.11-rc113.b_502717d1333">
-      <commandLine>curl -L https://home.markwaite.net/~mwaite/index.html</commandLine>
+      <commandLine>curl -L http://testing-e.markwaite.net/~mwaite/index.html</commandLine>
       <workingDir></workingDir>
       <executeFromWorkingDir>false</executeFromWorkingDir>
       <regexToKill></regexToKill>
