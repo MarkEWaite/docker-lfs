@@ -71,7 +71,7 @@ implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
-jackson2-api:2.22.0-439.vb_b_43658d6176
+jackson2-api:2.22.1-443.vc91f592333c4
 jackson3-api:3.2.1-92.vd25c2e23c180
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -90,7 +90,7 @@ jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20260719-223.va_81f828cdb_58
 json-path-api:3.0.0-218.vcd4dd1355de2
-jsoup:1.22.2-95.vc5d00f1eb_42d
+jsoup:1.23.1-103.v4fde9422cc6f
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
@@ -117,8 +117,8 @@ pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:980.vb_db_0b_e5f683c
 pipeline-groovy-lib:798.v5cc688825312
 pipeline-input-step:560.v56198a_642157
-pipeline-maven-api:1735.v63b_5b_1b_d25d9
-pipeline-maven:1735.v63b_5b_1b_d25d9
+pipeline-maven-api:1760.v9a_a_e6dcb_0444
+pipeline-maven:1760.v9a_a_e6dcb_0444
 pipeline-milestone-step:152.v6e22b_8cfc66c
 pipeline-model-api:2.2291.v2934911987b_6
 pipeline-model-definition:2.2291.v2934911987b_6
