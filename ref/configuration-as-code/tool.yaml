@@ -106,8 +106,8 @@ tool:
               toolHome: "/usr/local/openjdk8"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk8u492-b09"
-              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u492b09.tar.gz"
+              subdir: "jdk8u502-b07"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u502b07.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
