@@ -28,7 +28,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
 configuration-as-code:2108.v02b_430db_0cf5
 coverage-badges-extension:234.v43c3ef3878b_c
-coverage:3.3305.vf8df16102f76
+coverage:3.3311.v42c5a_f929e3e
 credentials-binding:728.v902a_273b_8947
 credentials:1506.v948b_b_b_7dec44
 dark-theme:652.vea_da_dfea_e769
@@ -38,7 +38,7 @@ display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:477.v289085a_b_6896
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1324.v2fb_b_df97fe1d
-docker-workflow:634.vedc7242b_eda_7
+docker-workflow:647.vf474049b_b_303
 durable-task:686.v80ff80875b_82
 echarts-api:6.1.0-1306.vcee1648c16a_4
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
@@ -49,7 +49,7 @@ envinject-api:1.241.vdd714803b_403
 envinject:2.941.v351a_20c0a_3ca_
 font-awesome-api:7.3.1-1013.v0835a_879ec6d
 forensics-api:4.1891.v5e60f3377506
-git-client:6.6.1
+git-client:incrementals;org.jenkins-ci.plugins;6.7.0-rc3901.1a_4b_a_2dd84a_c
 git-forensics:4.2416.v46d45e29f28f
 git-parameter:462.463.v496a_59f698e5
 git-server:137.ve0060b_432302
@@ -71,7 +71,7 @@ implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
-jackson2-api:2.22.0-439.vb_b_43658d6176
+jackson2-api:2.22.1-443.vc91f592333c4
 jackson3-api:3.2.1-92.vd25c2e23c180
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -90,7 +90,7 @@ jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20260719-223.va_81f828cdb_58
 json-path-api:3.0.0-218.vcd4dd1355de2
-jsoup:1.22.2-95.vc5d00f1eb_42d
+jsoup:1.23.1-103.v4fde9422cc6f
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
@@ -117,8 +117,8 @@ pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:980.vb_db_0b_e5f683c
 pipeline-groovy-lib:798.v5cc688825312
 pipeline-input-step:560.v56198a_642157
-pipeline-maven-api:1735.v63b_5b_1b_d25d9
-pipeline-maven:1735.v63b_5b_1b_d25d9
+pipeline-maven-api:1760.v9a_a_e6dcb_0444
+pipeline-maven:1760.v9a_a_e6dcb_0444
 pipeline-milestone-step:152.v6e22b_8cfc66c
 pipeline-model-api:2.2291.v2934911987b_6
 pipeline-model-definition:2.2291.v2934911987b_6

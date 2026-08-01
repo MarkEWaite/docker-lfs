@@ -56,11 +56,11 @@ jenkins:
       : verifiers:
         - or:
             verifiers:
-            - shellScriptVerifier:
-                script: "git --version 2>&1 | grep -F 2.54"
             - regexNameVerifier:
                 regexExpression: "(cb-pc.*|diane-.*|mark-pc[3-9].*|win-.*)"
-  labelString: "git-2.52 highmem"
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.54"
+  labelString: "git-2.54 highmem"
   log:
     recorders:
     - loggers:
