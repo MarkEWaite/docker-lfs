@@ -160,10 +160,11 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
                   "-Djenkins.plugins.git.AbstractGitSCMSource.cacheRootDir=/var/cache/jenkins/git-cache",
-                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
+                  "-Djenkins.slaves.StandardOutputSwapper.disabled=true",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
                 ])
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
