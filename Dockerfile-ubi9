@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.575-jdk21
+FROM jenkins/jenkins:2.568.1-ubi9-jdk25
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -10,20 +10,15 @@ ENV CASC_JENKINS_CONFIG=${JENKINS_HOME}/configuration-as-code/
 USER root
 
 # Install and check that expected utilities are available in the image
-# hadolint ignore=DL3008
-RUN apt-get clean \
-  && apt-get update \
-  && apt-get install -y auto-apt-proxy --no-install-recommends \
-  && auto-apt-proxy \
-  && apt-get install -y --no-install-recommends \
-        gnupg \
-        make \
-        procps \
-        wget \
-  && rm -rf /var/lib/apt/lists/* \
-  && test -x /usr/bin/pgrep \
-  && test -x /usr/bin/wget  \
-  && test -x /usr/local/bin/git-lfs
+RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs --allowerasing -y \
+    gnupg \
+    make \
+    procps \
+    wget \
+    && dnf clean --disableplugin=subscription-manager all \
+    && test -x /usr/bin/pgrep \
+    && test -x /usr/bin/wget  \
+    && test -x /usr/local/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
