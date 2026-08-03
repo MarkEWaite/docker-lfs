@@ -18,7 +18,7 @@ caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.6
-cloudbees-folder:6.1100.ve9eed61d16c4
+cloudbees-folder:6.1106.v3a_d9a_6d2465e
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-86.v905b_77d84797
@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
-configuration-as-code:2108.v02b_430db_0cf5
+configuration-as-code:2114.v67a_a_18696b_8f
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3311.v42c5a_f929e3e
 credentials-binding:728.v902a_273b_8947
@@ -61,7 +61,7 @@ github-branch-source:1967.1970.vd86979736546
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-126.vd066b_d896159
-gitlab-branch-source:740.v04f287f9194d
+gitlab-branch-source:743.ve0c8154a_8da_b_
 groovy-postbuild:303.v5fe3da_6233f0
 gson-api:2.14.0-201.v8eefe5515533
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
@@ -127,13 +127,13 @@ pipeline-stage-step:345.va_96187909426
 pipeline-stage-tags-metadata:2.2291.v2934911987b_6
 pipeline-utility-steps:3.810.va_7672d206740
 plain-credentials:199.v9f8e1f741799
-platformlabeler:3411.v6da_fa_fa_12680
+platformlabeler:3421.vcc413d2b_20b_f
 plot:2.4.0
 plugin-util-api:7.1341.v039f146993d9
 pollscm:1.9
 preSCMbuildstep:115.vf9808414429d
 prism-api:1.30.0-741.v034eb_0b_0a_a_fa_
-promoted-builds:992.va_00888f21b_74
+promoted-builds:1029.v979cc7835e39
 resource-disposer:0.25
 run-condition:276.v97298f3a_cd51
 scm-api:728.vc30dcf7a_0df5
