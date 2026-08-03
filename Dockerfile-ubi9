@@ -15,6 +15,7 @@ RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=
     make \
     procps \
     wget \
+
     # && dnf clean --disableplugin=subscription-manager all \
     # && test -x /usr/bin/pgrep \
     # && test -x /usr/bin/wget  \
