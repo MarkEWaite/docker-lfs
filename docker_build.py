@@ -36,6 +36,8 @@ def get_all_branches():
 #-----------------------------------------------------------------------
 
 def get_dockerfile(branch_name):
+    if "ubi9" in branch_name:
+        return "Dockerfile-ubi9"
     if "jdk25" in branch_name:
         return "Dockerfile-jdk25"
     if "jdk21" in branch_name:
@@ -44,8 +46,6 @@ def get_dockerfile(branch_name):
         return "Dockerfile-alpine"
     if "slim" in branch_name:
         return "Dockerfile-slim"
-    if "ubi9" in branch_name:
-        return "Dockerfile-ubi9"
     if "weekly" in branch_name:
         return "Dockerfile-jdk25"
     return "Dockerfile-ubi9"

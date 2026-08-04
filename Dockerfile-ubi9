@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.568.1-ubi9-jdk25
+FROM jenkins/jenkins:2.568.1-rhel-ubi9-jdk21
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
@@ -11,14 +11,15 @@ USER root
 
 # Install and check that expected utilities are available in the image
 RUN dnf install --disableplugin=subscription-manager --setopt=install_weak_deps=0 --setopt=tsflags=nodocs --allowerasing -y \
+    git-lfs \
     gnupg \
     make \
     procps \
     wget \
     && dnf clean --disableplugin=subscription-manager all \
+    && test -x /usr/bin/wget \
     && test -x /usr/bin/pgrep \
-    && test -x /usr/bin/wget  \
-    && test -x /usr/local/bin/git-lfs
+    && test -x /usr/bin/git-lfs
 
 # Create cache directory for git repository mirrors
 RUN mkdir -p /var/cache/jenkins && chown jenkins:jenkins /var/cache/jenkins
