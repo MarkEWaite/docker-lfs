@@ -334,7 +334,11 @@ unclassified:
     - atoms: "linux-amd64"
       expression: "linux && amd64"
     - atoms: "windows-2019"
-      expression: "docker-windows"
+      expression: "windows"
+    - atoms: "windows-2022"
+      expression: "windows"
+    - atoms: "windows-2025"
+      expression: "windows"
     # All agents in this config can satisfy either spot or non-spot label
     - atoms: "spot"
       expression: "!built-in"
