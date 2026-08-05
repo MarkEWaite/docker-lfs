@@ -4,7 +4,7 @@ analysis-model-api:14.14.0-1004.vf53c9efb_f455
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6.2-199.vc3c04d033fcc
+apache-httpcomponents-client-5-api:5.6.3-202.v310919c85b_f6
 asm-api:9.10.1-216.va_9256d3b_844b_
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.605.v7a_3387b_97a_b_6
@@ -94,7 +94,7 @@ jsoup:1.23.1-103.v4fde9422cc6f
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
-junit:1416.vd753e036de5e
+junit:1418.v67a_81935603c
 label-verifier:116.vb_845759df630
 mailer:534.v1b_36f5864073
 markdown-formatter:346.v3c6828ddd39e
