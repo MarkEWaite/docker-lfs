@@ -26,7 +26,7 @@ commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
-configuration-as-code:2114.v67a_a_18696b_8f
+configuration-as-code:2115.vf6de120eef70
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3311.v42c5a_f929e3e
 credentials-binding:728.v902a_273b_8947
@@ -161,7 +161,7 @@ woodstox-core-api:7.2.1-6.v3718a_a_11f5c4
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4360.v2020e8819a_d6
+workflow-cps:4362.v9b_991749898e
 workflow-durable-task-step:1479.v56e587f413a_7
 workflow-job:1590.v49101d088542
 workflow-multibranch:841.vec5b_9e1806ec
