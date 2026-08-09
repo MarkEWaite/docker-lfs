@@ -13,7 +13,7 @@ bootstrap5-api:5.3.8-1048.va_c299057e35c
 bouncycastle-api:2.30.1.84-291.v9f17b_21896e2
 branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
-build-timeout:1.40
+build-timeout:1.41
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
