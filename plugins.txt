@@ -50,7 +50,7 @@ envinject:2.941.v351a_20c0a_3ca_
 font-awesome-api:7.3.1-1013.v0835a_879ec6d
 forensics-api:4.1923.v445c56df9b_2e
 git-client:incrementals;org.jenkins-ci.plugins;6.7.0-rc3901.1a_4b_a_2dd84a_c
-git-forensics:4.2416.v46d45e29f28f
+git-forensics:4.2463.vf6fecb_444a_b_3
 git-parameter:462.463.v496a_59f698e5
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
