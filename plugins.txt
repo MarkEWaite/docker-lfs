@@ -97,7 +97,7 @@ junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1418.v67a_81935603c
 label-verifier:116.vb_845759df630
 mailer:534.v1b_36f5864073
-markdown-formatter:346.v3c6828ddd39e
+markdown-formatter:350.v70f9a_06e71fc
 matrix-project:905.vcc6831e8760a_
 maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
