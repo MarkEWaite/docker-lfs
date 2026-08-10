@@ -4,7 +4,7 @@ analysis-model-api:14.16.0-1014.v2802998b_7789
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6.3-202.v310919c85b_f6
+apache-httpcomponents-client-5-api:5.6.4-204.vfa_29df89ffcf
 asm-api:9.10.1-216.va_9256d3b_844b_
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.605.v7a_3387b_97a_b_6
@@ -17,7 +17,7 @@ build-timeout:1.41
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.6
+cloudbees-bitbucket-branch-source:937.3.7
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -30,7 +30,7 @@ configuration-as-code:2116.v98dde145b_dce
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3325.v2f3dd167a_b_e5
 credentials-binding:728.v902a_273b_8947
-credentials:1506.v948b_b_b_7dec44
+credentials:1511.v2e3cb_0008ef0
 dark-theme:652.vea_da_dfea_e769
 data-tables-api:2.3.8-1570.v1cb_1cd2a_0fb_c
 description-setter:264.v1957f215dcd5
@@ -139,8 +139,8 @@ run-condition:276.v97298f3a_cd51
 scm-api:728.vc30dcf7a_0df5
 script-security:1412.v7737b_3405f86
 snakeyaml-api:2.5-149.v72471e9c6371
-snakeyaml-engine-api:3.0.1-5.vd98ea_ff3b_92e
-ssh-agent:417.v1d50b_f28f0e0
+snakeyaml-engine-api:3.1.1-12.v4320c7d6f89c
+ssh-agent:418.v59904cc02b_71
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
 sshd:3.384.vc89b_5e138cf9
@@ -155,9 +155,9 @@ token-macro:477.vd4f0dc3cb_cf1
 trilead-api:2.284.v1974ea_324382
 variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
-view-job-filters:406.va_0ec67147ee2
-warnings-ng:13.10192.v1d5a_0b_6da_fa_5
-woodstox-core-api:7.2.1-6.v3718a_a_11f5c4
+view-job-filters:408.vb_ca_5e798e5b_5
+warnings-ng:13.10212.v247e4d8d9430
+woodstox-core-api:7.2.2-10.vcb_629759b_2c2
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
