@@ -76,7 +76,7 @@ tool:
               label: "git-2.51 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.55.0.4"
+      name: "git-2.55.0"
       properties:
       - installSource:
           installers:
@@ -86,7 +86,7 @@ tool:
               toolHome: "C:\\tools\\MinGit-2.55.0.4\\cmd\\git.exe"
           - command:
               command: "true"
-              label: "git-2.54 && linux"
+              label: "git-2.55 && linux"
               toolHome: "/usr/bin/git"
     - name: "jgit"
     - name: "jgitapache"
