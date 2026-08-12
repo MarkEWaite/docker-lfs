@@ -26,7 +26,7 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.54.0\\cmd\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.55.0.4\\cmd\\git.exe"
           - command:
               command: "true"
               label: "freebsd"
@@ -43,11 +43,11 @@ tool:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.54.0\\cmd\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.55.0.4\\cmd\\git.exe"
           - zip:
               label: "windows && amd64"
               subdir: "cmd\\git.exe"
-              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.54.0-64-bit.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.55.0.4-64-bit.zip"
     - home: "git"
       name: "git-2.43.0"
       properties:
@@ -76,14 +76,14 @@ tool:
               label: "git-2.51 && linux"
               toolHome: "/usr/bin/git"
     - home: "git"
-      name: "git-2.54.0"
+      name: "git-2.55.0.4"
       properties:
       - installSource:
           installers:
           - batchFile:
               command: "exit 0"
               label: "windows"
-              toolHome: "C:\\tools\\MinGit-2.54.0\\cmd\\git.exe"
+              toolHome: "C:\\tools\\MinGit-2.55.0.4\\cmd\\git.exe"
           - command:
               command: "true"
               label: "git-2.54 && linux"
