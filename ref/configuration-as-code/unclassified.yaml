@@ -98,8 +98,6 @@ unclassified:
         isReplaceAll: true
         name: "Jenkins Maven global settings file"
         providerId: "org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig"
-  globalDefaultFlowDurabilityLevel:
-    durabilityHint: PERFORMANCE_OPTIMIZED
   globalLibraries:
     libraries:
     - cachingConfiguration:
