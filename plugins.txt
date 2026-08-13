@@ -17,7 +17,7 @@ build-timeout:1.41
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.7
+cloudbees-bitbucket-branch-source:937.3.8
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -37,7 +37,7 @@ description-setter:264.v1957f215dcd5
 display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:477.v289085a_b_6896
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
-docker-plugin:1324.v2fb_b_df97fe1d
+docker-plugin:1327.v9524f1ee134e
 docker-workflow:647.vf474049b_b_303
 durable-task:686.v80ff80875b_82
 echarts-api:6.1.0-1306.vcee1648c16a_4
@@ -120,11 +120,11 @@ pipeline-input-step:560.v56198a_642157
 pipeline-maven-api:1760.v9a_a_e6dcb_0444
 pipeline-maven:1760.v9a_a_e6dcb_0444
 pipeline-milestone-step:152.v6e22b_8cfc66c
-pipeline-model-api:2.2291.v2934911987b_6
-pipeline-model-definition:2.2291.v2934911987b_6
-pipeline-model-extensions:2.2291.v2934911987b_6
+pipeline-model-api:2.2293.v6e7193cec599
+pipeline-model-definition:2.2293.v6e7193cec599
+pipeline-model-extensions:2.2293.v6e7193cec599
 pipeline-stage-step:345.va_96187909426
-pipeline-stage-tags-metadata:2.2291.v2934911987b_6
+pipeline-stage-tags-metadata:2.2293.v6e7193cec599
 pipeline-utility-steps:3.810.va_7672d206740
 plain-credentials:199.v9f8e1f741799
 platformlabeler:3421.vcc413d2b_20b_f
