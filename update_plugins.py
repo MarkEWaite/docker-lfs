@@ -67,7 +67,7 @@ Build docker images.   Use -h for help."""
                 f.write(data)
             get_download_updates_command = docker_build.get_download_updates_command(base_jenkins_version)
             subprocess.check_call(get_download_updates_command)
-            message = 'Use ' + new_plugin.replace('-', ' ').replace(':', ' plugin ')
+            message = 'Use ' + new_plugin.replace('-', ' ').replace(':', ' plugin ').replace('plugin plugin', 'plugin ')
             subprocess.check_call(['git', 'commit', '-m', message, 'plugins.txt', os.path.join('ref', 'plugins')])
 
 #-----------------------------------------------------------------------
