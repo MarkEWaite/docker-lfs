@@ -12,7 +12,7 @@ variable "default_jdk" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.576"
+  default = "2.577"
 }
 
 variable "WAR_URL" {
@@ -68,7 +68,7 @@ variable "DEBIAN_VERSION" {
 }
 
 variable "RHEL_TAG" {
-  default = "9.8-1786339177"
+  default = "9.8-1786927941"
 }
 
 variable "RHEL_RELEASE_LINE" {
