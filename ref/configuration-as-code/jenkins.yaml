@@ -37,20 +37,26 @@ jenkins:
     properties:
     - ? ''
       : verifiers:
-        - shellScriptVerifier:
-            script: "git --version 2>&1 | grep -F 2.52"
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.52"
   - name: "git-2.53"
     properties:
     - ? ''
       : verifiers:
-        - shellScriptVerifier:
-          script: "git --version 2>&1 | grep -F 2.53"
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.53"
   - name: "git-2.54"
     properties:
     - ? ''
       : verifiers:
-        - shellScriptVerifier:
-          script: "git --version 2>&1 | grep -F 2.54"
+        - or:
+            verifiers:
+            - shellScriptVerifier:
+                script: "git --version 2>&1 | grep -F 2.54"
   - name: "git-2.55"
     properties:
     - ? ''
