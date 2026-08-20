@@ -71,7 +71,7 @@ implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
 jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
-jackson2-api:2.22.1-443.vc91f592333c4
+jackson2-api:2.22.2-445.vdc613f1d8012
 jackson3-api:3.2.2-96.v599957900a_1a_
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -140,7 +140,7 @@ scm-api:728.vc30dcf7a_0df5
 script-security:1412.v7737b_3405f86
 snakeyaml-api:2.5-149.v72471e9c6371
 snakeyaml-engine-api:3.1.1-12.v4320c7d6f89c
-ssh-agent:422.v777ca_6747662
+ssh-agent:424.vfc0ff25503b_4
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
 sshd:3.384.vc89b_5e138cf9
