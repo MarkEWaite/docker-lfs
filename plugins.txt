@@ -94,11 +94,11 @@ jsoup:1.23.1-103.v4fde9422cc6f
 jspecify-api:1.0.0-1.ve7231e6d0d15
 junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
-junit:1422.v580465cc5d44
+junit:1424.vc64a_edde7777
 label-verifier:116.vb_845759df630
 mailer:534.v1b_36f5864073
 markdown-formatter:350.v70f9a_06e71fc
-matrix-project:905.vcc6831e8760a_
+matrix-project:917.v22eda_817646e
 maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.19.0-192.v2b_a_7b_2c1dc71
