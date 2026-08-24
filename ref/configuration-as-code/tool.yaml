@@ -141,9 +141,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-17.0.20.1+1 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-17 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-17.0.20.1+1"
+              toolHome: "c:\\tools\\jdk-17"
           - command:
               command: "true"
               label: "freebsd"
