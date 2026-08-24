@@ -185,23 +185,23 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-25.0.4+7 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-25.0.4.1+1 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-25.0.4+7"
+              toolHome: "c:\\tools\\jdk-25.0.4.1+1"
           - command:
               command: "true"
               label: "freebsd"
               toolHome: "/usr/local/openjdk25"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk-25.0.4+7"
-              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.4_7.tar.gz"
+              subdir: "jdk-25.0.4.1+1"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.4.1_1.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-25 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-25"
           - adoptOpenJdkInstaller:
-              id: "jdk-25.0.3+9"
+              id: "jdk-25.0.4.1+1"
   maven:
     installations:
     - name: "maven-latest"
