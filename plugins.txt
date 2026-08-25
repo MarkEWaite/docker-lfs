@@ -17,7 +17,7 @@ build-timeout:1.41
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
 checks-api:415.vf022234a_931d
 cloud-stats:423.v63f017a_f582c
-cloudbees-bitbucket-branch-source:937.3.9
+cloudbees-bitbucket-branch-source:937.3.10
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
 command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
@@ -92,7 +92,7 @@ json-api:20260814-226.v20f9685d642c
 json-path-api:3.0.0-218.vcd4dd1355de2
 jsoup:1.23.1-103.v4fde9422cc6f
 jspecify-api:1.0.0-1.ve7231e6d0d15
-junit-attachments:367.v30757752b_2b_f
+junit-attachments:378.vc1dc9200b_6b_a_
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1424.vc64a_edde7777
 label-verifier:116.vb_845759df630
