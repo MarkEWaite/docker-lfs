@@ -55,7 +55,7 @@ git-parameter:462.463.v496a_59f698e5
 git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
 git:5.10.1
-gitea:282.v31f586d2cb_30
+gitea:283.v14b_179495971
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1983.vfa_27ed961853
 github-scm-filter-aged-refs:59.vc6b_39c26988c
