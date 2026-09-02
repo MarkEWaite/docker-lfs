@@ -15,7 +15,7 @@ branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
 build-timeout:1.41
 caffeine-api:3.2.4-208.v7e2da_a_7db_82b_
-checks-api:415.vf022234a_931d
+checks-api:422.vc7e8b_51488c6
 cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.10
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
