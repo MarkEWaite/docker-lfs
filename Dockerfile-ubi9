@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.579-rhel-ubi9-jdk21
+FROM jenkins/jenkins:2.580-rhel-ubi9-jdk21
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
