@@ -12,7 +12,7 @@ variable "default_jdk" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.578"
+  default = "2.580"
 }
 
 variable "WAR_URL" {
@@ -52,11 +52,11 @@ variable "ALPINE_SHORT_TAG" {
 }
 
 variable "JAVA21_VERSION" {
-  default = "21.0.12_8"
+  default = "21.0.12.1_1"
 }
 
 variable "JAVA25_VERSION" {
-  default = "25.0.4_7"
+  default = "25.0.4.1_1"
 }
 
 variable "DEBIAN_RELEASE_LINE" {
@@ -64,11 +64,11 @@ variable "DEBIAN_RELEASE_LINE" {
 }
 
 variable "DEBIAN_VERSION" {
-  default = 20260803
+  default = 20260824
 }
 
 variable "RHEL_TAG" {
-  default = "9.8-1786985871"
+  default = "9.8-1788245065"
 }
 
 variable "RHEL_RELEASE_LINE" {
