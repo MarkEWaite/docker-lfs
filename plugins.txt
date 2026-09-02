@@ -10,7 +10,7 @@ authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.605.v7a_3387b_97a_b_6
 basic-branch-build-strategies:317.v85b_331d6cc42
 bootstrap5-api:5.3.8-1048.va_c299057e35c
-bouncycastle-api:2.30.1.84-291.v9f17b_21896e2
+bouncycastle-api:2.30.1.85.2-304.v4b_5b_62e59a_a_7
 branch-api:2.1280.v0d4e5b_b_460ef
 build-name-setter:2.5.1
 build-timeout:1.41
