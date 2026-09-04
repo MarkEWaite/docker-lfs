@@ -19,7 +19,6 @@ checks-api:422.vc7e8b_51488c6
 cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.10
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
-command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-89.v706d5e672f99
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
@@ -38,7 +37,6 @@ display-url-api:2.217.va_6b_de84cc74b_
 docker-commons:477.v289085a_b_6896
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1327.v9524f1ee134e
-docker-workflow:653.v2f2c08eff0ec
 durable-task:686.v80ff80875b_82
 echarts-api:6.1.0-1306.vcee1648c16a_4
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
@@ -52,7 +50,6 @@ forensics-api:4.1923.v445c56df9b_2e
 git-client:incrementals;org.jenkins-ci.plugins;6.7.0-rc3901.1a_4b_a_2dd84a_c
 git-forensics:4.2463.vf6fecb_444a_b_3
 git-parameter:462.463.v496a_59f698e5
-git-server:137.ve0060b_432302
 git-version-monitor:41.v0cfdf922b_b_0c
 git:5.10.1
 gitea:283.v14b_179495971
@@ -78,10 +75,7 @@ jakarta-mail-api:2.1.5-1
 jakarta-xml-bind-api:4.0.9-19.v2b_a_5b_44d9a_1c
 javadoc:354.vee1a_660b_4990
 javax-activation-api:1.2.0-8
-javax-mail-api:1.6.2-11
 jaxb:2.3.9-143.v5979df3304e6
-jdk-tool:83.v417146707a_3d
-jersey2-api:2.48-180.ve47b_264f849b_
 jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.13.0-141.vd58b_a_9592b_6c
 job-dsl:3732.v9a_c49a_61a_313
@@ -113,7 +107,6 @@ parameterized-trigger:893.va_383a_9b_a_4c11
 pipeline-build-step:601.v6d4c6d1a_9dc7
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-191.cb_1a_07f10b_a_f
-pipeline-graph-analysis:254.v0f63a_a_447dca_
 pipeline-graph-view:1013.v9f83fd83c063
 pipeline-groovy-lib:805.va_fc79344957d
 pipeline-input-step:560.v56198a_642157
