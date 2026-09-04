@@ -4,10 +4,6 @@
   <description></description>
   <displayName>Weather Samples</displayName>
   <properties>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@528.v7c193a_0b_e67c">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.21"/>
-    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@1235.v2db_ddd9f797b">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>

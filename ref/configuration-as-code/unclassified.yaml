@@ -351,8 +351,6 @@ unclassified:
     localRepository: "default"
   naginatorPublisher:
     regexpTimeoutMs: 30000
-  pipeline-model-docker:
-    dockerLabel: "docker"
   pollSCM:
     pollingThreadCount: 7
   priorityConfiguration:
