@@ -77,7 +77,6 @@ javadoc:354.vee1a_660b_4990
 javax-activation-api:1.2.0-8
 jaxb:2.3.9-143.v5979df3304e6
 jdk-tool:83.v417146707a_3d
-jersey2-api:2.48-180.ve47b_264f849b_
 jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.13.0-141.vd58b_a_9592b_6c
 job-dsl:3732.v9a_c49a_61a_313
