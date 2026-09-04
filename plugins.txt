@@ -19,7 +19,6 @@ checks-api:422.vc7e8b_51488c6
 cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.10
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
-command-launcher:134.v025a_5fcf9dea_
 commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-89.v706d5e672f99
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
