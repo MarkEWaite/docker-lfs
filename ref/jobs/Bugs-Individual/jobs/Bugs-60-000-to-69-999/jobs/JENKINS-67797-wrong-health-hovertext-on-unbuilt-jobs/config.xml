@@ -4,10 +4,6 @@
   <description>[JENKINS-67797](https://issues.jenkins.io/browse/JENKINS-67797) notes that the hover text of the weather icon reports &quot;100%&quot; when the job has not been built. </description>
   <displayName>JENKINS-67797 wrong health hover text on unbuilt jobs</displayName>
   <properties>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.28">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.19"/>
-    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.10.0">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>

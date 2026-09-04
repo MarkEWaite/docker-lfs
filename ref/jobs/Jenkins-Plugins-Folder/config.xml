@@ -26,10 +26,6 @@
         <comparator class="org.jenkinsci.plugins.configfiles.ConfigByIdComparator"/>
       </configs>
     </org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@563.vd5d2e5c4007f">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@419.v8e3cd84ef49c"/>
-    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
     <org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="pipeline-groovy-lib@652.vc722f7a_cf8c2">
       <libraries>
         <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
