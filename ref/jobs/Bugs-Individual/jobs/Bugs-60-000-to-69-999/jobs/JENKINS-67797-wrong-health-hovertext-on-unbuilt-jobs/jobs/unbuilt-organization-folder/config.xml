@@ -21,10 +21,6 @@
         </com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger>
       </templates>
     </jenkins.branch.OrganizationChildTriggersProperty>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.28">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.19"/>
-    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
     <jenkins.branch.NoTriggerOrganizationFolderProperty>
       <branches>.*</branches>
     </jenkins.branch.NoTriggerOrganizationFolderProperty>
