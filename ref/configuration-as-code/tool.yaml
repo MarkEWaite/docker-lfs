@@ -6,16 +6,16 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using tools\\apache-ant-1.10.17 Ant for windows'"
+              command: "echo 'Using tools\\apache-ant-1.10.18 Ant for windows'"
               label: "windows"
-              toolHome: "C:\\tools\\apache-ant-1.10.17"
+              toolHome: "C:\\tools\\apache-ant-1.10.18"
           - command:
-              command: "echo 'Using tools/apache-ant-1.10.17 Ant for jagent && !windows'"
+              command: "echo 'Using tools/apache-ant-1.10.18 Ant for jagent && !windows'"
               label: "jagent && !windows"
-              toolHome: "/home/jagent/tools/apache-ant-1.10.17"
+              toolHome: "/home/jagent/tools/apache-ant-1.10.18"
           - zip:
-              subdir: "apache-ant-1.10.17"
-              url: "http://testing-e.markwaite.net/~mwaite/ant/apache-ant-1.10.17-bin.zip"
+              subdir: "apache-ant-1.10.18"
+              url: "http://testing-e.markwaite.net/~mwaite/ant/apache-ant-1.10.18-bin.zip"
   git:
     installations:
     - home: "git"
