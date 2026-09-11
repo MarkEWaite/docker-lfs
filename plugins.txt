@@ -59,7 +59,7 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-126.vd066b_d896159
 gitlab-branch-source:743.ve0c8154a_8da_b_
-groovy-postbuild:309.vb_6c6100a_d854
+groovy-postbuild:310.v0c5b_924e439f
 gson-api:2.14.0-201.v8eefe5515533
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 http_request:1.25
