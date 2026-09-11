@@ -38,7 +38,7 @@ docker-commons:477.v289085a_b_6896
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1327.v9524f1ee134e
 durable-task:686.v80ff80875b_82
-echarts-api:6.1.0-1306.vcee1648c16a_4
+echarts-api:6.1.0-1321.v86c4c5114494
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 elastic-axis:615.vb_f7c20ec040e
 embeddable-build-status:666.vcb_0de9eb_43d8
@@ -59,10 +59,10 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-126.vd066b_d896159
 gitlab-branch-source:743.ve0c8154a_8da_b_
-groovy-postbuild:309.vb_6c6100a_d854
+groovy-postbuild:310.v0c5b_924e439f
 gson-api:2.14.0-201.v8eefe5515533
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
-http_request:1.25
+http_request:1.26
 ignore-committer-strategy:63.v7e87d06b_a_30c
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
