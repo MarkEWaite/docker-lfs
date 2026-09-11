@@ -62,7 +62,7 @@ gitlab-branch-source:743.ve0c8154a_8da_b_
 groovy-postbuild:310.v0c5b_924e439f
 gson-api:2.14.0-201.v8eefe5515533
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
-http_request:1.25
+http_request:1.26
 ignore-committer-strategy:63.v7e87d06b_a_30c
 implied-labels:439.v4900744249a_3
 instance-identity:203.v15e81a_1b_7a_38
