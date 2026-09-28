@@ -24,13 +24,12 @@
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3574.v6811c9fa_235f">
     <script>pipeline {
-    agent any
+    agent none
 
     stages {
         stage(&apos;Hello&apos;) {
             steps {
                 script {
-                    sleep 10
                     def counter = (env.BUILD_ID as int) % 5
                     if (counter == 0 || counter == 2 || counter == 4) {
                         error(&quot;Fail 3 of 5 builds&quot;)
