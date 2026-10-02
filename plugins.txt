@@ -58,7 +58,7 @@ github-branch-source:1983.vfa_27ed961853
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-126.vd066b_d896159
-gitlab-branch-source:743.ve0c8154a_8da_b_
+gitlab-branch-source:744.vb_d0403d08ec7
 groovy-postbuild:331.v86318ca_2e44d
 gson-api:2.14.0-201.v8eefe5515533
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
