@@ -20,8 +20,8 @@ cloud-stats:423.v63f017a_f582c
 cloudbees-bitbucket-branch-source:937.3.10
 cloudbees-folder:6.1106.v3a_d9a_6d2465e
 commons-collections4-api:4.5.0-8.va_d5448ef9011
-commons-compress-api:1.28.0-94.v77d096a_42df3
-commons-lang3-api:3.20.0-109.ve43756e2d2b_4
+commons-compress-api:1.28.0-95.vb_e5e24f83645
+commons-lang3-api:3.21.0-122.v6a_ea_4fd34049
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
@@ -97,7 +97,7 @@ maven-plugin:3.27
 metrics:4.2.37-494.v06f9a_939d33a_
 mina-sshd-api-common:2.19.0-192.v2b_a_7b_2c1dc71
 mina-sshd-api-core:2.19.0-192.v2b_a_7b_2c1dc71
-monitoring:2.8.0
+monitoring:2.9.0
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
@@ -132,7 +132,7 @@ run-condition:276.v97298f3a_cd51
 scm-api:728.vc30dcf7a_0df5
 script-security:1429.v0810f1b_530f5
 snakeyaml-api:2.5-149.v72471e9c6371
-snakeyaml-engine-api:3.1.1-12.v4320c7d6f89c
+snakeyaml-engine-api:3.2-18.v885ed7ff698f
 ssh-agent:433.v9e73d67c3f74
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
@@ -150,7 +150,7 @@ variant:70.va_d9f17f859e0
 versioncolumn:400.v3c5c3004f31d
 view-job-filters:408.vb_ca_5e798e5b_5
 warnings-ng:13.10300.v0b_b_e6f0ec48f
-woodstox-core-api:7.2.2-10.vcb_629759b_2c2
+woodstox-core-api:7.3.0-16.v017f30ed004c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
