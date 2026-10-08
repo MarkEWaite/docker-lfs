@@ -240,6 +240,12 @@ unclassified:
     overwriteable: false
   impliedLabels:
     implications:
+    - atoms: "git-2.60+"
+      expression: "git-2.60 || git-2.61+"
+    - atoms: "git-2.59+"
+      expression: "git-2.59 || git-2.60+"
+    - atoms: "git-2.58+"
+      expression: "git-2.58 || git-2.59+"
     - atoms: "git-2.57+"
       expression: "git-2.57 || git-2.58+"
     - atoms: "git-2.56+"
