@@ -154,7 +154,7 @@ woodstox-core-api:7.3.0-16.v017f30ed004c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1413.v2ff1a_5e720fa_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4391.v652b_b_b_1b_7c00
+workflow-cps:4393.v95a_64f3074e0
 workflow-durable-task-step:1479.v56e587f413a_7
 workflow-job:1609.v8926e7962024
 workflow-multibranch:842.v3a_b_59b_57b_e6e
