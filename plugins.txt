@@ -107,7 +107,7 @@ parameterized-trigger:893.va_383a_9b_a_4c11
 pipeline-build-step:601.v6d4c6d1a_9dc7
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-191.cb_1a_07f10b_a_f
-pipeline-graph-view:1062.v294de5b_d7c0e
+pipeline-graph-view:1066.v00b_91b_b_8024a_
 pipeline-groovy-lib:822.vc95f70dea_db_7
 pipeline-input-step:560.v56198a_642157
 pipeline-maven-api:1760.v9a_a_e6dcb_0444
