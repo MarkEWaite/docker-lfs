@@ -25,7 +25,7 @@ commons-lang3-api:3.21.0-122.v6a_ea_4fd34049
 commons-text-api:1.15.0-218.va_61573470393
 conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
-configuration-as-code:2134.ve13a_2fc90835
+configuration-as-code:2136.veb_3a_554550b_f
 coverage-badges-extension:234.v43c3ef3878b_c
 coverage:3.3436.v3f0591159a_dd
 credentials-binding:728.v902a_273b_8947
