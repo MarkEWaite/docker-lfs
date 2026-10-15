@@ -177,7 +177,7 @@ unclassified:
           scm:
             gitSource:
               id: "6d3b3892-221f-4845-88b3-d9c3ffc4bd0b"
-              remote: "git@bitbucket.org:markewaite/jenkins-pipeline-utils.git"
+              remote: "git@ssh.bitbucket.org:markewaite/jenkins-pipeline-utils.git"
               traits:
               - "gitBranchDiscovery"
               - discoverOtherRefs:
