@@ -49,7 +49,7 @@
       </hudson.plugins.git.UserRemoteConfig>
       <hudson.plugins.git.UserRemoteConfig>
         <name>bitbucket</name>
-        <url>git@bitbucket.org:markewaite/git-client-plugin.git</url>
+        <url>git@ssh.bitbucket.org:markewaite/git-client-plugin.git</url>
         <credentialsId>markewaite-bitbucket-rsa-private-key</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
       <hudson.plugins.git.UserRemoteConfig>
