@@ -27,7 +27,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
 configuration-as-code:2136.veb_3a_554550b_f
 coverage-badges-extension:234.v43c3ef3878b_c
-coverage:3.3436.v3f0591159a_dd
+coverage:3.3474.vea_a_12b_679262
 credentials-binding:728.v902a_273b_8947
 credentials:1514.vb_01eb_014e7d4
 dark-theme:652.vea_da_dfea_e769
@@ -52,7 +52,7 @@ git-forensics:4.2463.vf6fecb_444a_b_3
 git-parameter:462.463.v496a_59f698e5
 git-version-monitor:41.v0cfdf922b_b_0c
 git:5.11.0
-gitea:284.v25624f9097c5
+gitea:286.v0740a_413c1eb_
 github-api:1.330-492.v3941a_032db_2a_
 github-branch-source:1986.v801e40614d00
 github-scm-filter-aged-refs:59.vc6b_39c26988c
@@ -91,7 +91,7 @@ junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1442.vb_b_a_467df2767
 label-verifier:116.vb_845759df630
 mailer:534.v1b_36f5864073
-markdown-formatter:350.v70f9a_06e71fc
+markdown-formatter:355.vecb_9dd21d0fe
 matrix-project:928.v1effc3f3a_236
 maven-plugin:3.28
 metrics:4.2.37-494.v06f9a_939d33a_
@@ -101,7 +101,7 @@ monitoring:2.9.1
 naginator:1.556.v14d723a_109a_c
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.3.2-223.v0f4017f8d05a_
-oss-symbols-api:465.v25d9fdc88c26
+oss-symbols-api:477.v7197b_eb_3d8b_8
 parallel-test-executor:611.va_92b_d1852e52
 parameterized-trigger:893.va_383a_9b_a_4c11
 pipeline-build-step:601.v6d4c6d1a_9dc7
@@ -140,7 +140,7 @@ sshd:3.384.vc89b_5e138cf9
 structs:362.va_b_695ef4fdf9
 swarm:1258.vda_14ddda_0613
 testng-plugin:981.v1dc64d227855
-text-finder:1.33
+text-finder:1.34
 theme-manager:346.v06cca_64c6a_37
 throttle-concurrents:625.vc8b_e469e9a_b_c
 timestamper:1.30
