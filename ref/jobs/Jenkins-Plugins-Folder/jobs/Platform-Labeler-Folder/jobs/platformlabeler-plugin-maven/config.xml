@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<maven2-moduleset plugin="maven-plugin@3.23">
+<maven2-moduleset plugin="maven-plugin@3.28">
   <actions/>
   <description>Jenkins [platform labeler plugin](https://plugins.jenkins.io/platformlabeler) maven job</description>
   <keepDependencies>false</keepDependencies>
@@ -10,10 +10,11 @@
         <numToKeep>23</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.11.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -54,7 +55,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk17</jdk>
+  <jdk>jdk21</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -84,7 +85,7 @@
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
   <publishers>
-    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.13.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@3.3474.vea_a_12b_679262">
       <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
         <java.util.CollSer>
           <default>
@@ -92,7 +93,7 @@
           </default>
           <int>1</int>
           <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
-            <jenkins plugin="plugin-util-api@4.1.0"/>
+            <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
             <pattern></pattern>
             <parser>JACOCO</parser>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
@@ -109,6 +110,7 @@
             <criticality>NOTE</criticality>
             <metric>BRANCH</metric>
             <baseline>PROJECT</baseline>
+            <aggregation>OVERALL</aggregation>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
         </java.util.CollSer>
       </qualityGates>
@@ -126,23 +128,27 @@
       <sourceDirectories/>
       <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
     </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@11.2.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@13.10305.v3231d55c5755">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@4.1.0"/>
+          <icon></icon>
+          <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
+          <linesLookAhead>0</linesLookAhead>
         </io.jenkins.plugins.analysis.warnings.Java>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@4.1.0"/>
+          <icon></icon>
+          <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
+          <linesLookAhead>0</linesLookAhead>
           <useRankAsPriority>true</useRankAsPriority>
         </io.jenkins.plugins.analysis.warnings.SpotBugs>
       </analysisTools>
@@ -151,12 +157,14 @@
       <sourceCodeRetention>EVERY_BUILD</sourceCodeRetention>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
+      <stopBuild>false</stopBuild>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@12.1.0">
+      <minimumSeverity plugin="analysis-model-api@14.18.0-1028.v9c938eeda_ef2">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
+      <filesFilter></filesFilter>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <quiet>false</quiet>
@@ -164,9 +172,15 @@
       <skipPublishingChecks>false</skipPublishingChecks>
       <checksAnnotationScope>NEW</checksAnnotationScope>
       <skipPostProcessing>false</skipPostProcessing>
+      <skipDeltaCalculation>false</skipDeltaCalculation>
+      <id></id>
+      <name></name>
+      <icon></icon>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
       <scm></scm>
+      <sourcePathPrefix></sourcePathPrefix>
+      <targetPathPrefix></targetPathPrefix>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
