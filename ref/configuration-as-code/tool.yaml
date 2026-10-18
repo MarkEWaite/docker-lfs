@@ -91,14 +91,14 @@ tool:
               toolHome: "/usr/local/openjdk8"
           - zip:
               label: "alpine && !cloud"
-              subdir: "jdk8u502-b07"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u502b07.tar.gz"
+              subdir: "jdk8u504-b01"
+              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u504b01.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
               toolHome: "/opt/jdk-8"
           - adoptOpenJdkInstaller:
-              id: "jdk8u502-b07"
+              id: "jdk8u504-b01"
     - name: "jdk11"
       properties:
       - installSource:
