@@ -35,6 +35,14 @@ tool:
               command: "true"
               label: "!windows && !freebsd"
               toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows && amd64"
+              subdir: "cmd\\git.exe"
+              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
+          - zip:
+              label: "windows && aarch64"
+              subdir: "cmd\\git.exe"
+              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
     - home: "git"
       name: "git-windows"
       properties:
@@ -48,33 +56,10 @@ tool:
               label: "windows && amd64"
               subdir: "cmd\\git.exe"
               url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
-    - home: "git"
-      name: "git-2.43.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.43 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.47.0"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.47 && linux"
-              toolHome: "/usr/bin/git"
-    - home: "git"
-      name: "git-2.51.1"
-      properties:
-      - installSource:
-          installers:
-          - command:
-              command: "true"
-              label: "git-2.51 && linux"
-              toolHome: "/usr/bin/git"
+          - zip:
+              label: "windows && aarch64"
+              subdir: "cmd\\git.exe"
+              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
     - home: "git"
       name: "git-2.56.0"
       properties:
