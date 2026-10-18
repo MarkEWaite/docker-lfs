@@ -140,7 +140,7 @@ sshd:3.384.vc89b_5e138cf9
 structs:362.va_b_695ef4fdf9
 swarm:1258.vda_14ddda_0613
 testng-plugin:981.v1dc64d227855
-text-finder:1.33
+text-finder:1.34
 theme-manager:346.v06cca_64c6a_37
 throttle-concurrents:625.vc8b_e469e9a_b_c
 timestamper:1.30
