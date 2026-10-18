@@ -10,23 +10,15 @@
         <numToKeep>25</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.38.0">
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.47.0">
       <projectUrl>https://github.com/MarkEWaite/platformlabeler-plugin/</projectUrl>
       <displayName>Platform labeler plugin</displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.14">
-      <maxConcurrentPerNode>0</maxConcurrentPerNode>
-      <maxConcurrentTotal>0</maxConcurrentTotal>
-      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
-      <throttleEnabled>false</throttleEnabled>
-      <throttleOption>project</throttleOption>
-      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
-      <paramsToUseForLimit></paramsToUseForLimit>
-    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.11.0">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -65,7 +57,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk17</jdk>
+  <jdk>jdk21</jdk>
   <triggers>
     <hudson.triggers.SCMTrigger>
       <spec></spec>
@@ -84,18 +76,20 @@
     </hudson.tasks.Maven>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1259.v65ffcef24a_88">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1442.vb_b_a_467df2767">
       <testResults>target/surefire-reports/TEST-*.xml</testResults>
       <stdioRetention>FAILED</stdioRetention>
       <keepProperties>false</keepProperties>
+      <keepTestNames>false</keepTestNames>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
       <skipPublishingChecks>true</skipPublishingChecks>
       <checksName></checksName>
       <skipMarkingBuildUnstable>false</skipMarkingBuildUnstable>
       <skipOldReports>false</skipOldReports>
+      <archiveAttachments>false</archiveAttachments>
     </hudson.tasks.junit.JUnitResultArchiver>
-    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@1.13.0">
+    <io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder plugin="coverage@3.3474.vea_a_12b_679262">
       <tools class="java.util.ImmutableCollections$List12" resolves-to="java.util.CollSer" serialization="custom">
         <java.util.CollSer>
           <default>
@@ -103,7 +97,7 @@
           </default>
           <int>1</int>
           <io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
-            <jenkins plugin="plugin-util-api@4.1.0"/>
+            <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
             <pattern></pattern>
             <parser>JACOCO</parser>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageTool>
@@ -120,6 +114,7 @@
             <criticality>UNSTABLE</criticality>
             <metric>BRANCH</metric>
             <baseline>PROJECT</baseline>
+            <aggregation>OVERALL</aggregation>
           </io.jenkins.plugins.coverage.metrics.steps.CoverageQualityGate>
         </java.util.CollSer>
       </qualityGates>
@@ -137,41 +132,47 @@
       <sourceDirectories/>
       <sourceCodeRetention>LAST_BUILD</sourceCodeRetention>
     </io.jenkins.plugins.coverage.metrics.steps.CoverageRecorder>
-    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@11.2.0">
+    <io.jenkins.plugins.analysis.core.steps.IssuesRecorder plugin="warnings-ng@13.10305.v3231d55c5755">
       <analysisTools>
         <io.jenkins.plugins.analysis.warnings.SpotBugs>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@4.1.0"/>
+          <icon></icon>
+          <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
           <pattern>**/target/spotbugs.xml</pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
+          <linesLookAhead>0</linesLookAhead>
           <useRankAsPriority>true</useRankAsPriority>
         </io.jenkins.plugins.analysis.warnings.SpotBugs>
         <io.jenkins.plugins.analysis.warnings.Java>
           <id></id>
           <name></name>
-          <jenkins plugin="plugin-util-api@4.1.0"/>
+          <icon></icon>
+          <jenkins plugin="plugin-util-api@7.1403.vd380b_c42e90c"/>
           <pattern></pattern>
           <reportEncoding></reportEncoding>
           <skipSymbolicLinks>false</skipSymbolicLinks>
+          <linesLookAhead>0</linesLookAhead>
         </io.jenkins.plugins.analysis.warnings.Java>
       </analysisTools>
       <sourceCodeEncoding>UTF-8</sourceCodeEncoding>
       <sourceDirectories>
-        <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.29.0-13">
+        <io.jenkins.plugins.prism.SourceCodeDirectory plugin="prism-api@1.30.0-741.v034eb_0b_0a_a_fa_">
           <path>src</path>
         </io.jenkins.plugins.prism.SourceCodeDirectory>
       </sourceDirectories>
       <sourceCodeRetention>EVERY_BUILD</sourceCodeRetention>
       <ignoreQualityGate>false</ignoreQualityGate>
       <failOnError>false</failOnError>
+      <stopBuild>false</stopBuild>
       <healthy>0</healthy>
       <unhealthy>0</unhealthy>
-      <minimumSeverity plugin="analysis-model-api@12.1.0">
+      <minimumSeverity plugin="analysis-model-api@14.18.0-1028.v9c938eeda_ef2">
         <name>LOW</name>
       </minimumSeverity>
       <filters/>
+      <filesFilter></filesFilter>
       <isEnabledForFailure>false</isEnabledForFailure>
       <isAggregatingResults>false</isAggregatingResults>
       <quiet>false</quiet>
@@ -179,9 +180,15 @@
       <skipPublishingChecks>false</skipPublishingChecks>
       <checksAnnotationScope>NEW</checksAnnotationScope>
       <skipPostProcessing>false</skipPostProcessing>
+      <skipDeltaCalculation>false</skipDeltaCalculation>
+      <id></id>
+      <name></name>
+      <icon></icon>
       <qualityGates/>
       <trendChartType>AGGREGATION_TOOLS</trendChartType>
       <scm></scm>
+      <sourcePathPrefix></sourcePathPrefix>
+      <targetPathPrefix></targetPathPrefix>
     </io.jenkins.plugins.analysis.core.steps.IssuesRecorder>
   </publishers>
   <buildWrappers/>
