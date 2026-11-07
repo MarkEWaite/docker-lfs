@@ -4,7 +4,7 @@ Param(
     # Default script target
     [String] $Target = 'build',
     # Jenkins version to include
-    [String] $JenkinsVersion = '2.586',
+    [String] $JenkinsVersion = '2.588',
     # Windows flavor and windows version to build
     [String] $ImageType = 'windowsservercore-ltsc2022',
     # Generate a docker compose file even if it already exists
@@ -190,7 +190,7 @@ function Initialize-DockerComposeFile {
     # - Use docker buildx bake to output image definitions from the "<windowsFlavor>" bake target
     # - Convert with yq to the format expected by docker compose
     # - Store the result in the docker compose file
-    docker buildx bake --progress=quiet --file=docker-bake.hcl --file docker-bake.override.json $windowsFlavor --print |
+    docker buildx bake --progress=quiet --file=docker-bake.hcl $windowsFlavor --print |
         yq --prettyPrint $yqMainQuery |
         yq $yqServicesQuery |
         Out-File -FilePath $DockerComposeFile
