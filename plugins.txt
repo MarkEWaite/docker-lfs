@@ -4,7 +4,7 @@ analysis-model-api:14.18.0-1028.v9c938eeda_ef2
 ant:520.vd082ecfb_16a_9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6.4-207.vd5b_a_c15e4de5
+apache-httpcomponents-client-5-api:5.6.5-209.vd1010d57ee17
 asm-api:9.11.1-226.vff833a_e4c58e
 authentication-tokens:1.144.v5ff4a_5ec5c33
 badge:3.615.vb_ed967ca_b_e93
@@ -47,7 +47,7 @@ envinject-api:1.241.vdd714803b_403
 envinject:2.941.v351a_20c0a_3ca_
 font-awesome-api:7.3.1-1013.v0835a_879ec6d
 forensics-api:4.1923.v445c56df9b_2e
-git-client:incrementals;org.jenkins-ci.plugins;6.7.0-rc3901.1a_4b_a_2dd84a_c
+git-client:6.6.1
 git-forensics:4.2463.vf6fecb_444a_b_3
 git-parameter:462.463.v496a_59f698e5
 git-version-monitor:73.vc9d04762f6f6
