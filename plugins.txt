@@ -50,7 +50,7 @@ forensics-api:4.1923.v445c56df9b_2e
 git-client:6.6.1
 git-forensics:4.2557.v2c7f200dfc72
 git-parameter:462.463.v496a_59f698e5
-git-version-monitor:73.vc9d04762f6f6
+git-version-monitor:80.v6b_812b_a_8a_4d4
 git:5.11.0
 gitea:286.v0740a_413c1eb_
 github-api:1.330-492.v3941a_032db_2a_
