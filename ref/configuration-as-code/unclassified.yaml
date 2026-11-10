@@ -345,8 +345,6 @@ unclassified:
     # All container agents in this config use Alpine OS
     - atoms: "vm"
       expression: "!container"
-    - atoms: "aws"
-      expression: "cloud && linux && (amd64 || aarch64)"
     - atoms: "highram"
       expression: "highmem"
     - atoms: "arm64"
