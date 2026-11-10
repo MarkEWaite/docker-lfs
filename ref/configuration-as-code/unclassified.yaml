@@ -288,6 +288,8 @@ unclassified:
       expression: "Ubuntu && 22.04"
     - atoms: "Ubuntu-24"
       expression: "Ubuntu && 24.04"
+    - atoms: "Ubuntu-26"
+      expression: "Ubuntu && 26.04"
     - atoms: "openSUSE-15"
       expression: "openSUSE && (15.7 || 15.6 || 15.5 || 15.4)"
     - atoms: "openSUSE-16"
@@ -343,8 +345,6 @@ unclassified:
     # All container agents in this config use Alpine OS
     - atoms: "vm"
       expression: "!container"
-    - atoms: "aws"
-      expression: "cloud && linux && (amd64 || aarch64)"
     - atoms: "highram"
       expression: "highmem"
     - atoms: "arm64"
