@@ -290,8 +290,6 @@ unclassified:
       expression: "Ubuntu && 24.04"
     - atoms: "Ubuntu-26"
       expression: "Ubuntu && 26.04"
-    - atoms: "openSUSE-15"
-      expression: "openSUSE && (15.7 || 15.6 || 15.5 || 15.4)"
     - atoms: "openSUSE-16"
       expression: "openSUSE && (16.3 || 16.2 || 16.1 || 16.0)"
     - atoms: "Rocky-8"
