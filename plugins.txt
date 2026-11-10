@@ -67,7 +67,7 @@ ignore-committer-strategy:63.v7e87d06b_a_30c
 implied-labels:474.v9cc136153955
 instance-identity:203.v15e81a_1b_7a_38
 ionicons-api:94.vcc3065403257
-jackson-annotations2-api:2.22-19.v10a_a_582ea_26e
+jackson-annotations2-api:2.23-28.v3db_d0f5f2387
 jackson2-api:2.22.4-449.v4ee9f4ec4123
 jackson3-api:3.2.4-103.vf5a_b_3f4ea_cec
 jakarta-activation-api:2.1.4-1
