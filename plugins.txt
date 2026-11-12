@@ -47,7 +47,7 @@ envinject-api:1.241.vdd714803b_403
 envinject:2.941.v351a_20c0a_3ca_
 font-awesome-api:7.3.1-1013.v0835a_879ec6d
 forensics-api:4.1923.v445c56df9b_2e
-git-client:6.7.0
+git-client:incrementals;org.jenkins-ci.plugins;6.7.1-rc3918.4a_0fdfec2b_5a_
 git-forensics:4.2557.v2c7f200dfc72
 git-parameter:462.463.v496a_59f698e5
 git-version-monitor:80.v6b_812b_a_8a_4d4
@@ -104,7 +104,7 @@ okhttp-api:5.5.0-242.v1482d48d3ea_3
 oss-symbols-api:477.v7197b_eb_3d8b_8
 parallel-test-executor:611.va_92b_d1852e52
 parameterized-trigger:893.va_383a_9b_a_4c11
-pipeline-build-step:601.v6d4c6d1a_9dc7
+pipeline-build-step:605.v00486e8f4b_3e
 pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-191.cb_1a_07f10b_a_f
 pipeline-graph-view:1125.va_cc0898000b_0
@@ -141,7 +141,7 @@ structs:362.va_b_695ef4fdf9
 swarm:1258.vda_14ddda_0613
 testng-plugin:981.v1dc64d227855
 text-finder:1.34
-theme-manager:346.v06cca_64c6a_37
+theme-manager:368.v587224fde1f6
 throttle-concurrents:625.vc8b_e469e9a_b_c
 timestamper:1.30
 token-macro:477.vd4f0dc3cb_cf1
