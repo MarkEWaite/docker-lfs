@@ -203,13 +203,19 @@ tool:
           - zip:
               subdir: "apache-maven-3.10.0"
               url: "http://testing-e/~mwaite/maven/apache-maven-3.10.0-bin.zip"
-    - name: "maven-4.0.0-alpha-4"
+    - name: "maven-3.9.16"
       properties:
       - installSource:
           installers:
+          - command:
+              command: "echo Running Apache Maven 3.9.16 from /home/jagent/tools/apache-maven-3.9.16"
+              label: "!windows"
+              toolHome: "/home/jagent/tools/apache-maven-3.9.16"
           - zip:
-              subdir: "apache-maven-4.0.0-alpha-4"
-              url: "http://testing-e/~mwaite/maven/apache-maven-4.0.0-alpha-4-bin.zip"
+              subdir: "apache-maven-3.9.16"
+              url: "http://testing-e/~mwaite/maven/apache-maven-3.9.16-bin.zip"
+          - maven:
+              id: "3.9.16"
   mavenGlobalConfig:
     globalSettingsProvider: "standard"
     settingsProvider: "standard"

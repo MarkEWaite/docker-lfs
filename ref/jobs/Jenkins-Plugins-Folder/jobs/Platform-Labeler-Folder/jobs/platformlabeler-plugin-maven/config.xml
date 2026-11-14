@@ -68,7 +68,7 @@
     <artifactId>platformlabeler</artifactId>
   </rootModule>
   <goals>-P enable-jacoco -U clean verify spotbugs:check jacoco:report</goals>
-  <mavenName>maven-latest</mavenName>
+  <mavenName>maven-3.9.16</mavenName>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
   <ignoreUpstremChanges>true</ignoreUpstremChanges>
