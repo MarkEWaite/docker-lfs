@@ -15,7 +15,7 @@ tool:
               toolHome: "/home/jagent/tools/apache-ant-1.10.18"
           - zip:
               subdir: "apache-ant-1.10.18"
-              url: "http://testing-e/~mwaite/ant/apache-ant-1.10.18-bin.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/ant/apache-ant-1.10.18-bin.zip"
   git:
     installations:
     - home: "git"
@@ -38,11 +38,11 @@ tool:
           - zip:
               label: "windows && amd64"
               subdir: "cmd\\git.exe"
-              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
           - zip:
               label: "windows && aarch64"
               subdir: "cmd\\git.exe"
-              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
     - home: "git"
       name: "git-windows"
       properties:
@@ -55,11 +55,11 @@ tool:
           - zip:
               label: "windows && amd64"
               subdir: "cmd\\git.exe"
-              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.56.0.2-64-bit.zip"
           - zip:
               label: "windows && aarch64"
               subdir: "cmd\\git.exe"
-              url: "http://testing-e/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
+              url: "http://testing-e.markwaite.net/~mwaite/git/MinGit-2.56.0.2-arm64.zip"
     - home: "git"
       name: "git-2.56.0"
       properties:
@@ -92,7 +92,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk8u512-b09"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u512b09.tar.gz"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/8/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u512b09.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-8 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -114,7 +114,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk-11.0.32.1+1"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32.1_1.tar.gz"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32.1_1.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-11 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -136,7 +136,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk-17.0.21+9"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/17/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-17 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -158,7 +158,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk-21.0.13+9"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.13_9.tar.gz"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/21/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.13_9.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-21 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -180,7 +180,7 @@ tool:
           - zip:
               label: "alpine && !cloud"
               subdir: "jdk-25.0.4.1+1"
-              url: "http://testing-e/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.4.1_1.tar.gz"
+              url: "http://testing-e.markwaite.net/~mwaite/jdk/eclipse-temurin/25/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.4.1_1.tar.gz"
           - command:
               command: "echo 'Using /opt/jdk-25 for !alpine && !freebsd && !windows'"
               label: "!alpine && !freebsd && !windows && !built-in"
@@ -194,22 +194,28 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.10.0"
-              url: "http://testing-e/~mwaite/maven/apache-maven-3.10.0-bin.zip"
+              subdir: "apache-maven-3.10.1"
+              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.1-bin.zip"
     - name: "mvn"
       properties:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.10.0"
-              url: "http://testing-e/~mwaite/maven/apache-maven-3.10.0-bin.zip"
-    - name: "maven-4.0.0-alpha-4"
+              subdir: "apache-maven-3.10.1"
+              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.1-bin.zip"
+    - name: "maven-3.9.16"
       properties:
       - installSource:
           installers:
+          - command:
+              command: "echo Running Apache Maven 3.9.16 from /home/jagent/tools/apache-maven-3.9.16"
+              label: "!windows"
+              toolHome: "/home/jagent/tools/apache-maven-3.9.16"
           - zip:
-              subdir: "apache-maven-4.0.0-alpha-4"
-              url: "http://testing-e/~mwaite/maven/apache-maven-4.0.0-alpha-4-bin.zip"
+              subdir: "apache-maven-3.9.16"
+              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.9.16-bin.zip"
+          - maven:
+              id: "3.9.16"
   mavenGlobalConfig:
     globalSettingsProvider: "standard"
     settingsProvider: "standard"
