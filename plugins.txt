@@ -86,7 +86,7 @@ json-api:20260814-226.v20f9685d642c
 json-path-api:3.0.0-236.v4298487c9d01
 jsoup:1.24.1-112.va_e71e68b_60f9
 jspecify-api:1.0.0-1.ve7231e6d0d15
-junit-attachments:394.v3a_b_e63a_469c3
+junit-attachments:396.v4292733a_84a_8
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit:1458.1460.vd53b_087eeb_2c
 label-verifier:116.vb_845759df630
