@@ -78,7 +78,7 @@ javax-activation-api:1.2.0-8
 jaxb:2.3.9-143.v5979df3304e6
 jersey3-api:3.1.11-4.v77818819c2e1
 jjwt-api:0.13.0-141.vd58b_a_9592b_6c
-job-dsl:3732.v9a_c49a_61a_313
+job-dsl:3752.vb_199526b_20c3
 joda-time-api:2.15.1-211.ve499f52b_da_33
 jquery3-api:3.7.1-687.v68d468e40b_30
 jsch:0.2.16-95.v3eecb_55fa_b_78
