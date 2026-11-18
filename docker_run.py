@@ -86,16 +86,16 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk25" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.4+7"
+        return "/home/jagent/tools/jdk-25.0.5+8"
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.12.1+1"
+        return "/home/jagent/tools/jdk-21.0.13+9"
     if "alpine" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.12.1+1"
+        return "/home/jagent/tools/jdk-21.0.13+9"
     if "slim" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.12.1+1"
+        return "/home/jagent/tools/jdk-21.0.13+9"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.4+7"
-    return "/home/jagent/tools/jdk-21.0.12.1+1"
+        return "/home/jagent/tools/jdk-25.0.5+8"
+    return "/home/jagent/tools/jdk-21.0.13+9"
 
 #-----------------------------------------------------------------------
 
@@ -145,6 +145,7 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:HeapDumpPath=/var/jenkins_home/logs",
                 ]
     java_opts.extend([
+                  "-XX:-UseBASE64Intrinsics", # TODO: Remove after JDK 25.0.5.1 and 21.0.13.1 are used
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
                   "-XX:+DisableExplicitGC",
