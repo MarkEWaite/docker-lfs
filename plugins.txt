@@ -54,7 +54,7 @@ git-version-monitor:80.v6b_812b_a_8a_4d4
 git:5.11.0
 gitea:286.v0740a_413c1eb_
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1986.v801e40614d00
+github-branch-source:1988.v87ea_66346560
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-133.v302f2e9feb_85
