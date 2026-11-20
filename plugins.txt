@@ -27,7 +27,7 @@ conditional-buildstep:1.5.0
 config-file-provider:1013.v73c323e52b_1f
 configuration-as-code:2147.v8a_8d38668c72
 coverage-badges-extension:234.v43c3ef3878b_c
-coverage:4.3603.v836c83df26a_d
+coverage:4.3620.v407ef5b_88f0d
 credentials-binding:728.v902a_273b_8947
 credentials:1514.vb_01eb_014e7d4
 dark-theme:652.vea_da_dfea_e769
@@ -54,7 +54,7 @@ git-version-monitor:80.v6b_812b_a_8a_4d4
 git:5.11.0
 gitea:286.v0740a_413c1eb_
 github-api:1.330-492.v3941a_032db_2a_
-github-branch-source:1986.v801e40614d00
+github-branch-source:1988.v87ea_66346560
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github:1.47.0
 gitlab-api:6.3.0-133.v302f2e9feb_85
