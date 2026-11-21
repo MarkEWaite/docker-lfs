@@ -86,7 +86,7 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk25" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.5+8"
+        return "/home/jagent/tools/jdk-25.0.5.1+2"
     if "jdk21" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-21.0.13.1+2"
     if "alpine" in docker_build.get_current_branch():
@@ -94,7 +94,7 @@ def get_jagent_java_home():
     if "slim" in docker_build.get_current_branch():
         return "/home/jagent/tools/jdk-21.0.13.1+2"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.5+8"
+        return "/home/jagent/tools/jdk-25.0.5.1+2"
     return "/home/jagent/tools/jdk-21.0.13.1+2"
 
 #-----------------------------------------------------------------------
@@ -145,7 +145,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:HeapDumpPath=/var/jenkins_home/logs",
                 ]
     java_opts.extend([
-                  "-XX:-UseBASE64Intrinsics", # TODO: Remove after JDK 25.0.5.1 is used
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
                   "-XX:+DisableExplicitGC",
