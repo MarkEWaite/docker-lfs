@@ -148,9 +148,9 @@ tool:
       - installSource:
           installers:
           - batchFile:
-              command: "echo 'Using C:\\tools\\jdk-21.0.13+9 for windows'"
+              command: "echo 'Using C:\\tools\\jdk-21.0.13.1+2 for windows'"
               label: "windows"
-              toolHome: "c:\\tools\\jdk-21.0.13+9"
+              toolHome: "c:\\tools\\jdk-21.0.13.1+2"
           - command:
               command: "true"
               label: "freebsd"
