@@ -194,15 +194,15 @@ tool:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.10.1"
-              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.1-bin.zip"
+              subdir: "apache-maven-3.10.2"
+              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.2-bin.zip"
     - name: "mvn"
       properties:
       - installSource:
           installers:
           - zip:
-              subdir: "apache-maven-3.10.1"
-              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.1-bin.zip"
+              subdir: "apache-maven-3.10.2"
+              url: "http://testing-e.markwaite.net/~mwaite/maven/apache-maven-3.10.2-bin.zip"
     - name: "maven-3.9.16"
       properties:
       - installSource:
