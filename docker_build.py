@@ -36,21 +36,19 @@ def get_all_branches():
 #-----------------------------------------------------------------------
 
 def get_dockerfile(branch_name):
+    if "ubi9" in branch_name:
+        return "Dockerfile-ubi9"
     if "jdk25" in branch_name:
         return "Dockerfile-jdk25"
     if "jdk21" in branch_name:
         return "Dockerfile-jdk21"
-    if "jdk17" in branch_name:
-        return "Dockerfile-jdk17"
     if "alpine" in branch_name:
         return "Dockerfile-alpine"
     if "slim" in branch_name:
         return "Dockerfile-slim"
     if "weekly" in branch_name:
         return "Dockerfile-jdk25"
-    if "lts-with-" in branch_name:
-        return "Dockerfile-jdk17"
-    return "Dockerfile-jdk21"
+    return "Dockerfile-ubi9"
 
 #-----------------------------------------------------------------------
 
@@ -196,7 +194,6 @@ def build_one_image(branch_name, clean):
     print("Building " + tag + " from " + get_dockerfile(tag))
     command = [ "docker", "buildx", "build",
                     "--load",
-                    "--add-host", "home.markwaite.net:216.110.174.159",
                     "--file", get_dockerfile(tag),
                     "--tag", tag,
               ]
@@ -246,9 +243,6 @@ def checkout_branch(target_branch):
     # -with-plugins branches contain large binaries
     if target_branch.endswith("-with-plugins"):
         subprocess.check_call(["git", "lfs", "fetch", "public", "public/" + target_branch])
-    # cjt-with-plugins-add-credentials contains some large binaries
-    if target_branch == "cjt-with-plugins-add-credentials":
-        subprocess.check_call(["git", "lfs", "fetch", "private", "private/" + target_branch])
     subprocess.check_call(["git", "checkout", target_branch])
     subprocess.check_call(["git", "pull"])
 

@@ -86,32 +86,16 @@ def get_windows_dir():
 
 def get_jagent_java_home():
     if "jdk25" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.2+10"
+        return "/home/jagent/tools/jdk-25.0.5.1+2"
     if "jdk21" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.10+7"
+        return "/home/jagent/tools/jdk-21.0.13.1+2"
     if "alpine" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.10+7"
+        return "/home/jagent/tools/jdk-21.0.13.1+2"
     if "slim" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-21.0.10+7"
+        return "/home/jagent/tools/jdk-21.0.13.1+2"
     if "weekly" in docker_build.get_current_branch():
-        return "/home/jagent/tools/jdk-25.0.2+10"
-    return "/home/jagent/tools/jdk-17.0.18+8"
-
-#-----------------------------------------------------------------------
-
-def get_java_gc_args():
-    # Use generational GC with Java 21
-    if "jdk25" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "jdk21" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "alpine" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "slim" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    if "weekly" in docker_build.get_current_branch():
-        return [ "-XX:+UseG1GC", ]
-    return [ "-XX:+UseG1GC", ]
+        return "/home/jagent/tools/jdk-25.0.5.1+2"
+    return "/home/jagent/tools/jdk-21.0.13.1+2"
 
 #-----------------------------------------------------------------------
 
@@ -160,7 +144,6 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-XX:+HeapDumpOnOutOfMemoryError",
                   "-XX:HeapDumpPath=/var/jenkins_home/logs",
                 ]
-    java_opts.extend(get_java_gc_args())
     java_opts.extend([
                   "-XX:+UseStringDeduplication",
                   "-XX:+ParallelRefProcEnabled",
@@ -177,10 +160,11 @@ def docker_execute(docker_tag, http_port=8080, jnlp_port=50000, ssh_port=18022, 
                   "-Djenkins.model.Jenkins.buildsDir='/var/jenkins_home/builds/${ITEM_FULL_NAME}'",
                   "-Djenkins.model.Jenkins.workspacesDir='/var/jenkins_home/workspace/${ITEM_FULL_NAME}'",
                   "-Djenkins.plugins.git.AbstractGitSCMSource.cacheRootDir=/var/cache/jenkins/git-cache",
-                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
+                  "-Djenkins.slaves.StandardOutputSwapper.disabled=true",
                   "-Dorg.jenkinsci.plugins.gitclient.CliGitAPIImpl.useSETSID=true",
                   "-Dorg.jenkinsci.plugins.gitclient.GitClient.quietRemoteBranches=true",
                   "-Dorg.jenkinsci.plugins.gitclient.Git.timeOut=11",
+                  "-Dorg.jenkinsci.plugins.github_branch_source.GitHubSCMSource.cacheRootDir=/var/cache/jenkins/github-cache",
                 ])
     if jnlp_port != None:
         java_opts.append("-Dhudson.TcpSlaveAgentListener.port=" + str(jnlp_port)) # NOT THE HTTP PORT
