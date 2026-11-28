@@ -99,6 +99,7 @@ mina-sshd-api-common:2.20.1-199.v8ce76b_c93542
 mina-sshd-api-core:2.20.1-199.v8ce76b_c93542
 monitoring:2.9.1
 naginator:1.562.ve5f2cfb_04d45
+nimbus-jose-jwt-api:10.10-12.vd4e6d651b_7f7
 nodelabelparameter:851.vd94e5048d321
 okhttp-api:5.5.0-242.v1482d48d3ea_3
 oss-symbols-api:477.v7197b_eb_3d8b_8
